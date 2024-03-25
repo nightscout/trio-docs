@@ -10,7 +10,7 @@
 :width: 250px
 ```
 
-The main screen of iAPS can be divided into three sections: 
+The main screen of Open-iAPS can be divided into three sections: 
 
 - Status (top)
 - Graphs and Statistics (middle)
@@ -23,7 +23,7 @@ Tapping the top of the screen will bring up a History screen with information on
 
 
 ### Graphs and Statistics
-The middle of the screen graphs your current blood sugar data and inputted carbs overlaid with iAPS's insulin delivery and blood sugar predictions.
+The middle of the screen graphs your current blood sugar data and inputted carbs overlaid with Open-iAPS's insulin delivery and blood sugar predictions.
 
 The zero temp (ZT) line predicts where your blood sugar would be if insulin delivery and carb absorption were ceased. The IOB line predicts where blood sugar would be if insulin delivery was ceased and carb absorption was minimal. The unannounced meal (UAM) line predicts how long blood glucose will continue to rise, to dose insulin accordingly. For more information on prediction lines, see the [OpenAPS documentation.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html)
 
@@ -42,9 +42,9 @@ The left icon is the meal bolus option which allows you to enter Carbs and bolus
 
 The target icon allows you to set temporary targets. Most common targets are a high target for exercise, and a low target in preparation for meals. 
 
-The insulin drop icon allows you to give manual correction boluses. Manually correcting is not recommended if you are using iAPS's SMB and UAM features.
+The insulin drop icon allows you to give manual correction boluses. Manually correcting is not recommended if you are using Open-iAPS's SMB and UAM features.
 
-The rightmost icon allows you to access your iAPS settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
+The rightmost icon allows you to access your Open-iAPS settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
 
 ```{image} img/mealbolus.png
 :alt: Meal Bolus
@@ -56,7 +56,7 @@ The rightmost icon allows you to access your iAPS settings. The settings screen 
 ```
 
 ## New Bolus Calculator
-It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus you also need to consider carbs and insulin already on board, current glucose value and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and it has been refined and tested by several users. As of November 28th 2023 it is still in the DEV branch of iAPS, but it will soon be added to the Main branch and available for everyone to use.
+It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus you also need to consider carbs and insulin already on board, current glucose value and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and it has been refined and tested by several users. As of November 28th 2023 it is still in the DEV branch of Open-iAPS, but it will soon be added to the Main branch and available for everyone to use.
 
 ### How to activate the new Bolus Calculator
 The new bolus calculator is not enabled by default. You need to go into Settings -> Bolus Calculator and activate it:
@@ -100,7 +100,7 @@ If you tap "Fatty meal" you will see that the bolus recommendation changes accor
 :width: 250px
 ```
 
-If you tap "Calculations" you will see how iAPS has come up with the bolus recommendation:
+If you tap "Calculations" you will see how Open-iAPS has come up with the bolus recommendation:
 
 1. The amount of carbs entered
 2. In the green circle, you will see the relevant profile or dynamic settings: Carb Ratio, ISF, Target Glucose, Basal and fraction/override.

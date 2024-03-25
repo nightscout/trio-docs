@@ -6,7 +6,7 @@
 :::{note}
   - Check your morning IOB: if it is positive, increase your basal rates, if it is negative, decrease your basal rates.
 :::
-One of the easiest ways of optimizing your basal rates is by checking your IOB when you wake up in the morning. iAPS uses your basal profile as its net zero. If iAPS needs to give you more insulin overnight than your set basal rates, your IOB will be positive. Likewise, if you need less insulin overnight than your current basal rates, it will be negative. You can adjust your basal profile by 10%, and reassess the impact the following morning. Below are some nightscout images showing the impact of changing basal rates on IOB. You can also view your IOB on iAPS itself.
+One of the easiest ways of optimizing your basal rates is by checking your IOB when you wake up in the morning. Open-iAPS uses your basal profile as its net zero. If Open-iAPS needs to give you more insulin overnight than your set basal rates, your IOB will be positive. Likewise, if you need less insulin overnight than your current basal rates, it will be negative. You can adjust your basal profile by 10%, and reassess the impact the following morning. Below are some nightscout images showing the impact of changing basal rates on IOB. You can also view your IOB on Open-iAPS itself.
 
 ```{figure} img/negativeIOBbefore.jpg
 :alt: Before basal adjustment
@@ -19,9 +19,9 @@ Before basal adjustment
 After basal adjustment
 ```
 
-Inaccurate basal rates can impact your control in a number of ways. Their values determine how much insulin iAPS delivers with temporary basal rates and autobolus functions. If you consistently have negative IOB in the morning, you are at danger of having lows when your blood sugar rises above your correction range.
+Inaccurate basal rates can impact your control in a number of ways. Their values determine how much insulin Open-iAPS delivers with temporary basal rates and autobolus functions. If you consistently have negative IOB in the morning, you are at danger of having lows when your blood sugar rises above your correction range.
 
-Note that iAPS does adjust your basal profile with autotune, but this system is slow and has strict limits to prevent too much divergence from your set settings. If your basal rates are widely inaccurate, its best to make manual changes. 
+Note that Open-iAPS does adjust your basal profile with autotune, but this system is slow and has strict limits to prevent too much divergence from your set settings. If your basal rates are widely inaccurate, its best to make manual changes. 
 
 ## Site Change or Failure
 
@@ -29,19 +29,19 @@ Note that iAPS does adjust your basal profile with autotune, but this system is 
    - Pump changes can temporarily impact control. 
    - Pump failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
 :::
-Pump site changes can negatively impact your immediate glycemic control. Different delivery sites vary in their ability to absorb insulin, impacting your perceived insulin sensitivity. iAPS should be able to accommodate to this change by resetting its Autosens meaurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
+Pump site changes can negatively impact your immediate glycemic control. Different delivery sites vary in their ability to absorb insulin, impacting your perceived insulin sensitivity. Open-iAPS should be able to accommodate to this change by resetting its Autosens meaurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
 
-Pump failures can result from kinks or improper insertion of the cannula. As a result of a pump failure, iAPS may come under the impression that more insulin is on board the patient than what was delivered, leading to sustained highs even after the pump is replaced. 
+Pump failures can result from kinks or improper insertion of the cannula. As a result of a pump failure, Open-iAPS may come under the impression that more insulin is on board the patient than what was delivered, leading to sustained highs even after the pump is replaced. 
 
-When you find out your pump has failed, immediately turn off closed loop to prevent iAPS from trying to deliver more insulin. Upon your next pump installation, you can then start closed loop and be patient. iAPS will wait for the calculated insulin on board to drop before continuing to deliver insulin.
+When you find out your pump has failed, immediately turn off closed loop to prevent Open-iAPS from trying to deliver more insulin. Upon your next pump installation, you can then start closed loop and be patient. Open-iAPS will wait for the calculated insulin on board to drop before continuing to deliver insulin.
 
 ## Low Treatment
 
 :::{note}
-   - Enter carbs for treatment into iAPS but do not bolus for it
+   - Enter carbs for treatment into Open-iAPS but do not bolus for it
    - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
 :::
-Low blood sugar events can happen from time to time, but you will typically not require as many carbs to treat your lows as opposed to MDI or using a pump. When you treat a low, you should enter the carbs consumed into the iAPS system so its autotune functionality can make better choices on your ICR, ISF and basal rates.
+Low blood sugar events can happen from time to time, but you will typically not require as many carbs to treat your lows as opposed to MDI or using a pump. When you treat a low, you should enter the carbs consumed into the Open-iAPS system so its autotune functionality can make better choices on your ICR, ISF and basal rates.
 
 If you experience a roller coaster pattern of highs and lows after treating, your [insulin sensitivity factor (ISF)](../settings/configuration/insulinsensitivities.md) is most likely to blame. Consider making your insulin sensitivity less aggressive by 10% or reducing your adjustment factor by 0.1 increments. 
 
@@ -52,13 +52,13 @@ If you experience a roller coaster pattern of highs and lows after treating, you
 
 :::{note}
 * Treating lows with fast carbs can give a fast BG rise
-* Under certain circumstances, iAPS might react to the fast BG rise by giving insulin, leading to another low
+* Under certain circumstances, Open-iAPS might react to the fast BG rise by giving insulin, leading to another low
 :::
 
-To avoid a second low, you can instruct iAPS not to give any SMB's for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](./temptarget.md) preset that is a bit higher than your usual target (e.g. 7,5 mmol/L | 136 mg/dl). Make sure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g. 30-45 min).
+To avoid a second low, you can instruct Open-iAPS not to give any SMB's for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](./temptarget.md) preset that is a bit higher than your usual target (e.g. 7,5 mmol/L | 136 mg/dl). Make sure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g. 30-45 min).
 :::{note}
 * Setting a temporary target is not the same as disconnecting the pump
-* iAPS will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment
+* Open-iAPS will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment
 :::
 
 ## Highs after meals
@@ -76,9 +76,9 @@ If your BG rises fast and ends up too high, it is (without a doubt) because you 
 
 ### Persistent high
 :::{note}
-Scenario: your BG gets high after a meal, and stays high for a long period of time. iAPS gives you some SMB's, but not enough to bring you back down.
+Scenario: your BG gets high after a meal, and stays high for a long period of time. Open-iAPS gives you some SMB's, but not enough to bring you back down.
 :::
-In this scenario, iAPS is giving you the amount of insulin it thinks is right to bring you back in range. Clearly, this is not enough. Make sure to rule out the <i> fast rise</i> scenario. Then, help iAPS understand that you need more insulin to lower your BG. This can be achieved by lowering the ISF. Some people find that ISF during high BG is different, making it hard to fix persistent highs by adjusting the scheduled ISF settings. iAPS has a feature called [Dynamic ISF](../settings/configuration/preferences/dynamicsettings.md) that will lower the ISF when BG is high/rising, giving you more insulin. Please read the chapter on Dynamic Settings before enabling this feature.
+In this scenario, Open-iAPS is giving you the amount of insulin it thinks is right to bring you back in range. Clearly, this is not enough. Make sure to rule out the <i> fast rise</i> scenario. Then, help Open-iAPS understand that you need more insulin to lower your BG. This can be achieved by lowering the ISF. Some people find that ISF during high BG is different, making it hard to fix persistent highs by adjusting the scheduled ISF settings. Open-iAPS has a feature called [Dynamic ISF](../settings/configuration/preferences/dynamicsettings.md) that will lower the ISF when BG is high/rising, giving you more insulin. Please read the chapter on Dynamic Settings before enabling this feature.
 
 ### Fast rise, then low
 :::{note}

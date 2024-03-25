@@ -1,6 +1,6 @@
 ## Compatible Pumps
 
-There are three types of pumps compatible with iAPS:
+There are three types of pumps compatible with Open-iAPS:
 <b>
 * Omnipod DASH pumps
 * Omnipod Eros pumps
@@ -12,17 +12,17 @@ Time Estimate for this section:
 * Omnipod users: 1 minute
 * Medtronic users: 10 minutes
 
-No other pumps work with iAPS at this time, but there are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps.
+No other pumps work with Open-iAPS at this time, but there are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps.
 
 ### Omnipod Pumps
 
 <i>Reminder and Disclaimer</i>
 
-<i>The use of Omnipod pumps with iAPS is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your iAPS build, setup, or operation. You are fully responsible for your use of iAPS and do so at your own risk. Please read these documents and familiarize yourself with iAPS before using.</i>
+<i>The use of Omnipod pumps with Open-iAPS is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Open-iAPS build, setup, or operation. You are fully responsible for your use of Open-iAPS and do so at your own risk. Please read these documents and familiarize yourself with Open-iAPS before using.</i>
 
 #### Omnipod Eros
 
-Eros pods were launched in 2013 and continue to be sold by Insulet. They will stop being available in the US at the end of 2023, but will continue to be obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with iAPS, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
+Eros pods were launched in 2013 and continue to be sold by Insulet. They will stop being available in the US at the end of 2023, but will continue to be obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Open-iAPS, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
 
 ![eros](img/eros.png)
 
@@ -34,13 +34,13 @@ The DASH pods were launched in 2019 and use Bluetooth, so they don't require a R
 
 #### Omnipod 5
 
-iAPS does not support Omnipod 5 pods. The Omnipod 5 has built-in closed loop functionality and works with Dexcom.
+Open-iAPS does not support Omnipod 5 pods. The Omnipod 5 has built-in closed loop functionality and works with Dexcom.
 
 ### Medtronic Pumps
 
 ![pump](img/pump.png)
 
-There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are iAPS compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
+There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Open-iAPS compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
 
 * Medtronic 515 or 715 (any firmware)
 * Medtronic 522 or 722 (any firmware)
@@ -48,7 +48,7 @@ There are a number of Medtronic insulin pumps manufactured between 2006 – 2012
 * Medtronic Worldwide Veo 554 or 754 (firmware 2.6A or lower)
 * Medtronic Canadian/Australian Veo 554 or 754 (firmware 2.7A or lower)
 
-If you have one of the pumps listed above, you are good to go on iAPS! Congrats!
+If you have one of the pumps listed above, you are good to go on Open-iAPS! Congrats!
 
 #### Medtronic Pump Model
 
@@ -61,13 +61,13 @@ To determine your pump model, look at the backside of your pump.  There should b
     * NA ---> Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
     * S ---> Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 
-Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect iAPS compatibility.
+Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect Open-iAPS compatibility.
 
 #### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows iAPS to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware. <b>You cannot change the firmware on a Medtronic pump.</b>
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Open-iAPS to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware. <b>You cannot change the firmware on a Medtronic pump.</b>
 
-The firmware on all 515/715 and 522/722 model Medtronic pumps is compatible with iAPS. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.
+The firmware on all 515/715 and 522/722 model Medtronic pumps is compatible with Open-iAPS. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.
 
 * Medtronic 515 or 715 (any firmware)
 * Medtronic 522 or 722 (any firmware)
@@ -89,26 +89,26 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 #### Medtronic Pump Differences
 
-If you are in the position of being able to shop around for different pump models, there are some slight differences between the iAPS-compatible Medtronic pumps.
+If you are in the position of being able to shop around for different pump models, there are some slight differences between the Open-iAPS-compatible Medtronic pumps.
 
 **500 vs 700**: The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
 
 **x15/x22 vs x23/x54**: The noteworthy differences between the x15 and x22 pumps versus the x23 and x54 series pumps are:
 
-* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **iAPS will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through iAPS’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in the iAPS app's settings and iAPS will use those values for the purposes of insulin delivery calculations.**
+* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **Open-iAPS will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Open-iAPS’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in the Open-iAPS app's settings and Open-iAPS will use those values for the purposes of insulin delivery calculations.**
 
 |Pump Model  |Basal increments  |Bolus increments  |Range  |
 |---------|---------|---------|---------|
 |515/715</br>and</br>522/722     |  0.05</br>0.1       |    0.1</br>0.1     | deliveries of less than 10 units</br>greater than 10 units        |
 |523/723</br>and</br>554/754     |  0.025</br>0.05</br>0.1       |   0.025 </br>0.05 </br>0.1      | between 0.025 to 0.975 units</br>between 1 to 9.95 units</br>greater than 10 units        |
 
-* Additionally, because of the way iAPS fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
+* Additionally, because of the way Open-iAPS fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
 
 * The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
 
 #### Finding a Medtronic Pump
 
-Finding a compatible Medtronic pump is probably the most difficult part for most new iAPS users. Our suggestions:
+Finding a compatible Medtronic pump is probably the most difficult part for most new Open-iAPS users. Our suggestions:
 
 * Talk to friends in the diabetic community.
 

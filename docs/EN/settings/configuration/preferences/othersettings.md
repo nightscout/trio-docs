@@ -18,9 +18,9 @@ Allows you to optimize at what time your insulin has maximum activity if the def
 Requires "Use Custom Peak Time" to be enabled. Select a peak activity time point, within the limits set by OpenAPS based on your insulin type.
 
 ## Skip Neutral Temps
-This is a feature that has been brought from the OpenAPS algorithm but does not play much role in iAPS. Light sleepers using OpenAPS would find that the notifications delivered by OpenAPS upon making a temp basal adjustment, would wake them up. 
+This is a feature that has been brought from the OpenAPS algorithm but does not play much role in Open-iAPS. Light sleepers using OpenAPS would find that the notifications delivered by OpenAPS upon making a temp basal adjustment, would wake them up. 
 
-This setting attempts to reduce notifications that are produced by OpenAPS (and iAPS) with the downside of potentially impacting control and making it harder for users to determine if the system is working.
+This setting attempts to reduce notifications that are produced by OpenAPS (and Open-iAPS) with the downside of potentially impacting control and making it harder for users to determine if the system is working.
 
 Recommend to keep this setting disabled.
 
@@ -30,9 +30,9 @@ After suspending your pump you will be provided a reminder at a chosen time to m
 This feature allows you to use zero temp basals as a way of unsuspending your pump automatically. Prior to suspending your pump, set a 0 U/hr temp basal for the period of time you want the pod to remain suspended. Then suspend the pod. Once the temp basal expires, the pod will be automatically reactivated.
 
 ## Suspend Zeros IOB
-This allows iAPS to better understand that when a pump supension occurs, no insulin is being delivered to the patient.
+This allows Open-iAPS to better understand that when a pump supension occurs, no insulin is being delivered to the patient.
 
-iAPS will set a zero temp basal (0 U/hr) during pump suspensions, improving its insulin on board calculations, and thereby its algorithm calculations.
+Open-iAPS will set a zero temp basal (0 U/hr) during pump suspensions, improving its insulin on board calculations, and thereby its algorithm calculations.
 
 Recommended to keep this setting enabled.
 
@@ -40,7 +40,7 @@ Recommended to keep this setting enabled.
 Deprecated; Bolus snooze has been removed in latest versions of OpenAPS so this value does not matter.
 
 ## Min 5m Carbimpact
-This is a fallback setting used by iAPS. If iAPS is unable to tell if carbs are being absorbed from blood sugar readings, it will estimate how many carbs have been absorbed using this setting.
+This is a fallback setting used by Open-iAPS. If Open-iAPS is unable to tell if carbs are being absorbed from blood sugar readings, it will estimate how many carbs have been absorbed using this setting.
 
 The default value of 8 mg/dL/5min assumes carbohydrates will increase blood sugar by 8 mg/dL every 5 minutes. The actual amount of carbohydrates estimated to be absorbed is depended on your calculated carbohydrate sensitivity ratio (CSF = ISF/ICR).
 
@@ -64,9 +64,9 @@ Assuming autotune is not being limited by the autosens max and min, Bill's ISF w
 ## Remaining Carbs Fraction
 This is the fraction of carbs that is assumed not to be absorbed yet after 4 hours if carb absorption has not been seen. 
 
-When attempting to measure carbohydrates on board (COB) iAPS may not be fully accurate. This setting is a safety feature that can prevent iAPS from providing insulin for non-existent carbs.
+When attempting to measure carbohydrates on board (COB) Open-iAPS may not be fully accurate. This setting is a safety feature that can prevent Open-iAPS from providing insulin for non-existent carbs.
 
-Example: It has been 4 hours since Bill ate 20 carbs. iAPS has been able to calculate that hes absorbed 15 carbs, but cannot account for the 5 other carbs yet. Bill has a remaining carbs fraction of 0.75
+Example: It has been 4 hours since Bill ate 20 carbs. Open-iAPS has been able to calculate that hes absorbed 15 carbs, but cannot account for the 5 other carbs yet. Bill has a remaining carbs fraction of 0.75
 
 - Remaining COB = COB - absorbedCarbs - mealCarbs * (1 - carbsFraction)
 
@@ -74,19 +74,19 @@ Example: It has been 4 hours since Bill ate 20 carbs. iAPS has been able to calc
 
 Bill is assumed to have zero carbs on board
 
-Recommend to keep this value at the default of 1 meaning it will not impact iAPS's calculations. This feature is closely tied to "Remaining Carbs Cap."
+Recommend to keep this value at the default of 1 meaning it will not impact Open-iAPS's calculations. This feature is closely tied to "Remaining Carbs Cap."
 
 ## Remaining Carbs Cap
 This setting is a safety limiter that determines the maximum amount of carbs that are assumed to be absorbed after 4 hours of carb absorption. A minimum of 90 carbs is mandatory for this setting.
 
-Example: Bill eats 150 carbs. After 4 hours, iAPS calculates a COB of 110. It will truncate that number to 90 carbs.
+Example: Bill eats 150 carbs. After 4 hours, Open-iAPS calculates a COB of 110. It will truncate that number to 90 carbs.
 
 Recommended to keep this value at default unless you know what you are doing.
 
 ## Noisy CGM Target Multiplier
-If iAPS detects that CGM data has been noisy, it will increase your target blood sugar by a set fraction to avoid you getting low. Default is 30% higher (1.3)
+If Open-iAPS detects that CGM data has been noisy, it will increase your target blood sugar by a set fraction to avoid you getting low. Default is 30% higher (1.3)
 
-Example: Bill's iAPS has calculated a blood glucose target of 5 mmol/L (90 mg/dL). But Bill has a noisy sensor. He has set his "Noisy CGM Target Multiplier" to 1.3. iAPS will thereby use a target bg of:
+Example: Bill's Open-iAPS has calculated a blood glucose target of 5 mmol/L (90 mg/dL). But Bill has a noisy sensor. He has set his "Noisy CGM Target Multiplier" to 1.3. Open-iAPS will thereby use a target bg of:
 
 - 5 mmol/L * 1.3 = 6.5 mmol/L
 - 90 mg/dL * 1.3 = 117 mg/dL

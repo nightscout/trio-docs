@@ -9,10 +9,10 @@ ISF, also called insulin correction factor (ICF), refers to the amount of blood 
 
 Example: Bill has a 1:4 ISF (this is also written in shorthand as an ISF of 4 mmol/L/U (72 mg/dL/U)). This means 1 U of rapid insulin will bring Bill's sugar down 4 mmol/L (72 mg/dL).
 
-Like basal rates, ISF is not used verbaitam by iAPS, but is modified over time as data on the patient is collected. Still, it is important to set ISF as close to accurate as possible for iAPS to function well.
+Like basal rates, ISF is not used verbaitam by Open-iAPS, but is modified over time as data on the patient is collected. Still, it is important to set ISF as close to accurate as possible for Open-iAPS to function well.
 
 ## Setting
-It is safe to transfer your ISF from your pump settings. Note that almost all issues when starting with iAPS are a result of an improperly set ISF. If you find you have lows with corrections, or you have SMB/UAM on and the application provides too much insulin at any time resulting in a rollercoaster pattern your ISF is likely to blame. 
+It is safe to transfer your ISF from your pump settings. Note that almost all issues when starting with Open-iAPS are a result of an improperly set ISF. If you find you have lows with corrections, or you have SMB/UAM on and the application provides too much insulin at any time resulting in a rollercoaster pattern your ISF is likely to blame. 
 
 There are a few ways you can work to adjust your ISF. The easiest method is simply bringing yourself to a higher glucose with a glucose tab or choosing a time when you are "stuck" higher than your target, then correcting based on your ISF. If you are higher or lower than you target after 4 hours, increase by 10% or decrease your ISF by 20% accordingly.
 

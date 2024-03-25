@@ -1,10 +1,10 @@
-# Add Customizations to iAPS
+# Add Customizations to Open-iAPS
 
-Here are a few ways to customize iAPS' code to better suit your needs. Please be very careful when editing any code.
+Here are a few ways to customize Open-iAPS' code to better suit your needs. Please be very careful when editing any code.
 
 ## Bypass Authentification for Bolusing
 
-Depending on your iPhone Settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in iAPS. You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
+Depending on your iPhone Settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Open-iAPS. You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 :::{admonition} Caution
 :class: caution
@@ -26,9 +26,9 @@ if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error)
 
 ## Omnipod: Add Extra Insulin on Insertion
 
-The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with iAPS - be conservative.
+The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Open-iAPS - be conservative.
 
-Note that iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.25 U to the "extra" value, you should get 0.25 / 0.05 = 5 extra clicks. In other words, 15 total clicks after you press insert.
+Note that Open-iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Open-iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.25 U to the "extra" value, you should get 0.25 / 0.05 = 5 extra clicks. In other words, 15 total clicks after you press insert.
 
 This code change is found in one location for Eros Pods an another for DASH Pods. I tend to change both files just in case, but if you're only using one kind of pod, that is not really necessary.
 
@@ -72,7 +72,7 @@ Code after modification:
 
 ## Add Custom Icon
 
-There are several different app icon options built into iAPS for you to choose from, but you can still add your own if you'd like. You'll need to convert the image you want in PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it diabeetus.
+There are several different app icon options built into Open-iAPS for you to choose from, but you can still add your own if you'd like. You'll need to convert the image you want in PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it diabeetus.
 ```{image} img/diabeetus.png
 :alt: diabeetus
 :width: 125px
@@ -112,7 +112,7 @@ There are several different app icon options built into iAPS for you to choose f
    Code before modification:
 ```swift
 ...
-    case loop = "iAPS_Loop"
+    case loop = "Open-iAPS_Loop"
     var id: String { rawValue }
 }
 ```
@@ -120,7 +120,7 @@ There are several different app icon options built into iAPS for you to choose f
    Code after modification:
 ```swift
 ...
-    case loop = "iAPS_Loop"
+    case loop = "Open-iAPS_Loop"
     case diabeetus = "diabeetus"
     var id: String { rawValue }
 }

@@ -8,7 +8,7 @@ ICR refers to the amount of carbohydrates one unit of insulin is able to neutral
 
 Example: Bill has a 1:10 ICR (aka an ICR of 10). If Bill has 20 carbs with lunch, he will need 2 U of rapid inslin to neutralize it.
 
-ICR is not changed as drastically as basal rates or ISF unless Dynamic CR is enabled. As always, your ICR must be as accurate as possible for proper iAPS function.
+ICR is not changed as drastically as basal rates or ISF unless Dynamic CR is enabled. As always, your ICR must be as accurate as possible for proper Open-iAPS function.
 
 ## Setting
 It is safe to transfer your ICR from your pump settings. Your settings may not be accurate if you are experencing high peaks with meals, or if you have lows three hours thereafter. If you have SMB/UAM on and are experencing sharp drops, you additionally may need to optimize your ISF.

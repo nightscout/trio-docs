@@ -11,7 +11,7 @@ Commercial vendors out there are driven mostly by, of course, profits.   If ther
 The core part to the statistics is they stay up to date, and this is accomplished on of two ways:
 
 * for those using Nightscout servers, we are able to pull the needed statistics directly
-* for those not using Nightscout servers, they are able to configure iAPS to push data into us
+* for those not using Nightscout servers, they are able to configure Open-iAPS to push data into us
 
 In both cases, the process is meant to happen once a day, so that information is updated regularly.
 
@@ -30,7 +30,7 @@ We pull three pieces of information into the system:
 
 ## Who controls the data?
 
-The project is a private contribution to the iAPS project, funded and managed by one person: me 
+The project is a private contribution to the Open-iAPS project, funded and managed by one person: me 
 
 The only outside access to any of the data in the system is via the web pages at the above URL, nobody has access to the raw data.
 
