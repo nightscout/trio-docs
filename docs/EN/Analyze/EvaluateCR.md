@@ -5,7 +5,7 @@
 :::
 
 <b>Background</b>
-Nightscout (NS) is one tool that will provide more info for analysis. With iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Generally it is better to overestimate a little than underestimate carbs. But only if you let the algo take care of some of the dosing. If you overestimate and bolus for it all up front, there is little left for the algo to do.
+Nightscout (NS) is one tool that will provide more info for analysis. With Open-iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Generally it is better to overestimate a little than underestimate carbs. But only if you let the algo take care of some of the dosing. If you overestimate and bolus for it all up front, there is little left for the algo to do.
 
 <b>How to adjust CR</b>
 Some very important info to observe is looking at how fast the carbs decay. For the last 24 hours, you can scroll back and forth in Nightscout, and see when carbs from a meal decays to zero, or check if they don’t decay in a reasonable time. This gets a little complicated if meals are overlapping though, but still possible.  You may want to utilize the Day to day report when that siutation occurs.

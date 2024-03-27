@@ -19,7 +19,7 @@ For CR, it calculates the total deviations over all of the day’s mealtimes and
 ## Important note on Dynamic Settings
 Because Autotune uses Deviations to calculate basal variation, it has to calculate Deviations. It does this using a profile based ISF value. 
 
-This means that if you enable Autotune, but use Dynamic functions within iAPS, it will not be using the ISF that was in operation at the time of the loop running in the past, and basal adjustments are likely to be incorrect, as well as ISF adjustments. 
+This means that if you enable Autotune, but use Dynamic functions within Open-iAPS, it will not be using the ISF that was in operation at the time of the loop running in the past, and basal adjustments are likely to be incorrect, as well as ISF adjustments. 
 
 It can also only run with a single daily ISF and CR. As a result, it doesn't work for most people. 
 

@@ -15,7 +15,7 @@ Allows for remote control of FAX using Nightscout.
 :class: danger
 We want to highlight a very important risk before you get started.
 <br><br>
-For safety, always assume a previous remote carb / bolus was delivered whether it shows in Nightscout iAPS. For motivation think of the following example:
+For safety, always assume a previous remote carb / bolus was delivered whether it shows in Nightscout Open-iAPS. For motivation think of the following example:
 <br><br>
 You send a 5 unit remote bolus.
 The bolus is delivered to the Looper.
@@ -29,12 +29,12 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 :::
 To use, navigate to your connect nightscout instance. Click the lock icon on the top right and enter your API-Secret. Next, click the now visible "+" sign on the top right. A "Log a Treatment" menu will open up. 
 
-To enter carbs, select the "carb correction" event type. Fill in the required blanks and click "Submit Form". iAPS will read any carb entries in Nightscout and adjust insulin delivery as configured.
+To enter carbs, select the "carb correction" event type. Fill in the required blanks and click "Submit Form". Open-iAPS will read any carb entries in Nightscout and adjust insulin delivery as configured.
 
 To configure loop status, pump or to bolus:
 
 1. Select the "announcement" event type.
-2. For "entered by" enter `remote` (Before iAPS-main v2.3.3 it was `freeaps-x-remote` instead)
+2. For "entered by" enter `remote` (Before Open-iAPS-main v2.3.3 it was `freeaps-x-remote` instead)
 3. In additional notes state one of the following options:
 
 * To bolus, enter `bolus:(amount)` (ex: `bolus:0.5`).
@@ -45,7 +45,7 @@ To configure loop status, pump or to bolus:
 Note that remote configurations with announcement-type events can only be performed every 10 minutes.
 
 ## Recommended Bolus Percentage
-Recommended bolus percentage is a safety feature built into iAPS. By default, iAPS first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is then multiplied by your "Recommended Bolus Percentage" to display your suggested insulin dose. iAPS then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
+Recommended bolus percentage is a safety feature built into Open-iAPS. By default, Open-iAPS first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is then multiplied by your "Recommended Bolus Percentage" to display your suggested insulin dose. Open-iAPS then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
 
 Recommended Bolus Percentage allows you to alter the amount initially delivered. At its default (80), it results in 80% of the required meal bolus being delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
 
@@ -55,4 +55,4 @@ Note: A manual bolus uses the Eventual BG for glucose prediction, whereas the in
 After entering carbs, a mealtime bolus will not be suggested or delivered.
 
 ## Display HR on Watch
-Displays your current heart rate on your iWatch iAPS app
+Displays your current heart rate on your iWatch Open-iAPS app
