@@ -9,7 +9,7 @@ Open-iAPS is a open-source artifical pancreas system based on the [OpenAPS](http
 Before starting with Open-iAPS, you should evaluate your closed-loop options:
 
 * Commercial systems such as Medtronic, Tandem IQ or Omnipod 5
-* Other open source applications like Loop and AndroidAPS
+* Other open-source applications like Loop and AndroidAPS
 
 Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
 
