@@ -14,7 +14,7 @@ Before starting with Open-iAPS, you should evaluate your closed-loop options, in
 Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
 
 # Getting Started
-Before starting with Open-iAPS, you should have a basic understanding of what insulin carb raio (ICR), insulin sensitivity factor (ISF), and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
+Before starting with Open-iAPS, you should have a basic understanding of what carb ratio (CR), insulin sensitivity factor (ISF), and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
 
 To use Open-iAPS, you are required to build the application from the source code. This does not require substantial technical know-how but is a time consuming process. You may need several sessions to complete your first build.
 
