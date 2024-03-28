@@ -1,6 +1,7 @@
 ## Evaluate CR Tips
 
-### Be Advised: <i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
+> [!CAUTION]
+> <i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
 
 <b>Background</b>
 Nightscout (NS) is one tool that will provide more info for analysis. With Open-iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Generally, it is better to overestimate a little than underestimate carbs. But only if you let the algorithm handle some of the dosing. If you overestimate and bolus for it all upfront, there is little left for the algo to do.
