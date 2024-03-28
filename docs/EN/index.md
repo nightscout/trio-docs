@@ -1,7 +1,17 @@
 **PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR Open-iAPS BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE :)**
 
 # What is Open-iAPS?
-Open-iAPS is a open source artifical pancrease system based on the OpenAPS algorithm. Using the settings you input, carbohydrates and historical data, it aims to automate insulin delivery to reduce the time you spend managing your diabetes. Before starting with Open-iAPS, you should consider alternative commercial options such as the Tandem IQ and Omnipod 5, or other open source applications like Loop and AndroidAPS. Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
+Open-iAPS is a open-source artifical pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
+
+* Using your personal settings, glucose values, meal inputs and historical data, the app automates insulin delivery
+* This reduces the time you spend managing your diabetes and in many cases, provides better sleep and better glucose control
+
+Before starting with Open-iAPS, you should evaluate your closed-loop options:
+
+* Commercial systems such as Medtronic, Tandem IQ or Omnipod 5
+* Other open-source applications like Loop and AndroidAPS
+
+Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
 
 # Getting Started
 Before starting with Open-iAPS, you should have a basic understanding of what ICR, ISF and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
