@@ -1,6 +1,7 @@
 ## Evaluate Basal Tips
 
-### Be Advised: <i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
+> [!CAUTION]
+> <i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
 
 ### Nightscout
 
