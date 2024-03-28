@@ -108,7 +108,7 @@ Most Open-iAPS users do a bit of all these approaches. Have an apple without ent
 
 ## Coming from commercial closed-loop systems
 
-Are you using a commercial closed-loop system like Omnipod 5, Tandem Tslim, Medtronic, etc.? If you're happy, stay. If you're not getting the results you want, read through the chapter on "Coming from iOS Loop" to see the main issues that Open-iAPS solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay. If you're not getting the results you want, read through the chapter on "Coming from iOS Loop" to see the main issues that Open-iAPS solves.
 
 ## I want to try Open-iAPS. How do I proceed?
 
