@@ -13,4 +13,5 @@ Closed loop allows the system to make insulin adjustments automatically. Your en
 
 <b>No.</b> Users coming from Loop usually have adjusted their ISF and CR settings to compensate for fluctuations in insulin needs throughout the day. When using those settings for Open-iAPS, the algorithm is also adjusting to compensate for the fluctuations and these may result in over or under dosing. Please go through the steps of monitoring Open-iAPS predictions and adjust your settings accordingly. You should also read the section on [transitioning from other closed loop solutions](transition-qa.md).
 
-<i><b>Remember that everyone's diabetes is different and there is no one size fits all, so take the time to optimize your settings for the Oref algorithm.
+> [!IMPORTANT]
+> <i><b>Remember that everyone's diabetes is different and there is no one size fits all, so take the time to optimize your settings for the Oref algorithm.
