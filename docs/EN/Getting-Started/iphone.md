@@ -23,7 +23,7 @@ Your phone's iOS version can be found under the phone Settings -> General -> Abo
 
 <b>Developer Mode - Mac build</b>
 
-With iOS 16 and watchOS 9, Apple added a feature called "Developer Mode". Your iPhone and Apple Watch need to have this feature enabled in order to allow installation of Open-iAPS. If you want to know more, click on this link: [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+With iOS 16 and watchOS 9, Apple added a feature called "Developer Mode." This feature must be enabled on your iPhone and Apple Watch to allow the installation of Open-iAPS. To learn more, click on this link: [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 When you build Open-iAPS on your phone from Xcode directly, you need to have Developer Mode enabled. This is also a requirement to use the Open-iAPS app on a watch paired to your phone.
 
@@ -42,7 +42,7 @@ Apple provides frequent updates to the iOS. Often, these updates include critica
 
 #### Turn off Automatic Updates!
 
-* Once you accept an iOS update, you cannot go backwards
+* Once you accept an iOS update, you cannot go backward
     * Some iOS updates require updates to Xcode and macOS before people can build Open-iAPS on that device again
     * It is rare, but iOS updates have caused Open-iAPS to stop working until other updates were made and Open-iAPS was rebuilt on that phone
 * Turn off automatic updates so you can choose when to update your phone and avoid being caught without a working Open-iAPS app
@@ -52,16 +52,16 @@ Apple provides frequent updates to the iOS. Often, these updates include critica
 
 #### Battery Health
 
-Make sure the battery on your phone is solid. Your phone will become a critical health device - you want it to keep working.
+Make sure your phone's battery is functioning optimally. Your phone will become a critical health device, and you want it to keep working.
 
 * Make sure a charger and cord are in your diabetes supplies
-* Consider buying a battery pack, keep it charged and add it to your travel bag
+* Consider buying a battery pack, keep it charged, and add it to your travel bag
 
 !!! tip "Low Power Mode"
-    Some people have reported Open-iAPS continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
+    Some people have reported that Open-iAPS continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others have reported that they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low-power mode. Otherwise, the best practice is to avoid Low-Power Mode.
 
 ### Apple Watch
 
-Open-iAPS has a companion app for the Apple Watch. The companion app will show the loop status, and current insulin and carbs onboard. It will also let you add carbs, do a manual bolus and set a temporary target. The companion app only serves as a remote control for the iPhone app; connection to CGM and pump is still done through your iPhone and you will have to bring it with you.
+Open-iAPS has a companion app for the Apple Watch. The companion app shows the loop status and current insulin and carbs onboard. It also lets you add carbs, do a manual bolus, and set a temporary target. However, the companion app only serves as a remote control for the iPhone app; connection to the CGM and pump is still done through your iPhone, and you will have to bring it with you.
 
 Apple Watch Series 3 and newer are supported. Newer versions of the Apple Watch have better battery life and support always-on display.
