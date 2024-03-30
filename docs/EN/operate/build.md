@@ -43,9 +43,9 @@ Open your fork at your GitHub username.
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
 * Before building, you can [Verify Open-iAPS Version](#verify-iaps-version)
 
-If you selected a GitHub Personal Access Token (GH_PAT) that never expires, then simply select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
+If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
 
-If your token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then you can build your updated code.
+If your token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then, you can build your updated code.
 
 
 ## Build Open-iAPS with Script
@@ -55,11 +55,11 @@ A build script is available that will
 * Download either the main or dev branch for Open-iAPS
 * Create the automatic signing file
 * Offer to remove the provisioning profiles from your computer
-   * This ensures the build will last a full year
+   * This ensures the build will last an entire year
 * Provide instructions for how to build the app once Xcode opens
 * Opens Xcode with your new download.
 
-To execute the build script, open a terminal on your Mac and then copy and paste the command below into the terminal. Read and follow the directions. 
+To execute the build script, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -72,13 +72,13 @@ This script is similar to the one used to build Loop. Extensive instructions are
 
 ### Build Errors
 
-Should you encounter any build issues, please have a look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Not everything on that page is relevant for building Open-iAPS, but many potential issues will likely be covered there. You will also get useful advice about what info to provide if you need to ask for help. When you have identified the error message(s), please use the search tool in LoopDocs to see if your error is mentioned.
+If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Open-iAPS, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
 
 If you need it, you are most likely to get help in one of these groups:
 
 * [Discord: Open-iAPS channel](https://discord.gg/ptkk2Y264Z)
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
-* Facebook groups like “Loop and Learn” and “Looped” may become useful too, but these groups are still mostly focused on Loop
+* Facebook groups like “Loop and Learn” and “Looped” primarily focus on Loop but will offer support when able.
 
 ### xDrip4iOS or Glucose Direct as CGM Source
 
@@ -110,7 +110,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ### Maintenance Utilities
 
-Several maintenance utilities are available with the Build Select Script, which is typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, and select Option 3 for Maintenance Utilities. Then choose from these options:
+Several maintenance utilities are available with the Build Select Script, typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, and select Option 3 for Maintenance Utilities. Then, choose from these options:
 
 1. Delete Old Downloads
 1. Clean Derived Data
@@ -128,13 +128,13 @@ Once each option completes, you are returned to the top menu, so must select Mai
 
 The recommendation is to use the Xcode Source Control features to update your code.
 
-If you prefer to use the command line interface, skip ahead to [Update Open-iAPS with CLI](#update-iaps-with-cli).
+If you prefer the command line interface, skip ahead to [Update Open-iAPS with CLI](#update-iaps-with-cli).
 
 ### Update Open-iAPS with Source Control
 
 **Note** Released code is found in the  `main` branch. These figures show the older name of `master` rather than `main`. 
 
-Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you will probably find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
+Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 ![open your project](img/xcode-welcome.png){width="600"}
 {align="center"}
@@ -167,13 +167,13 @@ The correct branch should already be selected for you. If you built from `main`,
 
 The last steps are only relevant if you made any changes to the code:
 
-- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something that is meaningful to you.
-- Select “Apply Stash After Operation”.
+- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something meaningful to you.
+- Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
 The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app on your phone.
 
-The next section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-iaps-version).
+The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-iaps-version).
 
 ### Update Open-iAPS with CLI
 
@@ -184,7 +184,7 @@ Use finder to locate the directory where the Build_iAPS script saved the code. T
 * Development (dev) branch: Downloads/Build_iAPS/iAPS_dev-[date-time]/iAPS
     * Example: ~/Downloads/Build_iAPS/iAPS_dev-220108-1827/iAPS
 
-Use finder to open a Terminal window at the Open-iAPS directory by right-clicking on it and select `New Terminal at Folder`. 
+Use finder to open a Terminal window at the Open-iAPS directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
 Copy each line below and paste it into the terminal window one at a line and hit enter for each line:
 
@@ -201,7 +201,7 @@ git pull
 git stash pop
 ```
 
-If the final `git stash pop` had errors, you will need to repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
+If the final `git stash pop` had errors, you must repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
 
 The Open-iAPS code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
 
@@ -209,9 +209,9 @@ The targets should be signed, and you will be ready to build the Open-iAPS app o
 
 ## Verify Open-iAPS Version
 
-Verify the Open-iAPS code was successfully updated by examining the `APP_VERSION` value shown in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Open-iAPS GitHub Releases page.
+Verify that the Open-iAPS code was successfully updated by examining the `APP_VERSION` value in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Open-iAPS GitHub Releases page.
 
-If you are using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
+If using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
 
 ![verify version](img/xcode-build-version.png){width="600"}
 {align="center"}
