@@ -45,7 +45,7 @@ Open your fork at your GitHub username.
 
 If you selected a GitHub Personal Access Token (GH_PAT) that never expires, then simply select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
 
-If you token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then you can build your updated code.
+If your token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then you can build your updated code.
 
 
 ## Build Open-iAPS with Script
@@ -55,7 +55,7 @@ A build script is available that will
 * Download either the main or dev branch for Open-iAPS
 * Create the automatic signing file
 * Offer to remove the provisioning profiles from your computer
-    * This ensures the build will last a full year
+   * This ensures the build will last a full year
 * Provide instructions for how to build the app once Xcode opens
 * Opens Xcode with your new download.
 
@@ -63,12 +63,12 @@ To execute the build script, open a terminal on your Mac and then copy and paste
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)"
+  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_OiAPS.sh)"
 ```
 
-The download is placed in your `Downloads` folder in a directory called `Build_iAPS`. The downloaded clone is found in a folder with the branch name, date and time encoded.
+The download is placed in your `Downloads` folder in a directory called `Build_OiAPS`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-This script is similar to one used to build Loop. Extensive instructions are provided on the [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) page. If you need additional information, review that section and then return. The script for Open-iAPS must be run stand-alone; it is not part of the Build Select Script.
+This script is similar to the one used to build Loop. Extensive instructions are provided on the [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) page. If you need additional information, review that section and then return. The script for Open-iAPS must be run stand-alone; it is not part of the Build Select Script.
 
 ### Build Errors
 
@@ -78,7 +78,7 @@ If you need it, you are most likely to get help in one of these groups:
 
 * [Discord: Open-iAPS channel](https://discord.gg/ptkk2Y264Z)
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
-* Facebook groups like “Loop and Learn” and “Looped” may become useful too, but these groups are still mostly focussed on Loop
+* Facebook groups like “Loop and Learn” and “Looped” may become useful too, but these groups are still mostly focused on Loop
 
 ### xDrip4iOS or Glucose Direct as CGM Source
 
@@ -96,12 +96,12 @@ If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app
   https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildGlucoseDirect.sh)"
 ```
 
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date and time encoded.
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space and branch_name. An example is shown below; replace branch_name with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace branch_name with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -110,7 +110,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ### Maintenance Utilities
 
-Several maintenance utilities are availble with the Build Select Script which is typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, select Option 3 for Maintenance Utilities. Then choose from these options:
+Several maintenance utilities are available with the Build Select Script, which is typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, and select Option 3 for Maintenance Utilities. Then choose from these options:
 
 1. Delete Old Downloads
 1. Clean Derived Data
@@ -134,7 +134,7 @@ If you prefer to use the command line interface, skip ahead to [Update Open-iAPS
 
 **Note** Released code is found in the  `main` branch. These figures show the older name of `master` rather than `main`. 
 
-Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open for you, you will probably find it in the recent projects as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent` and find your workspace.
+Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you will probably find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 ![open your project](img/xcode-welcome.png){width="600"}
 {align="center"}
@@ -167,11 +167,11 @@ The correct branch should already be selected for you. If you built from `main`,
 
 The last steps are only relevant if you made any changes to the code:
 
-- You may see a pop up asking to stash your changes. In that case, name the stashed changes to something that is meaningful to you.
+- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something that is meaningful to you.
 - Select “Apply Stash After Operation”.
 - Click “Stash and Pull”
 
-The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app to your phone.
+The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app on your phone.
 
 The next section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-iaps-version).
 
@@ -180,13 +180,13 @@ The next section is only for those who prefer to use the command line interface 
 Use finder to locate the directory where the Build_iAPS script saved the code. The directory is named after the branch with the date and time for the download:
 
 * Released (main) branch: Downloads/Build_iAPS/iAPS_main-[date-time]/iAPS
-    * example: ~/Downloads/Build_iAPS/iAPS_main-220122-1352/iAPS
+    * Example: ~/Downloads/Build_iAPS/iAPS_main-220122-1352/iAPS
 * Development (dev) branch: Downloads/Build_iAPS/iAPS_dev-[date-time]/iAPS
-    * example: ~/Downloads/Build_iAPS/iAPS_dev-220108-1827/iAPS
+    * Example: ~/Downloads/Build_iAPS/iAPS_dev-220108-1827/iAPS
 
 Use finder to open a Terminal window at the Open-iAPS directory by right-clicking on it and select `New Terminal at Folder`. 
 
-Copy each line below and paste into the terminal window one at a line and hit enter for each line:
+Copy each line below and paste it into the terminal window one at a line and hit enter for each line:
 
 ```
 git stash
@@ -201,15 +201,15 @@ git pull
 git stash pop
 ```
 
-If the final `git stash pop` had errors, you will need to repeat any customizations that you had in your prior code - they are no longer compatible with the updated code.
+If the final `git stash pop` had errors, you will need to repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
 
 The Open-iAPS code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
 
-The targets should be signed and you are ready to build the Open-iAPS app to your phone.
+The targets should be signed, and you will be ready to build the Open-iAPS app on your phone.
 
 ## Verify Open-iAPS Version
 
-Verify the Open-iAPS code was successfully updated by examining the `APP_VERSION` value shown in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version in the Open-iAPS GitHub Releases page.
+Verify the Open-iAPS code was successfully updated by examining the `APP_VERSION` value shown in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Open-iAPS GitHub Releases page.
 
 If you are using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
 
