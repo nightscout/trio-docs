@@ -1,54 +1,72 @@
 # User Interface
 
 ## Main Screen
-<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/4ba25794-3c41-47e0-90c6-4836a01d35fd" width="200" align="left">  <img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/d8833a44-0c7d-4de2-960b-dd0dfcb85f1b" width="200" align="center">
 
 <b> The main screen of Open-iAPS can be divided into three sections: </b>
+
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/7bb90d5d-4183-49ad-a154-269352ee5fa9" width="400"/>
 
 - Status (top)
 - Graphs and Statistics (middle)
 - Actions (bottom)
 
+
 ### Status
+
 The Status section shows your current insulin on board (IOB), carbs on board (COB), blood glucose, pump status, and looping status. 
 The looping indicator will be $`\textcolor{#88868B}{\textsf{grey}}`$ if no data is present. It will be $`\textcolor{#2ED258}{\textsf{green}}`$ when it has been less than 5 minutes since a successful loop cycle. It will turn $`\textcolor{#FF9F03}{\textsf{yellow}}`$ if no loop cycle has been completed for over 5 minutes. If more than 10 minutes go by without a successful loop cycle, the loop circle will turn $`\textcolor{#FF463C}{\textsf{red}}`$. The section to the left of the loop circle shows you the approximate units of insulin left in your pump. If you're using Omnipod, 50+ U means there are more than 50 units of insulin left. Below the insulin left, you will see your pump battery status if you're using a Medtronic pump and the days/hours left if you're using an Omnipod.
+
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/bdbe7040-27a0-4dc0-9ea2-d2cc93a6b176" width="400"/>
 
 Tapping the top of the screen will bring up a History screen with information on changes implemented by the most recent loop cycle. Tapping the pump status will bring you to pump settings.
 
 
 ### Graphs and Statistics
+
 The middle of the screen graphs your current blood sugar data and inputted carbs overlaid with Open-iAPS's insulin delivery and blood sugar predictions.
 
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/e22d468a-eefd-4d9d-bc96-88ffeb526d80" width="400"/>
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/19e80314-b34e-4815-b81f-189d35c2fe39" width="400" align="right"/>
 
 The zero temp ($`\textcolor{#715FEF}{\textsf{ZT}}`$) line predicts where your blood sugar would be if insulin delivery and carb absorption ceased. The $`\textcolor{#2295FA}{\textsf{IOB}}`$ line predicts where blood sugar would be if insulin delivery was ceased and carb absorption was minimal. The unannounced meal ($`\textcolor{#FF8442}{\textsf{UAM}}`$) line predicts how long blood glucose will continue to rise, to dose insulin accordingly. The $`\textcolor{#FDC145}{\textsf{COB}}`$ line predicts the effects of entered carbs on future blood glucose. For more information on prediction lines, see the [OpenAPS documentation.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html)
 
 If enabled, statistics detailing your time in range, coefficient of variance (CV), and average glucose are displayed underneath these graphs. Tapping in this area allows you to change the time interval used to calculate these statistics.
 
 ### Actions
-At the bottom of the screen, you have four action icons:
 
-- Meal bolus
-- Temp Targets
-- Correction Bolus
-- Statistics
-- Settings
+At the bottom of the screen, you have six action icons:
 
-The left icon is the meal bolus option which allows you to enter Carbs and bolus accordingly. If you have "Fat And Protein Conversion" enabled, you will also be provided the option to enter fat and protein content in grams.
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/80845d5d-6384-4de9-9e1f-4b05b99f8d07" width="400"/>
 
-The target icon allows you to set temporary targets. The most common targets are a high target for exercise and a low target for meal preparation. 
+<details>
+<summary> <b>Meal Bolus</b> </summary>
 
-The insulin drop icon allows you to give manual correction boluses. Manually correcting is not recommended if you are using Open-iAPS's SMB and UAM features.
+The Meal Bolus option allows you to enter Carbs and bolus accordingly. If you have "Fat And Protein Conversion" enabled, you will also be provided the option to enter fat and protein content in grams.
+</details>
 
-The rightmost icon allows you to access your Open-iAPS settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
+<details>
+<summary> <b>Temp Target</b> </summary>
 
-```{image} img/mealbolus.png
-:alt: Meal Bolus
-:width: 250px
-```
-```{image} img/temptarget.png
-:alt: Temporary Target
-:width: 250px
-```
+The Temp Target icon allows you to set temporary blood glucose targets. The most common targets are a high target for exercise and a low target for meal preparation. 
+</details>
+
+<details>
+<summary> <b>Bolus</b> </summary>
+
+The Bolus icon allows you to give manual correction boluses. Manually correcting is not recommended if you are using Open-iAPS's SMB and UAM features.
+</details>
+
+<details>
+<summary> <b>Statistics</b> </summary>
+
+The Statistics Icon shows your statistical data in the app.
+</details>
+
+<details>
+<summary> <b>Settings</b> </summary>
+
+The Settings icon allows you to access your Open-iAPS settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
+</details>
 
 ## New Bolus Calculator
 It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and it has been refined and tested by several users.
