@@ -81,7 +81,7 @@ The Open-iAPS algorithm does not consider future carbs. What does this mean? The
 
 > Wait, what!? You have to consider carbs, right? Why else would I add them?
 
-Open-iAPS considers carbs only once absorbed and part of Carbs On Board (COB). But even then, Open-iAPS will only automatically give you extra insulin if your BG is rising. You could enter a million carbs in the future, and Open-iAPS would only give you SMBs once needed.
+Open-iAPS considers carbs only once absorbed and part of Carbs On Board (COB).
 
 > So what's the mealtime strategy then?
 
