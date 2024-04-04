@@ -14,7 +14,7 @@
 ### Status
 
 The Status section shows your current insulin on board (IOB), carbs on board (COB), blood glucose, pump status, and looping status. 
-The looping indicator will be $`\textcolor{#88868B}{\textsf{grey}}`$ if no data is present. It will be $`\textcolor{#2ED258}{\textsf{green}}`$ when it has been less than 5 minutes since a successful loop cycle. It will turn $`\textcolor{#FF9F03}{\textsf{yellow}}`$ if no loop cycle has been completed for over 5 minutes. If more than 10 minutes go by without a successful loop cycle, the loop circle will turn $`\textcolor{#FF463C}{\textsf{red}}`$. The section to the left of the loop circle shows you the approximate units of insulin left in your pump. If you're using Omnipod, 50+ U means there are more than 50 units of insulin left. Below the insulin left, you will see your pump battery status if you're using a Medtronic pump and the days/hours left if you're using an Omnipod.
+The looping indicator will be $`\textcolor{#88868B}{\textsf{grey}}`$ if no data is present. It will be $`\textcolor{#2ED258}{\textsf{green}}`$ when it has been less than 5 minutes since a successful loop cycle. It will turn $`\textcolor{#FF9F03}{\textsf{yellow}}`$ if no loop cycle has been completed for over 5 minutes. If more than 10 minutes go by without a successful loop cycle, the loop circle will turn $`\textcolor{#FF463C}{\textsf{red}}`$. The section to the left of the loop circle shows you the approximate units of insulin left in your pump. If you're using Omnipod, 50+ U means more than 50 units of insulin are left. Below the insulin left, you will see your pump battery status if you're using a Medtronic pump and the days/hours left if you're using an Omnipod.
 
 <img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/bdbe7040-27a0-4dc0-9ea2-d2cc93a6b176" width="400"/>
 
@@ -69,7 +69,7 @@ The Settings icon allows you to access your Open-iAPS settings. The settings scr
 </details>
 
 ## New Bolus Calculator
-It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and it has been refined and tested by several users.
+It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and refined and tested by several users.
 
 ### How to activate the new Bolus Calculator
 The new bolus calculator is not enabled by default. You need to go into Settings -> Bolus Calculator and activate it:
@@ -95,7 +95,7 @@ Start by tapping the fork and knife icon. Select a preset meal or enter carbs (a
 :width: 250px
 ```
 
-The new bolus calculator will open and it will show you three things:
+The new bolus calculator will open, and it will show you three things:
 
 1. Your current prediction lines
 2. A meal summary of the carbs (and fat and protein) you just entered
@@ -106,7 +106,7 @@ The new bolus calculator will open and it will show you three things:
 :width: 250px
 ```
 
-If you tap "Fatty meal" you will see that the bolus recommendation changes according to the override factors you've set up in settings.
+If you tap "Fatty meal," the bolus recommendation will change according to the override factors you've set up in settings.
 
 ```{image} ../resources/img/Calculator_3_Fatty_Meal.png
 :alt: Fatty Meal
@@ -131,8 +131,8 @@ Back in the bolus calculator screen, you can now choose the next action:
 
 1. (Tap "Meal" to go back and edit the meal entry) <b>Not implemented yet.</b>
 2. Tap "Close" to close the calculator. The meal entry will be discarded and deleted, and it will also be removed from Nightscout and Apple Health if you are using those services.
-3. Tap "Continue without bolus" if you want to save the meal entry but you don't want to bolus.
-4. Tap on the "Recommended Bolus" amount to add it as a bolus amount. Finally, tap "Enact Bolus".
+3. Tap "Continue without bolus" if you want to save the meal entry, but you don't want to bolus.
+4. Tap on the "Recommended Bolus" amount to add it to the bolus amount. Finally, tap "Enact Bolus."
 
 ```{image} ../resources/img/Calculator_6_Amount_Selected.png
 :alt: Enact Bolus
