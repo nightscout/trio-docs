@@ -66,11 +66,14 @@ To avoid a second low, you can instruct Open-iAPS not to give any SMBs for a whi
 
 If your BG rises fast and ends up too high, it is usually because the carbs were absorbed before the insulin peaked. If we rule out site issues, illness, etc, the logical approach is to ensure you get enough insulin ahead of the carbs. You can achieve this by increasing your pre-bolus timing for the meal. This gives the insulin time to absorb before the carbs kick in. You can find more information on mealtime strategy [here](../Configuration/transition-qa.md#what-s-all-that-talk-about-changing-the-way-i-think) page.
 
-### Persistent High
+### Persistent High After Meals
 
 **Scenario:** _Your BG gets high after a meal and stays high for a long time. Open-iAPS gives you some SMBs, but not enough to bring you back down._
 
-Open-iAPS gives you the amount of insulin it calculates to bring you back in range. With persistent highs, more is needed. First, rule out the _Fast Rise_ scenario. Then, help Open-iAPS understand that you need more insulin to lower your BG. This can be achieved by reducing your ISF. Some people find that ISF during high BG is different, making it hard to fix persistent highs by adjusting the scheduled ISF settings. Before enabling this feature, please read the chapter on [Dynamic Settings](../settings/configuration/preferences/dynamicsettings.md). Open-iAPS has a feature called _Dynamic ISF_ that will lower the ISF when BG is high/rising, giving you more insulin.
+Open-iAPS calculates the amount of insulin needed to bring you back into range. More insulin is needed when blood glucose remains high after a meal, but Open-iAPS needs corrected settings to make those adjustments. 
+
+- The first adjustment should be to reduce your CR. Reducing your carb ratio will result in more insulin given for the carbs entered.
+- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#enable-dynamic-cr) setting. 
 
 ### Fast Rise, Then Low
 
