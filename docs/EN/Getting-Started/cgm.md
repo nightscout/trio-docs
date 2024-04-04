@@ -5,8 +5,8 @@ CGM selection includes the following:
 * Nightscout
 * xDrip
 * Dexcom G5
-* Dexcom G6
-* Dexcom G7
+* Dexcom G6 / Dexcom ONE
+* Dexcom G7 / Dexcom ONE+
 * Glucose Simulator
 * Libre Transmitter
 * Glucose Direct
@@ -20,11 +20,11 @@ To use xDrip4iOS as a cgm source, you must build it yourself with the same Apple
 
 However, if you are using Dexcom G6 or ONE with xDrip4iOS, you can choose the Dexcom G6 option in Open-iAPS rather than xDrip4iOS and Open-iAPS will intercept the glucose readings even if you're using Shuggah or someone else's TestFlight of xDrip4iOS.
 
-## Dexcom G5/G6 (and ONE)
+## Dexcom G5, G6 and Dexcom ONE
 Open-iAPS can intercept glucose readings between the transmitter and the Dexcom app. If you are using a Dexcom G5, G6, or ONE sensor, tap Configuration CGM to enter your transmitter's 6-digit ID. Dexcom Share Credentials are not necessary. When you switch transmitters, you must delete your current transmitter from Open-iAPS by tapping Configuration CGM, scrolling down, and tapping Delete CGM. Once you do this, you can add the new transmitter with its Transmitter ID.
 
-## Dexcom G7
-As long as the Dexcom G7 app is installed on the same phone, Open-iAPS can intercept its glucose readings. When a new G7 sensor is paired to the Dexcom G7 app, Open-iAPS will automatically start reading it.
+## Dexcom G7 and Dexcom ONE+
+As long as the Dexcom G7 or ONE+ app is installed on the same phone, Open-iAPS can intercept its glucose readings. When a new G7 or ONE+ sensor is paired to the Dexcom app, Open-iAPS will automatically start reading it.
 
 ## Glucose Simulator
 This option should only be used when testing the app and not using it to manage a live person (or animal).
