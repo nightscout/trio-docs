@@ -7,8 +7,7 @@ In this section of the documentation, we'll explain the differences from a user 
 
 ## Coming from AndroidAPS
 AndroidAPS and Open-iAPS are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Open-iAPS, the main algorithm is the same, 
-meaning you can expect Open-iAPS to behave the same way AndroidAPS does. Open-iAPS has some additional features, such as Dynamic ISF and Dynamic CR, which AndroidAPS does not currently have in the main branch. These features are convenient 
-once you get the settings right.
+meaning you can expect Open-iAPS to generally behave the same way AndroidAPS does.
 
 ### What does AndroidAPS have that Open-iAPS doesn't?
 
@@ -20,7 +19,7 @@ once you get the settings right.
 ### What does Open-iAPS have that AndroidAPS doesn't?
 
 * Open-iAPS works on your iPhone and Apple Watch
-* Open-iAPS has dynamic ISF and dynamic CR support in the main branch
+* Open-iAPS has dynamic CR support
 
 ### Should I switch from AndroidAPS to Open-iAPS?
 If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Open-iAPS. If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Open-iAPS.
@@ -71,8 +70,8 @@ If any of those sound familiar, you should consider a switch. As a reminder, you
 2. With UAM and SMB active and properly configured, Open-iAPS will make any necessary corrections. There is no need to add "fake carbs" to make Open-iAPS give insulin, as many Loop users are used to.
 3. Many people with diabetes need more insulin as their BG rises. Because Loop uses constant, pre-set ISF and CR values; it cannot address the unexpected change in sensitivity. With dynamic ISF and dynamic CR enabled and properly configured, Open-iAPS will give enough insulin to lower those highs without user interaction. More aggressive settings might lead to a low. With less aggressive settings, it will take Open-iAPS some time to get BG back in range. The key is to find the effective balance between conservative and aggressive to meet your needs.
 4. Properly configured, Open-iAPS will not give you insulin if you don't need it. A typical issue with Loop is that it stops delivering insulin when BG falls and then gives insulin from the "negative IOB" once BG starts rising again. For some users, this is too much insulin and leads to recurring lows. Properly configured, Open-iAPS will not overcompensate for the rapid BG rise after a low.
-5. Exercise is good for everyone, including people with diabetes. People with insulin-dependent diabetes often struggle with lows during exercise and highs afterward. Open-iAPS has a built-in exercise mode that will reduce basal, ISF, and CR whenever you set a higher temporary BG target. Open-iAPS also has Profile Presets that can help you get the right amount of insulin during exercise.
-6. Illness, menstrual cycle, lazy days, active days, home office days, stressful events...In these situations, the overall insulin need differs from your usual need. Like Loop's Overrides, Open-iAPS has Profiles that can change basal rate, ISF, CR, and target BG within a pre-set timeframe. What Open-iAPS Profiles do that Loop Overrides do not do is provide the option to temporarily disable SMBs and apply adjustments to only basal, basal, and ISF, basal and CR, or all three.
+5. Exercise is good for everyone, including people with diabetes. People with insulin-dependent diabetes often struggle with lows during exercise and highs afterward. Open-iAPS has a built-in exercise mode that will reduce basal and ISF whenever you set a higher temporary BG target. Open-iAPS also has Profile Presets that can help you get the right amount of insulin during exercise. Profiles can also adjust CR, unlike temporary targets.
+6. Illness, menstrual cycle, lazy days, active days, home office days, stressful events... In these situations, the overall insulin need differs from your usual need. Like Loop's Overrides, Open-iAPS has Profiles that can change basal rate, ISF, CR, and target BG within a pre-set timeframe. What Open-iAPS Profiles do that Loop Overrides do not do is provide the option to temporarily disable SMBs and apply adjustments to only basal, basal, and ISF, basal and CR, or all three.
 
 ### What's all that talk about changing the way I think?
 
