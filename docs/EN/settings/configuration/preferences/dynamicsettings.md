@@ -38,7 +38,7 @@ Before enabling this setting, please read the dedicated section on [sigmoid](../
 >**Before enabling Sigmoid:**
 >- Reset Autosens Max to 1.2
 >- Reset Autosens Min to 0.8
->- Set Adjustment Factor between 0.4-0.5, if "Adjust Basal" is enabled
+>- Set Adjustment Factor between 0.4-0.5
 
 ## Weighted Average of TDD. Weight of past 24 hours:
 
