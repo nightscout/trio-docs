@@ -1,34 +1,36 @@
-**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR OPEN-iAPS BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE :)**
+**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR OPEN-iAPS BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE**
 
 # What is Open-iAPS?
-Open-iAPS is an open-source artifical pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
+Open-iAPS is an open-source artificial pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
 
-* Using your personal settings, glucose values, meal inputs and historical data, the app automates insulin delivery
-* This reduces the time you spend managing your diabetes and in many cases, provides better sleep and better glucose control
+* Using your personal settings, glucose values, meal inputs, and historical data, the app automates insulin delivery
+* This reduces the time you spend managing your diabetes and, in many cases, provides better sleep and better glucose control
 
 Before starting with Open-iAPS, you should evaluate your closed-loop options, including:
 
-* Commercial systems such as Medtronic's 780G, Tandem's Control-IQ or Insulet's Omnipod 5
+* Commercial systems such as Medtronic's 780G, Tandem's Control-IQ, or Insulet's Omnipod 5
 * Other open-source applications like Loop and AndroidAPS
 
-Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
+Open-iAPS is not approved by any healthcare authority. You build and run this system at your own risk.
 
 # Getting Started
-Before starting with Open-iAPS, you should have a basic understanding of what carb ratio (CR), insulin sensitivity factor (ISF), and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
+Before starting with Open-iAPS, you should understand [carb ratio (CR)](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
 
-To use Open-iAPS, you are required to build the application from the source code. This does not require substantial technical know-how but is a time consuming process. You may need several sessions to complete your first build.
+To use Open-iAPS, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Open-iAPS acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on "Closed Loop", enabling automatic bolus features, and turning on dynamic features. In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
+Upon installation, you will need to configure your settings appropriately. By default Open-iAPS acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/smbsettings.md#open-iaps-smb-settings) features, and turning on [dynamic features](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
 
-- Enable Closed Loop for automation
-- Increase Max IOB to "average meal bolus + 3x max daily basal"
-- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
-See Configure for more information on Open-iAPS configuration.
+>In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
+>
+>- Enable Closed Loop for automation
+>- Increase Max IOB to "average meal bolus + 3x max daily basal"
+>- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
+>See [Configure](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#device-configuration) for more information on Open-iAPS configuration.
 
 If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
 # Contribution
-Open-iAPS is built by a volunteer community. If you are interested in helping as a programmer, you can help contribute to Open-iAPS, or OpenAPS code base. Open-iAPS is mostly written in SwiftUI. The APS algorithm is written in JS.
+Open-iAPS is built by a volunteer community. If you are interested in helping as a programmer, you can contribute to the Open-iAPS or OpenAPS code base. Open-iAPS is mostly written in SwiftUI, and the OpenAPS algorithm is written in JS.
 
 You can also provide support in online support groups by helping users adjust their settings and troubleshoot common errors.
 
