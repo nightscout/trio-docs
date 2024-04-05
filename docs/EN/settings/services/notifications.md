@@ -6,8 +6,7 @@ Notifications can be enabled/disabled by toggling `Allow Notifications` on/off i
 ## Glucose
 
 ### Show glucose on the app badge
-This will add your current glucose on top of your Open-iAPS icon. \
-<img src="./img/badge.png" width="80px" />
+This will add your current glucose on top of your Open-iAPS icon.
 
 ### Always Notify Glucose
 A notification will be triggered every time your glucose is updated in Open-iAPS.
@@ -25,4 +24,4 @@ Set this to the highest value you want a low glucose notification to be triggere
 Set this to the lowest value you want a high glucose notification to be triggered at.
 
 ## Carbs Required Threshold
-Open-iAPS may predict you at risk of having a low blood sugar event, and will accordingly recommend you consume a suggested amount of carbs. Carbs Required Threshold determines the minimum amount of carbs required before Open-iAPS can send a notification. 
+Open-iAPS may predict a low blood sugar event and recommend consuming a suggested amount of carbs. `Carbs Required Threshold` determines the minimum amount of carbs required before Open-iAPS sends a notification. 
