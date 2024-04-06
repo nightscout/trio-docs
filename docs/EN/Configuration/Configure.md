@@ -1,5 +1,5 @@
 # Device Configuration
-This section covers the first two sections of Open-iAPS settings: [Closed loop](#closed-loop) and [Devices](/Devices.md)
+This section covers the first two sections of Open-iAPS settings: [Closed loop](#closed-loop) and [Devices](./Devices.md)
 
 ## Closed loop
 Closed loop is disabled by default. This means Open-iAPS cannot make adjustments autonomously. Until you enable closed loop, the system relies on your approval of its actions.
@@ -11,7 +11,7 @@ Closed loop allows the system to make insulin adjustments automatically. Your en
 ## Settings
 **I've been using Loop. Can I just copy my settings?**
 
-***No.*** Users coming from Loop usually have adjusted their ISF and CR settings to compensate for fluctuations in insulin needs throughout the day. When using those settings for Open-iAPS, the algorithm is also adjusting to compensate for the fluctuations, and these may result in over or under-dosing. Please go through the steps of monitoring Open-iAPS predictions and adjust your settings accordingly. You should also read the section on [transitioning from other closed-loop solutions](transition-qa.md).
+***No.*** Users coming from Loop usually adjust their ISF and CR settings to compensate for fluctuations in insulin needs throughout the day. When using those settings for Open-iAPS, the algorithm also adjusts to compensate for the fluctuations, which may result in over- or under-dosing. Please go through the steps of monitoring Open-iAPS predictions and adjust your settings accordingly. You should also read the section on [transitioning from other closed-loop solutions](transition-qa.md).
 
 :::{important}
 ***Remember that everyone's diabetes is different, and there is no one-size-fits-all, so take the time to optimize your settings for the Oref algorithm.***
