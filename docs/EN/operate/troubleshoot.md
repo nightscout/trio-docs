@@ -3,10 +3,11 @@
 
 ## Morning IOB
 
-> [!TIP]
->  - **Check your morning IOB:**
->    - if it is positive, increase your basal rates
->    - if it is negative, decrease your basal rates.
+:::{tip}
+  - **Check your morning IOB:**
+    - if it is positive, increase your basal rates
+    - if it is negative, decrease your basal rates.
+:::
 
 One of the easiest ways of optimizing your basal rates is by checking your IOB when you wake up. Open-iAPS uses your basal profile as its net zero. If Open-iAPS needs to give you more insulin overnight than your set basal rates, your IOB will be positive. Likewise, it will be negative if you need less insulin overnight than your current basal rates. You can adjust your basal profile by 10% and reassess the impact the following morning. Below are some Nightscout images showing the impact of changing basal rates on IOB. You can also view your IOB on Open-iAPS itself.
 
@@ -24,9 +25,10 @@ Note that Open-iAPS does adjust your basal profile with autotune, but this syste
 
 ## Site Change or Failure
 
-> [!NOTE]
->  - Pump changes can temporarily impact control. 
->  - Pump failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
+:::{note}
+  - Pump changes can temporarily impact control. 
+  - Pump failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
+:::
 
 Pump site changes can negatively impact your immediate glycemic control. Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity. Open-iAPS should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
 
@@ -36,9 +38,10 @@ When you find out your pump has failed, immediately open loop to prevent Open-iA
 
 ## Low Treatment
 
-> [!TIP]
->  - Enter carbs for treatment into Open-iAPS but do not bolus for it
->  - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
+:::{tip}
+  - Enter carbs for treatment into Open-iAPS but do not bolus for it
+  - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
+:::
 
 Low blood sugar events can happen from time to time, but you will typically not require as many carbs to treat your lows as opposed to MDI or using a pump. When you treat a low, you should enter the carbs consumed into the Open-iAPS system so its autotune functionality can make better choices on your ICR, ISF, and basal rates.
 
@@ -46,19 +49,22 @@ If you experience a roller coaster pattern of highs and lows after treatment, yo
 
 ## Rebound Lows
 
-> [!NOTE]
-> - Treating lows with fast carbs can give a fast BG rise
-> - Under certain circumstances, Open-iAPS might react to the fast BG rise by giving insulin, leading to another low
+:::{note}
+ - Treating lows with fast carbs can give a fast BG rise
+ - Under certain circumstances, Open-iAPS might react to the fast BG rise by giving insulin, leading to another low
+:::
 
 To avoid a second low, you can instruct Open-iAPS not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](./temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
 
-> [!WARNING]
-> - **Setting a temporary target is not the same as disconnecting the pump.** Open-iAPS will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment.
+:::{warning}
+ - **Setting a temporary target is not the same as disconnecting the pump.** Open-iAPS will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment.
+:::
 
 ## Highs after meals
 
-> [!IMPORTANT]
+:::{important}
 **It is _normal_ for BG to rise after a meal. This happens to everyone, with or without diabetes. The key is to avoid very high BG levels and bring them back into range as soon as possible.**
+:::
 
 ### Fast Rise
 
