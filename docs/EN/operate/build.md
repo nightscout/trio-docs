@@ -21,13 +21,13 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`
 * `Identifiers` will be:
-    * `ru.artpancreas.TEAMID.FreeAPS`
-    * `ru.artpancreas.TEAMID.FreeAPS.watchkitapp`
-    * `ru.artpancreas.TEAMID.FreeAPS.watchkitapp.watchkitextension`
+    * `org.nightscout.TEAMID.openiaps`
+    * `org.nightscout.TEAMID.openiaps.watchkitapp`
+    * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
 * The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
 * You must add this `App Group` to all 3 identifiers
 * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
-* In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `ru.artpancreas.TEAMID.FreeAPS`
+* In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
 
 ## Update Open-iAPS with GitHub
 
@@ -95,7 +95,7 @@ The download is placed in your `Downloads` folder in a directory called `BuildxD
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace branch_name with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -167,7 +167,7 @@ The last steps are only relevant if you made any changes to the code:
 
 The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app on your phone.
 
-The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-iaps-version).
+The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-open-iaps-version).
 
 ### Update Open-iAPS with CLI
 
