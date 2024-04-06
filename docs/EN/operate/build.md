@@ -1,20 +1,14 @@
 # Build and Update
 
-The Open-iAPS app can be built with two methods:
-
-* [Build Open-iAPS with GitHub](#build-iaps-with-github) using a browser on any computer or tablet
-* [Build Open-iAPS with Script](#build-iaps-with-script) using a Mac with Xcode
-
-The Open-iAPS app can be updated to the latest release or to a development branch when you choose.
-
-* [Update Open-iAPS with GitHub](#update-iaps-with-github) using a browser on any computer or tablet
-* [Update Open-iAPS with Xcode](#update-iaps-with-xcode) using a Mac with Xcode
+**Jump to...**\
+[Build with GitHub](#build-iaps-with-github) | [Build with Xcode](#build-iaps-with-script)\
+[Update with GitHub](#update-iaps-with-github) | [Update with Xcode](#update-iaps-with-xcode)
 
 ## Build Open-iAPS with GitHub
 
 The instructions for using a browser and GitHub to build the Open-iAPS app are found in the Open-iAPS repository.
 
-* [GitHub Build Instructions](https://github.com/Artificial-Pancreas/iAPS/blob/main/fastlane/testflight.md)
+* [GitHub Build Instructions](https://github.com/nightscout/Open-iAPS/blob/main/fastlane/testflight.md)
 * The instructions at the link above are complete and include the details found beneath the LoopDocs links below.
 
 If those instructions are too sparse for you, look at the LoopDocs instructions, which are very verbose. Between the two, you should be able to figure things out:
@@ -24,7 +18,7 @@ If those instructions are too sparse for you, look at the LoopDocs instructions,
 
 If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):
 
-* Fork from: [https://github.com/Artificial-Pancreas/iAPS](https://github.com/Artificial-Pancreas/iAPS)
+* Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`
 * `Identifiers` will be:
     * `ru.artpancreas.TEAMID.FreeAPS`
@@ -41,7 +35,7 @@ Open your fork at your GitHub username.
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
-* Before building, you can [Verify Open-iAPS Version](#verify-iaps-version)
+* Before building, you can [Verify Open-iAPS Version](#verify-open-iaps-version)
 
 If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
 
@@ -128,7 +122,7 @@ Once each option completes, you are returned to the top menu, so must select Mai
 
 The recommendation is to use the Xcode Source Control features to update your code.
 
-If you prefer the command line interface, skip ahead to [Update Open-iAPS with CLI](#update-iaps-with-cli).
+If you prefer the command line interface, skip ahead to [Update Open-iAPS with CLI](#update-open-iaps-with-cli).
 
 ### Update Open-iAPS with Source Control
 
