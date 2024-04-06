@@ -17,28 +17,31 @@ These devices are compatible with iOS 16 and newer iOS.
 
 #### iOS version and Developer Mode
 
-<b>Find your iOS version</b>
+**Find your iOS version**
 
 Your phone's iOS version can be found under the phone Settings -> General -> About display. The iOS number is found on the `Software Version` line. When you start looping, you should delay iOS updates until others have confirmed the software functions as normal on the newest update.
 
-<b>Developer Mode - Mac build</b>
+**Developer Mode - Mac build**
 
 With iOS 16 and watchOS 9, Apple added a feature called "Developer Mode." This feature must be enabled on your iPhone and Apple Watch to allow the installation of Open-iAPS. To learn more, click on this link: [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-When you build Open-iAPS on your phone from Xcode directly, you need to have Developer Mode enabled. This is also a requirement to use the Open-iAPS app on a watch paired to your phone.
+When you build Open-iAPS on your phone from Xcode directly, you need to have Developer Mode enabled. This is also required in order to use the Open-iAPS app on a watch paired to your phone.
 
-
-!!! info "Developer Mode with iOS 16, watchOS 9"
+:::{attention}
+"Developer Mode with iOS 16, watchOS 9"
     If you already have Open-iAPS, built with Xcode on a Mac, on your phone/watch when you update to iOS 16/watchOS 9, you will be told that Open-iAPS requires Developer Mode to run.
     
-    You will not be able to run Open-iAPS on your phone (or watch) until you have enabled Developer Mode on the device(s).
+    You cannot run Open-iAPS on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
-    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
+    ![phone message if trying to run Xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
     {align="center"}
+:::
 
 #### Automatic Updates
 
-Apple provides frequent updates to the iOS. Often, these updates include critical security patches in addition to improved new features. Updates to iOS <i>could</i> make Open-iAPS stop working. <b>Minor</b> updates (like 16.5 -> 16.5.1) are usually not an issue. <b>Major</b> updates (like 16.x -> 17.x) often contain changes that Open-iAPS developers need to include in the app.
+Apple provides frequent updates to the iOS. These updates often include critical security patches and improved new features. Updates to iOS _could_ make Open-iAPS stop working.\
+**Minor** updates (like 16.5 -> 16.5.1) are usually not an issue.\
+**Major** updates (like 17.x -> 18.x) often contain changes that Open-iAPS developers need to include in the app.
 
 #### Turn off Automatic Updates!
 
@@ -47,7 +50,7 @@ Apple provides frequent updates to the iOS. Often, these updates include critica
     * It is rare, but iOS updates have caused Open-iAPS to stop working until other updates were made and Open-iAPS was rebuilt on that phone
 * Turn off automatic updates so you can choose when to update your phone and avoid being caught without a working Open-iAPS app
 * Google the instructions for your device:
-    1. Configure your phone to automatically download the updates
+    1. Configure your phone to download the updates automatically
     1. Choose to perform the installation of the updates manually
 
 #### Battery Health
@@ -57,8 +60,10 @@ Make sure your phone's battery is functioning optimally. Your phone will become 
 * Make sure a charger and cord are in your diabetes supplies
 * Consider buying a battery pack, keep it charged, and add it to your travel bag
 
-!!! tip "Low Power Mode"
+:::{admonition} **Low Power Mode**
+:class: tip
     Some people have reported that Open-iAPS continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others have reported that they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low-power mode. Otherwise, the best practice is to avoid Low-Power Mode.
+:::
 
 ### Apple Watch
 
