@@ -1,12 +1,14 @@
 # Insulin Sensitivity Factor
->[!IMPORTANT]
->- ISF is the most problematic setting for new loopers.
->- ISF can be transferred from your pump to start.
->- Adjust ISF by performing a correction and seeing if you reached your glucose target, or by observing autotune.
+:::{admonition} Highlights
+:class: tip
+ - ISF is the most problematic setting for new loopers.
+ - ISF can be transferred from your pump to start.
+ - Adjust ISF by performing a correction and seeing if you reached your glucose target, or by observing autotune.
+:::
 
 ISF, also called insulin correction factor (ICF), refers to the amount of blood glucose in mmol/L (or mg/dL, depending on your settings) one unit of insulin can neutralize.
 
-Example: Bill has a 1:4 ISF (this is also written in shorthand as an ISF of 4 mmol/L/U (72 mg/dL/U)). This means 1 U of rapid insulin will bring Bill's sugar down 4 mmol/L (72 mg/dL).
+Example: Bill has a 1:4 ISF (this is also written in shorthand as an ISF of 4 mmol/L/U (72 mg/dL/U)). This means 1 U of rapid insulin will bring Bill's sugar down by 4 mmol/L (72 mg/dL).
 
 Like basal rates, ISF is not used verbatim by Open-iAPS but is modified over time as data on the patient is collected. Still, setting ISF as close to accurate as possible is important for Open-iAPS to function well.
 
