@@ -1,12 +1,13 @@
 # Autosens, Dynamic ISF/ICR, and Adjust Basal
 
-**Highlights**
+:::{admonition} Highlights
+:class: tip
 - Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
 - Bias the calculated ISF/CR/Basal rates towards more or less aggressive values by increasing or decreasing the adjustment factor accordingly.
 - Adjustments are limited by autosens max/min.
-
+:::
 :::{note}
-Examples in this section employ the default logarithmic formula for calculations. [See the sigmoid section for information regarding the use of the sigmoid formula.](sigmoid.md)
+This section's examples employ the default logarithmic formula for calculations. For information regarding the use of the sigmoid formula, see the [sigmoid section](./sigmoid.md).
 :::
 
 ## Autosens Mode
