@@ -1,11 +1,13 @@
 # Dynamic Settings
->[!IMPORTANT]
->Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) before continuing.
+:::{attention}
+Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) before continuing.
+:::
 
->[!TIP]
->- _Dynamic ISF and Dynamic CR:_ Enable for more responsive changes to your current blood glucose and TDD. 
->- _Adjustment Factor:_ A higher adjustment factor will result in a lower ISF/CR (increase in insulin dosage), and a lower adjustment factor will give a higher ISF/CR (decrease in insulin dosage). Adjust by 0.1 steps as needed.
->- _Adjust basal:_ Enable if your basal rates are otherwise not being adjusted adequately.
+:::{tip}
+ - _Dynamic ISF and Dynamic CR:_ Enable for more responsive changes to your current blood glucose and TDD. 
+ - _Adjustment Factor:_ A higher adjustment factor will result in a lower ISF/CR (increase in insulin dosage), and a lower adjustment factor will give a higher ISF/CR (decrease in insulin dosage). Adjust by 0.1 steps as needed.
+ - _Adjust basal:_ Enable if your basal rates are otherwise not being adjusted adequately.
+:::
 
 ## Dynamic ISF
 
@@ -22,10 +24,11 @@ Adjustment Factor (AF) allows one to bias the Dynamic ISF and Dynamic CR (if the
 **Example:** _Bill has Dynamic CR on. His Dynamic CR is calculated to be 1:4 by Open-iAPS based on his current blood glucose, TDD, and his set ISF. But Bill decides to set his AF to 1.2 because he has found recently that Dynamic CR has not been giving him aggressive enough numbers. Open-iAPS acts accordingly, increasing his CR to something above 1:4 instead (ex: 1:3.5)._
 This is a simplified example. See the section on Dynamic CR for more information.
 
->[!IMPORTANT]
->***AF is not a safety limiter***
->- Increasing AF means you are telling the system that ALL dynamically calculated ISF/CR values have not been aggressive enough, and you want the system to make them more aggressive.
->- Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them lower.
+:::{caution}
+***Adjustment Factor (AF) is not a safety limiter***
+ - Increasing AF means you are telling the system that ALL dynamically calculated ISF/CR values have not been aggressive enough, and you want the system to make them more aggressive.
+ - Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them lower.
+:::
 
 ## Sigmoid Function
 Dynamic CR and ISF use a logarithmic function to perform calculations by default.
@@ -34,11 +37,12 @@ This option replaces the logarithmic function with a sigmoid function for Dynami
 
 Before enabling this setting, please read the dedicated section on [sigmoid](../concepts/sigmoid.md). 
 
->[!CAUTION]
->**Before enabling Sigmoid:**
->- Reset Autosens Max to 1.2
->- Reset Autosens Min to 0.8
->- Set Adjustment Factor between 0.4-0.5
+:::{warning}
+**Before enabling Sigmoid:**
+ - Reset Autosens Max to 1.2
+ - Reset Autosens Min to 0.8
+ - Set Adjustment Factor between 0.4-0.5
+:::
 
 ## Weighted Average of TDD. Weight of past 24 hours:
 
