@@ -1,8 +1,8 @@
 ## Evaluate Basal Tips
 
-> [!CAUTION]
-> <i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
-
+:::{warning}
+<i>This is not medical advice. Please understand the changes you are making carefully, and always be sure to exercise caution.</i>
+:::
 ### Nightscout
 
 Nightscout (NS) is one tool that will provide more info for analysis. You will want to focus on the amount of IOB at the valleys. It should rise with negative IOB and drop with positive. Adjust gradually to make that happen most of the time. Changing basal for the previous several hours by 0.05 U/h will typically change IOB by 0.2 - 0.3 units. This will depend on DIA.
