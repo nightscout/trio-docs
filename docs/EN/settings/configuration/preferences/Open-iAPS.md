@@ -1,7 +1,8 @@
 # Open-iAPS
 
->[!IMPORTANT]
->- **Recommended Insulin Fraction:** _Increase to reduce initial spiking with meals; there is a risk of lows if you miscount carbs or your ICR is too aggressive_
+:::{important}
+- **Recommended Insulin Fraction:** _Increase to reduce initial spiking with meals; there is a risk of lows if you miscount carbs or your CR is too aggressive_
+:::
   
 ## Glucose Units
 Allows you to toggle between mmol/L and mg/dL blood glucose units.
@@ -9,8 +10,9 @@ Allows you to toggle between mmol/L and mg/dL blood glucose units.
 ## Remote Control
 Allows for remote control of open-iAPS using Nightscout.
 
->[!CAUTION]
->**Duplicate Delivery Risk**
+:::{caution}
+**Duplicate Delivery Risk**
+:::
 
 ***Please read before using remote features***
 
@@ -35,7 +37,7 @@ To enter carbs, select the "carb correction" event type. Fill in the required bl
 To configure loop status, pump, or to bolus:
 
 1. Select the "announcement" event type.
-2. For "entered by" enter `remote` (Before Open-iAPS-main v2.3.3 it was `freeaps-x-remote` instead)
+2. For "entered by" enter `remote` (Before Open-iAPS-main v1.0.0 it was `freeaps-x-remote` instead)
 3. In additional notes, state one of the following options:
 
 * To bolus, enter `bolus:(amount)` (ex: `bolus:0.5`).
