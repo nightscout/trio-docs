@@ -79,7 +79,7 @@ You can also provide support in online support groups by helping users adjust th
 ./settings/configuration/carbratios.md
 ./settings/configuration/insulinsensitivites.md
 ./settings/configuration/pumpsettings.md
-./settings/configuration/targetranges.md
+./settings/configuration/targetglucose.md
 ./settings/devices/cgm.md
 ./settings/devices/pump.md
 ./settings/services/applehealth.md
@@ -98,7 +98,7 @@ You can also provide support in online support groups by helping users adjust th
 ./settings/configuration/concepts/sigmoid.md
 ./settings/configuration/concepts/asmb-uam.md
 ./settings/configuration/preferences/dynamicsettings.md
-./settings/configuration/preferences/freeapsx.md
+./settings/configuration/preferences/Open-iAPS.md
 ./settings/configuration/preferences/mainsettings.md
 ./settings/configuration/preferences/othersettings.md
 ./settings/configuration/preferences/smbsettings.md
