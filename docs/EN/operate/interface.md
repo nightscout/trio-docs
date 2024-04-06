@@ -69,7 +69,7 @@ The Settings icon allows you to access your Open-iAPS settings. The settings scr
 </details>
 
 ## New Bolus Calculator
-It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? All of these considerations have been part of the bolus calculator for a while, but it has still raised lots of questions. Because of that, a new bolus calculator has been developed by one of the community members and refined and tested by several users.
+It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? These considerations have been part of the bolus calculator for a while, but it has still raised many questions. Because of that, a new bolus calculator has been developed by one of the community members and refined and tested by several users.
 
 ### How to activate the new Bolus Calculator
 The new bolus calculator is not enabled by default. You need to go into Settings -> Bolus Calculator and activate it:
@@ -88,7 +88,7 @@ When you activate it you will see some new settings turn up. The intended behavi
 
 ### How to use the new Bolus Calculator
 
-Start by tapping the fork and knife icon. Select a preset meal or enter carbs (and fat and protein if you want). Tap Continue and the new bolus calculator will open.
+Start by tapping the fork and knife icon. Select a preset meal or enter carbs (and fat and protein if you want). Tap Continue, and the new bolus calculator will open.
 
 ```{image} ../resources/img/Calculator_1_Add_Carbs.png
 :alt: Add Carbs
@@ -117,7 +117,7 @@ If you tap "Calculations" you will see how Open-iAPS has come up with the bolus 
 
 1. The amount of carbs entered
 2. In the green circle, you will see the relevant profile or dynamic settings: Carb Ratio, ISF, Target Glucose, Basal, and fraction/override.
-3. In the orange circle, you will see the relevant current values: Glucose, IOB, Glucose Trend, and COB. You will also see how each of these values affects the recommendation's outcome. In this screenshot, current glucose is a bit high (12.6 mmol/L or 226 mg/dl), which leads to an extra 1,43 Units of insulin in the calculation. The current IOB removes 0,08U, and the BG trend adds 0,17U.
+3. In the orange circle, you will see the relevant current values: Glucose, IOB, Glucose Trend, and COB. You will also see how each of these values affects the recommendation's outcome. In this screenshot, the current glucose is a bit high (12.6 mmol/L or 226 mg/dl), which leads to an extra 1.43 Units of insulin in the calculation. The current IOB removes 0.08U, and the BG trend adds 0.17U.
 4. The blue circle shows the calculation result, including the fraction/override you've set up in settings.
 
 ```{image} ../resources/img/Calculator_4_Calculation.png
@@ -131,7 +131,7 @@ Back in the bolus calculator screen, you can now choose the next action:
 
 1. (Tap "Meal" to go back and edit the meal entry) <b>Not implemented yet.</b>
 2. Tap "Close" to close the calculator. The meal entry will be discarded and deleted, and it will also be removed from Nightscout and Apple Health if you are using those services.
-3. Tap "Continue without bolus" if you want to save the meal entry, but you don't want to bolus.
+3. Tap "Continue without bolus" if you want to save the meal entry but don't want to bolus.
 4. Tap on the "Recommended Bolus" amount to add it to the bolus amount. Finally, tap "Enact Bolus."
 
 ```{image} ../resources/img/Calculator_6_Amount_Selected.png
@@ -139,7 +139,7 @@ Back in the bolus calculator screen, you can now choose the next action:
 :width: 250px
 ```
 
-If you want to manually override the Bolus amount, you can tap "Bolus" to change it. Only the amount in the "Bolus" field will be enacted.
+If you want to override the bolus amount manually, you can tap "Bolus" to change it. Only the amount in the "Bolus" field will be enacted.
 
 ```{image} ../resources/img/Calculator_7_Amount_Edited.png
 :alt: Override Bolus
