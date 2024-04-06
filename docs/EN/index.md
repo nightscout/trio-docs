@@ -1,4 +1,8 @@
+:::{admonition} Work-In-Progress
+:class: caution
+
 **PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR OPEN-iAPS BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE**
+:::
 
 # What is Open-iAPS?
 Open-iAPS is an open-source artificial pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
