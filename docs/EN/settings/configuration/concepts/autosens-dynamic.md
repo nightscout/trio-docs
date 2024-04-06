@@ -5,13 +5,15 @@
 - Bias the calculated ISF/CR/Basal rates towards more or less aggressive values by increasing or decreasing the adjustment factor accordingly.
 - Adjustments are limited by autosens max/min.
 
->[!NOTE]
->  Examples in this section employ the default logarithmic formula for calculations. [See the sigmoid section for information regarding the use of the sigmoid formula.](sigmoid.md)
+:::{note}
+Examples in this section employ the default logarithmic formula for calculations. [See the sigmoid section for information regarding the use of the sigmoid formula.](sigmoid.md)
+:::
 
 ## Autosens Mode
 
->[!IMPORTANT]
->Autosens is on by default in Open-iAPS
+:::{important}
+Autosens is on by default in Open-iAPS
+:::
 
 Auto-sensitivity (Autosens) reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative temporary adjustments to your basal rates, blood sugar target, and ISF.
 
@@ -22,17 +24,19 @@ Autosens then takes the more conservative calculated sensitivity. In this exampl
 
 If you are using Autotune, Autosens will use your calculated autotune ICR, ISF, and basal rates as the baseline rather than your set values.
 
->[!NOTE]
->Autosens does not look at meals and make adjustments to your ICR. It only looks at your sensitivity to insulin and adjusts ISF/basal rates/blood sugar targets accordingly.
+:::{note}
+Autosens does not look at meals and make adjustments to your ICR. It only looks at your sensitivity to insulin and adjusts ISF/basal rates/blood sugar targets accordingly.
+:::
 
 ## Dynamic ISF
 Autosens was thought by some to be too conservative and slow at making changes. Dynamic ISF is a drop-in replacement for Autosens's ISF calculation formula, with the goal of making it more aggressive. If you find that you have high ISF variability throughout the day and autosens do not provide sufficient control, you can turn this feature on.
 
 Dynamic ISF takes into consideration a new variable called "Adjustment Factor," which affects its aggressiveness. If dynamic ISF is too aggressive, you can decrease this number by 0.05-0.1 points to make it more meek. Likewise, increase this number if you still feel dynamic ISF is not aggressive enough.
 
->[!NOTE]
-> - Dynamic ISF is temporarily disabled, and the system reverts to autosens if either "High Temptarget Raises Sensitivity" or "Exercise Mode" is enabled and a high temporary target has been set by the user.
-> - While Dynamic ISF is inherently more aggressive, it also provides the user greater control via the adjustment factor as opposed to autosens. You can alter the adjustment factor to make Dynamic ISF less aggressive than the calculated autosens values. 
+:::{note}
+ - Dynamic ISF is temporarily disabled, and the system reverts to autosens if either "High Temptarget Raises Sensitivity" or "Exercise Mode" is enabled and a high temporary target has been set by the user.
+ - While Dynamic ISF is inherently more aggressive, it also provides the user greater control via the adjustment factor as opposed to autosens. You can alter the adjustment factor to make Dynamic ISF less aggressive than the calculated autosens values. 
+:::
 
 ### Advanced Information
 Autosens determines a ratio (autosens.ratio) and alters your ISF in the following manner:
@@ -67,11 +71,11 @@ This ***experimental*** feature alters the carb ratio (CR) based on current bloo
 
 If you find your CR changes dramatically day to day and Open-iAPS is not providing adequate bolus recommendations, you can test this feature. Note that Open-iAPS already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
 
->[!NOTE]
->    If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive:
->
->    - new.autosens.ratio = (autosens.ratio - 1)/2 + 1 
-    
+:::{note}
+If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive:
+
+    - new.autosens.ratio = (autosens.ratio - 1)/2 + 1 
+:::
 
 ## Adjust Basal
 Adjust basal replaces Autosens's formula for adjusting basal rates with one dependent on the total daily dose (TDD) of insulin. Turn on this setting to give basal adjustments more agility. Keep this setting off if your basal needs are not highly variable.
