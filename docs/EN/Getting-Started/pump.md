@@ -5,20 +5,17 @@ There are three pumps compatible with Open-iAPS:
 * Omnipod DASH pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
+* DanaRS (_Coming Soon!_)
 </b>
-
-Time Estimate for this section:
-
-* Omnipod users: 1 minute
-* Medtronic users: 10 minutes
 
 No other pumps work with Open-iAPS at this time, but other open-source closed-loop options, such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/), support other pumps.
 
 ### Omnipod Pumps
 
-<i>Reminder and Disclaimer</i>
-
-<i>The use of Omnipod pumps with Open-iAPS is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Open-iAPS build, setup, or operation. You are fully responsible for your use of Open-iAPS and do so at your own risk. Please read these documents and familiarize yourself with Open-iAPS before using the app.</i>
+:::{admonition} Reminder and Disclaimer
+:class: note
+The use of Omnipod pumps with Open-iAPS is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Open-iAPS build, setup, or operation. You are fully responsible for your use of Open-iAPS and do so at your own risk. Please read these documents and familiarize yourself with Open-iAPS before using the app.
+:::
 
 #### Omnipod Eros
 
@@ -75,13 +72,13 @@ The firmware on all 515/715 and 522/722 model Medtronic pumps is compatible with
 * Medtronic Worldwide Veo 554 or 754 (firmware 2.6A or lower)
 * Medtronic Canadian/Australian Veo 554 or 754 (firmware 2.7A or lower)
 
-To find your pump’s firmware you will need to power it on. If the pump has not been powered on for some time (i.e., it has been in storage without a battery for a while), it will run through a start-up count, and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves on to other information displays.  
+To find your pump’s firmware, you will need to power it on. If the pump has not been powered on for some time (i.e., it has been in storage without a battery for a while), it will run through a start-up count, and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves on to other information displays.  
 
 If the pump has been active recently or has a reservoir installed, follow these steps:
 
 1. Press the ![esc](img/esc.png) button on your pump.  
 
-2. Scroll down with the ![light](img/light_button.png) button to the bottom of the status display.  
+2. Scroll down to the bottom of the status display by clicking the ![light](img/light_button.png) button.  
 
 3. Read the bottom line of the display.
 
@@ -132,9 +129,9 @@ If you choose to purchase from a remote or unknown seller, here are some tips fo
 
 * Ask for photos of the pump. Check the serial number on the backside of the pump and verify it matches the pump's serial number shown in the display menu. Ask for a short video of the pump or at least a photo of the pump turned on so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps with cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
 
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently); however, some people have successfully repaired those pumps, as shown in that link. Just to make sure you know, it should be checked in advance.
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error). Those pumps will generally not work (or only work intermittently); however, some people have successfully repaired those pumps, as shown in that link. Just to make sure you know, it should be checked in advance.
 
-* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
+* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs).
 
 * Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $10.40 domestically in the US and provides tracking. Ask the seller to add some packing protection around the pump, such as bubble wrap, to keep it safe during shipping. Ensure you get a tracking number within a reasonable period after you have paid.  
 
@@ -149,7 +146,3 @@ Red flags that may indicate a scam:
 #### Pump Supplies
 
 Medtronic will not typically sell pump supplies directly to customers who have yet to purchase a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, ask for help from friends to try a variety of infusion sets before purchasing an entire 90-day supply of any type in particular.
-
-<b> Next Step: Compatible CGM</b>
-
-It is time to check if you have a [Compatible CGM](../settings/devices/cgm.md).
