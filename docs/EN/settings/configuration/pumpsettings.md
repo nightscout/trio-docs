@@ -1,9 +1,11 @@
 # Pump Settings
->[!IMPORTANT]
->- Max Basal = 4x max daily basal
->- Max Bolus = Max bolus you give for a meal
->- Max Carbs = Maximum carbs allowed by a single entry
->- DIA = Duration of Insulin Action (typically 7 hours)
+:::{admonition} Highlights
+:class: tip
+- Max Basal = 4x max daily basal
+- Max Bolus = Max bolus you give for a meal
+- Max Carbs = Maximum carbs allowed by a single entry
+- DIA = Duration of Insulin Action (typically 7 hours)
+:::
 
 ## Delivery Limits
 These are safety limiters for Open-iAPS. Note that Open-iAPS will prevent you from entering anything higher than these limits, but it won't alert or notify you about it. 
@@ -26,7 +28,8 @@ This is the maximum amount of carbs allowed in a single entry by Open-iAPS. If y
 Note that, for now, this setting does not limit the maximum number of carbs that can be added via Nightscout or the watch app.
 
 ## Duration of Insulin Action
->[!CAUTION]
->It is not advised to decrease this setting
+:::{warning}
+It is not advised to decrease this setting
+:::
 
 Duration of insulin action (DIA) affects Open-iAPS calculations through its impact on insulin on board (IOB). The default DIA of 5 hours is likely too low and can cause insulin stacking. Increasing to 7 hours should suit most users. For more information on DIA in loop systems, read [this](https://www.diabettech.com/insulin/why-we-are-regularly-wrong-in-the-duration-of-insulin-action-dia-times-we-use-and-why-it-matters/) from Tim Street.
