@@ -1,8 +1,10 @@
 # Visualization and Monitoring
->[!NOTE]
->- Nightscout is optional but encouraged
->- Nightscout is a useful tool for data analysis and followers
->- Create a Nightscout server and input your URL and API_SECRET in Open-iAPS. Test the connection and enable "Allow Uploads."
+:::{admonition} Highlights
+:class: tip
+- Nightscout is optional but encouraged
+- Nightscout is a useful tool for data analysis and followers
+- Create a Nightscout server and input your URL and API_SECRET in Open-iAPS. Test the connection and enable "Allow Uploads."
+:::
 
 ## Nightscout Introduction
 
