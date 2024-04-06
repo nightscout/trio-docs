@@ -1,8 +1,8 @@
 # Build and Update
 
 **Jump to...**\
-[Build with GitHub](#build-iaps-with-github) | [Build with Xcode](#build-iaps-with-script)\
-[Update with GitHub](#update-iaps-with-github) | [Update with Xcode](#update-iaps-with-xcode)
+Build with [GitHub](#build-iaps-with-github) | [Xcode](#build-iaps-with-script)\
+Update with [GitHub](#update-iaps-with-github) | [Xcode](#update-iaps-with-xcode)
 
 ## Build Open-iAPS with GitHub
 
