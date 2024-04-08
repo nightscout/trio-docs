@@ -5,17 +5,23 @@
 :::
 
 # What is Open-iAPS?
-Open-iAPS is an open-source artificial pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
+Open-iAPS is an automated insulin delivery system for iOS based on the OpenAPS algorithm with [adaptations for Open-iAPS](https://github.com/nightscout/open-iaps-oref).
 
-* Using your personal settings, glucose values, meal inputs, and historical data, the app automates insulin delivery
-* This reduces the time you spend managing your diabetes and, in many cases, provides better sleep and better glucose control
+The project started as Ivan Valkou's FreeAPS X implementation of the OpenAPS algorithm for iPhone and later forked and rebranded as iAPS.
+Since then, many developers have contributed substantial work, leading to a range of new features and enhancements.
 
-Before starting with Open-iAPS, you should evaluate your closed-loop options, including:
+Following the release of version 3.0.0, the project's direction significantly changed due to differing views on development, open source, and peer review. This led to the separation from the [Artificial-Pancreas/iAPS](https://github.com/Artificial-Pancreas/iAPS) repository and the birth of Open-iAPS as a distinct entity. This transition marks the project's new phase, symbolizing its evolution and the collaborative development's dynamic nature.
+
+Open-iAPS continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from its community.
+
+Before starting with Open-iAPS, you should evaluate all your closed-loop options, including:
 
 * Commercial systems such as Medtronic's 780G, Tandem's Control-IQ, or Insulet's Omnipod 5
-* Other open-source applications like Loop and AndroidAPS
+* Other open-source applications like [Loop](https://loopkit.github.io/loopdocs/) and [AndroidAPS](https://androidaps.readthedocs.io/)
 
-Open-iAPS is not approved by any healthcare authority. You build and run this system at your own risk.
+:::{warning}
+Open-iAPS is a DIY, open-source community project. It has not been evaluated by any regulatory agency and is for use at your own risk.
+:::
 
 # Getting Started
 Before starting with Open-iAPS, you should understand [carb ratio (CR)](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
