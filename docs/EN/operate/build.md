@@ -1,8 +1,8 @@
 # Build and Update
 
 **Jump to...**\
-Build with [GitHub](#build-iaps-with-github) | [Xcode](#build-iaps-with-script)\
-Update with [GitHub](#update-iaps-with-github) | [Xcode](#update-iaps-with-xcode)
+Build with [GitHub](#build-open-iaps-with-github) | [Xcode](#build-open-iaps-with-script)\
+Update with [GitHub](#update-open-iaps-with-github) | [Xcode](#update-open-iaps-with-xcode)
 
 ## Build Open-iAPS with GitHub
 
@@ -44,25 +44,29 @@ If your token has expired, create a new one (and set it to never expire) and upd
 
 ## Build Open-iAPS with Script
 
-A build script is available that will
+The **BuildOpen-iAPS** script offers the choice to [Download and Build](#download-and-build) one of several branches for Open-iAPS or to Run [Maintenance Utilities](#maintenance-utilities).
 
-* Download either the main or dev branch for Open-iAPS
-* Create the automatic signing file
-* Offer to remove the provisioning profiles from your computer
-   * This ensures the build will last an entire year
-* Provide instructions for how to build the app once Xcode opens
-* Opens Xcode with your new download.
+### Download and Build
+
+* Most users should choose the `main` branch
+* Once download completes, the script will also
+    * Create the automatic signing file
+    * Offer to remove provisioning profiles from your computer to ensure the build will last an entire year
+    * Provide instructions for how to build the app once Xcode opens
+    * Open Xcode with your new download.
 
 To execute the build script, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_OiAPS.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildOpen-iAPS.sh)"
 ```
 
-The download is placed in your `Downloads` folder in a directory called `Build_OiAPS`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
+The download is placed in your `Downloads` folder in a directory called `BuildOpen-iAPS`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-This script is similar to the one used to build Loop. Extensive instructions are provided on the [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) page. If you need additional information, review that section and then return. The script for Open-iAPS must be run stand-alone; it is not part of the Build Select Script.
+This script is similar to the script used to build Loop. Extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
+
+If you need additional information, review those links and then return. The **BuildOpen-iAPS** script is initiated using the commands listed above.
 
 ### Build Errors
 
@@ -82,41 +86,35 @@ If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildxDrip4iOS.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildGlucoseDirect.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
 ```
 
 The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **BuildOpen-iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)" - branch_name
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildOpen-iAPS.sh)" - branch_name
 ```
 
 ### Maintenance Utilities
 
-Several maintenance utilities are available with the Build Select Script, typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, and select Option 3 for Maintenance Utilities. Then, choose from these options:
+Several maintenance utilities are available as part of the **BuildOpen-iAPS** script. For more information, refer to [Loop and Learn: Run Maintenance Utilities](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
+
+The following options are offered:
 
 1. Delete Old Downloads
 1. Clean Derived Data
 1. Xcode Cleanup (The Big One)
 1. Return to Menu
-
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
-```
-
-Once each option completes, you are returned to the top menu, so must select Maintenance Utilities again if desired.
 
 ## Update Open-iAPS with Xcode
 
@@ -171,12 +169,12 @@ The following section is only for those who prefer to use the command line inter
 
 ### Update Open-iAPS with CLI
 
-Use finder to locate the directory where the Build_iAPS script saved the code. The directory is named after the branch with the date and time for the download:
+Use finder to locate the directory where the BuildOpen-iAPS script saved the code. The directory is named after the branch with the date and time for the download:
 
-* Released (main) branch: Downloads/Build_iAPS/iAPS_main-[date-time]/iAPS
-    * Example: ~/Downloads/Build_iAPS/iAPS_main-220122-1352/iAPS
-* Development (dev) branch: Downloads/Build_iAPS/iAPS_dev-[date-time]/iAPS
-    * Example: ~/Downloads/Build_iAPS/iAPS_dev-220108-1827/iAPS
+* Released (main) branch: Downloads/BuildOpen-iAPS/Open-iAPS_main-[date-time]/Open-iAPS
+    * Example: ~/Downloads/BuildOpen-iAPS/Open-iAPS_main-220122-1352/Open-iAPS
+* Development (dev) branch: Downloads/BuildOpen-iAPS/Open-iAPS_dev-[date-time]/Open-iAPS
+    * Example: ~/Downloads/BuildOpen-iAPS/Open-iAPS_dev-220108-1827/Open-iAPS
 
 Use finder to open a Terminal window at the Open-iAPS directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
@@ -188,7 +186,7 @@ git stash
 
 ```
 git fetch
-git pull
+git pull --recurse
 ```
 
 ```
