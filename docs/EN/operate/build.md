@@ -47,7 +47,7 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * Click Submit for Review
 * Under the Builds section, click the Build that says Waiting for Review
 * Click Remove from Review
-* Under the left menu for External Testing, click the minus sign next to the group you created up above. You can now delete this External Testing group. You can select the Delete the group and its testers from this app option and then click Delete
+* Under the left menu for External Testing, click the minus sign next to the group you created up above. You can now delete this External Testing group. You can select the Delete the group option and then click Delete
 * Next time you build via the Browser, you should see the branch and commit info under What to Test in Testflight
 
 ## Update Open-iAPS with GitHub
