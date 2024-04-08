@@ -30,14 +30,14 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
 
 ### One Time Update to Display Branch And Commit in Testflight
-* Open App Store Connect and Select your app that you created for Open-iAPS
+* Open App Store Connect and Select the app that you created for Open-iAPS
 * Click on Testflight at the top menu across the page
 * Click the + sign next to External Testing to create a new external testing group
 * Name the group whatever you like
 * Under the Tester section, click the + sign and add yourself as a tester
-* Under the Builds section, click on the + sign and then select the latest buiild in the list
-* Enter your contact info and unselect the sign in required check box, click Next
-* On the What to Test section, uncheck notify testers and enter in anything you like in the dialog box asking what to test
+* Under the Builds section, click on the + sign and then select the latest build in the list
+* Enter your contact info and unselect the sign-in required check box, click Next
+* On the What to Test section, uncheck notify testers and enter anything you like in the dialog box asking what to test
 * Click Submit for Review
 * Under the Builds section, click the Build that says Waiting for Review
 * Click Remove from Review
@@ -64,7 +64,7 @@ The **BuildOpen-iAPS** script offers the choice to [Download and Build](#downloa
 ### Download and Build
 
 * Most users should choose the `main` branch
-* Once download completes, the script will also
+* Once the download completes, the script will also
     * Create the automatic signing file
     * Offer to remove provisioning profiles from your computer to ensure the build will last an entire year
     * Provide instructions for how to build the app once Xcode opens
