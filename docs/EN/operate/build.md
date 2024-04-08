@@ -98,7 +98,7 @@ The download is placed in your `Downloads` folder in a directory called `BuildxD
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **BuildOpen-iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below; replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **BuildOpen-iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
