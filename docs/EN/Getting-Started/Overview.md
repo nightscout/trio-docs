@@ -12,20 +12,20 @@ Before starting with Open-iAPS, you should understand CR, ISF, and basal rates.
 
 If you do not understand the terminology, please read the appropriate documentation here:
 
-:::{admonition} CR
-:class: see also, dropdown
+<details>
+<summary>CR</summary>
 Find more information on Carb Ratio (CR) [here](/docs/EN/settings/configuration/carbratios.md)
-:::
+</details>
 
-:::{admonition} ISF
-:class: see also, dropdown
+<details>
+<summary>ISF</summary>
 Find more information on Insulin Sensitivity Factor (ISF) [here](/docs/EN/settings/configuration/insulinsensitivities.md)
-:::
+</details>
 
-:::{admonition} Basal
-:class: see also, dropdown
+<details>
+<summary>Basal</summary>
 Find more information on Basal [here](/docs/EN/settings/configuration/basalprofile.md)
-:::
+</details>
 
 If you require help defining and determining those settings, please seek assistance from your diabetes educator.
 
