@@ -1,4 +1,4 @@
-Repository for [Open-iAPS docs (_coming soon_](https://open-iaps.readthedocs.io)
+Repository for [Open-iAPS docs (_coming soon_)](https://open-iaps.readthedocs.io)
 
 Tips & Tricks: (please add!)
 
