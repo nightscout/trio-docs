@@ -35,6 +35,20 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
 * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `ru.artpancreas.TEAMID.FreeAPS`
 
+### One Time Update to Display Branch And Commit in Testflight
+* Open App Store Connect and Select your app that you created for Open-iAPS
+* Click on Testflight at the top menu across the page
+* Click the + sign next to External Testing to create a new external testing group
+* Name the group whatever you like
+* Under the Tester section, click the + sign and add yourself as a tester
+* Under the Builds section, click on the + sign and then select the latest buiild in the list
+* Enter your contact info and unselect the sign in required check box, click Next
+* On the What to Test section, uncheck notify testers and enter in anything you like in the dialog box asking what to test
+* Click Submit for Review
+* Under the Builds section, click the Build that says Waiting for Review
+* Click Remove from Review
+* Next time you build via the Browser, you should see the branch and commit info under What to Test in Testflight
+
 ## Update Open-iAPS with GitHub
 
 Open your fork at your GitHub username.
