@@ -9,7 +9,7 @@ Nightscout (NS) is one tool that will provide more info for analysis. You will w
 
 ### Which Nightscout view is most helpful?
 
-When scrolling to the valleys, the standard default view is best for the last 24 hours (no IOB is displayed after that).
+When scrolling to the valleys, the standard default view is best for the last 24 hours (no IOB is displayed afterward).
 Day-to-day reports if looking at older data (remember to check the IOB box, and optionally COB for meal-related analysis).
 
 ### How to adjust basal rate?
