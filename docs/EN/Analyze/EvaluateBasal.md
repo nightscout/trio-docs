@@ -1,14 +1,14 @@
 ## Evaluate Basal
 
 :::{warning}
-<i>This is not medical advice. Please understand the changes you are making carefully and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
+<i>This is not medical advice. Please understand the changes you are making and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
 :::
 
 ### Before Adjusting Basals
 
-<b>Consider CR and ISF *First*.</b>
+<b>Consider CR and ISF <i>First</i>.</b>
 
-<i>Were carbs eaten in the last 3 hours?</i>\
+<i>Were carbs eaten in the last 3 hours?</i>
 <i>Are you in open loop?</i>
 
 :::{caution}
@@ -25,8 +25,11 @@ Ensure it happens twice at the same time of day before making any adjustments.
 A general rule of thumb is to adjust the basal rate 1 hour before the cgm shows a change. This is determined by the approximate peak time of rapid-acting insulin.
 :::
 
-*For Example:* This person noticed an increase in their average cgm readings starting around 1:00AM. They were in open loop and had no late-night snacks, so they could rule out CR and ISF as factors. Because the rise began at 1:00AM, they should increase their basal rate at 12:00AM.
-![Adjust Basal](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/9cbe6be0-b125-40e2-8d9e-a5a2809335e3)
+<i>For Example:</i> This person noticed an increase in their average cgm readings starting around 1:00AM. They were in open loop and had no late-night snacks, so they could rule out CR and ISF as factors. Because the rise began at 1:00AM, they should increase their basal rate at 12:00AM.
+```{figure} img/adjustBasal.png
+:alt: Adjust Basal
+:width: 600px
+```
 
 ### Nightscout
 
