@@ -1,23 +1,20 @@
 # Build and Update
 
 **Jump to...**\
-Build with [GitHub](#build-open-iaps-with-github) | [Xcode](#build-open-iaps-with-script)\
-Update with [GitHub](#update-open-iaps-with-github) | [Xcode](#update-open-iaps-with-xcode)
+Build with [GitHub](#build-open-iaps-with-github) | [Xcode](#build-open-iaps-with-xcode) | [Script](#build-open-iaps-with-script)\
+Update with [GitHub](#update-open-iaps-with-github) | [Xcode](#update-open-iaps-with-xcode) | [Source Control](#update-open-iaps-with-source-control) | [CLI](#update-open-iaps-with-cli)
 
 ## Build Open-iAPS with GitHub
 
-The instructions for using a browser and GitHub to build the Open-iAPS app are found in the Open-iAPS repository.
+The Open-iAPS repository contains instructions for building the Open-iAPS app using a browser and GitHub. More detailed instructions are also available in Loopdocs.
 
 * [GitHub Build Instructions](https://github.com/nightscout/Open-iAPS/blob/main/fastlane/testflight.md)
-* The instructions at the link above are complete and include the details found beneath the LoopDocs links below.
-
-If those instructions are too sparse for you, look at the LoopDocs instructions, which are very verbose. Between the two, you should be able to figure things out:
-
 * [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 
-If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):
-
+:::{important}
+*If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):*
+:::
 * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`
 * `Identifiers` will be:
@@ -29,7 +26,7 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
 * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
 
-### One Time Update to Display Branch And Commit in Testflight
+### One-Time Update to Display Branch And Commit in Testflight
 * Open App Store Connect and Select the app that you created for Open-iAPS
 * Click on Testflight at the top menu across the page
 * Click the + sign next to External Testing to create a new external testing group
@@ -41,7 +38,7 @@ If you use the LoopDocs instructions, you will need this information to build Op
 * Click Submit for Review
 * Under the Builds section, click the Build that says Waiting for Review
 * Click Remove from Review
-* Under the left menu for External Testing, click the minus sign next to the group you created up above. You can now delete this External Testing group. You can select the Delete the group option and then click Delete
+* Under the left menu for External Testing, click the minus sign next to the group you created above. You can now delete this External Testing group. You can select the Delete the group option and then click Delete
 * Next time you build via the Browser, you should see the branch and commit info under What to Test in Testflight
 
 ## Update Open-iAPS with GitHub
@@ -54,14 +51,17 @@ Open your fork at your GitHub username.
 
 If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
 
-If your token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then, you can build your updated code.
+If your token has expired, create a new one (and set it to "never expire") and update the GH_PAT in your Open-iAPS secrets. Then, you can build your updated code.
 
+## Build Open-iAPS with Xcode
 
-## Build Open-iAPS with Script
+The recommendation is to use [Script](#build-open-iaps-with-script) to build your code.
 
-The **BuildOpen-iAPS** script offers the choice to [Download and Build](#download-and-build) one of several branches for Open-iAPS or to Run [Maintenance Utilities](#maintenance-utilities).
+### Build Open-iAPS with Script
 
-### Download and Build
+The **Build Open-iAPS** script offers the choice to [Download and Build](#download-and-build) one of several branches for Open-iAPS or to Run [Maintenance Utilities](#maintenance-utilities).
+
+#### Download and Build
 
 * Most users should choose the `main` branch
 * Once the download completes, the script will also
@@ -81,9 +81,9 @@ The download is placed in your `Downloads` folder in a directory called `BuildOp
 
 This script is similar to the script used to build Loop. Extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
 
-If you need additional information, review those links and then return. The **BuildOpen-iAPS** script is initiated using the commands listed above.
+If you need additional information, review those links and then return. The [**Build Open-iAPS**](https://github.com/loopandlearn/lnl-scripts/tree/oi) script is initiated using the commands listed above.
 
-### Build Errors
+#### Build Errors
 
 If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Open-iAPS, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
 
@@ -91,13 +91,15 @@ If you need it, you are most likely to get help in one of these groups:
 
 * [Discord: Open-iAPS channel](https://discord.gg/ptkk2Y264Z)
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
-* Facebook groups like “Loop and Learn” and “Looped” primarily focus on Loop but will offer support when able.
+* Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
 ### xDrip4iOS or Glucose Direct as CGM Source
 
-Please note that LibreTransmitter is provided as part of Open-iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using Open-iAPS.
+:::{Important}
+LibreTransmitter is provided as part of Open-iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using Open-iAPS.
+:::
 
-If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group”, you must also build that app from source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern, and configure automatic signing files for you.
+If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -109,11 +111,11 @@ If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
 ```
 
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **BuildOpen-iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Open-iAPS** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -122,7 +124,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ### Maintenance Utilities
 
-Several maintenance utilities are available as part of the **BuildOpen-iAPS** script. For more information, refer to [Loop and Learn: Run Maintenance Utilities](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
+Several maintenance utilities are available as part of the **Build Open-iAPS** script. For more information, refer to [Loop and Learn: Run Maintenance Utilities](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
 The following options are offered:
 
@@ -139,7 +141,7 @@ If you prefer the command line interface, skip ahead to [Update Open-iAPS with C
 
 ### Update Open-iAPS with Source Control
 
-**Note** Released code is found in the  `main` branch. These figures show the older name of `master` rather than `main`. 
+**Note** Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
 
 Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
@@ -178,7 +180,7 @@ The last steps are only relevant if you made any changes to the code:
 - Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
-The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app on your phone.
+The Open-iAPS code is now updated. That was easy. If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app on your phone.
 
 The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-open-iaps-version).
 
