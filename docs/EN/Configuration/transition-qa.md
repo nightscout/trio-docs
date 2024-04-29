@@ -28,7 +28,8 @@ meaning you can expect Open-iAPS to behave the same way AndroidAPS does generall
 
 <details>
   <summary><b>Should I switch from AndroidAPS to Open-iAPS?</b></summary>
-If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Open-iAPS. If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Open-iAPS.
+- If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Open-iAPS. - If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Open-iAPS.
+  
 Take some time to read the docs and fine-tune your settings. To get help from other users, join [Discord](https://discord.gg/dbe5Twav8D) or [Facebook](https://www.facebook.com/groups/1351938092206709/). Once your settings are in order, consider switching to Open-iAPS.
 </details>
 
@@ -92,7 +93,7 @@ Exercise is good for everyone, including people with diabetes. People with insul
 Illness, menstrual cycle, inactive days, active days, home office days, stressful events... In these situations, the overall insulin need differs from your usual need. Like Loop's Overrides, Open-iAPS has Profiles that can change basal rate, ISF, CR, and target BG within a pre-set timeframe. What Open-iAPS Profiles do that Loop Overrides do not do is provide the option to temporarily disable SMBs and apply adjustments to only basal, basal, and ISF, basal and CR, or all three.
 </details>
 
-<b><i>If any of those sound familiar, consider a switch to Open-iAPS</b><i>
+<b><i>If any of those sound familiar, consider a switch to Open-iAPS</b></i>
 
 :::{important}
 You must read extensively and adapt to a new approach to diabetes management.
