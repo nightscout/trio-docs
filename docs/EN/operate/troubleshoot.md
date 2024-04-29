@@ -1,28 +1,6 @@
 # Troubleshooting
 [Adapted from looptips](https://loopkit.github.io/looptips/how-to/think-like-loop/)
 
-## Morning IOB
-
-:::{tip}
-  - **Check your morning IOB:**
-    - if it is positive, increase your basal rates
-    - if it is negative, decrease your basal rates.
-:::
-
-One of the easiest ways of optimizing your basal rates is by checking your IOB when you wake up. Open-iAPS uses your basal profile as its net zero. If Open-iAPS needs to give you more insulin overnight than your set basal rates, your IOB will be positive. Likewise, it will be negative if you need less insulin overnight than your current basal rates. You can adjust your basal profile by 10% and reassess the impact the following morning. Below are some Nightscout images showing the impact of changing basal rates on IOB. You can also view your IOB on Open-iAPS itself.
-
-**Before:**
-
-![Nightscout Before](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/1e0e2488-3f10-43d0-8eeb-66632bb26bfa)
-
-**After:**
-
-![Nightscout After](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/532244a0-2ec8-443a-8c4e-a7e0a0fc0887)
-
-Inaccurate basal rates can impact your control in several ways. Their values determine how much insulin Open-iAPS delivers with temporary basal rates and autobolus functions. If you consistently have negative IOB in the morning, you are in danger of having lows when your blood sugar rises above your correction range.
-
-Note that Open-iAPS does adjust your basal profile with autotune, but this system is slow and has strict limits to prevent too much divergence from your set settings. If your basal rates are widely inaccurate, it's best to make manual changes. 
-
 ## Site Change or Failure
 
 :::{note}
@@ -78,7 +56,7 @@ If your BG rises fast and ends up too high, it is usually because the carbs were
 
 Open-iAPS calculates the amount of insulin needed to bring you back into range. More insulin is needed when blood glucose remains high after a meal, but Open-iAPS needs corrected settings to make those adjustments. 
 
-- The first adjustment should be to reduce your CR. Reducing your carb ratio will result in more insulin given for the carbs entered.
+- The first adjustment should be to reduce your CR. Reducing your carb ratio will result in **more** insulin for the carbs entered.
 - If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](https://github.com/nightscout/Open-iAPS-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#enable-dynamic-cr) setting. 
 
 ### Fast Rise, Then Low
@@ -87,7 +65,7 @@ Open-iAPS calculates the amount of insulin needed to bring you back into range. 
 
 In this scenario, you are not getting enough insulin upfront to deal with the carb absorption, but the total amount of insulin you're getting is too much - causing a low. If this is a repeating scenario, you should look into <b>all of</b> the following:
 
-1. If all the delivered insulin is from one bolus, you should consider adjusting your CR setting so that the bolus calculator gives you less insulin. Consider pre-bolusing, giving the insulin some time to absorb before you start eating.
+1. If all the delivered insulin is from one bolus, you should consider adjusting your CR setting so that the bolus calculator gives you less insulin. You could also consider pre-bolusing, giving the insulin some time to absorb before you start eating.
 2. If the delivered insulin is part bolus and part SMBs, you should consider adjusting your ISF setting so that the SMBs give you less insulin. It would help if you also considered pre-bolusing, giving the insulin more time to absorb before you start eating.
 3. In both (1) and (2), if you use dynamic ISF and CR features, you should consider lowering the Adjustment Factor and adjusting the Autosens max/min settings.
 
