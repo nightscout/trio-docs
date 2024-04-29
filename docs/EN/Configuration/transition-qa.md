@@ -7,7 +7,7 @@ In this section of the documentation, we'll explain the differences from a user 
 
 ## Coming from AndroidAPS
 AndroidAPS and Open-iAPS are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Open-iAPS, the main algorithm is the same, 
-meaning you can expect Open-iAPS to generally behave the same way AndroidAPS does.
+meaning you can expect Open-iAPS to behave the same way AndroidAPS does generally.
 
 ### What does AndroidAPS have that Open-iAPS doesn't?
 
@@ -104,7 +104,7 @@ No.
 > What are the alternatives?
 
 * Some Open-iAPS users don't bolus for meals. They wait for Open-iAPS to detect rising BG and let Open-iAPS handle it. This usually leads to a temporary high BG, but Open-iAPS will get you back to target with the correct settings. If you're OK with a temporary high, then go ahead and try to skip bolus. You can start with small meals and tune your settings. You will need aggressive settings to let Open-iAPS give enough insulin.
-* Some Open-iAPS users do a manual pre-bolus and skip entering carbs. Open-iAPS will predict a low BG until the meal kicks in and BG starts to rise. If the pre-bolus is not enough, Open-iAPS will give more insulin based on settings. Yes, even without entering any carbs. This approach will also result in a temporary high, but it will be smaller than the completely unattended approach.
+* Some Open-iAPS users do a manual pre-bolus and skip entering carbs. Open-iAPS will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is not enough, Open-iAPS will give more insulin based on settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is smaller than the completely unattended approach.
 
 > What do most people do?
 
@@ -112,7 +112,7 @@ Most Open-iAPS users take a bit of all these approaches. They have an apple with
 
 ## Coming from commercial closed-loop systems
 
-Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay. If you're not getting the desired results, read through the chapter on "Coming from iOS Loop" to see the main issues that Open-iAPS solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter on "Coming from iOS Loop" to see the main issues that Open-iAPS solves.
 
 ## I want to try Open-iAPS. How do I proceed?
 
