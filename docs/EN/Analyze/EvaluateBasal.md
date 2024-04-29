@@ -1,10 +1,10 @@
 ## Evaluate Basal
 
-:::{warning}
+:::{WARNING}
 <i>This is not medical advice. Understanding the changes you are making is important, and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
 :::
 
-### Before Adjusting Basals
+### Before Adjusting Basal Rates
 
 1. <b>Consider CR and ISF <i>First</i></b>
 
@@ -22,7 +22,7 @@
 ### How to Adjust Basal
 
 :::{tip}
-A general rule of thumb is to adjust the basal rate 1 hour before the cgm shows a change. This is determined by the approximate peak time of rapid-acting insulin.
+A general rule of thumb is to adjust the basal rate 1 hour before the cgm shows a change in glucose levels that you want to correct. This is determined by the approximate peak time of rapid-acting insulin.
 :::
 
 <i>For Example:</i> This person noticed an increase in their average cgm readings starting around 1:00 AM. They were in open loop and had no late-night snacks, so they could rule out CR and ISF as factors. Because the rise began at 1:00 AM, they should increase their basal rate at 12:00 AM.
