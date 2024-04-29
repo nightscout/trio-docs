@@ -14,7 +14,7 @@ If you are using a Dexcom G6 sensor, you must remember to change your transmitte
 
 ### Changing Dexcom G6 or G7 sensor
 
-Change the sensor through the Dexcom G6 or G7 app. Open-iAPS will automatically pick up the reading; no additional action is required.
+Change the sensor through the Dexcom G6 or G7 app. Open-iAPS will automatically pick up the reading; you don't need to do anything else.
 
 ### xDrip as BG source
 
