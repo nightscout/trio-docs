@@ -2,7 +2,7 @@
 
 There are three pumps compatible with Open-iAPS:
 <b>
-* Omnipod DASH pumps
+* Omnipod Dash pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
 * DanaRS (_Coming Soon!_)
@@ -29,9 +29,10 @@ The DASH pods were launched in 2019 and use Bluetooth, so they don't require a R
 
 ![dash](img/dash.png)
 
-#### Omnipod 5
-
-Open-iAPS does not support Omnipod 5 pods. The Omnipod 5 has built-in closed-loop functionality and works with Dexcom.
+:::{admonition} Omnipod 5
+:class: danger
+**Omnipod 5 pods are _NOT_ compatible with Open-iAPS**
+:::
 
 ### Medtronic Pumps
 
