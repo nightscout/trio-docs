@@ -1,14 +1,21 @@
 # Troubleshooting
 [Adapted from looptips](https://loopkit.github.io/looptips/how-to/think-like-loop/)
 
-## Site Change or Failure
+## Site Change and Site Failures
 
 :::{note}
-  - Pump changes can temporarily impact control. 
-  - Pump failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
+  - Pump site changes can temporarily impact control. 
+  - Pump site failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
 :::
 
+### Site Change
+
 Pump site changes can negatively impact your immediate glycemic control. Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity. Open-iAPS should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
+
+**For Omnipod**\
+If you think you need more insulin primed in the new pod, consider customizing that line of code with [these instructions](./customize.md#omnipod-add-extra-insulin-on-insertion).
+
+### Site Failure
 
 Pump failures can result from kinks or improper insertion of the cannula. As a result of a pump failure, Open-iAPS may come under the impression that more insulin is on board the patient than what was delivered, leading to sustained highs even after the pump is replaced. 
 
