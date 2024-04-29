@@ -1,18 +1,18 @@
 ## Evaluate CR
 
 :::{warning}
-<i>This is not medical advice. Please understand the changes you are making and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
+<i>This is not medical advice. It is important to understand your changes and always exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
 :::
 
 ### Before Adjusting CR
 
-With Open-iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Some users find it better to overestimate your carb entry and give a  smaller upfront bolus. If you overestimate and bolus for all of it upfront, the algorithm is limited in its ability to adjust insulin needs as they fluctuate following the meal.
+With Open-iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Some users prefer overestimating carb entries and giving a  smaller upfront bolus. If you overestimate and bolus for all of it upfront, the algorithm is limited in its ability to adjust insulin needs as they fluctuate following the meal.
 
-If you have been giving 100% of the needed bolus for meals, it might be best to first try a smaller percentage of that bolus upfront rather than adjusting your CR.
+If you have been giving 100% of the needed bolus for meals, it might be best to first try a smaller percentage upfront rather than adjusting your CR.
 
 ### Nightscout
 
-Nightscout (NS) is a valuable resource that provides detailed information for analyzing your settings. Nightscout reports and Loopalyzer can be great tools to understand your data.
+Nightscout (NS) is a valuable resource that provides detailed information for analyzing your settings. Nightscout reports and Loopalyzer can be great tools for understanding your data.
 
 #### Build Nightscout
 [Instructions to build Nightscout](https://nightscout.github.io/nightscout/new_user/)
