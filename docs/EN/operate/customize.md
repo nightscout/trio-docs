@@ -1,10 +1,10 @@
 # Add Customizations to Open-iAPS
 
-Here are a few ways to customize Open-iAPS' code to suit your needs better. Please be very careful when editing any code.
+Here are a few ways to customize the Open-iAPS code to suit your needs better. Please be very careful when editing any code.
 
 ## Bypass Authentification for Bolusing
 
-You may have Face ID or Touch ID enabled depending on your iPhone settings and model. Those security features will also be used to authenticate bolus delivery in Open-iAPS. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
+Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Open-iAPS. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 :::{caution}
 - If you disable this, you remove an important safety feature.
@@ -31,9 +31,10 @@ The default value is 0.0 U of extra insulin. If you use this customization, star
 Open-iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Open-iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.25 U to the "extra" value, you should get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you press insert.
 :::
 
-This code change is found in different locations for Eros Pods and Dash Pods. Some change both files just in case, but that is unnecessary if you're only using one pod.
+This code change is found in different locations for [Eros Pods](#eros) and [Dash Pods](#dash). Some change both files just in case, but that is unnecessary if you're only using one pod.
 
-For DASH, edit line 82 of the file `Dependencies/OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
+### Dash
+Edit line 82 of the file `Dependencies/OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
 
 Code before modification: 
 ```swift
@@ -44,8 +45,8 @@ Code after modification adding 0.25U of insulin:
 ```swift
 public static let cannulaInsertionUnitsExtra = 0.25
 ```
-
-For Eros, edit line 84 of the file `Dependencies/OmniKit/OmniKit/OmnipodCommon/Pod.swift`
+### Eros
+Edit line 84 of the file `Dependencies/OmniKit/OmniKit/OmnipodCommon/Pod.swift`
 
 Code before modification: 
 ```swift
@@ -73,28 +74,26 @@ Code after modification:
 
 ## Add Custom Icon
 
-There are several different app icon options built into Open-iAPS for you to choose from, but you can still add your own if you'd like. You'll need to convert the image you want in a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it diabeetus.
-```{image} img/diabeetus.png
-:alt: diabeetus
-:width: 125px
-```
+There are several different app icon options built into Open-iAPS, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.
 
-1. Go into the folder `FreeAPS/Resources/Assets.xcassets/` and create a new folder called `diabeetus.appiconset`
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/7a33edf3-3343-46fe-815e-c63ddfca7b0a" width="250px" align="center">
+
+1. Go into the folder `FreeAPS/Resources/Assets.xcassets/` and create a new folder called `ivan.appiconset`
    
-2. Add two copies of the 1024x1024 PNG file into this folder, called `diabeetus.png` and `diabeetus 1.png`
+2. Add two copies of the 1024x1024 PNG file into this folder, called `ivan.png` and `ivan 1.png`
    
 3. Add a file called `Contents.json` with the following contents:
 ```json
 {
   "images" : [
     {
-      "filename" : "diabeetus.png",
+      "filename" : "ivan.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
     },
     {
-      "filename" : "diabeetus 1.png",
+      "filename" : "ivan 1.png",
       "idiom" : "universal",
       "platform" : "watchos",
       "size" : "1024x1024"
@@ -108,7 +107,7 @@ There are several different app icon options built into Open-iAPS for you to cho
 ```
 
 
-4. Insert a new line after line 25 in the file `FreeAPS/Sources/Models/Icons.swift` containing the following text: `case diabeetus = "diabeetus"`
+4. Insert a new line after line 14 in the file `FreeAPS/Sources/Models/Icons.swift` containing the following text: `case ivan = "ivan"`
 
    Code before modification:
 ```swift
@@ -122,7 +121,7 @@ There are several different app icon options built into Open-iAPS for you to cho
 ```swift
 ...
     case loop = "Open-iAPS_Loop"
-    case diabeetus = "diabeetus"
+    case ivan = "ivan"
     var id: String { rawValue }
 }
 ```
