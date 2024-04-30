@@ -1,6 +1,6 @@
 ## Evaluate Basal
 
-:::{WARNING}
+:::{warning}
 <i>This is not medical advice. Understanding the changes you are making is important, and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
 :::
 
