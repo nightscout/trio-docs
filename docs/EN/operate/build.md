@@ -16,30 +16,32 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 *If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):*
 :::
 * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
-* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`
+* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
 * `Identifiers` will be:
     * `org.nightscout.TEAMID.openiaps`
     * `org.nightscout.TEAMID.openiaps.watchkitapp`
     * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
+    * `org.nightscout.TEAMID.openiaps.LiveActivity`
 * The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
-* You must add this `App Group` to all 3 identifiers
+* You must add this `App Group` to all 4 identifiers
 * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
 * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
 
 ### One-Time Update to Display Branch And Commit in Testflight
-* Open App Store Connect and Select the app that you created for Open-iAPS
-* Click on Testflight at the top menu across the page
-* Click the + sign next to External Testing to create a new external testing group
-* Name the group whatever you like
-* Under the Tester section, click the + sign and add yourself as a tester
-* Under the Builds section, click on the + sign and then select the latest build in the list
-* Enter your contact info and unselect the sign-in required check box, click Next
-* On the What to Test section, uncheck notify testers and enter anything you like in the dialog box asking what to test
-* Click Submit for Review
-* Under the Builds section, click the Build that says Waiting for Review
-* Click Remove from Review
-* Under the left menu for External Testing, click the minus sign next to the group you created above. You can now delete this External Testing group. You can select the Delete the group option and then click Delete
-* Next time you build via the Browser, you should see the branch and commit info under What to Test in Testflight
+
+The Open-iAPS build can be configured to display the branch name and commit ID as test notes in TestFlight.
+
+However, you must take action for that to happen.
+
+First build Open-iAPS (at least) one time using Browser Build and wait for it to appear on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
+
+* Tap on the TestFlight tab
+* Choose any build to open a new detailed screen for that build
+* In the Test Details section, type anything you want
+
+After you have done this one-time step, each successive build will include the branch name and commit automatically.
+
+You can add additional tests notes for any build if you desire.
 
 ## Update Open-iAPS with GitHub
 
@@ -53,35 +55,81 @@ If you selected a GitHub Personal Access Token (GH_PAT) that never expires, sele
 
 If your token has expired, create a new one (and set it to "never expire") and update the GH_PAT in your Open-iAPS secrets. Then, you can build your updated code.
 
+## Distribution Certificates
+
+When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, the get the full 90 days.)
+
+The directions to renew your Distribution Certificate is found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
+
 ## Build Open-iAPS with Xcode
 
-The recommendation is to use [Script](#build-open-iaps-with-script) to build your code.
+The recommendation is to use the [**OiBuildSelectScript**](#build-open-iaps-with-script) to build your code.
 
 ### Build Open-iAPS with Script
 
-The **Build Open-iAPS** script offers the choice to [Download and Build](#download-and-build) one of several branches for Open-iAPS or to Run [Maintenance Utilities](#maintenance-utilities).
+The **OiBuildSelectScript** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
 
-#### Download and Build
+The **OiBuildSelectScript** offers the choice to:
 
-* Most users should choose the `main` branch
+1. [Build Open-iAPS](#build-open-iaps)
+2. [Build Related Apps](#build-related-apps)
+3. [Run Maintenance Utilities](#run-maintenance-utilities)
+4. [Customize Open-iAPS](#customize-open-iaps)
+5. Exit Script
+
+To execute the **OiBuildSelectScript**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
+
+```
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/OiBuildSelectScript.sh)"
+```
+
+#### Build Open-iAPS
+
+When you select **Build Open-iAPS**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
+
 * Once the download completes, the script will also
     * Create the automatic signing file
     * Offer to remove provisioning profiles from your computer to ensure the build will last an entire year
     * Provide instructions for how to build the app once Xcode opens
     * Open Xcode with your new download.
-
-To execute the build script, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
-
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildOpen-iAPS.sh)"
-```
+* At this point the main menu is displayed again for you to select another option or to exit the script
 
 The download is placed in your `Downloads` folder in a directory called `BuildOpen-iAPS`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-This script is similar to the script used to build Loop. Extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
+#### Build Related Apps
 
-If you need additional information, review those links and then return. The [**Build Open-iAPS**](https://github.com/loopandlearn/lnl-scripts/tree/oi) script is initiated using the commands listed above.
+When you select **Build Related Apps**, you will be provided with a choice of apps that users of Open-iAPS often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
+
+The choices are:
+
+1. Build Loop Follow
+2. Build xDrip4iOS
+3. Build Glucose Direct
+4. Return to Menu
+
+#### Run Maintenance Utilities
+
+When you select **Run Maintenance Utilities**, you will be provided with a choice of utilties helpful for Mac builders.
+
+The following options are offered:
+
+1. Delete Old Downloads
+1. Clean Derived Data
+1. Xcode Cleanup (The Big One)
+1. Return to Menu
+
+For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
+
+#### Customize Open-iAPS
+
+When you select **Customize Open-iAPS**, you will be provided with a choice of customization options:
+
+1. [Change Default to Upload Dexcom Readings](https://www.loopandlearn.org/custom-code/#dexcom-remote-enable)
+2. [Disable Authentication Requirement](https://www.loopandlearn.org/custom-code/#disable-authentication)
+3. Return to Menu
+
+The customizations are a subset of those provided for the Loop app. Some of the code in Open-iAPS is shared with Loop so these customizations are common. The two that are used by Open-iAPS have links to the Loop and Learn documentation in the list above.
 
 #### Build Errors
 
@@ -101,17 +149,23 @@ LibreTransmitter is provided as part of Open-iAPS, so you are not required to us
 
 If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
 
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
+
+These can be accessed using the [**OiBuildSelectScript**](#build-open-iaps-with-script) menu options mentioned above. Or you can run each script individually.
+
+#### xDrip4iOS
+
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
+#### Glucose Direct
+
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
 ```
-
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
 ### Alternative Branch
 
@@ -121,17 +175,6 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildOpen-iAPS.sh)" - branch_name
 ```
-
-### Maintenance Utilities
-
-Several maintenance utilities are available as part of the **Build Open-iAPS** script. For more information, refer to [Loop and Learn: Run Maintenance Utilities](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
-
-The following options are offered:
-
-1. Delete Old Downloads
-1. Clean Derived Data
-1. Xcode Cleanup (The Big One)
-1. Return to Menu
 
 ## Update Open-iAPS with Xcode
 
