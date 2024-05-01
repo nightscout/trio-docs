@@ -69,9 +69,9 @@ templates_path = ['../../_templates'] # path relative to languages conf.py
 master_doc = 'index'
 
 # General information about the project.
-project = u'iAPS'
-copyright = u'iAPS Community'
-author = u'iAPS Community'
+project = u'Open-iAPS'
+copyright = u'Open-iAPS Community'
+author = u'Open-iAPS Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
