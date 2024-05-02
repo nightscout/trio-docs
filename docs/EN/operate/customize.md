@@ -11,9 +11,13 @@ Depending on your iPhone settings and model, you may have Face ID or Touch ID en
 - In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 :::
 
-> Note: you can also achieve this customization using the script to [Customize Open-iAPS](build.md#customize-open-iaps)
+> Note: you can apply this customization using the script to [Customize Open-iAPS](build.md#customize-open-iaps).
+> 
+> Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
 
-Edit line 28 of the file `FreeAPS/Sources/Services/UnlockManager/UnlockManager.swift`
+If you prefer to edit the file yourself:
+
+Edit line 20 of the file `LoopKit/LoopKitUI/Extensions/Environment+Authenticate.swift`
 
 Code before modification: 
 ```swift
@@ -36,7 +40,7 @@ Open-iAPS does not include the amount of insulin in the prime or insertion steps
 This code change is found in different locations for [Eros Pods](#eros) and [Dash Pods](#dash). Some change both files just in case, but that is unnecessary if you're only using one pod.
 
 ### Dash
-Edit line 82 of the file `Dependencies/OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
+Edit line 82 of the file `OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
 
 Code before modification: 
 ```swift
@@ -48,7 +52,7 @@ Code after modification adding 0.25U of insulin:
 public static let cannulaInsertionUnitsExtra = 0.25
 ```
 ### Eros
-Edit line 84 of the file `Dependencies/OmniKit/OmniKit/OmnipodCommon/Pod.swift`
+Edit line 84 of the file `OmniKit/OmniKit/OmnipodCommon/Pod.swift`
 
 Code before modification: 
 ```swift
