@@ -11,6 +11,8 @@ Depending on your iPhone settings and model, you may have Face ID or Touch ID en
 - In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 :::
 
+> Note: you can also achieve this customization using the script to [Customize Open-iAPS](build.md#customize-open-iaps)
+
 Edit line 28 of the file `FreeAPS/Sources/Services/UnlockManager/UnlockManager.swift`
 
 Code before modification: 
