@@ -3,6 +3,7 @@
 ## Main Screen
 
 <b> The main screen of Open-iAPS can be divided into three sections: </b>
+
 | [Status](#status) | [Graphs & Statistics](#graphs-and-statistics) | [Actions](#actions) |
 
 <img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/7bb90d5d-4183-49ad-a154-269352ee5fa9" width="400"/>
@@ -66,6 +67,7 @@ The Statistics Icon shows your statistical data in the app.
 
 The Settings icon allows you to access your Open-iAPS settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
 </details>
+
 
 ## New Bolus Calculator
 It's hard to manually calculate the right bolus for a meal. The carbs you eat are one thing, but to get the right bolus, you also need to consider carbs and insulin already on board, current glucose value, and where your glucose is heading. If glucose is heading low, should you still bolus, or wait? These considerations have been part of the bolus calculator for a while but have raised many questions. Because of that, a new bolus calculator has been developed by one of the community members and refined and tested by several users.
