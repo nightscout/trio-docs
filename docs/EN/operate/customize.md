@@ -12,13 +12,9 @@ Depending on your iPhone settings and model, you may have Face ID or Touch ID en
 
 In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
-:::{note}
-You can apply this customization using the script to [Customize Open-iAPS](#customize-open-iaps).
-:::
+{You can find the script for this customization here [Customize Open-iAPS](#customize-open-iaps). Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.}
 
-Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
-
-If you prefer to edit the file yourself:
+To edit the file:
 
 Edit line 20 of the file `LoopKit/LoopKitUI/Extensions/Environment+Authenticate.swift`
 
