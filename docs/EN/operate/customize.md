@@ -31,10 +31,13 @@ if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error)
 The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you come from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Open-iAPS - be conservative.
 
 :::{admonition} It is important to know
-Open-iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Open-iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.25 U to the "extra" value, you should get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you press insert.
+:class: tip
+Open-iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. 
+ - The pod reports every pulse that it delivers to Open-iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts.
+ - The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you press insert.
 :::
 
-This code change is found in different locations for [Eros Pods](#eros) and [Dash Pods](#dash). Some change both files just in case, but that is unnecessary if you're only using one pod.
+[Eros Pods](#eros) and [Dash Pods](#dash) have different locations for this change. Some change both files just in case, but that is unnecessary if you're only using one type of pod.
 
 ### Dash
 Edit line 82 of the file `OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
