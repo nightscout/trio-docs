@@ -145,7 +145,7 @@ If you need it, you are most likely to get help in one of these groups:
 ### xDrip4iOS or Glucose Direct as CGM Source
 
 :::{Important}
-LibreTransmitter is provided as part of Open-iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using Open-iAPS.
+LibreTransmitter is provided as part of Open-iAPS, neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Open-iAPS.
 :::
 
 If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
