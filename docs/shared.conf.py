@@ -44,20 +44,20 @@ extensions = [
 ]
 
 myst_enable_extensions = [
-    "amsmath",
-    "attrs_inline",
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "fieldlist",
-    "html_admonition",
-    "html_image",
-    "linkify",
-    "replacements",
-    "smartquotes",
-    "strikethrough",
-    "substitution",
-    "tasklist",
+   "amsmath",
+   "attrs_inline",
+   "colon_fence",
+   "deflist",
+   "dollarmath",
+   "fieldlist",
+   "html_admonition",
+   "html_image",
+   "linkify",
+   "replacements",
+   "smartquotes",
+   "strikethrough",
+   "substitution",
+   "tasklist",
 ]
 
 myst_heading_anchors = 3
