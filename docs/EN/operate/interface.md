@@ -4,7 +4,7 @@
 
 <b> The main screen of Open-iAPS can be divided into three sections: </b>
 
-| [Status](#status) | [Graphs & Statistics](#graphs-and-statistics) | [Actions](#actions) |
+[Status](#status) | [Graphs & Statistics](#graphs-and-statistics) | [Actions](#actions)
 
 <img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/7bb90d5d-4183-49ad-a154-269352ee5fa9" width="400"/>
 
