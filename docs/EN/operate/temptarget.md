@@ -2,7 +2,8 @@
 
 ## Exercise
 
-:::{tip}
+:::{admonition} Tips
+:class: tip
    - Pack a snack when you plan to exercise
    - Set a high temp target 1-2 hours before your exercise
    - Enable exercise-related settings in preferences to reduce insulin delivered while exercising
@@ -16,7 +17,8 @@ Open-iAPS has some quality-of-life features that make exercise easier while loop
 
 ## Pre-Meal
 
-:::{tip}
+:::{admonition} Tips
+:class: tip
    - Set a low temp target 1-2 hours before meals to help with spikes
    - Enable "Low Temptarget Lowers Sensitivity" to allow for greater insulin delivery
 :::
