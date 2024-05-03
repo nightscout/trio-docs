@@ -6,10 +6,11 @@ Here are a few ways to customize the Open-iAPS code to suit your needs better. P
 
 Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Open-iAPS. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
-:::{caution}
-- If you disable this, you remove an important safety feature.
-- In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
+:::{warning}
+If you disable this, you remove an important safety feature.
 :::
+
+In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
 > Note: you can apply this customization using the script to [Customize Open-iAPS](build.md#customize-open-iaps).
 > 
