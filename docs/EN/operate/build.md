@@ -192,27 +192,24 @@ Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can u
 <img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control
 2. Choose `Fetch changes`
 
-![Update Open-iAPS with Source Control-fetch changes](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8)
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control again
 2. Select `Pull…`
 
-![Update Open-iAPS with Source Control-pull](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca)
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
 
 Refer to the graphic below:
-
 1. Select the branch to pull from
 2. Click `Pull`
 
 The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic has the older branch name of `master`.)
 
-![Update Open-iAPS with Source Control-correct branch](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9)
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9" width="600px"/>
 
 The last steps are only relevant if you made any changes to the code:
 
@@ -262,4 +259,4 @@ Verify that the Open-iAPS code was successfully updated by examining the `APP_VE
 
 If using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
 
-![Update Open-iAPS with Source Control-check version](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca)
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca" width="600px"/>
