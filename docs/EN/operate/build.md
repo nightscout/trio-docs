@@ -10,7 +10,7 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 
 * [GitHub Build Instructions](https://github.com/nightscout/Open-iAPS/blob/main/fastlane/testflight.md)
 * [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
-* [LoopDocs: GitHub Build Other Apps]([https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/](https://loopkit.github.io/loopdocs/gh-actions/gh-other-apps/))
+* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-other-apps/)
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Open-iAPS intead of Loop
 :::
@@ -137,7 +137,7 @@ If you encounter any build issues, please look at the [LoopDocs Build](https://l
 
 If you need it, you are most likely to get help in one of these groups:
 
-* [Discord: Open-iAPS channel](https://discord.gg/sUakC38m))
+* [Discord: Open-iAPS channel](https://discord.gg/sUakC38m)
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
 * Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
