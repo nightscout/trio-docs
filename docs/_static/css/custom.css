@@ -1,10 +1,10 @@
-.rst-other-versions a[href*="/fr/"] {
-  display: none !important;
-}
-
 :root {
     --sd-color-nodata: #88868B;
     --sd-color-looping: #2ED258;
     --sd-color-fiveminutes: #FF9F03;
     --sd-color-tenminutes: #FF463C;
+}
+
+.rst-other-versions a[href*="/fr/"] {
+  display: none !important;
 }
