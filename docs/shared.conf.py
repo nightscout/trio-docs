@@ -43,11 +43,7 @@ extensions = [
     # 'alabaster',
 ]
 
-myst_enable_extensions = [
-   "colon_fence",
-   "attrs_inline",
-   "html_image", 
-]
+myst_enable_extensions = ["deflist"]
 
 myst_heading_anchors = 3
 
