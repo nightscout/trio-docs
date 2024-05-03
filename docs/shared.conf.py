@@ -39,8 +39,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
-    'myst_parser',
-    'sphinx_togglebutton'
+    'myst_parser',   
     # 'alabaster',
 ]
 
@@ -59,7 +58,6 @@ myst_enable_extensions = [
     "strikethrough",
     "substitution",
     "tasklist",
-    "sphinx_togglebutton'
 ]
 
 myst_heading_anchors = 3
