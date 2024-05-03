@@ -10,7 +10,11 @@ Here are a few ways to customize the Open-iAPS code to suit your needs better. P
 :::
 
 Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Open-iAPS. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
-% You can find the script for this customization here [Customize Open-iAPS](#customize-open-iaps). Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
+
+You can find the script for this customization here [Customize Open-iAPS](build.md#customize-open-iaps). Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
+
+**Steps:**
+
 Edit line 20 of the file `LoopKit/LoopKitUI/Extensions/Environment+Authenticate.swift`
 
 
