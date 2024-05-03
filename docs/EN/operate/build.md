@@ -190,7 +190,7 @@ If you prefer the command line interface, skip ahead to [Update Open-iAPS with C
 
 Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-```{image} docs/EN/operate/img/Update Open-iAPS with Source Control-welcome.png
+```{image} img/Update Open-iAPS with Source Control-welcome.png
 :width: 600px
 :align: center
 ```
