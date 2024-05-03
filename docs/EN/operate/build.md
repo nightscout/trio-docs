@@ -13,7 +13,8 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 
 
->*If you use the LoopDocs instructions, you will need the following information to build Open-iAPS (instead of Loop)*
+:::{admonition} *If you use the LoopDocs instructions, you will need the following information to build Open-iAPS (instead of Loop)*
+:class: dropdown
 
 * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
@@ -26,6 +27,7 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 * You must add this `App Group` to all 4 identifiers
 * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
 * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
+:::
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
