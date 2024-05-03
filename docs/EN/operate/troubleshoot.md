@@ -23,7 +23,8 @@ When you find out your pump has failed, immediately open loop to prevent Open-iA
 
 ## Low Treatment
 
-:::{tip}
+:::{admonition} Tips
+:class: tip
   - Enter carbs for treatment into Open-iAPS but do not bolus for it
   - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
 :::
@@ -34,7 +35,8 @@ If you experience a roller coaster pattern of highs and lows after treatment, yo
 
 ## Rebound Lows
 
-:::{note}
+:::{admonition} Tips
+:class: tip
  - Treating lows with fast carbs can give a fast BG rise
  - Under certain circumstances, Open-iAPS might react to the fast BG rise by giving insulin, leading to another low
 :::
@@ -47,7 +49,7 @@ To avoid a second low, you can instruct Open-iAPS not to give any SMBs for a whi
 
 ## Highs after meals
 
-:::{important}
+:::{tip}
 **It is _normal_ for BG to rise after a meal. This happens to everyone, with or without diabetes. The key is to avoid very high BG levels and bring them back into range as soon as possible.**
 :::
 
