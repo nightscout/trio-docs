@@ -44,7 +44,7 @@ extensions = [
 ]
 
 myst_enable_extensions = [
-   "amsmath",
+    "amsmath",
     "attrs_inline",
     "colon_fence",
     "deflist",
