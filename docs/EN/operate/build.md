@@ -188,11 +188,11 @@ If you prefer the command line interface, skip ahead to [Update Open-iAPS with C
 
 **Note** Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
 
-```{figure} nightscout/Open-iAPS-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8
+Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
+
+```{image} nightscout/Open-iAPS-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8
 :width: 600px
 :align: center
-
-Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 ```
 
 Refer to the graphic below:
