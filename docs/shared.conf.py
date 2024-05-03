@@ -40,7 +40,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'myst_parser',   
-    # 'alabaster',
+    'alabaster',
 ]
 
 myst_enable_extensions = [
