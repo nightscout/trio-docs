@@ -12,20 +12,20 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 * [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 
-:::{important}
-*If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):*
+:::{tip} If using the LoopDocs instructions you need the important information below to build Open-iAPS intead of Loop
 :::
-* Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
-* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-* `Identifiers` will be:
-    * `org.nightscout.TEAMID.openiaps`
-    * `org.nightscout.TEAMID.openiaps.watchkitapp`
-    * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
-    * `org.nightscout.TEAMID.openiaps.LiveActivity`
-* The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
-* You must add this `App Group` to all 4 identifiers
-* The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
-* In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
+  * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
+  * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
+  * `Identifiers` will be:
+      * `org.nightscout.TEAMID.openiaps`
+      * `org.nightscout.TEAMID.openiaps.watchkitapp`
+      * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
+      * `org.nightscout.TEAMID.openiaps.LiveActivity`
+  * The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
+  * You must add this `App Group` to all 4 identifiers
+  * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
+  * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
+
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
@@ -144,7 +144,7 @@ If you need it, you are most likely to get help in one of these groups:
 ### xDrip4iOS or Glucose Direct as CGM Source
 
 :::{Important}
-LibreTransmitter is provided as part of Open-iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using Open-iAPS.
+LibreTransmitter is provided as part of Open-iAPS. Neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Open-iAPS.
 :::
 
 If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
@@ -184,38 +184,31 @@ If you prefer the command line interface, skip ahead to [Update Open-iAPS with C
 
 ### Update Open-iAPS with Source Control
 
-**Note** Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
+::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
 
 Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-![Update Open-iAPS with Source Control-welcome](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control
 2. Choose `Fetch changes`
 
-![Update Open-iAPS with Source Control-fetch changes](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control again
 2. Select `Pull…`
 
-![Update Open-iAPS with Source Control-pull](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
 
 Refer to the graphic below:
-
 1. Select the branch to pull from
 2. Click `Pull`
 
 The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic has the older branch name of `master`.)
 
-![Update Open-iAPS with Source Control-correct branch](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9){width="500"}
-{align="center"}
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9" width="600px"/>
 
 The last steps are only relevant if you made any changes to the code:
 
@@ -265,5 +258,4 @@ Verify that the Open-iAPS code was successfully updated by examining the `APP_VE
 
 If using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
 
-![Update Open-iAPS with Source Control-check version](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/Open-iAPS-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca" width="600px"/>
