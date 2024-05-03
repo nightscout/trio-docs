@@ -2,10 +2,11 @@
 
 ## Exercise
 
-:::{tip}
-   - Pack a snack when you plan to exercise
+:::{admonition} Tips
+:class: tip
    - Set a high temp target 1-2 hours before your exercise
    - Enable exercise-related settings in preferences to reduce insulin delivered while exercising
+   - Pack a snack when you plan to exercise
 :::
 
 Exercise can have immediate and long-term effects on glycemic control. Generally, individuals will find their blood sugar drops during intense exercise and continue to drop for 3-4 hours after. They may also experience increased insulin sensitivity for 24 hours after exercise.
@@ -16,7 +17,8 @@ Open-iAPS has some quality-of-life features that make exercise easier while loop
 
 ## Pre-Meal
 
-:::{tip}
+:::{admonition} Tips
+:class: tip
    - Set a low temp target 1-2 hours before meals to help with spikes
    - Enable "Low Temptarget Lowers Sensitivity" to allow for greater insulin delivery
 :::
