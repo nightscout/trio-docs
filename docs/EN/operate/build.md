@@ -137,13 +137,13 @@ If you encounter any build issues, please look at the [LoopDocs Build](https://l
 
 If you need it, you are most likely to get help in one of these groups:
 
-* [Discord: Open-iAPS channel](https://discord.gg/ptkk2Y264Z)
+* [Discord: Open-iAPS channel](https://discord.gg/sUakC38m)
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
 * Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
 ### xDrip4iOS or Glucose Direct as CGM Source
 
-:::{Important}
+:::{important}
 LibreTransmitter is provided as part of Open-iAPS. Neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Open-iAPS.
 :::
 
