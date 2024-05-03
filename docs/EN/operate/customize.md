@@ -12,7 +12,7 @@ Depending on your iPhone settings and model, you may have Face ID or Touch ID en
 
 In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
-{You can find the script for this customization here [Customize Open-iAPS](#customize-open-iaps). Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.}
+You can find the script for this customization here [Customize Open-iAPS](#customize-open-iaps). Open-iAPS uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
 
 To edit the file:
 
@@ -32,7 +32,7 @@ if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error)
 
 The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you come from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Open-iAPS - be conservative.
 
-:::{note}
+:::{card} It is important to know
 Open-iAPS does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Open-iAPS. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.25 U to the "extra" value, you should get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you press insert.
 :::
 
