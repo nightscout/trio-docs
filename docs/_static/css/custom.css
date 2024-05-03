@@ -3,8 +3,8 @@
 }
 
 :root {
-    --sd-color-grey: #88868B;
-    --sd-color-green: #2ED258;
-    --sd-color-yellow: #FF9F03;
-    --sd-color-red: #FF463C;
+    --sd-color-nodata: #88868B;
+    --sd-color-looping: #2ED258;
+    --sd-color-fiveminutes: #FF9F03;
+    --sd-color-tenminutes: #FF463C;
 }
