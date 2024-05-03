@@ -40,11 +40,26 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'myst_parser',
+    'sphinx_togglebutton'
     # 'alabaster',
 ]
 
 myst_enable_extensions = [
-  "colon_fence",
+   "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+    "sphinx_togglebutton'
 ]
 
 myst_heading_anchors = 3
