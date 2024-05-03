@@ -6,11 +6,11 @@ Update with [GitHub](#update-open-iaps-with-github) | [Xcode](#update-open-iaps-
 
 ## Build Open-iAPS with GitHub
 
-The Open-iAPS repository contains instructions for building the Open-iAPS app using a browser and GitHub. More detailed instructions are also available in Loopdocs.
+The Open-iAPS repository contains instructions for building the Open-iAPS app using a browser and GitHub. More detailed instructions are also available in LoopDocs.
 
 * [GitHub Build Instructions](https://github.com/nightscout/Open-iAPS/blob/main/fastlane/testflight.md)
 * [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
-* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
+* [LoopDocs: GitHub Build Other Apps]([https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/](https://loopkit.github.io/loopdocs/gh-actions/gh-other-apps/))
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Open-iAPS intead of Loop
 :::
@@ -21,19 +21,19 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
       * `org.nightscout.TEAMID.openiaps.watchkitapp`
       * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
       * `org.nightscout.TEAMID.openiaps.LiveActivity`
-  * The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
-  * You must add this `App Group` to all 4 identifiers
-  * The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
+  * Make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
+  * You must add this `App Group` to each of the following identifiers:
+      * `org.nightscout.TEAMID.openiaps`
+      * `org.nightscout.TEAMID.openiaps.watchkitapp`
+      * `org.nightscout.TEAMID.openiaps.watchkitapp.watchkitextension`
+  * The `org.nightscout.TEAMID.openiaps` identifier, in addition to `App Group`, must also have the `HealthKit` and `NFC Tag Reading` boxes checked (which should be automatic)
   * In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `org.nightscout.TEAMID.openiaps`
-
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
-The Open-iAPS build can be configured to display the branch name and commit ID as test notes in TestFlight.
+The Open-iAPS build can be configured to display the branch name and commit ID as test notes in TestFlight. This is an optional step, which can be especially useful if building the dev branch.
 
-However, you must take action for that to happen.
-
-First build Open-iAPS (at least) one time using Browser Build and wait for it to appear on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
+First, you must have already built Open-iAPS and have it available on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
 
 * Tap on the TestFlight tab
 * Choose any build to open a new detailed screen for that build
@@ -45,7 +45,7 @@ You can add additional tests notes for any build if you desire.
 
 ## Update Open-iAPS with GitHub
 
-Open your fork at your GitHub username.
+Open your fork at `github.com/YOUR-USERNAME/Open-iAPS` with your GitHub username instead of `YOUR-USERNAME`
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
@@ -137,7 +137,7 @@ If you encounter any build issues, please look at the [LoopDocs Build](https://l
 
 If you need it, you are most likely to get help in one of these groups:
 
-* [Discord: Open-iAPS channel](https://discord.gg/sUakC38m)
+* [Discord: Open-iAPS channel](https://discord.gg/sUakC38m))
 * [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
 * Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
