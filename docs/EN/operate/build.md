@@ -13,7 +13,8 @@ The Open-iAPS repository contains instructions for building the Open-iAPS app us
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
 
 
-:::{dropdown} If you use the LoopDocs instructions, you will need the following information to build Open-iAPS (instead of Loop)
+:::{admonition} If you use the LoopDocs instructions, you will need the following information to build Open-iAPS (instead of Loop)
+:class: tip
 
 * Fork from: [https://github.com/nightscout/Open-iAPS](https://github.com/nightscout/Open-iAPS)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
