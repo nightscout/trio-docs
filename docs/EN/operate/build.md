@@ -190,15 +190,14 @@ If you prefer the command line interface, skip ahead to [Update Open-iAPS with C
 
 Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-<img src="img/Update Open-iAPS with Source Control-welcome.png" width="600px" align=center>
+<img src="docs/EN/operate/img/Update Open-iAPS with Source Control-welcome.png" width="600px" align=center>
 
 Refer to the graphic below:
 
 1. Click Source Control
 2. Choose `Fetch changes`
 
-![Update Open-iAPS with Source Control-fetch changes](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8){width="600"}
-{align="center"}
+![Update Open-iAPS with Source Control-fetch changes](https://github.com/nightscout/Open-iAPS-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8){w=600px align=center}
 
 Refer to the graphic below:
 
