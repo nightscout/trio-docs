@@ -118,7 +118,7 @@ There are several different app icon options built into Open-iAPS, but you can s
    Code before modification:
 ```swift
 ...
-    case loop = "Open-iAPS_Loop"
+    case loop = "oiapsBlack"
     var id: String { rawValue }
 }
 ```
@@ -126,7 +126,7 @@ There are several different app icon options built into Open-iAPS, but you can s
    Code after modification:
 ```swift
 ...
-    case loop = "Open-iAPS_Loop"
+    case loop = "oiapsBlack"
     case ivan = "ivan"
     var id: String { rawValue }
 }
