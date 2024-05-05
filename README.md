@@ -1,4 +1,4 @@
-Repository for [iAPS documentation (under development)](https://open-iaps.readthedocs.io/en/latest/)
+Repository for [Open-iAPS documentation (under development)](https://open-iaps.readthedocs.io/en/latest/)
 
 Tips & Tricks: (please add!)
 
