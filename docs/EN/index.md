@@ -1,34 +1,34 @@
-**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR OPEN-iAPS BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE :)**
+**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR TRIO BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE :)**
 
-# What is Open-iAPS?
-Open-iAPS is an open-source artifical pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
+# What is Trio?
+Trio is an open-source artifical pancreas system based on the [OpenAPS](https://openaps.readthedocs.io/en/latest/) algorithm. 
 
 * Using your personal settings, glucose values, meal inputs and historical data, the app automates insulin delivery
 * This reduces the time you spend managing your diabetes and in many cases, provides better sleep and better glucose control
 
-Before starting with Open-iAPS, you should evaluate your closed-loop options, including:
+Before starting with Trio, you should evaluate your closed-loop options, including:
 
 * Commercial systems such as Medtronic's 780G, Tandem's Control-IQ or Insulet's Omnipod 5
 * Other open-source applications like Loop and AndroidAPS
 
-Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
+Trio is not approved by any health care authority. You are building and running this system at your own risk.
 
 # Getting Started
-Before starting with Open-iAPS, you should have a basic understanding of what carb ratio (CR), insulin sensitivity factor (ISF), and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
+Before starting with Trio, you should have a basic understanding of what carb ratio (CR), insulin sensitivity factor (ISF), and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
 
-To use Open-iAPS, you are required to build the application from the source code. This does not require substantial technical know-how but is a time consuming process. You may need several sessions to complete your first build.
+To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Open-iAPS acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on "Closed Loop", enabling automatic bolus features, and turning on dynamic features. In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
+Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on "Closed Loop", enabling automatic bolus features, and turning on dynamic features. In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
 
 - Enable Closed Loop for automation
 - Increase Max IOB to "average meal bolus + 3x max daily basal"
 - Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
-See Configure for more information on Open-iAPS configuration.
+See Configure for more information on Trio configuration.
 
 If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
 # Contribution
-Open-iAPS is built by a volunteer community. If you are interested in helping as a programmer, you can help contribute to Open-iAPS, or OpenAPS code base. Open-iAPS is mostly written in SwiftUI. The APS algorithm is written in JS.
+Trio is built by a volunteer community. If you are interested in helping as a programmer, you can help contribute to Trio, or OpenAPS code base. Trio is mostly written in SwiftUI. The APS algorithm is written in JS.
 
 You can also provide support in online support groups by helping users adjust their settings and troubleshoot common errors.
 
@@ -107,7 +107,7 @@ You can also provide support in online support groups by helping users adjust th
 (index-Operate)=
 
 ```{toctree}
-:caption: Using Open-iAPS
+:caption: Using Trio
 
 Build <./operate/build.md>
 
