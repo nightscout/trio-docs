@@ -52,7 +52,7 @@ When Autosens adjusts the ISF, it uses the following calculation:
 
 _Bill now temporarily has an ISF of 2.73 mmol/L/U (49 mg/dL/U)._
 
-Dynamic ISF (using the default logarithmic algorithm in Open-iAPS) uses an alternative formula to calculate the autosens.ratio for ISF adjustments. **Note this formula uses mg/dL and not mmol/L:**
+Dynamic ISF (using the default logarithmic algorithm in Trio) uses an alternative formula to calculate the autosens.ratio for ISF adjustments. **Note this formula uses mg/dL and not mmol/L:**
 
 ```{math}
 autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
@@ -67,7 +67,7 @@ _This formula considers your profile ISF (profile.sens in mg/dL), current blood 
 [Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
 
 ## Dynamic CR
-This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how ICR is calculated by Open-iAPS. Dynamic CR uses a similar formula as Dynamic ISF as described above:
+This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how ICR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF as described above:
 
 ```{math}
 autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
@@ -75,7 +75,7 @@ autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
 New\ CR\ =\ (profile\ CR)\ /\ (autosens.ratio)
 ```
 
-If you find your CR changes dramatically day to day and Open-iAPS is not providing adequate bolus recommendations, you can test this feature. Note that Open-iAPS already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
+If you find your CR changes dramatically day to day and Trio is not providing adequate bolus recommendations, you can test this feature. Note that Trio already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
 
 :::{note}
 If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 

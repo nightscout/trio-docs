@@ -24,7 +24,7 @@ Autotune results can be unreliable if dynamic settings are enabled.
 
 Because Autotune uses Deviations to calculate basal variation, it has to calculate Deviations. It does this using a profile-based ISF value. 
 
-This means that if you enable Autotune but use Dynamic functions within Open-iAPS, the algorithm will not use the ISF that was in operation when it ran in the past, and basal adjustments and ISF adjustments are likely to be incorrect. 
+This means that if you enable Autotune but use Dynamic functions within Trio, the algorithm will not use the ISF that was in operation when it ran in the past, and basal adjustments and ISF adjustments are likely to be incorrect. 
 
 It can also only run with a single daily ISF and CR, so it doesn't work for most people. 
 

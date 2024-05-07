@@ -1,10 +1,10 @@
-# Open-iAPS
+# Trio
   
 ## Glucose Units
 Allows you to toggle between mmol/L and mg/dL blood glucose units.
 
 ## Remote Control
-Allows for remote control of open-iAPS using Nightscout.
+Allows for remote control of open-trio using Nightscout.
 
 :::{caution}
 **Duplicate Delivery Risk**
@@ -14,7 +14,7 @@ Allows for remote control of open-iAPS using Nightscout.
 
 We want to highlight a very important risk before you get started.
 
-For safety, always assume a previous remote carb/bolus was delivered whether it shows in Nightscout Open-iAPS.
+For safety, always assume a previous remote carb/bolus was delivered whether it shows in Nightscout Trio.
 
 **For Example:**
 
@@ -29,12 +29,12 @@ You can see the danger of sending duplicate bolus/carbs, so be careful. If a rem
 
 To use, navigate to your connected Nightscout instance. Click the lock icon at the top right and enter your API secret. Next, click the now visible "+" sign at the top right. A "Log a Treatment" menu will open up. 
 
-To enter carbs, select the "carb correction" event type. Fill in the required blanks and click "Submit Form". Open-iAPS will read any carb entries in Nightscout and adjust insulin delivery as configured.
+To enter carbs, select the "carb correction" event type. Fill in the required blanks and click "Submit Form". Trio will read any carb entries in Nightscout and adjust insulin delivery as configured.
 
 To configure loop status, pump, or to bolus:
 
 1. Select the "announcement" event type.
-2. For "entered by" enter `remote` (Before Open-iAPS-main v0.1.0 it was `freeaps-x-remote` instead)
+2. For "entered by" enter `remote` (Before Trio-main v0.1.0 it was `freeaps-x-remote` instead)
 3. In additional notes, state one of the following options:
 
 * To bolus, enter `bolus:(amount)` (ex: `bolus:0.5`).
@@ -47,7 +47,7 @@ Remote configurations with announcement-type events can only be performed every 
 :::
 
 ## Recommended Bolus Percentage
-Recommended bolus percentage is a safety feature built into Open-iAPS. By default, Open-iAPS first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Open-iAPS then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
+Recommended bolus percentage is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
 
 `Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (80), 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
 

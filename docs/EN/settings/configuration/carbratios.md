@@ -9,7 +9,7 @@ CR refers to the amount of carbohydrates one unit of insulin is able to neutrali
 
 Example: Bill has a 1:10 CR (aka a CR of 10). If Bill has 20 carbs with lunch, he will need 2 U of rapid insulin to neutralize it.
 
-CR is not changed as drastically as basal rates or ISF unless Dynamic CR is enabled. Your CR must be as accurate as possible for proper Open-iAPS function.
+CR is not changed as drastically as basal rates or ISF unless Dynamic CR is enabled. Your CR must be as accurate as possible for proper Trio function.
 
 ## Settings
 It is safe to transfer your CR from your pump settings. However, your settings may not be accurate if you are experiencing high peaks with meals or lows three hours afterward. If you have SMB/UAM on and are experiencing sharp drops, you may also need to optimize your ISF.

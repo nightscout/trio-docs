@@ -16,7 +16,7 @@ There are limitations on the size of SMBs. <a href = "https://openaps.readthedoc
  - Do not perform manual correction boluses with SMB and UAM enabled. You will be at a high risk of having a low.
 :::
 
-There are numerous settings related to enabling SMBs in Open-iAPS. Below is the order of precedence of the settings Open-iAPS uses when deciding whether to enable or disable SMB:
+There are numerous settings related to enabling SMBs in Trio. Below is the order of precedence of the settings Trio uses when deciding whether to enable or disable SMB:
 
 1. disable SMB when a high temp target is set (unless "allow SMB with High Temptarget" is enabled)
 2. enable SMB/UAM if always-on (unless disabled for high temp target)
@@ -24,7 +24,7 @@ There are numerous settings related to enabling SMBs in Open-iAPS. Below is the 
 4. enable SMB/UAM (if enabled in preferences) for a full 6 hours after any carb entry
 5. enable SMB/UAM (if enabled in preferences) if a low temp target is set
 
-A flow chart will be added here for greater clarity on Open-iAPS SMB decision-making.
+A flow chart will be added here for greater clarity on Trio SMB decision-making.
 
 ## Unannounced Meals
 Unannounced Meal (UAM) provides an alternative method (in addition to or instead of carb entry) for detecting and safely dosing insulin via SMBs in response to significant BG rises, whether due to meals, stress/illness, or counterregulatory hormones (adrenaline, cortisol, glucagon, HGH). When enabled, it replaces Advanced Meal Assist (AMA). AMA is an older feature that depends on your carbohydrate entries and sets high temporary basal rates to counteract any remaining carbs on board.
