@@ -6,7 +6,7 @@
 
 ### Before Adjusting CR
 
-With Open-iAPS, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Some users prefer overestimating carb entries and giving a smaller percentage of the upfront bolus. Note: If you overestimate the carb entry and bolus for 100% upfront, the algorithm is limited in its ability to only suspend insulin as a means to prevent hypoglycemia following a meal.
+With Trio, there is a reduced requirement for precise carb entries, although some precision will still improve outcomes. Some users prefer overestimating carb entries and giving a smaller percentage of the upfront bolus. Note: If you overestimate the carb entry and bolus for 100% upfront, the algorithm is limited in its ability to only suspend insulin as a means to prevent hypoglycemia following a meal.
 
 If you have been giving 100% of the needed bolus for meals, it might be best to try a smaller percentage upfront rather than adjusting your CR.
 

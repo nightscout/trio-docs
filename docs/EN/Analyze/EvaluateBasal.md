@@ -12,7 +12,7 @@
    - <i>Are you in open loop?</i>
 
    :::{caution}
-   Until you understand how the Open-iAPS algorithm works, you should only make basal adjustments after basal testing in an open loop.
+   Until you understand how the Trio algorithm works, you should only make basal adjustments after basal testing in an open loop.
    :::
 
 2. <b>Is this a one-time event, or does it happen consistently over multiple days?</b>
