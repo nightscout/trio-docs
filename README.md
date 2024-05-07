@@ -1,4 +1,4 @@
-Repository for [Open-iAPS docs (_coming soon_)](https://open-iaps.readthedocs.io)
+Repository for [Trio documentation (under development)](https://docs.diy-trio.org)
 
 Tips & Tricks: (please add!)
 
