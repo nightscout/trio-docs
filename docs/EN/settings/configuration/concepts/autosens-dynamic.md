@@ -1,26 +1,59 @@
-# Autosens, Dynamic ISF/ICR, and Adjust Basal
-:::{admonition} Highlights
-:class: tip
-- Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
-- Bias the calculated ISF/CR/Basal rates towards more or less aggressive values by increasing or decreasing the adjustment factor accordingly.
-- Adjustments are limited by autosens max/min.
-:::
+# Autosens, Dynamic ISF, Dynamic CR, and Adjust Basal
 :::{important}
   The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
 :::
 
-## Auto-sensitivity Mode
-Auto-sensitivity (Autosens) reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative temporary adjustments to your basal rates, blood sugar target, and ISF.
+## Autosens
+Auto-sensitivity (Autosens) is the default algorithm. It reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative, temporary adjustments to your basal rates, blood sugar target, and ISF.
 
->**Example:**
->
->_Autosens finds Bill has been running more sensitive to insulin lately. In the last 24 hours, he has >been 2X more sensitive to insulin, whereas, in the last 8 hours, he has been 3X more sensitive to insulin._
+:::{admonition} Wilford's Example
+:class: dropdown
 
-Autosens then takes the more conservative calculated sensitivity. In this example, the more conservative value is obtained from the 8-hour window because by assuming Bill is 3X more as opposed to 2X more sensitive to insulin, the system will be posed to give less insulin.
+>*Autosens finds Wilford has been running more sensitive to insulin lately.\
+>In the last 24 hours, his daily total of insulin (TDD) has reduced from 60 to 50.\
+>In the last 8 hours, his daily total of insulin (TDD) has reduced from 60 to 55.*
 
-If you are using Autotune, Autosens will use your calculated Autotune CR, ISF, and basal rates as its baseline rather than your set values.
+Autosens takes the more conservative calculated sensitivity, which will result in less insulin administered. In this example, the last 8 hours reflects a smaller reduction in insulin needs than the last 24 hours. So, Autosens will use the more conservative 8-hour calculation.
+:::
+
+### Autosens Ratio
+
+The Autosens Ratio (autosens.ratio) is used to determine how greatly settings need to be adjusted.
+| Autosens Ratio | Insulin Adjustment |
+| :---: | :---: |
+| < 1.0 | less |
+| = 1.0 | same |
+| > 1.0 | more |
+
+:::{admonition} Algorithm Formula - Autosens Ratio
+:class: dropdown
+
+![autosens ratio formula](https://github.com/nightscout/trio-docs/assets/31315442/00457200-cb08-4364-9b46-3628463f9134){align=center}
+:::
+
+If you are using Autotune, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your set values.
 
 Note that Autosens does not examine meals or adjust your CR. It only assesses your sensitivity to insulin and adjusts ISF/basal rates/blood sugar targets accordingly.
+
+### Autosens ISF
+
+:::{admonition} Algorithm Formula - Autosens ISF
+:class: dropdown
+
+![New ISF formula](https://github.com/nightscout/trio-docs/assets/31315442/84a23c77-8daa-413b-bba2-7d551ef8cf52){align=center}
+:::
+
+:::{admonition} Wilford's Example
+:class: dropdown
+
+>*Autosens has calculated that Wilford's autosens.ratio is 1.1. Here is how autosens determines his new ISF that will be used in the insulin dosing calculations with this loop cycle.
+
+![ISF example 1](https://github.com/nightscout/trio-docs/assets/31315442/5528c559-dd49-42de-898b-da73f4f001d4){align=center}
+:::
+
+### Autosens Basals
+
+
 
 ## Dynamic ISF
 Some thought Autosens was too conservative and slow to make changes. `Dynamic ISF` is a drop-in replacement for Autosens's ISF calculation formula, with the goal of making it more aggressive. If you find that you have high ISF variability throughout the day and Autosens is not providing you with sufficient control, you can turn this feature on.
