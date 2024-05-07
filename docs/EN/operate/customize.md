@@ -120,7 +120,7 @@ There are several different app icon options built into Trio, but you can still 
    Code before modification:
 ```swift
 ...
-    case loop = "oiapdBlack"
+    case loop = "trioLoop"
     var id: String { rawValue }
 }
 ```
@@ -128,7 +128,7 @@ There are several different app icon options built into Trio, but you can still 
    Code after modification:
 ```swift
 ...
-    case loop = "oiapsBlack"
+    case loop = "trioLoop"
     case ivan = "ivan"
     var id: String { rawValue }
 }
