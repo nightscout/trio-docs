@@ -1,4 +1,4 @@
-# Autosens, Dynamic ISF, Dynamic CR, and Adjust Basal
+# Autosens, Dynamic ISF/Dynamic CR, and Adjust Basal
 :::{important}
   - The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
   - Calculations are done using mg/dL.
@@ -9,9 +9,9 @@
 ## Autosens
 Auto-sensitivity (Autosens) is the default algorithm. It reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes temporary adjustments to your basal rates, blood sugar target, and ISF.
 
-For more specific details on how Autosens is calculated without Trio's dynamic settings enabled, see the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html)
-
 ### Autosens Ratio
+
+For more specific details on how Autosens is calculated without Trio's dynamic settings enabled, see the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html)
 
 The Autosens Ratio (autosens.ratio) is used to determine how greatly settings need to be adjusted.
 | Autosens Ratio | Insulin Adjustment |
@@ -26,107 +26,55 @@ Autosens does not examine meals or adjust your CR. It only assesses your sensiti
 If you have Autotune turned ON, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your preset values.
 :::
 
-### Autosens ISF
+### Autosens Adjustments
 
-Autosens uses this formula to calculate the ISF value used for the current loop cycle.
+![Calc ISF formula](https://github.com/tmhastings/trio-docs/assets/31315442/e3d9f8f8-a1a5-4594-b798-7e0cb333f174)
 
-<img src="https://github.com/tmhastings/trio-docs/assets/31315442/3cc308b0-589c-4588-8f9e-784215f84576" width="500">
+![Autosens basal formula_Adjust Basal formula](https://github.com/tmhastings/trio-docs/assets/31315442/77679847-a5ec-4c9a-9fd5-5910c8f997ad)
 
-### Autosens Basals
+![Adjusted Target BG](https://github.com/tmhastings/trio-docs/assets/31315442/0a1f9769-a0d3-4974-98d9-86a6b66183cc)
 
-Autosens uses this formula to calculate the basal rate used for the current loop cycle.
+## Dynamic ISF/Dynamic CR
 
+Enabling one or both of the dynamic functions replaces the autosens ratio calculation with the following formula:
 
-## Dynamic ISF
-Some thought Autosens was too conservative and slow to make changes. `Dynamic ISF` is a drop-in replacement for Autosens's ISF calculation formula, with the goal of making it more aggressive. If you find that you have high ISF variability throughout the day and Autosens is not providing you with sufficient control, you can turn this feature on.
+![autosens ratio formula](https://github.com/tmhastings/trio-docs/assets/31315442/f631a209-881a-484a-80d9-e2ba88f1cb4c)
 
-Dynamic ISF takes into consideration a new variable called the `Adjustment Factor`, which affects its aggressiveness. If Dynamic ISF is too aggressive, you can decrease this number by 0.05-0.1 points to make it more meek. Likewise, increase this number if you still feel dynamic ISF is not aggressive enough.
+One major difference between this calculation and the OpenAPS Autosens calculation referenced previously is the introduction of Adjustment Factor (AF) as a variable that can be adjusted in user settings. A higher AF will result in the calculation having a greater influence on the new calculated settings. The default value is `0.5`.
 
-:::{note}
-- Dynamic ISF is temporarily disabled, and the system reverts to Autosens if either `High Temptarget Raises Sensitivity` or `Exercise Mode` is enabled and a high temporary target has been set by the user.
-While Dynamic ISF is inherently more aggressive, it also provides the user with greater control via the `Adjustment Factor` compared to Autosens. You can decrease the `Adjustment Factor` to make Dynamic ISF less aggressive than the calculated Autosens values. 
+Below you will find graphs that allow you to manipulate the different variables of the dynamic autosens formula to see how they influence the algorithm:
+
+ - [Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/zrkugmdnob)
+ - [Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
+
+### Dynamic ISF
+
+When Dynamic ISF is enabled, once the autosens.ratio is calculated, it will apply it to the Profile ISF setting to adjust sensitivity with each loop cycle. This new value is used in place of your profile ISF for insulin adjustments with the current loop cycle.
+
+![Calc ISF formula](https://github.com/tmhastings/trio-docs/assets/31315442/e3cc67f0-3268-4c3d-95cd-fb5acdcae74a)
+
+:::{important}
+When a **high temporary target** is manually set and either `High Temptarget Raises Sensitivity` _OR_ `Exercise Mode` is enabled, Dynamic ISF will automatically turn **OFF** and the system reverts to Autosens.
 :::
 
-### Advanced information
-Autosens determines a ratio (`autosens.ratio`) and alters your ISF in the following manner:
+### Dynamic CR
 
-```{math}
-Profile\ ISF\ ÷\ autosens.ratio\ =\ New\ ISF
-```
+This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how CR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF:
 
->**Example:**
->
->_Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more >resistant to insulin lately and needs to increase his insulin. It calculates Bill has an >`autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF)_
-
-When Autosens adjusts the ISF, it uses the following calculation:
-```{math}
-3\ mmol/L/U\ ÷\ 1.1\ &=\ 2.73\ mmol/L/U
-
-54\ mg/dL/U\ ÷\ 1.1\ &=\ 49\ mg/dL/U
-```
-
-_Bill now temporarily has an ISF of 2.73 mmol/L/U (49 mg/dL/U)._
-
-Dynamic ISF (using the default logarithmic algorithm in Trio) uses an alternative formula to calculate the autosens.ratio for ISF adjustments. **Note this formula uses mg/dL and not mmol/L:**
-
-```{math}
-autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
-
-New ISF\ =\ (profile\ ISF)\ /\ (autosens.ratio)
-```
-
-_This formula considers your profile ISF (profile.sens in mg/dL), current blood glucose (BG in mg/dL), total daily dose (TDD over the last 24 hours), insulin peak effect (peak activity normally is 120 min) and a new variable called adjustment factor (AF) that allows for user tuning of Dynamic ISF/CR._
-
-[Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/zrkugmdnob)
-
-[Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
-
-## Dynamic CR
-This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how ICR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF as described above:
-
-```{math}
-autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
-
-New\ CR\ =\ (profile\ CR)\ /\ (autosens.ratio)
-```
+![Calc CR formula](https://github.com/tmhastings/trio-docs/assets/31315442/eaa21873-6bd9-4bf2-b2e2-721e94d153ed)
 
 If you find your CR changes dramatically day to day and Trio is not providing adequate bolus recommendations, you can test this feature. Note that Trio already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
 
 :::{note}
 If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 
-    
-```{math}
-new.autosens.ratio\ =\ (autosens.ratio\ -\ 1)\ /\ 2 + 1
-```
+![new autosens ratio formula](https://github.com/tmhastings/trio-docs/assets/31315442/55afc6af-a59c-45fd-a757-f6eb9378de33)
 :::
-    
 
 ## Adjust Basal
+
 Adjust basal replaces Autosens's formula for adjusting basal rates, with one dependent on total daily dose (TDD) of insulin. Turn on this setting to give basal adjustments more agility. Keep this setting off if your basal needs are not highly variable.
 
-### Advanced Information
-Normally, a new basal rate is set by autosens:
-
-- New basal profile = current basal profile * autosens.ratio
-
-Adjust basal replaces the autosens.ratio with its own autosens.ratio calculated as such:
-
-- autosens.ratio = (weighted average of TDD)/(2 week average of TDD)
-- New basal profile = current basal profile * autosens.ratio
-
-See `Weighted Average of TDD` setting to understand how this variable is calculated.
-
-**Example:**
-
-_Bill's TDD has been 55 U over the last 24 hours, and his 14-day average is 48 U. He has set his `Weighted average of TDD` in preferences to 0.7. His current profile basal rate is 1 U/h._
-
-```{math}
-Weighted\ average\ of\ TDD\ =\ 0.7 * 55 U + 0.3 * 48 U = 52.9 U
-
-basal.autosens.ratio\ =\ 52.9 U\ / 48 U\ =\ 1.1U
-
-New\ basal\ profile\ =\ 1 U/h * 1.1\ =\ 1.1 U/h
-```
+![Adjust Basal autosens ratio formula](https://github.com/tmhastings/trio-docs/assets/31315442/ee6724dc-f30d-4f4c-981d-f1e83473d425)
 
 :::{admonition} Final Thoughts
 :class: tip
