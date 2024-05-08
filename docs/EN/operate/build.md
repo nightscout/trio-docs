@@ -1,192 +1,237 @@
 # Build and Update
 
-The Open-iAPS app can be built with two methods:
+**Jump to...**\
+Build with [GitHub](#build-trio-with-github) | [Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
+Update with [GitHub](#update-trio-with-github) | [Xcode](#update-trio-with-xcode) | [Source Control](#update-trio-with-source-control) | [CLI](#update-trio-with-cli)
 
-* [Build Open-iAPS with GitHub](#build-iaps-with-github) using a browser on any computer or tablet
-* [Build Open-iAPS with Script](#build-iaps-with-script) using a Mac with Xcode
+## Build Trio with GitHub
 
-The Open-iAPS app can be updated to the latest release or to a development branch when you choose.
+The Trio repository contains instructions for building the Trio app using a browser and GitHub. More detailed instructions are also available in LoopDocs.
 
-* [Update Open-iAPS with GitHub](#update-iaps-with-github) using a browser on any computer or tablet
-* [Update Open-iAPS with Xcode](#update-iaps-with-xcode) using a Mac with Xcode
-
-## Build Open-iAPS with GitHub
-
-The instructions for using a browser and GitHub to build the Open-iAPS app are found in the Open-iAPS repository.
-
-* [GitHub Build Instructions](https://github.com/Artificial-Pancreas/iAPS/blob/main/fastlane/testflight.md)
-* The instructions at the link above are complete and include the details found beneath the LoopDocs links below.
-
-If those instructions are too sparse for you, look at the LoopDocs instructions, which are very verbose. Between the two, you should be able to figure things out:
-
+* [GitHub Build Instructions](https://github.com/nightscout/Trio/blob/dev/fastlane/testflight.md)
 * [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
-* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
+* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-other-apps/)
 
-If you use the LoopDocs instructions, you will need this information to build Open-iAPS (rather than Loop):
+:::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
+:::
+  * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
+  * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
+  * `Identifiers` will be:
+      * `org.nightscout.TEAMID.trio`
+      * `org.nightscout.TEAMID.trio.watchkitapp`
+      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+      * `org.nightscout.TEAMID.trio.LiveActivity`
+  * Make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
+  * You must add this `App Group` to each of the following identifiers:
+      * `org.nightscout.TEAMID.trio`
+      * `org.nightscout.TEAMID.trio.watchkitapp`
+      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+  * The `org.nightscout.TEAMID.trio` identifier, in addition to `App Group`, must also have the `HealthKit` and `NFC Tag Reading` boxes checked (which should be automatic)
+  * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
-* Fork from: [https://github.com/Artificial-Pancreas/iAPS](https://github.com/Artificial-Pancreas/iAPS)
-* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`
-* `Identifiers` will be:
-    * `ru.artpancreas.TEAMID.FreeAPS`
-    * `ru.artpancreas.TEAMID.FreeAPS.watchkitapp`
-    * `ru.artpancreas.TEAMID.FreeAPS.watchkitapp.watchkitextension`
-* The `App Group` name is the same as for Loop: `group.com.TEAMID.loopkit.LoopGroup`
-* You must add this `App Group` to all 3 identifiers
-* The `FreeAPS Identifier`, in addition to the `App Group`, must also have: `HealthKit` and `NFC Tag Reading` enabled (which should be automatic)
-* In `App Store Connect`, the `Bundle ID` for Open-iAPS will be: `ru.artpancreas.TEAMID.FreeAPS`
+### One-Time Update to Display Branch And Commit in Testflight
 
-## Update Open-iAPS with GitHub
+The Trio build can be configured to display the branch name and commit ID as test notes in TestFlight. This is an optional step, which can be especially useful if building the dev branch.
 
-Open your fork at your GitHub username.
+First, you must have already built Trio and have it available on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
+
+* Tap on the TestFlight tab
+* Choose any build to open a new detailed screen for that build
+* In the Test Details section, type anything you want
+
+After you have done this one-time step, each successive build will include the branch name and commit automatically.
+
+You can add additional tests notes for any build if you desire.
+
+## Update Trio with GitHub
+
+Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
-* Before building, you can [Verify Open-iAPS Version](#verify-iaps-version)
+* Before building, you can [Verify Trio Version](#verify-trio-version)
 
-If you selected a GitHub Personal Access Token (GH_PAT) that never expires, then simply select Actions: 4. Build Open-iAPS and wait about an hour for your updated app to appear in TestFlight.
+If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
 
-If you token has expired, create a new one (and set it to never expire) and update the GH_PAT in your Open-iAPS secrets. Then you can build your updated code.
+If your token has expired, create a new one (and set it to "never expire") and update the GH_PAT in your Trio secrets. Then, you can build your updated code.
 
+## Distribution Certificates
 
-## Build Open-iAPS with Script
+When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
-A build script is available that will
+The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
 
-* Download either the main or dev branch for Open-iAPS
-* Create the automatic signing file
-* Offer to remove the provisioning profiles from your computer
-    * This ensures the build will last a full year
-* Provide instructions for how to build the app once Xcode opens
-* Opens Xcode with your new download.
+## Build Trio with Xcode
 
-To execute the build script, open a terminal on your Mac and then copy and paste the command below into the terminal. Read and follow the directions. 
+The recommendation is to use the [**TrioBuildSelectScript**](#build-trio-with-script) to build your code.
 
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)"
-```
+### Build Trio with Script
 
-The download is placed in your `Downloads` folder in a directory called `Build_iAPS`. The downloaded clone is found in a folder with the branch name, date and time encoded.
+The **TrioBuildSelectScript** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
 
-This script is similar to one used to build Loop. Extensive instructions are provided on the [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) page. If you need additional information, review that section and then return. The script for Open-iAPS must be run stand-alone; it is not part of the Build Select Script.
+The **TrioBuildSelectScript** offers the choice to:
 
-### Build Errors
+1. [Build Trio](#build-trio)
+2. [Build Related Apps](#build-related-apps)
+3. [Run Maintenance Utilities](#run-maintenance-utilities)
+4. [Customize Trio](#customize-trio)
+5. Exit Script
 
-Should you encounter any build issues, please have a look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Not everything on that page is relevant for building Open-iAPS, but many potential issues will likely be covered there. You will also get useful advice about what info to provide if you need to ask for help. When you have identified the error message(s), please use the search tool in LoopDocs to see if your error is mentioned.
-
-If you need it, you are most likely to get help in one of these groups:
-
-* [Discord: Open-iAPS channel](https://discord.gg/ptkk2Y264Z)
-* [Facebook group: Open-iAPS](https://www.facebook.com/groups/1351938092206709)
-* Facebook groups like “Loop and Learn” and “Looped” may become useful too, but these groups are still mostly focussed on Loop
-
-### xDrip4iOS or Glucose Direct as CGM Source
-
-Please note that LibreTransmitter is provided as part of Open-iAPS, so you are not required to use either xDrip4iOS or Glucose Direct to interact with your compatible Libre sensor using Open-iAPS.
-
-If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group”, you must also build that app from source with the same developer ID used for building Open-iAPS. Scripts are available for these apps as well. All scripts follow the same download and build pattern, and configure automatic signing files for you.
+To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildxDrip4iOS.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/TrioBuildSelectScript.sh)"
 ```
 
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildGlucoseDirect.sh)"
-```
+#### Build Trio
 
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect` respectively. The downloaded clone is found in a folder with the branch name, date and time encoded.
+When you select **Build Trio**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
 
+* Once the download completes, the script will also
+    * Create the automatic signing file
+    * Offer to remove provisioning profiles from your computer to ensure the build will last an entire year
+    * Provide instructions for how to build the app once Xcode opens
+    * Open Xcode with your new download.
+* At this point the main menu is displayed again for you to select another option or to exit the script
 
-### Alternative Branch
+The download is placed in your `Downloads` folder in a directory called `BuildTrio`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build_iAPS** script. After the final quote of the script command, add a space, hyphen, space and branch_name. An example is shown below; replace branch_name with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+#### Build Related Apps
 
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/Build_iAPS.sh)" - branch_name
-```
+When you select **Build Related Apps**, you will be provided with a choice of apps that users of Trio often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
 
-### Maintenance Utilities
+The choices are:
 
-Several maintenance utilities are availble with the Build Select Script which is typically used with Loop. For more information, refer to [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) documentation.  Issue the command below in your terminal, select Option 3 for Maintenance Utilities. Then choose from these options:
+1. Build Loop Follow
+2. Build xDrip4iOS
+3. Build Glucose Direct
+4. Return to Menu
+
+#### Run Maintenance Utilities
+
+When you select **Run Maintenance Utilities**, you will be provided with a choice of utilties helpful for Mac builders.
+
+The following options are offered:
 
 1. Delete Old Downloads
 1. Clean Derived Data
 1. Xcode Cleanup (The Big One)
 1. Return to Menu
 
+For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
+
+#### Customize Trio
+
+When you select **Customize Trio**, you will be provided with a choice of customization options:
+
+1. [Change Default to Upload Dexcom Readings](https://www.loopandlearn.org/custom-code/#dexcom-remote-enable)
+2. [Disable Authentication Requirement](https://www.loopandlearn.org/custom-code/#disable-authentication)
+3. Return to Menu
+
+The customizations are a subset of those provided for the Loop app. Some of the code in Trio is shared with Loop so these customizations are common. The two that are used by Trio have links to the Loop and Learn documentation in the list above.
+
+#### Build Errors
+
+If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Trio, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
+
+If you need it, you are most likely to get help in one of these groups:
+
+* [Discord: Trio channel](https://discord.gg/sUakC38m)
+* [Facebook group: Trio](https://www.facebook.com/groups/1351938092206709)
+* Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
+
+### xDrip4iOS or Glucose Direct as CGM Source
+
+:::{important}
+LibreTransmitter is provided as part of Trio. Neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Trio.
+:::
+
+If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
+
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
+
+These can be accessed using the [**OiBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
+
+#### xDrip4iOS
+
 ```
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
-Once each option completes, you are returned to the top menu, so must select Maintenance Utilities again if desired.
+#### Glucose Direct
 
-## Update Open-iAPS with Xcode
+```
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
+```
+
+### Alternative Branch
+
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+
+```
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" - branch_name
+```
+
+## Update Trio with Xcode
 
 The recommendation is to use the Xcode Source Control features to update your code.
 
-If you prefer to use the command line interface, skip ahead to [Update Open-iAPS with CLI](#update-iaps-with-cli).
+If you prefer the command line interface, skip ahead to [Update Trio with CLI](#update-trio-with-cli).
 
-### Update Open-iAPS with Source Control
+### Update Trio with Source Control
 
-**Note** Released code is found in the  `main` branch. These figures show the older name of `master` rather than `main`. 
+::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
 
-Open Xcode. If your Open-iAPS (FreeAPS) workspace is not already open for you, you will probably find it in the recent projects as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent` and find your workspace.
+Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-![open your project](img/xcode-welcome.png){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control
 2. Choose `Fetch changes`
 
-![fetch changes](img/xcode-fetch-changes.png){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
 Refer to the graphic below:
-
 1. Click Source Control again
 2. Select `Pull…`
 
-![open the pull dialog](img/xcode-source-control-pull.png){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
 
 Refer to the graphic below:
-
 1. Select the branch to pull from
 2. Click `Pull`
 
 The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic has the older branch name of `master`.)
 
-![select and pull in dialog](img/xcode-pull-master.png){width="500"}
-{align="center"}
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9" width="600px"/>
 
 The last steps are only relevant if you made any changes to the code:
 
-- You may see a pop up asking to stash your changes. In that case, name the stashed changes to something that is meaningful to you.
-- Select “Apply Stash After Operation”.
+- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something meaningful to you.
+- Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
-The Open-iAPS code is now updated. That was easy, wasn't it? If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Open-iAPS app to your phone.
+The Trio code is now updated. That was easy. If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Trio app on your phone.
 
-The next section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Open-iAPS Version](#verify-iaps-version).
+The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Trio Version](#verify-trio-version).
 
-### Update Open-iAPS with CLI
+### Update Trio with CLI
 
-Use finder to locate the directory where the Build_iAPS script saved the code. The directory is named after the branch with the date and time for the download:
+Use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
-* Released (main) branch: Downloads/Build_iAPS/iAPS_main-[date-time]/iAPS
-    * example: ~/Downloads/Build_iAPS/iAPS_main-220122-1352/iAPS
-* Development (dev) branch: Downloads/Build_iAPS/iAPS_dev-[date-time]/iAPS
-    * example: ~/Downloads/Build_iAPS/iAPS_dev-220108-1827/iAPS
+* Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
+    * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
+* Development (dev) branch: Downloads/BuildTrio/Trio_dev-[date-time]/Trio
+    * Example: ~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio
 
-Use finder to open a Terminal window at the Open-iAPS directory by right-clicking on it and select `New Terminal at Folder`. 
+Use finder to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
-Copy each line below and paste into the terminal window one at a line and hit enter for each line:
+Copy each line below and paste it into the terminal window one at a line and hit enter for each line:
 
 ```
 git stash
@@ -194,24 +239,23 @@ git stash
 
 ```
 git fetch
-git pull
+git pull --recurse
 ```
 
 ```
 git stash pop
 ```
 
-If the final `git stash pop` had errors, you will need to repeat any customizations that you had in your prior code - they are no longer compatible with the updated code.
+If the final `git stash pop` had errors, you must repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
 
-The Open-iAPS code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
+The Trio code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
 
-The targets should be signed and you are ready to build the Open-iAPS app to your phone.
+The targets should be signed, and you will be ready to build the Trio app on your phone.
 
-## Verify Open-iAPS Version
+## Verify Trio Version
 
-Verify the Open-iAPS code was successfully updated by examining the `APP_VERSION` value shown in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version in the Open-iAPS GitHub Releases page.
+Verify that the Trio code was successfully updated by examining the `APP_VERSION` value in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Trio GitHub Releases page.
 
-If you are using the GitHub method, you can view this same file in your fork of the Open-iAPS repository.
+If using the GitHub method, you can view this same file in your fork of the Trio repository.
 
-![verify version](img/xcode-build-version.png){width="600"}
-{align="center"}
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca" width="600px"/>
