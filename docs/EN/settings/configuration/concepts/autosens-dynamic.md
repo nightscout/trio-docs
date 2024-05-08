@@ -1,12 +1,15 @@
 # Autosens, Dynamic ISF, Dynamic CR, and Adjust Basal
 :::{important}
-  The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
+  - The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
+  - Calculations are done using mg/dL.
+      - To convert mg/dL▶︎mmol/L: divide by 18.
+      - To convert mmol/L▶︎mg/dL: multiply by 18
 :::
 
 ## Autosens
 Auto-sensitivity (Autosens) is the default algorithm. It reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes temporary adjustments to your basal rates, blood sugar target, and ISF.
 
-For more information on how Autosens is calculated without Trio's dynamic settings enabled, see the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html)
+For more specific details on how Autosens is calculated without Trio's dynamic settings enabled, see the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html)
 
 ### Autosens Ratio
 
@@ -25,22 +28,13 @@ Note that Autosens does not examine meals or adjust your CR. It only assesses yo
 
 ### Autosens ISF
 
-:::{admonition} Algorithm Formula - Autosens ISF
-:class: dropdown
+Autosens uses this formula to calculate the ISF value used for the current loop cycle.
 
-![New ISF formula](https://github.com/nightscout/trio-docs/assets/31315442/84a23c77-8daa-413b-bba2-7d551ef8cf52){align=center}
-:::
-
-:::{admonition} Wilford's Example
-:class: dropdown
-
->*Autosens has calculated that Wilford's autosens.ratio is 1.1. Here is how autosens determines his new ISF that will be used in the insulin dosing calculations with this loop cycle.
-
-![ISF example 1](https://github.com/nightscout/trio-docs/assets/31315442/5528c559-dd49-42de-898b-da73f4f001d4){align=center}
-:::
+<img src="https://github.com/nightscout/trio-docs/assets/31315442/3cc308b0-589c-4588-8f9e-784215f84576" width="500">
 
 ### Autosens Basals
 
+Autosens uses this formula to calculate the basal rate used for the current loop cycle.
 
 
 ## Dynamic ISF
