@@ -2,8 +2,8 @@
 :::{important}
   - The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
   - Calculations are done using mg/dL.
-      - To convert mg/dL→mmol/L: ➗ by 18
-      - To convert mmol/L→mg/dL: ✖️ by 18
+      - *To convert mg/dL→mmol/L:* ➗ by 18
+      - *To convert mmol/L→mg/dL:* ✖️ by 18
 :::
 
 ## Autosens
