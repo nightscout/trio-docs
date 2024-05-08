@@ -29,19 +29,28 @@ If you have Autotune turned ON, Autosens will use your calculated Autotune ISF a
 ### Autosens Adjustments
 
 **ISF:**
+
 ![Calc ISF formula](https://github.com/tmhastings/trio-docs/assets/31315442/e3d9f8f8-a1a5-4594-b798-7e0cb333f174)
+
 **Basal:**
+
 ![Autosens basal formula_Adjust Basal formula](https://github.com/tmhastings/trio-docs/assets/31315442/77679847-a5ec-4c9a-9fd5-5910c8f997ad)
+
 **Target BG:**
+
 ![Adjusted Target BG](https://github.com/tmhastings/trio-docs/assets/31315442/0a1f9769-a0d3-4974-98d9-86a6b66183cc)
 
 ## Dynamic ISF/Dynamic CR
 
-Enabling one or both of the dynamic functions replaces the autosens ratio calculation with the following formula:
+Enabling one or both of the dynamic functions replaces the autosens ratio calculation with the following formula for that function:
 
 ![autosens ratio formula](https://github.com/tmhastings/trio-docs/assets/31315442/f631a209-881a-484a-80d9-e2ba88f1cb4c)
 
 One major difference between this calculation and the OpenAPS Autosens calculation referenced previously is the introduction of Adjustment Factor (AF) as a variable that can be adjusted in user settings. A higher AF will result in the calculation having a greater influence on the new calculated settings. The default value is `0.5`.
+
+A relevant calculation used is the `Weighted TDD`. This is calculated using the following formula. This can be adjusted with the `Weighted Average of TDD` setting. Increasing this value will increase the impact of the last 24 hours. Decreasing this value will increase the impact of the last 2 weeks.
+
+![Weighted TDD copy](https://github.com/tmhastings/trio-docs/assets/31315442/ebe9852e-b07d-4b24-b064-04f4ba2ddc73)
 
 Below you will find graphs that allow you to manipulate the different variables of the dynamic autosens formula to see how they influence the algorithm:
 
@@ -77,7 +86,7 @@ Adjust basal replaces Autosens's formula for adjusting basal rates, with one dep
 
 ![Adjust Basal autosens ratio formula](https://github.com/tmhastings/trio-docs/assets/31315442/ee6724dc-f30d-4f4c-981d-f1e83473d425)
 
-:::{admonition} Final Thoughts
+:::{admonition} Reminder
 :class: tip
-Remember that all Autosens ratios calculated in this section are being limited by Autosens Max and Autosens Min safety limiters. Additionally, Dynamic CR has a built-in safety limiter against highly aggressive ratios.
+All Autosens ratios calculated in this section are also limited by `Autosens Max` and `Autosens Min` safety settings.
 :::
