@@ -2,8 +2,8 @@
 :::{important}
   - The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
   - Calculations are done using mg/dL.
-      - To convert mg/dL▶︎mmol/L: ➗ by 18
-      - To convert mmol/L▶︎mg/dL: ✖️ by 18
+      - To convert mg/dL→mmol/L: ➗ by 18
+      - To convert mmol/L→mg/dL: ✖️ by 18
 :::
 
 ## Autosens
@@ -28,10 +28,11 @@ If you have Autotune turned ON, Autosens will use your calculated Autotune ISF a
 
 ### Autosens Adjustments
 
+**ISF:**
 ![Calc ISF formula](https://github.com/tmhastings/trio-docs/assets/31315442/e3d9f8f8-a1a5-4594-b798-7e0cb333f174)
-
+**Basal:**
 ![Autosens basal formula_Adjust Basal formula](https://github.com/tmhastings/trio-docs/assets/31315442/77679847-a5ec-4c9a-9fd5-5910c8f997ad)
-
+**Target BG:**
 ![Adjusted Target BG](https://github.com/tmhastings/trio-docs/assets/31315442/0a1f9769-a0d3-4974-98d9-86a6b66183cc)
 
 ## Dynamic ISF/Dynamic CR
