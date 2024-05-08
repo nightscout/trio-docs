@@ -1,2 +1,6 @@
 # Apple Health
-Optional. Enabling Apple Health allows Open-iAPS to write information on your blood sugar readings, insulin and carboydrates to Apple Health and to read blood sugar readings in Apple Health.  To write data to Apple Health, you will need to also give permission in iphone Settings, Health, Data Access & Devices. Useful for those who like to analyse their data with TidePool.
+:::{note}
+Apple Health is optional
+:::
+
+Enabling Apple Health allows Trio to write information on your blood sugar readings, insulin, and carbohydrates to Apple Health and read blood sugar readings in Apple Health. You will also need to give permission in iPhone Settings, Health, Data Access & Devices to write data to Apple Health. This is useful for those who like to analyze their data with TidePool, Cockpit, or Glooko.

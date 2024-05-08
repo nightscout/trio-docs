@@ -1,15 +1,42 @@
-## Evaluate Basal Tips
+## Evaluate Basal
 
-:::{note}
-   - This is not medical advice. Please carefully understand the changes you are making and always exercise caution
+:::{warning}
+<i>This is not medical advice. Understanding the changes you are making is important, and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
 :::
 
-<b>Nightscout</b>
-Nightscout (NS) is one tool that will provide more info for analysis. You will want to focus on the amount of IOB at the valleys. It should rise with negative IOB, and drop with positive. Adjust gradually to make that happen most of the time. Changing basal for the previous several hours by 0.05 U/h will typically change IOB by 0.2 - 0.3 units. This will depend on DIA.
+### Before Adjusting Basal Rates
 
-<b>So, which Nightscout view is most helpful?</b>
-The normal default view when scrolling to the valleys is best for the last 24 hours (no IOB is displayed after that).
-Day to day reports if looking at older data (remember to check the IOB box, and optionally COB for meal related analysis).
+1. <b>Consider CR and ISF <i>First</i></b>
 
-<b>How to adjust basal rate?</b>
-All hours before the time you are looking at (within DIA hours) are adjusted. If you adjust only some of the previous hours, you can make smaller adjustments to the resulting IOB. You can also adjust every other hour one step up and down, so the average is in between available rates.
+   - <i>Were carbs eaten in the last 3 hours?</i>
+   - <i>Are you in open loop?</i>
+
+   :::{caution}
+   Until you understand how the Trio algorithm works, you should only make basal adjustments after basal testing in an open loop.
+   :::
+
+2. <b>Is this a one-time event, or does it happen consistently over multiple days?</b>
+
+   Make sure it happens twice at the same time of day before making any adjustments.
+
+### How to Adjust Basal
+
+:::{tip}
+A general rule of thumb is to adjust the basal rate 1 hour before the cgm shows a change in glucose levels that you want to correct. This is determined by the approximate peak time of rapid-acting insulin.
+:::
+
+<i>For Example:</i> This person noticed an increase in their average cgm readings starting around 1:00 AM. They were in open loop and had no late-night snacks, so they could rule out CR and ISF as factors. Because the rise began at 1:00 AM, they should increase their basal rate at 12:00 AM.
+```{figure} img/adjustBasal.png
+:alt: Adjust Basal
+:width: 600px
+```
+
+### Nightscout
+
+Nightscout (NS) is a valuable resource that provides detailed information for analyzing your settings. Nightscout reports and Loopalyzer can be great tools for understanding your data.
+
+#### Build Nightscout
+[Instructions to build Nightscout](https://nightscout.github.io/nightscout/new_user/)
+
+#### Using Nightscout for Basal Adjustments
+[How to use Loopalyzer](https://nightscout.github.io/nightscout/reports/#loopalyzer)

@@ -1,16 +1,42 @@
 # Overview
 
-## What is Open-iAPS?
-Open-iAPS is an open source artifical pancrease system based on the OpenAPS algorithm. Using your inputted settings, carbohydrates and historical data, it aims to automate insulin delivery to reduce the time spend managing your diabetes. Before starting with Open-iAPS, you should consider alternative commercial options such as the Tandem IQ and Omnipod 5, or other open source applications like Loop and AndroidAPS. Open-iAPS is not approved by any health care authority. You are building and running this system at your own risk.
+## What is Trio?
+Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. Using your inputted settings, carbohydrates, and historical data, it aims to automate insulin delivery to reduce the time spent managing your diabetes. Before starting with Trio, you should consider alternative commercial options such as the Tandem Control-IQ and Omnipod 5 or other open-source applications like Loop and AndroidAPS. 
+
+:::{important}
+_Trio is not approved by any healthcare authority. You build and run this system at your own risk._
+:::
 
 ## Getting Started
-Before starting with Open-iAPS, you should have a basic understanding of what ICR, ISF and basal rates are. If you do not have a clear understanding, or require some help identifying your settings, please read the appropriate documentation.
+Before starting with Trio, you should understand CR, ISF, and basal rates.
 
-To use Open-iAPS, you are required to build the application from the source code. This does not require substantial technical know-how but is a time consuming process. You may need to carry this out through several sessions on your first attempt.
+If you do not understand the terminology, please read the appropriate documentation here:
 
-Upon installation, you will need to configure your settings appropriately. By default Open-iAPS acts no different than that of your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on "Closed Loop", enabling automatic bolus features, and turning on autotune. In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
+<details>
+<summary>CR</summary>
+Find more information on Carb Ratio (CR) [here](settings/configuration/carbratios.md)
+</details>
 
-- Enable Closed Loop for automation
-- Increase Max IOB via "average mealbolus + 3x max daily basal"
-- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
-See Configure for more information on Open-iAPS configuration.
+<details>
+<summary>ISF</summary>
+Find more information on Insulin Sensitivity Factor (ISF) [here](settings/configuration/insulinsensitivities.md)
+</details>
+
+<details>
+<summary>Basal</summary>
+Find more information on Basal [here](settings/configuration/basalprofile.md)
+</details>
+
+If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
+
+To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need to carry this out through several sessions on your first attempt.
+
+Upon installation, you will need to configure your settings appropriately. For step-by-step instructions on using the app, follow the [start-up guide](http://diy-trio.org/start-up-guide). 
+
+_Initially, these are the first two settings you need to configure to activate closed loop in the Trio app:_
+
+1. Enable **Closed Loop**
+
+2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
+
+See [Configuration](docs/EN/settings/configuration) for more information on Trio configuration.

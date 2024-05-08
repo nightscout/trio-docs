@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# iAPS documentation build configuration file
+# Trio documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -69,9 +69,9 @@ templates_path = ['../../_templates'] # path relative to languages conf.py
 master_doc = 'index'
 
 # General information about the project.
-project = u'Open-iAPS'
-copyright = u'Open-iAPS Community'
-author = u'Open-iAPS Community'
+project = u'Trio'
+copyright = u'Trio Community'
+author = u'Trio Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -147,8 +147,8 @@ html_theme_options = {
 #html_theme = 'default'
 #html_theme_options = {
 #  'display_github': True,
-#  'github_user': 'openaps',
-#  'github_repo': 'AndroidAPSdocs',
+#  'github_user': 'nightscout',
+#  'github_repo': 'trio-docs',
 #  'navigation_depth': 6,
 #}
 import sphinx_rtd_theme
@@ -259,7 +259,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'iAPSdocs'
+htmlhelp_basename = 'trio-docs'
 
 
 # -- Options for manual page output ---------------------------------------
@@ -267,7 +267,7 @@ htmlhelp_basename = 'iAPSdocs'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'iAPS', u'iAPS Documentation',
+    (master_doc, 'Trio', u'Trio Documentation',
      [author], 1)
 ]
 
