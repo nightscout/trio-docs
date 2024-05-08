@@ -96,7 +96,7 @@ You can also provide support in online support groups by helping users adjust th
 ./settings/configuration/concepts/sigmoid.md
 ./settings/configuration/concepts/asmb-uam.md
 ./settings/configuration/preferences/dynamicsettings.md
-./settings/configuration/preferences/freeapsx.md
+./settings/configuration/preferences/trio.md
 ./settings/configuration/preferences/mainsettings.md
 ./settings/configuration/preferences/othersettings.md
 ./settings/configuration/preferences/smbsettings.md
