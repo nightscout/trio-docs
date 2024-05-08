@@ -44,8 +44,8 @@ One major difference between this calculation and the OpenAPS Autosens calculati
 
 Below you will find graphs that allow you to manipulate the different variables of the dynamic autosens formula to see how they influence the algorithm:
 
- - [Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/zrkugmdnob)
- - [Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
+ - [**mg/dL** Dynamic Adjustments with the Logarithmic Formula](https://www.desmos.com/calculator/zrkugmdnob)
+ - [**mmol/L** Dynamic Adjustments with the Logarithmic Formula](https://www.desmos.com/calculator/aoxzzrhpro)
 
 ### Dynamic ISF
 
