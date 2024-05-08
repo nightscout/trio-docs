@@ -4,17 +4,9 @@
 :::
 
 ## Autosens
-Auto-sensitivity (Autosens) is the default algorithm. It reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative, temporary adjustments to your basal rates, blood sugar target, and ISF.
+Auto-sensitivity (Autosens) is the default algorithm. It reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes temporary adjustments to your basal rates, blood sugar target, and ISF.
 
-:::{admonition} Wilford's Example
-:class: dropdown
-
->*Autosens finds Wilford has been running more sensitive to insulin lately.\
->In the last 24 hours, his daily total of insulin (TDD) has reduced from 60 to 50.\
->In the last 8 hours, his daily total of insulin (TDD) has reduced from 60 to 55.*
-
-Autosens takes the more conservative calculated sensitivity, which will result in less insulin administered. In this example, the last 8 hours reflects a smaller reduction in insulin needs than the last 24 hours. So, Autosens will use the more conservative 8-hour calculation.
-:::
+For more information on how Autosens is calculated without Trio's dynamic settings enabled, see the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html)
 
 ### Autosens Ratio
 
@@ -25,15 +17,11 @@ The Autosens Ratio (autosens.ratio) is used to determine how greatly settings ne
 | = 1.0 | same |
 | > 1.0 | more |
 
-:::{admonition} Algorithm Formula - Autosens Ratio
-:class: dropdown
-
-![autosens ratio formula](https://github.com/nightscout/trio-docs/assets/31315442/00457200-cb08-4364-9b46-3628463f9134){align=center}
+:::{caution}
+If you are using Autotune, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your preset values.
 :::
 
-If you are using Autotune, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your set values.
-
-Note that Autosens does not examine meals or adjust your CR. It only assesses your sensitivity to insulin and adjusts ISF/basal rates/blood sugar targets accordingly.
+Note that Autosens does not examine meals or adjust your CR. It only assesses your sensitivity to insulin and adjusts ISF, basal rates, and blood sugar targets accordingly.
 
 ### Autosens ISF
 
