@@ -2,8 +2,8 @@
 :::{important}
   - The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
   - Calculations are done using mg/dL.
-      - To convert mg/dL▶︎mmol/L: divide by 18.
-      - To convert mmol/L▶︎mg/dL: multiply by 18
+      - To convert mg/dL▶︎mmol/L: ➗ by 18
+      - To convert mmol/L▶︎mg/dL: ✖️ by 18
 :::
 
 ## Autosens
@@ -20,17 +20,17 @@ The Autosens Ratio (autosens.ratio) is used to determine how greatly settings ne
 | = 1.0 | same |
 | > 1.0 | more |
 
-:::{caution}
-If you are using Autotune, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your preset values.
-:::
+Autosens does not examine meals or adjust your CR. It only assesses your sensitivity to insulin and adjusts ISF, basal rates, and blood sugar targets accordingly.
 
-Note that Autosens does not examine meals or adjust your CR. It only assesses your sensitivity to insulin and adjusts ISF, basal rates, and blood sugar targets accordingly.
+:::{important}
+If you have Autotune turned ON, Autosens will use your calculated Autotune ISF and basal rates as its baseline rather than your preset values.
+:::
 
 ### Autosens ISF
 
 Autosens uses this formula to calculate the ISF value used for the current loop cycle.
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/3cc308b0-589c-4588-8f9e-784215f84576" width="500">
+<img src="https://github.com/tmhastings/trio-docs/assets/31315442/3cc308b0-589c-4588-8f9e-784215f84576" width="500">
 
 ### Autosens Basals
 
