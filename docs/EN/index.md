@@ -20,22 +20,39 @@ Before starting with Trio, you should evaluate all your closed-loop options, inc
 * Other open-source applications like [Loop](https://loopkit.github.io/loopdocs/) and [AndroidAPS](https://androidaps.readthedocs.io/)
 
 :::{warning}
-Trio is a DIY, open-source community project. It has not been evaluated by any regulatory agency and is for use at your own risk.
+_Trio is not approved by any healthcare authority. You build and run this system at your own risk._
 :::
 
 # Getting Started
-Before starting with Trio, you should understand [carb ratio (CR)](https://github.com/nightscout/Trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
+Before starting with Trio, you should understand Carb Ratio (CR), Insulin Sensitivity Factor (ISF), and basal rates.
+
+If you do not understand the terminology, please read the appropriate documentation here:
+
+<details>
+<summary>CR - Carb Ratio</summary>
+Find more information on Carb Ratio (CR) [here](https://github.com/nightscout/Trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
+</details>
+<details>
+<summary>ISF</summary>
+Find more information on Insulin Sensitivity Factor (ISF) [here](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
+</details>
+<details>
+<summary>Basal</summary>
+Find more information on Basal [here](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile)
+</details>
+
+If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/smbsettings.md#trio-smb-settings) features, and turning on [dynamic features](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
+Upon installation, you will need to configure your settings appropriately. For step-by-step instructions on using the app, follow the [start-up guide](http://diy-trio.org/start-up-guide).
 
->In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
->
->- Enable Closed Loop for automation
->- Increase Max IOB to "average meal bolus + 3x max daily basal"
->- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
->See [Configure](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
+_Initially, these are the first two settings you need to configure to activate closed loop in the Trio app:_
+
+1. Enable **Closed Loop**
+
+2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
+3. See [Configure](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
 If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
