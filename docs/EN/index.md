@@ -33,7 +33,7 @@ If you do not understand the terminology, please read the appropriate documentat
 Find more information on Carb Ratio (CR) [here](https://github.com/nightscout/Trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
 </details>
 <details>
-<summary>ISF</summary>
+<summary>ISF - Insulin Sensitivity Factor</summary>
 Find more information on Insulin Sensitivity Factor (ISF) [here](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
 </details>
 <details>
