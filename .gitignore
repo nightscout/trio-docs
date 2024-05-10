@@ -3,3 +3,6 @@
 
 # Sphinx documentation
 docs/_build/
+
+# Python Virtual Environment
+venv/
