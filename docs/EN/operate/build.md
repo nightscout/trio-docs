@@ -14,21 +14,23 @@ The Trio repository contains instructions for building the Trio app using a brow
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
 :::
-  * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
-  * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-  * `Identifiers` will be:
-      * `org.nightscout.TEAMID.trio`
-      * `org.nightscout.TEAMID.trio.watchkitapp`
-      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-      * `org.nightscout.TEAMID.trio.LiveActivity`
-  * Make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
-  * You must add this `App Group` to each of the following identifiers:
-      * `org.nightscout.TEAMID.trio`
-      * `org.nightscout.TEAMID.trio.watchkitapp`
-      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-      * `org.nightscout.TEAMID.trio.LiveActivity`
-  * The `org.nightscout.TEAMID.trio` identifier, in addition to `App Group`, must also have the `HealthKit` and `NFC Tag Reading` boxes checked (which should be automatic)
-  * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
+
+* Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
+* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
+    * These names are the same as that used by iAPS, they are distinguised by the Identifier itself, which include the new BundleID for your Trio app
+    * If you build with Xcode before, they will start with XC and use the Identifier string rather than the Name
+* `Identifiers` will be:
+    * `org.nightscout.TEAMID.trio`
+    * `org.nightscout.TEAMID.trio.watchkitapp`
+    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+    * `org.nightscout.TEAMID.trio.LiveActivity`
+* Only the first 3 of these identifiers need to have the `App Group` added
+* For the list below, make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
+* You must add this `App Group` to each of the following identifiers:
+    * `org.nightscout.TEAMID.trio`
+    * `org.nightscout.TEAMID.trio.watchkitapp`
+    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
