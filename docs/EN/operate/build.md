@@ -26,6 +26,7 @@ The Trio repository contains instructions for building the Trio app using a brow
       * `org.nightscout.TEAMID.trio`
       * `org.nightscout.TEAMID.trio.watchkitapp`
       * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+      * `org.nightscout.TEAMID.trio.LiveActivity`
   * The `org.nightscout.TEAMID.trio` identifier, in addition to `App Group`, must also have the `HealthKit` and `NFC Tag Reading` boxes checked (which should be automatic)
   * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
