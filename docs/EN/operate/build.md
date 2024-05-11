@@ -175,20 +175,26 @@ If you prefer the command line interface, skip ahead to [Update Trio with CLI](#
 
 ### Update Trio with Source Control
 
-::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
+::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`.  They also show an older version of Xcode. The menus have changed, so follow the words below, not the graphics.
+:::
 
 Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
 
-Refer to the graphic below:
-1. Click Source Control
-2. Choose `Fetch changes`
+The graphic below needs to be updated:
+1. There are 2 methods to open `Source Control`
+    * Hold down the command key and hit 2 (cmd-2)
+    * Use the menus to select `View`, `Navigate`, `Source Control`
+2. This modifies the Xcode display with two tabs:
+    * There is a `Changes` tab and a `Repositories` tab
+    * It might say `No changes`, but fetch changes to make sure
+2. Tap on the `Integrate` menu and select `Fetch changes`
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
-Refer to the graphic below:
-1. Click Source Control again
+The graphic below needs to be updated:
+1. Click `Integrate` again
 2. Select `Pull…`
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
