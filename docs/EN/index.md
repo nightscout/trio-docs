@@ -30,15 +30,15 @@ If you do not understand the terminology, please read the appropriate documentat
 
 <details>
 <summary>CR - Carb Ratio</summary>
-Find more information on Carb Ratio (CR) [here](https://github.com/nightscout/Trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
+Find more information on Carb Ratio (CR) [here](/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
 </details>
 <details>
 <summary>ISF - Insulin Sensitivity Factor</summary>
-Find more information on Insulin Sensitivity Factor (ISF) [here](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
+Find more information on Insulin Sensitivity Factor (ISF) [here](/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
 </details>
 <details>
 <summary>Basal</summary>
-Find more information on Basal [here](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile)
+Find more information on Basal [here](/docs/EN/settings/configuration/basalprofile.md#basal-profile)
 </details>
 
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
