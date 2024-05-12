@@ -52,9 +52,9 @@ _Initially, these are the first two settings you need to configure to activate c
 1. Enable **Closed Loop**
 
 2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
-3. See [Configure](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
+3. See [Configure](/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
-If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
+If you are considering a transition from another closed loop system, please read [this section](/docs/EN/Configuration/transition-qa.md) first.
 
 # Contribution
 Trio is built by a volunteer community. If you are interested in helping as a programmer, you can contribute to the Trio or OpenAPS code base. Trio is mostly written in SwiftUI, and the OpenAPS algorithm is written in JS.
