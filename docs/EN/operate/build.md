@@ -117,9 +117,10 @@ When you select **Run Maintenance Utilities**, you will be provided with a choic
 The following options are offered:
 
 1. Delete Old Downloads
-1. Clean Derived Data
-1. Xcode Cleanup (The Big One)
-1. Return to Menu
+2. Clean Derived Data
+3. Xcode Cleanup (The Big One)
+4. Clean Profiles
+5. Return to Menu
 
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
@@ -191,7 +192,7 @@ The graphic below needs to be updated:
 2. This modifies the Xcode display with two tabs:
     * There is a `Changes` tab and a `Repositories` tab
     * It might say `No changes`, but fetch changes to make sure
-2. Tap on the `Integrate` menu and select `Fetch changes`
+3. Tap on the `Integrate` menu and select `Fetch changes`
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
