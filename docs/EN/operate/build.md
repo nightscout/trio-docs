@@ -74,8 +74,7 @@ The **TrioBuildSelectScript** offers the choice to:
 1. [Build Trio](#build-trio)
 2. [Build Related Apps](#build-related-apps)
 3. [Run Maintenance Utilities](#run-maintenance-utilities)
-4. [Customize Trio](#customize-trio)
-5. Exit Script
+4. Exit Script
 
 To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
@@ -115,21 +114,12 @@ When you select **Run Maintenance Utilities**, you will be provided with a choic
 The following options are offered:
 
 1. Delete Old Downloads
-1. Clean Derived Data
-1. Xcode Cleanup (The Big One)
-1. Return to Menu
+2. Clean Derived Data
+3. Xcode Cleanup (The Big One)
+4. Clean Profiles
+5. Return to Menu
 
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
-
-#### Customize Trio
-
-When you select **Customize Trio**, you will be provided with a choice of customization options:
-
-1. [Change Default to Upload Dexcom Readings](https://www.loopandlearn.org/custom-code/#dexcom-remote-enable)
-2. [Disable Authentication Requirement](https://www.loopandlearn.org/custom-code/#disable-authentication)
-3. Return to Menu
-
-The customizations are a subset of those provided for the Loop app. Some of the code in Trio is shared with Loop so these customizations are common. The two that are used by Trio have links to the Loop and Learn documentation in the list above.
 
 #### Build Errors
 
