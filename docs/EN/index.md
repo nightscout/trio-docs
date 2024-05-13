@@ -1,7 +1,8 @@
 :::{admonition} Work-In-Progress
 :class: caution
 
-**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR TRIO BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE**
+**GENERAL USERS** This documentation is still under construction during the beta release process. It should not be the main source of information until the main branch of Trio is released. If you have any questions, contact the community on [Discord](https://discord.gg/fCY5svg4) and/or [Facebook](https://www.facebook.com/groups/1351938092206709). Be advised that it is not recommended that general users use the beta version unless they are prepared to update quickly and frequently and report any issues found.
+**BETA TESTERS** Because this documentation is still under development, if you notice any discrepancies, errors, or edits that need to be made, please submit an [Issue](https://github.com/nightscout/trio-docs/issues/new/choose) on GitHub.
 :::
 
 # What is Trio?
@@ -12,7 +13,7 @@ Since then, many developers have contributed substantial work, leading to a rang
 
 Following the release of version 3.0.0, the project's direction significantly changed due to differing views on development, open source, and peer review. This led to the separation from the [Artificial-Pancreas/iAPS](https://github.com/Artificial-Pancreas/iAPS) repository and the birth of Trio as a distinct entity. This transition marks the project's new phase, symbolizing its evolution and the collaborative development's dynamic nature.
 
-Trio continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from its community.
+Trio continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from the community.
 
 Before starting with Trio, you should evaluate all your closed-loop options, including:
 
