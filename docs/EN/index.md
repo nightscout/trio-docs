@@ -28,14 +28,14 @@ Before starting with Trio, you should understand Carb Ratio (CR), Insulin Sensit
 
 If you do not understand the terminology, please read the appropriate documentation here:
 
-- Information on [CR - Carb Ratio](/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
-- Information on [ISF - Insulin Sensitivity Factor](/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
-- Information on [Basal](/docs/EN/settings/configuration/basalprofile.md#basal-profile)
+- Information on [Carb Ratio (CR)](/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio)
+- Information on [Insulin Sensitivity Factor (ISF)](/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor)
+- Information on [Basal (Basal Profile)](/docs/EN/settings/configuration/basalprofile.md#basal-profile)
 
 
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
 
-To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
+To use Trio, you must build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
 Upon installation, you will need to configure your settings appropriately. For step-by-step instructions on using the app, follow the [start-up guide](http://diy-trio.org/start-up-guide).
 
