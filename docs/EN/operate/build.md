@@ -145,7 +145,7 @@ If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app
 
 The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-These can be accessed using the [**OiBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
+These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
 
 #### xDrip4iOS
 
