@@ -388,3 +388,10 @@ epub_exclude_files = ['search.html']
 #            'enable_eval_rst': True,
 #            }, True)
 #    #app.add_transform(AutoStructify)
+
+# Allows preventing copy button from being added to code blocks like so:
+# ```{code-block}
+# :class: no-copybutton
+# the code you want to display goes here
+# ```
+copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
