@@ -149,8 +149,6 @@ Troubleshoot <./operate/troubleshoot.md>
 ```{toctree}
 :caption: Resources
 
-Other AIDs <./resources/alternative.md>
-
 Citations <./resources/citations.md>
 
 ```
