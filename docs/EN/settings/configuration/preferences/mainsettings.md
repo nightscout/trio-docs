@@ -1,8 +1,9 @@
 # OpenAPS Main Settings
->[!IMPORTANT]
->- **Insulin curve:** Choose the insulin used in your pump
->- **Max IOB:** Use the formula "average meal bolus + 3x max daily basal" to determine your Max IOB. Increase slowly if more insulin is warranted
->- **Autosens Max/Min:** Increase the autosens max and autosens min to allow the system to choose more or less aggressive autotune and autosens values with regard to your scheduled value.
+:::{important}
+- **Insulin curve:** Choose the insulin used in your pump
+- **Max IOB:** Use the formula "average meal bolus + 3x max daily basal" to determine your Max IOB. Increase slowly if more insulin is warranted
+- **Autosens Max/Min:** Increase the autosens max and autosens min to allow the system to choose more or less aggressive autotune and autosens values regarding your scheduled value.
+:::
 
 ## Insulin Curve
 Select your insulin type for the appropriate response curve to be used by the algorithm:
@@ -20,8 +21,9 @@ Select your insulin type for the appropriate response curve to be used by the al
   This is the default setting for Fiasp and Lyumjev. It uses an exponential activity curve with a peak activity set at 55 minutes and a duration of insulin action set at 300 minutes (5 hours).
 </details>
 
->[!CAUTION]
->Duration of insulin (DIA) action can be altered in the pump settings section of Trio. A minimum of 5 hours is required. **It is not advised to alter this setting from the default.**
+:::{caution}
+Duration of insulin (DIA) action can be altered in the pump settings section of Trio. A minimum of 5 hours is required. **It is not advised to alter this setting from the default.**
+:::
 
 To understand why a higher duration of insulin action is used in Trio, click to see the [following documentation.](https://www.diabettech.com/insulin/why-we-are-regularly-wrong-in-the-duration-of-insulin-action-dia-times-we-use-and-why-it-matters/)
 
@@ -32,7 +34,7 @@ The default is set to zero, meaning Trio can only set temporary basal rates lowe
 
 You can start by increasing this number to your average mealtime bolus and evaluating its effect. The default recommendation is “average meal bolus + 3x max daily basal” when using super micro boluses.
 
->**Example:** Bill has an average mealtime bolus of 6 U, and the following basal profile:
+>**Example:** Bill has an average mealtime bolus of 6U, and the following basal profile:
 >
 >- 12:00 am: 1 U/hr
 >- 6:00 pm: 2 U/hr (this is the "max" basal used)
@@ -43,10 +45,11 @@ You can start by increasing this number to your average mealtime bolus and evalu
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
 
 ## Max COB
-The maximum amount of carbs that Trio is allowed to bolus or set high temp targets for. This safety feature protects against erroneous carbohydrate entries that could lead to hypoglycemia episodes.
+The maximum amount of carbs that Trio is allowed to bolus or set high-temp targets for. This safety feature protects against erroneous carbohydrate entries that could lead to hypoglycemia episodes.
 
->[!TIP]
->If you tend to eat more than 120 g of carbs in one sitting, choose the maximum amount of carbs you eat.
+:::{tip}
+If you tend to eat more than 120 g of carbs in one sitting, choose the maximum amount of carbs you eat.
+:::
 
 ## Max Daily Safety Multiplier
 Limits the maximum temporary basal rate Trio is able to use at _any time_. The default setting of 3, which is unlikely to need adjustment, allows for a maximum basal rate of 3x the maximum daily basal.
