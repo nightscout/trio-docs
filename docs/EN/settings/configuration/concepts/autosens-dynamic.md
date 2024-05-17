@@ -1,4 +1,4 @@
-# Autosens, Dynamic ISF/ICR, and Adjust Basal
+# Autosens, Dynamic ISF/CR, and Adjust Basal
 :::{admonition} Highlights
 :class: tip
 - Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
