@@ -17,4 +17,4 @@ There are many help groups surrounding Trio. It is likely someone else has has y
 - <a href="https://loopkit.github.io/looptips/">Loop Tips</a>
 - <a href="https://openaps.readthedocs.io/">OpenAPS Documentation</a>
 - <a href="https://androidaps.readthedocs.io/">AndroidAPS Documentation</a>
-- Support groups on <a href="https://discord.gg/fCY5svg4">Discord</a> and <a href="https://www.facebook.com/groups/1351938092206709">Facebook</a>
+- Support groups on <a href="https://discord.gg/FnwFEFUwXE">Discord</a> and <a href="https://www.facebook.com/groups/1351938092206709">Facebook</a>
