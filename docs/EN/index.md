@@ -1,7 +1,7 @@
 :::{admonition} Work-In-Progress
 :class: caution
 
-**GENERAL USERS** This documentation is still under construction during the beta release process. It should not be the main source of information until the main branch of Trio is released. If you have any questions, contact the community on [Discord](https://discord.gg/fCY5svg4) and/or [Facebook](https://www.facebook.com/groups/1351938092206709). Be advised that it is not recommended that general users use the beta version unless they are prepared to update quickly and frequently and report any issues found.
+**GENERAL USERS** This documentation is still under construction during the beta release process. It should not be the main source of information until the main branch of Trio is released. If you have any questions, contact the community on [Discord](https://discord.gg/FnwFEFUwXE) and/or [Facebook](https://www.facebook.com/groups/1351938092206709). Be advised that it is not recommended that general users use the beta version unless they are prepared to update quickly and frequently and report any issues found.
 **BETA TESTERS** Because this documentation is still under development, if you notice any discrepancies, errors, or edits that need to be made, please submit an [Issue](https://github.com/nightscout/trio-docs/issues/new/choose) on GitHub.
 :::
 
