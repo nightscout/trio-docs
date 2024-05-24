@@ -30,7 +30,7 @@ meaning you can expect Trio to behave the same way AndroidAPS does generally.
   <summary><b>Should I switch from AndroidAPS to Trio?</b></summary>
 - If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Trio. - If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Trio.
   
-Take some time to read the docs and fine-tune your settings. To get help from other users, join [Discord](https://discord.gg/dbe5Twav8D) or [Facebook](https://www.facebook.com/groups/1351938092206709/). Once your settings are in order, consider switching to Trio.
+Take some time to read the docs and fine-tune your settings. To get help from other users, join [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/1351938092206709/). Once your settings are in order, consider switching to Trio.
 </details>
 <br>
 
@@ -150,7 +150,7 @@ Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's
 - Read the documentation. 
 - Build the app. 
 - Go through all the settings and tap the setting name to get an explanation of what each setting does.
-If you have any questions, feel free to reach out on [Discord](https://discord.gg/fCY5svg4) or Facebook. But please read the docs first :)
+If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or Facebook. But please read the docs first :)
 
 ### Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):
 - [Open Mic: Trio with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)
