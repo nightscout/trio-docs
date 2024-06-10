@@ -22,7 +22,7 @@ if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 
 Code after modification: 
 ```swift
-if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+if false, context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 ```
 
 ## Omnipod: Add Extra Insulin on Insertion
