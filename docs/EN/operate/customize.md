@@ -2,7 +2,7 @@
 
 Here are a few ways to customize the Trio code to suit your needs better. Please be very careful when editing any code.
 
-## Bypass Authentification for Bolusing
+## Bypass Authentication for Bolusing
 
 :::{warning}
 - If you disable this, you remove an important safety feature.
@@ -13,7 +13,7 @@ Depending on your iPhone settings and model, you may have Face ID or Touch ID en
 
 **Steps:**
 
-Edit line 20 of the file `FreeAPS/Sources/Services/UnlockManager/UnlockManager.swift`
+Edit line 28 of the file `FreeAPS/Sources/Services/UnlockManager/UnlockManager.swift`
 
 Code before modification: 
 ```swift
