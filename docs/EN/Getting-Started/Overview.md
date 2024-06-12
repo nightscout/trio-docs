@@ -14,17 +14,17 @@ If you do not understand the terminology, please read the appropriate documentat
 
 <details>
 <summary>CR</summary>
-Find more information on Carb Ratio (CR) [here](settings/configuration/carbratios.md)
+Find more information on Carb Ratio (CR) [here](../settings/configuration/carbratios.md)
 </details>
 
 <details>
 <summary>ISF</summary>
-Find more information on Insulin Sensitivity Factor (ISF) [here](settings/configuration/insulinsensitivities.md)
+Find more information on Insulin Sensitivity Factor (ISF) [here](../settings/configuration/insulinsensitivities.md)
 </details>
 
 <details>
 <summary>Basal</summary>
-Find more information on Basal [here](settings/configuration/basalprofile.md)
+Find more information on Basal [here](../settings/configuration/basalprofile.md)
 </details>
 
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
@@ -39,4 +39,4 @@ _Initially, these are the first two settings you need to configure to activate c
 
 2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
 
-See [Configuration](docs/EN/settings/configuration) for more information on Trio configuration.
+See [Configuration](../settings/configuration) for more information on Trio configuration.
