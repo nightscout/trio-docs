@@ -30,7 +30,7 @@ The maximum amount of insulin on board (i.e. in the body). This includes insulin
 
 The default is set to zero, meaning Trio can only set temporary basal rates lower than your profile basal rate. It cannot set temporary basal rates that exceed your profile basal rate in cases of high blood sugar, and it cannot use super micro boluses to control blood sugar.  
 
-You can start by increasing this number to your average mealtime bolus and evaluating its effect. The default recommendation is “average meal bolus + 3x max daily basal” when using super micro boluses.
+You can start by increasing this number to your average mealtime bolus and evaluating its effect. The default recommendation is “average meal bolus + 3x max hourly basal” when using super micro boluses.
 
 >**Example:** Bill has an average mealtime bolus of 6 U, and the following basal profile:
 >
@@ -38,7 +38,7 @@ You can start by increasing this number to your average mealtime bolus and evalu
 >- 6:00 pm: 2 U/hr (this is the "max" basal used)
 >- 9:00 pm: 1.5 U/hr
 >
->Using the formula “average meal bolus + 3x max daily basal,” his recommended **Max IOB** setting = 6 + 3 * 2 = 12 U. 
+>Using the formula “average meal bolus + 3x max hourly basal,” his recommended **Max IOB** setting = 6 + 3 * 2 = 12 U. 
 
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
 
