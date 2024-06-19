@@ -2,6 +2,7 @@
 :class: caution
 
 **GENERAL USERS** This documentation is still under construction during the beta release process. It should not be the main source of information until the main branch of Trio is released. If you have any questions, contact the community on [Discord](https://discord.gg/FnwFEFUwXE) and/or [Facebook](https://www.facebook.com/groups/1351938092206709). Be advised that it is not recommended that general users use the beta version unless they are prepared to update quickly and frequently and report any issues found.
+<br><br>
 **BETA TESTERS** Because this documentation is still under development, if you notice any discrepancies, errors, or edits that need to be made, please submit an [Issue](https://github.com/nightscout/trio-docs/issues/new/choose) on GitHub.
 :::
 
@@ -43,11 +44,10 @@ Upon installation, you will need to configure your settings appropriately. For s
 _Initially, these are the first two settings you need to configure to activate closed loop in the Trio app:_
 
 1. Enable **Closed Loop**
+1. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
+1. See [Configure](Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
-2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
-3. See [Configure](/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
-
-If you are considering a transition from another closed loop system, please read [this section](/docs/EN/Configuration/transition-qa.md) first.
+If you are considering a transition from another closed loop system, please read [this section](Configuration/transition-qa.md) first.
 
 # Contribution
 Trio is built by a volunteer community. If you are interested in helping as a programmer, you can contribute to the Trio or OpenAPS code base. Trio is mostly written in SwiftUI, and the OpenAPS algorithm is written in JS.
