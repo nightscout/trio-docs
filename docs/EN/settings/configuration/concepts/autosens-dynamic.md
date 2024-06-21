@@ -1,4 +1,4 @@
-# Autosens, Dynamic ISF/ICR, and Adjust Basal
+# Autosens, Dynamic ISF/CR, and Adjust Basal
 :::{admonition} Highlights
 :class: tip
 - Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
@@ -6,10 +6,10 @@
 - Adjustments are limited by autosens max/min.
 :::
 :::{important}
-  The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](sigmoid.md).
+  The examples in this section employ the default logarithmic formula for calculations. For more information on using Sigmoid, jump to [this section](concepts/sigmoid.md).
 :::
 
-## Auto-sensitivity Mode
+## Autosens
 Auto-sensitivity (Autosens) reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative temporary adjustments to your basal rates, blood sugar target, and ISF.
 
 >**Example:**
@@ -75,7 +75,7 @@ autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
 New\ CR\ =\ (profile\ CR)\ /\ (autosens.ratio)
 ```
 
-If you find your CR changes dramatically day to day and Trio is not providing adequate bolus recommendations, you can test this feature. Note that Trio already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
+If your CR changes dramatically daily and Trio is not providing adequate bolus recommendations, you can test this feature. Note that Trio already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
 
 :::{note}
 If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 

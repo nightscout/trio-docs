@@ -12,20 +12,14 @@ Before starting with Trio, you should understand CR, ISF, and basal rates.
 
 If you do not understand the terminology, please read the appropriate documentation here:
 
-<details>
-<summary>CR</summary>
-Find more information on Carb Ratio (CR) [here](settings/configuration/carbratios.md)
-</details>
+<b>CR</b><br/>
+Find more information on Carb Ratio (CR) [here](../settings/configuration/carbratios.md)
 
-<details>
-<summary>ISF</summary>
-Find more information on Insulin Sensitivity Factor (ISF) [here](settings/configuration/insulinsensitivities.md)
-</details>
+<b>ISF</b><br/>
+Find more information on Insulin Sensitivity Factor (ISF) [here](../settings/configuration/insulinsensitivities.md)
 
-<details>
-<summary>Basal</summary>
-Find more information on Basal [here](settings/configuration/basalprofile.md)
-</details>
+<b>Basal</b><br/>
+Find more information on Basal [here](../settings/configuration/basalprofile.md)
 
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
 
@@ -39,4 +33,4 @@ _Initially, these are the first two settings you need to configure to activate c
 
 2. **Max IOB:** Enter your value for the maximum allowed Insulin On Board. The default is set to 0.
 
-See [Configuration](docs/EN/settings/configuration) for more information on Trio configuration.
+See [Configuration](../settings/configuration) for more information on Trio configuration.

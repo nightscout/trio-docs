@@ -25,16 +25,13 @@ Your phone's iOS version can be found under the phone Settings -> General -> Abo
 
 With iOS 16 and watchOS 9, Apple added a feature called "Developer Mode." This feature must be enabled on your iPhone and Apple Watch to allow the installation of Trio. To learn more, click on this link: [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-When you build Trio on your phone from Xcode directly, you need to have Developer Mode enabled. This is also required in order to use the Trio app on a watch paired to your phone.
+When you build Trio on your phone from Xcode directly, you must enable Developer Mode. This is also required in order to use the Trio app on a watch paired to your phone.
 
-:::{attention}
-"Developer Mode with iOS 16, watchOS 9"
-    If you already have Trio, built with Xcode on a Mac, on your phone/watch when you update to iOS 16/watchOS 9, you will be told that Trio requires Developer Mode to run.
-    
-    You cannot run Trio on your phone (or watch) until you have enabled Developer Mode on the device(s).
+:::{admonition} Developer Mode with iOS 16, watchOS 9
+:class: tip
+If you already have Trio, built with Xcode on a Mac, on your phone/watch, when you update to iOS 16/watchOS 9, you will be told that Trio requires Developer Mode to run.
 
-    ![phone message if trying to run Xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
-    {align="center"}
+You cannot run Trio on your phone (or watch) until you have enabled Developer Mode on the device(s).
 :::
 
 #### Automatic Updates
@@ -62,7 +59,7 @@ Make sure your phone's battery is functioning optimally. Your phone will become 
 
 :::{admonition} **Low Power Mode**
 :class: tip
-    Some people have reported that Trio continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others have reported that they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low-power mode. Otherwise, the best practice is to avoid Low-Power Mode.
+Some people have reported that Trio continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others have reported that they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low-power mode. Otherwise, the best practice is to avoid Low-Power Mode.
 :::
 
 ### Apple Watch

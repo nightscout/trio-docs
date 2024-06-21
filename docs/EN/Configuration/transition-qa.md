@@ -109,7 +109,7 @@ You must read extensively and adapt to a new approach to diabetes management.
 
 ### What's All That Talk About Changing the Way I Think?
 
-Loop is carb-centric. Many Loop users have been instructed to enter carbs, including future carbs (fat, protein), to ensure Loop gives the right amount of insulin. Some users also enter "fake carbs" to force Loop to give more insulin.
+Loop is carb-centric. Loop users have been instructed to enter carbs, including future carbs (fat, protein), to ensure Loop gives the right amount of insulin. Some users also enter "fake carbs" to force Loop to give more insulin.
 
 The Trio algorithm does not consider future carbs. What does this mean? The algorithm considers many factors, adds guardrails, and then acts by setting a temporary basal, administering a bolus (SMB), or both. Future carbs are not considered. The algorithm does not care about any future carbs you might have entered.
 
@@ -125,7 +125,7 @@ Here's the recommendation:
 1. Use the bolus calculator before you eat. Enter carbs (and fat and protein if you want). Look at the recommended bolus and tap the info button if you disagree with it. 
 2. Change the recommendation if you want to, and then bolus. If the recommendation is way off, you should check your settings. Remember that the recommendation is based on your settings, including the "Recommended bolus percentage" setting.
 3. Depending on your insulin type and sensitivity, you should consider doing this some minutes before eating. You do not need to adjust the carb timestamp to the actual time you plan to eat; you can keep it when you announce the meal and pre-bolus.
-4. Enjoy your meal. Trio will, in most cases, set a temporary low/zero basal.
+4. Enjoy your meal. In most cases, Trio will set a temporary low/zero basal.
 5. If Trio detects BG is rising faster or more than expected, it will give more insulin (SMB) depending on the settings.
 6. If Trio detects BG falling, a low/zero temporary basal will continue.
 7. If you think Trio is not giving enough or too much insulin, you should look at your settings, including MAX IOB and all SMB-related settings.
@@ -136,21 +136,22 @@ Here's the recommendation:
 **What are the alternatives?**
 
 - *Some Trio users don't bolus for meals. They wait for Trio to detect rising BG and let Trio handle it. This usually leads to a temporary high BG, but Trio will get you back to target with the correct settings. If you're OK with a temporary high, then go ahead and try to skip bolus. You can start with small meals and tune your settings. You will need aggressive settings to let Trio give enough insulin.*
-- *Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is shorter than the completely unattended approach.*
+- *Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on your settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is shorter than the completely unattended approach.*
 
 **What do most people do?**
 *Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it was high carb. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.*
 
 ## Coming From Commercial Closed-Loop Systems
 
-Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter on "Coming from iOS Loop" to see the main issues that Trio solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter [Coming from iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
 
 ## I Want to Try Trio. How Do I Proceed?
 
 - Read the documentation. 
 - Build the app. 
 - Go through all the settings and tap the setting name to get an explanation of what each setting does.
-If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or Facebook. But please read the docs first :)
+
+If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio). But please read the docs first.
 
 ### Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):
 - [Open Mic: Trio with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)

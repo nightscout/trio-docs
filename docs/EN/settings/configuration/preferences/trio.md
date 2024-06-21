@@ -4,7 +4,7 @@
 Allows you to toggle between mmol/L and mg/dL blood glucose units.
 
 ## Remote Control
-Allows for remote control of open-trio using Nightscout.
+Allows for remote control of Trio using Nightscout.
 
 :::{caution}
 **Duplicate Delivery Risk**
@@ -14,16 +14,21 @@ Allows for remote control of open-trio using Nightscout.
 
 We want to highlight a very important risk before you get started.
 
-For safety, always assume a previous remote carb/bolus was delivered whether it shows in Nightscout Trio.
+For safety, always assume a previous remote carb/bolus was delivered, whether it shows in Nightscout Trio.
 
-**For Example:**
-
-_You send a 5-unit remote bolus.
-The bolus is delivered to the Looper.
-Nightscout is having a temporary technical issue and doesn't show the bolus was received.
-You are watching Nightscout and don’t see a delivery, so you assume it failed.
-You send another remote 5 unit bolus.
-The second 5-unit bolus is delivered to the Looper (10 Units total)._
+>**For Example:**
+>
+>_You send a 5-unit remote bolus.
+>
+>The bolus is delivered to the Looper.
+>
+>Nightscout has a temporary technical issue and doesn't show the bolus was received.
+>
+>You are watching Nightscout and don’t see a delivery, so you assume it failed.
+>
+>You send another remote 5-unit bolus.
+>
+>The second 5-unit bolus is delivered to the Looper (10 Units total)._
 
 You can see the danger of sending duplicate bolus/carbs, so be careful. If a remote bolus/carb entry doesn’t show in Nightscout/Caregiver, judge whether enough time has passed to try again.
 
@@ -52,7 +57,7 @@ Recommended bolus percentage is a safety feature built into Trio. By default, Tr
 `Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (80), 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
 
 :::{note}
-A manual bolus uses the Eventual BG for glucose prediction, whereas the insulinReg for SMBs uses the minPredBG (typically lower than Eventual BG).
+A manual bolus uses the `Eventual BG` for glucose prediction, whereas the `insulinReg` for SMBs uses the `minPredBG` (typically lower than Eventual BG).
 :::
 
 ## Skip Bolus screen after carbs
