@@ -28,10 +28,10 @@ meaning you can expect Trio to behave the same way AndroidAPS does generally.
 <br>
 <details>
   <summary><b>Should I switch from AndroidAPS to Trio?</b></summary>
-- If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Trio. - If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Trio.
-  
-Take some time to read the docs and fine-tune your settings. To get help from other users, join [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/1351938092206709/). Once your settings are in order, consider switching to Trio.
-</details>
+  - If you have been successful with AndroidAPS but prefer the Apple ecosystem, you can easily transition to Trio.
+  - If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Trio.
+ </details> 
+Take some time to read the docs and fine-tune your settings. To get help from other Trio users, join [Trio's Discord](https://discord.gg/FnwFEFUwXE) or the [Trio Facebook Group](https://www.facebook.com/groups/diytrio/). Once your settings are in order, consider switching to Trio.
 <br>
 
 ## Coming From iOS Loop
@@ -154,9 +154,9 @@ Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's
 If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio). But please read the docs first.
 
 ### Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):
-- [Open Mic: Trio with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)
-- [Trio with Magnus Reintz & Theresa Hastings: Starting Trio, 8.17.2023](https://youtu.be/9I1nuHbcUHo?si=wlRurW3Qh_60ss2d)
-- [Trio Q&A with Magnus Reintz, Tom Barrows, Jonas Hummelstrand & Theresa Hastings, 30 August 2023](https://youtu.be/Li3AKjSrdPw?si=WwLctkAGjVsbDLNs)
+- [Open Mic: iAPS ver 2.0 with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)
+- [iAPS ver 2.0 with Magnus Reintz & Theresa Hastings: Starting Trio, 8.17.2023](https://youtu.be/9I1nuHbcUHo?si=wlRurW3Qh_60ss2d)
+- [iAPS ver 2.0 Q&A with Magnus Reintz, Tom Barrows, Jonas Hummelstrand & Theresa Hastings, 30 August 2023](https://youtu.be/Li3AKjSrdPw?si=WwLctkAGjVsbDLNs)
 
 
 
