@@ -32,7 +32,7 @@ meaning you can expect Trio to behave the same way AndroidAPS does generally.
   - If you've struggled to get stable BG with AndroidAPS, you may have the same issues with Trio.
  </details> 
  <br>
-Take some time to read the docs and fine-tune your settings. To get help from other Trio users, join [Trio's Discord](https://discord.gg/FnwFEFUwXE) or the [Trio Facebook Group](https://www.facebook.com/groups/diytrio/). <br>Once your settings are in order, consider switching to Trio.
+Take some time to read the docs and fine-tune your settings. <br>Once your settings are in order, consider switching to Trio.
 <br>
 
 ## Coming From iOS Loop
