@@ -1,4 +1,4 @@
-# Transition from other closed-loop solutions
+# Transition From AAPS, Loop, iAPS, or Commercial Systems
 
 ## Introduction
 If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
@@ -58,13 +58,12 @@ iOS Loop uses different algorithms, meaning it has a different approach than Tri
 <br>
 <details>
   <summary><b>Should I switch from Loop to Trio?</b></summary>
-If Loop works well for you, you should not switch to Trio.
 
-Switching to Trio will not resolve Loop build issues. The build process is the same for both Loop and Trio.
+* If Loop works well for you, you should not switch to Trio.
+* Switching to Trio will not resolve Loop build issues. The build process is the same for both Loop and Trio.
+* If you find it difficult to understand how Loop works, Trio is even more complex.
 
-If you find it difficult to understand how Loop works, Trio is even more complex.
-
-You should consider switching to Trio if you've been using Loop for a while and have issues that Loop can't solve even after tweaking and re-tweaking your settings and profile. 
+<b><i>You should consider switching to Trio if you've been using Loop for a while and have issues that Loop can't solve even after tweaking and re-tweaking your settings and profile.</b></i>
 </details>
 <br>
 
@@ -116,12 +115,9 @@ The Trio algorithm does not consider future carbs. What does this mean? The algo
 **Wait, what!? You have to consider carbs, right? Why else would I add them?**
 *Trio considers carbs only once absorbed and part of Carbs On Board (COB).*
 
-**So what's the mealtime strategy then?**
-
 ### Mealtime Strategy
-
-Here's the recommendation:
-
+<details>
+  <summary><b>So what's the mealtime strategy then?</b></summary>
 1. Use the bolus calculator before you eat. Enter carbs (and fat and protein if you want). Look at the recommended bolus and tap the info button if you disagree with it. 
 2. Change the recommendation if you want to, and then bolus. If the recommendation is way off, you should check your settings. Remember that the recommendation is based on your settings, including the "Recommended bolus percentage" setting.
 3. Depending on your insulin type and sensitivity, you should consider doing this some minutes before eating. You do not need to adjust the carb timestamp to the actual time you plan to eat; you can keep it when you announce the meal and pre-bolus.
@@ -129,21 +125,66 @@ Here's the recommendation:
 5. If Trio detects BG is rising faster or more than expected, it will give more insulin (SMB) depending on the settings.
 6. If Trio detects BG falling, a low/zero temporary basal will continue.
 7. If you think Trio is not giving enough or too much insulin, you should look at your settings, including MAX IOB and all SMB-related settings.
+</details>
+<br>
+<details>
+  <summary><b>Does everyone do it like that?</b></summary>
+<i>No</i>
+</details>
+<br>
+<details>
+  <summary><b>What are the alternatives?</b></summary>
+- <i>Some Trio users don't bolus for meals. They wait for Trio to detect rising BG and let Trio handle it. This usually leads to a temporary high BG, but Trio will get you back to target with the correct settings. If you're OK with a temporary high, then go ahead and try to skip bolus. You can start with small meals and tune your settings. You will need aggressive settings to let Trio give enough insulin.</i>
+- <i>Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on your settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is shorter than the completely unattended approach.</i>
+</details>
+<br>
+<details>
+  <summary><b>What do most people do?</b></summary>
+Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it was high carb. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.
+</details>
 
-**Does everyone do it like that?**
-*No.* 
+## Coming From iAPS
 
-**What are the alternatives?**
+### iAPS Ver 2.3.3 or Earlier
 
-- *Some Trio users don't bolus for meals. They wait for Trio to detect rising BG and let Trio handle it. This usually leads to a temporary high BG, but Trio will get you back to target with the correct settings. If you're OK with a temporary high, then go ahead and try to skip bolus. You can start with small meals and tune your settings. You will need aggressive settings to let Trio give enough insulin.*
-- *Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on your settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is shorter than the completely unattended approach.*
+Transitioning from iAPS 2.3.3 to Trio is fairly straight-forward currently. The screens and menus will be very familiar.
 
-**What do most people do?**
-*Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it was high carb. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.*
+#### Settings
+
+Your settings will need to be entered manually, but all can be entered one-by-one from your iAPS settings without adjustment. If you have Nightscout, you can import your Pump Settings, Basal Profile, ISF, CR, Target Glucose, and previous CGM readings from the Nightscout Menu.
+<details>
+  <summary><b>Import Settings With Nightscout</b></summary>
+ 1. Connect Nightscout to your Trio app (If you've already connected your Nightscout site, skip to step 2)
+    * Open the 'Settings' Menu in the Trio app
+    * Tap 'Nightscout' to open the Nightscout Menu
+    * Tap 'Connect >'
+    * Enter your Nightscout URL and API Secret in the spaces provided
+    * Press 'Connect to Nightscout'
+ 2. Import settings
+    * Open the 'Settings' Menu in the Trio app
+    * Tap 'Nightscout'
+    * Tap "Import settings'
+ 3. Backfill Glucose
+    * In the same Nightscout Menu, you can also backfill missing glucose readings from Nightscout
+</details>
+<br>
+#### Dynamic Settings
+
+Because Trio is a separate app, your historical data from iAPS will not transfer. It is still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
+
+### iAPS ver 3.0 or Later
+
+#### Settings
+
+As with iAPS ver 2.3.3, your settings will need to be entered manually and/or [transferred from Nightscout](#iaps-ver-233-or-earlier). It is also still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
+
+#### Other Differences
+
+Trio was forked from iAPS ver 2.3.3. If you used iAPS prior to February 2024, you may recognize the main screen. As the Trio app develops, the screen and menus will diverge substantially from iAPS 2.3.3 and 3.0+. For now, the focus has been on the code behind the scenes. For a comprehensive list of all changes and updates made to create Trio, please view the [PR](https://github.com/nightscout/Trio/pull/2) that merged all the foundational, developmental work into the main version used today.
 
 ## Coming From Commercial Closed-Loop Systems
 
-Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter [Coming from iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay; if you're not getting the desired results, read through the chapter [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
 
 ## I Want to Try Trio. How Do I Proceed?
 
