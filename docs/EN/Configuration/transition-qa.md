@@ -169,6 +169,7 @@ Your settings will need to be entered manually, but all can be entered one-by-on
     * In the same Nightscout Menu, you can also backfill missing glucose readings from Nightscout
 </details>
 <br>
+
 #### Dynamic Settings
 
 Because Trio is a separate app, your historical data from iAPS will not transfer. It is still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
