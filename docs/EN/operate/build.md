@@ -16,21 +16,42 @@ The Trio repository contains instructions for building the Trio app using a brow
 :::
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
-* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-    * These names are the same as that used by iAPS, they are distinguised by the Identifier itself, which include the new BundleID for your Trio app
-    * If you build with Xcode before, they will start with XC and use the Identifier string rather than the Name
-* `Identifiers` will be:
-    * `org.nightscout.TEAMID.trio`
-    * `org.nightscout.TEAMID.trio.watchkitapp`
-    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-    * `org.nightscout.TEAMID.trio.LiveActivity`
-* Only the first 3 of these identifiers need to have the `App Group` added
-* For the list below, make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
-* You must add this `App Group` to each of the following identifiers:
-    * `org.nightscout.TEAMID.trio`
-    * `org.nightscout.TEAMID.trio.watchkitapp`
-    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
+* Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
+* You use the `Loop App Group` for Trio, see [Create the `Loop App Group`](#create-the-loop-app-group)
+* Add the `Loop App Group` to these identifiers:
+    * Trio
+    * Trio Watch
+    * Trio WatchKit Extension
+* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio
+
+### Create the `Loop App Group`
+
+If you already have a `Loop App Group`
+
+* You can skip this step - your existing App Groups are found at this link: [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+* If your `Loop App Group` was created from a Mac with Xcode, you may choose to edit the Description to make the **NAME** match
+
+If you do not have a `Loop App Group`:
+
+* Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
+
+| NAME | XCode version | IDENTIFIER |
+|:--|:--|:--|
+| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.7PT47XGDN4.loopkit.LoopGroup |
+
+#### Table of Identifiers
+
+* If you built previously using a Mac with Xcode, you may see the XCode version in your **NAME** column - it starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for Trio is shown in detail
+* If you built during early beta testing, you might not have `Trio` at the beginning of each **IDENTIFIER** and the full **NAME** may be slightly different
+* Optional: You can click on a given row, edit the Description to match the **NAME** from the table below and it might making building easier in future
+
+| NAME | XCode version | IDENTIFIER |
+|:--|:--|:--|
+| Trio | XC org nightscout TEAMID trio | org.nightscout.TEAMID.trio |
+| Trio LiveActivity | - | org.nightscout.TEAMID.trio.LiveActivity |
+| Trio Watch | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp |
+| Trio WatchKit Extension | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp.watchkitextension |
+
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
@@ -48,25 +69,30 @@ You can add additional tests notes for any build if you desire.
 
 ## Update Trio with GitHub
 
+First makes sure any Apple License agreements have been accepted:
+
+* [Apple Developer Page](https://developer.apple.com/account){: target="_blank" }
+
+Second, make sure you have a valid Distributor certificate; if not, see [Distribution Certificate](#distribution-certificate):
+
+* [Apple Certificate Page](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+
 Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
-* Before building, you can [Verify Trio Version](#verify-trio-version)
 
-If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
+Select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
 
-If your token has expired, create a new one (and set it to "never expire") and update the GH_PAT in your Trio secrets. Then, you can build your updated code.
-
-## Distribution Certificates
+## Distribution Certificate
 
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
-The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
+The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate){: target="_blank" }.
 
 ## Build Trio with Xcode
 
-The recommendation is to use the [**TrioBuildSelectScript**](#build-trio-with-script) to build your code.
+If you build Trio on your Mac using Xcode, the recommendation is to use the [**TrioBuildSelectScript**](#build-trio-with-script) to build your code.
 
 ### Build Trio with Script
 
