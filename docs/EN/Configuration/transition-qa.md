@@ -170,9 +170,11 @@ Your settings will need to be entered manually, but all can be entered one-by-on
 </details>
 <br>
 
-#### Dynamic Settings
+:::{admonition} Dynamic Settings
+:class: caution
 
 Because Trio is a separate app, your historical data from iAPS will not transfer. It is still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
+:::
 
 ### iAPS ver 3.0 or Later
 
