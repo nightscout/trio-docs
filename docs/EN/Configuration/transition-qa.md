@@ -34,6 +34,7 @@ meaning you can expect Trio to behave the same way AndroidAPS does generally.
  <br>
 Take some time to read the docs and fine-tune your settings. <br>Once your settings are in order, consider switching to Trio.
 <br>
+<br>
 
 ## Coming From iOS Loop
 iOS Loop uses different algorithms, meaning it has a different approach than Trio. If you're coming from iOS Loop, you must change how you think. Please read that statement again three times, as it is crucial.
