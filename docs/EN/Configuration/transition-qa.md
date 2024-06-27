@@ -5,6 +5,7 @@ If you've been using other closed-loop solutions, it's essential to understand t
 
 In this section of the documentation, we'll explain the differences from a user perspective.
 <br>
+
 ## Coming From AndroidAPS
 AndroidAPS and Trio are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Trio, the main algorithm is the same, 
 meaning you can expect Trio to behave the same way AndroidAPS does generally.
@@ -141,6 +142,7 @@ The Trio algorithm does not consider future carbs. What does this mean? The algo
   <summary><b>What do most people do?</b></summary>
 Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it is high in carbohydrates. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.
 </details>
+<br>
 
 ## Coming From iAPS
 
