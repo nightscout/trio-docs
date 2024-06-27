@@ -95,7 +95,7 @@ Exercise is good for everyone, including people with diabetes. People with insul
 </details>
 <br>
 <details>
-  <summary><b>Frequent, consistent variations in profile (basal, ISF, CR)</b></summary>
+  <summary><b>Frequent, consistent variations in profile (Basal, ISF, CR)</b></summary>
 Illness, menstrual cycle, inactive days, active days, home office days, stressful events... In these situations, the overall insulin need differs from your usual need. Like Loop's Overrides, Trio has Profiles that can change basal rate, ISF, CR, and target BG within a pre-set timeframe. What Trio Profiles do that Loop Overrides do not do is provide the option to temporarily disable SMBs and apply adjustments to only basal, basal, and ISF, basal and CR, or all three.
 </details>
 <br>
