@@ -1,10 +1,8 @@
 # Transition From AAPS, Loop, iAPS, or Commercial Systems
-
-## Introduction
-If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
-
-In this section of the documentation, we'll explain the differences from a user perspective.
-<br>
+:::{information}
+* If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
+* In this section of the documentation, we'll explain the differences from a user perspective.
+:::
 
 ## Coming From AndroidAPS
 AndroidAPS and Trio are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Trio, the main algorithm is the same, 
