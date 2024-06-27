@@ -14,20 +14,23 @@ The Trio repository contains instructions for building the Trio app using a brow
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
 :::
-  * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
-  * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-  * `Identifiers` will be:
-      * `org.nightscout.TEAMID.trio`
-      * `org.nightscout.TEAMID.trio.watchkitapp`
-      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-      * `org.nightscout.TEAMID.trio.LiveActivity`
-  * Make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
-  * You must add this `App Group` to each of the following identifiers:
-      * `org.nightscout.TEAMID.trio`
-      * `org.nightscout.TEAMID.trio.watchkitapp`
-      * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-  * The `org.nightscout.TEAMID.trio` identifier, in addition to `App Group`, must also have the `HealthKit` and `NFC Tag Reading` boxes checked (which should be automatic)
-  * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
+
+* Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
+* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
+    * These names are the same as that used by iAPS, they are distinguised by the Identifier itself, which include the new BundleID for your Trio app
+    * If you build with Xcode before, they will start with XC and use the Identifier string rather than the Name
+* `Identifiers` will be:
+    * `org.nightscout.TEAMID.trio`
+    * `org.nightscout.TEAMID.trio.watchkitapp`
+    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+    * `org.nightscout.TEAMID.trio.LiveActivity`
+* Only the first 3 of these identifiers need to have the `App Group` added
+* For the list below, make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
+* You must add this `App Group` to each of the following identifiers:
+    * `org.nightscout.TEAMID.trio`
+    * `org.nightscout.TEAMID.trio.watchkitapp`
+    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
@@ -74,8 +77,7 @@ The **TrioBuildSelectScript** offers the choice to:
 1. [Build Trio](#build-trio)
 2. [Build Related Apps](#build-related-apps)
 3. [Run Maintenance Utilities](#run-maintenance-utilities)
-4. [Customize Trio](#customize-trio)
-5. Exit Script
+4. Exit Script
 
 To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
@@ -115,21 +117,13 @@ When you select **Run Maintenance Utilities**, you will be provided with a choic
 The following options are offered:
 
 1. Delete Old Downloads
-1. Clean Derived Data
-1. Xcode Cleanup (The Big One)
-1. Return to Menu
+2. Clean Derived Data
+3. Xcode Cleanup (The Big One)
+4. Clean Profiles
+5. Return to Menu
 
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
-#### Customize Trio
-
-When you select **Customize Trio**, you will be provided with a choice of customization options:
-
-1. [Change Default to Upload Dexcom Readings](https://www.loopandlearn.org/custom-code/#dexcom-remote-enable)
-2. [Disable Authentication Requirement](https://www.loopandlearn.org/custom-code/#disable-authentication)
-3. Return to Menu
-
-The customizations are a subset of those provided for the Loop app. Some of the code in Trio is shared with Loop so these customizations are common. The two that are used by Trio have links to the Loop and Learn documentation in the list above.
 
 #### Build Errors
 
@@ -137,7 +131,7 @@ If you encounter any build issues, please look at the [LoopDocs Build](https://l
 
 If you need it, you are most likely to get help in one of these groups:
 
-* [Discord: Trio channel](https://discord.gg/fCY5svg4)
+* [Discord: Trio channel](https://discord.gg/FnwFEFUwXE)
 * [Facebook group: Trio](https://www.facebook.com/groups/1351938092206709)
 * Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
@@ -151,7 +145,7 @@ If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app
 
 The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-These can be accessed using the [**OiBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
+These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
 
 #### xDrip4iOS
 
@@ -184,20 +178,26 @@ If you prefer the command line interface, skip ahead to [Update Trio with CLI](#
 
 ### Update Trio with Source Control
 
-::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`. 
+::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`.  They also show an older version of Xcode. The menus have changed, so follow the words below, not the graphics.
+:::
 
 Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
 
-Refer to the graphic below:
-1. Click Source Control
-2. Choose `Fetch changes`
+The graphic below needs to be updated:
+1. There are 2 methods to open `Source Control`
+    * Hold down the command key and hit 2 (cmd-2)
+    * Use the menus to select `View`, `Navigate`, `Source Control`
+2. This modifies the Xcode display with two tabs:
+    * There is a `Changes` tab and a `Repositories` tab
+    * It might say `No changes`, but fetch changes to make sure
+3. Tap on the `Integrate` menu and select `Fetch changes`
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
 
-Refer to the graphic below:
-1. Click Source Control again
+The graphic below needs to be updated:
+1. Click `Integrate` again
 2. Select `Pull…`
 
 <img src="https://github.com/nightscout/trio-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>

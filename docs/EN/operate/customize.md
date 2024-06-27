@@ -2,7 +2,7 @@
 
 Here are a few ways to customize the Trio code to suit your needs better. Please be very careful when editing any code.
 
-## Bypass Authentification for Bolusing
+## Bypass Authentication for Bolusing
 
 :::{warning}
 - If you disable this, you remove an important safety feature.
@@ -11,12 +11,9 @@ Here are a few ways to customize the Trio code to suit your needs better. Please
 
 Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Trio. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
-You can find the script for this customization here [Customize Trio](build.md#customize-trio). Trio uses many submodules from the LoopKit username with FreeAPS and oref code as the manager.
-
 **Steps:**
 
-Edit line 20 of the file `LoopKit/LoopKitUI/Extensions/Environment+Authenticate.swift`
-
+Edit line 28 of the file `FreeAPS/Sources/Services/UnlockManager/UnlockManager.swift`
 
 Code before modification: 
 ```swift
@@ -25,7 +22,7 @@ if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 
 Code after modification: 
 ```swift
-if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+if false, context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 ```
 
 ## Omnipod: Add Extra Insulin on Insertion
