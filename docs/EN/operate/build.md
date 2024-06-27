@@ -209,18 +209,17 @@ If you prefer the command line interface, skip ahead to [Update Trio with CLI](#
 
 Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-![update using xcode source control welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
+![xcode welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
 
-The graphic below needs to be updated:
 1. There are 2 methods to open `Source Control`
     * Hold down the command key and hit 2 (cmd-2)
-    * Use the menus to select `View`, `Navigate`, `Source Control`
+    * Use the menus to select `View`, `Navigators`, `Source Control`
 2. This modifies the Xcode display with two tabs:
     * There is a `Changes` tab and a `Repositories` tab
     * It might say `No changes`, but fetch changes to make sure
 3. Tap on the `Integrate` menu and select `Fetch changes`
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
+![update using xcode source control](img/update-xcode-source-control-fetch.png){width="600px"}
 
 The graphic below needs to be updated:
 1. Click `Integrate` again
