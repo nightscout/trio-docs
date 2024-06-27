@@ -198,7 +198,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ## Update Trio with Xcode
 
-The recommendation is to use the Xcode Source Control features to update your code.
+You can use the Xcode Source Control features to update your code.
 
 If you prefer the command line interface, skip ahead to [Update Trio with CLI](#update-trio-with-cli).
 
@@ -209,7 +209,7 @@ If you prefer the command line interface, skip ahead to [Update Trio with CLI](#
 
 Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
+![update using xcode source control welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
 
 The graphic below needs to be updated:
 1. There are 2 methods to open `Source Control`
