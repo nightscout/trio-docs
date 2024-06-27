@@ -4,8 +4,7 @@
 If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
 
 In this section of the documentation, we'll explain the differences from a user perspective.
-
-
+<br>
 ## Coming From AndroidAPS
 AndroidAPS and Trio are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Trio, the main algorithm is the same, 
 meaning you can expect Trio to behave the same way AndroidAPS does generally.
@@ -34,10 +33,9 @@ meaning you can expect Trio to behave the same way AndroidAPS does generally.
  <br>
 Take some time to read the docs and fine-tune your settings. <br>Once your settings are in order, consider switching to Trio.
 <br>
-
 ## Coming From iOS Loop
 iOS Loop uses different algorithms, meaning it has a different approach than Trio. If you're coming from iOS Loop, you must change how you think. Please read that statement again three times, as it is crucial.
-
+<br>
 <details>
   <summary><b>Benefits of Loop</b></summary>
 
