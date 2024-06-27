@@ -72,7 +72,7 @@ iOS Loop uses different algorithms, meaning it has a different approach than Tri
 
 <details>
   <summary><b>Incorrect or missing carb entries</b></summary>
-Trio has a feature called Unannounced Meals (UAM). With this option enabled and properly configured, Trio will react to rising BG by giving insulin through a Super Micro Bolus (SMB) even if no carbs are registered. UAM helps in two scenarios: forgetting to add carbs for a meal and entering carbs but not the correct amount.
+Trio has a feature called Unannounced Meals (UAM). With this option enabled and properly configured, Trio will react to rising BG by giving insulin through a Super Micro Bolus (SMB) even if no carbohydrates are registered. UAM helps in two scenarios: forgetting to add carbohydrates for a meal and entering carbohydrates but not the correct amount.
 </details>
 <br>
 <details>
@@ -81,12 +81,12 @@ With UAM and SMB active and properly configured, Trio will make any necessary co
 </details>
 <br>
 <details>
-  <summary><b>Persistent highs because of variations in insulin sensitivity (ISF) and insulin-to-carb ratio (CR)</b></summary>
+  <summary><b>Persistent highs because of variations in Insulin Sensitivity Factor (ISF) and Insulin-to-Carbohydrate Ratio (CR)</b></summary>
 Many people with diabetes need more insulin as their BG rises. Because Loop uses constant, pre-set ISF and CR values; it cannot address the unexpected change in sensitivity. With dynamic ISF and dynamic CR enabled and properly configured, Trio will give enough insulin to lower those highs without user interaction. More aggressive settings might lead to a low. With less aggressive settings, it will take Trio some time to get BG back in range. The key is to find the effective balance between conservative and aggressive to meet your needs.
 </details>
 <br>
 <details>
-  <summary><b>Recurring/rebound lows</b></summary>
+  <summary><b>Recurring/Rebound Lows</b></summary>
 Properly configured, Trio will not give you insulin if you don't need it. A typical issue with Loop is that it stops delivering insulin when BG falls and then gives insulin from the "negative IOB" once BG starts rising again. For some users, this is too much insulin and leads to recurring lows. Properly configured, Trio will not overcompensate for the rapid BG rise after a low.
 </details>
 <br>
@@ -111,17 +111,17 @@ You must read extensively and adapt to a new approach to diabetes management.
 
 Loop is carb-centric. Loop users have been instructed to enter carbs, including future carbs (fat, protein), to ensure Loop gives the right amount of insulin. Some users also enter "fake carbs" to force Loop to give more insulin.
 
-The Trio algorithm does not consider future carbs. What does this mean? The algorithm considers many factors, adds guardrails, and then acts by setting a temporary basal, administering a bolus (SMB), or both. Future carbs are not considered. The algorithm does not care about any future carbs you might have entered.
+The Trio algorithm does not consider future carbs. What does this mean? The algorithm considers many factors, adds guardrails, and then acts by setting a temporary basal, administering a bolus (SMB), or both. Future carbs are not considered. The algorithm does not care about any future carbohydrates you might have entered.
 
-**Wait, what!? You have to consider carbs, right? Why else would I add them?**
-*Trio considers carbs only once absorbed and part of Carbs On Board (COB).*
+**Wait, what!? You have to consider carbohydrates, right? Why else would I add them?**
+*Trio considers carbohydrates only once absorbed and part of Carbohydrates On Board (COB).*
 
 ### Mealtime Strategy
 <details>
   <summary><b>So what's the mealtime strategy then?</b></summary>
-1. Use the bolus calculator before you eat. Enter carbs (and fat and protein if you want). Look at the recommended bolus and tap the info button if you disagree with it. 
+1. Use the bolus calculator before you eat. Enter carbohydrates (and fat and protein if you want). Look at the recommended bolus and tap the info button if you disagree with it. 
 2. Change the recommendation if you want to, and then bolus. If the recommendation is way off, you should check your settings. Remember that the recommendation is based on your settings, including the "Recommended bolus percentage" setting.
-3. Depending on your insulin type and sensitivity, you should consider doing this some minutes before eating. You do not need to adjust the carb timestamp to the actual time you plan to eat; you can keep it when you announce the meal and pre-bolus.
+3. Depending on your insulin type and sensitivity, you should consider doing this some minutes before eating. You do not need to adjust the carbohydrate timestamp to the actual time you plan to eat; you can keep it when you announce the meal and pre-bolus.
 4. Enjoy your meal. In most cases, Trio will set a temporary low/zero basal.
 5. If Trio detects BG is rising faster or more than expected, it will give more insulin (SMB) depending on the settings.
 6. If Trio detects BG falling, a low/zero temporary basal will continue.
@@ -136,12 +136,12 @@ The Trio algorithm does not consider future carbs. What does this mean? The algo
 <details>
   <summary><b>What are the alternatives?</b></summary>
 - <i>Some Trio users don't bolus for meals. They wait for Trio to detect rising BG and let Trio handle it. This usually leads to a temporary high BG, but Trio will get you back to target with the correct settings. If you're OK with a temporary high, then go ahead and try to skip bolus. You can start with small meals and tune your settings. You will need aggressive settings to let Trio give enough insulin.</i>
-- <i>Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on your settings. Yes, even without entering any carbs. This approach will also result in a temporary high that is shorter than the completely unattended approach.</i>
+- <i>Some Trio users do a manual pre-bolus and skip entering carbs. Trio will predict a low BG until the meal kicks in and BG begins rising. If the pre-bolus is insufficient, Trio will give more insulin based on your settings. Yes, even without entering any carbohydrates. This approach will also result in a temporary high that is shorter than the completely unattended approach.</i>
 </details>
 <br>
 <details>
   <summary><b>What do most people do?</b></summary>
-Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it was high carb. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.
+Most Trio users take a bit of all these approaches. They have an apple without entering anything into the app. Then, they pre-bolus for lunch because it is high in carbohydrates. Then, they use the calculator for dinner. This is all OK, and it comes down to the variation you accept for your BG.
 </details>
 
 ## Coming From iAPS
