@@ -1,5 +1,5 @@
 # Transition From AAPS, Loop, iAPS, or Commercial Systems
-:::{information}
+:::{important}
 * If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
 * In this section of the documentation, we'll explain the differences from a user perspective.
 :::
