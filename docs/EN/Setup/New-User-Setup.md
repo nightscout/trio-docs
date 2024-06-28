@@ -76,8 +76,9 @@ Closed loop is turned off by default. This means Trio cannot make adjustments au
 Under "App Icons" in the Settings Menu, you can find a variety of icons to use for your Trio app.
 ```{image} img/changeAppIcon.png
 ```
-<br>
-If you have a special icon in mind, you can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
+
+
+Have a special icon in mind? You can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
 <br>
 <br>
 
