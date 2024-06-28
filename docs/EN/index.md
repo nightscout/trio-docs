@@ -51,10 +51,24 @@ You can also provide support in online support groups by helping users adjust th
 :caption: Overview
 :maxdepth: 2
 
-./Getting-Started/Overview.md
-./Getting-Started/iphone.md
-./Getting-Started/pump.md
-./settings/devices/cgm.md
+Introduction <./Getting-Started/Overview.md>
+
+New User Guide <./Setup/New-User-Setup.md>
+
+Comparison of Other Systems <./Configuration/transition-qa.md>
+
+```
+
+(index-Compatibility)=
+
+```{toctree}
+:caption: Device Compatibility
+
+iPhone & Watch <./Getting-Started/iphone.md>
+
+Pump <./Getting-Started/pump.md>
+
+CGM <./settings/devices/cgm.md>
 
 ```
 <!---
@@ -68,7 +82,6 @@ You can also provide support in online support groups by helping users adjust th
 ./Analyze/EvaluateCR.md
 
 ```
---->
 (index-Configuration)=
 
 ```{toctree}
@@ -79,40 +92,49 @@ You can also provide support in online support groups by helping users adjust th
 ./Configuration/transition-qa.md
 
 ```
+--->
+
 (index-Settings-Basics)=
 
 ```{toctree}
-:caption: Basic Settings
+:caption: Basic Settings (for all users)
 
-./settings/configuration/autotune.md
-./settings/configuration/basalprofile.md
-./settings/configuration/carbratios.md
-./settings/configuration/insulinsensitivites.md
-./settings/configuration/pumpsettings.md
-./settings/configuration/targetglucose.md
-./settings/devices/cgm.md
-./settings/devices/pump.md
-./settings/services/applehealth.md
-./settings/services/fatprotein.md
-./settings/services/nightscout.md
-./settings/services/notifications.md
+Trio Main Preferences <./settings/configuration/preferences/trio.md>
+
+Pump, CGM, Watch <./Configuration/Devices.md>
+
+Additional Pump Settings <./settings/configuration/pumpsettings.md>
+
+Basal <./settings/configuration/basalprofile.md>
+
+CR <./settings/configuration/carbratios.md>
+
+ISF <./settings/configuration/insulinsensitivites.md>
+
+Set Your Target BG <./settings/configuration/targetglucose.md>
+
+Main Settings <./settings/configuration/preferences/mainsettings.md>
+
+Close the Loop <./Configuration/Configure.md>
+
+Enable SMBs <./settings/configuration/concepts/smb-uam.md>
 
 ```
 
-(index-Settings-Advanced)=
+(index-Other-Settings)=
 
 ```{toctree}
-:caption: Advanced Settings
+:caption: Optional Settings (for all users)
 
-./settings/configuration/concepts/autosens-dynamic.md
-./settings/configuration/concepts/sigmoid.md
-./settings/configuration/concepts/asmb-uam.md
-./settings/configuration/preferences/dynamicsettings.md
-./settings/configuration/preferences/trio.md
-./settings/configuration/preferences/mainsettings.md
-./settings/configuration/preferences/othersettings.md
-./settings/configuration/preferences/smbsettings.md
-./settings/configuration/preferences/targetsettings.md
+Apple Health <./settings/services/applehealth.md>
+
+FPU <./settings/services/fatprotein.md>
+
+Nightscout <./settings/services/nightscout.md>
+
+Notifications <./settings/services/notifications.md>
+
+SMB Settings <./settings/configuration/preferences/smbsettings.md>
 
 ```
 
@@ -123,23 +145,38 @@ You can also provide support in online support groups by helping users adjust th
 
 Build <./operate/build.md>
 
-Customizations <./operate/customize.md>
-
 Interface <./operate/interface.md>
 
 Temp Target <./operate/temptarget.md>
 
 Troubleshoot <./operate/troubleshoot.md>
 
+Customizations <./operate/customize.md>
+
 ```
+
+(index-Settings-Advanced)=
+
+```{toctree}
+:caption: Advanced Settings (for experienced users)
+
+Autotune <./settings/configuration/autotune.md>
+
+Dynamic Settings <./settings/configuration/concepts/autosens-dynamic.md>
+
+Sigmoid <./settings/configuration/concepts/sigmoid.md>
+
+Details on Dynamic Settings & Sigmoid <./settings/configuration/preferences/dynamicsettings.md>
+
+Other Settings <./settings/configuration/preferences/othersettings.md>
+
+Sensitivity Settings <./settings/configuration/preferences/targetsettings.md>
 
 
 (index-resources)=
 
 ```{toctree}
 :caption: Resources
-
-Other AIDs <./resources/alternative.md>
 
 Citations <./resources/citations.md>
 
