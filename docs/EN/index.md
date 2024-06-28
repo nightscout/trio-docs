@@ -68,11 +68,11 @@ Common Issues <./operate/troubleshoot.md>
 ```{toctree}
 :caption: Device Compatibility
 
-iPhone & Watch <./Getting-Started/iphone.md>
+iPhones & Watches <./Getting-Started/iphone.md>
 
-Pump <./Getting-Started/pump.md>
+Pumps <./Getting-Started/pump.md>
 
-CGM <./settings/devices/cgm.md>
+CGMs <./settings/devices/cgm.md>
 
 ```
 
