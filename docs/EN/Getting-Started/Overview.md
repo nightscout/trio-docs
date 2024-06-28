@@ -25,6 +25,6 @@ To use Trio, you are required to build the application from the source code. Thi
 Upon installation, you will need to configure your settings appropriately. For step-by-step instructions on using the app, follow the [start-up guide](http://diy-trio.org/start-up-guide). 
 
 **Ready to Get Started?**
-Head to the [New User Guide](../Setup/New-User-Setup.md) for a step-by-step guide to get started!
+Head to the [New User Guide](../Setup/New-User-Setup.md) to get started!
 
 
