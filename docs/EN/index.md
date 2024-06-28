@@ -97,7 +97,7 @@ CGM <./settings/devices/cgm.md>
 (index-Settings-Basics)=
 
 ```{toctree}
-:caption: Basic Settings (for all users)
+:caption: Basic Settings (all users)
 
 Trio Main Preferences <./settings/configuration/preferences/trio.md>
 
@@ -124,7 +124,7 @@ Enable SMBs <./settings/configuration/concepts/smb-uam.md>
 (index-Other-Settings)=
 
 ```{toctree}
-:caption: Optional Settings (for all users)
+:caption: Optional Settings (all users)
 
 Apple Health <./settings/services/applehealth.md>
 
@@ -158,7 +158,7 @@ Customizations <./operate/customize.md>
 (index-Settings-Advanced)=
 
 ```{toctree}
-:caption: Advanced Settings (for experienced users)
+:caption: Advanced Settings (advanced users)
 
 Autotune <./settings/configuration/autotune.md>
 
@@ -172,6 +172,7 @@ Other Settings <./settings/configuration/preferences/othersettings.md>
 
 Sensitivity Settings <./settings/configuration/preferences/targetsettings.md>
 
+```
 
 (index-resources)=
 
