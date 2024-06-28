@@ -1,6 +1,5 @@
 # Transition from other closed-loop solutions
 
-## Introduction
 If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
 
 In this section of the documentation, we'll explain the differences from a user perspective.
@@ -145,7 +144,7 @@ Here's the recommendation:
 
 Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter on "Coming from iOS Loop" to see the main issues that Trio solves.
 
-## I Want to Try Trio. How Do I Proceed?
+### I Want to Try Trio. How Do I Proceed?
 
 - Read the documentation. 
 - Build the app. 
