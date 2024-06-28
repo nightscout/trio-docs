@@ -8,9 +8,9 @@ The first step in setting up your Trio app is to connect your devices to the app
 ### Verify Compatibility
 If you have not already, please verify that your devices are compatible:
 
- 1. [Phones/Watches](./Getting-Started/iphone.md)
- 2. [Pumps](./Getting-Started/pump.md)
- 3. [CGMs](./settings/devices/cgm.md)
+ 1. [Phones/Watches](../Getting-Started/iphone.md)
+ 2. [Pumps](../Getting-Started/pump.md)
+ 3. [CGMs](../settings/devices/cgm.md)
 <br>
 
 ### Connect Devices
