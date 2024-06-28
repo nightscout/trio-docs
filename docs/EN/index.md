@@ -109,7 +109,7 @@ Basal <./settings/configuration/basalprofile.md>
 
 CR <./settings/configuration/carbratios.md>
 
-ISF <./settings/configuration/insulinsensitivites.md>
+ISF <./settings/configuration/insulinsensitivities.md>
 
 Set Your Target BG <./settings/configuration/targetglucose.md>
 
