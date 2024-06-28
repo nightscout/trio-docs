@@ -35,7 +35,7 @@ This is found in the Trio Settings menu under 'Preferences'
 :::
 
  1. [Basal](../settings/configuration/basalprofile.md)
- 2. [Insulin Sensitivity Factor (ISF)](../settings/configuration/insulinsensitivites.md)
+ 2. [Insulin Sensitivity Factor (ISF)](../settings/configuration/insulinsensitivities.md)
  3. [Carb Ratio (CR)](../settings/configuration/carbratios.md)
  4. [Set Target Glucose](../settings/configuration/targetglucose.md)
 <br>
