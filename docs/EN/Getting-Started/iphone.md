@@ -21,7 +21,7 @@ These devices are compatible with iOS 16 and newer iOS.
 
 Your phone's iOS version can be found under the phone Settings -> General -> About display. The iOS number is found on the `Software Version` line. When you start looping, you should delay iOS updates until others have confirmed the software functions as normal on the newest update.
 
-:::{caution}
+:::{warning}
 Using iOS Beta versions on the iPhone used for insulin delivery is **never** recommended.
 :::
 
