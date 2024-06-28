@@ -67,8 +67,7 @@ It is essential that Trio have enough data to make sound recommendations. This t
 
 Closed loop is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing will be done without your approval while in "open loop."
 
-```{figure} img/CloseLoopVideo.mp4
-:width: 300px
+```{image} img/closeLoop.png
 ```
 
 [More on closing the loop](../Configuration/Configure.md)
@@ -80,6 +79,7 @@ Under "App Icons" in the Settings Menu, you can find a variety of icons to use f
 ```{image} img/changeAppIcon.png
 ```
 <br>
-If you have a special one in mind, you can use your own custom Icon by following [these instructions](../operate/customize.md#add-custom-icon).
+If you have a special icon in mind, you can use your own custom icon by following the instructions under [Customizations](../operate/customize.md)
+<br>
 
 
