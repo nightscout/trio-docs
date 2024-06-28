@@ -53,9 +53,13 @@ You can also provide support in online support groups by helping users adjust th
 
 Introduction <./Getting-Started/Overview.md>
 
+App Overview <./operate/interface.md>
+
 New User Guide <./Setup/New-User-Setup.md>
 
-Comparison of Other Systems <./Configuration/transition-qa.md>
+Coming from Other AID Systems <./Configuration/transition-qa.md>
+
+Common Issues <./operate/troubleshoot.md>
 
 ```
 
@@ -71,33 +75,20 @@ Pump <./Getting-Started/pump.md>
 CGM <./settings/devices/cgm.md>
 
 ```
-<!---
 
-(index-Analyze)=
-
-```{toctree}
-:caption: Analyze
-
-./Analyze/EvaluateBasal.md
-./Analyze/EvaluateCR.md
-
-```
-(index-Configuration)=
+(index-Build)=
 
 ```{toctree}
-:caption: Device Configuration
+:caption: Build/Update Trio
 
-./Configuration/Configure.md
-./Configuration/Devices.md
-./Configuration/transition-qa.md
+Build Instructions <./operate/build.md>
 
 ```
---->
 
 (index-Settings-Basics)=
 
 ```{toctree}
-:caption: Basic Settings (all users)
+:caption: User Settings (all users)
 
 Trio Main Preferences <./settings/configuration/preferences/trio.md>
 
@@ -136,20 +127,7 @@ Notifications <./settings/services/notifications.md>
 
 SMB Settings <./settings/configuration/preferences/smbsettings.md>
 
-```
-
-(index-Operate)=
-
-```{toctree}
-:caption: Using Trio
-
-Build <./operate/build.md>
-
-Interface <./operate/interface.md>
-
-Temp Target <./operate/temptarget.md>
-
-Troubleshoot <./operate/troubleshoot.md>
+Temp Targets <./operate/temptarget.md>
 
 Customizations <./operate/customize.md>
 
@@ -166,7 +144,7 @@ Dynamic Settings <./settings/configuration/concepts/autosens-dynamic.md>
 
 Sigmoid <./settings/configuration/concepts/sigmoid.md>
 
-Details on Dynamic Settings & Sigmoid <./settings/configuration/preferences/dynamicsettings.md>
+Dynamic Settings Explained <./settings/configuration/preferences/dynamicsettings.md>
 
 Other Settings <./settings/configuration/preferences/othersettings.md>
 
