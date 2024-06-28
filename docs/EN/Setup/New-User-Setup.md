@@ -71,7 +71,7 @@ Closed loop is turned off by default. This means Trio cannot make adjustments au
 :width: 300px
 ```
 
-[More on closing the loop](./Configuration/Configure.md)
+[More on closing the loop](../Configuration/Configure.md)
 <br>
 
 ## Step 5: Change App Icon (Optional)
@@ -81,3 +81,5 @@ Under "App Icons" in the Settings Menu, you can find a variety of icons to use f
 ```
 <br>
 If you have a special one in mind, you can use your own custom Icon by following [these instructions](../operate/customize.md#add-custom-icon).
+
+
