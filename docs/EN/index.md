@@ -84,7 +84,6 @@ You can also provide support in online support groups by helping users adjust th
 ```{toctree}
 :caption: Basic Settings
 
-./settings/configuration/autotune.md
 ./settings/configuration/basalprofile.md
 ./settings/configuration/carbratios.md
 ./settings/configuration/insulinsensitivites.md
@@ -104,6 +103,7 @@ You can also provide support in online support groups by helping users adjust th
 ```{toctree}
 :caption: Advanced Settings
 
+./settings/configuration/autotune.md
 ./settings/configuration/concepts/autosens-dynamic.md
 ./settings/configuration/concepts/sigmoid.md
 ./settings/configuration/concepts/asmb-uam.md
