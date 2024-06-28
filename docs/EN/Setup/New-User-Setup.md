@@ -67,7 +67,7 @@ It is essential that Trio have enough data to make sound recommendations. This t
 
 Closed loop is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing will be done without your approval while in "open loop."
 
-```{image} img/Close-Loop-Video.mp4
+```{figure} img/Close-Loop-Video.mp4
 :width: 300px
 ```
 
