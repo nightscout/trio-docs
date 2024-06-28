@@ -77,7 +77,7 @@ Under "App Icons" in the Settings Menu, you can find a variety of icons to use f
 ```{image} img/changeAppIcon.png
 ```
 <br>
-If you have a special icon in mind, you can use your own custom icon by following the instructions under :doc:`Customizations <../operate/customize.md>`.
+If you have a special icon in mind, you can use your own custom icon by following the instructions under :ref:`Customizations <../operate/customize.md>`.
 <br>
 <br>
 
