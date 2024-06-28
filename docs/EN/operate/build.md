@@ -204,44 +204,50 @@ If you prefer the command line interface, skip ahead to [Update Trio with CLI](#
 
 ### Update Trio with Source Control
 
-::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`.  They also show an older version of Xcode. The menus have changed, so follow the words below, not the graphics.
+::: Released code is found in the `main` branch. Some of these figures used the `dev` branch, most will be using the `main` branch.
 :::
 
-Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
+Open Xcode. If your Trio workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 ![xcode welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
 
-1. There are 2 methods to open `Source Control`
-    * Hold down the command key and hit 2 (cmd-2)
-    * Use the menus to select `View`, `Navigators`, `Source Control`
-2. This modifies the Xcode display with two tabs:
+* There are 2 methods to open `Source Control`
+    1. Hold down the command key and hit 2 (cmd-2)
+    2. Use the menus to select `View`, `Navigators`, `Source Control`
+* This modifies the Xcode display with two tabs:
     * There is a `Changes` tab and a `Repositories` tab
-    * It might say `No changes`, but fetch changes to make sure
-3. Tap on the `Integrate` menu and select `Fetch changes`
+    * It might say `No changes` on the `Changes` tab, but you should always fetch changes to see if new updates are available from GitHub
+* Tap on the `Integrate` menu and select `Fetch changes`
+* After you tap on `Fetch changes`, you'll see an indication Xcode is fetching changes
 
-![update using xcode source control](img/update-xcode-source-control-fetch.png){width="600px"}
+![update using xcode source control - start with fetch](img/update-xcode-source-control-fetch.png){width="600px"}
 
-The graphic below needs to be updated:
-1. Click `Integrate` again
-2. Select `Pull…`
+Once the fetch process completes, use the `Integrate` menu item again
+* Select `Pull…` as show in the two graphics below
+* WIP here - I not sure does a `git pull --recurse`; in other words, the submodules might not be updated
+* more work will be done on this, but be cautious if submodules need to be updated
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
+![update using xcode source control - continue with pull](img/update-xcode-source-control-pull.png){width="600px"}
 
 Refer to the graphic below:
-1. Select the branch to pull from
+1. Select all the submodules and the Trio branch to pull from
 2. Click `Pull`
 
-The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic has the older branch name of `master`.)
+![update using xcode source control - chose trio branch and submodules](img/update-xcode-pull-selection.png){width="350px"}
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9" width="600px"/>
+The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic was acquired using `dev`.)
 
-The last steps are only relevant if you made any changes to the code:
+After you click on pull, if you made any local changes to the code, the `Stash Changes` pop-up will appear:
 
-- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something meaningful to you.
-- Select “Apply Stash After Operation”
+- The pop-up asks you to stash your changes - you can choose to discard them or reapply them after the pull
+- To reapply them after the pull:
+    - You can name the stashed changes as something meaningful to you
+    - Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
 The Trio code is now updated. That was easy. If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Trio app on your phone.
+
+* WIP here - I not sure does a `git pull --recurse`; in other words, the submodules might not be update
 
 The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Trio Version](#verify-trio-version).
 
