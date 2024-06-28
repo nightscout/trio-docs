@@ -16,11 +16,13 @@ If you have not already, please verify that your devices are compatible:
 ### Connect Devices
 Once you have verified that you are using compatible devices, you can connect them in the Trio app settings menu.
 
-<img src="img/DeviceMenu.png" width="300px">
+```{image} img/DeviceMenu.png
+:width: 300px
+```
 
- 1. [Pump](./Configuration/Devices.md#pump)
- 2. [CGM](./Configuration/Devices.md#cgm)
- 3. [Watch (optional)](./Configuration/Devices.md#watch)
+ 1. [Pump](../Configuration/Devices.md#pump)
+ 2. [CGM](../Configuration/Devices.md#cgm)
+ 3. [Watch (optional)](../Configuration/Devices.md#watch)
 <br>
 
 ## Step 2: Add Profile Settings
@@ -32,10 +34,10 @@ If you use mg/dL, you must first change the 'Glucose Units' before entering your
 This is found in the Trio Settings menu under 'Preferences'
 :::
 
- 1. [Basal](./settings/configuration/basalprofile.md)
- 2. [Insulin Sensitivity Factor (ISF)](./settings/configuration/insulinsensitivites.md)
- 3. [Carb Ratio (CR)](./settings/configuration/carbratios.md)
- 4. [Set Target Glucose](./settings/configuration/targetglucose.md)
+ 1. [Basal](../settings/configuration/basalprofile.md)
+ 2. [Insulin Sensitivity Factor (ISF)](../settings/configuration/insulinsensitivites.md)
+ 3. [Carb Ratio (CR)](../settings/configuration/carbratios.md)
+ 4. [Set Target Glucose](../settings/configuration/targetglucose.md)
 <br>
 
 ## Step 3: Adjust Safety Limits
@@ -51,13 +53,13 @@ It is essential that Trio have enough data to make sound recommendations. This t
 
 :::
 
- 1. [Recommended Bolus Percentage](./settings/configuration/preferences/trio.md#recommended-bolus-percentage)
- 2. [Max IOB](./settings/configuration/preferences/mainsettings.md#max-iob)
- 3. [Max COB](./settings/configuration/preferences/mainsettings.md#max-cob)
- 4. [Bolus Increment](./settings/configuration/preferences/smbsettings.md#bolus-increment)
- 5. [Enable SMB](./settings/configuration/preferences/smbsettings.md)
- 6. [Max Delta-BG Threshold SMB](./settings/configuration/preferences/smbsettings.md#max-delta-bg-threshold-smb)
- 7. [Enable UAM](./settings/configuration/preferences/smbsettings.md#enable-uam)
+ 1. [Recommended Bolus Percentage](../settings/configuration/preferences/trio.md#recommended-bolus-percentage)
+ 2. [Max IOB](../settings/configuration/preferences/mainsettings.md#max-iob)
+ 3. [Max COB](../settings/configuration/preferences/mainsettings.md#max-cob)
+ 4. [Bolus Increment](../settings/configuration/preferences/smbsettings.md#bolus-increment)
+ 5. [Enable SMB](../settings/configuration/preferences/smbsettings.md)
+ 6. [Max Delta-BG Threshold SMB](../settings/configuration/preferences/smbsettings.md#max-delta-bg-threshold-smb)
+ 7. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
  8. <b>HANDS OFF DYNAMIC SETTINGS!</b>
 <br>
 
@@ -65,7 +67,9 @@ It is essential that Trio have enough data to make sound recommendations. This t
 
 Closed loop is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing will be done without your approval while in "open loop."
 
-<img src="img/Close-Loop-Video.mp4" width="300px">
+```{image} img/Close-Loop-Video.mp4
+:width: 300px
+```
 
 [More on closing the loop](./Configuration/Configure.md)
 <br>
@@ -73,6 +77,7 @@ Closed loop is turned off by default. This means Trio cannot make adjustments au
 ## Step 5: Change App Icon (Optional)
 Under "App Icons" in the Settings Menu, you can find a variety of icons to use for your Trio app.
 <br>
-<img src="img/changeAppIcon.png">
+```{image} img/changeAppIcon.png
+```
 <br>
-If you have a special one in mind, you can use your own custom Icon by following [these instructions](./operate/customize.md#add-custom-icon).
+If you have a special one in mind, you can use your own custom Icon by following [these instructions](../operate/customize.md#add-custom-icon).
