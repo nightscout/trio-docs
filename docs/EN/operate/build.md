@@ -236,7 +236,7 @@ Refer to the graphic below:
 2. Ignore the submodules, they do not need to be selected
 3. Click `Pull`
 
-![update using xcode source control - chose trio branch and submodules](img/update-xcode-pull-selection.png){width="350px"}
+![update using xcode source control - choose trio branch and submodules](img/update-xcode-pull-selection.png){width="350px"}
 
 After you click on pull, if you made any local changes to the code, the `Stash Changes` pop-up will appear:
 
