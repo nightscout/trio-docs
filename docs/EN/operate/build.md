@@ -224,18 +224,19 @@ Open Xcode. If your Trio workspace is not already open, you can usually find it 
 
 Once the fetch process completes, use the `Integrate` menu item again
 * Select `Pull…` as show in the two graphics below
-* WIP here - I not sure does a `git pull --recurse`; in other words, the submodules might not be updated
-* more work will be done on this, but be cautious if submodules need to be updated
+* This only updates Trio workspace, it does not pull in the changes from the submodules
 
 ![update using xcode source control - continue with pull](img/update-xcode-source-control-pull.png){width="600px"}
 
 Refer to the graphic below:
-1. Select all the submodules and the Trio branch to pull from
-2. Click `Pull`
+1. Select the Trio branch to pull from
+    * The correct branch should already be selected for you
+    * If you built from `main`, select `main`
+    * (This graphic was acquired using `dev`.)
+2. Ignore the submodules, they do not need to be selected
+3. Click `Pull`
 
 ![update using xcode source control - chose trio branch and submodules](img/update-xcode-pull-selection.png){width="350px"}
-
-The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic was acquired using `dev`.)
 
 After you click on pull, if you made any local changes to the code, the `Stash Changes` pop-up will appear:
 
@@ -245,15 +246,64 @@ After you click on pull, if you made any local changes to the code, the `Stash C
     - Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
-The Trio code is now updated. That was easy. If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Trio app on your phone.
+The Trio workspace code is now updated, but not the submodules.
 
-* WIP here - I not sure does a `git pull --recurse`; in other words, the submodules might not be update
+#### Update Trio Submodules
 
-The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Trio Version](#verify-trio-version).
+The submodules can be updated using the procedures in [Update Trio with CLI](#update-trio-with-cli). Alternatively, you can make an [Xcode Behaviors](#xcode-behaviors) that will do it for you.
+
+If you have configured Xcode Behaviors, then tap on the Xcode menu item, then Behaviors and choose `Update Submodules`.
+
+If there are errors, you can continue in this terminal window using the instructions found in [Update Trio with CLI](#update-trio-with-cli).
+
+#### Xcode Behaviors
+
+You can add Xcode behaviors to your version of Xcode. These custom behaviors will be available every time once you add them.
+
+You will create two shell scripts, one will open a Terminal at the same location as an open workspace, the other will both open a Terminal and Update the submodules for your Trio workspace. 
+
+Open a new terminal:
+
+Step 1: Create a folder to store your shell scripts by copying and pasting the next line (only do this one time or you will get an error message):
+
+```
+mkdir ~/scripts
+```
+
+Step 2: Open a text-only editor with a blank file, copy and paste the following lines and save it as `~/scripts/open_terminal.sh`
+
+```
+#!/bin/bash
+open -a Terminal "`pwd`"
+```
+
+Step 3: Open a text-only editor with a blank file, copy and paste the following lines and save it as `~/scripts/open_terminal_update_submodules.sh`
+
+```
+#!/bin/bash
+open -a Terminal "`pwd`"
+git pull --recurse
+```
+
+Step 4: Make the shell scripts executable: 
+Copy and paste the following line into any terminal window
+
+```
+chmod +x ~/scripts/*.sh
+```
+
+Step 5: Open Xcode
+* Under Xcode, select Behaviors, Edit Behaviors
+* At the bottom of the window, click the `+` sign
+    * Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
+    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/open_terminal.sh`
+* Repeat those two steps with `Update Submodules` and `~/scripts/open_terminal_update_submodules.sh`
 
 ### Update Trio with CLI
 
-Use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
+This section is only for those who prefer to use the command line interface for `git`.
+
+If you added the [Xcode Behaviors](#xcode-behaviors), you can use the Xcode, Behaviors, Open Terminal to start a terminal at the correct location. If not, use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
 * Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
     * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
@@ -279,6 +329,18 @@ git stash pop
 
 If the final `git stash pop` had errors, you must repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
 
+If you made customizations in any of the submodules, the `recurse` command might fail. You need to read which submodule failed, Change directory to that module, stash your changes and try again. For example, if the OmniBLE module could not be updated, you would take actions similar to the example below:
+
+```
+cd OmniBLE
+git stash
+cd ..
+git pull --recurse
+cd OmniBLE
+git stash pop
+cd ..
+```
+
 The Trio code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
 
 The targets should be signed, and you will be ready to build the Trio app on your phone.
@@ -289,4 +351,4 @@ Verify that the Trio code was successfully updated by examining the `APP_VERSION
 
 If using the GitHub method, you can view this same file in your fork of the Trio repository.
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca" width="600px"/>
+TODO: - add a figure here later
