@@ -102,7 +102,7 @@ CR <./settings/configuration/carbratios.md>
 
 ISF <./settings/configuration/insulinsensitivities.md>
 
-Set Your Target BG <./settings/configuration/targetglucose.md>
+Target Glucose <./settings/configuration/targetglucose.md>
 
 Main Settings <./settings/configuration/preferences/mainsettings.md>
 
