@@ -106,9 +106,9 @@ Target Glucose <./settings/configuration/targetglucose.md>
 
 Main Settings <./settings/configuration/preferences/mainsettings.md>
 
-Close the Loop <./Configuration/Configure.md>
+SMB & UAM <./settings/configuration/concepts/smb-uam.md>
 
-Enable SMBs <./settings/configuration/concepts/smb-uam.md>
+Close the Loop <./Configuration/Configure.md>
 
 ```
 
