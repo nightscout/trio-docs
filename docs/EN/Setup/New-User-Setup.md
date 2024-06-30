@@ -1,5 +1,5 @@
 # New User Setup
-To set up your Trio app, touch the settings icon located on the bottom right of the main screen. Follow this step-by-step guide to start using Trio. Each step contains links to information on setting up each part of your Trio app. Use this as your homebase to reference back to as you set up your app.
+To set up your Trio app, touch the settings icon ⚙️ located on the bottom right of the main screen. Follow this step-by-step guide to start using Trio. Each step contains links to information on setting up each part of your Trio app. Use this as your homebase to reference back to as you set up your app.
 <br>
 
 ## Step 1: Connect your Devices
