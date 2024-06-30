@@ -83,6 +83,8 @@ CGMs <./settings/devices/cgm.md>
 
 Build Instructions <./operate/build.md>
 
+Customizations <./operate/customize.md>
+
 ```
 
 (index-Settings-Basics)=
@@ -128,8 +130,6 @@ Notifications <./settings/services/notifications.md>
 SMB Settings <./settings/configuration/preferences/smbsettings.md>
 
 Temp Targets <./operate/temptarget.md>
-
-Customizations <./operate/customize.md>
 
 ```
 
