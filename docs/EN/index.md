@@ -98,9 +98,9 @@ Additional Pump Settings <./settings/configuration/pumpsettings.md>
 
 Basal <./settings/configuration/basalprofile.md>
 
-CR <./settings/configuration/carbratios.md>
-
 ISF <./settings/configuration/insulinsensitivities.md>
+
+CR <./settings/configuration/carbratios.md>
 
 Target Glucose <./settings/configuration/targetglucose.md>
 
