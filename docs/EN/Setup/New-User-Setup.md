@@ -48,10 +48,11 @@ The next step is to adjust the standard safety limits that will allow Trio to fu
 :::{warning}
 <b>DO NOT ENABLE DYNAMIC SETTINGS YET</b>
 
-It is essential that Trio have enough data to make sound recommendations. This takes a minimum of 7-14 days. It is not advised to enable dynamic settings until BOTH criteria below are met:
+It is essential that Trio have enough data to make sound recommendations. It is also essential that your settings are tuned to be used in an Oref algorithm and you feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:
 
- - You are sure your settings are accurate
- - You have used Trio with a real CGM and real pump (not simulators) for at least 7 consecutive days
+ - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm
+ - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of 7 consecutive days
+ - You are comfortable with the Trio app
 
 :::
 
@@ -60,9 +61,8 @@ It is essential that Trio have enough data to make sound recommendations. This t
  3. [Max COB](../settings/configuration/preferences/mainsettings.md#max-cob)
  4. [Bolus Increment](../settings/configuration/preferences/smbsettings.md#bolus-increment)
  5. [Enable SMB](../settings/configuration/preferences/smbsettings.md)
- 6. [Max Delta-BG Threshold SMB](../settings/configuration/preferences/smbsettings.md#max-delta-bg-threshold-smb)
- 7. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
- 8. <b>HANDS OFF DYNAMIC SETTINGS!</b>
+ 6. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
+ 7. <b>HANDS OFF DYNAMIC SETTINGS!</b>
 <br>
 
 ## Step 4: Enable Closed Loop
