@@ -63,20 +63,6 @@ Code after modification adding 0.25U of insulin:
 public static let cannulaInsertionUnitsExtra = 0.25
 ```
 
-## Confirm Bolus Faster on Apple Watch
-
-You can reduce the number of spins required from the Apple Watch's Digital Crown to confirm a bolus by changing line 78 of the file `FreeAPSWatch WatchKit Extension/Views/BolusConfirmationView.swift`. You can choose a different number than `5` if you want, but setting it too high could defeat the purpose of the confirmation and lead to unintended boluses.
-
-Code before modification:
-```swift
-            by: 0.5,
-```
-
-Code after modification:
-```swift
-            by: 5,
-```
-
 ## Add Custom Icon
 
 There are several different app icon options built into Trio, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.
