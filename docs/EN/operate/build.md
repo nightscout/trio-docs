@@ -254,7 +254,7 @@ The Trio workspace code is now updated, but not the submodules.
 
 The submodules can be updated using the procedures in [Update Trio with CLI](#update-trio-with-cli). Alternatively, you can create [Xcode Behaviors](#xcode-behaviors) that will do it for you.
 
-If you configured Xcode Behaviors, you use then from the Xcode menu, Behaviors as shown in the graphic below.
+If you configured [Xcode Behaviors](#xcode-behaviors), you use then from the Xcode menu, Behaviors as shown in the graphic below.
 
 ![select a custom xcode behavior](img/xcode-behaviors.png){width="600px"}
 
@@ -320,7 +320,7 @@ TODO: - add a figure here later
 
 ## Xcode Behaviors
 
-You can add Xcode Behaviors to your version of Xcode. These custom Behaviors only need to be added once time.
+You can add Xcode Behaviors to your version of Xcode. These custom Behaviors only need to be added once.
 
 You will create two shell scripts and then add them to Xcode using the `Edit Behaviors` step below.
 
