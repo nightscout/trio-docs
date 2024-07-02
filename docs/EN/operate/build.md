@@ -246,62 +246,27 @@ After you click on pull, if you made any local changes to the code, the `Stash C
     - Select “Apply Stash After Operation”
 - Click “Stash and Pull”
 
+If it has been a long time since you updated, or if certain files were modified, Xcode pops up a window asking if you want to the use current version in Xcode or the version on disk - choose the version on disk. Then Xcode might close, but it will then provide an option to Reopen. After the Xcode reopens, then you can continue.
+
 The Trio workspace code is now updated, but not the submodules.
 
 #### Update Trio Submodules
 
-The submodules can be updated using the procedures in [Update Trio with CLI](#update-trio-with-cli). Alternatively, you can make an [Xcode Behaviors](#xcode-behaviors) that will do it for you.
+The submodules can be updated using the procedures in [Update Trio with CLI](#update-trio-with-cli). Alternatively, you can create [Xcode Behaviors](#xcode-behaviors) that will do it for you.
 
-If you have configured Xcode Behaviors, then tap on the Xcode menu item, then Behaviors and choose `Update Submodules`.
+If you configured Xcode Behaviors, you use then from the Xcode menu, Behaviors as shown in the graphic below.
 
-If there are errors, you can continue in this terminal window using the instructions found in [Update Trio with CLI](#update-trio-with-cli).
+![select a custom xcode behavior](img/xcode-behaviors.png){width="600px"}
 
-#### Xcode Behaviors
+If you have already done the `Fetch` and `Pull` steps, you next choose `Update Submodules`. If it has been a while since you updated, expect this to take a long time - only select it once and wait for the logfile.txt window to appear.
 
-You can add Xcode behaviors to your version of Xcode. These custom behaviors will be available every time once you add them.
+When the `Update Submodules` script completes, the `~/scripts/logfile.txt` file is automatically displayed. Read the logfile to determine if the update was clean and you are ready to build. Be sure to close the logfile.txt when you are done with it.
 
-You will create two shell scripts, one will open a Terminal at the same location as an open workspace, the other will both open a Terminal and Update the submodules for your Trio workspace. 
-
-Open a new terminal:
-
-Step 1: Create a folder to store your shell scripts by copying and pasting the next line (only do this one time or you will get an error message):
-
-```
-mkdir ~/scripts
-```
-
-Step 2: Open a text-only editor with a blank file, copy and paste the following lines and save it as `~/scripts/open_terminal.sh`
-
-```
-#!/bin/bash
-open -a Terminal "`pwd`"
-```
-
-Step 3: Open a text-only editor with a blank file, copy and paste the following lines and save it as `~/scripts/open_terminal_update_submodules.sh`
-
-```
-#!/bin/bash
-open -a Terminal "`pwd`"
-git pull --recurse
-```
-
-Step 4: Make the shell scripts executable: 
-Copy and paste the following line into any terminal window
-
-```
-chmod +x ~/scripts/*.sh
-```
-
-Step 5: Open Xcode
-* Under Xcode, select Behaviors, Edit Behaviors
-* At the bottom of the window, click the `+` sign
-    * Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
-    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/open_terminal.sh`
-* Repeat those two steps with `Update Submodules` and `~/scripts/open_terminal_update_submodules.sh`
+If you did not get a clean update, you can then select the Behavior to `Open Terminal` and fix the problem using the instructions found in [Update Trio with CLI](#update-trio-with-cli). Do not select `Open Terminal` more than once, unless you really do want two separate terminals open in the Trio folder.
 
 ### Update Trio with CLI
 
-This section is only for those who prefer to use the command line interface for `git`.
+This section is for those who prefer to use the command line interface for `git`.
 
 If you added the [Xcode Behaviors](#xcode-behaviors), you can use the Xcode, Behaviors, Open Terminal to start a terminal at the correct location. If not, use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
@@ -352,3 +317,116 @@ Verify that the Trio code was successfully updated by examining the `APP_VERSION
 If using the GitHub method, you can view this same file in your fork of the Trio repository.
 
 TODO: - add a figure here later
+
+## Xcode Behaviors
+
+You can add Xcode Behaviors to your version of Xcode. These custom Behaviors only need to be added once time.
+
+You will create two shell scripts and then add them to Xcode using the `Edit Behaviors` step below.
+
+* `Update Submodules` will get the current versions of all submodules listed in Trio and report the results in a logfile
+* `Open Terminal` will open a terminal if you need after reviewing the logfile
+
+### Prepare the Shell Scripts
+
+Open a new terminal:
+
+Step 1: Create a folder to store your shell scripts by copying and pasting the next line (only do this one time or you will get an error message):
+
+```
+mkdir ~/scripts
+```
+
+Step 2: Copy and paste this command into your terminal to prepare the `Update Submodules` shell script:
+
+```
+open -a TextEdit ~/scripts/update_submodules.sh
+```
+
+Copy and paste the following lines - all of them - into the editor and then save and close the file.
+
+
+```
+#!/bin/bash
+# open -a Terminal "`pwd`"
+mv ~/scripts/logfile.txt ~/scripts/old_logfile.txt
+rm -f ~/scripts/logfile.txt
+
+# send output to a log file for later review
+exec &> ~/scripts/logfile.txt
+
+echo ""
+echo " - - - "
+echo ""
+echo "When 'logfile.txt' opens - examine it for errors"
+echo "  If there are no problems, you can close 'logfile.txt' and build"
+echo "  If you need to make a change, use Open Terminal"
+echo "  Do NOT run Update Submodules again without closing 'logfile.txt'"
+echo ""
+echo " - - - "
+echo ""
+
+# Capture the current working directory
+current_dir=$(pwd)
+
+echo "The current folder is ${current_dir}"
+echo ""
+echo " - - - "
+echo ""
+
+echo "About to issue the command: 'git submodule update'"
+echo "  If there is no response, submodules are already up to date"
+echo "  If submodules were updated, each is listed"
+echo ""
+git submodule update
+echo ""
+echo " - - - "
+echo ""
+
+echo "About to issue the command 'git status -v'"
+echo "  If response indicates up to date with desired branch, you are done"
+echo ""
+git status -v
+echo ""
+echo " - - - "
+echo ""
+
+echo "  Do NOT run Update Submodules again without closing 'logfile.txt'"
+echo ""
+echo " - - - "
+
+# Open the logfile (but logfile is not updated if open at the beginning
+# Need to figure out how to close the window
+open ~/scripts/logfile.txt
+```
+
+Step 3: Copy and paste this command into your terminal to prepare the `Open Terminal` shell script:
+
+```
+open -a TextEdit ~/scripts/open_terminal.sh
+```
+
+Copy and paste the following lines into the editor and then save and close the file.
+
+```
+#!/bin/bash
+open -a Terminal "`pwd`"
+```
+```
+
+Step 4: Make the shell scripts executable; Copy and paste this command into your terminal:
+
+```
+chmod +x ~/scripts/*.sh
+```
+
+### Add Behaviors to Xcode
+
+Open Xcode
+* Under Xcode menu item, select Behaviors, Edit Behaviors
+* At the bottom of the window, click the `+` sign
+    * Under the Custom section, you should see the New Behavior row, enter `Update Submodules`
+    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/update_submodules.sh`
+* Repeat those two steps with `Open Terminal` and `~/scripts/open_terminal.sh`
+
+Those behaviors are now ready for you to use. Return to the [Update Trio with Source Control](#update-trio-with-source-control) section. Be sure to do the `Fetch` and `Pull` steps before trying out your new Behaviors.
