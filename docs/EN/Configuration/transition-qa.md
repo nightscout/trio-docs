@@ -1,6 +1,5 @@
 # Transition from other closed-loop solutions
 
-## Introduction
 If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
 
 In this section of the documentation, we'll explain the differences from a user perspective.
@@ -107,7 +106,7 @@ Illness, menstrual cycle, inactive days, active days, home office days, stressfu
 You must read extensively and adapt to a new approach to diabetes management.
 :::
 
-### What's All That Talk About Changing the Way I Think?
+**What's All That Talk About Changing the Way I Think?**
 
 Loop is carb-centric. Many Loop users have been instructed to enter carbs, including future carbs (fat, protein), to ensure Loop gives the right amount of insulin. Some users also enter "fake carbs" to force Loop to give more insulin.
 
@@ -145,14 +144,14 @@ Here's the recommendation:
 
 Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay if you're not getting the desired results; read through the chapter on "Coming from iOS Loop" to see the main issues that Trio solves.
 
-## I Want to Try Trio. How Do I Proceed?
+**I Want to Try Trio. How Do I Proceed?**
 
 - Read the documentation. 
 - Build the app. 
 - Go through all the settings and tap the setting name to get an explanation of what each setting does.
 If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or Facebook. But please read the docs first :)
 
-### Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):
+**Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):**
 - [Open Mic: Trio with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)
 - [Trio with Magnus Reintz & Theresa Hastings: Starting Trio, 8.17.2023](https://youtu.be/9I1nuHbcUHo?si=wlRurW3Qh_60ss2d)
 - [Trio Q&A with Magnus Reintz, Tom Barrows, Jonas Hummelstrand & Theresa Hastings, 30 August 2023](https://youtu.be/Li3AKjSrdPw?si=WwLctkAGjVsbDLNs)

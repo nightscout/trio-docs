@@ -51,95 +51,111 @@ You can also provide support in online support groups by helping users adjust th
 :caption: Overview
 :maxdepth: 2
 
-./Getting-Started/Overview.md
-./Getting-Started/iphone.md
-./Getting-Started/pump.md
-./settings/devices/cgm.md
+Introduction <./Getting-Started/Overview.md>
+
+App Overview <./operate/interface.md>
+
+New User Guide <./Setup/New-User-Setup.md>
+
+Coming from Other AID Systems <./Configuration/transition-qa.md>
+
+Common Issues <./operate/troubleshoot.md>
 
 ```
-<!---
 
-(index-Analyze)=
+(index-Compatibility)=
 
 ```{toctree}
-:caption: Analyze
+:caption: Device Compatibility
 
-./Analyze/EvaluateBasal.md
-./Analyze/EvaluateCR.md
+iPhones & Watches <./Getting-Started/iphone.md>
+
+Pumps <./Getting-Started/pump.md>
+
+CGMs <./settings/devices/cgm.md>
 
 ```
---->
-(index-Configuration)=
+
+(index-Build)=
 
 ```{toctree}
-:caption: Device Configuration
+:caption: Build/Update Trio
 
-./Configuration/Configure.md
-./Configuration/Devices.md
-./Configuration/transition-qa.md
+Build Instructions <./operate/build.md>
+
+Customizations <./operate/customize.md>
 
 ```
+
 (index-Settings-Basics)=
 
 ```{toctree}
-:caption: Basic Settings
+:caption: User Settings (all users)
 
-./settings/configuration/autotune.md
-./settings/configuration/basalprofile.md
-./settings/configuration/carbratios.md
-./settings/configuration/insulinsensitivites.md
-./settings/configuration/pumpsettings.md
-./settings/configuration/targetglucose.md
-./settings/devices/cgm.md
-./settings/devices/pump.md
-./settings/services/applehealth.md
-./settings/services/fatprotein.md
-./settings/services/nightscout.md
-./settings/services/notifications.md
+Trio Main Preferences <./settings/configuration/preferences/trio.md>
+
+Pump, CGM, Watch <./Configuration/Devices.md>
+
+Additional Pump Settings <./settings/configuration/pumpsettings.md>
+
+Basal <./settings/configuration/basalprofile.md>
+
+ISF <./settings/configuration/insulinsensitivities.md>
+
+CR <./settings/configuration/carbratios.md>
+
+Target Glucose <./settings/configuration/targetglucose.md>
+
+Main Settings <./settings/configuration/preferences/mainsettings.md>
+
+SMB & UAM <./settings/configuration/concepts/smb-uam.md>
+
+Close the Loop <./Configuration/Configure.md>
+
+```
+
+(index-Other-Settings)=
+
+```{toctree}
+:caption: Optional Settings (all users)
+
+Apple Health <./settings/services/applehealth.md>
+
+FPU <./settings/services/fatprotein.md>
+
+Nightscout <./settings/services/nightscout.md>
+
+Notifications <./settings/services/notifications.md>
+
+SMB Settings <./settings/configuration/preferences/smbsettings.md>
+
+Temp Targets <./operate/temptarget.md>
 
 ```
 
 (index-Settings-Advanced)=
 
 ```{toctree}
-:caption: Advanced Settings
+:caption: Advanced Settings (advanced users)
 
-./settings/configuration/concepts/autosens-dynamic.md
-./settings/configuration/concepts/sigmoid.md
-./settings/configuration/concepts/asmb-uam.md
-./settings/configuration/preferences/dynamicsettings.md
-./settings/configuration/preferences/trio.md
-./settings/configuration/preferences/mainsettings.md
-./settings/configuration/preferences/othersettings.md
-./settings/configuration/preferences/smbsettings.md
-./settings/configuration/preferences/targetsettings.md
+Autotune <./settings/configuration/autotune.md>
 
-```
+Dynamic Settings <./settings/configuration/concepts/autosens-dynamic.md>
 
-(index-Operate)=
+Sigmoid <./settings/configuration/concepts/sigmoid.md>
 
-```{toctree}
-:caption: Using Trio
+Dynamic Settings Explained <./settings/configuration/preferences/dynamicsettings.md>
 
-Build <./operate/build.md>
+Other Settings <./settings/configuration/preferences/othersettings.md>
 
-Customizations <./operate/customize.md>
-
-Interface <./operate/interface.md>
-
-Temp Target <./operate/temptarget.md>
-
-Troubleshoot <./operate/troubleshoot.md>
+Sensitivity Settings <./settings/configuration/preferences/targetsettings.md>
 
 ```
-
 
 (index-resources)=
 
 ```{toctree}
 :caption: Resources
-
-Other AIDs <./resources/alternative.md>
 
 Citations <./resources/citations.md>
 

@@ -87,11 +87,11 @@ The minimum interval between SMB boluses. SMBs will be delivered at this rate or
 ## Bolus Increment
 The minimum amount of insulin that can be bolused by Trio via an SMB. This is determined by your pump hardware.
 
-# Are SMBs Allowed?
+## Are SMBs Allowed?
 
 ![SMB-flow-chart](https://github.com/nightscout/trio-docs/assets/31315442/8d2d6f2c-c7bf-48ad-88df-dabcccb58fbf)
 
-## By following the flow chart above, you can see which combination of settings will allow SMBs.
+### By following the flow chart above, you can see which combination of settings will allow SMBs.
 
 - If a setting in the top row is toggled off, look at the next box to the right. If no box in the top row is toggled on, then SMBs will not be allowed. 
 - If any of the settings in the top row are toggled on and their condition is true, follow the green line down to the "Allow SMB with High Temptarget" box. 
