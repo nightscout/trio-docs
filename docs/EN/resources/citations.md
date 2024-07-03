@@ -12,33 +12,26 @@ Trio is a fork of Loop. While their underlying algorithms are different, they sh
 ## Community Support (Free Support)
 There are many opportunities to find help with using Trio.
 
-[**Discord**](https://discord.gg/FnwFEFUwXE)
-
-In Discord, you can...
-- search in the relevant channel to see if your issue has been answered
-- post a question in a relevant channel
-- expect answers from both Trio developers and fellow DIY community members
-
-[**Facebook**](https://www.facebook.com/groups/diytrio)
-
-In Facebook, you can...
-- use the search function in Facebook to locate posts where your issue may have already been addressed
-- post a question to the Facebook group
-- expect answers from fellow DIY community members
+- [**Discord**](https://discord.gg/FnwFEFUwXE)
+  - In Discord, you can...
+    - search in the relevant channel to see if your issue has been answered
+    - post a question in a relevant channel
+    - expect answers from both Trio developers and fellow DIY community members
+- [**Facebook**](https://www.facebook.com/groups/diytrio)
+  - In Facebook, you can...
+    - use the search function in Facebook to locate posts where your issue may have already been addressed
+    - post a question to the Facebook group
+    - expect answers from fellow DIY community members
 
 ## Healthcare Providers (Paid Support)
 Many Healthcare Providers offer support in using DIY services. The following providers are not free and come with costs based on your needs and your insurance coverage.
 
-[**Loop and Learn Provider List**](https://www.loopnlearn.org/hcp-recommendations/)
-
-Loop and Learn has created a list of DIY-Supportive Healthcare providers. If you have a supportive provider that is not on this list, please submit their information [here](https://www.loopnlearn.org/hcp-recommendations/#recommend-an-hcp).
-
-[**Integrated Diabetes Services**](https://integrateddiabetes.com/diy-services-support/)
-
-If you would prefer assistance with building and setting up your system from a team of diabetes educators, Gary Scheiner and his team are available.
-
-**BC Diabetes** (Canadian Residents Only)
-If you are a BC Diabetes Looper, please request a link to their Slack group from your case manager.
+- [**Loop and Learn Provider List**](https://www.loopnlearn.org/hcp-recommendations/)
+  - Loop and Learn has created a list of DIY-Supportive Healthcare providers. If you have a supportive provider that is not on this list, please submit their information [here](https://www.loopnlearn.org/hcp-recommendations/#recommend-an-hcp).
+- [**Integrated Diabetes Services**](https://integrateddiabetes.com/diy-services-support/)
+  - If you would prefer assistance with building and setting up your system from a team of diabetes educators, Gary Scheiner and his team are available.
+- **BC Diabetes** (Canadian Residents Only)
+  - If you are a BC Diabetes Looper, please request a link to their Slack group from your case manager.
 
 ## Citations
 - <a href="https://loopkit.github.io/loopdocs/">Loop Documentation</a>
