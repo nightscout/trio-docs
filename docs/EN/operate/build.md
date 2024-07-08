@@ -206,7 +206,7 @@ This section tells you how to update the version you already have on your comput
 
 Open Xcode. If your Trio workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-![xcode welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
+![xcode welcome screen](img/update-xcode-source-control-welcome.png)
 
 ### Open Terminal
 
@@ -310,13 +310,13 @@ Open Xcode
 
 The `Open Terminal` is now ready for you to use, as shown in this graphic.
 
-![xcode behaviors - open terminal](img/xcode-behaviors.png){width="400px"}
+![xcode behaviors - open terminal](img/xcode-behaviors.png)
 
 Return to [Open Terminal](#open-terminal).
 
 ## Where is my Download
 
-IF you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right click on the Trio folder and select `New Terminal at Folder`.
+If you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right click on the Trio folder and select `New Terminal at Folder`.
 
 If you do not have Xcode open, you can use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
