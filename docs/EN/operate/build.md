@@ -1,8 +1,8 @@
 # Build and Update
 
 **Jump to...**\
-Build with [GitHub](#build-trio-with-github) | [Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
-Update with [GitHub](#update-trio-with-github) | [Xcode](#update-trio-with-xcode) | [Source Control](#update-trio-with-source-control) | [CLI](#update-trio-with-cli)
+Build with [GitHub](#build-trio-with-github) | [Mac-Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
+Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode) 
 
 ## Build Trio with GitHub
 
@@ -198,136 +198,80 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ## Update Trio with Xcode
 
-You can use the Xcode Source Control features to update your code.
+Because Trio uses submodules, there are actions you need to perform when updating that are easiest using command line interface (CLI) in a terminal opened in the same folder as the Trio workspace.
 
-If you prefer the command line interface, skip ahead to [Update Trio with CLI](#update-trio-with-cli).
+If you prefer, you can use the [Build Script](#build-trio-with-script) to download and build a fresh copy.
 
-### Update Trio with Source Control
-
-::: Released code is found in the `main` branch. Some of these figures used the `dev` branch, most will be using the `main` branch.
-:::
+This section tells you how to update the version you already have on your computer.
 
 Open Xcode. If your Trio workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
 ![xcode welcome screen](img/update-xcode-source-control-welcome.png){width="600px"}
 
-* There are 2 methods to open `Source Control`
-    1. Hold down the command key and hit 2 (cmd-2)
-    2. Use the menus to select `View`, `Navigators`, `Source Control`
-* This modifies the Xcode display with two tabs:
-    * There is a `Changes` tab and a `Repositories` tab
-    * It might say `No changes` on the `Changes` tab, but you should always fetch changes to see if new updates are available from GitHub
-* Tap on the `Integrate` menu and select `Fetch changes`
-* After you tap on `Fetch changes`, you'll see an indication Xcode is fetching changes
+### Open Terminal
 
-![update using xcode source control - start with fetch](img/update-xcode-source-control-fetch.png){width="600px"}
+Once you have Xcode open with your previous build of Trio, the first thing to do is open a terminal:
 
-Once the fetch process completes, use the `Integrate` menu item again
-* Select `Pull…` as show in the two graphics below
-* This only updates Trio workspace, it does not pull in the changes from the submodules
+1. Use Xcode, Behaviors, Open Terminal if you configured [Xcode Behaviors](#xcode-behaviors)
+2. Locate the Trio folder using [Where is my Download](#where-is-my-download)
 
-![update using xcode source control - continue with pull](img/update-xcode-source-control-pull.png){width="600px"}
+In the terminal, you will copy and paste each of the lines below. The `stash` lines are optional - use them if you have customizations you want to keep.
 
-Refer to the graphic below:
-1. Select the Trio branch to pull from
-    * The correct branch should already be selected for you
-    * If you built from `main`, select `main`
-    * (This graphic was acquired using `dev`.)
-2. Ignore the submodules, they do not need to be selected
-3. Click `Pull`
-
-![update using xcode source control - choose trio branch and submodules](img/update-xcode-pull-selection.png){width="350px"}
-
-After you click on pull, if you made any local changes to the code, the `Stash Changes` pop-up will appear:
-
-- The pop-up asks you to stash your changes - you can choose to discard them or reapply them after the pull
-- To reapply them after the pull:
-    - You can name the stashed changes as something meaningful to you
-    - Select “Apply Stash After Operation”
-- Click “Stash and Pull”
-
-If it has been a long time since you updated, or if certain files were modified, Xcode pops up a window asking if you want to the use current version in Xcode or the version on disk - choose the version on disk. Then Xcode might close, but it will then provide an option to Reopen. After the Xcode reopens, then you can continue.
-
-The Trio workspace code is now updated, but not the submodules.
-
-#### Update Trio Submodules
-
-The submodules can be updated using the procedures in [Update Trio with CLI](#update-trio-with-cli). Alternatively, you can create [Xcode Behaviors](#xcode-behaviors) that will do it for you.
-
-If you configured [Xcode Behaviors](#xcode-behaviors), you use then from the Xcode menu, Behaviors as shown in the graphic below.
-
-![select a custom xcode behavior](img/xcode-behaviors.png){width="600px"}
-
-If you have already done the `Fetch` and `Pull` steps, you next choose `Update Submodules`. If it has been a while since you updated, expect this to take a long time - only select it once and wait for the logfile.txt window to appear.
-
-When the `Update Submodules` script completes, the `~/scripts/logfile.txt` file is automatically displayed. Read the logfile to determine if the update was clean and you are ready to build. Be sure to close the logfile.txt when you are done with it.
-
-If you did not get a clean update, you can then select the Behavior to `Open Terminal` and fix the problem using the instructions found in [Update Trio with CLI](#update-trio-with-cli). Do not select `Open Terminal` more than once, unless you really do want two separate terminals open in the Trio folder.
-
-### Update Trio with CLI
-
-This section is for those who prefer to use the command line interface for `git`.
-
-If you added the [Xcode Behaviors](#xcode-behaviors), you can use the Xcode, Behaviors, Open Terminal to start a terminal at the correct location. If not, use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
-
-* Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
-    * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
-* Development (dev) branch: Downloads/BuildTrio/Trio_dev-[date-time]/Trio
-    * Example: ~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio
-
-Use finder to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
-
-Copy each line below and paste it into the terminal window one at a line and hit enter for each line:
+Optional - use this if you have modifications you want to keep.
 
 ```
 git stash
 ```
+
+Required - this updates your workspace and all your submodules.
 
 ```
 git fetch
 git pull --recurse
 ```
 
+Optional - if you saved modifications, this will restore them.
+
 ```
 git stash pop
 ```
 
-If the final `git stash pop` had errors, you must repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
+If you made customizations in any of the submodules, the `recurse` command might fail. Follow the directions in [Fix Submodule Errors](#fix-submodule-errors).
 
-If you made customizations in any of the submodules, the `recurse` command might fail. You need to read which submodule failed, Change directory to that module, stash your changes and try again. For example, if the OmniBLE module could not be updated, you would take actions similar to the example below:
+If there were no errors, you are ready to build.
 
-```
-cd OmniBLE
-git stash
-cd ..
-git pull --recurse
-cd OmniBLE
-git stash pop
-cd ..
-```
+### Fix Submodule Errors
 
-The Trio code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
+If a submodule gave an error in response to the `git pull --recurse` command:
 
-The targets should be signed, and you will be ready to build the Trio app on your phone.
+* Read which submodule failed to `checkout`
+* Change directory to that module: `cd modulename`
+* Stash your changes: `git stash`
+* Return to the Trio folder and try again: `cd ..; git submodule update`
 
-## Verify Trio Version
+If another submodule fails to checkout, repeat the steps for that `modulename`.
 
-Verify that the Trio code was successfully updated by examining the `APP_VERSION` value in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Trio GitHub Releases page.
+If the modification is one you want to keep, you must restore it:
+ 
+* Change directory to that module: `cd modulename`
+* Restore your changes: `git stash pop`
+* Return to the Trio folder: `cd ..`
 
-If using the GitHub method, you can view this same file in your fork of the Trio repository.
+The Trio code is now updated.
 
-TODO: - add a figure here later
+If Xcode is not open, you can open it by typing `xed .` in the Trio folder of your terminal window.
+
+You can now build the updated Trio app on your phone.
 
 ## Xcode Behaviors
 
-You can add Xcode Behaviors to your version of Xcode. These custom Behaviors only need to be added once.
+You can add Behaviors to your version of Xcode. These custom Behaviors only need to be added once.
 
-You will create two shell scripts and then add them to Xcode using the `Edit Behaviors` step below.
+You will create a shell script and add it to Xcode.
 
-* `Update Submodules` will get the current versions of all submodules listed in Trio and report the results in a logfile
-* `Open Terminal` will open a terminal if you need after reviewing the logfile
+* `Open Terminal` will open a terminal in the workspace or project folder currently in use by Xcode
 
-### Prepare the Shell Scripts
+### Prepare the Shell Script
 
 Open a new terminal:
 
@@ -337,70 +281,7 @@ Step 1: Create a folder to store your shell scripts by copying and pasting the n
 mkdir ~/scripts
 ```
 
-Step 2: Copy and paste this command into your terminal to prepare the `Update Submodules` shell script:
-
-```
-open -a TextEdit ~/scripts/update_submodules.sh
-```
-
-Copy and paste the following lines - all of them - into the editor and then save and close the file.
-
-
-```
-#!/bin/bash
-# open -a Terminal "`pwd`"
-mv ~/scripts/logfile.txt ~/scripts/old_logfile.txt
-rm -f ~/scripts/logfile.txt
-
-# send output to a log file for later review
-exec &> ~/scripts/logfile.txt
-
-echo ""
-echo " - - - "
-echo ""
-echo "When 'logfile.txt' opens - examine it for errors"
-echo "  If there are no problems, you can close 'logfile.txt' and build"
-echo "  If you need to make a change, use Open Terminal"
-echo "  Do NOT run Update Submodules again without closing 'logfile.txt'"
-echo ""
-echo " - - - "
-echo ""
-
-# Capture the current working directory
-current_dir=$(pwd)
-
-echo "The current folder is ${current_dir}"
-echo ""
-echo " - - - "
-echo ""
-
-echo "About to issue the command: 'git submodule update'"
-echo "  If there is no response, submodules are already up to date"
-echo "  If submodules were updated, each is listed"
-echo ""
-git submodule update
-echo ""
-echo " - - - "
-echo ""
-
-echo "About to issue the command 'git status -v'"
-echo "  If response indicates up to date with desired branch, you are done"
-echo ""
-git status -v
-echo ""
-echo " - - - "
-echo ""
-
-echo "  Do NOT run Update Submodules again without closing 'logfile.txt'"
-echo ""
-echo " - - - "
-
-# Open the logfile (but logfile is not updated if open at the beginning
-# Need to figure out how to close the window
-open ~/scripts/logfile.txt
-```
-
-Step 3: Copy and paste this command into your terminal to prepare the `Open Terminal` shell script:
+Step 2: Copy and paste this command into your terminal to prepare the `Open Terminal` shell script:
 
 ```
 open -a TextEdit ~/scripts/open_terminal.sh
@@ -412,9 +293,8 @@ Copy and paste the following lines into the editor and then save and close the f
 #!/bin/bash
 open -a Terminal "`pwd`"
 ```
-```
 
-Step 4: Make the shell scripts executable; Copy and paste this command into your terminal:
+Step 3: Make the shell script executable; Copy and paste this command into your terminal:
 
 ```
 chmod +x ~/scripts/*.sh
@@ -425,8 +305,29 @@ chmod +x ~/scripts/*.sh
 Open Xcode
 * Under Xcode menu item, select Behaviors, Edit Behaviors
 * At the bottom of the window, click the `+` sign
-    * Under the Custom section, you should see the New Behavior row, enter `Update Submodules`
-    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/update_submodules.sh`
-* Repeat those two steps with `Open Terminal` and `~/scripts/open_terminal.sh`
+    * Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
+    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/open_terminal.sh`
 
-Those behaviors are now ready for you to use. Return to the [Update Trio with Source Control](#update-trio-with-source-control) section. Be sure to do the `Fetch` and `Pull` steps before trying out your new Behaviors.
+The `Open Terminal` is now ready for you to use, as shown in this graphic.
+
+![xcode behaviors - open terminal](img/xcode-behaviors.png){width="400px"}
+
+Return to [Open Terminal](#open-terminal).
+
+## Where is my Download
+
+IF you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right click on the Trio folder and select `New Terminal at Folder`.
+
+If you do not have Xcode open, you can use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
+
+* Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
+    * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
+* Development (dev) branch: Downloads/BuildTrio/Trio_dev-[date-time]/Trio
+    * Example: ~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio
+
+Use finder to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
+
+To open Xcode, type `xed .` in the Terminal.
+
+Return to [Open Terminal](#open-terminal).
+
