@@ -22,7 +22,7 @@ The Trio repository contains instructions for building the Trio app using a brow
     * Trio
     * Trio Watch
     * Trio WatchKit Extension
-* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio
+* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 ### Create the `Loop App Group`
 
@@ -71,11 +71,11 @@ You can add additional tests notes for any build if you desire.
 
 First makes sure any Apple License agreements have been accepted:
 
-* [Apple Developer Page](https://developer.apple.com/account){: target="_blank" }
+* [Apple Developer Page](https://developer.apple.com/account)
 
 Second, make sure you have a valid Distributor certificate; if not, see [Distribution Certificate](#distribution-certificate):
 
-* [Apple Certificate Page](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+* [Apple Certificate Page](https://developer.apple.com/account/resources/certificates/list)
 
 Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
@@ -88,7 +88,7 @@ Select Actions: 4. Build Trio and wait about an hour for your updated app to app
 
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
-The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate){: target="_blank" }.
+The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
 
 ## Build Trio with Xcode
 
