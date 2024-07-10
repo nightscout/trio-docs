@@ -58,7 +58,7 @@ To avoid a second low, you can instruct Trio not to give any SMBs for a while af
 
 **Scenario:** _Your BG rises fast when eating and ends up too high._
 
-If your BG rises fast and ends up too high, it is usually because the carbs were absorbed before the insulin peaked. If we rule out site issues, illness, etc, the logical approach is to ensure you get enough insulin ahead of the carbs. You can achieve this by increasing your pre-bolus timing for the meal. This gives the insulin time to absorb before the carbs kick in. You can find more information on mealtime strategy [here](../Configuration/transition-qa.md#what-s-all-that-talk-about-changing-the-way-i-think) page.
+If your BG rises fast and ends up too high, it is usually because the carbs were absorbed before the insulin peaked. If we rule out site issues, illness, etc, the logical approach is to ensure you get enough insulin ahead of the carbs. You can achieve this by increasing your pre-bolus timing for the meal. This gives the insulin time to absorb before the carbs kick in. You can find more information on the [mealtime strategy](../Configuration/transition-qa.md#mealtime-strategy) page.
 
 ### Persistent High After Meals
 
