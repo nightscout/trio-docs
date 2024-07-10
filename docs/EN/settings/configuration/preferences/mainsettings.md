@@ -34,13 +34,13 @@ The default is set to zero, meaning Trio can only set temporary basal rates lowe
 
 You can start by increasing this number to your average mealtime bolus and evaluating its effect. The default recommendation is “average meal bolus + 3x max daily basal” when using super micro boluses.
 
->**Example:** Bill has an average mealtime bolus of 6U, and the following basal profile:
->
->- 12:00 am: 1 U/hr
->- 6:00 pm: 2 U/hr (this is the "max" basal used)
->- 9:00 pm: 1.5 U/hr
->
->Using the formula “average meal bolus + 3x max daily basal,” his recommended **Max IOB** setting = 6 + 3 * 2 = 12 U. 
+>**Example:** _Bill has an average mealtime bolus of 6U, and the following basal profile:_
+
+  - 12:00 am: 1 U/hr
+  - 6:00 pm: 2 U/hr (this is the "max" basal used)
+  - 9:00 pm: 1.5 U/hr
+
+>_Using the formula “average meal bolus + 3x highest hourly basal,” his recommended **Max IOB** setting = 6 + 3 * 2 = 12 U._
 
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
 
@@ -54,26 +54,26 @@ If you tend to eat more than 120 g of carbs in one sitting, choose the maximum a
 ## Max Daily Safety Multiplier
 Limits the maximum temporary basal rate Trio is able to use at _any time_. The default setting of 3, which is unlikely to need adjustment, allows for a maximum basal rate of 3x the maximum daily basal.
 
->**Example:** Bill has the following basal profile:
->
->- 12:00 am: 1 U/hr
->- 6:00 pm: 2 U/hr (this is the "max" basal used)
->- 9:00 pm: 1.5 U/hr
->
->It is 7:00 am, so Trio has been scheduled to deliver 1 U/hr. But Bill is running high, so Trio wants to deliver more.
->
->The maximum temporary basal rate that can be set is 2 U/hr * 3 = 6 U/hr
+>**Example:** _Bill has the following basal profile:_
+
+  - 12:00 am: 1 U/hr
+  - 6:00 pm: 2 U/hr (this is the "max" basal used)
+  - 9:00 pm: 1.5 U/hr
+
+>_It is 7:00 am, so Trio has been scheduled to deliver 1 U/hr. But Bill is running high, so Trio wants to deliver more._
+
+>_The maximum temporary basal rate that can be set is 2 U/hr * 3 = 6 U/hr_
 
 ## Current Basal Safety Multiplier 
 Limits the maximum temporary basal rate Trio is able to use at the **current time. The default setting of 4, which is unlikely to need adjustment, allows for a maximum basal rate of 4x the current basal rate. 
 
->**Example:** It is currently 9:00 am, and Bill has the following basal profile:
->
->- 12:00 am: 1 U/hr
->- 6:00 pm: 2 U/hr (this is the "max" basal used)
->- 9:00 pm: 1.5 U/hr
->
->The maximum temporary basal rate that can be set by Trio at 9:00 am is 1 U/hr * 4 = 4 U/hr
+>**Example:** _It is currently 9:00 am, and Bill has the following basal profile:_
+
+  - 12:00 am: 1 U/hr
+  - 6:00 pm: 2 U/hr (this is the "max" basal used)
+  - 9:00 pm: 1.5 U/hr
+
+>_The maximum temporary basal rate that can be set by Trio at 9:00 am is 1 U/hr * 4 = 4 U/hr_
 
 ## Autosens Max
 Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
