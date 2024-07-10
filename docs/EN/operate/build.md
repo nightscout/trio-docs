@@ -50,7 +50,7 @@ You can add additional tests notes for any build if you desire.
 
 Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
-* Look to see if your fork is up to date
+* Check to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
 * Before building, you can [Verify Trio Version](#verify-trio-version)
 
