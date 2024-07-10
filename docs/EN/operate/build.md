@@ -17,8 +17,8 @@ The Trio repository contains instructions for building the Trio app using a brow
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
 * `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-    * These names are the same as those used by iAPS, they are distinguised by the Identifier itself, which include the new BundleID for your Trio app
-    * If you build with Xcode before, they will start with XC and use the Identifier string rather than the Name
+    * These names are distinguished by the Identifier itself and include the new BundleID for your Trio app
+    * If you built with Xcode before, they will start with XC and use the Identifier string rather than the Name
 * `Identifiers` will be:
     * `org.nightscout.TEAMID.trio`
     * `org.nightscout.TEAMID.trio.watchkitapp`
