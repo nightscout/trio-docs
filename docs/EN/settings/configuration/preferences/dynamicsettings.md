@@ -1,6 +1,6 @@
 # Dynamic Settings
 :::{attention}
-Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) before continuing.
+Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) before continuing.
 :::
 
 :::{tip}
