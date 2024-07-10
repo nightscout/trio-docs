@@ -67,7 +67,7 @@ _This formula considers your profile ISF (profile.sens in mg/dL), current blood 
 [Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
 
 ## Dynamic CR
-This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how ICR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF as described above:
+This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how CR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF as described above:
 
 ```{math}
 autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
