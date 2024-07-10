@@ -3,7 +3,9 @@
 CGM selection includes the following:
 * Nightscout
 * xDrip
-* Dexcom G5/G6/ONE/G7
+* Dexcom G5
+* Dexcom G6/ONE
+* Dexcom G7/ONE+
 * Glucose Simulator
 * Libre Transmitter
 * Glucose Direct
