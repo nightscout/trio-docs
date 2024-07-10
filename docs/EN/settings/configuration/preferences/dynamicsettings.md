@@ -27,7 +27,7 @@ This is a simplified example. See the section on Dynamic CR for more information
 :::{caution}
 ***Adjustment Factor (AF) is not a safety limiter***
  - Increasing AF means you are telling the system that ALL dynamically calculated ISF/CR values have not been aggressive enough, and you want the system to make them more aggressive.
- - Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them lower.
+ - Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them less so.
 :::
 
 ## Sigmoid Function
@@ -46,12 +46,18 @@ Before enabling this setting, please read the dedicated section on [sigmoid](../
 
 ## Weighted Average of TDD. Weight of past 24 hours:
 
-This ratio is used by "Adjust basal" for its calculations. It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled). You can increase the number to a max of 1 make adjustments more dynamic, and decrease it to a minimum of 0 make them less dynamic. The default of 0.65 means that the system will use 65% of the TDD over the last 24 hours for its calculations, and 35% of TDD over the last 2 weeks.
+This ratio is used by "Adjust basal" for its calculations. It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled). You can set this value to a decimal between 0 and 1. 
+
+>Set at **1.0** = uses 100% of the TDD from the past 24 hours
+>Set at **0.65** (default) = 65% of the TDD from the past 24 hours + 35% of the TDD from the past 2 weeks
+>Set at **0.0** = uses 100% of the TDD from the past 2 weeks
 
 **Example:** _Bill has a TDD of 55 U over the last 24 hours. He has had a TDD of 48 U over the last 14 days. His Weighted Average is set at 0.65:_
-- TDD Average = 55 * 0.65 + 48 * 0.35 = 52.55
+```{math}
+TDD Average = 55 * 0.65 + 48 * 0.35 = 52.55
+```
 
-As you increase the default 0.65 ratio to a higher number, the basal rates will be more so determined by your last 24-hour insulin usage, resulting in more variable changes.
+As you increase the default 0.65 ratio to a higher number, the adjusted basal rates will be more influenced by your last 24-hour insulin usage, resulting in more variable changes.
 
 ## Adjust Basal
 
