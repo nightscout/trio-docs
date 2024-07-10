@@ -46,7 +46,7 @@ Before enabling this setting, please read the dedicated section on [sigmoid](../
 
 ## Weighted Average of TDD. Weight of past 24 hours:
 
-This ratio is used by "Adjust basal" for its calculations. It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled). You can increase the number to a max of 1 make them more dynamic, and decrease them to a minimum of 0 make them less dynamic. The default of 0.65 means that the system will use 65% of the TDD over the last 24 hours for its calculations, and 35% of TDD over the last 2 weeks.
+This ratio is used by "Adjust basal" for its calculations. It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled). You can increase the number to a max of 1 make adjustments more dynamic, and decrease it to a minimum of 0 make them less dynamic. The default of 0.65 means that the system will use 65% of the TDD over the last 24 hours for its calculations, and 35% of TDD over the last 2 weeks.
 
 **Example:** _Bill has a TDD of 55 U over the last 24 hours. He has had a TDD of 48 U over the last 14 days. His Weighted Average is set at 0.65:_
 - TDD Average = 55 * 0.65 + 48 * 0.35 = 52.55
