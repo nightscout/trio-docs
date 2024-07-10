@@ -20,5 +20,8 @@ There are a few ways you can work to adjust your ISF. The easiest method is simp
 It can be difficult to make proper adjustments to ISF with SMB/UAM enabled. If you experience a rollercoaster pattern and find the system is giving too much insulin, look to _decrease_ your ISF. Likewise, if you are dealing with uncontrollable highs and a slow return of your blood sugar to the target range, look to _increase_ ISF.
 
 Finally, you can also rely on Autotune to adjust your ISF and determine whether it is too high or low based on the trend in its changes. Look to changing your profile value to the autotune value when Autotune stabilizes to ensure safety limiters aren't preventing any additional needed change.
->[!CAUTION]
->It is not advised to use Autotune and Dynamic Settings at the same time
+
+:::{caution}
+It is not advised to use Autotune and Dynamic Settings at the same time
+:::
+<br>
