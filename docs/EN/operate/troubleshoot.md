@@ -67,7 +67,7 @@ If your BG rises fast and ends up too high, it is usually because the carbs were
 Trio calculates the amount of insulin needed to bring you back into range. More insulin is needed when blood glucose remains high after a meal, but Trio needs corrected settings to make those adjustments. 
 
 - The first adjustment should be to reduce your CR. Reducing your carb ratio will result in **more** insulin for the carbs entered.
-- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#enable-dynamic-cr) setting. 
+- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../settings/configuration/preferences/dynamicsettings.md#enable-dynamic-cr) setting. 
 
 ### Fast Rise, Then Low
 
