@@ -14,7 +14,7 @@ Auto-sensitivity (Autosens) reviews your last 8 hours and 24 hours of data every
 
 >**Example:**
 >
->_Autosens finds Bill has been running more sensitive to insulin lately. In the last 24 hours, he has >been 2X more sensitive to insulin, whereas, in the last 8 hours, he has been 3X more sensitive to insulin._
+>_Autosens finds Bill has been running more sensitive to insulin lately. In the last 24 hours, he has been 2X more sensitive to insulin, whereas, in the last 8 hours, he has been 3X more sensitive to insulin._
 
 Autosens then takes the more conservative calculated sensitivity. In this example, the more conservative value is obtained from the 8-hour window because by assuming Bill is 3X more as opposed to 2X more sensitive to insulin, the system will be posed to give less insulin.
 
