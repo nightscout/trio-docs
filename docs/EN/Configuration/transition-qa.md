@@ -1,8 +1,8 @@
-# Transition From AAPS, Loop, iAPS, or Commercial Systems
-:::{important}
-* If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
-* In this section of the documentation, we'll explain the differences from a user perspective.
-:::
+# Transition from other closed-loop solutions
+
+If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio.
+
+In this section of the documentation, we'll explain the differences from a user perspective.
 
 ## Coming From AndroidAPS
 AndroidAPS and Trio are based on the same algorithm (Oref) and base system (Artificial Pancreas System, APS). While there are several differences between AndroidAPS and Trio, the main algorithm is the same, 
@@ -106,7 +106,7 @@ Illness, menstrual cycle, inactive days, active days, home office days, stressfu
 You must read extensively and adapt to a new approach to diabetes management.
 :::
 
-### What's All That Talk About Changing the Way I Think?
+**What's All That Talk About Changing the Way I Think?**
 
 Loop is carb-centric. Loop users have been instructed to enter carbs, including future carbs (fat, protein), to ensure Loop gives the right amount of insulin. Some users also enter "fake carbs" to force Loop to give more insulin.
 
@@ -190,11 +190,12 @@ Trio was forked from iAPS ver 2.3.3. If you used iAPS prior to February 2024, yo
 
 Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay; if you're not getting the desired results, read through the [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
 
-### I Want to Try Trio. How Do I Proceed?
+**I Want to Try Trio. How Do I Proceed?**
 
 - Read the documentation. 
 - Build the app. 
 - Go through all the settings and tap the setting name to get an explanation of what each setting does.
+
 
 If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio). But please read the docs first.
 

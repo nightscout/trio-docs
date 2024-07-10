@@ -1,4 +1,4 @@
-# Troubleshooting
+# Common Issues
 [Adapted from looptips](https://loopkit.github.io/looptips/how-to/think-like-loop/)
 
 ## Site Change and Site Failures

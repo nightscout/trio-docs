@@ -15,3 +15,7 @@ python:
 sphinx:
   builder: html
   fail_on_warning: false
+
+formats:
+  - pdf
+  - epub
