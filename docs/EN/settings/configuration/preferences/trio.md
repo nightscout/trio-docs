@@ -14,7 +14,7 @@ Allows for remote control of Trio using Nightscout.
 
 We want to highlight a very important risk before you get started.
 
-For safety, always assume a previous remote carb/bolus was delivered, whether it shows in Nightscout Trio.
+For safety, always assume a previous remote carb/bolus was delivered, whether it shows in Nightscout or not.
 
 >**For Example:**
 >
