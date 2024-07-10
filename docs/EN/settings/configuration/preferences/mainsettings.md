@@ -1,7 +1,7 @@
 # OpenAPS Main Settings
 :::{important}
 - **Insulin curve:** Choose the insulin used in your pump
-- **Max IOB:** Use the formula "average meal bolus + 3x max daily basal" to determine your Max IOB. Increase slowly if more insulin is warranted
+- **Max IOB:** Use the formula "average meal bolus + 3x highest hourly basal" to determine your Max IOB. Increase slowly if more insulin is warranted
 - **Autosens Max/Min:** Increase the autosens max and autosens min to allow the system to choose more or less aggressive autotune and autosens values regarding your scheduled value.
 :::
 
