@@ -41,7 +41,7 @@ Profile\ ISF\ ÷\ autosens.ratio\ =\ New\ ISF
 
 >**Example:**
 >
->_Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more >resistant to insulin lately and needs to increase his insulin. It calculates Bill has an >`autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF)_
+>_Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has an `autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF)_
 
 When Autosens adjusts the ISF, it uses the following calculation:
 ```{math}
@@ -87,7 +87,7 @@ new.autosens.ratio\ =\ (autosens.ratio\ -\ 1)\ /\ 2 + 1
     
 
 ## Adjust Basal
-Adjust basal replaces Autosens's formula for adjusting basal rates, with one dependent on total daily dose (TDD) of insulin. Turn on this setting to give basal adjustments more agility. Keep this setting off if your basal needs are not highly variable.
+Adjust Basal replaces Autosens's formula for adjusting basal rates, with a formula dependent on total daily dose (TDD) of insulin. Turn on this setting to give basal adjustments more agility. Keep this setting off if your basal needs are not highly variable.
 
 ### Advanced Information
 Normally, a new basal rate is set by autosens:
