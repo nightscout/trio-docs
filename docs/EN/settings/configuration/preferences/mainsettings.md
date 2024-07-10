@@ -76,7 +76,7 @@ Limits the maximum temporary basal rate Trio is able to use at the **current tim
 >_The maximum temporary basal rate that can be set by Trio at 9:00 am is 1 U/hr * 4 = 4 U/hr_
 
 ## Autosens Max
-Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
+Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
 
 This setting determines the maximum ratio autosens can use for its adjustments. Increasing this value allows autosens to increase insulin given through your basal profile, ISF, and target blood glucose.
 
@@ -87,7 +87,7 @@ This limits the ability of Dynamic ISF and Dynamic CR to make more aggressive ad
 This limits Autotune's ability to make more aggressive adjustments to your CR, basal profile, and ISF.
 
 ## Autosens Min
-Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
+Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
 
 This setting determines the minimum ratio autosens can use for its adjustments. Decreasing this value allows autosens to reduce insulin given through your basal profile, ISF, and target blood glucose.
 
