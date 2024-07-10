@@ -16,19 +16,13 @@ We want to highlight a very important risk before you get started.
 
 For safety, always assume a previous remote carb/bolus was delivered, whether it shows in Nightscout or not.
 
->**For Example:**
->
->_You send a 5-unit remote bolus.
->
->The bolus is delivered to the Looper.
->
->Nightscout has a temporary technical issue and doesn't show the bolus was received.
->
->You are watching Nightscout and don’t see a delivery, so you assume it failed.
->
->You send another remote 5-unit bolus.
->
->The second 5-unit bolus is delivered to the Looper (10 Units total)._
+**For Example:**
+  1. You send a 5-unit remote bolus.
+  2. The bolus is delivered to the Looper.
+  3. Nightscout has a temporary technical issue and doesn't show the bolus was received.
+  4. You are watching Nightscout and don’t see a delivery, so you assume it failed.
+  5. You send another remote 5-unit bolus.
+  6. The second 5-unit bolus is delivered to the Looper (10 Units total).
 
 You can see the danger of sending duplicate bolus/carbs, so be careful. If a remote bolus/carb entry doesn’t show in Nightscout/Caregiver, judge whether enough time has passed to try again.
 
