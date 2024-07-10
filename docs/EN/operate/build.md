@@ -37,7 +37,7 @@ If you do not have a `Loop App Group`:
 
 | NAME | XCode version | IDENTIFIER |
 |:--|:--|:--|
-| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.7PT47XGDN4.loopkit.LoopGroup |
+| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
 
 #### Table of Identifiers
 
