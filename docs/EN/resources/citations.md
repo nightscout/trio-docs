@@ -29,7 +29,7 @@ Many Healthcare Providers offer support in using DIY services. The following pro
 - [**Loop and Learn Provider List**](https://www.loopnlearn.org/hcp-recommendations/)
   - Loop and Learn has created a list of DIY-Supportive Healthcare providers. If you have a supportive provider that is not on this list, please submit their information [here](https://www.loopnlearn.org/hcp-recommendations/#recommend-an-hcp).
 - [**Integrated Diabetes Services**](https://integrateddiabetes.com/diy-services-support/)
-  - If you would prefer assistance with building and setting up your system from a team of diabetes educators, Gary Scheiner and his team are available.
+  - If you would prefer assistance with setting up your system from a team of diabetes educators, Gary Scheiner and his team are available.
 - **BC Diabetes** (Canadian Residents Only)
   - If you are a BC Diabetes Looper, please request a link to their Slack group from your case manager.
 
