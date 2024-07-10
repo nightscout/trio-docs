@@ -42,7 +42,7 @@ If you experience a roller coaster pattern of highs and lows after treatment, yo
  - Under certain circumstances, Trio might react to the fast BG rise by giving insulin, leading to another low
 :::
 
-To avoid a second low, you can instruct Trio not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](./temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
+To avoid a second low, you can instruct Trio not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](../temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
 
 :::{warning}
  - **Setting a temporary target is not the same as disconnecting the pump.** Trio will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment.
@@ -67,7 +67,7 @@ If your BG rises fast and ends up too high, it is usually because the carbs were
 Trio calculates the amount of insulin needed to bring you back into range. More insulin is needed when blood glucose remains high after a meal, but Trio needs corrected settings to make those adjustments. 
 
 - The first adjustment should be to reduce your CR. Reducing your carb ratio will result in **more** insulin for the carbs entered.
-- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../settings/configuration/preferences/dynamicsettings.md#enable-dynamic-cr) setting. 
+- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../settings/configuration/preferences/dynamicsettings.md#dynamic-cr) setting. 
 
 ### Fast Rise, Then Low
 
