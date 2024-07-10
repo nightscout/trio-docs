@@ -40,7 +40,14 @@ You can start by increasing this number to your average mealtime bolus and evalu
   - 6:00 pm: 2 U/hr (this is the "max" basal used)
   - 9:00 pm: 1.5 U/hr
 
->_Using the formula “average meal bolus + 3x highest hourly basal,” his recommended **Max IOB** setting = 6 + 3 * 2 = 12 U._
+>_Using the formula_
+>```{math}
+>average meal bolus + 3 * highest hourly basal
+>```
+> _his recommended **Max IOB** setting is_
+>```{math}
+>6 + 3 * 2 = 12 U
+>```
 
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
 
@@ -62,7 +69,10 @@ Limits the maximum temporary basal rate Trio is able to use at _any time_. The d
 
 >_It is 7:00 am, so Trio has been scheduled to deliver 1 U/hr. But Bill is running high, so Trio wants to deliver more._
 
->_The maximum temporary basal rate that can be set is 2 U/hr * 3 = 6 U/hr_
+>_The maximum temporary basal rate that can be set is_
+>```{math}
+>2 U/hr * 3 = 6 U/hr
+>```
 
 ## Current Basal Safety Multiplier 
 Limits the maximum temporary basal rate Trio is able to use at the **current time. The default setting of 4, which is unlikely to need adjustment, allows for a maximum basal rate of 4x the current basal rate. 
@@ -73,7 +83,10 @@ Limits the maximum temporary basal rate Trio is able to use at the **current tim
   - 6:00 pm: 2 U/hr (this is the "max" basal used)
   - 9:00 pm: 1.5 U/hr
 
->_The maximum temporary basal rate that can be set by Trio at 9:00 am is 1 U/hr * 4 = 4 U/hr_
+>_The maximum temporary basal rate that can be set by Trio at 9:00 am is_
+>```{math}
+>1 U/hr * 4 = 4 U/hr
+>```
 
 ## Autosens Max
 Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
