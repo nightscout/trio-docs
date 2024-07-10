@@ -8,9 +8,9 @@
 
 ## Nightscout Introduction
 
-[Nightscout](http://nightscout.info) (NS) is an open-source, DIY project that allows real-time access to CGM data via a personal website, smartwatch viewers, or apps and widgets available for smartphones. Setting up a Nightscout web app is recommended to visualize your OpenAPS or Trio closed loop. 
+[Nightscout](http://nightscout.info) (NS) is an open-source, DIY project that allows real-time access to CGM data via a personal website, smartwatch viewers, or apps and widgets available for smartphones. Setting up a Nightscout web app is recommended to visualize your Trio closed loop. 
 
-Nightscout allows a user to upload CGM data from various sources to an online database and cloud computing service. The information is then processed and displayed visually as a graph. Plugins also allow more information to be shown about OpenAPS. 
+Nightscout allows a user to upload CGM data from various sources to an online database and cloud computing service. The information is then processed and displayed visually as a graph. Plugins also allow more information to be shown about Trio. 
 
 Even if you don't choose to share your Nightscout site
 with another person, it will be helpful for you to visualize what the loop is doing and what it's been doing, plus generate helpful reports for understanding your data.
