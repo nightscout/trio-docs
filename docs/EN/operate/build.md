@@ -210,7 +210,7 @@ Open Xcode. If your Trio workspace is not already open, you can usually find it 
 
 ### Open Terminal
 
-Once you have Xcode open with your previous build of Trio, the first thing to do is open a terminal:
+Once you have Xcode open with your previous build of Trio, the first thing to do is open a terminal. Here are two methods - choose one:
 
 1. Use Xcode, Behaviors, Open Terminal if you configured [Xcode Behaviors](#xcode-behaviors)
 2. Locate the Trio folder using [Where is my Download](#where-is-my-download)
