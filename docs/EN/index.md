@@ -90,7 +90,6 @@ Customizations <./operate/customize.md>
 (index-Settings-Basics)=
 
 ```{toctree}
-
 :caption: User Settings (all users)
 
 Trio Main Preferences <./settings/configuration/preferences/trio.md>
