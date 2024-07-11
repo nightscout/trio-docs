@@ -215,34 +215,38 @@ Once you have Xcode open with your previous build of Trio, the first thing to do
 1. Use Xcode, Behaviors, Open Terminal if you configured [Xcode Behaviors](#xcode-behaviors)
 2. Locate the Trio folder using [Where is my Download](#where-is-my-download)
 
-In the terminal, you will copy and paste each of the lines below. The `stash` lines are optional - use them if you have customizations you want to keep.
+### Customizations
 
-Optional - use this if you have modifications you want to keep.
+Always attempt to [Update your Code](#update-your-code) first. Typically, your customizations can be left alone and `git` will merge the new code without requiring any additional action on your part.
 
-```
-git stash
-```
+* If you have a customization, you can often proceed with the update with no issues
+* If your customization conflicts with a file or submodule that is being updated, you get a clear error message and need to proceed to [Fix Customization Conflicts](#fix-customization-conflicts)
 
-Required - this updates your workspace and all your submodules.
+### Update your Code
+
+In the terminal, you will copy and paste this pair of commands to update your workspace and all your submodules.
 
 ```
 git fetch
 git pull --recurse
 ```
 
-Optional - if you saved modifications, this will restore them.
+If you see the word error or conflict on the output, head over to [Fix Customization Conflicts](#fix-customization-conflicts).
+
+Otherwise, you are ready to build.
+
+### Fix Customization Conflicts
+
+If you have customizations in the Trio code (in the workspace) that cause a conflict when you pull, you can save and restore those with the `stash` and `stash pop` lines as shown below:
 
 ```
+git stash
+git fetch
+git pull
 git stash pop
 ```
 
-If you made customizations in any of the submodules, the `recurse` command might fail. Follow the directions in [Fix Submodule Errors](#fix-submodule-errors).
-
-If there were no errors, you are ready to build.
-
-### Fix Submodule Errors
-
-If a submodule gave an error in response to the `git pull --recurse` command:
+If you have customizations in the submodules that conflict with the update, your message in response to the `git pull --recurse` command indicates the new version of the submodule cannot be checked out.
 
 * Read which submodule failed to `checkout`
 * Change directory to that module: `cd modulename`
