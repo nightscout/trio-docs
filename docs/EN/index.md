@@ -117,7 +117,6 @@ Close the Loop <./Configuration/Configure.md>
 (index-Other-Settings)=
 
 ```{toctree}
-
 :caption: Optional Settings (all users)
 
 Apple Health <./settings/services/applehealth.md>
