@@ -35,17 +35,17 @@ If you do not have a `Loop App Group`:
 
 * Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
 
-| NAME | XCode version | IDENTIFIER |
+| NAME | Xcode version | IDENTIFIER |
 |:--|:--|:--|
 | Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
 
-#### Table of Identifiers
+### Table of Identifiers
 
-* If you built previously using a Mac with Xcode, you may see the XCode version in your **NAME** column - it starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for Trio is shown in detail
+* If you built previously using a Mac with Xcode, you may see the Xcode version in your **NAME** column - it starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for Trio is shown in detail
 * If you built during early beta testing, you might not have `Trio` at the beginning of each **IDENTIFIER** and the full **NAME** may be slightly different
 * Optional: You can click on a given row, edit the Description to match the **NAME** from the table below and it might making building easier in future
 
-| NAME | XCode version | IDENTIFIER |
+| NAME | Xcode version | IDENTIFIER |
 |:--|:--|:--|
 | Trio | XC org nightscout TEAMID trio | org.nightscout.TEAMID.trio |
 | Trio LiveActivity | - | org.nightscout.TEAMID.trio.LiveActivity |
@@ -112,7 +112,7 @@ To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy a
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/TrioBuildSelectScript.sh)"
 ```
 
-#### Build Trio
+### Build Trio
 
 When you select **Build Trio**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
 
@@ -125,7 +125,7 @@ When you select **Build Trio**, you will be provided with a choice of branches w
 
 The download is placed in your `Downloads` folder in a directory called `BuildTrio`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-#### Build Related Apps
+### Build Related Apps
 
 When you select **Build Related Apps**, you will be provided with a choice of apps that users of Trio often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
 
@@ -136,7 +136,7 @@ The choices are:
 3. Build Glucose Direct
 4. Return to Menu
 
-#### Run Maintenance Utilities
+### Run Maintenance Utilities
 
 When you select **Run Maintenance Utilities**, you will be provided with a choice of utilties helpful for Mac builders.
 
@@ -151,7 +151,7 @@ The following options are offered:
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
 
-#### Build Errors
+### Build Errors
 
 If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Trio, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
 
@@ -173,14 +173,14 @@ The download is placed in your `Downloads` folder in a directory called `BuildxD
 
 These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
 
-#### xDrip4iOS
+### xDrip4iOS
 
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
-#### Glucose Direct
+### Glucose Direct
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -189,7 +189,7 @@ These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-scr
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#run-maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
