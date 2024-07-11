@@ -153,21 +153,24 @@ Transitioning from iAPS 2.3.3 to Trio is fairly straight-forward currently. The 
 #### Settings
 
 Your settings will need to be entered manually, but all can be entered one-by-one from your iAPS settings without adjustment. If you have Nightscout, you can import your Pump Settings, Basal Profile, ISF, CR, Target Glucose, and previous CGM readings from the Nightscout Menu.
-<details>
-  <summary><b>Import Settings With Nightscout</b></summary>
+
+<b>Import Settings With Nightscout</b>
  1. Connect Nightscout to your Trio app (If you've already connected your Nightscout site, skip to step 2)
-    * Open the 'Settings' Menu in the Trio app
-    * Tap 'Nightscout' to open the Nightscout Menu
-    * Tap 'Connect >'
+    * Open the Settings Menu ⚙️ in the Trio app
+    * Tap `Nightscout` to open the Nightscout Menu
+    * Tap `Connect >`
     * Enter your Nightscout URL and API Secret in the spaces provided
-    * Press 'Connect to Nightscout'
- 2. Import settings
-    * Open the 'Settings' Menu in the Trio app
-    * Tap 'Nightscout'
-    * Tap "Import settings'
- 3. Backfill Glucose
+    * Press `Connect to Nightscout`
+ 2. Verify the `Glucose Units` in the Trio app match the units used in Nightscout (If they do not match, the import will fail)
+    * Open the Settings Menu ⚙️ in the Trio app
+    * Tap `Preferences` to open the Preferences Menu
+    * Verify the `Glucose Units` are correct
+ 4. Import settings
+    * Open the Settings Menu ⚙️ in the Trio app
+    * Tap `Nightscout` to open the Nightscout Menu
+    * Tap `Import settings`
+ 5. Backfill Glucose
     * In the same Nightscout Menu, you can also backfill missing glucose readings from Nightscout
-</details>
 <br>
 
 :::{admonition} Dynamic Settings
