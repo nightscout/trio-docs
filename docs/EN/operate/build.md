@@ -288,7 +288,7 @@ mkdir ~/scripts
 Step 2: Copy and paste this command into your terminal to prepare the `Open Terminal` shell script:
 
 ```
-open -a TextEdit ~/scripts/open_terminal.sh
+touch ~/scripts/open_terminal.sh; open -e ~/scripts/open_terminal.sh
 ```
 
 Copy and paste the following lines into the editor and then save and close the file.
@@ -306,13 +306,22 @@ chmod +x ~/scripts/*.sh
 
 ### Add Behaviors to Xcode
 
-Open Xcode
-* Under Xcode menu item, select Behaviors, Edit Behaviors
-* At the bottom of the window, click the `+` sign
-    * Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
-    * On the right side at the bottom, click on Run, then `Choose Script` and select `~/scripts/open_terminal.sh`
+Under the Xcode menu item, select Behaviors, Edit Behaviors
 
-The `Open Terminal` is now ready for you to use, as shown in this graphic.
+Follow these steps (refer to graphic below):
+
+1. At the bottom of the window, click the `+` sign
+2. Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
+3. On the right side at the bottom, click on Run, then `Choose Script`
+
+![xcode behaviors - ready to select open terminal script](img/xcode-add-behavior.png)
+
+* Navigate to your username (mine is `marion`) and find the `scripts` directory
+* Highlight the file `open-terminal.sh` and then select `Save`
+
+![xcode behaviors - choose the open terminal script](img/choose-open-terminal-script.png)
+
+The Behavior `Open Terminal` is now ready for you to use, as shown in this graphic.
 
 ![xcode behaviors - open terminal](img/xcode-behaviors.png)
 
