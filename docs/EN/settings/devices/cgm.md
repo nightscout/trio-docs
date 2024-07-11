@@ -26,7 +26,9 @@ Trio can intercept glucose readings between the transmitter and the Dexcom app. 
 Trio can intercept its glucose readings as long as the Dexcom G7 app is installed on the same phone. When a new G7 sensor is paired to the Dexcom G7 app, Trio will automatically start reading it.
 
 ## Glucose Simulator
-This option should only be used when testing the app and not using it to manage a live person (or animal).
+The Glucose Simulator adds artificial CGM readings to the screen so you can see how your readings might look in the app. When using this CGM option, you cannot manually influence the readings shown to reflect a desired glucose response. Actions taken by the Trio algorithm also do not affect the cgm readings in the Glucose Simulator. They are for visual purposes only. For this reason, using the Glucose Simulator will not help you understand how the algorithm influences blood sugars.
+
+***The Glucose Simulator should never be used in conjunction with a live pump connected to a person (or animal).***
 
 ## Libre Transmitter
 This option pairs a compatible Libre CGM directly with Trio without using a separate app like xDrip4iOS or Glucose Direct.
