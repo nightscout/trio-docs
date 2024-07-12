@@ -1,8 +1,8 @@
 # Build and Update
 
 **Jump to...**\
-Build with [GitHub](#build-trio-with-github) | [Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
-Update with [GitHub](#update-trio-with-github) | [Xcode](#update-trio-with-xcode) | [Source Control](#update-trio-with-source-control) | [CLI](#update-trio-with-cli)
+Build with [GitHub](#build-trio-with-github) | [Mac-Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
+Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode) 
 
 ## Build Trio with GitHub
 
@@ -16,21 +16,42 @@ The Trio repository contains instructions for building the Trio app using a brow
 :::
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
-* `Identifier Names` will be: `FreeAPS`, `FreeAPSWatch`, `FreeAPSWatch WatchKit Extension`, `LiveActivityExtension`
-    * These names are the same as that used by iAPS, they are distinguised by the Identifier itself, which include the new BundleID for your Trio app
-    * If you build with Xcode before, they will start with XC and use the Identifier string rather than the Name
-* `Identifiers` will be:
-    * `org.nightscout.TEAMID.trio`
-    * `org.nightscout.TEAMID.trio.watchkitapp`
-    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
-    * `org.nightscout.TEAMID.trio.LiveActivity`
-* Only the first 3 of these identifiers need to have the `App Group` added
-* For the list below, make sure the box next to `App Group` is checked, and click `Configure` to select the same app group as Loop: `group.com.TEAMID.loopkit.LoopGroup`
-* You must add this `App Group` to each of the following identifiers:
-    * `org.nightscout.TEAMID.trio`
-    * `org.nightscout.TEAMID.trio.watchkitapp`
-    * `org.nightscout.TEAMID.trio.watchkitapp.watchkitextension`
+* Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
+* You use the `Loop App Group` for Trio, see [Create the `Loop App Group`](#create-the-loop-app-group)
+* Add the `Loop App Group` to these identifiers:
+    * Trio
+    * Trio Watch
+    * Trio WatchKit Extension
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
+
+### Create the `Loop App Group`
+
+If you already have a `Loop App Group`
+
+* You can skip this step - your existing App Groups are found at this link: [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+* If your `Loop App Group` was created from a Mac with Xcode, you may choose to edit the Description to make the **NAME** match
+
+If you do not have a `Loop App Group`:
+
+* Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
+
+| NAME | Xcode version | IDENTIFIER |
+|:--|:--|:--|
+| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
+
+### Table of Identifiers
+
+* If you built previously using a Mac with Xcode, you may see the Xcode version in your **NAME** column - it starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for Trio is shown in detail
+* If you built during early beta testing, you might not have `Trio` at the beginning of each **IDENTIFIER** and the full **NAME** may be slightly different
+* Optional: You can click on a given row, edit the Description to match the **NAME** from the table below and it might making building easier in future
+
+| NAME | Xcode version | IDENTIFIER |
+|:--|:--|:--|
+| Trio | XC org nightscout TEAMID trio | org.nightscout.TEAMID.trio |
+| Trio LiveActivity | - | org.nightscout.TEAMID.trio.LiveActivity |
+| Trio Watch | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp |
+| Trio WatchKit Extension | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp.watchkitextension |
+
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
@@ -48,17 +69,22 @@ You can add additional tests notes for any build if you desire.
 
 ## Update Trio with GitHub
 
+First makes sure any Apple License agreements have been accepted:
+
+* [Apple Developer Page](https://developer.apple.com/account)
+
+Second, make sure you have a valid Distributor certificate; if not, see [Distribution Certificate](#distribution-certificate):
+
+* [Apple Certificate Page](https://developer.apple.com/account/resources/certificates/list)
+
 Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
-* Before building, you can [Verify Trio Version](#verify-trio-version)
 
-If you selected a GitHub Personal Access Token (GH_PAT) that never expires, select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
+Select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
 
-If your token has expired, create a new one (and set it to "never expire") and update the GH_PAT in your Trio secrets. Then, you can build your updated code.
-
-## Distribution Certificates
+## Distribution Certificate
 
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
@@ -66,7 +92,7 @@ The directions to renew your Distribution Certificate are found in [LoopDocs: Re
 
 ## Build Trio with Xcode
 
-The recommendation is to use the [**TrioBuildSelectScript**](#build-trio-with-script) to build your code.
+If you build Trio on your Mac using Xcode, the recommendation is to use the [**TrioBuildSelectScript**](#build-trio-with-script) to build your code.
 
 ### Build Trio with Script
 
@@ -86,7 +112,7 @@ To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy a
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/TrioBuildSelectScript.sh)"
 ```
 
-#### Build Trio
+### Build Trio
 
 When you select **Build Trio**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
 
@@ -99,7 +125,7 @@ When you select **Build Trio**, you will be provided with a choice of branches w
 
 The download is placed in your `Downloads` folder in a directory called `BuildTrio`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
-#### Build Related Apps
+### Build Related Apps
 
 When you select **Build Related Apps**, you will be provided with a choice of apps that users of Trio often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
 
@@ -110,7 +136,7 @@ The choices are:
 3. Build Glucose Direct
 4. Return to Menu
 
-#### Run Maintenance Utilities
+### Run Maintenance Utilities
 
 When you select **Run Maintenance Utilities**, you will be provided with a choice of utilties helpful for Mac builders.
 
@@ -125,7 +151,7 @@ The following options are offered:
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
 
-#### Build Errors
+### Build Errors
 
 If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Trio, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
 
@@ -147,14 +173,14 @@ The download is placed in your `Downloads` folder in a directory called `BuildxD
 
 These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
 
-#### xDrip4iOS
+### xDrip4iOS
 
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
-#### Glucose Direct
+### Glucose Direct
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -163,7 +189,7 @@ These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-scr
 
 ### Alternative Branch
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#run-maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -172,57 +198,140 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ## Update Trio with Xcode
 
-The recommendation is to use the Xcode Source Control features to update your code.
+Because Trio uses submodules, there are actions you need to perform when updating that are easiest using command line interface (CLI) in a terminal opened in the same folder as the Trio workspace.
 
-If you prefer the command line interface, skip ahead to [Update Trio with CLI](#update-trio-with-cli).
+If you prefer, you can use the [Build Script](#build-trio-with-script) to download and build a fresh copy.
 
-### Update Trio with Source Control
+This section tells you how to update the version you already have on your computer.
 
-::: Released code is found in the `main` branch. These figures show the older name of `master` rather than `main`.  They also show an older version of Xcode. The menus have changed, so follow the words below, not the graphics.
-:::
+Open Xcode. If your Trio workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
 
-Open Xcode. If your Trio (FreeAPS) workspace is not already open, you can usually find it in the recent projects, as shown in the graphic below. You can also pull down the Xcode menu for `File`, select `Open Recent`, and find your workspace.
+![xcode welcome screen](img/update-xcode-source-control-welcome.png)
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/024fc3f9-6bca-475f-b270-17d43da4a4d8" width="600px"/>
+### Open Terminal
 
-The graphic below needs to be updated:
-1. There are 2 methods to open `Source Control`
-    * Hold down the command key and hit 2 (cmd-2)
-    * Use the menus to select `View`, `Navigate`, `Source Control`
-2. This modifies the Xcode display with two tabs:
-    * There is a `Changes` tab and a `Repositories` tab
-    * It might say `No changes`, but fetch changes to make sure
-3. Tap on the `Integrate` menu and select `Fetch changes`
+Once you have Xcode open with your previous build of Trio, the first thing to do is open a terminal. Here are two methods - choose one:
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/0356efea-351c-4d31-89e6-d04ffee5bab8" width="600px"/>
+1. Use Xcode, Behaviors, Open Terminal if you configured [Xcode Behaviors](#xcode-behaviors)
+2. Locate the Trio folder using [Where is my Download](#where-is-my-download)
 
-The graphic below needs to be updated:
-1. Click `Integrate` again
-2. Select `Pull…`
+### Customizations
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/2fa2f70b-86a3-4f62-9a69-80caf0137fca" width="600px"/>
+Always attempt to [Update your Code](#update-your-code) first. Typically, your customizations can be left alone and `git` will merge the new code without requiring any additional action on your part.
 
-Refer to the graphic below:
-1. Select the branch to pull from
-2. Click `Pull`
+* If you have a customization, you can often proceed with the update with no issues
+* If your customization conflicts with a file or submodule that is being updated, you get a clear error message and need to proceed to [Fix Customization Conflicts](#fix-customization-conflicts)
 
-The correct branch should already be selected for you. If you built from `main`, select `main`. If you built from `dev`, select `dev`. (This graphic has the older branch name of `master`.)
+### Update your Code
 
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/670e2a6d-824c-446c-a215-f5f49cd216e9" width="600px"/>
+In the terminal, you will copy and paste this pair of commands to update your workspace and all your submodules.
 
-The last steps are only relevant if you made any changes to the code:
+```
+git fetch
+git pull --recurse
+```
 
-- You may see a pop-up asking to stash your changes. In that case, name the stashed changes to something meaningful to you.
-- Select “Apply Stash After Operation”
-- Click “Stash and Pull”
+If you see the word error or conflict on the output, head over to [Fix Customization Conflicts](#fix-customization-conflicts).
 
-The Trio code is now updated. That was easy. If you used the build script that automatically creates your ConfigOverride file, the targets are already signed, and you are ready to build the Trio app on your phone.
+Otherwise, you are ready to build.
 
-The following section is only for those who prefer to use the command line interface for `git`. Skip ahead to [Verify Trio Version](#verify-trio-version).
+### Fix Customization Conflicts
 
-### Update Trio with CLI
+If you have customizations in the Trio code (in the workspace) that cause a conflict when you pull, you can save and restore those with the `stash` and `stash pop` lines as shown below:
 
-Use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
+```
+git stash
+git fetch
+git pull
+git stash pop
+```
+
+If you have customizations in the submodules that conflict with the update, your message in response to the `git pull --recurse` command indicates the new version of the submodule cannot be checked out.
+
+* Read which submodule failed to `checkout`
+* Change directory to that module: `cd modulename`
+* Stash your changes: `git stash`
+* Return to the Trio folder and try again: `cd ..; git submodule update`
+
+If another submodule fails to checkout, repeat the steps for that `modulename`.
+
+If the modification is one you want to keep, you must restore it:
+ 
+* Change directory to that module: `cd modulename`
+* Restore your changes: `git stash pop`
+* Return to the Trio folder: `cd ..`
+
+The Trio code is now updated.
+
+If Xcode is not open, you can open it by typing `xed .` in the Trio folder of your terminal window.
+
+You can now build the updated Trio app on your phone.
+
+## Xcode Behaviors
+
+You can add Behaviors to your version of Xcode. These custom Behaviors only need to be added once.
+
+You will create a shell script and add it to Xcode.
+
+* `Open Terminal` will open a terminal in the workspace or project folder currently in use by Xcode
+
+### Prepare the Shell Script
+
+Open a new terminal:
+
+Step 1: Create a folder to store your shell scripts by copying and pasting the next line (only do this one time or you will get an error message):
+
+```
+mkdir ~/scripts
+```
+
+Step 2: Copy and paste this command into your terminal to prepare the `Open Terminal` shell script:
+
+```
+touch ~/scripts/open_terminal.sh; open -e ~/scripts/open_terminal.sh
+```
+
+Copy and paste the following lines into the editor and then save and close the file.
+
+```
+#!/bin/bash
+open -a Terminal "`pwd`"
+```
+
+Step 3: Make the shell script executable; Copy and paste this command into your terminal:
+
+```
+chmod +x ~/scripts/*.sh
+```
+
+### Add Behaviors to Xcode
+
+Under the Xcode menu item, select Behaviors, Edit Behaviors
+
+Follow these steps (refer to graphic below):
+
+1. At the bottom of the window, click the `+` sign
+2. Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
+3. On the right side at the bottom, click on Run, then `Choose Script`
+
+![xcode behaviors - ready to select open terminal script](img/xcode-add-behavior.png)
+
+* Navigate to your username (mine is `marion`) and find the `scripts` directory
+* Highlight the file `open-terminal.sh` and then select `Save`
+
+![xcode behaviors - choose the open terminal script](img/choose-open-terminal-script.png)
+
+The Behavior `Open Terminal` is now ready for you to use, as shown in this graphic.
+
+![xcode behaviors - open terminal](img/xcode-behaviors.png)
+
+Return to [Open Terminal](#open-terminal).
+
+## Where is my Download
+
+If you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right click on the Trio folder and select `New Terminal at Folder`.
+
+If you do not have Xcode open, you can use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
 * Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
     * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
@@ -231,31 +340,7 @@ Use finder to locate the directory where the BuildTrio script saved the code. Th
 
 Use finder to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
-Copy each line below and paste it into the terminal window one at a line and hit enter for each line:
+To open Xcode, type `xed .` in the Terminal.
 
-```
-git stash
-```
+Return to [Open Terminal](#open-terminal).
 
-```
-git fetch
-git pull --recurse
-```
-
-```
-git stash pop
-```
-
-If the final `git stash pop` had errors, you must repeat any customizations you made in your prior code—they are no longer compatible with the updated code.
-
-The Trio code is now updated. To open the workspace in Xcode, type `xed .` in your terminal window.
-
-The targets should be signed, and you will be ready to build the Trio app on your phone.
-
-## Verify Trio Version
-
-Verify that the Trio code was successfully updated by examining the `APP_VERSION` value in the Config.xcconfig file. (Refer to the graphic below.) Make sure what is shown in your Xcode display matches the expected version on the Trio GitHub Releases page.
-
-If using the GitHub method, you can view this same file in your fork of the Trio repository.
-
-<img src="https://github.com/nightscout/trio-docs/assets/31315442/33f8c870-4241-43b3-af99-294ab95d26ca" width="600px"/>
