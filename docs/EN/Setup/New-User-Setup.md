@@ -81,6 +81,8 @@ Under "App Icons" in the Settings Menu, you can find a variety of icons to use f
 
 
 Have a special icon in mind? You can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
+
+***Congratulations!*** You've completed the New User Setup for Trio!
 <br>
 <br>
 

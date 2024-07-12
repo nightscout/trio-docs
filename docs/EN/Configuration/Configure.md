@@ -11,7 +11,7 @@ Closed loop allows the system to make insulin adjustments automatically. Your go
 ## Settings
 <b>I've been using Loop. Can I copy my settings?</b>
 
-<b><i>No.</b></i> Users coming from Loop usually adjust their ISF and CR settings to compensate for fluctuations in insulin needs throughout the day. When using those settings for Trio, the algorithm also adjusts to compensate for the fluctuations, which may result in over- or under-dosing. Please review the steps of monitoring Trio predictions and change your settings accordingly. It would help if you also read the section on [transitioning from other closed-loop solutions](transition-qa.md).
+<b><i>No.</b></i> Users coming from Loop usually adjust their ISF and CR settings to compensate for fluctuations in insulin needs throughout the day. When using those settings for Trio, the algorithm also adjusts to compensate for the fluctuations, which may result in over- or under-dosing. Please review the steps of monitoring Trio predictions and change your settings accordingly. It would help if you also read the section on [Coming from Other AID Systems](transition-qa.md).
 
 :::{tip}
 Remember that everyone's diabetes is different, and there is no one-size-fits-all, so take the time to optimize your settings for the Oref algorithm.

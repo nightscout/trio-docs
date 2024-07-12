@@ -1,7 +1,7 @@
 # Pump Settings
 :::{admonition} Highlights
 :class: tip
-- Max Basal = 4x max daily basal
+- Max Basal = 4x highest hourly basal
 - Max Bolus = Max bolus you give for a meal
 - Max Carbs = Maximum carbs allowed by a single entry
 - DIA = Duration of Insulin Action (typically 7 hours)
