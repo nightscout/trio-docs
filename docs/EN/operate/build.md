@@ -17,27 +17,27 @@ The Trio repository contains instructions for building the Trio app using a brow
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
 * Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
-* You use the `Loop App Group` for Trio, see [Create the `Loop App Group`](#create-the-loop-app-group)
-* Add the `Loop App Group` to these identifiers:
+* You use the `Trio App Group` for Trio, see [Create the `Trio App Group`](#create-the-trio-app-group)
+* Add the `Trio App Group` to these identifiers:
     * Trio
     * Trio Watch
     * Trio WatchKit Extension
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
-### Create the `Loop App Group`
+### Create the `Trio App Group`
 
-If you already have a `Loop App Group`
+If you already have a `Trio App Group`
 
 * You can skip this step - your existing App Groups are found at this link: [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
-* If your `Loop App Group` was created from a Mac with Xcode, you may choose to edit the Description to make the **NAME** match
+* If your `Trio App Group` was created from a Mac with Xcode, you may choose to edit the Description to make the **NAME** match
 
-If you do not have a `Loop App Group`:
+If you do not have a `Trio App Group`:
 
 * Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
 
 | NAME | Xcode version | IDENTIFIER |
 |:--|:--|:--|
-| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
+| Trio App Group | group org nightscout TEAMID trio trio-app-group| group.org.nightscout.TEAMID.trio.trio-app-group |
 
 ### Table of Identifiers
 
@@ -67,6 +67,8 @@ After you have done this one-time step, each successive build will include the b
 
 You can add additional tests notes for any build if you desire.
 
+> End of Build Trio with GitHub
+
 ## Update Trio with GitHub
 
 First makes sure any Apple License agreements have been accepted:
@@ -77,18 +79,37 @@ Second, make sure you have a valid Distributor certificate; if not, see [Distrib
 
 * [Apple Certificate Page](https://developer.apple.com/account/resources/certificates/list)
 
+### One-time Update for Trio App Group
+
+If you built previously, before the App Group changed from Loop to Trio, you need to do this step. Then you can continue with the updating instructions.
+
+* [Create the `Trio App Group`](#create-the-trio-app-group)
+* Examine the [Table of Identifiers](#table-of-identifiers) - it is optional, but editing the descriptions to match the **Names** in that table will make following directions easier in the future
+* Update the App Group to be the `Trio App Group` for the Identifiers (Trio, Trio Watch and Trio Watchkit Extension)
+* Select the Action: 3. Create Certificates to make certificate which go with the new `Trio App Group`
+
+### Consequences of `Trio App Group`
+
+If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same `App Group` as Trio.
+
+At this time, 
+* xDrip4iOS requires version 5.3.1 to support the `Trio App Group`
+* GlucoseDirect has not been updated so will not work with Trio as a CGM source
+
+### Continue Updating
+
 Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username instead of `YOUR-USERNAME`
 
 * Look to see if your fork is up to date
 * If your fork shows that your branch is behind, sync the branch to get the latest updates
 
-Select Actions: 4. Build Trio and wait about an hour for your updated app to appear in TestFlight.
-
-## Distribution Certificate
+### Distribution Certificate
 
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
 The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
+
+> End of Update Trio with GitHub
 
 ## Build Trio with Xcode
 
@@ -167,7 +188,11 @@ If you need it, you are most likely to get help in one of these groups:
 LibreTransmitter is provided as part of Trio. Neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Trio.
 :::
 
-If you want to use xDrip4iOS or Glucose Direct as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
+:::{important}
+Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
+:::
+
+If you want to use xDrip4iOS as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
 
 The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
@@ -175,12 +200,20 @@ These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-scr
 
 ### xDrip4iOS
 
+:::{important}
+You must build xDrip4iOS version 5.3.1 or newer to have access to the Trio App Group required to work with Trio.
+:::
+
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 ```
 
 ### Glucose Direct
+
+:::{important}
+Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
+:::
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -195,6 +228,8 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" - branch_name
 ```
+
+> End of Build Trio with Script
 
 ## Update Trio with Xcode
 
@@ -220,7 +255,7 @@ Once you have Xcode open with your previous build of Trio, the first thing to do
 Always attempt to [Update your Code](#update-your-code) first. Typically, your customizations can be left alone and `git` will merge the new code without requiring any additional action on your part.
 
 * If you have a customization, you can often proceed with the update with no issues
-* If your customization conflicts with a file or submodule that is being updated, you get a clear error message and need to proceed to [Fix Customization Conflicts](#fix-customization-conflicts)
+* If your customization conflicts with a file or submodule that is being updated, you get a clear error message and need to proceed to [Fix Trio Conflicts](#fix-trio-conflicts)
 
 ### Update your Code
 
@@ -231,41 +266,93 @@ git fetch
 git pull --recurse
 ```
 
-If you see the word error or conflict on the output, head over to [Fix Customization Conflicts](#fix-customization-conflicts).
+The first command `git fetch` brings down any updates about the state of the Trio workspace repository from GitHub.
 
-Otherwise, you are ready to build.
+The second command `git pull --recurse` does several things:
 
-### Fix Customization Conflicts
+1. Brings down any updates about the state of the submodule repositories from GitHub, e.g., `Fetching submodule XXXX` repeated for each submodule
+2. Merges any changes from GitHub into your local copy of the Trio workspace
+3. For each submodule, updates the version to match that selected in GitHub
 
-If you have customizations in the Trio code (in the workspace) that cause a conflict when you pull, you can save and restore those with the `stash` and `stash pop` lines as shown below:
+There can be errors after step 2, e.g.,
+
+```{code-block}
+:class: no-copybutton
+error: Your local changes to the following files would be overwritten by merge:
+	FreeAPS/folder/file.swift
+Please commit your changes or stash them before you merge.
+Aborting
+```
+
+The `pull` command halts at this error and does not move on to step 3. You must first fix the Trio workspace files. 
+
+Head over to [Fix Trio Conflicts](#fix-trio-conflicts).
+
+* If there was no error with step 2, you will see the word `Updating` with the list of files changed.
+* If there were no updates, you'll see `Already up to date`
+
+### Submodule Update
+
+* If there are no updates to submodules, you won't see any submodule update messages - that is not uncommon
+* If there are upstates to one or more submodules with no errors, you will see messages indicating the submodules are being checked out similar to the one below.
+
+```{code-block}
+:class: no-copybutton
+Submodule path 'ModuleName': checked out 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56'
+```
+
+If you see the word error or conflict on the output, similar to the following, head over to [Fix Submodule Conflicts](#fix-submodule-conflicts).
+
+```{code-block}
+:class: no-copybutton
+error: Your local changes to the following files would be overwritten by checkout:
+	SubModuleName/folder/file.swift
+Please commit your changes or stash them before you switch branches.
+Aborting
+fatal: Unable to checkout 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56' in submodule path 'SubModuleName'
+```
+
+If you saw no errors, you are ready to build.
+
+### Fix Trio Conflicts
+
+If you have customizations in the Trio code (in the workspace) that cause a conflict when you `pull`, it is best to delete those and start fresh. (Expert users know how to handle this, these directions are for novices):
 
 ```
-git stash
-git fetch
+git reset --hard
 git pull
-git stash pop
 ```
 
-If you have customizations in the submodules that conflict with the update, your message in response to the `git pull --recurse` command indicates the new version of the submodule cannot be checked out.
+You should see the words: `Your branch is up to date with origin/main` (or `dev` or other branch if you are not running `main`.)
+
+Now you need to continue to update the submodules with this command:
+
+```
+git submodule update
+```
+
+If there are no conflicts, you are ready to build Trio.
+
+If there are conflicts similar to those shown in [Submodule Update](#submodule-update), fix them before building.
+
+### Fix Submodule Conflicts
+
+If you have customizations in the submodules that conflict with the update, you see a message `fatal: Unable to checkout` the submodule. It is easiest to discard the customizations and reapply them manually after the update:
 
 * Read which submodule failed to `checkout`
 * Change directory to that module: `cd modulename`
-* Stash your changes: `git stash`
+* Discard your changes: `git reset --hard`
 * Return to the Trio folder and try again: `cd ..; git submodule update`
 
 If another submodule fails to checkout, repeat the steps for that `modulename`.
 
-If the modification is one you want to keep, you must restore it:
- 
-* Change directory to that module: `cd modulename`
-* Restore your changes: `git stash pop`
-* Return to the Trio folder: `cd ..`
-
-The Trio code is now updated.
+If there are no errors, the Trio code is now updated.
 
 If Xcode is not open, you can open it by typing `xed .` in the Trio folder of your terminal window.
 
 You can now build the updated Trio app on your phone.
+
+> End of Update Trio with Mac-Xcode
 
 ## Xcode Behaviors
 
