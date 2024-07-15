@@ -67,7 +67,7 @@ After you have done this one-time step, each successive build will include the b
 
 You can add additional tests notes for any build if you desire.
 
-> End of Build Trio with GitHub
+[Top of Page](#build-and-update)
 
 ## Update Trio with GitHub
 
@@ -109,7 +109,7 @@ When you first build using GitHub, a Distribution Certificate is generated. It t
 
 The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
 
-> End of Update Trio with GitHub
+[Top of Page](#build-and-update)
 
 ## Build Trio with Xcode
 
@@ -229,7 +229,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" - branch_name
 ```
 
-> End of Build Trio with Script
+[Top of Page](#build-and-update)
 
 ## Update Trio with Xcode
 
@@ -352,7 +352,7 @@ If Xcode is not open, you can open it by typing `xed .` in the Trio folder of yo
 
 You can now build the updated Trio app on your phone.
 
-> End of Update Trio with Mac-Xcode
+[Top of Page](#build-and-update)
 
 ## Xcode Behaviors
 
