@@ -81,20 +81,19 @@ Second, make sure you have a valid Distributor certificate; if not, see [Distrib
 
 ### One-time Update for Trio App Group
 
-If you built previously, before the App Group changed from Loop to Trio, you need to do this step. Then you can continue with the updating instructions.
+If you built previously, before the App Group changed from Loop to Trio, you need to do this step. Then you can [Continue Updating](#continue-updating).
 
 * [Create the `Trio App Group`](#create-the-trio-app-group)
 * Examine the [Table of Identifiers](#table-of-identifiers) - it is optional, but editing the descriptions to match the **Names** in that table will make following directions easier in the future
 * Update the App Group to be the `Trio App Group` for the Identifiers (Trio, Trio Watch and Trio Watchkit Extension)
-* Select the Action: 3. Create Certificates to make certificate which go with the new `Trio App Group`
+* Select the **Action: 3. Create Certificates** to make certificate which go with the new `Trio App Group`
 
 ### Consequences of `Trio App Group`
 
 If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same `App Group` as Trio.
 
-At this time, 
-* xDrip4iOS requires version 5.3.1 to support the `Trio App Group`
-* GlucoseDirect has not been updated so will not work with Trio as a CGM source
+* xDrip4iOS requires version 5.3.1 or newer to support the `Trio App Group`
+* GlucoseDirect has not been updated, at this time, so does not currently work with Trio as a CGM source
 
 ### Continue Updating
 
@@ -108,6 +107,10 @@ Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username inst
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
 The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
+
+### Build Trio
+
+Select **Actions: 4. Build Trio** and wait about an hour for your updated app to appear in TestFlight.
 
 [Top of Page](#build-and-update)
 
@@ -270,11 +273,11 @@ The first command `git fetch` brings down any updates about the state of the Tri
 
 The second command `git pull --recurse` does several things:
 
-1. Brings down any updates about the state of the submodule repositories from GitHub, e.g., `Fetching submodule XXXX` repeated for each submodule
-2. Merges any changes from GitHub into your local copy of the Trio workspace
-3. For each submodule, updates the version to match that selected in GitHub
+* Brings down any updates about the state of the submodule repositories from GitHub, e.g., `Fetching submodule XXXX` repeated for each submodule
+* Merges any changes from GitHub into your local copy of the Trio workspace
+* For each submodule, updates the version to match that selected in GitHub, see [Submodule Update](#submodule-update) for more details
 
-There can be errors after step 2, e.g.,
+There can be errors in several places, for example:
 
 ```{code-block}
 :class: no-copybutton
@@ -284,24 +287,22 @@ Please commit your changes or stash them before you merge.
 Aborting
 ```
 
-The `pull` command halts at this error and does not move on to step 3. You must first fix the Trio workspace files. 
+The `pull` command halts at this error and does not move on updating the submodules. You must first fix the Trio workspace files using [Fix Trio Conflicts](#fix-trio-conflicts).
 
-Head over to [Fix Trio Conflicts](#fix-trio-conflicts).
-
-* If there was no error with step 2, you will see the word `Updating` with the list of files changed.
+* If there was no error similar to that shown above, you will see the word `Updating` with the list of files changed.
 * If there were no updates, you'll see `Already up to date`
 
 ### Submodule Update
 
 * If there are no updates to submodules, you won't see any submodule update messages - that is not uncommon
-* If there are upstates to one or more submodules with no errors, you will see messages indicating the submodules are being checked out similar to the one below.
+* If there are updates to one or more submodules with no errors, you will see messages indicating the submodules are being checked out similar to the one below
 
 ```{code-block}
 :class: no-copybutton
 Submodule path 'ModuleName': checked out 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56'
 ```
 
-If you see the word error or conflict on the output, similar to the following, head over to [Fix Submodule Conflicts](#fix-submodule-conflicts).
+If you see the word `error` or `conflict` on the output, similar to the following, head over to [Fix Submodule Conflicts](#fix-submodule-conflicts).
 
 ```{code-block}
 :class: no-copybutton
@@ -331,7 +332,7 @@ Now you need to continue to update the submodules with this command:
 git submodule update
 ```
 
-If there are no conflicts, you are ready to build Trio.
+If there are no conflicts, you are ready to build the Trio app to your phone.
 
 If there are conflicts similar to those shown in [Submodule Update](#submodule-update), fix them before building.
 
@@ -350,7 +351,7 @@ If there are no errors, the Trio code is now updated.
 
 If Xcode is not open, you can open it by typing `xed .` in the Trio folder of your terminal window.
 
-You can now build the updated Trio app on your phone.
+You can now build the updated Trio app to your phone.
 
 [Top of Page](#build-and-update)
 
