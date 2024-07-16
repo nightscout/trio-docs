@@ -47,7 +47,7 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
 * Libre 3
   
 ## Glucose Direct
-To use Glucose Direct as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. You cannot use a version distributed by someone else's TestFlight.
+Until the providers of Glucose Direct add a Trio App Group to Glucose Direct, you cannot use this app with Trio. If that happens, then you must build it yourself with the same Apple Developer account you used to build your Trio app. You cannot use a version distributed by someone else's TestFlight.
 
 ## Medtronic Enlite
 The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic CGM data directly from the pump using a RileyLink-compatible device.
