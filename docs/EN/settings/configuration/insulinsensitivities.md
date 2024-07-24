@@ -17,11 +17,9 @@ It is safe to transfer your ISF from your pump settings. Note that almost all is
 
 There are a few ways you can work to adjust your ISF. The easiest method is simply bringing yourself to a higher glucose with a glucose tab or choosing a time when you are "stuck" higher than your target, then correcting based on your ISF. If you are higher than your target after 4 hours, make your ISF more aggressive by _DECREASING_ the value. If you are lower than your target after 4 hours, make your ISF less aggressive by _INCREASING_ the value.
 
-It can be difficult to make proper adjustments to ISF with SMB/UAM enabled. If you experience a rollercoaster pattern and find the system is giving too much insulin, look to _decrease_ your ISF. Likewise, if you are dealing with uncontrollable highs and a slow return of your blood sugar to the target range, look to _increase_ ISF.
+You may also find Autotune helpful in identifying when to adjust your ISF and determine whether it is too high or low based on the trend in its changes. Look to changing your profile value to the autotune value when Autotune stabilizes to ensure safety limiters aren't preventing any additional needed change.
 
-Finally, you can also rely on Autotune to adjust your ISF and determine whether it is too high or low based on the trend in its changes. Look to changing your profile value to the autotune value when Autotune stabilizes to ensure safety limiters aren't preventing any additional needed change.
-
-:::{caution}
-It is not advised to use Autotune and Dynamic Settings at the same time
+:::{warning}
+When using Autotune, it is important to **turn OFF** DynamicISF prior to enabling or running Autotune
 :::
 <br>
