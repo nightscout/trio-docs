@@ -6,13 +6,14 @@ Trio requires a relatively recent iPhone. The faster the phone, the better for t
 
 These devices are compatible with iOS 16 and newer iOS.
 
+- iPhone 15, all variants
 - iPhone 14, all variants
 - iPhone 13, all variants
 - iPhone 12, all variants
 - iPhone 11, all variants
 - iPhone X, all variants
 - iPhone 8, all variants
-- iPhone SE (3rd generation or later model; 2022 first release)
+- iPhone SE (3rd generation; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
 #### iOS Version and Developer Mode
