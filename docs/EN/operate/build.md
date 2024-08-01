@@ -9,7 +9,7 @@ Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-x
 The Trio repository contains instructions for building the Trio app using a browser and GitHub. More detailed instructions are also available in LoopDocs.
 
 * [GitHub Build Instructions](https://github.com/nightscout/Trio/blob/dev/fastlane/testflight.md)
-* [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/browser/intro-summary/)
+* [LoopDocs: GitHub Build Overview](https://loopkit.github.io/loopdocs/browser/bb-overview/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/browser/other-apps/)
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
