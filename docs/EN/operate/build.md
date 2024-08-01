@@ -9,8 +9,8 @@ Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-x
 The Trio repository contains instructions for building the Trio app using a browser and GitHub. More detailed instructions are also available in LoopDocs.
 
 * [GitHub Build Instructions](https://github.com/nightscout/Trio/blob/dev/fastlane/testflight.md)
-* [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/)
-* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/gh-actions/gh-other-apps/)
+* [LoopDocs: GitHub Build First-Time](https://loopkit.github.io/loopdocs/browser/intro-summary/)
+* [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/browser/other-apps/)
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
 :::
@@ -106,7 +106,7 @@ Open your fork at `github.com/YOUR-USERNAME/Trio` with your GitHub username inst
 
 When you first build using GitHub, a Distribution Certificate is generated. It typically is valid for one year. You should get an email from Apple when you are within 30 days of that certificate expiring. When it expires, you can no longer build a new app. (Existing apps in TestFlight are not affected, they get the full 90 days.)
 
-The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/gh-actions/gh-update/#renew-certificate).
+The directions to renew your Distribution Certificate are found in [LoopDocs: Renew Certificate](https://loopkit.github.io/loopdocs/browser/bb-update/#renew-certificate).
 
 ### Build Trio
 
