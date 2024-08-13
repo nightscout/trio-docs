@@ -8,7 +8,7 @@ Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-x
 
 The Trio repository contains instructions for building the Trio app using a browser and GitHub. More detailed instructions are also available in LoopDocs.
 
-* [GitHub Build Instructions](https://github.com/nightscout/Trio/blob/dev/fastlane/testflight.md)
+* [GitHub Build Instructions](https://github.com/nightscout/Trio/blob/main/fastlane/testflight.md)
 * [LoopDocs: GitHub Build Overview](https://loopkit.github.io/loopdocs/browser/bb-overview/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/browser/other-apps/)
 
@@ -55,7 +55,7 @@ If you do not have a `Trio App Group`:
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
-The Trio build can be configured to display the branch name and commit ID as test notes in TestFlight. This is an optional step, which can be especially useful if building the dev branch.
+The Trio build can be configured to display the branch name and commit ID as test notes in TestFlight. This is an optional step, which can be especially useful if building the `dev` branch.
 
 First, you must have already built Trio and have it available on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
 
