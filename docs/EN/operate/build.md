@@ -2,7 +2,8 @@
 
 **Jump to...**\
 Build with [GitHub](#build-trio-with-github) | [Mac-Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
-Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode) 
+Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode) \
+Special Section on Trio App Group [Special Section on Trio App Group](#special-section-on-trio-app-group)
 
 ## Build Trio with GitHub
 
@@ -14,6 +15,8 @@ The Trio repository contains instructions for building the Trio app using a brow
 
 :::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
 :::
+
+**Every app you build will use the same [6 Secrets](https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file).**
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
 * Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
@@ -35,7 +38,7 @@ If you do not have a `Trio App Group`:
 
 * Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
 
-| NAME | Xcode version | IDENTIFIER |
+| NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
 | Trio App Group | group org nightscout TEAMID trio trio-app-group| group.org.nightscout.TEAMID.trio.trio-app-group |
 
@@ -45,13 +48,40 @@ If you do not have a `Trio App Group`:
 * If you built during early beta testing, you might not have `Trio` at the beginning of each **IDENTIFIER** and the full **NAME** may be slightly different
 * Optional: You can click on a given row, edit the Description to match the **NAME** from the table below and it might making building easier in future
 
-| NAME | Xcode version | IDENTIFIER |
+| NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
 | Trio | XC org nightscout TEAMID trio | org.nightscout.TEAMID.trio |
 | Trio LiveActivity | - | org.nightscout.TEAMID.trio.LiveActivity |
 | Trio Watch | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp |
 | Trio WatchKit Extension | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp.watchkitextension |
 
+### Add Trio App Group to Identifiers
+
+Open the App IDs Identifier page for your Apple Developer Account:
+
+* https://developer.apple.com/account/resources/identifiers/list
+
+Click on the Trio Identifier and assign the Trio App Group to the Identifier - see graphic below.
+
+![add Trio App Group to identifiers](img/choose-trio-app-group.png)
+
+Repeat this for the other 2 identifiers that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
+
+### Configure Trio App
+
+Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/prepare-app/#create-loop-app-in-app-store-connect), but use the Trio `Bundle ID`
+
+* In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
+
+### Create Certificates
+
+Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/certs/) but run the Create Certificates action for the Trio fork.
+
+### Build Trio
+
+Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/build-yml/) but run the Build Trio action for the Trio fork.
+
+## Optional
 
 ### One-Time Update to Display Branch And Commit in Testflight
 
@@ -85,15 +115,8 @@ If you built previously, before the App Group changed from Loop to Trio, you nee
 
 * [Create the `Trio App Group`](#create-the-trio-app-group)
 * Examine the [Table of Identifiers](#table-of-identifiers) - it is optional, but editing the descriptions to match the **Names** in that table will make following directions easier in the future
-* Update the App Group to be the `Trio App Group` for the Identifiers (Trio, Trio Watch and Trio Watchkit Extension)
-* Select the **Action: 3. Create Certificates** to make certificate which go with the new `Trio App Group`
-
-### Consequences of `Trio App Group`
-
-If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same `App Group` as Trio.
-
-* xDrip4iOS requires version 5.3.1 or newer to support the `Trio App Group`
-* GlucoseDirect has not been updated, at this time, so does not currently work with Trio as a CGM source
+* Update the [App Group to be the `Trio App Group` for the Identifiers (Trio, Trio Watch and Trio Watchkit Extension)](#add-trio-app-group-to-identifiers)
+* Run the **Action: 3. Create Certificates** to make certificate which go with the new `Trio App Group`
 
 ### Continue Updating
 
@@ -223,7 +246,7 @@ Until the providers of Glucose Direct add a Trio App Group to their app, you can
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
 ```
 
-### Alternative Branch
+### Alternative Branch for Trio
 
 Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#run-maintenance-utilities).
 
@@ -321,6 +344,7 @@ If you have customizations in the Trio code (in the workspace) that cause a conf
 
 ```
 git reset --hard
+git clean -fd
 git pull
 ```
 
@@ -342,7 +366,7 @@ If you have customizations in the submodules that conflict with the update, you 
 
 * Read which submodule failed to `checkout`
 * Change directory to that module: `cd modulename`
-* Discard your changes: `git reset --hard`
+* Discard your changes: `git reset --hard;git clean -fd`
 * Return to the Trio folder and try again: `cd ..; git submodule update`
 
 If another submodule fails to checkout, repeat the steps for that `modulename`.
@@ -352,6 +376,11 @@ If there are no errors, the Trio code is now updated.
 If Xcode is not open, you can open it by typing `xed .` in the Trio folder of your terminal window.
 
 You can now build the updated Trio app to your phone.
+
+### First Xcode Build with Trio App Group
+
+If you previously built using Xcode when the Loop App Group was used, you may need to let Xcode connect with *Apple* to update the new Trio App Group. See instructions at [Mac Build after App Group Change](#mac-build-after-app-group-change).
+
 
 [Top of Page](#build-and-update)
 
@@ -431,4 +460,46 @@ Use finder to open a Terminal window at the Trio directory by right-clicking on 
 To open Xcode, type `xed .` in the Terminal.
 
 Return to [Open Terminal](#open-terminal).
+
+## Special Section on Trio App Group
+
+* If you have never built Trio before - just follow the instructions on this page: [return to top](#)
+* If you have already built Trio and have added the Trio App Group: [return to top](#)
+* If you have already built Trio, but you did not add the Trio App Group (or are not sure), please read this section for hints and help
+
+Click link for [Mac Build after App Group Change](#mac-build-after-app-group-change).
+
+### Browser Build after App Group Change
+
+In order to build the Trio app with Browser Build, you must assign the Trio App Group to 3 of the 4 identifiers for Trio.
+
+#### Step 1: Create Trio App Group
+
+* Check if you have a Trio App Group: [List your App Groups](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+* Create a Trio App Group if you don't have one: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/)
+
+| NAME | Xcode version (NAME) | IDENTIFIER |
+|:--|:--|:--|
+| Trio App Group | group org nightscout TEAMID trio trio-app-group| group.org.nightscout.TEAMID.trio.trio-app-group |
+
+#### Step 2: Assign Trio App Group to Trio Identifiers
+
+Return to [Add Trio App Group to Identifiers](#add-trio-app-group-to-identifiers)
+
+### Mac Build after App Group Change
+
+The first time you build Trio after the change from Loop App Group to Trio App Group, you are likely to the see the build error in the first graphic.
+
+![build error after switching to trio app group](img/trio-error-after-app-group-change.png)
+
+You must be connected to the internet and must allow Xcode to connect to Apple to update your app group. Tap in the four locations (in order) indicated graphic below to open the Signing & Certificates. The app group may momentarily appear in red font, then will update to black font for the trio-app-group. Continue until you have examined three targets `FreeAPS`, `FreeAPSWatch` and `FreeAPSWatch Watchkit Extension`. When those targets show the correct App Group, press the build symbol again.
+
+![add Trio App Group to identifiers](img/trio-allow-xcode-to-update.png)
+
+### Consequences of `Trio App Group`
+
+If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same `App Group` as Trio.
+
+* xDrip4iOS requires version 5.3.1 or newer to support the `Trio App Group`
+* GlucoseDirect has not been updated, at this time, so does not currently work with Trio as a CGM source
 
