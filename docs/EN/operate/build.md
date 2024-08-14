@@ -57,9 +57,7 @@ If you do not have a `Trio App Group`:
 
 ### Add Trio App Group to Identifiers
 
-Open the App IDs Identifier page for your Apple Developer Account:
-
-* https://developer.apple.com/account/resources/identifiers/list
+Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
 
 Click on the Trio Identifier and assign the Trio App Group to the Identifier - see graphic below.
 
@@ -366,7 +364,7 @@ If you have customizations in the submodules that conflict with the update, you 
 
 * Read which submodule failed to `checkout`
 * Change directory to that module: `cd modulename`
-* Discard your changes: `git reset --hard;git clean -fd`
+* Discard your changes: `git reset --hard; git clean -fd`
 * Return to the Trio folder and try again: `cd ..; git submodule update`
 
 If another submodule fails to checkout, repeat the steps for that `modulename`.
@@ -463,11 +461,11 @@ Return to [Open Terminal](#open-terminal).
 
 ## Special Section on Trio App Group
 
-* If you have never built Trio before - just follow the instructions on this page: [return to top](#)
-* If you have already built Trio and have added the Trio App Group: [return to top](#)
+* If you have never built Trio before - just follow the instructions on this page: return [Top of Page](#build-and-update)
+* If you have already built Trio and have added the Trio App Group: return [Top of Page](#build-and-update)
 * If you have already built Trio, but you did not add the Trio App Group (or are not sure), please read this section for hints and help
 
-Click link for [Mac Build after App Group Change](#mac-build-after-app-group-change).
+Instructions for [GitHub](#browser-build-after-app-group-change) | [Mac-Xcode](#mac-build-after-app-group-change)
 
 ### Browser Build after App Group Change
 
@@ -492,7 +490,7 @@ The first time you build Trio after the change from Loop App Group to Trio App G
 
 ![build error after switching to trio app group](img/trio-error-after-app-group-change.png)
 
-You must be connected to the internet and must allow Xcode to connect to Apple to update your app group. Tap in the four locations (in order) indicated graphic below to open the Signing & Certificates. The app group may momentarily appear in red font, then will update to black font for the trio-app-group. Continue until you have examined three targets `FreeAPS`, `FreeAPSWatch` and `FreeAPSWatch Watchkit Extension`. When those targets show the correct App Group, press the build symbol again.
+You must be connected to the internet and must allow Xcode to connect to Apple to update your app group. Tap in the four locations (in order): (1) Folder Icon, (2) FreeAPS folder, (3) Signing & Capabilities and (4) Target: FreeAPS, as indicated in the graphic below. The app group may momentarily appear in red font, then will update to black font for the trio-app-group. Continue until you have examined three targets `FreeAPS`, `FreeAPSWatch` and `FreeAPSWatch Watchkit Extension`. When those targets show the correct App Group, press the build symbol again.
 
 ![add Trio App Group to identifiers](img/trio-allow-xcode-to-update.png)
 
