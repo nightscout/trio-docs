@@ -24,18 +24,18 @@ Trio is a DIY, open-source community project. It has not been evaluated by any r
 :::
 
 # Getting Started
-Before starting with Trio, you should understand [carb ratio (CR)](https://github.com/nightscout/Trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
+Before starting with Trio, you should understand [carb ratio (CR)](./settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](./settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](./settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/smbsettings.md#trio-smb-settings) features, and turning on [dynamic features](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
+Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](./Configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](./settings/configuration/preferences/smbsettings.md#smb-settings) features, and turning on [dynamic features](./settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
 
 >In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
 >
 >- Enable Closed Loop for automation
 >- Increase Max IOB to "average meal bolus + 3x max daily basal"
 >- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
->See [Configure](https://github.com/nightscout/trio-docs/blob/Operate-Folder-Updates/docs/EN/Configuration/Configure.md#device-configuration) for more information on Trio configuration.
+>See [Configure](./Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
 If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
