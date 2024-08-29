@@ -103,7 +103,7 @@ See `Weighted Average of TDD` setting to understand how this variable is calcula
 
 **Example:**
 
-_Bill's TDD has been 55 U over the last 24 hours, and his 14-day average is 48 U. He has set his `Weighted average of TDD` in preferences to 0.7. His current profile basal rate is 1 U/h._
+_Bill's TDD has been 55 U over the last 24 hours, and his 10-day average is 48 U. He has set his `Weighted average of TDD` in preferences to 0.7. His current profile basal rate is 1 U/h._
 
 ```{math}
 Weighted\ average\ of\ TDD\ =\ 0.7 * 55 U + 0.3 * 48 U = 52.9 U
