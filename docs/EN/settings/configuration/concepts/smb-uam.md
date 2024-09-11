@@ -3,7 +3,7 @@
 :class: tip
  - Enable SMB and UAM after ensuring accurate basal rates and ISF.
  - Adjust SMB/UAM minutes to allow the system to give greater amounts of insulin with one bolus.
- - Max IOB must be greater than 0 for it to function. _Suggested: average meal bolus + 3x max daily basal._
+ - Max IOB must be greater than 0 for it to function. _Suggested: average meal bolus + 3x highest hourly basal rate._
 :::
 
 ## Super Micro Boluses
