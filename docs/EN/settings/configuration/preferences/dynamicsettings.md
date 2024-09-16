@@ -52,7 +52,7 @@ This ratio is used by "Adjust basal" for its calculations. It allows you to effe
 >Set at **0.65** (default) = 65% of the TDD from the past 24 hours + 35% of the TDD from the past 2 weeks
 >Set at **0.0** = uses 100% of the TDD from the past 2 weeks
 
-**Example:** _Bill has a TDD of 55 U over the last 24 hours. He has had a TDD of 48 U over the last 14 days. His Weighted Average is set at 0.65:_
+**Example:** _Bill has a TDD of 55 U over the last 24 hours. He has had a TDD of 48 U over the last 10 days. His Weighted Average is set at 0.65:_
 ```{math}
 TDD Average = 55 * 0.65 + 48 * 0.35 = 52.55
 ```
