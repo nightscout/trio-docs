@@ -74,45 +74,44 @@ There are several different app icon options built into Trio, but you can still 
 2. Add two copies of the 1024x1024 PNG file into this folder, called `ivan.png` and `ivan 1.png`
    
 3. Add a file called `Contents.json` with the following contents:
-```json
-{
-  "images" : [
-    {
-      "filename" : "ivan.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
-    },
-    {
-      "filename" : "ivan 1.png",
-      "idiom" : "universal",
-      "platform" : "watchos",
-      "size" : "1024x1024"
-    }
-  ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
-  }
-}
-```
-
+   ```json
+   {
+     "images" : [
+       {
+         "filename" : "ivan.png",
+         "idiom" : "universal",
+         "platform" : "ios",
+         "size" : "1024x1024"
+       },
+       {
+         "filename" : "ivan 1.png",
+         "idiom" : "universal",
+         "platform" : "watchos",
+         "size" : "1024x1024"
+       }
+     ],
+     "info" : {
+       "author" : "xcode",
+       "version" : 1
+     }
+   }
+   ```
 
 4. Insert a new line after line 14 in the file `FreeAPS/Sources/Models/Icons.swift` containing the following text: `case ivan = "ivan"`
 
    Code before modification:
-```swift
-...
-    case loop = "trioLoop"
-    var id: String { rawValue }
-}
-```
+   ```swift
+   ...
+      case loop = "trioLoop"
+      var id: String { rawValue }
+   }
+   ```
 
    Code after modification:
-```swift
-...
-    case loop = "trioLoop"
-    case ivan = "ivan"
-    var id: String { rawValue }
-}
-```
+   ```swift
+   ...
+      case loop = "trioLoop"
+      case ivan = "ivan"
+      var id: String { rawValue }
+   }
+   ```

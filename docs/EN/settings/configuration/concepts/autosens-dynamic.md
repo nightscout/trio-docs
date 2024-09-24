@@ -6,7 +6,7 @@
 - Adjustments are limited by autosens max/min.
 :::
 :::{important}
-  The examples in this section employ the default logarithmic formula for calculations. For information on using Sigmoid, jump to [this section](concepts/sigmoid.md).
+  The examples in this section employ the default logarithmic formula for calculations. For information on using Sigmoid, jump to [this section](./sigmoid.md).
 :::
 
 ## Autosens
