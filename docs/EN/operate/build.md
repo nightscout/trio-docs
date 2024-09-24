@@ -13,7 +13,7 @@ The Trio repository contains instructions for building the Trio app using a brow
 * [LoopDocs: GitHub Build Overview](https://loopkit.github.io/loopdocs/browser/bb-overview/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/browser/other-apps/)
 
-:::{tip} If using the LoopDocs instructions you need the important information below to build Trio intead of Loop
+:::{tip} If using the LoopDocs instructions you need the important information below to build Trio instead of Loop
 :::
 
 **Every app you build will use the same [6 Secrets](https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file).**
@@ -36,7 +36,7 @@ If you already have a `Trio App Group`
 
 If you do not have a `Trio App Group`:
 
-* Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site and use the table below to help you create one.
+* Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the Apple developer site and use the table below to help you create one.
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
@@ -99,7 +99,7 @@ You can add additional tests notes for any build if you desire.
 
 ## Update Trio with GitHub
 
-First makes sure any Apple License agreements have been accepted:
+First, make sure any Apple License agreements have been accepted:
 
 * [Apple Developer Page](https://developer.apple.com/account)
 
@@ -166,7 +166,7 @@ When you select **Build Trio**, you will be provided with a choice of branches w
     * Offer to remove provisioning profiles from your computer to ensure the build will last an entire year
     * Provide instructions for how to build the app once Xcode opens
     * Open Xcode with your new download.
-* At this point the main menu is displayed again for you to select another option or to exit the script
+* At this point, the main menu is displayed again for you to select another option or to exit the script
 
 The download is placed in your `Downloads` folder in a directory called `BuildTrio`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
@@ -257,7 +257,7 @@ Sometimes, specific branches are offered for testing. Any desired branch can be 
 
 ## Update Trio with Xcode
 
-Because Trio uses submodules, there are actions you need to perform when updating that are easiest using command line interface (CLI) in a terminal opened in the same folder as the Trio workspace.
+Because Trio uses submodules, there are actions you need to perform when updating that are easiest using the command line interface (CLI) in a terminal opened in the same folder as the Trio workspace.
 
 If you prefer, you can use the [Build Script](#build-trio-with-script) to download and build a fresh copy.
 
@@ -296,7 +296,7 @@ The second command `git pull --recurse` does several things:
 
 * Brings down any updates about the state of the submodule repositories from GitHub, e.g., `Fetching submodule XXXX` repeated for each submodule
 * Merges any changes from GitHub into your local copy of the Trio workspace
-* For each submodule, updates the version to match that selected in GitHub, see [Submodule Update](#submodule-update) for more details
+* For each submodule, it updates the version to match the one selected in GitHub, see [Submodule Update](#submodule-update) for more details
 
 There can be errors in several places, for example:
 
@@ -310,7 +310,7 @@ Aborting
 
 The `pull` command halts at this error and does not move on updating the submodules. You must first fix the Trio workspace files using [Fix Trio Conflicts](#fix-trio-conflicts).
 
-* If there was no error similar to that shown above, you will see the word `Updating` with the list of files changed.
+* If there was no error similar to the one shown above, you will see the word `Updating` with the list of files changed.
 * If there were no updates, you'll see `Already up to date`
 
 ### Submodule Update
@@ -423,7 +423,7 @@ chmod +x ~/scripts/*.sh
 
 Under the Xcode menu item, select Behaviors, Edit Behaviors
 
-Follow these steps (refer to graphic below):
+Follow these steps (refer to the graphic below):
 
 1. At the bottom of the window, click the `+` sign
 2. Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
@@ -444,16 +444,16 @@ Return to [Open Terminal](#open-terminal).
 
 ## Where is my Download
 
-If you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right click on the Trio folder and select `New Terminal at Folder`.
+If you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right-click on the Trio folder and select `New Terminal at Folder`.
 
-If you do not have Xcode open, you can use finder to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
+If you do not have Xcode open, you can use *Finder* to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
 
 * Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
     * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
 * Development (dev) branch: Downloads/BuildTrio/Trio_dev-[date-time]/Trio
     * Example: ~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio
 
-Use finder to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
+Use *Finder* to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
 To open Xcode, type `xed .` in the Terminal.
 
