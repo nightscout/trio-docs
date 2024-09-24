@@ -24,7 +24,7 @@ There are numerous settings related to enabling SMBs in Trio. Below is the order
 4. enable SMB/UAM (if enabled in preferences) for a full 6 hours after any carb entry
 5. enable SMB/UAM (if enabled in preferences) if a low temp target is set
 
-A flow chart will be added here for greater clarity on Trio SMB decision-making.
+For a detailed look at when SMBs are delivered, see the chart in [Are SMBs Allowed?](../preferences/smbsettings.md#are-smbs-allowed) section.
 
 ## Unannounced Meals
 Unannounced Meal (UAM) provides an alternative method (in addition to or instead of carb entry) for detecting and safely dosing insulin via SMBs in response to significant BG rises, whether due to meals, stress/illness, or counterregulatory hormones (adrenaline, cortisol, glucagon, HGH). When enabled, it replaces Advanced Meal Assist (AMA). AMA is an older feature that depends on your carbohydrate entries and sets high temporary basal rates to counteract any remaining carbs on board.
