@@ -22,9 +22,9 @@ The Trio repository contains instructions for building the Trio app using a brow
 * Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
 * You use the `Trio App Group` for Trio, see [Create the `Trio App Group`](#create-the-trio-app-group)
 * Add the `Trio App Group` to these identifiers:
-    * Trio
-    * Trio Watch
-    * Trio WatchKit Extension
+    * `Trio`
+    * `Trio Watch`
+    * `Trio WatchKit Extension`
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 ### Create the `Trio App Group`
@@ -59,7 +59,7 @@ If you do not have a `Trio App Group`:
 
 Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
 
-Click on the Trio Identifier and assign the Trio App Group to the Identifier - see graphic below.
+Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
 
 ![add Trio App Group to identifiers](img/choose-trio-app-group.png)
 
@@ -73,11 +73,11 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 
 ### Create Certificates
 
-Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/certs/) but run the Create Certificates action for the Trio fork.
+Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/certs/) but run the `Create Certificates` action for the Trio fork.
 
 ### Build Trio
 
-Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/build-yml/) but run the Build Trio action for the Trio fork.
+Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/build-yml/) but run the `Build Trio` action for the Trio fork.
 
 ## Optional
 
@@ -87,9 +87,9 @@ The Trio build can be configured to display the branch name and commit ID as tes
 
 First, you must have already built Trio and have it available on [Apple App Store Connect](https://appstoreconnect.apple.com/apps).
 
-* Tap on the TestFlight tab
+* Tap on the `TestFlight` tab
 * Choose any build to open a new detailed screen for that build
-* In the Test Details section, type anything you want
+* In the `Test Details` section, type anything you want
 
 After you have done this one-time step, each successive build will include the branch name and commit automatically.
 
@@ -109,7 +109,7 @@ Second, make sure you have a valid Distributor certificate; if not, see [Distrib
 
 ### One-time Update for Trio App Group
 
-If you built previously, before the App Group changed from Loop to Trio, you need to do this step. Then you can [Continue Updating](#continue-updating).
+If you built previously, before the App Group changed from `Loop` to `Trio`, you need to do this step. Then you can [Continue Updating](#continue-updating).
 
 * [Create the `Trio App Group`](#create-the-trio-app-group)
 * Examine the [Table of Identifiers](#table-of-identifiers) - it is optional, but editing the descriptions to match the **Names** in that table will make following directions easier in the future
@@ -141,16 +141,16 @@ If you build Trio on your Mac using Xcode, the recommendation is to use the [**T
 
 ### Build Trio with Script
 
-The **TrioBuildSelectScript** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
+The **`TrioBuildSelectScript`** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
 
-The **TrioBuildSelectScript** offers the choice to:
+The **`TrioBuildSelectScript`** offers the choice to:
 
-1. [Build Trio](#build-trio)
-2. [Build Related Apps](#build-related-apps)
-3. [Run Maintenance Utilities](#run-maintenance-utilities)
-4. Exit Script
+1. [`Build Trio`](#build-trio)
+2. [`Build Related Apps`](#build-related-apps)
+3. [`Run Maintenance Utilities`](#run-maintenance-utilities)
+4. `Exit Script`
 
-To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
+To execute the **`TrioBuildSelectScript`**, open a terminal on your Mac and copy and paste the command below into the terminal. Then, read and follow the directions. 
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -159,7 +159,7 @@ To execute the **TrioBuildSelectScript**, open a terminal on your Mac and copy a
 
 ### Build Trio
 
-When you select **Build Trio**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
+When you select **`Build Trio`**, you will be provided with a choice of branches with information to guide your selection and URL for documentation. This script will then download a fresh copy of your selected branch and guide you through building with Xcode on your Mac.
 
 * Once the download completes, the script will also
     * Create the automatic signing file
@@ -172,26 +172,26 @@ The download is placed in your `Downloads` folder in a directory called `BuildTr
 
 ### Build Related Apps
 
-When you select **Build Related Apps**, you will be provided with a choice of apps that users of Trio often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
+When you select **`Build Related Apps`**, you will be provided with a choice of apps that users of Trio often use. Once you make your selection, the script will provide similar steps to download and build the selected app.
 
 The choices are:
 
-1. Build Loop Follow
-2. Build xDrip4iOS
-3. Build Glucose Direct
-4. Return to Menu
+1. `Build Loop Follow`
+2. `Build xDrip4iOS`
+3. `Build Glucose Direct`
+4. `Return to Menu`
 
 ### Run Maintenance Utilities
 
-When you select **Run Maintenance Utilities**, you will be provided with a choice of utilties helpful for Mac builders.
+When you select **`Run Maintenance Utilities`**, you will be provided with a choice of utilities helpful for Mac builders.
 
 The following options are offered:
 
-1. Delete Old Downloads
-2. Clean Derived Data
-3. Xcode Cleanup (The Big One)
-4. Clean Profiles
-5. Return to Menu
+1. `Delete Old Downloads`
+2. `Clean Derived Data`
+3. `Xcode Cleanup (The Big One)`
+4. `Clean Profiles`
+5. `Return to Menu`
 
 For more information, refer to [Loop and Learn: Maintenance Utitilites](https://www.loopandlearn.org/build-select/#utilities-disk) documentation.
 
@@ -236,7 +236,7 @@ You must build xDrip4iOS version 5.3.1 or newer to have access to the Trio App G
 ### Glucose Direct
 
 :::{important}
-Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
+Until the providers of Glucose Direct add a `Trio App Group` to their app, you cannot use this app with Trio.
 :::
 
 ```
@@ -246,7 +246,7 @@ Until the providers of Glucose Direct add a Trio App Group to their app, you can
 
 ### Alternative Branch for Trio
 
-Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **Build Trio** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#run-maintenance-utilities).
+Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the **`Build Trio`** script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace `branch_name` with your desired branch. Note that specific branches like this are not deleted as part of the `Delete Old Downloads` utility discussed in [Maintenance Utilities](#run-maintenance-utilities).
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -271,8 +271,8 @@ Open Xcode. If your Trio workspace is not already open, you can usually find it 
 
 Once you have Xcode open with your previous build of Trio, the first thing to do is open a terminal. Here are two methods - choose one:
 
-1. Use Xcode, Behaviors, Open Terminal if you configured [Xcode Behaviors](#xcode-behaviors)
-2. Locate the Trio folder using [Where is my Download](#where-is-my-download)
+1. Use Xcode, `Behaviors`, `Open Terminal` if you configured [Xcode Behaviors](#xcode-behaviors)
+2. Locate the `Trio` folder using [Where is my Download](#where-is-my-download)
 
 ### Customizations
 
@@ -377,7 +377,7 @@ You can now build the updated Trio app to your phone.
 
 ### First Xcode Build with Trio App Group
 
-If you previously built using Xcode when the Loop App Group was used, you may need to let Xcode connect with *Apple* to update the new Trio App Group. See instructions at [Mac Build after App Group Change](#mac-build-after-app-group-change).
+If you previously built using Xcode when the Loop App Group was used, you may need to let Xcode connect with *Apple* to update the new `Trio App Group`. See instructions at [Mac Build after App Group Change](#mac-build-after-app-group-change).
 
 
 [Top of Page](#build-and-update)
@@ -421,13 +421,13 @@ chmod +x ~/scripts/*.sh
 
 ### Add Behaviors to Xcode
 
-Under the Xcode menu item, select Behaviors, Edit Behaviors
+Under the Xcode menu item, select `Behaviors`, `Edit Behaviors`
 
 Follow these steps (refer to the graphic below):
 
 1. At the bottom of the window, click the `+` sign
-2. Under the Custom section, you should see the New Behavior row, enter `Open Terminal`
-3. On the right side at the bottom, click on Run, then `Choose Script`
+2. Under the `Custom` section, you should see the `New Behavior` row, enter `Open Terminal`
+3. On the right side at the bottom, click on `Run`, then `Choose Script`
 
 ![xcode behaviors - ready to select open terminal script](img/xcode-add-behavior.png)
 
@@ -446,14 +446,14 @@ Return to [Open Terminal](#open-terminal).
 
 If you have Xcode open, you can right-click on any file and select `Show in Finder`. Then at the bottom of the Finder window, right-click on the Trio folder and select `New Terminal at Folder`.
 
-If you do not have Xcode open, you can use *Finder* to locate the directory where the BuildTrio script saved the code. The directory is named after the branch with the date and time for the download:
+If you do not have Xcode open, you can use *Finder* to locate the directory where the `BuildTrio` script saved the code. The directory is named after the branch with the date and time for the download:
 
 * Released (main) branch: Downloads/BuildTrio/Trio_main-[date-time]/Trio
-    * Example: ~/Downloads/BuildTrio/Trio_main-220122-1352/Trio
+    * Example: `~/Downloads/BuildTrio/Trio_main-220122-1352/Trio`
 * Development (dev) branch: Downloads/BuildTrio/Trio_dev-[date-time]/Trio
-    * Example: ~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio
+    * Example: `~/Downloads/BuildTrio/Trio_dev-220108-1827/Trio`
 
-Use *Finder* to open a Terminal window at the Trio directory by right-clicking on it and selecting `New Terminal at Folder`. 
+Use *Finder* to open a Terminal window at the `Trio` directory by right-clicking on it and selecting `New Terminal at Folder`. 
 
 To open Xcode, type `xed .` in the Terminal.
 
@@ -462,19 +462,19 @@ Return to [Open Terminal](#open-terminal).
 ## Special Section on Trio App Group
 
 * If you have never built Trio before - just follow the instructions on this page: return [Top of Page](#build-and-update)
-* If you have already built Trio and have added the Trio App Group: return [Top of Page](#build-and-update)
-* If you have already built Trio, but you did not add the Trio App Group (or are not sure), please read this section for hints and help
+* If you have already built Trio and have added the `Trio App Group`: return [Top of Page](#build-and-update)
+* If you have already built Trio, but you did not add the `Trio App Group` (or are not sure), please read this section for hints and help
 
 Instructions for [GitHub](#browser-build-after-app-group-change) | [Mac-Xcode](#mac-build-after-app-group-change)
 
 ### Browser Build after App Group Change
 
-In order to build the Trio app with Browser Build, you must assign the Trio App Group to 3 of the 4 identifiers for Trio.
+In order to build the Trio app with Browser Build, you must assign the `Trio App Group` to 3 of the 4 identifiers for Trio.
 
 #### Step 1: Create Trio App Group
 
-* Check if you have a Trio App Group: [List your App Groups](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
-* Create a Trio App Group if you don't have one: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/)
+* Check if you have a `Trio App Group`: [List your App Groups](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+* Create a `Trio App Group` if you don't have one: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/)
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
@@ -486,7 +486,7 @@ Return to [Add Trio App Group to Identifiers](#add-trio-app-group-to-identifiers
 
 ### Mac Build after App Group Change
 
-The first time you build Trio after the change from Loop App Group to Trio App Group, you are likely to the see the build error in the first graphic.
+The first time you build Trio after the change from `Loop App Group` to `Trio App Group`, you are likely to see the build error in the first graphic.
 
 ![build error after switching to trio app group](img/trio-error-after-app-group-change.png)
 
