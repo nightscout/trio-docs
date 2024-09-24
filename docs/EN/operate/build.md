@@ -46,7 +46,7 @@ If you do not have a `Trio App Group`:
 
 * If you built previously using a Mac with Xcode, you may see the Xcode version in your **NAME** column - it starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for Trio is shown in detail
 * If you built during early beta testing, you might not have `Trio` at the beginning of each **IDENTIFIER** and the full **NAME** may be slightly different
-* Optional: You can click on a given row, edit the Description to match the **NAME** from the table below and it might making building easier in future
+* Optional: You can click on a given row, and edit the Description to match the **NAME** from the table below. This might make building easier in the future
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
