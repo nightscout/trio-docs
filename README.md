@@ -11,7 +11,7 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 
 **Example**:
 
-```makrdown
+```markdown
 # README
 
 ## Tips & Tricks
@@ -19,7 +19,6 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 ### Add a Chapter
 
 ### Link to Another File
-
 ```
 
 > [!TIP] 
