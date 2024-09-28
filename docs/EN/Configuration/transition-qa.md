@@ -191,7 +191,7 @@ Trio was forked from iAPS ver 2.3.3. If you used iAPS prior to February 2024, yo
 
 ## Coming From Commercial Closed-Loop Systems
 
-Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, please stay; if you're not getting the desired results, take the time to read through [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, please stay; if you're not getting the desired results, take the time to read through the [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
 
 **I Want to Try Trio. How Do I Proceed?**
 
