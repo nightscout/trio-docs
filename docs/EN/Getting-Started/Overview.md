@@ -18,6 +18,7 @@ If you do not understand the terminology, please read the appropriate documentat
 
 [<b>Basal Rates</b>](../settings/configuration/basalprofile.md)
 <br>
+
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need to carry this out through several sessions on your first attempt.
