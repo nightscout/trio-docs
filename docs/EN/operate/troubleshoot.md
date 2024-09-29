@@ -18,7 +18,7 @@ If you think you need more insulin primed in the new pod, consider customizing t
 
 ### Site Failure
 
-Pump failures can result from kinks or improper insertion of the cannula. As a result of a pump failure, Trio may come under the impression that more insulin is on board the patient than what was delivered, leading to sustained highs even after the pump is replaced. 
+Pump failures can result from kinks or improper insertion of the cannula. As a result of a pump failure, Trio may assume that more insulin is on board the patient than what was delivered, leading to sustained highs even after the pump is replaced. 
 
 When you find out your pump has failed, immediately open loop to prevent Trio from trying to deliver more insulin. Upon your next pump installation, you can then close loop and be patient. Trio will wait for the calculated insulin on board to drop before delivering insulin.
 
@@ -26,7 +26,7 @@ When you find out your pump has failed, immediately open loop to prevent Trio fr
 
 :::{admonition} Tips
 :class: tip
-  - Enter carbs for treatment into Trio but do not bolus for it
+  - Enter carbs for treatment into Trio, but do not bolus for it
   - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
 :::
 
@@ -64,7 +64,7 @@ If your BG rises fast and ends up too high, it is usually because the carbs were
 
 **Scenario:** _Your BG gets high after a meal and stays high for a long time. Trio gives you some SMBs, but not enough to bring you back down._
 
-Trio calculates the amount of insulin needed to bring you back into range. More insulin is needed when blood glucose remains high after a meal, but Trio needs corrected settings to make those adjustments. 
+Trio calculates the amount of insulin needed to bring blood glucose back into range. Additional insulin is needed when blood glucose remains high after a meal, but Trio needs the correct settings to make those adjustments. 
 
 - The first adjustment should be to reduce your CR. Reducing your carb ratio will result in **more** insulin for the carbs entered.
 - If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../settings/configuration/preferences/dynamicsettings.md#dynamic-cr) setting. 
