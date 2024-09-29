@@ -1,7 +1,7 @@
 # New User Setup
 Welcome to the New User Setup Guide! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the [Build Instructions](../operate/build.md) and come back here when you are ready to start the setup process!
 
-To set up your Trio app, touch the settings icon ⚙️ located on the bottom right of the main screen. Each step contains links to information on setting up each part of your Trio app. Use this as your homebase to reference back to as you set up your app.
+To set up your Trio app, touch the settings icon ⚙️ located on the bottom right of the main screen. Each step contains links to information on setting up each part of your Trio app. Use this as your home base to refer back to as you set up your app.
 <br>
 
 ## Step 1: Connect your Devices
@@ -48,7 +48,7 @@ The next step is to adjust the standard safety limits that will allow Trio to fu
 :::{warning}
 <b>DO NOT ENABLE DYNAMIC SETTINGS YET</b>
 
-It is essential that Trio have enough data to make sound recommendations. It is also essential that your settings are tuned to be used in an Oref algorithm and you feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:
+It is essential that Trio have enough data to make sound recommendations. It is essential that your settings are tuned to be used in an Oref algorithm and you feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:
 
  - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm
  - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of 7 consecutive days
@@ -67,7 +67,7 @@ It is essential that Trio have enough data to make sound recommendations. It is 
 
 ## Step 4: Enable Closed Loop
 
-Closed loop is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing will be done without your approval while in "open loop."
+Closed loop functionality is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running an 'open loop.'
 ```{image} img/closeLoop.png
 ```
 
@@ -75,7 +75,7 @@ Closed loop is turned off by default. This means Trio cannot make adjustments au
 <br>
 
 ## Step 5: Change App Icon (Optional)
-Under "App Icons" in the Settings Menu, you can find a variety of icons to use for your Trio app.
+Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.
 ```{image} img/changeAppIcon.png
 ```
 
