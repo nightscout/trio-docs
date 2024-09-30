@@ -148,11 +148,11 @@ Most Trio users take a bit of all these approaches. They have an apple without e
 
 ### iAPS Ver 2.3.3 or Earlier
 
-Transitioning from iAPS 2.3.3 to Trio is fairly straight-forward currently. The screens and menus will be very familiar.
+Transitioning from iAPS 2.3.3 to Trio is currently straightforward. The screens and menus will be very familiar.
 
 #### Settings
 
-Your settings will need to be entered manually, but all can be entered one-by-one from your iAPS settings without adjustment. If you have Nightscout, you can import your Pump Settings, Basal Profile, ISF, CR, Target Glucose, and previous CGM readings from the Nightscout Menu.
+Your settings will need to be entered manually, but they can all be entered one-by-one from your iAPS settings without adjustment. If you have Nightscout, you can import your Pump Settings, Basal Profile, ISF, CR, Target Glucose, and previous CGM readings from the Nightscout Menu.
 
 <b>Import Settings With Nightscout</b>
  1. Connect Nightscout to your Trio app (If you've already connected your Nightscout site, skip to step 2)
@@ -176,14 +176,14 @@ Your settings will need to be entered manually, but all can be entered one-by-on
 :::{admonition} Dynamic Settings
 :class: caution
 
-Because Trio is a separate app, your historical data from iAPS will not transfer. It is still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
+Because Trio is a separate app, your historical data from iAPS will not transfer. It is recommended that you wait 7 days before you enable dynamic settings. In the meantime, you may notice some adjustments made by autosens.
 :::
 
 ### iAPS ver 3.0 or Later
 
 #### Settings
 
-As with iAPS ver 2.3.3, your settings will need to be entered manually and/or [transferred from Nightscout](#iaps-ver-233-or-earlier). It is also still recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
+As with iAPS ver 2.3.3, your settings must be entered manually and/or [transferred from Nightscout](#iaps-ver-233-or-earlier). It is also recommended that you wait 7 days before enabling dynamic settings. In the meantime, you may notice some adjustments made by autosens.
 
 #### Other Differences
 
@@ -191,7 +191,7 @@ Trio was forked from iAPS ver 2.3.3. If you used iAPS prior to February 2024, yo
 
 ## Coming From Commercial Closed-Loop Systems
 
-Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, stay; if you're not getting the desired results, read through the [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
+Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's Control IQ, Medtronic's 780G, etc.? If you're happy, please stay; if you're not getting the desired results, take the time to read through the [Coming From iOS Loop](#coming-from-ios-loop) chapter to see the main issues Trio solves.
 
 **I Want to Try Trio. How Do I Proceed?**
 
