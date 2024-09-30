@@ -134,7 +134,8 @@ todo_include_todos = True
 # a list of builtin themes.
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    "collapse_navigation" : False
+    "collapse_navigation" : False,
+    "navigation_with_keys": True
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
