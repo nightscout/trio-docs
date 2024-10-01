@@ -1,0 +1,125 @@
+# Project information
+site_name: MkDocs Translate
+site_description: Example sphinx-build documentation project for use with mkdocs_translate script.
+
+site_dir: build/html
+site_url: http://jodygarnett.github.io/translate
+
+# Repository
+repo_name: translate
+repo_url: https://github.com/jodygarnett/translate
+edit_uri: edit/main/example/docs
+
+# Copyright
+copyright: Copyright &copy; 2024 Open Source Geospatial Foundation
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Configuration
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  # logo: assets/images/geoserver_mark.png
+  # favicon: assets/images/geoserver_mark.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.action.view
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - navigation.tracking
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - announce.dismiss
+
+# Plugins - install using: pip3 install -r requirements.txt
+plugins:
+  - exclude:
+      glob:
+        - "**/download/download.txt"
+  - include-markdown:
+      preserve_includer_indent: true
+      dedent: true
+      comments: false
+  - macros:
+      render_by_default: false
+      on_error_fail: true
+      on_undefined: strict
+      j2_block_start_string: "[[%"
+      j2_block_end_string: "%]]"
+  - search
+
+# Customizations
+hooks:
+  - download.py
+extra:
+  homepage: http://
+  social:
+    - icon: fontawesome/brands/github
+      link: https://docs.diy-trio.org/
+  version: "0.9"
+  release: "0.9.5"
+
+# Extensions
+# - These are carefully chosen to work with pandoc markdown support for whole document translation
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - md_in_html
+
+# Validation
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: info
+
+not_in_nav: |
+  **/download/*.md
+
+# Page tree
+nav:
+  - Home: index.md
