@@ -20,7 +20,7 @@ extra_css:
 theme:
   name: material
   language: en
-  custom_dir: overrides
+  # custom_dir: overrides
   # logo: assets/images/geoserver_mark.png
   # favicon: assets/images/geoserver_mark.png
   icon:
@@ -70,8 +70,8 @@ plugins:
   - search
 
 # Customizations
-hooks:
-  - download.py
+# hooks:
+#   - download.py
 extra:
   homepage: http://
   social:
