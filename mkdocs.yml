@@ -1,17 +1,15 @@
 # Project information
-site_name: MkDocs Translate
-site_description: Example sphinx-build documentation project for use with mkdocs_translate script.
+site_name: Trio documentation
 
-site_dir: build/html
-site_url: http://jodygarnett.github.io/translate
+site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
+site_url: https://docs.diy-trio.org
 
 # Repository
-repo_name: translate
-repo_url: https://github.com/jodygarnett/translate
-edit_uri: edit/main/example/docs
+repo_name: nightscout/trio-docs
+repo_url: https://github.com/nightscout/trio-docs
 
 # Copyright
-copyright: Copyright &copy; 2024 Open Source Geospatial Foundation
+copyright: TODO
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -69,8 +67,6 @@ plugins:
   - search
 
 # Customizations
-# hooks:
-#   - download.py
 extra:
   homepage: http://
   social:
@@ -122,3 +118,4 @@ not_in_nav: |
 # Page tree
 nav:
   - Home: index.md
+
