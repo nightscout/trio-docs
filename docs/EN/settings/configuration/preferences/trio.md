@@ -48,7 +48,7 @@ Remote configurations with announcement-type events can only be performed every 
 ## Recommended Bolus Percentage
 Recommended bolus percentage is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
 
-`Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (80), 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
+`Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
 
 :::{note}
 A manual bolus uses the `Eventual BG` for glucose prediction, whereas the `insulinReg` for SMBs uses the `minPredBG` (typically lower than Eventual BG).
