@@ -86,7 +86,7 @@ Limits the maximum temporary basal rate Trio is able to use at _any time_. The d
     the maximum temporary basal rate that can be set is **3 units per hour**
     
     $$
-    1.0 \times 3 = 3
+    2.0 \times 3 = 6
     $$
 
 ## Current Basal Safety Multiplier 
