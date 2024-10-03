@@ -18,9 +18,11 @@ requests==2.32.3
 snowballstemmer==2.2.0
 Sphinx==5.3.0
 sphinx-copybutton==0.5.2
+sphinx-new-tab-link==0.6.0
 sphinx-rtd-theme==1.2.0
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
+sphinxcontrib-extdevhelper-kasane==0.2.0
 sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jquery==4.1
 sphinxcontrib-jsmath==1.0.1
