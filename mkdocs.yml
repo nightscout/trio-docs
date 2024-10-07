@@ -73,7 +73,14 @@ extra:
   homepage: http://
   social:
     - icon: fontawesome/brands/github
-      link: https://docs.diy-trio.org/
+      link: https://github.com/nightscout/trio-docs
+      name: Trio on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/FnwFEFUwXE
+      name: Trio on Discord
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/groups/diytrio
+      name: Trio on Facebook
   version: "0.9"
   release: "0.9.5"
 
