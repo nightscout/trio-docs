@@ -73,7 +73,6 @@ plugins:
 
 # Customizations
 extra:
-  homepage: http://
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/nightscout/trio-docs
