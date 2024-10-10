@@ -87,7 +87,7 @@ Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) a
 ### Where can I learn more about the Oref algorithm?
 The first place to start if you want to learn more about the underlying algorithm is the extensive [OpenAPS documentation](https://openaps.readthedocs.io/). OpenAPS is the underlying algorithm Trio implements, with minor modifications mostly pertaining to the Dynamic settings.
 
-###Why does the 'Recommended Bolus Percentage' default to 70%?
+### Why does the 'Recommended Bolus Percentage' default to 70%?
 `Recommended Bolus Percentage` is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the total dosage. That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via Temp Basals and/or SMBs as the blood sugar rises.
 
 `Recommended Bolus Percentage` is a setting that allows the user to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.
@@ -125,7 +125,7 @@ Various blog posts have been written over the years regarding SMBs, and links to
 ### How does 'Max SMB Basal Minutes' limit SMBs?
 `Max SMB Basal Minutes` is one of the major limits on how much insulin a single SMB can deliver. The amount of insulin an SMB can deliver is related to the amount of scheduled basal insulin in your "Basal Profile" settings.
 
-Example: John is using Trio and has SMBs turned on in the settings. John's current basal rate is 1 unit per hour. John has `Max SMB Basal minutes` set to the default of 30. Therefore, a single SMB can deliver no more insulin than would be delivered by your basal in 30 minutes, i.e., 0.5 units. 
+Example: Bill is using Trio and has SMBs turned on in the settings. Bill's current basal rate is 1 unit per hour. Bill has `Max SMB Basal minutes` set to the default of 30. Therefore, a single SMB can deliver no more insulin than would be delivered by your basal in 30 minutes, i.e., 0.5 units. 
 
 ### What is UAM?
 UAM  is a way for the algorithm to recognize that either there is carb absorption or an unaccounted-for increase in glucose levels as a result of more carbs being onboard than entered or as a result of hormonal variation and then dose with it effectively.
@@ -135,7 +135,7 @@ To understand the logic behind UAM, have a read of Time Streets blog post [Under
 ### How does 'Max UAM SMB Basal Minutes' limit SMBs?
 `Max UAM SMB Basal Minutes` limits the size of SMBs that Trio can deliver when it detects an unannounced meal (UAM). The amount of insulin a UAM SMB can deliver is related to the amount of scheduled basal insulin in your "Basal Profile" settings. You can configure this setting to make UAM more or less aggressive in correcting meal spikes.
 
-Example: John has SMBs and UAM turned on in the settings. The algorithm has detected unexpected carb absorption and would like to deliver an SMB in response. John's current basal rate is 1 unit per hour. John has `Max UAM SMB Basal minutes` set to the default of 30. Therefore, a single SMB can deliver no more insulin than would be delivered by your basal in 30 minutes, i.e., 0.5 units. 
+Example: Bill has SMBs and UAM turned on in the settings. The algorithm has detected unexpected carb absorption and would like to deliver an SMB in response. Bill's current basal rate is 1 unit per hour. Bill has `Max UAM SMB Basal minutes` set to the default of 30. Therefore, a single SMB can deliver no more insulin than would be delivered by your basal in 30 minutes, i.e., 0.5 units. 
 
 ### I've turned on SMBs, but every time I receive an SMB, Trio cuts back or zero-temps my basal. Is that normal?
 Yes. SMBs effectively borrow insulin from the future to front load insulin delivery to assist in avoiding glucose spikes. Long, low, or zero temporary basal rates are expected to be observed with SMBs activated. This allows the algorithm to balance out the peak insulin timing and avoid hypoglycemia secondary to the increased insulin on board. 
