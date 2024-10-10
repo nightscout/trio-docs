@@ -3,13 +3,14 @@ site_name: Trio documentation
 
 site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
 site_url: https://docs.diy-trio.org
+site_author: Trio Community
 
 # Repository
 repo_name: nightscout/trio-docs
 repo_url: https://github.com/nightscout/trio-docs
 
 # Copyright
-copyright: TODO
+copyright: Trio Community
 
 extra_css:
   - assets/stylesheets/primary_color.css
