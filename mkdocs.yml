@@ -8,6 +8,7 @@ site_author: Trio Community
 # Repository
 repo_name: nightscout/trio-docs
 repo_url: https://github.com/nightscout/trio-docs
+edit_uri: edit/dev/docs/
 
 # Copyright
 copyright: Trio Community
@@ -52,7 +53,6 @@ theme:
 
   features:
     - announce.dismiss
-    - content.action.view
     - content.action.edit
     - content.code.copy
     - content.tabs.link
@@ -121,6 +121,10 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.smartsymbols
   - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - tables
