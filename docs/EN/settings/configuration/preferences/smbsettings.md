@@ -1,11 +1,12 @@
 # SMB Settings
->[!IMPORTANT]
->- Super micro boluses (SMB) deliver small doses of insulin. Your basal rate will be temporarily reduced after an SMB is delivered.
->- SMBs reduce blood sugar more quickly than temporary basal rates.
->- If you want Trio to make all SMB decisions, select Enable SMB Always and leave the other settings deselected.
->   - Follow the directions below if you want to configure SMBs only to run in certain conditions.
->- For a detailed look at when SMBs are delivered, see the chart in [Are SMBs Allowed?](#are-smbs-allowed) section. 
->- For setup recommendations, see the [Start-Up Guide](http://diy-trio.org/start-up-guide).
+
+!!! important
+    - Super micro boluses (SMB) deliver small doses of insulin. Your basal rate will be temporarily reduced after an SMB is delivered.
+    - SMBs reduce blood sugar more quickly than temporary basal rates.
+    - If you want Trio to make all SMB decisions, select Enable SMB Always and leave the other settings deselected.
+       - Follow the directions below if you want to configure SMBs only to run in certain conditions.
+    - For a detailed look at when SMBs are delivered, see the chart in [Are SMBs Allowed?](#are-smbs-allowed) section. 
+    - For setup recommendations, see the [Start-Up Guide](http://diy-trio.org/start-up-guide).
 
 ## Enable SMB Always
 Enabling this setting allows SMBs to be delivered if your blood sugar is predicted to go above target. 
@@ -18,30 +19,34 @@ The size of SMBs is limited. For more information, see the [OpenAPS documentatio
 This safety limiter looks at the difference between your last two blood glucose readings. If the difference is large, Trio suspects them to be incorrect and will suspend SMB delivery accordingly. You can adjust the amount of change that should be allowed before SMBs are delivered.
 A setting of 0.2 means it will only give SMBs if the difference between the current and previous blood glucose readings is no greater than 20%.
 
->**Example:**
->
->Your last CGM reading was 90mg/dL. The very next reading is 115mg/dL, an increase of 27%. If Max Delta-BG Threshold SMB is set to 0.2 (20%), this change is larger than the threshold, and no SMBs will be given.
+!!! example
+    
+    Your last CGM reading was 90mg/dL. The very next reading is 115mg/dL, an increase of 27%. If Max Delta-BG Threshold SMB is set to 0.2 (20%), this change is larger than the threshold, and no SMBs will be given.
 
->[!TIP]
->For a fully closed loop, 0.3 is advised.
+!!! tip
+    
+    For a fully closed loop, 0.3 is advised.
 
 ## Enable SMB With COB
 SMBs will be enabled if you currently have carbs on board (COB) to help you deal with meal spikes. This feature should be enabled if you want to use UAM.
 
->[!NOTE]
->If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
+!!! note
+    
+    If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
 
 ## Enable SMB with Temptarget
 SMBs will be enabled if you have set a lower blood sugar target temporarily. This will allow you to reach your target faster.
 
->[!NOTE]
->If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
+!!! note
+    
+    If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
 
 ## Enable SMB After Carbs
 SMBs will be enabled if you had carbs within the last 6 hours to help with meal spikes.
 
->[!NOTE]
->If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundent and does not need to be configured.
+!!! note
+    
+    If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundent and does not need to be configured.
 
 ## Allow SMB With High Temptarget
 By default, Trio will not allow SMBs if you have a temporary blood glucose target set above 5.5 mmol/L (100 mg/dL), even if "[Enable SMB Always](#enable-smb-always)" is toggled on. Toggling this feature ON will disable that safety check and not prevent SMBs when a high temporary target is set, as long as SMBs are otherwise enabled.
@@ -49,8 +54,9 @@ By default, Trio will not allow SMBs if you have a temporary blood glucose targe
 ## Enable SMB With High BG 
 This allows SMBs to occur above the measure set below in "...When Blood Glucose is Over (mg/dl)". 
 
->[!NOTE]
->If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
+!!! note
+    
+    If you already have "[Enable SMB Always](#enable-smb-always)" on, this feature is redundant and does not need to be configured.
 
 ## ... When Blood Glucose is Over (mg/dl)
 See the above setting for more information. This allows you to configure the target at which SMBs will be enabled.

@@ -102,9 +102,9 @@ Illness, menstrual cycle, inactive days, active days, home office days, stressfu
 
 <b><i>If any of those sound familiar, consider a switch to Trio</b></i>
 
-:::{important}
-You must read extensively and adapt to a new approach to diabetes management.
-:::
+!!! important
+    
+    You must read extensively and adapt to a new approach to diabetes management.
 
 **What's All That Talk About Changing the Way I Think?**
 
@@ -173,11 +173,9 @@ Your settings will need to be entered manually, but they can all be entered one-
     * In the same Nightscout Menu, you can also backfill missing glucose readings from Nightscout
 <br>
 
-:::{admonition} Dynamic Settings
-:class: caution
-
-Because Trio is a separate app, your historical data from iAPS will not transfer. It is recommended that you wait 7 days before you enable dynamic settings. In the meantime, you may notice some adjustments made by autosens.
-:::
+!!! warning "Dynamic Settings"
+    
+    Because Trio is a separate app, your historical data from iAPS will not transfer. It is recommended that you wait 7 days before you enable dynamic settings. In the meantime, you may notice some adjustments made by autosens.
 
 ### iAPS ver 3.0 or Later
 

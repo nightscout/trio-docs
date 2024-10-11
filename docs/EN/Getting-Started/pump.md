@@ -12,31 +12,33 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 
 ### Omnipod Pumps
 
-:::{admonition} Reminder and Disclaimer
-:class: note
-The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
-:::
+!!! not "Reminder and Disclaimer"
+    
+    The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
 
 #### Omnipod Eros
 
 Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
 
 ![eros](img/eros.png)
+{align=center}
 
 #### Omnipod DASH
 
 The DASH pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
 
 ![dash](img/dash.png)
+{align=center}
 
-:::{admonition} Omnipod 5
-:class: danger
-**Omnipod 5 pods are _NOT_ compatible with Trio**
-:::
+!!! danger "Omnipod 5"
+    
+    **Omnipod 5 pods are _NOT_ compatible with Trio**
+
 
 ### Medtronic Pumps
 
 ![pump](img/pump.png)
+{align=center})
 
 There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Trio compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
 
@@ -53,6 +55,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
 ![pump_model](img/pump_model.jpg)
+{align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
     * 722 ---> Pump Model Number
@@ -84,6 +87,7 @@ If the pump has been active recently or has a reservoir installed, follow these 
 3. Read the bottom line of the display.
 
 ![pump_firmware](img/pump_firmware.png)
+{align=center}
 
 #### Medtronic Pump Differences
 

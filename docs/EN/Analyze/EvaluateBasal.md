@@ -1,35 +1,37 @@
 ## Evaluate Basal
 
-:::{warning}
-<i>This is not medical advice. Understanding the changes you are making is important, and always be sure to exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
-:::
+!!! warning "Not a Medical Advice"
+    
+    This is not medical advice.  
+    Understanding the changes you are making is important, and always be sure to exercise caution.  
+    When in doubt, consult your diabetes care team for settings guidance.
+
 
 ### Before Adjusting Basal Rates
 
-1. <b>Consider CR and ISF <i>First</i></b>
+1. **Consider CR and ISF _First_**
+	- *Were carbs eaten in the last 3 hours?*
+	-  *Are you in open loop?*  
+         
+        !!! warning "Caution"
+          
+            Until you understand how the Trio algorithm works, you should only make basal adjustments after basal testing in an open loop.
 
-   - <i>Were carbs eaten in the last 3 hours?</i>
-   - <i>Are you in open loop?</i>
-
-   :::{caution}
-   Until you understand how the Trio algorithm works, you should only make basal adjustments after basal testing in an open loop.
-   :::
-
-2. <b>Is this a one-time event, or does it happen consistently over multiple days?</b>
-
+1. **Is this a one-time event, or does it happen consistently over multiple days?**  
    Make sure it happens twice at the same time of day before making any adjustments.
 
 ### How to Adjust Basal
 
-:::{tip}
-A general rule of thumb is to adjust the basal rate 1 hour before the cgm shows a change in glucose levels that you want to correct. This is determined by the approximate peak time of rapid-acting insulin.
-:::
+!!! tip
+    
+    A general rule of thumb is to adjust the basal rate 1 hour before the CGM shows a change in glucose levels that you want to correct. This is determined by the approximate peak time of rapid-acting insulin.
 
-<i>For Example:</i> This person noticed an increase in their average cgm readings starting around 1:00 AM. They were in open loop and had no late-night snacks, so they could rule out CR and ISF as factors. Because the rise began at 1:00 AM, they should increase their basal rate at 12:00 AM.
-```{figure} img/adjustBasal.png
-:alt: Adjust Basal
-:width: 600px
-```
+!!! example
+    
+    This person noticed an increase in their average CGM readings starting around 1:00 AM. They were in open loop and had no late-night snacks so that they could rule out CR and ISF as factors. Because the rise began at 1:00 AM, they should increase their basal rate at 12:00 AM.
+
+![Adjust Basal](img/adjustBasal.png){width="600px"}
+{align=center}
 
 ### Nightscout
 

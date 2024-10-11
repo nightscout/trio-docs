@@ -1,9 +1,11 @@
 # Statistics
->[!IMPORTANT]
->**This section is entirely visual and does not impact insulin dosage calculations**
+
+!!! important
+    
+    This section is entirely visual and does not impact insulin dosage calculations
 
 ### Low Glucose Limit
-Sets the lower blood sugar limit for statistical determination of time below range (TBR).
+Sets the lower blood sugar limit for statistical determination of *time below range* (TBR).
 
 ### High Glucose Limit
 Sets the higher blood sugar limit for statistical determination of time above range (TAR)

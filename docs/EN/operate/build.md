@@ -13,8 +13,9 @@ The Trio repository contains instructions for building the Trio app using a brow
 * [LoopDocs: GitHub Build Overview](https://loopkit.github.io/loopdocs/browser/bb-overview/)
 * [LoopDocs: GitHub Build Other Apps](https://loopkit.github.io/loopdocs/browser/other-apps/)
 
-:::{tip} If using the LoopDocs instructions you need the important information below to build Trio instead of Loop
-:::
+!!! tip
+    
+    If using the LoopDocs instructions you need the important information below to build Trio instead of Loop
 
 **Every app you build will use the same [6 Secrets](https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file).**
 
@@ -114,7 +115,7 @@ If you built previously, before the App Group changed from `Loop` to `Trio`, you
 * [Create the `Trio App Group`](#create-the-trio-app-group)
 * Examine the [Table of Identifiers](#table-of-identifiers) - it is optional, but editing the descriptions to match the **Names** in that table will make following directions easier in the future
 * Update the [App Group to be the `Trio App Group` for the Identifiers (Trio, Trio Watch and Trio Watchkit Extension)](#add-trio-app-group-to-identifiers)
-* Run the **Action: 3. Create Certificates** to make certificate which go with the new `Trio App Group`
+* Run the **Action: 3. Create Certificates** to make certificates that go with the new `Trio App Group`
 
 ### Continue Updating
 
@@ -208,13 +209,13 @@ If you need it, you are most likely to get help in one of these groups:
 
 ### xDrip4iOS or Glucose Direct as CGM Source
 
-:::{important}
-LibreTransmitter is provided as part of Trio. Neither xDrip4iOS or Glucose Direct are required to interact with your compatible Libre sensor using Trio.
-:::
+!!! important
+    
+    LibreTransmitter is provided as part of Trio. Neither xDrip4iOS nor Glucose Direct are required to interact with your compatible Libre sensor using Trio.
 
-:::{important}
-Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
-:::
+!!! important
+    
+    Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
 
 If you want to use xDrip4iOS as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
 
@@ -224,9 +225,9 @@ These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-scr
 
 ### xDrip4iOS
 
-:::{important}
-You must build xDrip4iOS version 5.3.1 or newer to have access to the Trio App Group required to work with Trio.
-:::
+!!! important
+    
+    You must build xDrip4iOS version 5.3.1 or newer to have access to the Trio App Group required to work with Trio.
 
 ```
 /bin/bash -c "$(curl -fsSL \
@@ -235,9 +236,9 @@ You must build xDrip4iOS version 5.3.1 or newer to have access to the Trio App G
 
 ### Glucose Direct
 
-:::{important}
-Until the providers of Glucose Direct add a `Trio App Group` to their app, you cannot use this app with Trio.
-:::
+!!! important
+    
+    Until the providers of Glucose Direct add a `Trio App Group` to their app, you cannot use this app with Trio.
 
 ```
 /bin/bash -c "$(curl -fsSL \

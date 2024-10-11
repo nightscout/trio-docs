@@ -4,10 +4,10 @@ Here are a few ways to customize the Trio code to suit your needs better. Please
 
 ## Bypass Authentication for Bolusing
 
-:::{warning}
-- If you disable this, you remove an important safety feature.
-- In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
-:::
+!!! warning
+    
+    - If you disable this, you remove an important safety feature.
+	- In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
 Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Trio. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
@@ -29,12 +29,12 @@ if false, context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 
 The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you come from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Trio - be conservative.
 
-:::{admonition} It is important to know
-:class: tip
-Trio does not include the amount of insulin in the prime or insertion steps in your IOB. 
- - The pod reports every pulse that it delivers to Trio. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts.
- - The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you slide to insert.
-:::
+!!! tip "It is important to know"
+    
+    Trio does not include the amount of insulin in the prime or insertion steps in your IOB. 
+    
+     - The pod reports every pulse that it delivers to Trio. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts.
+     - The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you slide to insert.
 
 [Eros Pods](#eros) and [Dash Pods](#dash) have different locations for this change. Some change both files just in case, but that is unnecessary if you're only using one type of pod.
 

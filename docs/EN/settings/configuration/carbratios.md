@@ -1,9 +1,9 @@
 # Insulin Carbohydrate Ratio
-:::{admonition} Highlights
-:class: tip
- - CR can be transferred from your pump
- - Adjust your CR by performing a test meal experiment or observing autotune.
-:::
+
+!!! tip "Highlights"
+    
+	 - CR can be transferred from your pump
+	 - Adjust your CR by performing a test meal experiment or observing autotune.
 
 CR refers to the amount of carbohydrates one unit of insulin is able to neutralize. 
 

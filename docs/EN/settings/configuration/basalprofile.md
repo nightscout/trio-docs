@@ -1,9 +1,9 @@
 # Basal Profile
-:::{admonition} Highlights
-:class: tip
- - Basal profile can be transferred from a Medtronic pump or Nightscout account
- - Adjust your basal profile by doing fasting experiments, reviewing your IOB at times of fasting, and observing autotune.
-:::
+
+!!! tip "Highlights"
+    
+	 - Basal profile can be transferred from a Medtronic pump or Nightscout account
+	 - Adjust your basal profile by doing fasting experiments, reviewing your IOB at times of fasting, and observing autotune.
 
 Basal profile consists of your scheduled basal rates, which determine how much insulin is being delivered at each hour of the day. It is important to understand that these settings are not taken verbatim when looping with Trio. Based on your current blood sugar reading, they are adjusted every loop cycle and replaced with temporary basal rates. Your set values are altered by autosens or autotune (if enabled) based on your historical data.
 

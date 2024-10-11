@@ -1,6 +1,7 @@
 # Compatible CGM
 
 CGM selection includes the following:
+
 * Nightscout
 * xDrip
 * Dexcom G5
@@ -28,7 +29,9 @@ Trio can intercept its glucose readings as long as the Dexcom G7 app is installe
 ## Glucose Simulator
 The Glucose Simulator adds artificial CGM readings to the screen so you can see how your readings might look in the app. When using this CGM option, you cannot manually influence the readings shown to reflect a desired glucose response. Actions taken by the Trio algorithm also do not affect the cgm readings in the Glucose Simulator. They are for visual purposes only. For this reason, using the Glucose Simulator will not help you understand how the algorithm influences blood sugars.
 
-***The Glucose Simulator should never be used in conjunction with a live pump connected to a person (or animal).***
+!!! warning
+    
+    ***The Glucose Simulator should never be used in conjunction with a live pump connected to a person (or animal).***
 
 ## Libre Transmitter
 This option pairs a compatible Libre CGM directly with Trio without using a separate app like xDrip4iOS or Glucose Direct.

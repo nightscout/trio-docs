@@ -1,9 +1,9 @@
 # Autotune
-:::{admonition} Highlights
-:class: tip
- - Do not enable autotune unless you have full confidence in your current profile settings 
- - Autotune adjustments are limited by autosens max/min
-:::
+
+!!! tip "Highlights"
+    
+	 - Do not enable autotune unless you have full confidence in your current profile settings 
+	 - Autotune adjustments are limited by autosens max/min
 
 ## What is Autotune?
 Autotune makes iterative adjustments to your profile settings (basal rates, ISF, and carb ratio) based on your last 24 hours of data. The adjustments made by Autotune are small, with a maximum of 10% change to the current CR and ISF or 20% change to the current basal rates per run, but they add up over days. Autotune is run nightly by default unless it is manually run by the user.
@@ -20,9 +20,9 @@ For ISF, it calculates the 50th percentile (median) deviation for the entire day
 For CR, it calculates the total deviations over all of the day's mealtimes, compares them to the deviations expected based on existing CR and the known amount of carbs entered, and applies 10% of that adjustment to CR.
 
 ## Important note on Dynamic Settings
-:::{tip}
-Autotune results can be unreliable if dynamic settings are enabled.
-:::
+
+!!! tip
+    Autotune results can be unreliable if dynamic settings are enabled.
 
 Because Autotune uses Deviations to calculate basal variation, it has to calculate Deviations. It does this using a profile-based ISF value. 
 

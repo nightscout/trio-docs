@@ -1,10 +1,8 @@
 # Visualization and Monitoring
-:::{admonition} Highlights
-:class: tip
-- Nightscout is optional but encouraged
-- Nightscout is a useful tool for data analysis and followers
-- Create a Nightscout server and input your URL and API_SECRET in Trio. Test the connection and enable "Allow Uploads."
-:::
+!!! tip "Highlights"
+    - Nightscout is optional but encouraged
+    - Nightscout is a useful tool for data analysis and followers
+    - Create a Nightscout server and input your URL and API_SECRET in Trio. Test the connection and enable "Allow Uploads."
 
 ## Nightscout Introduction
 

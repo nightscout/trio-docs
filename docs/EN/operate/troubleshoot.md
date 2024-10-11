@@ -3,17 +3,16 @@
 
 ## Site Change and Site Failures
 
-:::{admonition} Tips
-:class: tip
-  - Pump site changes can temporarily impact control. 
-  - Pump site failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
-:::
+!!! tip "Tips"
+    
+    - Pump site changes can temporarily impact control. 
+    - Pump site failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
 
 ### Site Change
 
 Pump site changes can negatively impact your immediate glycemic control. Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity. Trio should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
 
-**For Omnipod**\
+**For Omnipod**  
 If you think you need more insulin primed in the new pod, consider customizing that line of code with [these instructions](./customize.md#omnipod-add-extra-insulin-on-insertion).
 
 ### Site Failure
@@ -24,11 +23,10 @@ When you find out your pump has failed, immediately open loop to prevent Trio fr
 
 ## Low Treatment
 
-:::{admonition} Tips
-:class: tip
-  - Enter carbs for treatment into Trio, but do not bolus for it
-  - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
-:::
+!!! tip "Tips"
+    
+    - Enter carbs for treatment into Trio, but do not bolus for it
+    - Consider reducing your profile ISF or Adjustment Factor if Dynamic ISF is enabled
 
 Low blood sugar events can happen from time to time, but you will typically not require as many carbs to treat your lows as opposed to MDI or using a pump. When you treat a low, you should enter the carbs consumed into the Trio system so its autotune functionality can make better choices on your ICR, ISF, and basal rates.
 
@@ -36,23 +34,22 @@ If you experience a roller coaster pattern of highs and lows after treatment, yo
 
 ## Rebound Lows
 
-:::{admonition} Tips
-:class: tip
- - Treating lows with fast carbs can give a fast BG rise
- - Under certain circumstances, Trio might react to the fast BG rise by giving insulin, leading to another low
-:::
+!!! tip "Tips"
+    
+    - Treating lows with fast carbs can give a fast BG rise
+    - Under certain circumstances, Trio might react to the fast BG rise by giving insulin, leading to another low
 
 To avoid a second low, you can instruct Trio not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../settings/configuration/preferences/smbsettings.md) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
 
-:::{warning}
- - **Setting a temporary target is not the same as disconnecting the pump.** Trio will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment.
-:::
+!!! warning
+
+    **Setting a temporary target is not the same as disconnecting the pump.** Trio will still be able to give you insulin during the temporary target, but only by adjusting basal rates, resulting in a less aggressive treatment.
 
 ## Highs after meals
 
-:::{tip}
-**It is _normal_ for BG to rise after a meal. This happens to everyone, with or without diabetes. The key is to avoid very high BG levels and bring them back into range as soon as possible.**
-:::
+!!! tip
+    
+    **It is _normal_ for BG to rise after a meal. This happens to everyone, with or without diabetes. The key is to avoid very high BG levels and bring them back into range as soon as possible.**
 
 ### Fast Rise
 

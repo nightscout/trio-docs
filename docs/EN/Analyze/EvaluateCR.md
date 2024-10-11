@@ -1,8 +1,10 @@
 ## Evaluate CR
 
-:::{warning}
-<i>This is not medical advice. It is important to understand your changes and always exercise caution. When in doubt, consult your diabetes care team for settings guidance.</i>
-:::
+!!! warning "Not a Medical Advice"
+    
+    This is not medical advice.  
+    It is important to understand your changes and always exercise caution.  
+    When in doubt, consult your diabetes care team for settings guidance.
 
 ### Before Adjusting CR
 

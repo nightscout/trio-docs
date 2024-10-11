@@ -1,22 +1,23 @@
 # Autosens, Dynamic ISF/CR, and Adjust Basal
-:::{admonition} Highlights
-:class: tip
-- Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
-- Bias the calculated ISF/CR/Basal rates towards more or less aggressive values by increasing or decreasing the adjustment factor accordingly.
-- Adjustments are limited by autosens max/min.
-:::
-:::{important}
-  The examples in this section employ the default logarithmic formula for calculations. For information on using Sigmoid, jump to [this section](./sigmoid.md).
-:::
+
+!!! tip "Highlights"
+    
+	- Enable Dynamic ISF, Dynamic CR, and/or Adjust Basal for more rapid adjustments in response to physiological changes in insulin sensitivity
+	- Bias the calculated ISF/CR/Basal rates towards more or less aggressive values by increasing or decreasing the adjustment factor accordingly.
+	- Adjustments are limited by autosens max/min.
+
+!!! important
+    
+    The examples in this section employ the default logarithmic formula for calculations. For information on using Sigmoid, jump to [this section](./sigmoid.md).
 
 ## Autosens
 Auto-sensitivity (Autosens) reviews your last 8 hours and 24 hours of data every loop cycle (5 min) and determines whether you have been reacting more or less sensitively to insulin. It then makes conservative temporary adjustments to your basal rates, blood sugar target, and ISF.
 
->**Example:**
->
->_Autosens finds Bill has been running more sensitive to insulin lately. In the last 24 hours, he has been 2X more sensitive to insulin, whereas, in the last 8 hours, he has been 3X more sensitive to insulin._
+!!! example
+    
+    *Autosens* finds Bill has been running more sensitive to insulin lately. In the last 24 hours, he has been 2X more sensitive to insulin, whereas, in the last 8 hours, he has been 3X more sensitive to insulin.
 
-Autosens then takes the more conservative calculated sensitivity. In this example, the more conservative value is obtained from the 8-hour window because by assuming Bill is 3X more as opposed to 2X more sensitive to insulin, the system will be posed to give less insulin.
+*Autosens* then takes the more conservative calculated sensitivity. In this example, the more conservative value is obtained from the 8-hour window because by assuming Bill is 3X more as opposed to 2X more sensitive to insulin, the system will be posed to give less insulin.
 
 If you are using Autotune, Autosens will use your calculated Autotune CR, ISF, and basal rates as its baseline rather than your set values.
 
@@ -27,10 +28,10 @@ Some thought Autosens was too conservative and slow to make changes. `Dynamic IS
 
 Dynamic ISF takes into consideration a new variable called the `Adjustment Factor`, which affects its aggressiveness. If Dynamic ISF is too aggressive, you can decrease this number by 0.05-0.1 points to make it more meek. Likewise, increase this number if you still feel dynamic ISF is not aggressive enough.
 
-:::{note}
-- Dynamic ISF is temporarily disabled, and the system reverts to Autosens if either `High Temptarget Raises Sensitivity` or `Exercise Mode` is enabled and a high temporary target has been set by the user.
-While Dynamic ISF is inherently more aggressive, it also provides the user with greater control via the `Adjustment Factor` compared to Autosens. You can decrease the `Adjustment Factor` to make Dynamic ISF less aggressive than the calculated Autosens values. 
-:::
+!!! note
+    
+    - Dynamic ISF is temporarily disabled, and the system reverts to Autosens if either `High Temptarget Raises Sensitivity` or `Exercise Mode` is enabled and a high temporary target has been set by the user.
+    While Dynamic ISF is inherently more aggressive, it also provides the user with greater control via the `Adjustment Factor` compared to Autosens. You can decrease the `Adjustment Factor` to make Dynamic ISF less aggressive than the calculated Autosens values. 
 
 ### Advanced information
 Autosens determines a ratio (`autosens.ratio`) and alters your ISF in the following manner:
@@ -39,9 +40,9 @@ Autosens determines a ratio (`autosens.ratio`) and alters your ISF in the follow
 Profile\ ISF\ ÷\ autosens.ratio\ =\ New\ ISF
 ```
 
->**Example:**
->
->_Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has an `autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF)_
+!!! example
+    
+    Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has an `autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF).
 
 When Autosens adjusts the ISF, it uses the following calculation:
 ```{math}
@@ -103,17 +104,6 @@ See `Weighted Average of TDD` setting to understand how this variable is calcula
 
 **Example:**
 
-_Bill's TDD has been 55 U over the last 24 hours, and his 10-day average is 48 U. He has set his `Weighted average of TDD` in preferences to 0.7. His current profile basal rate is 1 U/h._
-
-```{math}
-Weighted\ average\ of\ TDD\ =\ 0.7 * 55 U + 0.3 * 48 U = 52.9 U
-
-basal.autosens.ratio\ =\ 52.9 U\ / 48 U\ =\ 1.1U
-
-New\ basal\ profile\ =\ 1 U/h * 1.1\ =\ 1.1 U/h
-```
-
-:::{admonition} Final Thoughts
-:class: tip
-Remember that all Autosens ratios calculated in this section are being limited by Autosens Max and Autosens Min safety limiters. Additionally, Dynamic CR has a built-in safety limiter against highly aggressive ratios.
-:::
+!!! tip "Final Thoughts"
+    
+    Remember that all Autosens ratios calculated in this section are being limited by Autosens Max and Autosens Min safety limiters. Additionally, Dynamic CR has a built-in safety limiter against highly aggressive ratios.

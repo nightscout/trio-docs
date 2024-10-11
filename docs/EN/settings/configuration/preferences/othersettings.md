@@ -1,6 +1,8 @@
 # OpenAPS Other Settings
->[!CAUTION]
->***None of these settings likely require adjustment from their defaults***
+
+!!! warning "Caution"
+    
+    **None of these settings likely require adjustment from their defaults**
 
 ## Rewind Resets Autosens
 "Rewind" in Medtronic lingo refers to the attachment of a new insulin reservoir and infusion set. For Omnipod users, this means replacing your pod with a new one.
@@ -15,8 +17,10 @@ For more information, please read [Autosens and Dynamic ISF/ICR](../concepts/aut
 Toggle this on to use the "Insulin Peak Time" setting.
 
 ## Insulin Peak Time
->[!NOTE]
->Requires "Use Custom Peak Time" to be enabled.
+
+!!! note
+    
+    Requires "Use Custom Peak Time" to be enabled.
 
 Select a peak activity time point, based on your insulin type.
 
@@ -27,12 +31,15 @@ _Light sleepers using OpenAPS would find that the notifications delivered by Ope
 
 This setting attempts to reduce notifications produced by OpenAPS (and Trio). However, it could potentially impact control and make it harder for users to determine if the system is working.
 
->[!CAUTION]
->**It is recommended to keep this setting disabled**
+!!! warning "Caution"
+    
+    **It is recommended to keep this setting disabled**
 
 ## Unsuspend if No Temp
->[!IMPORTANT]
->This setting only applies to Medtronic Pumps
+
+!!! important
+    
+    This setting only applies to Medtronic Pumps
 
 After manually suspending your pump, you will be provided with a reminder at a chosen time to resume it. Many people, however, neglect this reminder and forget to unsuspend, leading to highs.
 
@@ -84,8 +91,10 @@ When attempting to measure carbohydrates on board (COB) Trio may not be fully ac
 >
 >Bill is assumed to have 0g carbs on board
 
->[!TIP]
->Recommend to keep this value at the default of 1 meaning it will not impact Trio's calculations. This feature is closely tied to "Remaining Carbs Cap."
+!!! tip
+    
+    Recommend to keep this value at the default of 1 meaning it will not impact Trio's calculations.  
+    This feature is closely tied to "Remaining Carbs Cap."
 
 ## Remaining Carbs Cap
 This setting is a safety limiter that determines the maximum amount of carbs that are assumed to be absorbed after 4 hours of carb absorption. A minimum of 90 carbs is mandatory for this setting.
@@ -94,8 +103,9 @@ This setting is a safety limiter that determines the maximum amount of carbs tha
 >
 >Bill eats 150 carbs. After 4 hours, Trio calculates a COB of 110. It will reduce that number to 90 carbs.
 
->[!TIP]
->It is recommended to keep this value at default
+!!! tip
+    
+    It is recommended to keep this value at default
 
 ## Noisy CGM Target Multiplier
 If Trio detects that CGM data has been noisy, it will increase your target blood sugar by a set fraction to avoid you getting low. Default is 30% higher (1.3)
@@ -108,5 +118,6 @@ If Trio detects that CGM data has been noisy, it will increase your target blood
 >- 5 mmol/L * 1.3 = 6.5 mmol/L
 >- 90 mg/dL * 1.3 = 117 mg/dL
 
->[!TIP]
->It is recommended to keep this value at the default of 1.3.
+!!! tip
+    
+    It is recommended to keep this value at the default of 1.3.

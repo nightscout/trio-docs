@@ -1,20 +1,17 @@
 # SMB and UAM
-:::{admonition} Highlights
-:class: tip
- - Enable SMB and UAM after ensuring accurate basal rates and ISF.
- - Adjust SMB/UAM minutes to allow the system to give greater amounts of insulin with one bolus.
- - Max IOB must be greater than 0 for it to function. _Suggested: average meal bolus + 3x max daily basal._
-:::
+!!! tip "Highlights"
+	- Enable SMB and UAM after ensuring accurate basal rates and ISF.
+	- Adjust SMB/UAM minutes to allow the system to give greater amounts of insulin with one bolus.
+	- Max IOB must be greater than 0 for it to function. _Suggested: average meal bolus + 3x max daily basal._
 
 ## Super Micro Boluses
 Super micro bolus (SMB) gives you small amounts of insulin upfront in the form of a bolus. Your temporary basal rates will be reduced accordingly before or after the SMB is delivered, so you will overall receive the same amount of insulin you would have received with temporary basal rates alone. SMB allows for faster control of blood sugars by providing more insulin upfront.
 
-There are limitations on the size of SMBs. <a href = "https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb">See the OpenAPS documentation for more information.</a>
+There are limitations on the size of SMBs. [See the OpenAPS documentation for more information](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb).
 
-:::{important}
- - Please ensure your profile settings are accurate before enabling SMB and UAM.
- - Do not perform manual correction boluses with SMB and UAM enabled. You will be at a high risk of having a low.
-:::
+!!! important
+    - Please ensure your profile settings are accurate before enabling SMB and UAM.
+    - Do not perform manual correction boluses with SMB and UAM enabled. You will be at a high risk of having a low.
 
 There are numerous settings related to enabling SMBs in Trio. Below is the order of precedence of the settings Trio uses when deciding whether to enable or disable SMB:
 

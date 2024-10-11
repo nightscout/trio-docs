@@ -6,9 +6,9 @@ Allows you to toggle between mmol/L and mg/dL blood glucose units.
 ## Remote Control
 Allows for remote control of Trio using Nightscout.
 
-:::{caution}
-**Duplicate Delivery Risk**
-:::
+!!! warning "Caution"
+    
+    **Duplicate Delivery Risk**
 
 ***Please read before using Remote Features***
 
@@ -41,18 +41,18 @@ To configure loop status, pump, or to bolus:
 * To control looping, enter either `looping:true` or `looping:false`
 * To control temporary basal rate, enter `tempbasal:(rate),(minutes)` (ex: `tempbasal:0,60` to set temporary basal rate at 0 U/hr for 60 minutes)
 
-:::{note}
-Remote configurations with announcement-type events can only be performed every **10** minutes.
-:::
+!!! note
+    
+    Remote configurations with announcement-type events can only be performed every **10** minutes.
 
 ## Recommended Bolus Percentage
 Recommended bolus percentage is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the full dosage.  That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via SMBs as the blood sugar starts to rise.
 
-`Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
+`Recommended Bolus Percentage` allows you to alter the amount initially delivered. By default (80), 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered prior to the meal.
 
-:::{note}
-A manual bolus uses the `Eventual BG` for glucose prediction, whereas the `insulinReg` for SMBs uses the `minPredBG` (typically lower than Eventual BG).
-:::
+!!! note
+    
+    A manual bolus uses the `Eventual BG` for glucose prediction, whereas the `insulinReg` for SMBs uses the `minPredBG` (typically lower than Eventual BG).
 
 ## Skip Bolus screen after carbs
 After entering carbs, a mealtime bolus will not be suggested or delivered.

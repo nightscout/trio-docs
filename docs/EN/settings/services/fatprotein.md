@@ -1,11 +1,9 @@
 # Fat and Protein Conversion
-:::{admonition} Highlights
-:class: tip
-- Turn on to bolus for fat and protein
-- Adjust your CR if you have lows
-- Decrease your Interval in Minutes to make insulin delivery smoother
-- Increase your "Override With A Factor Of" by 0.1 increments if you continue to have fat and protein spikes
-:::
+!!! tip "Highlights"
+    - Turn on to bolus for fat and protein
+    - Adjust your CR if you have lows
+    - Decrease your Interval in Minutes to make insulin delivery smoother
+    - Increase your "Override With A Factor Of" by 0.1 increments if you continue to have fat and protein spikes
 
 ## Convert Fat and Protein
 Many individuals may experience slow blood sugar rise after fatty or high-protein meals. Enabling "Convert Fat and Protein" allows you to provide a bolus for fat and protein units (FPU). The bolus is delivered in segments over a selected period of time to avoid the gradual rise in blood sugar. This is similar to setting absorption time or eCarbs if coming from Loop or AndroidAPS, respectively. [For more information, click to see the Omnicalculator.](https://www.omnicalculator.com/health/warsaw-method#what-is-warsaw-method-and-how-does-it-work)
