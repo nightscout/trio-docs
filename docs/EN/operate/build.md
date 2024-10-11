@@ -1,8 +1,8 @@
 # Build and Update
 
-**Jump to...**\
-Build with [GitHub](#build-trio-with-github) | [Mac-Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)\
-Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode) \
+**Jump to...**  
+Build with [GitHub](#build-trio-with-github) | [Mac-Xcode](#build-trio-with-xcode) | [Script](#build-trio-with-script)  
+Update with [GitHub](#update-trio-with-github) | [Mac-Xcode](#update-trio-with-xcode)  
 Special Section on Trio App Group [Special Section on Trio App Group](#special-section-on-trio-app-group)
 
 ## Build Trio with GitHub
