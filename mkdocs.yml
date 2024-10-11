@@ -12,6 +12,7 @@ repo_url: https://github.com/nightscout/trio-docs
 copyright: TODO
 
 extra_css:
+  - assets/stylesheets/primary_color.css
   - assets/stylesheets/extra.css
 
 # Configuration
@@ -26,13 +27,14 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
+      primary: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
