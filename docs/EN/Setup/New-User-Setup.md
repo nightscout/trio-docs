@@ -20,9 +20,7 @@ If you have not already, please verify that your devices are compatible:
 
 Once you have verified that you are using compatible devices, you can connect them in the Trio app settings menu.
 
-```{image} img/DeviceMenu.png
-:width: 300px
-```
+![Devices Settings](img/DeviceMenu.png){ width=300px  }
 
  1. [Pump](../Configuration/Devices.md#pump)
  2. [CGM](../Configuration/Devices.md#cgm)
@@ -69,16 +67,16 @@ It is essential that Trio have enough data to make sound recommendations. It is 
 ## Step 4: Enable Closed Loop
 
 Closed loop functionality is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running an 'open loop.'
-```{image} img/closeLoop.png
-```
+
+![Enable Closed loop](img/closeLoop.png)
 
 [More on closing the loop](../Configuration/Configure.md)
 
 ## Step 5: Change App Icon (Optional)
 
 Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.
-```{image} img/changeAppIcon.png
-```
+
+![Change App Icon](img/changeAppIcon.png)
 
 
 Have a special icon in mind? You can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
