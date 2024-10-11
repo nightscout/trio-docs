@@ -36,30 +36,35 @@ Dynamic ISF takes into consideration a new variable called the `Adjustment Facto
 ### Advanced information
 Autosens determines a ratio (`autosens.ratio`) and alters your ISF in the following manner:
 
-```{math}
+$$
 Profile\ ISF\ ÷\ autosens.ratio\ =\ New\ ISF
-```
+$$
 
 !!! example
     
     Bill has an ISF of 3 mmol/L/U (54 mg/dL/U) in his settings. The system finds Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has an `autosens.ratio` of 1.1 (note that a larger `autosens.ratio` results in a lower, more aggressive ISF).
 
 When Autosens adjusts the ISF, it uses the following calculation:
-```{math}
-3\ mmol/L/U\ ÷\ 1.1\ &=\ 2.73\ mmol/L/U
 
-54\ mg/dL/U\ ÷\ 1.1\ &=\ 49\ mg/dL/U
-```
+$$
+3\ mmol/L/U\ ÷\ 1.1\ =\ 2.73\ mmol/L/U
+$$
+
+$$
+54\ mg/dL/U\ ÷\ 1.1\ =\ 49\ mg/dL/U
+$$
 
 _Bill now temporarily has an ISF of 2.73 mmol/L/U (49 mg/dL/U)._
 
 Dynamic ISF (using the default logarithmic algorithm in Trio) uses an alternative formula to calculate the autosens.ratio for ISF adjustments. **Note this formula uses mg/dL and not mmol/L:**
 
-```{math}
+$$
 autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
+$$
 
+$$
 New ISF\ =\ (profile\ ISF)\ /\ (autosens.ratio)
-```
+$$
 
 _This formula considers your profile ISF (profile.sens in mg/dL), current blood glucose (BG in mg/dL), total daily dose (TDD over the last 24 hours), insulin peak effect (peak activity normally is 120 min) and a new variable called adjustment factor (AF) that allows for user tuning of Dynamic ISF/CR._
 
@@ -70,22 +75,24 @@ _This formula considers your profile ISF (profile.sens in mg/dL), current blood 
 ## Dynamic CR
 This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how CR is calculated by Trio. Dynamic CR uses a similar formula as Dynamic ISF as described above:
 
-```{math}
+$$
 autosens.ratio\ =\ profile.sens\ *\ AF\ *\ TDD\ *\ log((BG/peak)+1)\ /\ 1800
+$$
 
+$$
 New\ CR\ =\ (profile\ CR)\ /\ (autosens.ratio)
-```
+$$
 
 If your CR changes dramatically daily and Trio is not providing adequate bolus recommendations, you can test this feature. Note that Trio already makes modifications to your recommended boluses without this feature enabled based on your blood glucose target, COB, and IOB.
 
-:::{note}
-If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 
+!!! note
     
-```{math}
-new.autosens.ratio\ =\ (autosens.ratio\ -\ 1)\ /\ 2 + 1
-```
-:::
+    If the calculated autosens.ratio by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 
     
+    $$
+    new.autosens.ratio\ =\ (autosens.ratio\ -\ 1)\ /\ 2 + 1
+    $$
+
 
 ## Adjust Basal
 Adjust Basal replaces Autosens's formula for adjusting basal rates, with a formula dependent on total daily dose (TDD) of insulin. Turn on this setting to give basal adjustments more agility. Keep this setting off if your basal needs are not highly variable.
@@ -102,7 +109,21 @@ Adjust basal replaces the autosens.ratio with its own autosens.ratio calculated 
 
 See `Weighted Average of TDD` setting to understand how this variable is calculated.
 
-**Example:**
+!!! example
+    
+    Bill's TDD has been 55 U over the last 24 hours, and his 10-day average is 48 U. He has set his `Weighted average of TDD` in preferences to 0.7. His current profile basal rate is 1 U/h.
+    
+    $$  
+    Weighted\ average\ of\ TDD\ =\ 0.7 * 55 U + 0.3 * 48 U = 52.9 U
+    $$
+    
+    $$
+    basal.autosens.ratio\ =\ 52.9 U\ / 48 U\ =\ 1.1U
+    $$
+    
+    $$
+    New\ basal\ profile\ =\ 1 U/h * 1.1\ =\ 1.1 U/h
+    $$
 
 !!! tip "Final Thoughts"
     

@@ -62,34 +62,49 @@ Autotune, by default, adjusts your ISF by 20% each nightly run. This value allow
 
 Set this at 1 for the full 20% adjustment.
 
-**Maths:**
+!!! info "Maths"
+    
+    $$
+    adjustedISF\ =\ adjustmentFraction\ *\ autotuneISF\ +\ (1-adjustmentFraction)\ *\ profileISF
+    $$
+    
+    $$
+    newISF\ =\ (\ 0.8\ *\ profileISF\ )\ +\ (\ 0.2\ *\ adjustedISF\ )
+    $$
 
-- adjustedISF = adjustmentFraction * autotuneISF + (1-adjustmentFraction) * profileISF
-- newISF = ( 0.8 * profileISF ) + ( 0.2 * adjustedISF )
-
->**Example:**
->
->Bill has a profile ISF of 3. Autotune thinks his true ISF value is 4. His adjustment fraction is 1.
->
->- adjustedISF = 1 * 4 + (1 - 1) * 3 = 4
->- newISF = (0.8 * 3) + (0.2 * 4) = 3.2
->
->_Assuming autotune is not being limited by the autosens max and min, Bill's ISF will be set to 3.2 by autotune tonight. Autotune will then repeat the following night, starting with a profileISF = 3.2_
+!!! example
+    
+    Bill has a profile ISF of 3. Autotune thinks his true ISF value is 4. His adjustment fraction is 1.
+    
+    $$
+    adjustedISF = 1 * 4 + (1 - 1) * 3 = 4
+    $$
+    
+    $$
+    newISF = (0.8 * 3) + (0.2 * 4) = 3.2
+    $$
+    
+    _Assuming autotune is not being limited by the autosens max and min, Bill's ISF will be set to 3.2 by autotune tonight. Autotune will then repeat the following night, starting with a profileISF = 3.2_
+    
 
 ## Remaining Carbs Fraction
 This is the fraction of carbs that is assumed not to be absorbed yet after 4 hours if carb absorption has not been seen. 
 
 When attempting to measure carbohydrates on board (COB) Trio may not be fully accurate. This setting is a safety feature that can prevent Trio from providing insulin for non-existent carbs.
 
->**Example:**
->
->It has been 4 hours since Bill ate 20 carbs. Trio has been able to calculate that he's absorbed 15 carbs but cannot account for the 5 other carbs yet. Bill has a remaining carbs fraction of 0.75
->
->- Remaining COB = COB - absorbedCarbs - mealCarbs * (1 - carbsFraction)
->
->- 20 - 15 - 20(1 - 0.75) = 0 
->
->Bill is assumed to have 0g carbs on board
+!!! example
+    
+    It has been 4 hours since Bill ate 20 carbs. Trio has been able to calculate that he's absorbed 15 carbs but cannot account for the 5 other carbs yet. Bill has a remaining carbs fraction of 0.75
+    
+    $$
+    Remaining COB = COB - absorbedCarbs - mealCarbs * (1 - carbsFraction)
+    $$
+    
+    $$
+    20 - 15 - 20(1 - 0.75) = 0
+    $$
+    
+    Bill is assumed to have 0g carbs on board
 
 !!! tip
     
@@ -99,9 +114,10 @@ When attempting to measure carbohydrates on board (COB) Trio may not be fully ac
 ## Remaining Carbs Cap
 This setting is a safety limiter that determines the maximum amount of carbs that are assumed to be absorbed after 4 hours of carb absorption. A minimum of 90 carbs is mandatory for this setting.
 
->**Example:**
->
->Bill eats 150 carbs. After 4 hours, Trio calculates a COB of 110. It will reduce that number to 90 carbs.
+!!! example
+    
+    Bill eats 150 carbs. After 4 hours, Trio calculates a COB of 110.  
+    It will reduce that number to 90 carbs.
 
 !!! tip
     
@@ -110,13 +126,19 @@ This setting is a safety limiter that determines the maximum amount of carbs tha
 ## Noisy CGM Target Multiplier
 If Trio detects that CGM data has been noisy, it will increase your target blood sugar by a set fraction to avoid you getting low. Default is 30% higher (1.3)
 
->**Example:** 
->
->Bill's Trio has calculated a blood glucose target of 5 mmol/L (90 mg/dL). But Bill has a noisy sensor. He has set his "Noisy CGM Target Multiplier" to 1.3.
->Trio will thereby use a target bg of:
->
->- 5 mmol/L * 1.3 = 6.5 mmol/L
->- 90 mg/dL * 1.3 = 117 mg/dL
+!!! example
+    
+    Bill's Trio has calculated a blood glucose target of 5 mmol/L (90 mg/dL).  
+    But Bill has a noisy sensor. He has set his "Noisy CGM Target Multiplier" to 1.3.  
+    Trio will thereby use a target bg of:
+    
+    $$
+	5 mmol/L * 1.3 = 6.5 mmol/L
+	$$
+    
+    $$
+    90 mg/dL * 1.3 = 117 mg/dL
+    $$
 
 !!! tip
     

@@ -35,18 +35,25 @@ The default is set to zero, meaning Trio can only set temporary basal rates lowe
 
 You can start by increasing this number to your average mealtime bolus and evaluating its effect. The default recommendation is “average meal bolus + 3x max hourly basal” when using super micro boluses.
 
->**Example:** _Bill has an average mealtime bolus of 6U, and the following basal profile:_
-
->  - 12:00 am: 1.0 U/hr
->  - 6:00 pm: 2.0 U/hr (_Highest Hourly Basal_)
->  - 9:00 pm: 1.5 U/hr
-
->Using the **MaxIOB** formula
->```{math} Average\ Meal\ Bolus + 3 \times Highest\ Hourly\ Basal
->```
->his recommended **Max IOB** setting should be **12**
->```{math} 6 + 3 \times 2.0 = 12
->```
+!!! example
+    
+    _Bill has an average mealtime bolus of 6U, and the following basal profile:_
+    
+    - 12:00 am: 1.0 U/hr
+    - 6:00 pm: 2.0 U/hr (_Highest Hourly Basal_)
+    - 9:00 pm: 1.5 U/hr
+    
+    Using the **MaxIOB** formula
+    
+    $$
+    Average\ Meal\ Bolus + 3 \times Highest\ Hourly\ Basal
+    $$
+    
+    his recommended **Max IOB** setting should be **12**
+    
+    $$
+    6 + 3 \times 2.0 = 12
+    $$
 
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
 
@@ -60,38 +67,50 @@ The maximum amount of carbs that Trio is allowed to bolus or set high-temp targe
 ## Max Daily Safety Multiplier
 Limits the maximum temporary basal rate Trio is able to use at _any time_. The default setting of 3, which is unlikely to need adjustment, allows for a maximum basal rate of 3 times the maximum daily basal.
 
->**Example:** _Bill has Max Daily Safety Multiplier set to 3 and the following basal profile:_
+!!! example
+    
+    Bill has Max Daily Safety Multiplier set to 3 and the following basal profile:
 
->  - 12:00 am: 1.0 U/hr
->  - 6:00 pm: 2.0 U/hr (_Highest Hourly Basal_)
->  - 9:00 pm: 1.5 U/hr
-
->It is 7:00 am, so Trio has been scheduled to deliver 1 U/hr. But Bill is running high, so Trio wants to deliver more.
-
->Using the formula
->```{math} Highest\ Hourly\ Basal \times Max\ Daily\ Safety\ Multiplier = Maximum\ Temporary\ Basal\ Rate
->```
-
->the maximum temporary basal rate that can be set is **3 units per hour**
->```{math} 1.0 \times 3 = 3
->```
+    - 12:00 am: 1.0 U/hr
+    - 6:00 pm: 2.0 U/hr (_Highest Hourly Basal_)
+    - 9:00 pm: 1.5 U/hr
+    
+    It is 7:00 am, so Trio has been scheduled to deliver 1 U/hr. But Bill is running high, so Trio wants to deliver more.
+    
+    Using the formula
+    
+    $$
+    Highest\ Hourly\ Basal \times Max\ Daily\ Safety\ Multiplier = Maximum\ Temporary\ Basal\ Rate
+    $$
+    
+    the maximum temporary basal rate that can be set is **3 units per hour**
+    
+    $$
+    1.0 \times 3 = 3
+    $$
 
 ## Current Basal Safety Multiplier 
 Limits the maximum temporary basal rate Trio is able to use at the **current time**. The default setting of 4, which is unlikely to need adjustment, allows for a maximum basal rate of 4x the current basal rate. 
 
->**Example:** _It is currently 9:00 am, and Bill has the following basal profile:_
-
->  - 12:00 am: 1.0 U/hr (_Current Basal Rate_)
->  - 6:00 pm: 2.0 U/hr
->  - 9:00 pm: 1.5 U/hr
-
->Using the formula
->```{math} Current\ Basal\ Rate \times Current\ Basal\ Safety\ Multiplier = Maximum\ Temporary\ Basal\ Rate
->```
->
->the maximum temporary basal rate that can be set by Trio at 9:00 am is **4 units per hour**
->```{math} 1.0 \times 4 = 4
->```
+!!! example
+    
+    It is currently 9:00 am, and Bill has the following basal profile:
+    
+	- 12:00 am: 1.0 U/hr (_Current Basal Rate_)
+	- 6:00 pm: 2.0 U/hr
+	- 9:00 pm: 1.5 U/hr
+	
+	Using the formula
+    
+    $$
+    Current\ Basal\ Rate \times Current\ Basal\ Safety\ Multiplier = Maximum\ Temporary\ Basal\ Rate
+    $$
+    
+    the maximum temporary basal rate that can be set by Trio at 9:00 am is **4 units per hour**
+    
+    $$
+    1.0 \times 4 = 4
+    $$
 
 !!! important
     

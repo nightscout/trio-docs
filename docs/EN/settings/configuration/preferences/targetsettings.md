@@ -48,12 +48,17 @@ This setting allows you to control the reduction in basal when using either "Exe
 Advanced information:
 See openAPS code for more information. 
 
->The formula used is:
->
->- (halfBasalTarget - 100)/((halfBasalTarget - 100)+(targetBG-100))
+The **formula** used is:
 
->**Example:**
->
->Bill has a halfBasalTarget of 160 and has set a temporary target of 120 for his upcoming exercise. Therefore, only 75% of his scheduled basal rate will be provided:
->
->- (160 - 100)/((160 - 100) + (120 - 100)) = 0.75
+$$
+(halfBasalTarget - 100)/((halfBasalTarget - 100)+(targetBG-100))
+$$
+
+!!! example
+    
+    Bill has a halfBasalTarget of 160 and has set a temporary target of 120 for his upcoming exercise.  
+    Therefore, only 75% of his scheduled basal rate will be provided:
+    
+    $$
+    (160 - 100)/((160 - 100) + (120 - 100)) = 0.75
+    $$
