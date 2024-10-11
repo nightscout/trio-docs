@@ -1,21 +1,23 @@
 # New User Setup
+
 Welcome to the New User Setup Guide! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the [Build Instructions](../operate/build.md) and come back here when you are ready to start the setup process!
 
 To set up your Trio app, touch the settings icon ⚙️ located on the bottom right of the main screen. Each step contains links to information on setting up each part of your Trio app. Use this as your home base to refer back to as you set up your app.
-<br>
 
 ## Step 1: Connect your Devices
+
 The first step in setting up your Trio app is to connect your devices to the app. 
 
 ### Verify Compatibility
+
 If you have not already, please verify that your devices are compatible:
 
  1. [Phones/Watches](../Getting-Started/iphone.md)
  2. [Pumps](../Getting-Started/pump.md)
  3. [CGMs](../settings/devices/cgm.md)
-<br>
 
 ### Connect Devices
+
 Once you have verified that you are using compatible devices, you can connect them in the Trio app settings menu.
 
 ```{image} img/DeviceMenu.png
@@ -25,9 +27,9 @@ Once you have verified that you are using compatible devices, you can connect th
  1. [Pump](../Configuration/Devices.md#pump)
  2. [CGM](../Configuration/Devices.md#cgm)
  3. [Watch (optional)](../Configuration/Devices.md#watch)
-<br>
 
 ## Step 2: Add Profile Settings
+
 The next step is to enter your main profile settings: Basal, ISF, CR, and Target Glucose.
 
 :::{important}
@@ -40,9 +42,9 @@ This is found in the Trio Settings menu under 'Preferences'
  2. [Insulin Sensitivity Factor (ISF)](../settings/configuration/insulinsensitivities.md)
  3. [Carb Ratio (CR)](../settings/configuration/carbratios.md)
  4. [Set Target Glucose](../settings/configuration/targetglucose.md)
-<br>
 
 ## Step 3: Adjust Safety Limits
+
 The next step is to adjust the standard safety limits that will allow Trio to function effectively. There are many more settings that are not mentioned in this section. It is not advised to adjust those until you have familiarized yourself with the system by using it for a while.
 
 :::{warning}
@@ -63,7 +65,6 @@ It is essential that Trio have enough data to make sound recommendations. It is 
  5. [Enable SMB](../settings/configuration/preferences/smbsettings.md)
  6. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
  7. <b>HANDS OFF DYNAMIC SETTINGS!</b>
-<br>
 
 ## Step 4: Enable Closed Loop
 
@@ -72,9 +73,9 @@ Closed loop functionality is turned off by default. This means Trio cannot make 
 ```
 
 [More on closing the loop](../Configuration/Configure.md)
-<br>
 
 ## Step 5: Change App Icon (Optional)
+
 Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.
 ```{image} img/changeAppIcon.png
 ```
@@ -83,8 +84,6 @@ Under "App Icons" in the Settings Menu, you can find various icons for your Trio
 Have a special icon in mind? You can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
 
 ***Congratulations!*** You've completed the New User Setup for Trio!
-<br>
-<br>
 
 
 
