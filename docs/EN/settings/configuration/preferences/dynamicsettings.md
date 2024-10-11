@@ -52,11 +52,13 @@ Before enabling this setting, please read the dedicated section on [sigmoid](../
 
 ## Weighted Average of TDD. Weight of past 24 hours:
 
-This ratio is used by "Adjust basal" for its calculations. It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled). You can set this value to a decimal between 0 and 1. 
+This ratio is used by "Adjust basal" for its calculations.  
+It allows you to effectively control the variability of basal adjustments (if Adjust basal is enabled).  
+You can set this value to a decimal between 0 and 1. 
 
->Set at **1.0** = uses 100% of the TDD from the past 24 hours
->Set at **0.65** (default) = 65% of the TDD from the past 24 hours + 35% of the TDD from the past 2 weeks
->Set at **0.0** = uses 100% of the TDD from the past 2 weeks
+>- Set at **1.0** = uses 100% of the TDD from the past 24 hours
+>- Set at **0.65** (default) = 65% of the TDD from the past 24 hours + 35% of the TDD from the past 2 weeks
+>- Set at **0.0** = uses 100% of the TDD from the past 2 weeks
 
 !!! example
     
@@ -73,13 +75,14 @@ As you increase the default 0.65 ratio to a higher number, the adjusted basal ra
 Adjust Basal replaces the sensitivity-based formula normally used by Autosens for adjusting your basal rates with a dynamic formula dependent on your TDD of insulin. Use this if the current Trio adjustments of basal rates are not adequate.
 
 ## Threshold Setting (mg/dl)
-The threshold setting is a safety limiter function. If blood sugar at any point is predicted to go below this value, Trio will suspend insulin delivery (SMBs are halted and Temp Basal of 0 U/hr set) and wait till its algorithms predict otherwise. This setting can be useful if you are experiencing a high number of hypoglycemia events. Please review the [OpenAPS documents](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html?highlight=Safety%20Threshold) if you want a better understanding of how it is used.</a> 
+The threshold setting is a safety limiter function. If blood sugar at any point is predicted to go below this value, Trio will suspend insulin delivery (SMBs are halted and Temp Basal of 0 U/hr set) and wait till its algorithms predict otherwise. This setting can be useful if you are experiencing a high number of hypoglycemia events. Please review the [OpenAPS documents](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html?highlight=Safety%20Threshold) if you want a better understanding of how it is used. 
 
 The threshold setting is, by default, determined by your blood glucose target setting:
-- Lower Target: 90 mg/dl = Threshold 65 mg/dl 
-- Lower Target: 100 mg/dl = Threshold 70 mg/dl 
-- Lower Target: 110 mg/dl = Threshold 75 mg/dl 
-- Lower Target: 130 mg/dl = Threshold 85 mg/dl 
+
+- Lower Target: 90 mg/dl = Threshold 65 mg/dl
+- Lower Target: 100 mg/dl = Threshold 70 mg/dl
+- Lower Target: 110 mg/dl = Threshold 75 mg/dl
+- Lower Target: 130 mg/dl = Threshold 85 mg/dl
 
 
 This setting allows you to choose a higher threshold setting than the default. Note that you cannot choose something lower than the default setting for a certain blood glucose target.
