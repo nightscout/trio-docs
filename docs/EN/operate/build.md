@@ -301,8 +301,7 @@ The second command `git pull --recurse` does several things:
 
 There can be errors in several places, for example:
 
-```{code-block}
-:class: no-copybutton
+``` { .txt .no-copy }
 error: Your local changes to the following files would be overwritten by merge:
 	FreeAPS/folder/file.swift
 Please commit your changes or stash them before you merge.
@@ -319,15 +318,13 @@ The `pull` command halts at this error and does not move on updating the submodu
 * If there are no updates to submodules, you won't see any submodule update messages - that is not uncommon
 * If there are updates to one or more submodules with no errors, you will see messages indicating the submodules are being checked out similar to the one below
 
-```{code-block}
-:class: no-copybutton
+``` { .txt .no-copy }
 Submodule path 'ModuleName': checked out 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56'
 ```
 
 If you see the word `error` or `conflict` on the output, similar to the following, head over to [Fix Submodule Conflicts](#fix-submodule-conflicts).
 
-```{code-block}
-:class: no-copybutton
+``` { .txt .no-copy }
 error: Your local changes to the following files would be overwritten by checkout:
 	SubModuleName/folder/file.swift
 Please commit your changes or stash them before you switch branches.
