@@ -39,17 +39,20 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - announce.dismiss
     - content.action.view
     - content.action.edit
     - content.code.copy
     - content.tabs.link
-    - navigation.tracking
-    - navigation.prune
-    - navigation.indexes
-    - toc.follow
-    - navigation.top
     - navigation.footer
-    - announce.dismiss
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - toc.integrate
 
 # Plugins - install using: pip3 install -r requirements.txt
 plugins:
@@ -108,7 +111,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - tables
-  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
 
 # Validation
 validation:
@@ -127,4 +132,43 @@ not_in_nav: |
 # Page tree
 nav:
   - Home: index.md
-
+  - Overview:
+      - Introduction: ./Getting-Started/Overview.md
+      - App Overview: ./operate/interface.md
+      - New User Guide: ./Setup/New-User-Setup.md
+      - Coming from Other AID Systems: ./Configuration/transition-qa.md
+      - Common Issues: ./operate/troubleshoot.md
+  - Device Compatibility:
+      - iPhones & Watches: ./Getting-Started/iphone.md
+      - Pumps: ./Getting-Started/pump.md
+      - CGMs: ./settings/devices/cgm.md
+  - Build/Update Trio:
+      - Build Instructions: ./operate/build.md
+      - Customizations: ./operate/customize.md
+  - User Settings (all users):
+      - Trio Main Preferences: ./settings/configuration/preferences/trio.md
+      - Pump, CGM, Watch: ./Configuration/Devices.md
+      - Additional Pump Settings: ./settings/configuration/pumpsettings.md
+      - Basal: ./settings/configuration/basalprofile.md
+      - ISF: ./settings/configuration/insulinsensitivities.md
+      - CR: ./settings/configuration/carbratios.md
+      - Target Glucose: ./settings/configuration/targetglucose.md
+      - Main Settings: ./settings/configuration/preferences/mainsettings.md
+      - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
+      - Close the Loop: ./Configuration/Configure.md
+  - Optional Settings (all users):
+      - Apple Health: ./settings/services/applehealth.md
+      - FPU: ./settings/services/fatprotein.md
+      - Nightscout: ./settings/services/nightscout.md
+      - Notifications: ./settings/services/notifications.md
+      - SMB Settings: ./settings/configuration/preferences/smbsettings.md
+      - Temp Targets: ./operate/temptarget.md
+  - Advanced Settings (advanced users):
+      - Autotune: ./settings/configuration/autotune.md
+      - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
+      - Sigmoid: ./settings/configuration/concepts/sigmoid.md
+      - Dynamic Settings Explained: ./settings/configuration/preferences/dynamicsettings.md
+      - Other Settings: ./settings/configuration/preferences/othersettings.md
+      - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
+  - Resources:
+      - Citations: ./resources/citations.md
