@@ -34,8 +34,8 @@ Many Healthcare Providers offer support in using DIY services. The following pro
   If you are a BC Diabetes Looper, please request a link to their Slack group from your case manager.
 
 ## Citations
-- <a href="https://loopkit.github.io/loopdocs/">Loop Documentation</a>
-- <a href="https://loopkit.github.io/looptips/">Loop Tips</a>
-- <a href="https://openaps.readthedocs.io/">OpenAPS Documentation</a>
-- <a href="https://androidaps.readthedocs.io/">AndroidAPS Documentation</a>
-- Support groups on <a href="https://discord.gg/FnwFEFUwXE">Discord</a> and <a href="https://www.facebook.com/groups/1351938092206709">Facebook</a>
+- [Loop Documentation](https://loopkit.github.io/loopdocs/)
+- [Loop Tips](https://loopkit.github.io/looptips/)
+- [OpenAPS Documentation](https://openaps.readthedocs.io/)
+- [AndroidAPS Documentation](https://androidaps.readthedocs.io/
+- Support groups on [Discord](https://discord.gg/FnwFEFUwXE) and [Facebook](https://www.facebook.com/groups/1351938092206709)
