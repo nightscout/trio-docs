@@ -6,7 +6,7 @@ site_url: https://docs.diy-trio.org
 site_author: Trio Community
 use_directory_urls: true
 
-# Repository
+# GitHub Repository
 repo_name: nightscout/trio-docs
 repo_url: https://github.com/nightscout/trio-docs
 edit_uri: edit/dev/docs/
@@ -96,8 +96,6 @@ extra:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/groups/diytrio
       name: Trio on Facebook
-  version: "0.9"
-  release: "0.9.5"
 
 # Extensions
 # - These are carefully chosen to work with pandoc markdown support for whole document translation
