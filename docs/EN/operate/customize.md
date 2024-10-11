@@ -67,7 +67,8 @@ public static let cannulaInsertionUnitsExtra = 0.25
 
 There are several different app icon options built into Trio, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.
 
-<img src="https://github.com/nightscout/Trio-docs/assets/31315442/7a33edf3-3343-46fe-815e-c63ddfca7b0a" width="250px"/>
+![Logo Alicorn](img/logo-alicorn.png){width=250}
+{align=center}
 
 1. Go into the folder `FreeAPS/Resources/Assets.xcassets/` and create a new folder called `ivan.appiconset`
    

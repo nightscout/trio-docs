@@ -95,7 +95,8 @@ The minimum amount of insulin that can be bolused by Trio via an SMB. This is de
 
 ## Are SMBs Allowed?
 
-![SMB-flow-chart](https://github.com/nightscout/trio-docs/assets/31315442/8d2d6f2c-c7bf-48ad-88df-dabcccb58fbf)
+![SMB-flow-chart](img/smb_allowed_flowchart.jpeg)
+{align=center}
 
 ### By following the flow chart above, you can see which combination of settings will allow SMBs.
 
