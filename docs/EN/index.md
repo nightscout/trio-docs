@@ -1,10 +1,10 @@
-:::{admonition} Work-In-Progress
-:class: caution
+!!! warning "Work-In-Progress"
+    
+    **PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR TRIO BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE**
 
-**PLEASE NOTE THIS DOCUMENTATION IS STILL BEING WRITTEN BY OUR AWESOME COMMUNITY. UNTIL IT IS FINISHED, PLEASE DO NOT SET UP YOUR TRIO BASED ON THIS DOCUMENTATION ALONE. CONTACT THE COMMUNITY ON DISCORD OR FACEBOOK TO MAKE SURE YOU GET IT RIGHT AND STAY SAFE**
-:::
 
 # What is Trio?
+
 Trio is an automated insulin delivery system for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).
 
 The project started as Ivan Valkou's [FreeAPS X](https://github.com/ivalkou/freeaps) implementation of the OpenAPS algorithm for iPhone and later forked and rebranded as iAPS.
@@ -19,11 +19,13 @@ Before starting with Trio, you should evaluate all your closed-loop options, inc
 * Commercial systems such as Medtronic's 780G, Tandem's Control-IQ, or Insulet's Omnipod 5
 * Other open-source applications like [Loop](https://loopkit.github.io/loopdocs/) and [AndroidAPS](https://androidaps.readthedocs.io/)
 
-:::{warning}
-Trio is a DIY, open-source community project. It has not been evaluated by any regulatory agency and is for use at your own risk.
-:::
+!!! warning "Warning"
+    Trio is a DIY, open-source community project.  
+    It has not been evaluated by any regulatory agency and is for use at your own risk.
+
 
 # Getting Started
+
 Before starting with Trio, you should understand [carb ratio (CR)](./settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](./settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](./settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
@@ -40,6 +42,7 @@ Upon installation, you will need to configure your settings appropriately. By de
 If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
 # Contribution
+
 Trio is built by a volunteer community. If you are interested in helping as a programmer, you can contribute to the Trio or OpenAPS code base. Trio is mostly written in SwiftUI, and the OpenAPS algorithm is written in JS.
 
 You can also provide support in online support groups by helping users adjust their settings and troubleshoot common errors.
