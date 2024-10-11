@@ -20,9 +20,8 @@ extra_css:
 theme:
   name: material
   language: en
-  # custom_dir: overrides
-  # logo: assets/images/geoserver_mark.png
-  # favicon: assets/images/geoserver_mark.png
+  logo: assets/images/trio-logo.png
+  favicon: assets/images/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
