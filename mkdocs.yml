@@ -144,7 +144,12 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
-  **/download/*.md
+  EN/Analyze/EvaluateBasal.md
+  EN/Analyze/EvaluateCR.md
+  EN/Getting-Started/cgm.md
+  EN/settings/loop.md
+  EN/settings/configuration/preferences/statistics.md
+  EN/settings/devices/pump.md
 
 # Page tree
 nav:
