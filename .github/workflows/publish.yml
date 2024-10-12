@@ -10,6 +10,8 @@ on:
     branches:
       - dev
       - mkdocs-material-migration
+    paths-ignore:
+      - "README.md"
 
 jobs:
   deploy:
