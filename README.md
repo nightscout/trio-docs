@@ -1,5 +1,114 @@
 Repository for [Trio documentation (under development)](https://docs.diy-trio.org)
 
+## Install
+
+- [**Clone**](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
+- Install **Python  3**
+  For help getting *Python* installed, see "[Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/)".
+- Install a **Python Virtual Environment**.  
+  In this example, I use [`venv`](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment), but use whichever you prefer.  
+  ```shell
+  cd trio-docs # where you cloned the trio-docs repository
+  
+  # Creates a virtual environment using Python 3 in the venv folder
+  python3 -m venv venv 
+
+  # Activate the virtual environment
+  # IMPORTANT: Run the next line **each time** you start a new shell window/tab
+  source venv/bin/activate
+  ```
+- **Install** the **dependencies** (that is the project's required *Python* packages)
+  ```shell
+  cd trio-docs # where you cloned the trio-docs repository
+
+  python -m pip install -r requirements.txt
+  ```
+
+## Run
+
+Once [installed](#install), you can preview the doc locally as you edit.
+
+### Preview Changes
+
+To preview your work as you edit:
+
+- Run the **`mkdocs serve`** command locally and keep it running:
+  ```shell
+  cd trio-docs # where you cloned the trio-docs repository
+  source bin/venv/activate # Do this once when opening a shell or if the shell prompt no longer displays `(venv)`
+  
+  mkdocs serve
+  ```
+    By default, this runs a local web server that hosts the documentation at http://127.0.0.1:8000/ .
+* Preview the site in your Web browser.  
+  Most changes will update automatically as you edit.  
+  Configuration and navigation changes will require restarting `mkdocs serve`.
+
+## Contribute
+
+You can contribute to the Trio documentation by correcting typos or suggesting new content.
+
+### Using  the  Terminal
+
+```
+cd trio-docs # where you cloned the trio-docs repository
+
+# Activate the Python virtual environment 
+#  (if the shell prompt does not display `(venv)`)
+source venv/bin/activate
+
+# Declare the official remote trio-docs GitHub repository 
+# The remote repository name convention is:
+# - origin denotes your copy of the `trio-docs` repository on GitHub
+# - upstream denotes the official `trio-docs` repository on GitHub
+# You already created `origin` before.
+# `upstream` does not exist yet, we now need to create it.
+#
+# These are shortcuts for the remote repositories 
+#   short name => long name (URL)
+# We use the short name not to memorize and type the long name (see line below) each time we need to interact with it.
+#
+git remote add upstream https://github.com/nightscout/trio-docs.git
+
+# Fetch the changes from the remote repositories
+git fetch origin
+git fetch upstream
+
+# Jump on the `dev` branch
+# `dev` contains the source code for the site ready to be deployed)
+git switch dev
+
+# Bring recent changes for the `dev` branch back from the official trio-docs repository (`upstream`)
+git merge upstream/dev
+
+# Example: We want to add a FAQ page in the `docs/resources/` folder
+
+# Create (`-c`) and jump on a new feature branch where to add the FAQ page
+#
+git switch -c add_FAQ_page
+
+# Create then edit the new FAQ file (`faq.md`)
+MY_FAVORITE_EDITOR_HERE docs/resources/faq.md
+
+# Edit, preview, repeat...
+# until you are satisfied with the changes.
+
+# ➡️ 🏬: Add the FAQ page to the warehouse
+git add docs/resources/faq.md
+
+# 🏬 ➡️ 🚚: Move all the changes from the warehouse into your **local** repository 
+git commit -am "Add FAQ page"
+
+# 🚚 ➡️ ⛅️: Push your feature branch `doc/add_FAQ_page` to your remote repository
+git push -u origin add_FAQ_page
+```
+
+- Now open the **official trio-docs repository** in your **Web browser** 
+   https://github.com/nightscout/trio-docs/pulls
+- Click the **pull-requests tab**  
+  This page displays a box saying you can create a Pull-Request for your branch.
+- Click the button to do so, then follow the instructions.
+
 ## Tips & Tricks
 
 > [!NOTE] 
