@@ -86,7 +86,6 @@ plugins:
 
 # Customizations
 extra:
-  homepage: EN/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/nightscout/trio-docs
@@ -144,53 +143,53 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
-  EN/Analyze/EvaluateBasal.md
-  EN/Analyze/EvaluateCR.md
-  EN/Getting-Started/cgm.md
-  EN/settings/loop.md
-  EN/settings/configuration/preferences/statistics.md
-  EN/settings/devices/pump.md
+  Analyze/EvaluateBasal.md
+  Analyze/EvaluateCR.md
+  Getting-Started/cgm.md
+  settings/loop.md
+  settings/configuration/preferences/statistics.md
+  settings/devices/pump.md
 
 # Page tree
 nav:
-  - Home: ./EN/index.md
+  - Home: ./index.md
   - Overview:
-      - Introduction: ./EN/Getting-Started/Overview.md
-      - App Overview: ./EN/operate/interface.md
-      - New User Guide: ./EN/Setup/New-User-Setup.md
-      - Coming from Other AID Systems: ./EN/Configuration/transition-qa.md
-      - Common Issues: ./EN/operate/troubleshoot.md
+      - Introduction: ./Getting-Started/Overview.md
+      - App Overview: ./operate/interface.md
+      - New User Guide: ./Setup/New-User-Setup.md
+      - Coming from Other AID Systems: ./Configuration/transition-qa.md
+      - Common Issues: ./operate/troubleshoot.md
   - Device Compatibility:
-      - iPhones & Watches: ./EN/Getting-Started/iphone.md
-      - Pumps: ./EN/Getting-Started/pump.md
-      - CGMs: ./EN/settings/devices/cgm.md
+      - iPhones & Watches: ./Getting-Started/iphone.md
+      - Pumps: ./Getting-Started/pump.md
+      - CGMs: ./settings/devices/cgm.md
   - Build/Update Trio:
-      - Build Instructions: ./EN/operate/build.md
-      - Customizations: ./EN/operate/customize.md
+      - Build Instructions: ./operate/build.md
+      - Customizations: ./operate/customize.md
   - User Settings (all users):
-      - Trio Main Preferences: ./EN/settings/configuration/preferences/trio.md
-      - Pump, CGM, Watch: ./EN/Configuration/Devices.md
-      - Additional Pump Settings: ./EN/settings/configuration/pumpsettings.md
-      - Basal: ./EN/settings/configuration/basalprofile.md
-      - ISF: ./EN/settings/configuration/insulinsensitivities.md
-      - CR: ./EN/settings/configuration/carbratios.md
-      - Target Glucose: ./EN/settings/configuration/targetglucose.md
-      - Main Settings: ./EN/settings/configuration/preferences/mainsettings.md
-      - SMB & UAM: ./EN/settings/configuration/concepts/smb-uam.md
-      - Close the Loop: ./EN/Configuration/Configure.md
+      - Trio Main Preferences: ./settings/configuration/preferences/trio.md
+      - Pump, CGM, Watch: ./Configuration/Devices.md
+      - Additional Pump Settings: ./settings/configuration/pumpsettings.md
+      - Basal: ./settings/configuration/basalprofile.md
+      - ISF: ./settings/configuration/insulinsensitivities.md
+      - CR: ./settings/configuration/carbratios.md
+      - Target Glucose: ./settings/configuration/targetglucose.md
+      - Main Settings: ./settings/configuration/preferences/mainsettings.md
+      - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
+      - Close the Loop: ./Configuration/Configure.md
   - Optional Settings (all users):
-      - Apple Health: ./EN/settings/services/applehealth.md
-      - FPU: ./EN/settings/services/fatprotein.md
-      - Nightscout: ./EN/settings/services/nightscout.md
-      - Notifications: ./EN/settings/services/notifications.md
-      - SMB Settings: ./EN/settings/configuration/preferences/smbsettings.md
-      - Temp Targets: ./EN/operate/temptarget.md
+      - Apple Health: ./settings/services/applehealth.md
+      - FPU: ./settings/services/fatprotein.md
+      - Nightscout: ./settings/services/nightscout.md
+      - Notifications: ./settings/services/notifications.md
+      - SMB Settings: ./settings/configuration/preferences/smbsettings.md
+      - Temp Targets: ./operate/temptarget.md
   - Advanced Settings (advanced users):
-      - Autotune: ./EN/settings/configuration/autotune.md
-      - Dynamic Settings: ./EN/settings/configuration/concepts/autosens-dynamic.md
-      - Sigmoid: ./EN/settings/configuration/concepts/sigmoid.md
-      - Dynamic Settings Explained: ./EN/settings/configuration/preferences/dynamicsettings.md
-      - Other Settings: ./EN/settings/configuration/preferences/othersettings.md
-      - Sensitivity Settings: ./EN/settings/configuration/preferences/targetsettings.md
+      - Autotune: ./settings/configuration/autotune.md
+      - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
+      - Sigmoid: ./settings/configuration/concepts/sigmoid.md
+      - Dynamic Settings Explained: ./settings/configuration/preferences/dynamicsettings.md
+      - Other Settings: ./settings/configuration/preferences/othersettings.md
+      - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
   - Resources:
-      - Citations: ./EN/resources/citations.md
+      - Citations: ./resources/citations.md
