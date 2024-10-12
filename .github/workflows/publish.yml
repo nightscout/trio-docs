@@ -8,14 +8,15 @@ on:
   # Remark: Next 3 lines triggers the workflow on push events for the main branch
   push:
     branches:
-      - main
+      - dev
+      - mkdocs-material-migration
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.repository_owner == 'nightscout'
+    if: github.repository_owner == 'nightscout' || github.repository_owner == 'ebouchut'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
