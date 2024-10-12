@@ -1,0 +1,30 @@
+name: publish
+
+# Controls when the action will run.
+on:
+  # Remark: uncomment one section only
+  # Remark: Next 1 line requires manual action, Click on action tab, then publish
+  # workflow_dispatch
+  # Remark: Next 3 lines triggers the workflow on push events for the main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: github.repository_owner == 'nightscout'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
+
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: site
