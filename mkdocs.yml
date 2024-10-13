@@ -69,19 +69,6 @@ theme:
 
 # Plugins - install using: pip3 install -r requirements.txt
 plugins:
-  - exclude:
-      glob:
-        - "**/download/download.txt"
-  - include-markdown:
-      preserve_includer_indent: true
-      dedent: true
-      comments: false
-  - macros:
-      render_by_default: false
-      on_error_fail: true
-      on_undefined: strict
-      j2_block_start_string: "[[%"
-      j2_block_end_string: "%]]"
   - search
 
 # Customizations
