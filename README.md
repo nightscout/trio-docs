@@ -26,13 +26,12 @@ Repository for [Trio documentation (under development)](https://docs.diy-trio.or
 
 ## Run
 
-Once [installed](#install), you can preview the doc locally as you edit.
 
 ### Preview Changes
 
-To preview your work as you edit:
+Once [installed](#install), you can preview the doc locally as you make changes:
 
-- Run the **`mkdocs serve`** command locally and keep it running:
+- Run the **`mkdocs serve`** command locally in a separate terminal window and keep it running:
   ```shell
   cd trio-docs # where you cloned the trio-docs repository
   source bin/venv/activate # Do this once when opening a shell or if the shell prompt no longer displays `(venv)`
@@ -44,6 +43,30 @@ To preview your work as you edit:
   Most changes will update automatically as you edit.  
   Configuration and navigation changes will require restarting `mkdocs serve`.
 
+### Build the Website Locally
+
+```shell
+cd trio-docs # where you cloned the trio-docs repository
+source venv/bin/activate # Do this once when opening a shell or if the shell prompt no longer displays `(venv)`
+
+mkdocs build
+```
+
+This does not generate the website's PDF version.
+
+### Build the PDF
+
+To export the website as a PDF:
+
+```shell
+cd trio-docs # where you cloned the trio-docs repository
+source venv/bin/activate # Do this once when opening a shell or if the shell prompt no longer displays `(venv)`
+
+MKDOCS_EXPORTER_PDF=true  mkdocs build
+```
+
+ The PDF file is generated in`site/trio-docs.pdf`.
+ 
 ## Contribute
 
 You can contribute to the Trio documentation by correcting typos or suggesting new content.
@@ -109,6 +132,39 @@ git push -u origin add_FAQ_page
   This page displays a box saying you can create a Pull-Request for your branch.
 - Click the button to do so, then follow the instructions.
 
+## Add a Plugin
+
+- Create a feature branch
+- Add the pinned version of the new plugin to the **`requirements.in`** file
+  ```shell
+    MY_FAVORITE_EDITOR_HERE requirements.in
+    
+    # Add the pinned version (i.e. plugin name + version) to `requirements.in
+    XXX_PLUGIN_NAME_HERE==XXX_PLUGIN_VERSION_HERE
+    ```
+    For example, add this line `mkdocs-exporter==6.1.1` to `requirements.in`
+- Generate **`requirements.txt`**
+  ```shell
+    cd trio-docs
+    
+    # IMPORTANT: The project's virtual environment MUST be activated first
+    source venv/bin/activate
+    
+    # Remove already installed plugins
+    python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
+    
+    # Install the dependencies listed in `requirements.in`
+    # This installs the indirect dependencies these plugins depend upon.
+    pip install -r requirements.in
+    
+    # Generate `requirements.txt` with both direct AND indirect dependencies
+    pip freeze > requirements.txt
+    
+    # Commit the changes (where XXX denotes the plugin name)
+    git add requirements.in requirements.txt
+    git commit -m "➕ Add dependency XXX"
+    ```
+  
 ## Tips & Tricks
 
 > [!NOTE] 
