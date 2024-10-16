@@ -57,6 +57,7 @@ theme:
     - toc.integrate
 
 plugins:
+  - open-in-new-tab
   - macros:
       include_dir: .
   - exporter:
