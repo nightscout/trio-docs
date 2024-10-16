@@ -9,7 +9,6 @@ on:
   push:
     branches:
       - dev
-      - mkdocs-material-migration
     paths-ignore:
       - "README.md"
 
@@ -18,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.repository_owner == 'nightscout' || github.repository_owner == 'ebouchut'
+    if: github.repository_owner == 'nightscout'
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
