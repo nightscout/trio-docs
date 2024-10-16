@@ -1,6 +1,5 @@
 # Project information
 site_name: Trio documentation
-
 site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
 site_url: https://docs.diy-trio.org
 site_author: Trio Community
@@ -11,18 +10,8 @@ repo_name: nightscout/trio-docs
 repo_url: https://github.com/nightscout/trio-docs
 edit_uri: edit/dev/docs/
 
-# Copyright
 copyright: Trio Community
 
-extra_css:
-  - assets/stylesheets/primary_color.css
-  - assets/stylesheets/extra.css
-
-extra_javascript:
-  - assets/javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
-# Configuration
 theme:
   name: material
   language: en
@@ -67,9 +56,39 @@ theme:
     - toc.follow
     - toc.integrate
 
-# Plugins - install using: pip3 install -r requirements.txt
 plugins:
+  - macros:
+      include_dir: .
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, false]
+          concurrency: 16
+          stylesheets:
+            - docs/assets/stylesheets/pdf.scss
+          covers:
+            front: docs/assets/templates/covers/front.html.j2
+            # back: docs/assets/templates/covers/back.html.j2
+          aggregator:
+            enabled: true
+            output: trio-docs.pdf
+            covers: limits
+      buttons:
+        - title: Download Page as PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
   - search
+
+extra_css:
+  - assets/stylesheets/primary_color.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/mkdocs-exporter.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js
 
 # Customizations
 extra:
@@ -84,8 +103,6 @@ extra:
       link: https://www.facebook.com/groups/diytrio
       name: Trio on Facebook
 
-# Extensions
-# - These are carefully chosen to work with pandoc markdown support for whole document translation
 markdown_extensions:
   - admonition
   - attr_list
@@ -118,7 +135,6 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
-# Validation
 validation:
   nav:
     omitted_files: info
@@ -137,7 +153,7 @@ not_in_nav: |
   settings/configuration/preferences/statistics.md
   settings/devices/pump.md
 
-# Page tree
+# Navigation (Page tree)
 nav:
   - Home: ./index.md
   - Overview:
@@ -180,3 +196,4 @@ nav:
       - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
   - Resources:
       - Citations: ./resources/citations.md
+      - Trio Docs PDF: ./trio-docs.pdf
