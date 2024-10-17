@@ -206,8 +206,9 @@ When linking to another Markdown file (ending with `.md`) in another directory, 
 
 #### Migrate an Admonition from Sphinx to Mkdocs
 
-> [!NOTE] What is an admonition?
-> An **admonition** is a rectangular box with a **title** (optional) and a text **body**.
+> [!NOTE] 
+> **What is an admonition?**  
+> An **admonition** is a rectangular box with a **title** (optional) and a text **body**.  
 > Each admonition type has a **specific icon** and box **border color**.
 > 
 > For instance, a *warning* admonition has a yellow icon and border. Its icon is an exclamation sign in a yellow triangle.
@@ -249,8 +250,10 @@ where:
     ␠␠␠␠ Understanding the changes you are making is important [...]
     ```
 
-> [!TIP] Separate the Title and Body with an Empty Line
-> - When reading, adding an empty line between the title and the text body makes a visual distinction.
+> [!TIP] 
+> **Separate the Title and Body with an Empty Line**  
+> 
+> - Adding a blank line (4 spaces indented) between the title and the body of the text makes a visual distinction for the reader.
 >   This is not required. 
 > - When present in the body text, empty lines must also use a 4-space indentation.
 
