@@ -61,7 +61,6 @@ theme:
     - search.suggest
     - search.highlight
     - toc.follow
-    - toc.integrate
 
 plugins:
   - open-in-new-tab
