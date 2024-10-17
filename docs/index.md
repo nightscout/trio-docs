@@ -5,6 +5,8 @@
 
 # What is Trio?
 
+![Trio Logo](assets/images/trio-logo.png){ width="200", align="right" }
+
 Trio is an automated insulin delivery system for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).
 
 The project started as Ivan Valkou's [FreeAPS X](https://github.com/ivalkou/freeaps) implementation of the OpenAPS algorithm for iPhone and later forked and rebranded as iAPS.
