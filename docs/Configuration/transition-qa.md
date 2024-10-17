@@ -153,6 +153,7 @@ Transitioning from iAPS 2.3.3 to Trio is currently straightforward. The screens 
 Your settings will need to be entered manually, but they can all be entered one-by-one from your iAPS settings without adjustment. If you have Nightscout, you can import your Pump Settings, Basal Profile, ISF, CR, Target Glucose, and previous CGM readings from the Nightscout Menu.
 
 <b>Import Settings With Nightscout</b>
+
  1. Connect Nightscout to your Trio app (If you've already connected your Nightscout site, skip to step 2)
     * Open the Settings Menu ⚙️ in the Trio app
     * Tap `Nightscout` to open the Nightscout Menu
