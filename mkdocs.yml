@@ -141,6 +141,8 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      permalink_title: Link to this section for reference
+      title: On this Page
       toc_depth: 3
 
 validation:
@@ -170,14 +172,14 @@ nav:
       - New User Guide: ./Setup/New-User-Setup.md
       - Coming from Other AID Systems: ./Configuration/transition-qa.md
       - Common Issues: ./operate/troubleshoot.md
-  - Device Compatibility:
-      - iPhones & Watches: ./Getting-Started/iphone.md
-      - Pumps: ./Getting-Started/pump.md
-      - CGMs: ./settings/devices/cgm.md
+      - Device Compatibility:
+          - iPhones & Watches: ./Getting-Started/iphone.md
+          - Pumps: ./Getting-Started/pump.md
+          - CGMs: ./settings/devices/cgm.md
   - Build/Update Trio:
       - Build Instructions: ./operate/build.md
       - Customizations: ./operate/customize.md
-  - User Settings (all users):
+  - User Settings:
       - Trio Main Preferences: ./settings/configuration/preferences/trio.md
       - Pump, CGM, Watch: ./Configuration/Devices.md
       - Additional Pump Settings: ./settings/configuration/pumpsettings.md
@@ -188,14 +190,14 @@ nav:
       - Main Settings: ./settings/configuration/preferences/mainsettings.md
       - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
       - Close the Loop: ./Configuration/Configure.md
-  - Optional Settings (all users):
+  - Optional Settings:
       - Apple Health: ./settings/services/applehealth.md
       - FPU: ./settings/services/fatprotein.md
       - Nightscout: ./settings/services/nightscout.md
       - Notifications: ./settings/services/notifications.md
       - SMB Settings: ./settings/configuration/preferences/smbsettings.md
       - Temp Targets: ./operate/temptarget.md
-  - Advanced Settings (advanced users):
+  - Advanced Settings:
       - Autotune: ./settings/configuration/autotune.md
       - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
       - Sigmoid: ./settings/configuration/concepts/sigmoid.md
