@@ -59,6 +59,7 @@ theme:
     - navigation.top
     - navigation.tracking
     - search.suggest
+    - search.highlight
     - toc.follow
     - toc.integrate
 
