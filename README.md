@@ -132,7 +132,7 @@ git push -u origin add_FAQ_page
   This page displays a box saying you can create a Pull-Request for your branch.
 - Click the button to do so, then follow the instructions.
 
-## Add a Plugin
+### Add a Plugin
 
 - Create a feature branch
 - Add the pinned version of the new plugin to the **`requirements.in`** file
@@ -201,3 +201,58 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
 **Example**: `../directoryname/filename.md`
+
+### Migrate a Sphinx page to Mkdocs
+
+#### Migrate an Admonition from Sphinx to Mkdocs
+
+> [!NOTE] What is an admonition?
+> An **admonition** is a rectangular box with a **title** (optional) and a text **body**.
+> Each admonition type has a **specific icon** and box **border color**.
+> 
+> For instance, a *warning* admonition has a yellow icon and border. Its icon is an exclamation sign in a yellow triangle.
+
+This is what an admonition looks like in **Sphinx**:
+
+```markdown
+:::{warning}
+This is not medical advice.  
+Understanding the changes you are making is important, and always be sure to exercise caution.  
+When in doubt, consult your diabetes care team for settings guidance.
+:::
+```
+
+Here is what the same admonition looks like in "**Mkdocs**-material":
+
+```markdown
+!!! warning
+    
+    This is not medical advice.
+    Understanding the changes you are making is important, and always be sure to exercise caution.
+    When in doubt, consult your diabetes care team for settings guidance.
+```
+
+where:
+- The **title** line contains (in this order):
+  - 3 exclamation characters `!!!`
+  - a space ` `
+  - the [admonition **type**](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types),  (`warning` in the above example)
+  - a space
+  - an optional **title** (none in this example) surrounded by double quotes.
+    We could have used `"Not a Medical Advice"` to set a title.
+- Each line of the **body text** (lines below the title)  
+  **must** be **indented 4-spaces**.
+  I use the `␠` character to denote a space (` `) in the example below. to make it stand out. Do not copy and paste this, it is only for visual purposes.
+  ```markdown
+    !!! warning "Not medical advice"
+    ␠␠␠␠
+    ␠␠␠␠ Understanding the changes you are making is important [...]
+    ```
+
+> [!TIP] Separate the Title and Body with an Empty Line
+> - When reading, adding an empty line between the title and the text body makes a visual distinction.
+>   This is not required. 
+> - When present in the body text, empty lines must also use a 4-space indentation.
+
+> [!NOTE] 
+> Mkdocs (the site generation engine) does not provide admonitions but [mkdocs-material (the theme) does](https://squidfunk.github.io/mkdocs-material/reference/admonitions) via the `pymdownx` Markdown extension.
