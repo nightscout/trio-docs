@@ -1,0 +1,66 @@
+name: publish
+
+# Controls when the action will run.
+on:
+  # Remark: uncomment one section only
+  # Remark: Next 1 line requires manual action, Click on action tab, then publish
+  # workflow_dispatch
+  # Remark: Next 5 lines triggers the workflow on push events for the main branch
+  push:
+    branches:
+      - dev
+    paths-ignore:
+      - "README.md"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: github.repository_owner == 'nightscout'
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Create, Activate and share a Python Virtual Env
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          # Persist venv related variables across the steps below
+          # See: https://stackoverflow.com/a/74669486/386517
+          echo "PATH=$PATH"               >> "$GITHUB_ENV"
+          echo "VIRTUAL_ENV=$VIRTUAL_ENV" >> "$GITHUB_ENV"
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Get Playwright Version (Headless Browser)
+        run: |
+          echo "PLAYWRIGHT_VERSION=$(playwright --version | cut -d ' ' -f 2)" >> $GITHUB_ENV
+
+      - name: Cache Playwright Binaries
+        id: playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ env.PLAYWRIGHT_VERSION }}
+
+      - name: Install Playwright (if not cached)
+        if: steps.playwright.outputs.cache-hit != 'true'
+        run: playwright install --with-deps chromium
+
+      - name: Build Website and PDF
+        run: MKDOCS_EXPORTER_PDF=true mkdocs build
+
+      - name: Push Website to gh-pages Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: site
