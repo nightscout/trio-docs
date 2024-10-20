@@ -41,6 +41,7 @@ extensions = [
     'sphinx.ext.todo',
     'myst_parser',
     'sphinx_copybutton',
+    'sphinx_new_tab_link',
     # 'alabaster',
 ]
 

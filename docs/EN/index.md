@@ -159,5 +159,7 @@ Sensitivity Settings <./settings/configuration/preferences/targetsettings.md>
 
 Citations <./resources/citations.md>
 
+Translation <./resources/translate.md>
+
 ```
 

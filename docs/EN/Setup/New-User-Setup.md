@@ -30,8 +30,9 @@ Once you have verified that you are using compatible devices, you can connect th
 ## Step 2: Add Profile Settings
 The next step is to enter your main profile settings: Basal, ISF, CR, and Target Glucose.
 
-:::{important}
-If you use mg/dL, you must first change the 'Glucose Units' before entering your profile settings.
+:::{admonition} Important
+:class: important
+If you use `mg/dL`, you must first change the `Glucose Units` **before** entering your profile settings.
 
 This is found in the Trio Settings menu under 'Preferences'
 :::
@@ -45,15 +46,14 @@ This is found in the Trio Settings menu under 'Preferences'
 ## Step 3: Adjust Safety Limits
 The next step is to adjust the standard safety limits that will allow Trio to function effectively. There are many more settings that are not mentioned in this section. It is not advised to adjust those until you have familiarized yourself with the system by using it for a while.
 
-:::{warning}
-<b>DO NOT ENABLE DYNAMIC SETTINGS YET</b>
+:::{admonition} DO NOT ENABLE DYNAMIC SETTINGS YET
+:class: warning
 
 It is essential that Trio have enough data to make sound recommendations. It is essential that your settings are tuned to be used in an Oref algorithm and you feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:
 
  - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm
  - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of 7 consecutive days
  - You are comfortable with the Trio app
-
 :::
 
  1. [Recommended Bolus Percentage](../settings/configuration/preferences/trio.md#recommended-bolus-percentage)
