@@ -1,13 +1,13 @@
 # Project information
 site_name: TrioDocs
 site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
-site_url: https://docs.diy-trio.org
+site_url: https://docs.diy-trio.org/
 site_author: Trio Community
 use_directory_urls: true
 
 # GitHub Repository
 repo_name: nightscout/trio-docs
-repo_url: https://github.com/nightscout/trio-docs
+repo_url: https://github.com/nightscout/trio-docs/
 edit_uri: edit/dev/docs/
 
 copyright: Trio Community
