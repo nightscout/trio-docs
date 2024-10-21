@@ -71,7 +71,7 @@ Limits the maximum temporary basal rate Trio is able to use at _any time_. The d
 >```{math} Highest\ Hourly\ Basal \times Max\ Daily\ Safety\ Multiplier = Maximum\ Temporary\ Basal\ Rate
 >```
 
->the maximum temporary basal rate that can be set is **3 units per hour**
+>the maximum temporary basal rate that can be set is **6 units per hour**
 >```{math} 2.0 \times 3 = 6
 >```
 
