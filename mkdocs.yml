@@ -15,6 +15,7 @@ copyright: Trio Community
 theme:
   name: material
   language: en
+  custom_dir: overrides
   logo: assets/images/trio-logo.png
   favicon: assets/images/favicon.ico
   icon:
