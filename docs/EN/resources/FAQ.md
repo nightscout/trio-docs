@@ -30,7 +30,7 @@ There are two options for building at present:
 * The 'Mac Build' method using XCode.
 
 ### Do I need to own an Apple computer?
-You no longer need to own an Apple computer. If you chose the 'Mac Build' method, you still don't have to own an Apple computer, but you must at least borrow one.  
+No, you do not need to own an Apple computer. The 'Browser Build' method can be completed on any computer with access to the Internet and GitHub. However, if you chose the 'Mac Build' method, while you do not necessarily need to own an Apple computer, you must at least borrow one. 
 
 ### How often will I need to access the computer to maintain Trio?  
 When you use the 'Browser Build' method, you must access a browser at least once every 90 days to update with the Browser. This is simple enough to do the steps on your phone in just a few minutes. 
@@ -162,8 +162,7 @@ In other words, your PDM can stay in the diabetes closet while you are Looping. 
 
 ### Does Trio cause an increase in pod failures?
 There is more communication between your phone and the pod than the PDM. This increases the load on the pod battery. Most people have no increase in pod failures. However, it does occasionally happen. Below are some tips to take to limit battery drain:
-* Have a correction range instead of a single number
-* The pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected such that the Loop app cannot determine if a dosing command sent to the pod was received, the app will try once a minute to get a response.
+* The pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected such that Trio cannot determine if a dosing command sent to the pod was received, the app will try once a minute to get a response.
 * If using Eros pods with a RileyLink device. Be mindful of situations that may lead to poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
 <br>
 
