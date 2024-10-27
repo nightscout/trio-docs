@@ -53,8 +53,11 @@ sphinx==5.3.0
     #   myst-parser
     #   sphinx-copybutton
     #   sphinx-rtd-theme
+    #   sphinxcontrib-extdevhelper-kasane
     #   sphinxcontrib-jquery
 sphinx-copybutton==0.5.2
+    # via -r requirements.in
+sphinx-new-tab-link==0.6.0
     # via -r requirements.in
 sphinx-rtd-theme==1.2.0
     # via -r requirements.in
@@ -62,6 +65,8 @@ sphinxcontrib-applehelp==2.0.0
     # via sphinx
 sphinxcontrib-devhelp==2.0.0
     # via sphinx
+sphinxcontrib-extdevhelper-kasane==0.2.0
+    # via sphinx-new-tab-link
 sphinxcontrib-htmlhelp==2.1.0
     # via sphinx
 sphinxcontrib-jquery==4.1
