@@ -66,6 +66,17 @@ MKDOCS_EXPORTER_PDF=true  mkdocs build
 ```
 
  The PDF file is generated in`site/trio-docs.pdf`.
+
+### Find Unused Files
+
+To find unused (orphaned) files in the project:
+
+```shell
+CHECK_UNUSED_FILES=true mkdocs build -s
+```
+
+> [!INFO] 
+> We use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin.
  
 ## Contribute
 
