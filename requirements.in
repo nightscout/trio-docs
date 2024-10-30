@@ -1,5 +1,7 @@
-sphinx==5.3.0
-sphinx-copybutton==0.5.2
-sphinx-new-tab-link==0.6.0
-sphinx-rtd-theme==1.2.0
-myst-parser==0.18.1
+mkdocs>=1.6.1
+mkdocs-exporter==6.1.1
+mkdocs-material>=9.5.9
+mkdocs-include-markdown-plugin>=6.0.4
+mkdocs-exclude>=1.0.2
+mkdocs-open-in-new-tab==1.0.6
+mkdocs-macros-plugin>=1.0.4

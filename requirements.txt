@@ -4,80 +4,129 @@
 #
 #    pip-compile
 #
-alabaster==0.7.16
-    # via sphinx
 babel==2.16.0
-    # via sphinx
+    # via mkdocs-material
+beautifulsoup4==4.12.3
+    # via mkdocs-exporter
+bracex==2.5.post1
+    # via wcmatch
 certifi==2024.8.30
     # via requests
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
-docutils==0.18.1
+click==8.1.7
+    # via mkdocs
+colorama==0.4.6
+    # via mkdocs-material
+ghp-import==2.1.0
+    # via mkdocs
+greenlet==3.0.3
+    # via playwright
+hjson==3.1.0
     # via
-    #   myst-parser
-    #   sphinx
-    #   sphinx-rtd-theme
+    #   mkdocs-macros-plugin
+    #   super-collections
 idna==3.10
     # via requests
-imagesize==1.4.1
-    # via sphinx
 jinja2==3.1.4
     # via
-    #   myst-parser
-    #   sphinx
-markdown-it-py==2.2.0
+    #   mkdocs
+    #   mkdocs-macros-plugin
+    #   mkdocs-material
+libsass==0.23.0
+    # via mkdocs-exporter
+lxml==5.3.0
+    # via mkdocs-exporter
+markdown==3.7
     # via
-    #   mdit-py-plugins
-    #   myst-parser
-markupsafe==2.1.5
-    # via jinja2
-mdit-py-plugins==0.3.5
-    # via myst-parser
-mdurl==0.1.2
-    # via markdown-it-py
-myst-parser==0.18.1
-    # via -r requirements.in
-packaging==24.1
-    # via sphinx
-pygments==2.18.0
-    # via sphinx
-pyyaml==6.0.2
-    # via myst-parser
-requests==2.32.3
-    # via sphinx
-snowballstemmer==2.2.0
-    # via sphinx
-sphinx==5.3.0
+    #   mkdocs
+    #   mkdocs-material
+    #   pymdown-extensions
+markupsafe==3.0.1
+    # via
+    #   jinja2
+    #   mkdocs
+mergedeep==1.3.4
+    # via
+    #   mkdocs
+    #   mkdocs-get-deps
+mkdocs==1.6.1
     # via
     #   -r requirements.in
-    #   myst-parser
-    #   sphinx-copybutton
-    #   sphinx-rtd-theme
-    #   sphinxcontrib-extdevhelper-kasane
-    #   sphinxcontrib-jquery
-sphinx-copybutton==0.5.2
+    #   mkdocs-exclude
+    #   mkdocs-exporter
+    #   mkdocs-include-markdown-plugin
+    #   mkdocs-macros-plugin
+    #   mkdocs-material
+    #   mkdocs-open-in-new-tab
+mkdocs-exclude==1.0.2
     # via -r requirements.in
-sphinx-new-tab-link==0.6.0
+mkdocs-exporter==6.1.1
     # via -r requirements.in
-sphinx-rtd-theme==1.2.0
+mkdocs-get-deps==0.2.0
+    # via mkdocs
+mkdocs-include-markdown-plugin==6.2.2
     # via -r requirements.in
-sphinxcontrib-applehelp==2.0.0
-    # via sphinx
-sphinxcontrib-devhelp==2.0.0
-    # via sphinx
-sphinxcontrib-extdevhelper-kasane==0.2.0
-    # via sphinx-new-tab-link
-sphinxcontrib-htmlhelp==2.1.0
-    # via sphinx
-sphinxcontrib-jquery==4.1
-    # via sphinx-rtd-theme
-sphinxcontrib-jsmath==1.0.1
-    # via sphinx
-sphinxcontrib-qthelp==2.0.0
-    # via sphinx
-sphinxcontrib-serializinghtml==2.0.0
-    # via sphinx
+mkdocs-macros-plugin==1.3.5
+    # via -r requirements.in
+mkdocs-material==9.5.40
+    # via -r requirements.in
+mkdocs-material-extensions==1.3.1
+    # via mkdocs-material
+mkdocs-open-in-new-tab==1.0.6
+    # via -r requirements.in
+packaging==24.1
+    # via
+    #   mkdocs
+    #   mkdocs-macros-plugin
+paginate==0.5.7
+    # via mkdocs-material
+pathspec==0.12.1
+    # via
+    #   mkdocs
+    #   mkdocs-macros-plugin
+platformdirs==4.3.6
+    # via mkdocs-get-deps
+playwright==1.47.0
+    # via mkdocs-exporter
+pyee==12.0.0
+    # via playwright
+pygments==2.18.0
+    # via mkdocs-material
+pymdown-extensions==10.11.2
+    # via mkdocs-material
+pypdf==5.0.1
+    # via mkdocs-exporter
+python-dateutil==2.9.0.post0
+    # via
+    #   ghp-import
+    #   mkdocs-macros-plugin
+pyyaml==6.0.2
+    # via
+    #   mkdocs
+    #   mkdocs-get-deps
+    #   mkdocs-macros-plugin
+    #   pymdown-extensions
+    #   pyyaml-env-tag
+pyyaml-env-tag==0.1
+    # via mkdocs
+regex==2024.9.11
+    # via mkdocs-material
+requests==2.32.3
+    # via mkdocs-material
+six==1.16.0
+    # via python-dateutil
+soupsieve==2.6
+    # via beautifulsoup4
+super-collections==0.5.3
+    # via mkdocs-macros-plugin
+termcolor==2.5.0
+    # via mkdocs-macros-plugin
 typing-extensions==4.12.2
-    # via myst-parser
+    # via pyee
 urllib3==2.2.3
     # via requests
+watchdog==5.0.3
+    # via mkdocs
+wcmatch==10.0
+    # via mkdocs-include-markdown-plugin

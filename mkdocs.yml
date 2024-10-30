@@ -1,0 +1,211 @@
+# Project information
+site_name: TrioDocs
+site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
+site_url: https://docs.diy-trio.org/
+site_author: Trio Community
+use_directory_urls: true
+
+# GitHub Repository
+repo_name: nightscout/trio-docs
+repo_url: https://github.com/nightscout/trio-docs/
+edit_uri: edit/dev/docs/
+
+copyright: Trio Community
+
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  logo: assets/images/trio-logo.png
+  favicon: assets/images/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to auto (use System Preferences)
+
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - open-in-new-tab
+  - macros:
+      include_dir: .
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, false]
+          concurrency: 16
+          stylesheets:
+            - docs/assets/stylesheets/pdf.scss
+          covers:
+            front: docs/assets/templates/covers/front.html.j2
+            # back: docs/assets/templates/covers/back.html.j2
+          aggregator:
+            enabled: true
+            output: trio-docs.pdf
+            covers: limits
+      buttons:
+        - title: Download Page as PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - search
+
+extra_css:
+  - assets/stylesheets/primary_color.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/mkdocs-exporter.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js
+
+# Customizations
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nightscout/trio-docs
+      name: Trio on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/FnwFEFUwXE
+      name: Trio on Discord
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/groups/diytrio
+      name: Trio on Facebook
+  version: 0.2.1
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link to this section for reference
+      title: On this Page
+      toc_depth: 3
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: info
+
+not_in_nav: |
+  Analyze/EvaluateBasal.md
+  Analyze/EvaluateCR.md
+  Getting-Started/cgm.md
+  settings/loop.md
+  settings/configuration/preferences/statistics.md
+  settings/devices/pump.md
+
+# Navigation (Page tree)
+nav:
+  - Home: ./index.md
+  - Overview:
+      - Introduction: ./Getting-Started/Overview.md
+      - App Overview: ./operate/interface.md
+      - New User Guide: ./Setup/New-User-Setup.md
+      - Coming from Other AID Systems: ./Configuration/transition-qa.md
+      - Common Issues: ./operate/troubleshoot.md
+      - Device Compatibility:
+          - iPhones & Watches: ./Getting-Started/iphone.md
+          - Pumps: ./Getting-Started/pump.md
+          - CGMs: ./settings/devices/cgm.md
+  - Build/Update Trio:
+      - Build Instructions: ./operate/build.md
+      - Customizations: ./operate/customize.md
+  - User Settings:
+      - Trio Main Preferences: ./settings/configuration/preferences/trio.md
+      - Pump, CGM, Watch: ./Configuration/Devices.md
+      - Additional Pump Settings: ./settings/configuration/pumpsettings.md
+      - Basal: ./settings/configuration/basalprofile.md
+      - ISF: ./settings/configuration/insulinsensitivities.md
+      - CR: ./settings/configuration/carbratios.md
+      - Target Glucose: ./settings/configuration/targetglucose.md
+      - Main Settings: ./settings/configuration/preferences/mainsettings.md
+      - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
+      - Close the Loop: ./Configuration/Configure.md
+  - Optional Settings:
+      - Apple Health: ./settings/services/applehealth.md
+      - FPU: ./settings/services/fatprotein.md
+      - Nightscout: ./settings/services/nightscout.md
+      - Notifications: ./settings/services/notifications.md
+      - SMB Settings: ./settings/configuration/preferences/smbsettings.md
+      - Temp Targets: ./operate/temptarget.md
+  - Advanced Settings:
+      - Autotune: ./settings/configuration/autotune.md
+      - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
+      - Sigmoid: ./settings/configuration/concepts/sigmoid.md
+      - Dynamic Settings Explained: ./settings/configuration/preferences/dynamicsettings.md
+      - Other Settings: ./settings/configuration/preferences/othersettings.md
+      - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
+  - Resources:
+      - Citations: ./resources/citations.md
+      - Translation: ./resources/translate.md
+      - TrioDocs PDF: ./trio-docs.pdf

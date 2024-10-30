@@ -1,0 +1,94 @@
+<style data-teleport="head">
+  .front-cover {
+    margin: var(--margin);
+    height: calc(var(--height) - var(--offset));
+    page-break-after: always;
+    border: 1px solid #fff;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      image-rendering: optimizeQuality;
+    }
+
+    .logo {
+      position: absolute;
+      top: calc(2cm);
+      fill: white;
+      left: 50%;
+      transform: translateX(-50%);
+
+      > div {
+        width: 3cm;
+        text-align: center;
+        height: 3cm;
+      }
+    }
+
+    section {
+      color: #fff;
+      padding: 0.635cm;
+      max-width: 10.25cm;
+      word-wrap: break-word;
+      margin-top: calc(var(--height) / 2 - var(--offset) - 2cm);
+      font-size: 13pt;
+
+      > .title {
+        font-size: 32pt;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-top: 1em;
+        color: #fff;
+        string-set: title content(text);
+      }
+
+      > .version {
+        line-height: 1;
+        font-size: 10pt;
+        font-family: monospace;
+      }
+    }
+  }
+
+  @page {
+    @top-center {
+      font-size: 9pt;
+      color: #7f7f7f;
+      content: '{{ config.site_name }}' ' — ' string(title);
+    }
+  }
+
+  @page :first {
+    margin: 0;
+    background: var(--md-primary-fg-color);
+
+    @top-center {
+      content: none;
+    }
+
+    @bottom-center {
+      content: none;
+    }
+  }
+</style>
+<div class="front-cover">
+  <img src="/assets/images/background.png">
+  <div class="logo">
+    <div>
+      <img src="/assets/images/trio-logo.png" />
+    </div>
+  </div>
+  <section>
+    <div class="brand">{{ config.site_name }}</div>
+    <div class="version">
+      version {{ version }}
+      <p>
+        Download the latest version on: https://docs.diy-trio.org
+      </p>
+    </div>
+    <div class="title">{{ page.title }}</div>
+  </section>
+</div>

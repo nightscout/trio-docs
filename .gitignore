@@ -1,8 +1,20 @@
 # macOS
 .DS_Store
 
-# Sphinx documentation
-docs/_build/
 
 # Python Virtual Environment
-venv/
+venv*/
+
+# Mkdocs
+target/
+/build/
+/site/
+
+# JS
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
