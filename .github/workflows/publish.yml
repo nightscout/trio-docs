@@ -56,8 +56,8 @@ jobs:
         if: steps.playwright.outputs.cache-hit != 'true'
         run: playwright install --with-deps chromium
 
-      - name: Build Website and PDF
-        run: MKDOCS_EXPORTER_PDF=true mkdocs build
+      - name: Build Website
+        run: mkdocs build
 
       - name: Push Website to gh-pages Branch
         uses: JamesIves/github-pages-deploy-action@v4
