@@ -405,9 +405,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#xdrip4ios-or-glucose-direct-as-cgm-source">
+<a class="md-nav__link" href="#xdrip4ios-as-cgm-source">
 <span class="md-ellipsis">
-      xDrip4iOS or Glucose Direct as CGM Source
+      xDrip4iOS as CGM Source
     </span>
 </a>
 </li>
@@ -415,13 +415,6 @@
 <a class="md-nav__link" href="#xdrip4ios">
 <span class="md-ellipsis">
       xDrip4iOS
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#glucose-direct">
-<span class="md-ellipsis">
-      Glucose Direct
     </span>
 </a>
 </li>
@@ -772,9 +765,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#xdrip4ios-or-glucose-direct-as-cgm-source">
+<a class="md-nav__link" href="#xdrip4ios-as-cgm-source">
 <span class="md-ellipsis">
-      xDrip4iOS or Glucose Direct as CGM Source
+      xDrip4iOS as CGM Source
     </span>
 </a>
 </li>
@@ -782,13 +775,6 @@
 <a class="md-nav__link" href="#xdrip4ios">
 <span class="md-ellipsis">
       xDrip4iOS
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#glucose-direct">
-<span class="md-ellipsis">
-      Glucose Direct
     </span>
 </a>
 </li>
@@ -1117,7 +1103,6 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <ol>
 <li><code>Build Loop Follow</code></li>
 <li><code>Build xDrip4iOS</code></li>
-<li><code>Build Glucose Direct</code></li>
 <li><code>Return to Menu</code></li>
 </ol>
 <h3 id="run-maintenance-utilities">Run Maintenance Utilities<a class="headerlink" href="#run-maintenance-utilities" title="Link to this section for reference">¶</a></h3>
@@ -1139,17 +1124,13 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <li><a href="https://www.facebook.com/groups/1351938092206709">Facebook group: Trio</a></li>
 <li>Facebook groups like <a href="https://www.facebook.com/groups/LOOPandLEARN">Loop and Learn</a> and <a href="https://www.facebook.com/groups/1782449781971680">Looped</a> primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.</li>
 </ul>
-<h3 id="xdrip4ios-or-glucose-direct-as-cgm-source">xDrip4iOS or Glucose Direct as CGM Source<a class="headerlink" href="#xdrip4ios-or-glucose-direct-as-cgm-source" title="Link to this section for reference">¶</a></h3>
+<h3 id="xdrip4ios-as-cgm-source">xDrip4iOS as CGM Source<a class="headerlink" href="#xdrip4ios-as-cgm-source" title="Link to this section for reference">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>LibreTransmitter is provided as part of Trio. Neither xDrip4iOS nor Glucose Direct are required to interact with your compatible Libre sensor using Trio.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.</p>
+<p>LibreTransmitter is provided as part of Trio. xDrip4iOS is <strong>not</strong> required to interact with your compatible Libre sensor using Trio.</p>
 </div>
 <p>If you want to use xDrip4iOS as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.</p>
-<p>The download is placed in your <code>Downloads</code> folder in a directory called <code>BuildxDrip4iOS</code> or <code>BuildGlucoseDirect</code>, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.</p>
+<p>The download is placed in your <code>Downloads</code> folder in a directory called <code>BuildxDrip4iOS</code>. The downloaded clone is found in a folder with the branch name, date, and time encoded.</p>
 <p>These can be accessed using the <a href="#build-trio-with-script"><strong>TrioBuildSelectScript</strong></a> menu options mentioned above. Or you can run each script individually.</p>
 <h3 id="xdrip4ios">xDrip4iOS<a class="headerlink" href="#xdrip4ios" title="Link to this section for reference">¶</a></h3>
 <div class="admonition important">
@@ -1159,18 +1140,10 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>/bin/bash -c "$(curl -fsSL \
 </span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
 </span></code></pre></div>
-<h3 id="glucose-direct">Glucose Direct<a class="headerlink" href="#glucose-direct" title="Link to this section for reference">¶</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Until the providers of Glucose Direct add a <code>Trio App Group</code> to their app, you cannot use this app with Trio.</p>
-</div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>/bin/bash -c "$(curl -fsSL \
-</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
-</span></code></pre></div>
 <h3 id="alternative-branch-for-trio">Alternative Branch for Trio<a class="headerlink" href="#alternative-branch-for-trio" title="Link to this section for reference">¶</a></h3>
 <p>Sometimes, specific branches are offered for testing. Any desired branch can be cloned using the <strong><code>Build Trio</code></strong> script. After the final quote of the script command, add a space, hyphen, space, and branch_name. An example is shown below: replace <code>branch_name</code> with your desired branch. Note that specific branches like this are not deleted as part of the <code>Delete Old Downloads</code> utility discussed in <a href="#run-maintenance-utilities">Maintenance Utilities</a>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>/bin/bash -c "$(curl -fsSL \
-</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" - branch_name
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>/bin/bash -c "$(curl -fsSL \
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" - branch_name
 </span></code></pre></div>
 <p><a href="#build-and-update">Top of Page</a></p>
 <h2 id="update-trio-with-xcode">Update Trio with Xcode<a class="headerlink" href="#update-trio-with-xcode" title="Link to this section for reference">¶</a></h2>
@@ -1193,8 +1166,8 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 </ul>
 <h3 id="update-your-code">Update your Code<a class="headerlink" href="#update-your-code" title="Link to this section for reference">¶</a></h3>
 <p>In the terminal, you will copy and paste this pair of commands to update your workspace and all your submodules.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>git fetch
-</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>git pull --recurse
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>git fetch
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>git pull --recurse
 </span></code></pre></div>
 <p>The first command <code>git fetch</code> brings down any updates about the state of the Trio workspace repository from GitHub.</p>
 <p>The second command <code>git pull --recurse</code> does several things:</p>
@@ -1204,10 +1177,10 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <li>For each submodule, it updates the version to match the one selected in GitHub, see <a href="#submodule-update">Submodule Update</a> for more details</li>
 </ul>
 <p>There can be errors in several places, for example:</p>
-<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>error: Your local changes to the following files would be overwritten by merge:
-</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>    FreeAPS/folder/file.swift
-</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>Please commit your changes or stash them before you merge.
-</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>Aborting
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>error: Your local changes to the following files would be overwritten by merge:
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>    FreeAPS/folder/file.swift
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>Please commit your changes or stash them before you merge.
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>Aborting
 </span></code></pre></div>
 <p>The <code>pull</code> command halts at this error and does not move on updating the submodules. You must first fix the Trio workspace files using <a href="#fix-trio-conflicts">Fix Trio Conflicts</a>.</p>
 <ul>
@@ -1219,25 +1192,25 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <li>If there are no updates to submodules, you won't see any submodule update messages - that is not uncommon</li>
 <li>If there are updates to one or more submodules with no errors, you will see messages indicating the submodules are being checked out similar to the one below</li>
 </ul>
-<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>Submodule path 'ModuleName': checked out 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56'
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>Submodule path 'ModuleName': checked out 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56'
 </span></code></pre></div>
 <p>If you see the word <code>error</code> or <code>conflict</code> on the output, similar to the following, head over to <a href="#fix-submodule-conflicts">Fix Submodule Conflicts</a>.</p>
-<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>error: Your local changes to the following files would be overwritten by checkout:
-</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>    SubModuleName/folder/file.swift
-</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>Please commit your changes or stash them before you switch branches.
-</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>Aborting
-</span><span id="__span-7-5"><a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a>fatal: Unable to checkout 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56' in submodule path 'SubModuleName'
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>error: Your local changes to the following files would be overwritten by checkout:
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>    SubModuleName/folder/file.swift
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>Please commit your changes or stash them before you switch branches.
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>Aborting
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>fatal: Unable to checkout 'f11abde5e2eea2cbf7ac80f3f4bc4bc6e7f6de56' in submodule path 'SubModuleName'
 </span></code></pre></div>
 <p>If you saw no errors, you are ready to build.</p>
 <h3 id="fix-trio-conflicts">Fix Trio Conflicts<a class="headerlink" href="#fix-trio-conflicts" title="Link to this section for reference">¶</a></h3>
 <p>If you have customizations in the Trio code (in the workspace) that cause a conflict when you <code>pull</code>, it is best to delete those and start fresh. (Expert users know how to handle this, these directions are for novices):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>git reset --hard
-</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>git clean -fd
-</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>git pull
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>git reset --hard
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>git clean -fd
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>git pull
 </span></code></pre></div>
 <p>You should see the words: <code>Your branch is up to date with origin/main</code> (or <code>dev</code> or other branch if you are not running <code>main</code>.)</p>
 <p>Now you need to continue to update the submodules with this command:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>git submodule update
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>git submodule update
 </span></code></pre></div>
 <p>If there are no conflicts, you are ready to build the Trio app to your phone.</p>
 <p>If there are conflicts similar to those shown in <a href="#submodule-update">Submodule Update</a>, fix them before building.</p>
@@ -1265,17 +1238,17 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <h3 id="prepare-the-shell-script">Prepare the Shell Script<a class="headerlink" href="#prepare-the-shell-script" title="Link to this section for reference">¶</a></h3>
 <p>Open a new terminal:</p>
 <p>Step 1: Create a folder to store your shell scripts by copying and pasting the next line (only do this one time or you will get an error message):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>mkdir ~/scripts
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>mkdir ~/scripts
 </span></code></pre></div>
 <p>Step 2: Copy and paste this command into your terminal to prepare the <code>Open Terminal</code> shell script:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>touch ~/scripts/open_terminal.sh; open -e ~/scripts/open_terminal.sh
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>touch ~/scripts/open_terminal.sh; open -e ~/scripts/open_terminal.sh
 </span></code></pre></div>
 <p>Copy and paste the following lines into the editor and then save and close the file.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>#!/bin/bash
-</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>open -a Terminal "`pwd`"
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>#!/bin/bash
+</span><span id="__span-11-2"><a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a>open -a Terminal "`pwd`"
 </span></code></pre></div>
 <p>Step 3: Make the shell script executable; Copy and paste this command into your terminal:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>chmod +x ~/scripts/*.sh
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>chmod +x ~/scripts/*.sh
 </span></code></pre></div>
 <h3 id="add-behaviors-to-xcode">Add Behaviors to Xcode<a class="headerlink" href="#add-behaviors-to-xcode" title="Link to this section for reference">¶</a></h3>
 <p>Under the Xcode menu item, select <code>Behaviors</code>, <code>Edit Behaviors</code></p>
@@ -1348,11 +1321,8 @@ Special Section on Trio App Group <a href="#special-section-on-trio-app-group">S
 <p>You must be connected to the internet and must allow Xcode to connect to Apple to update your app group. Tap in the four locations (in order): (1) Folder Icon, (2) FreeAPS folder, (3) Signing &amp; Capabilities and (4) Target: FreeAPS, as indicated in the graphic below. The app group may momentarily appear in red font, then will update to black font for the trio-app-group. Continue until you have examined three targets <code>FreeAPS</code>, <code>FreeAPSWatch</code> and <code>FreeAPSWatch Watchkit Extension</code>. When those targets show the correct App Group, press the build symbol again.</p>
 <p><img alt="add Trio App Group to identifiers" src="../img/trio-allow-xcode-to-update.png"/></p>
 <h3 id="consequences-of-trio-app-group">Consequences of <code>Trio App Group</code><a class="headerlink" href="#consequences-of-trio-app-group" title="Link to this section for reference">¶</a></h3>
-<p>If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same <code>App Group</code> as Trio.</p>
-<ul>
-<li>xDrip4iOS requires version 5.3.1 or newer to support the <code>Trio App Group</code></li>
-<li>GlucoseDirect has not been updated, at this time, so does not currently work with Trio as a CGM source</li>
-</ul>
+<p>If you use xDrip4iOS  as your CGM for Trio, it needs to support the same <code>App Group</code> as Trio.</p>
+<p>xDrip4iOS requires version 5.3.1 or newer to support the <code>Trio App Group</code></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
