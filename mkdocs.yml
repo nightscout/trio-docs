@@ -65,8 +65,7 @@ theme:
 
 plugins:
   - open-in-new-tab
-  - macros:
-      include_dir: .
+  - macros
   - exporter:
       formats:
         pdf:
