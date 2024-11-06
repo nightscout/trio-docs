@@ -57,7 +57,7 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Build Website
-        run: mkdocs build
+        run: MKDOCS_EXPORTER_PDF=true mkdocs build
 
       - name: Push Website to gh-pages Branch
         uses: JamesIves/github-pages-deploy-action@v4
