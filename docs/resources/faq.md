@@ -9,8 +9,7 @@ The project started with Ivan Valkou's FreeAPS X implementation of the OpenAPS a
 
 Following the release of version 3.0.0, the project’s direction significantly changed due to differing views on development, open source, and peer review. This led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project’s new phase, symbolizing its evolution and the collaborative development’s dynamic nature.
 
-!!! important "Important"
-    Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk.
+!!! important "Important"  Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk.
 
 
 ### Can I download Trio from the App Store?
@@ -37,8 +36,7 @@ When you use the 'Browser Build' method, you must access a browser at least once
 
 When you use Build with Mac: 1. When you first build. 2. Once per year, at the minimum, after that. However, if you decide to use a free Apple Developer account, you must rebuild every 7 days. 
 
-!!! important "Important" 
-    Periodically, developers will release updates to Trio. These updates may include new features or important safety updates. It is recommended that as updates are released, users update their Trio app.
+!!! important "Important" Periodically, developers will release updates to Trio. These updates may include new features or important safety updates. It is recommended that as updates are released, users update their Trio app.
 
 ### Do I have to rebuild Trio if I change insulin pumps or CGMs?
 No. Trio lets you move between different pumps and CGM configurations within the app. 
@@ -50,8 +48,7 @@ Depending on which system you are transitioning from, whether DIY or commercial,
 
 Why? Trio is only as good as the information you give it. Basal, carb ratios, and insulin sensitivity factors form the basis for all computing by Trio's algorithms. If you have given Trio poor-quality information, you will see poor-quality output. This will likely present as unexpected behavior to the everyday user and result in a poor user experience.
 
-!!! important "Important"
-    Before commencing on Trio, users must test and refine their basals, carb ratios, and insulin sensitivity factors.
+!!! important "Important"  Before commencing on Trio, users must test and refine their basals, carb ratios, and insulin sensitivity factors.
 
 ### What about other pumps? When can I use them with Trio?
 Cracking of pumps for use with the Trio app is a significant undertaking. At the same time, developers are constantly monitoring pumps that could be integrated into Trio. Ultimately, cracking and creating drivers for these pumps requires multiple developers to devote significant amounts of their time. Realistically, it can take upwards of 12 months for new pump integration. Information on supported pumps can be found under [Compatible Pumps](../Getting-Started/pump.md).
@@ -59,8 +56,7 @@ Cracking of pumps for use with the Trio app is a significant undertaking. At the
 ### I regularly go places without phone service or an internet connection. Will Trio work without these?
 Yes. Trio does not require internet or cell coverage to work. So long as the Trio user has Bluetooth enabled on the iPhone, the CGM and insulin pump will continue working in conjunction with Trio. 
 
-!!! warning
-    If you have chosen a CGM source that requires the internet (i.e., Nightscout or Dexcom Share), users must maintain an internet connection. If you enter an area without internet, you will lose your CGM readings and Trio will stop looping.
+!!! warning  If you have chosen a CGM source that requires the internet (i.e., Nightscout or Dexcom Share), users must maintain an internet connection. If you enter an area without internet, you will lose your CGM readings and Trio will stop looping.
 
 ### Can I have someone follow my Trio app?
 There are multiple options available for someone to follow your loop data.
@@ -71,8 +67,7 @@ There are multiple options available for someone to follow your loop data.
 **LoopFollow**
 <br>LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's display information and alerts into a single, easy-to-use interface. LoopFollow pulls data from your Nightscout or Dexcom Share server. You can set up more than one app on a phone if you follow more than one person with diabetes. Information on creating your LoopFollow app can be found [here](https://www.loopandlearn.org/loop-follow/).
 
-!!! warning
-    All options for following your Trio app rely on an active internet connection. If you or the person you are following loses connection to the internet, your LoopFollow app will stop receiving data.
+!!! warning  All options for following your Trio app rely on an active internet connection. If you or the person you are following loses connection to the internet, your LoopFollow app will stop receiving data.
 
 ## Algorithm FAQs
 
@@ -94,8 +89,7 @@ The default is zero, meaning Trio can only set temporary basal rates lower than 
 
 You will need to increase this value to allow Trio to start automating your insulin delivery. If you are nervous, you can start by setting this value to your average meal bolus. Then, over time, you can begin to increase the value. 
 
-!!! tip 
-    The default recommendation is “average meal bolus + 3 x max hourly basal” when using super micro boluses.
+!!! tip  The default recommendation is “average meal bolus + 3 x max hourly basal” when using super micro boluses.
 
 ### How does 'Max COB' impact Trio's limit Trio's algorithm?
 The maximum amount of carbs that Trio is allowed to bolus or set high-temp targets for. This safety feature protects against erroneous carbohydrate entries that could lead to hypoglycemia episodes.
@@ -178,8 +172,7 @@ The following CGM can be used with Trio:
 **xDrip**
 <br>To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../operate/build.md#xdrip4ios-as-cgm-source).  
 
-!!! tip 
-    If you use xDrip with the Dexcom G6/ONE, in Trio select 'Dexcom G6' as the CGM source. Trio will intercept glucose readings directly from the transmitter.
+!!! tip  If you use xDrip with the Dexcom G6/ONE, in Trio select 'Dexcom G6' as the CGM source. Trio will intercept glucose readings directly from the transmitter.
     
 **Nightscout**
 <br>Yes. Nightscout can be used as a remote CGM source in Trio. However, this option should be avoided because it does not keep Trio running in the background like other CGM options. You will have to open Trio manually to make it run loop cycles.  
