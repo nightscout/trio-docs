@@ -102,6 +102,7 @@ plugins:
         - mkdocs-exporter.js
         - pdf.scss
         - primary_color.css
+        - trio-docs.pdf
   - search
 
 extra_css:
