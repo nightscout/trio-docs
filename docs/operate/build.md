@@ -179,8 +179,7 @@ The choices are:
 
 1. `Build Loop Follow`
 2. `Build xDrip4iOS`
-3. `Build Glucose Direct`
-4. `Return to Menu`
+3. `Return to Menu`
 
 ### Run Maintenance Utilities
 
@@ -207,19 +206,15 @@ If you need it, you are most likely to get help in one of these groups:
 * [Facebook group: Trio](https://www.facebook.com/groups/1351938092206709)
 * Facebook groups like [Loop and Learn](https://www.facebook.com/groups/LOOPandLEARN) and [Looped](https://www.facebook.com/groups/1782449781971680) primarily focus on Loop but offer a wide variety of support surrounding all types of DIY Looping.
 
-### xDrip4iOS or Glucose Direct as CGM Source
+### xDrip4iOS as CGM Source
 
 !!! important
     
-    LibreTransmitter is provided as part of Trio. Neither xDrip4iOS nor Glucose Direct are required to interact with your compatible Libre sensor using Trio.
-
-!!! important
-    
-    Until the providers of Glucose Direct add a Trio App Group to their app, you cannot use this app with Trio.
+    LibreTransmitter is provided as part of Trio. xDrip4iOS is **not** required to interact with your compatible Libre sensor using Trio.
 
 If you want to use xDrip4iOS as a CGM source via “shared app group,” you must also build that app from a source with the same developer ID used for building Trio. Scripts are available for these apps as well. All scripts follow the same download and build pattern and configure automatic signing files for you.
 
-The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS` or `BuildGlucoseDirect`, respectively. The downloaded clone is found in a folder with the branch name, date, and time encoded.
+The download is placed in your `Downloads` folder in a directory called `BuildxDrip4iOS`. The downloaded clone is found in a folder with the branch name, date, and time encoded.
 
 These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-script) menu options mentioned above. Or you can run each script individually.
 
@@ -232,17 +227,6 @@ These can be accessed using the [**TrioBuildSelectScript**](#build-trio-with-scr
 ```
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildxDrip4iOS.sh)"
-```
-
-### Glucose Direct
-
-!!! important
-    
-    Until the providers of Glucose Direct add a `Trio App Group` to their app, you cannot use this app with Trio.
-
-```
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildGlucoseDirect.sh)"
 ```
 
 ### Alternative Branch for Trio
@@ -494,8 +478,7 @@ You must be connected to the internet and must allow Xcode to connect to Apple t
 
 ### Consequences of `Trio App Group`
 
-If you use xDrip4iOS or GlucoseDirect as your CGM for Trio, they need to support the same `App Group` as Trio.
+If you use xDrip4iOS  as your CGM for Trio, it needs to support the same `App Group` as Trio.
 
-* xDrip4iOS requires version 5.3.1 or newer to support the `Trio App Group`
-* GlucoseDirect has not been updated, at this time, so does not currently work with Trio as a CGM source
+xDrip4iOS requires version 5.3.1 or newer to support the `Trio App Group`
 

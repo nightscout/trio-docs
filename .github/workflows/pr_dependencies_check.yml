@@ -1,0 +1,23 @@
+name: Prevent Blocked PRs from being Merged
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - closed
+      - reopened
+  issues:
+    types:
+      - opened
+      - edited
+      - deleted
+      - transferred
+      - closed
+      - reopened
+
+jobs:
+  blocking_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Levi-Lesches/blocking-issues@v2
