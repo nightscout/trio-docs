@@ -142,7 +142,7 @@ If you build Trio on your Mac using Xcode, the recommendation is to use the [**T
 
 ### Build Trio with Script
 
-The **`TrioBuildSelectScript`** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/step14/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
+The **`TrioBuildSelectScript`** is similar to the script used to build Loop. If you need it, extensive instructions for that script are provided at these links: [LoopDocs: Build Select Script](https://loopkit.github.io/loopdocs/build/build-app/#build-select-script) and [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/).
 
 The **`TrioBuildSelectScript`** offers the choice to:
 
@@ -198,7 +198,7 @@ For more information, refer to [Loop and Learn: Maintenance Utitilites](https://
 
 ### Build Errors
 
-If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build_errors/) errors page. Only some things on that page are relevant for building Trio, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
+If you encounter any build issues, please look at the [LoopDocs Build](https://loopkit.github.io/loopdocs/build/build-errors/) errors page. Only some things on that page are relevant for building Trio, but many potential issues will likely be covered there. You will also get helpful advice about what info to provide if you need to ask for help. When you have identified the error message(s), you can use the search tool in LoopDocs to see if your error is mentioned.
 
 If you need it, you are most likely to get help in one of these groups:
 
