@@ -66,7 +66,15 @@ MKDOCS_EXPORTER_PDF=true  mkdocs build
 ```
 
  The PDF file is generated in`site/trio-docs.pdf`.
- 
+
+### Find Broken Links
+
+To list broken links, we use [`mkdocs-htmlproofer-plugin`](https://github.com/manuzhang/mkdocs-htmlproofer-plugin):
+
+```shell
+CHECK_BROKEN_LINKS=true mkdocs build --quiet
+```
+
 ## Contribute
 
 You can contribute to the Trio documentation by correcting typos or suggesting new content.
