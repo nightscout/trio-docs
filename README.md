@@ -79,6 +79,14 @@ CHECK_UNUSED_FILES=true mkdocs build -s
 > [!INFO] 
 > We use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin.
  
+### Find Broken Links
+
+To list broken links, we use [`mkdocs-htmlproofer-plugin`](https://github.com/manuzhang/mkdocs-htmlproofer-plugin):
+
+```shell
+CHECK_BROKEN_LINKS=true mkdocs build --quiet
+```
+
 ## Contribute
 
 You can contribute to the Trio documentation by correcting typos or suggesting new content.
