@@ -65,8 +65,7 @@ theme:
 
 plugins:
   - open-in-new-tab
-  - macros:
-      include_dir: .
+  - macros
   - exporter:
       formats:
         pdf:
@@ -112,7 +111,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/mathjax.js
   - assets/javascripts/mkdocs-exporter.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js
 
 # Customizations
