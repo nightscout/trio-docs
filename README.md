@@ -21,6 +21,7 @@ Repository for [Trio documentation (under development)](https://docs.diy-trio.or
   ```shell
   cd trio-docs # where you cloned the trio-docs repository
 
+  python -m pip install -r dev-requirements.txt
   python -m pip install -r requirements.txt
   ```
 
@@ -143,17 +144,27 @@ git push -u origin add_FAQ_page
   This page displays a box saying you can create a Pull-Request for your branch.
 - Click the button to do so, then follow the instructions.
 
-### Add a Plugin
+### Add a Package
 
-- Create a feature branch
-- Add the pinned version of the new plugin to the **`requirements.in`** file
+> [!NOTE]
+> In this section, the terms Python **package** and **dependency** refer to the same thing.
+
+- **Create** a feature **branch** (aka. topic branch)
+  ```shell
+  git switch dev
+  git switch -c feature/add_dependency_XXX
+  ```
+- **Add** the pinned version of the new **package** to the **`requirements.in`** file
   ```shell
     MY_FAVORITE_EDITOR_HERE requirements.in
     
-    # Add the pinned version (i.e. plugin name + version) to `requirements.in
-    XXX_PLUGIN_NAME_HERE==XXX_PLUGIN_VERSION_HERE
+    # Add the pinned version of the package to `requirements.in
+    XXX_PACKAGE_NAME_HERE==XXX_PACKAGE_VERSION_HERE
     ```
-    For example, add this line `mkdocs-exporter==6.1.1` to `requirements.in`
+    For example, to add the `mkdocs-exporter` package version `6.1.1`, I added the following line to the `requirements.in` file:
+     ```text
+     mkdocs-exporter==6.1.1
+     ```
 - Generate **`requirements.txt`**
   ```shell
     cd trio-docs
@@ -161,20 +172,33 @@ git push -u origin add_FAQ_page
     # IMPORTANT: The project's virtual environment MUST be activated first
     source venv/bin/activate
     
-    # Remove already installed plugins
-    python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
+    # Remove the already installed packages in case you need to start from a blank slate
+    # python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
     
-    # Install the dependencies listed in `requirements.in`
-    # This installs the indirect dependencies these plugins depend upon.
+    # Install the development packages
+    # (among which `pip-tools` that contains `pip-compile`)
+    pip install -r dev-requirements.txt
+    
+    # Install the direct dependencies (listed in `requirements.in`
+    # This also installs the indirect dependencies these packages depend upon.
     pip install -r requirements.in
     
-    # Generate `requirements.txt` with both direct AND indirect dependencies
-    pip freeze > requirements.txt
+    # Add code/doc using this package and test until it is ready.
     
-    # Commit the changes (where XXX denotes the plugin name)
+    # Generate the `requirements.txt` file from `requirements.in`
+    pip-compile
+    
+    # Commit the changes (where XXX denotes the package name)
     git add requirements.in requirements.txt
-    git commit -m "➕ Add dependency XXX"
+    git commit -m "➕ Add dependency: XXX"
+    
+    # Push your feature branch to your `origin` repository
+    git push -u origin feature/add_dependency_XXX
     ```
+- [**Create a Pull Request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes:
+	- Open your clone repository of `trio-docs` on *GitHub* (`https://github.com/YOUR_USERNAME/trio-docs`)
+		- Click the `Pull Requests` tab 
+		- Click "`Compare & pull request`" in the yellow banner next to your branch name
   
 ## Tips & Tricks
 
