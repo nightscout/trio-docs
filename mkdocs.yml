@@ -86,6 +86,23 @@ plugins:
           icon: material-file-download-outline
           enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
           attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - unused_files:
+      enabled: !ENV [CHECK_UNUSED_FILES, False]
+      strict: true
+      excluded_files:
+        - back.html.j2
+        - background.png
+        - CNAME
+        - .DS_Store
+        - extra.css
+        - favicon.ico
+        - front.html.j2
+        - .keep
+        - mathjax.js
+        - mkdocs-exporter.js
+        - pdf.scss
+        - primary_color.css
+        - trio-docs.pdf
   - search
 
 extra_css:
