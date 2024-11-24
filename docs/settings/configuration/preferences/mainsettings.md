@@ -46,13 +46,13 @@ You can start by increasing this number to your average mealtime bolus and evalu
     Using the **MaxIOB** formula
     
     $$
-    Average\ Meal\ Bolus + 3 \times Highest\ Hourly\ Basal
+    Average\ Meal\ Bolus + (3 \times Highest\ Hourly\ Basal)
     $$
     
     his recommended **Max IOB** setting should be **12**
     
     $$
-    6 + 3 \times 2.0 = 12
+    6 + ( 3 \times 2.0 ) = 12
     $$
 
 If you are insulin resistant and/or need help dealing with meal spikes, you can continue to increase this number further to allow for greater insulin delivery.
@@ -136,4 +136,4 @@ This setting determines the minimum ratio autosens can use for its adjustments. 
 This limits the ability of Dynamic ISF and Dynamic CR to reduce insulin needs.
 
 ### Autosens Min with Autotune
-This setting Autotune's ability to reduce insulin needs in your CR, basal profile, and ISF.
+This setting limits Autotune's ability to reduce insulin needs in your CR, basal profile, and ISF.
