@@ -197,6 +197,16 @@ nav:
               - iPhones & Watches: ./Getting-Started/iphone.md
               - Pumps: ./Getting-Started/pump.md
               - CGMs: ./settings/devices/cgm.md
+      - Build Trio with Mac:
+          - Overview: ./XCBuild/xc-overview.md
+          - Apple Developer Program: ./XCBuild/apple-developer.md
+          - Prepare your Computer: ./XCBuild/xc-computer.md
+          - Download and Configure Xcode: ./XCBuild/xc-downconfig.md
+          - Prepare your iPhone and Watch: ./XCBuild/xc-phone.md
+          - Build Trio with Xcode: ./XCBuild/xc-build.md
+          - Update Trio with Xcode: ./XCBuild/xc-update.md
+          - Customize Trio with Xcode: ./XCBuild/xc-customize.md
+          - Build Errors - Mac Build: ./XCBuild/xc-errors.md
       - User Settings:
           - Trio Main Preferences: ./settings/configuration/preferences/trio.md
           - Pump, CGM, Watch: ./Configuration/Devices.md
