@@ -197,9 +197,6 @@ nav:
               - iPhones & Watches: ./Getting-Started/iphone.md
               - Pumps: ./Getting-Started/pump.md
               - CGMs: ./settings/devices/cgm.md
-      - Build/Update Trio:
-          - Build Instructions: ./operate/build.md
-          - Customizations: ./operate/customize.md
       - User Settings:
           - Trio Main Preferences: ./settings/configuration/preferences/trio.md
           - Pump, CGM, Watch: ./Configuration/Devices.md
