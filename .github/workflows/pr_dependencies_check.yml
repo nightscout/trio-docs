@@ -18,6 +18,9 @@ on:
 
 jobs:
   blocking_issues:
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: Levi-Lesches/blocking-issues@v2
