@@ -19,7 +19,8 @@ on:
 jobs:
   blocking_issues:
     permissions:
-      contents: write
+      checks: write
+      issues: write
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
