@@ -29,8 +29,9 @@ hjson==3.1.0
     #   super-collections
 idna==3.10
     # via requests
-jinja2==3.1.4
+jinja2==3.1.5
     # via
+    #   -r requirements.in
     #   mkdocs
     #   mkdocs-macros-plugin
     #   mkdocs-material
