@@ -57,11 +57,15 @@ iOS Loop uses different algorithms, meaning it has a different approach than Tri
 
 ??? note "Incorrect or missing carb entries"
     
-    Trio has a feature called Unannounced Meals (UAM). With this option enabled and properly configured, Trio will react to rising BG by giving insulin through a Super Micro Bolus (SMB) even if no carbohydrates are registered. UAM helps in two scenarios: forgetting to add carbohydrates for a meal and entering carbohydrates but not the correct amount.
-
-??? note "Lots of manual corrections and "fake carbs"
+    *Trio* has a feature called Unannounced Meals (*UAM*). With this option enabled and properly configured, Trio will react to rising BG by giving insulin through a Super Micro Bolus (*SMB*) even if no carbohydrates are registered.  
+    *UAM* helps in two scenarios: 
     
-    With UAM and SMB active and properly configured, Trio will make any necessary corrections. There is no need to add "fake carbs" to make Trio give insulin, as many Loop users are used to.
+    - when you have neglected to add carbohydrates for a meal
+    - when you have entered carbohydrates but not the correct amount.
+
+??? note "Lots of manual corrections and "fake carbs""
+    
+    With *UAM* and *SMB* active and properly configured, Trio will make any necessary corrections. There is no need to add "fake carbs" to make Trio give insulin, as many Loop users are used to.
 
 ??? note "Persistent highs because of variations in Insulin Sensitivity Factor (ISF) and Insulin-to-Carbohydrate Ratio (CR)"
     

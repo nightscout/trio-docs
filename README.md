@@ -76,7 +76,7 @@ To find unused (orphaned) files in the project:
 CHECK_UNUSED_FILES=true mkdocs build -s
 ```
 
-> [!INFO] 
+> [!NOTE] 
 > We use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin.
  
 ### Find Broken Links

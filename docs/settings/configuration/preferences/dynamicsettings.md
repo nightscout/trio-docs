@@ -90,6 +90,5 @@ This setting allows you to choose a higher threshold setting than the default. N
 !!! example
     
     Bill has set a BG target of 110 mg/dl.  
-    In his Trio preferences, he has set his threshold to 65 mg/dl.
-
-Because Trio's default threshold setting is 75 mg/dl for a 110 mg/dl blood glucose target, Bill's preference will be ignored.
+    In his Trio preferences, he has set his threshold to 65 mg/dl.  
+    Because Trio's default threshold setting is 75 mg/dl for a 110 mg/dl blood glucose target, Bill's preference will be ignored.
