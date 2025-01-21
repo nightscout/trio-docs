@@ -306,11 +306,29 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#watch">
+<a class="md-nav__link" href="#watches">
 <span class="md-ellipsis">
-      Watch
+      Watches
     </span>
 </a>
+<nav aria-label="Watches" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apple">
+<span class="md-ellipsis">
+      Apple
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#garmin">
+<span class="md-ellipsis">
+      Garmin
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -452,11 +470,29 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#watch">
+<a class="md-nav__link" href="#watches">
 <span class="md-ellipsis">
-      Watch
+      Watches
     </span>
 </a>
+<nav aria-label="Watches" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apple">
+<span class="md-ellipsis">
+      Apple
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#garmin">
+<span class="md-ellipsis">
+      Garmin
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -481,8 +517,28 @@
 <p>Change the sensor through the Dexcom G6 or G7 app. Trio will automatically pick up the reading; you don't need to do anything else.</p>
 <h3 id="xdrip-as-bg-source">xDrip as BG source<a class="headerlink" href="#xdrip-as-bg-source" title="Link to this section for reference">¶</a></h3>
 <p>xDrip is not recommended with the Trio app, as native connections to CGM are more stable.</p>
-<h2 id="watch">Watch<a class="headerlink" href="#watch" title="Link to this section for reference">¶</a></h2>
-<p>This section asks you to add a watch to Trio. Apple Watch and some Garmin watches are compatible. On an Apple Watch, you can add carbs and boluses, set a temporary target, and show BG, IOB, COB, etc. Garmin watches only display data and will not let you interact by adding carbs or insulin.</p>
+<h2 id="watches">Watches<a class="headerlink" href="#watches" title="Link to this section for reference">¶</a></h2>
+<p>This section asks you to add a watch to Trio. Apple Watch and some Garmin watches are compatible.</p>
+<h3 id="apple">Apple<a class="headerlink" href="#apple" title="Link to this section for reference">¶</a></h3>
+<p>On an Apple Watch, you can add carbs and boluses, set a temporary target, and display BG, IOB, COB, etc.</p>
+<h3 id="garmin">Garmin<a class="headerlink" href="#garmin" title="Link to this section for reference">¶</a></h3>
+<p>Garmin watches only display data and do not allow interaction for adding carbs or insulin. There are two components that can be installed on Garmin watches: a watch face that continuously displays information, and a data field that shows glucose information during activities. Both components are independent of each other and need to be sideloaded onto the watch as described below. No need for Garmin Connect in the background — the watch just needs to be connected to the phone that runs Trio. The watch face updates with Trio loob cycles.</p>
+<h4 id="releases">Releases<a class="headerlink" href="#releases" title="Link to this section for reference">¶</a></h4>
+<p>As long as nothing is published in Garmin Connect IQ, every garmin watch needs be individually compiled. You can do this yourself using VS Code with monkeyC plugin and a Garmin SDK. If not se the link below for the released watches.</p>
+<h4 id="how-to-do-it">How to do it<a class="headerlink" href="#how-to-do-it" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Choose a folder on your Mac and get the latest release from <a href="https://github.com/mountrcg/garminWatch">this GitHub repo</a>.</li>
+<li>You need <code>*.prg</code> files for your watch model from the release and OpenMTP from <a href="https://openmtp.ganeshrvel.com">OpenMTP</a> to transfer them to the watch.</li>
+<li>Install and start OpenMTP.</li>
+<li>Connect your Garmin watch via a data USB cable to the MacBook and allow the USB connection. The Garmin watch USB mode should be set to MTP.</li>
+<li>Transfer <code>*.prg</code> files for your watch model to the <code>/GARMIN/APPS</code> folder.</li>
+<li>Wait for the transfer to finish and disconnect the watch.</li>
+<li>Add the Garmin watch in Trio settings: <code>Settings -&gt; Watch -&gt; Garmin Watch -&gt; Add Devices</code>.</li>
+<li>Choose the Trio watch face on the watch and enjoy.</li>
+</ol>
+<h4 id="hints">Hints<a class="headerlink" href="#hints" title="Link to this section for reference">¶</a></h4>
+<p>The watch face will not display information after another has been used. In that case, you have to uninstall the Trio watch face and reinstall it. No similar side effects occur with the data field.</p>
+<p>If your watch is not listed in the Release section, please ask about it in the Garmin channel on Discord.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
