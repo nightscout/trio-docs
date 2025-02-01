@@ -44,7 +44,3 @@ The signature for this situation when viewing the *Nightscout* display is either
 2. 📉 or falling glucose with no temporary basal set to `0 U/hr`.
 
 
-!!! important "LoopFollow and Trio Limitations in Detecting Lost Pod Communication"
-    
-    *[LoopFollow](https://www.loopandlearn.org/loop-follow/)* for *Trio* version `0.2.3` or earlier does not alert for lost Pod communications because *Nightscout* does not alert.
-
