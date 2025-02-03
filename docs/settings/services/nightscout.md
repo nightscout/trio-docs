@@ -6,7 +6,7 @@
 
 ## Nightscout Introduction
 
-[Nightscout](http://nightscout.info) (NS) is an open-source, DIY project that allows real-time access to CGM data via a personal website, smartwatch viewers, or apps and widgets available for smartphones. Setting up a Nightscout web app is recommended to visualize your Trio closed loop. 
+[Nightscout](http://nightscout.info) (NS) is an open-source project that allows real-time access to CGM data via a personal website, smartwatch viewers, or apps and widgets available for smartphones. Setting up a Nightscout web app is recommended to visualize your *Trio* closed loop. 
 
 Nightscout allows a user to upload CGM data from various sources to an online database and cloud computing service. The information is then processed and displayed visually as a graph. Plugins also allow more information to be shown about Trio. 
 
@@ -16,4 +16,13 @@ with another person, it will be helpful for you to visualize what the loop is do
 [For help making a Nightscout account, please see the OpenAPS documentation.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html)
 
 ## Trio Setup
-To enable your nightscout connection, input your Nightscout URL, including the `https://` and your `API_SECRET`. Select `Allow uploads` so Trio can share its predictions and settings with Nightscout. 
+
+To enable your *Nightscout* connection:
+
+- input your ***Nightscout* URL**, including the `https://` and your **`API_SECRET`**. 
+- Toggle on **`Allow Uploading to Nightscout`** so *Trio* can share its predictions and settings with *Nightscout*. 
+
+!!! important "A Nightscout URL starts with httpS://"
+    
+     Your *Nightscout* URL must start with `https://`.  
+     To set this up correctly, do not forget the letter `s` between `http` and `://`.
