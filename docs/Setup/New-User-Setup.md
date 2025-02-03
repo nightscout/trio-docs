@@ -25,7 +25,7 @@ Once you have verified that you are using compatible devices, you can connect th
 
  1. [Pump](../Configuration/Devices.md#pump)
  2. [CGM](../Configuration/Devices.md#cgm)
- 3. [Watch (optional)](../Configuration/Devices.md#watch)
+ 3. [Watch (optional)](../Configuration/Devices.md#watches)
 
 ## Step 2: Add Profile Settings
 
