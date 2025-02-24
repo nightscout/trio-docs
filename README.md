@@ -207,13 +207,14 @@ git push -u origin add_FAQ_page
 	- Open your clone repository of `trio-docs` on *GitHub* (`https://github.com/YOUR_USERNAME/trio-docs`)
 		- Click the `Pull Requests` tab 
 		- Click "`Compare & pull request`" in the yellow banner next to your branch name
-  
-## Tips & Tricks
+
+
+## FAQs
 
 > [!NOTE]
 > Please add!
 
-### Add a Chapter
+### Adding a Chapter
 
 Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determines the level.
 
@@ -240,7 +241,7 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 > | `**bold text**`    | **bold text** |
 > | `<b>bold text</b>` | **bold text** |
 
-### Link to Another File
+### Adding a Link to Another File
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
@@ -289,9 +290,9 @@ The website uses the Markdown page of the glossary.
 > Remember to commit these 2 files.
 
 
-### Migrate a Sphinx page to Mkdocs
+### Migrating a Sphinx page to Mkdocs
 
-#### Migrate an Admonition from Sphinx to Mkdocs
+#### Migrating an Admonition from Sphinx to Mkdocs
 
 > [!NOTE] 
 > **What is an admonition?**  
