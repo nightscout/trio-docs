@@ -44,12 +44,12 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: Switch to auto (use System Preferences)
-
   features:
     - announce.dismiss
     - content.action.edit
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
@@ -131,7 +131,11 @@ extra:
       name: Trio on Facebook
   version: 0.2.1
 
+watch:
+  - includes
+
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - def_list
@@ -156,6 +160,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.txt
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -185,6 +192,8 @@ not_in_nav: |
 
 # Navigation (Page tree)
 nav:
+  - FAQs:
+      - Glossary: ./faqs/glossary.md
   - 0.2.x:
       - Home: ./index.md
       - Overview:
