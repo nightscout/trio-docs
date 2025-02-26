@@ -192,8 +192,8 @@ not_in_nav: |
 
 # Navigation (Page tree)
 nav:
-  - FAQs:
-      - Glossary: ./faqs/glossary.md
+  - Help:
+      - Glossary: ./help/glossary.md
   - 0.2.x:
       - Home: ./index.md
       - Overview:
