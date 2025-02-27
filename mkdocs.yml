@@ -195,6 +195,7 @@ nav:
   - Help:
       - FAQs: ./help/faq.md
       - Glossary: ./help/glossary.md
+      - Translate: ./help/translate.md
       - Support Communities:
           - Facebook: https://www.facebook.com/groups/diytrio
           - Discord: https://discord.gg/FnwFEFUwXE
@@ -240,5 +241,5 @@ nav:
           - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
       - Resources:
           - Citations: ./resources/citations.md
-          - Translation: ./resources/translate.md
+          - Translation: ./help/translate.md
           - TrioDocs PDF: ./trio-docs.pdf
