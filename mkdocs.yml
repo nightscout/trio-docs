@@ -195,6 +195,7 @@ nav:
   - Help:
       - FAQs: ./help/faq.md
       - Glossary: ./help/glossary.md
+      - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
       - Translate: ./help/translate.md
       - Support Communities:
           - Facebook: https://www.facebook.com/groups/diytrio
