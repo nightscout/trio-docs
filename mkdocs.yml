@@ -195,6 +195,9 @@ nav:
   - Help:
       - FAQs: ./help/faq.md
       - Glossary: ./help/glossary.md
+      - Support Communities:
+          - Facebook: https://www.facebook.com/groups/diytrio
+          - Discord: https://discord.gg/FnwFEFUwXE
   - 0.2.x:
       - Home: ./index.md
       - Overview:
