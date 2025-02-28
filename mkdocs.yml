@@ -192,6 +192,41 @@ not_in_nav: |
 
 # Navigation (Page tree)
 nav:
+  - Overview:
+      - TODO
+  - Usage:
+      - TODO
+  - Installation and Update:
+      - Requirements:
+          - Compatible Devices:
+              - TODO
+      - Build with Mac:
+          - TODO
+      - Build with Browser:
+          - TODO
+      - Upgrade:
+          - TODO
+      - Companion Apps:
+          - TODO
+  - Configuration:
+      - Trio Settings:
+          - Devices:
+              - TODO
+          - Therapy:
+              - TODO
+          - Algorithm:
+              - TODO
+          - Features:
+              - TODO
+          - Notfications:
+              - TODO
+          - Services:
+              - Nightscout:
+                  - TODO
+              - Tidepool:
+                  - TODO
+              - Apple Health:
+                  - TODO
   - Help:
       - FAQs: ./help/faq.md
       - Glossary: ./help/glossary.md
