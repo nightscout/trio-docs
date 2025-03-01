@@ -38,7 +38,7 @@ The DASH pods were launched in 2019 and use Bluetooth, so they don't require a R
 ### Medtronic Pumps
 
 ![pump](img/pump.png)
-{align=center})
+{align=center}
 
 There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Trio compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
 
