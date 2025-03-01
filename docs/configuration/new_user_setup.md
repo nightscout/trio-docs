@@ -23,9 +23,9 @@ Once you have verified that you are using compatible devices, you can connect th
 ![Devices Settings](img/DeviceMenu.png){ width="300px"  }
 {align=center}
 
- 1. [Pump](../Configuration/Devices.md#pump)
- 2. [CGM](../Configuration/Devices.md#cgm)
- 3. [Watch (optional)](../Configuration/Devices.md#watches)
+ 1. [Pump](../configuration/Devices.md#pump)
+ 2. [CGM](../configuration/Devices.md#cgm)
+ 3. [Watch (optional)](../configuration/Devices.md#watches)
 
 ## Step 2: Add Profile Settings
 
@@ -72,7 +72,7 @@ Closed loop functionality is turned off by default. This means Trio cannot make 
 ![Enable Closed loop](img/closeLoop.png)
 {align=center}
 
-[More on closing the loop](../Configuration/Configure.md)
+[More on closing the loop](../configuration/Configure.md)
 
 ## Step 5: Change App Icon (Optional)
 

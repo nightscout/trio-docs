@@ -209,6 +209,7 @@ nav:
       - Companion Apps:
           - TODO
   - Configuration:
+      - New User Setup: configuration/new_user_setup.md
       - Trio Settings:
           - Devices:
               - TODO
