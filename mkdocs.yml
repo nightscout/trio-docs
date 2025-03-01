@@ -236,46 +236,46 @@ nav:
           - Facebook: https://www.facebook.com/groups/diytrio
           - Discord: https://discord.gg/FnwFEFUwXE
   - 0.2.x:
-      - Home: ./index.md
+      - Home: ./0.2.x/index.md
       - Overview:
-          - Introduction: ./Getting-Started/Overview.md
-          - App Overview: ./operate/interface.md
-          - New User Guide: ./Setup/New-User-Setup.md
-          - Coming from Other AID Systems: ./Configuration/transition-qa.md
-          - Common Issues: ./operate/troubleshoot.md
+          - Introduction: ./0.2.x/Getting-Started/Overview.md
+          - App Overview: ./0.2.x/operate/interface.md
+          - New User Guide: ./0.2.x/Setup/New-User-Setup.md
+          - Coming from Other AID Systems: ./0.2.x/Configuration/transition-qa.md
+          - Common Issues: ./0.2.x/operate/troubleshoot.md
           - Device Compatibility:
-              - iPhones & Watches: ./Getting-Started/iphone.md
-              - Pumps: ./Getting-Started/pump.md
-              - CGMs: ./settings/devices/cgm.md
+              - iPhones & Watches: ./0.2.x/Getting-Started/iphone.md
+              - Pumps: ./0.2.x/Getting-Started/pump.md
+              - CGMs: ./0.2.x/settings/devices/cgm.md
       - Build/Update Trio:
-          - Build Instructions: ./operate/build.md
-          - Customizations: ./operate/customize.md
+          - Build Instructions: ./0.2.x/operate/build.md
+          - Customizations: ./0.2.x/operate/customize.md
       - User Settings:
-          - Trio Main Preferences: ./settings/configuration/preferences/trio.md
-          - Pump, CGM, Watch: ./Configuration/Devices.md
-          - Additional Pump Settings: ./settings/configuration/pumpsettings.md
-          - Basal: ./settings/configuration/basalprofile.md
-          - ISF: ./settings/configuration/insulinsensitivities.md
-          - CR: ./settings/configuration/carbratios.md
-          - Target Glucose: ./settings/configuration/targetglucose.md
-          - Main Settings: ./settings/configuration/preferences/mainsettings.md
-          - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
-          - Close the Loop: ./Configuration/Configure.md
+          - Trio Main Preferences: ./0.2.x/settings/configuration/preferences/trio.md
+          - Pump, CGM, Watch: ./0.2.x/Configuration/Devices.md
+          - Additional Pump Settings: ./0.2.x/settings/configuration/pumpsettings.md
+          - Basal: ./0.2.x/settings/configuration/basalprofile.md
+          - ISF: ./0.2.x/settings/configuration/insulinsensitivities.md
+          - CR: ./0.2.x/settings/configuration/carbratios.md
+          - Target Glucose: ./0.2.x/settings/configuration/targetglucose.md
+          - Main Settings: ./0.2.x/settings/configuration/preferences/mainsettings.md
+          - SMB & UAM: ./0.2.x/settings/configuration/concepts/smb-uam.md
+          - Close the Loop: ./0.2.x/Configuration/Configure.md
       - Optional Settings:
-          - Apple Health: ./settings/services/applehealth.md
-          - FPU: ./settings/services/fatprotein.md
-          - Nightscout: ./settings/services/nightscout.md
-          - Notifications: ./settings/services/notifications.md
-          - SMB Settings: ./settings/configuration/preferences/smbsettings.md
-          - Temp Targets: ./operate/temptarget.md
+          - Apple Health: ./0.2.x/settings/services/applehealth.md
+          - FPU: ./0.2.x/settings/services/fatprotein.md
+          - Nightscout: ./0.2.x/settings/services/nightscout.md
+          - Notifications: ./0.2.x/settings/services/notifications.md
+          - SMB Settings: ./0.2.x/settings/configuration/preferences/smbsettings.md
+          - Temp Targets: ./0.2.x/operate/temptarget.md
       - Advanced Settings:
-          - Autotune: ./settings/configuration/autotune.md
-          - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
-          - Sigmoid: ./settings/configuration/concepts/sigmoid.md
-          - Dynamic Settings Explained: ./settings/configuration/preferences/dynamicsettings.md
-          - Other Settings: ./settings/configuration/preferences/othersettings.md
-          - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
+          - Autotune: ./0.2.x/settings/configuration/autotune.md
+          - Dynamic Settings: ./0.2.x/settings/configuration/concepts/autosens-dynamic.md
+          - Sigmoid: ./0.2.x/settings/configuration/concepts/sigmoid.md
+          - Dynamic Settings Explained: ./0.2.x/settings/configuration/preferences/dynamicsettings.md
+          - Other Settings: ./0.2.x/settings/configuration/preferences/othersettings.md
+          - Sensitivity Settings: ./0.2.x/settings/configuration/preferences/targetsettings.md
       - Resources:
-          - Citations: ./resources/citations.md
-          - Translation: ./help/translate.md
-          - TrioDocs PDF: ./trio-docs.pdf
+          - Citations: ./0.2.x/resources/citations.md
+          - Translation: ./0.2.x/resources/translate.md
+          - TrioDocs PDF: ./0.2.x/trio-docs.pdf
