@@ -44,7 +44,7 @@ When you use Build with Mac: 1. When you first build. 2. Once per year, at the m
 No. Trio lets you move between different pumps and CGM configurations within the app. 
 
 ### I am moving from another closed-loop system. Will my settings transfer over?
-If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio. Before making the transition, we recommend that you take the time to read through the documentation to build a basic understanding of Trio. Detailed information on transitioning from other closed-loop systems can be found [here](../Configuration/transition-qa.md)
+If you've been using other closed-loop solutions, it's essential to understand the differences between the one you're used to and Trio. Before making the transition, we recommend that you take the time to read through the documentation to build a basic understanding of Trio. Detailed information on transitioning from other closed-loop systems can be found [here](../configuration/transition-qa.md)
 
 Depending on which system you are transitioning from, whether DIY or commercial, some settings may directly transfer across, and others may not. Before commencing on Trio, it is crucial that users test and refine their basals, carb ratios, and insulin sensitivity factors... Thats right... Take a minute and read that again... Before commencing on Trio, it is crucial that users test and refine their basals, carb ratios, and insulin sensitivity factors. 
 
