@@ -210,9 +210,31 @@ nav:
               - iPhone: install/build/devices/iphone.md
               - Mac ✏️: install/build/devices/mac.md # TODO
               - Compatibility Matrix ✏️: install/build/devices/compatibility_matrix.md # TODO
-      # - Build with Mac: TODO
-      # - Build with Browser: TODO
-      # - Upgrade: TODO
+      - Build with Mac:
+          - Mac Build Overview ✏️: todo.md
+          - Prepare your Computer ✏️: install/build/mac/prepare_computer.md
+          - Prepare your iPhone ✏️: install/build/mac/prepare_iphone.md
+          - Builld Select Script ✏️: install/build/mac/build_select_script.md
+          - Builld Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
+          - Builld Errors ✏️: install/build/mac/build_errors.md
+          - Customizations ✏️: install/build/mac/mac_customizations.md
+          - Update Trio wih Xcode ✏️: install/build/mac/update_with_xcode.md
+      - Build with Browser:
+          - Browser Build Overview ✏️: todo.md
+          - Create GitHub Account ✏️: install/build/browser/create_github_account.md
+          - Collect Secrets ✏️: install/build/browser/collect_secrets.md
+          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork_prepare_repo.md
+          - GitHub Actions:
+              - Validate Secrets ✏️: todo.md
+              - Add Identifiers ✏️: install/build/browser/actions/add_identifiers.md
+              - Prepare App ✏️: install/build/browser/actions/prepare_app.md
+              - Generate Certificates ✏️: install/build/browser/actions/generate_certificates.md
+              - Build the App ✏️: install/build/browser/actions/build_app.md
+          - Install Trio from TestFlight ✏️: install/build/browser/install_from_testflight.md
+          - Browser Build Errors ✏️: install/build/browser/browser_build_errors.md
+          - Customizations ✏️: install/build/browser/browser_customizations.md
+          - Update with Browser ✏️: install/build/browser/update_with_browser.md
+      - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
           - Nightscout ✏️: configuration/companion_apps/nightscout_app.md
           - Loop Follow ✏️: configuration/companion_apps/loop_follow.md
@@ -254,6 +276,7 @@ nav:
               - Apple Health: configuration/settings/services/apple_health.md
   - Help:
       - FAQs: help/faq.md
+      - Safety ✏️: help/safety.md
       - Glossary: help/glossary.md
       - Troubleshooting: help/troubleshoot.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
