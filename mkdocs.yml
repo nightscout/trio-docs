@@ -253,8 +253,8 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health: configuration/settings/services/apple_health.md
   - Help:
-      - FAQs: /help/faq.md
       - Glossary: ./help/glossary.md
+      - FAQs: help/faq.md
       - Troubleshooting: help/troubleshoot.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
       - Translate: ./help/translate.md
