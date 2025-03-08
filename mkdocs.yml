@@ -211,14 +211,14 @@ nav:
               - Mac ✏️: install/build/devices/mac.md # TODO
               - Compatibility Matrix ✏️: install/build/devices/compatibility_matrix.md # TODO
       - Build with Mac:
-          - Mac Build Overview ✏️: todo.md
-          - Prepare your Computer ✏️: install/build/mac/prepare_computer.md
-          - Prepare your iPhone ✏️: install/build/mac/prepare_iphone.md
+          - Mac Build Overview: install/build/mac/overview.md
+          - Prepare your Computer: install/build/mac/computer.md
+          - Prepare your iPhone: install/build/mac/iphone.md
           - Builld Select Script ✏️: install/build/mac/build_select_script.md
-          - Builld Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
-          - Builld Errors ✏️: install/build/mac/build_errors.md
-          - Customizations ✏️: install/build/mac/mac_customizations.md
-          - Update Trio wih Xcode ✏️: install/build/mac/update_with_xcode.md
+          - Builld Trio with Xcode: install/build/mac/build.md
+          - Builld Errors: install/build/mac/errors.md
+          - Customizations: install/build/mac/customize.md
+          - Update Trio wih Xcode: install/build/mac/update.md
       - Build with Browser:
           - Browser Build Overview ✏️: todo.md
           - Create GitHub Account ✏️: install/build/browser/create_github_account.md
