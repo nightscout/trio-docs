@@ -207,13 +207,14 @@ git push -u origin add_FAQ_page
 	- Open your clone repository of `trio-docs` on *GitHub* (`https://github.com/YOUR_USERNAME/trio-docs`)
 		- Click the `Pull Requests` tab 
 		- Click "`Compare & pull request`" in the yellow banner next to your branch name
-  
-## Tips & Tricks
+
+
+## FAQs
 
 > [!NOTE]
 > Please add!
 
-### Add a Chapter
+### Adding a Chapter
 
 Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determines the level.
 
@@ -240,15 +241,58 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 > | `**bold text**`    | **bold text** |
 > | `<b>bold text</b>` | **bold text** |
 
-### Link to Another File
+### Adding a Link to Another File
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
 **Example**: `../directoryname/filename.md`
 
-### Migrate a Sphinx page to Mkdocs
 
-#### Migrate an Admonition from Sphinx to Mkdocs
+### Updating the Glossary
+
+
+> Trio's glossary is a dictionary for the acronyms and technical terms used in the documentation. It explains them in simple terms.
+> It is kind of a personal translator for all the diabetes jargon you will find there.
+
+The glossary is composed of a source file and a generated Markdown page.  
+The website uses the Markdown page of the glossary.
+
+**Updating the glossary** is a 3-step **manual process**:
+1. Modify the glossary source file ([`includes/glossary.txt`](https://github.com/nightscout/trio-docs/tree/dev/includes/glossary.txt) ) to add/update/remove entries.
+2. Generate the glossary Markdown page (`docs/faqs/glossary.md`) using this handy shell script:
+    ```shell
+    ./make-glossary.sh
+    ```
+    ```mermaid
+    ---
+    title: Generate the Glossary Page
+    ---
+    flowchart LR
+      subgraph Glossary Source
+        text_glossary[/ includes/glossary.txt /]
+      end
+      subgraph Run Shell Script
+        generator{ ./make-glossary.sh }
+      end
+      subgraph Glossary Page
+        markdown_glossary[/ docs/faqs/glossary.md /]
+      end
+
+      text_glossary --> generator --> markdown_glossary
+     ```
+3. **Commit** the changed files (glossary source file and generated page):
+     ```shell
+     git add includes/glossary.txt docs/faqs/glossary.md
+     git commit -m "Update Glossary: ..."
+     ```
+
+> [!NOTE]
+> Remember to commit these 2 files.
+
+
+### Migrating a Sphinx page to Mkdocs
+
+#### Migrating an Admonition from Sphinx to Mkdocs
 
 > [!NOTE] 
 > **What is an admonition?**  

@@ -31,7 +31,7 @@ Before starting with Trio, you should understand [carb ratio (CR)](./settings/co
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](./configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](./settings/configuration/preferences/smbsettings.md#smb-settings) features, and turning on [dynamic features](./settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
+Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](./Configuration/Configure.md#closed-loop), enabling [Super Micro Bolus (SMB)](./settings/configuration/preferences/smbsettings.md#smb-settings) features, and turning on [dynamic features](./settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
 
 >In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
 >
@@ -39,9 +39,9 @@ Upon installation, you will need to configure your settings appropriately. By de
 >- Enable Closed Loop for automation
 >- Increase Max IOB to "average meal bolus + 3x max daily basal"
 >- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
->See [Configure](./configuration/Configure.md#device-configuration) for more information on Trio configuration.
+>See [Configure](./Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
-If you are considering a transition from another closed loop system, please read [this section](./configuration/transition-qa.md) first.
+If you are considering a transition from another closed loop system, please read [this section](./Configuration/transition-qa.md) first.
 
 # Contribution
 

@@ -44,12 +44,12 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: Switch to auto (use System Preferences)
-
   features:
     - announce.dismiss
     - content.action.edit
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
@@ -131,7 +131,11 @@ extra:
       name: Trio on Facebook
   version: 0.2.1
 
+watch:
+  - includes
+
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - def_list
@@ -156,6 +160,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.txt
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -185,54 +192,139 @@ not_in_nav: |
 
 # Navigation (Page tree)
 nav:
+  - index.md
+  - Overview:
+      - Definition: overview/definition.md
+      - Use Cases ✏️: overview/use_cases.md
+      - Comparison with Other Systems ✏️: overview/comparison.md
+      - Advantages ✏️: overview/advantages.md
+      - Disadvantages ✏️: overview/disadvantages.md
+      - Safety ✏️: overview/safety.md
+  - Usage:
+      - User Interface: usage/interface.md
+  - Installation and Update:
+      - Requirements:
+          - Compatible Devices:
+              - Insulin Pump: install/build/devices/pump.md
+              - CGM: install/build/devices/cgm.md
+              - iPhone: install/build/devices/iphone.md
+              - Mac ✏️: install/build/devices/mac.md # TODO
+              - Compatibility Matrix ✏️: install/build/devices/compatibility_matrix.md # TODO
+      - Build with Mac:
+          - Mac Build Overview ✏️: todo.md
+          - Prepare your Computer ✏️: install/build/mac/prepare_computer.md
+          - Prepare your iPhone ✏️: install/build/mac/prepare_iphone.md
+          - Builld Select Script ✏️: install/build/mac/build_select_script.md
+          - Builld Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
+          - Builld Errors ✏️: install/build/mac/build_errors.md
+          - Customizations ✏️: install/build/mac/mac_customizations.md
+          - Update Trio wih Xcode ✏️: install/build/mac/update_with_xcode.md
+      - Build with Browser:
+          - Browser Build Overview ✏️: todo.md
+          - Create GitHub Account ✏️: install/build/browser/create_github_account.md
+          - Collect Secrets ✏️: install/build/browser/collect_secrets.md
+          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork_prepare_repo.md
+          - GitHub Actions:
+              - Validate Secrets ✏️: todo.md
+              - Add Identifiers ✏️: install/build/browser/actions/add_identifiers.md
+              - Prepare App ✏️: install/build/browser/actions/prepare_app.md
+              - Generate Certificates ✏️: install/build/browser/actions/generate_certificates.md
+              - Build the App ✏️: install/build/browser/actions/build_app.md
+          - Install Trio from TestFlight ✏️: install/build/browser/install_from_testflight.md
+          - Browser Build Errors ✏️: install/build/browser/browser_build_errors.md
+          - Customizations ✏️: install/build/browser/browser_customizations.md
+          - Update with Browser ✏️: install/build/browser/update_with_browser.md
+      - Upgrade ✏️: install/upgrade.md
+      - Companion Apps:
+          - Nightscout ✏️: configuration/companion_apps/nightscout_app.md
+          - Loop Follow ✏️: configuration/companion_apps/loop_follow.md
+          - Loop CareGiver ✏️: configuration/companion_apps/loop_caregiver.md
+          - XDrip4iOS ✏️: configuration/companion_apps/nightscout_app.md
+  - Configuration:
+      - New User Setup: configuration/new_user_setup.md
+      - Trio Settings:
+          - Devices:
+              - Insulin Pump: configuration/settings/devices/pump.md
+              - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
+              - Smart Watch ✏️: configuration/settings/devices/smart_watch.md
+          - Therapy:
+              - todo.md
+              - Units and Limits ✏️: configuration/settings/therapy/units_limits.md
+              - Basal Rates ✏️: configuration/settings/therapy/basal_rates.md
+              - Insulin Sensitivities ✏️: configuration/settings/therapy/isf.md
+              - Carb Ratios: configuration/settings/therapy/carb_ratios.md
+              - Target Glucose ✏️: configuration/settings/therapy/target_glucose.md
+          - Algorithm:
+              - Autosens: configuration/settings/algorithm/autosens.md
+              - SMB: configuration/settings/algorithm/smb.md
+              - Dynamic Settings: configuration/settings/algorithm/dynamic_settings.md
+              - Target Behavior ✏️: configuration/settings/algorithm/target_behavior.md
+              - Target Behavior ✏️: configuration/settings/algorithm/additionals.md
+              - Features:
+                  - todo.md
+                  - Bolus Calculator ✏️: configuration/settings/features/bolus_calculator.md
+                  - Meal Settings ✏️: configuration/settings/features/meal_settings.md
+                  - Shortcuts ✏️: configuration/settings/features/shortcuts.md
+                  - Remote Control ✏️: configuration/settings/features/remote_control.md
+                  - User Interface ✏️: configuration/settings/features/user_interface.md
+                  - App Icons ✏️: configuration/settings/features/app_icons.md
+          - Notfications:
+              - Glucose: configuration/settings/notifications/glucose_notifications.md
+          - Services:
+              - Nightscout: configuration/settings/services/nightscout.md
+              - Tidepool ✏️: configuration/settings/services/tidepool.md
+              - Apple Health: configuration/settings/services/apple_health.md
+  - Help:
+      - FAQs: help/faq.md
+      - Safety ✏️: help/safety.md
+      - Glossary: help/glossary.md
+      - Troubleshooting: help/troubleshoot.md
+      - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
+      - Translate: help/translate.md
+      - Support Communities:
+          - Facebook: https://www.facebook.com/groups/diytrio
+          - Discord: https://discord.gg/FnwFEFUwXE
   - 0.2.x:
-      - Home: ./index.md
+      - Home: ./0.2.x/index.md
       - Overview:
-          - Introduction: ./Getting-Started/Overview.md
-          - App Overview: ./operate/interface.md
-          - New User Guide: ./Setup/New-User-Setup.md
-          - Coming from Other AID Systems: ./Configuration/transition-qa.md
-          - Common Issues: ./operate/troubleshoot.md
+          - Introduction: ./0.2.x/Getting-Started/Overview.md
+          - App Overview: ./0.2.x/operate/interface.md
+          - New User Guide: ./0.2.x/Setup/New-User-Setup.md
+          - Coming from Other AID Systems: ./0.2.x/Configuration/transition-qa.md
+          - Common Issues: ./0.2.x/operate/troubleshoot.md
           - Device Compatibility:
-              - iPhones & Watches: ./Getting-Started/iphone.md
-              - Pumps: ./Getting-Started/pump.md
-              - CGMs: ./settings/devices/cgm.md
-      - Build Trio with Mac:
-          - Overview: ./XCBuild/xc-overview.md
-          - Apple Developer Program: ./XCBuild/apple-developer.md
-          - Prepare your Computer: ./XCBuild/xc-computer.md
-          - Download and Configure Xcode: ./XCBuild/xc-downconfig.md
-          - Prepare your iPhone and Watch: ./XCBuild/xc-phone.md
-          - Build Trio with Xcode: ./XCBuild/xc-build.md
-          - Update Trio with Xcode: ./XCBuild/xc-update.md
-          - Customize Trio with Xcode: ./XCBuild/xc-customize.md
-          - Build Errors - Mac Build: ./XCBuild/xc-errors.md
+              - iPhones & Watches: ./0.2.x/Getting-Started/iphone.md
+              - Pumps: ./0.2.x/Getting-Started/pump.md
+              - CGMs: ./0.2.x/settings/devices/cgm.md
+      - Build/Update Trio:
+          - Build Instructions: ./0.2.x/operate/build.md
+          - Customizations: ./0.2.x/operate/customize.md
       - User Settings:
-          - Trio Main Preferences: ./settings/configuration/preferences/trio.md
-          - Pump, CGM, Watch: ./Configuration/Devices.md
-          - Additional Pump Settings: ./settings/configuration/pumpsettings.md
-          - Basal: ./settings/configuration/basalprofile.md
-          - ISF: ./settings/configuration/insulinsensitivities.md
-          - CR: ./settings/configuration/carbratios.md
-          - Target Glucose: ./settings/configuration/targetglucose.md
-          - Main Settings: ./settings/configuration/preferences/mainsettings.md
-          - SMB & UAM: ./settings/configuration/concepts/smb-uam.md
-          - Close the Loop: ./Configuration/Configure.md
+          - Trio Main Preferences: ./0.2.x/settings/configuration/preferences/trio.md
+          - Pump, CGM, Watch: ./0.2.x/Configuration/Devices.md
+          - Additional Pump Settings: ./0.2.x/settings/configuration/pumpsettings.md
+          - Basal: ./0.2.x/settings/configuration/basalprofile.md
+          - ISF: ./0.2.x/settings/configuration/insulinsensitivities.md
+          - CR: ./0.2.x/settings/configuration/carbratios.md
+          - Target Glucose: ./0.2.x/settings/configuration/targetglucose.md
+          - Main Settings: ./0.2.x/settings/configuration/preferences/mainsettings.md
+          - SMB & UAM: ./0.2.x/settings/configuration/concepts/smb-uam.md
+          - Close the Loop: ./0.2.x/Configuration/Configure.md
       - Optional Settings:
-          - Apple Health: ./settings/services/applehealth.md
-          - FPU: ./settings/services/fatprotein.md
-          - Nightscout: ./settings/services/nightscout.md
-          - Notifications: ./settings/services/notifications.md
-          - SMB Settings: ./settings/configuration/preferences/smbsettings.md
-          - Temp Targets: ./operate/temptarget.md
+          - Apple Health: ./0.2.x/settings/services/applehealth.md
+          - FPU: ./0.2.x/settings/services/fatprotein.md
+          - Nightscout: ./0.2.x/settings/services/nightscout.md
+          - Notifications: ./0.2.x/settings/services/notifications.md
+          - SMB Settings: ./0.2.x/settings/configuration/preferences/smbsettings.md
+          - Temp Targets: ./0.2.x/operate/temptarget.md
       - Advanced Settings:
-          - Autotune: ./settings/configuration/autotune.md
-          - Dynamic Settings: ./settings/configuration/concepts/autosens-dynamic.md
-          - Sigmoid: ./settings/configuration/concepts/sigmoid.md
-          - Dynamic Settings Explained: ./settings/configuration/preferences/dynamicsettings.md
-          - Other Settings: ./settings/configuration/preferences/othersettings.md
-          - Sensitivity Settings: ./settings/configuration/preferences/targetsettings.md
+          - Autotune: ./0.2.x/settings/configuration/autotune.md
+          - Dynamic Settings: ./0.2.x/settings/configuration/concepts/autosens-dynamic.md
+          - Sigmoid: ./0.2.x/settings/configuration/concepts/sigmoid.md
+          - Dynamic Settings Explained: ./0.2.x/settings/configuration/preferences/dynamicsettings.md
+          - Other Settings: ./0.2.x/settings/configuration/preferences/othersettings.md
+          - Sensitivity Settings: ./0.2.x/settings/configuration/preferences/targetsettings.md
       - Resources:
-          - Citations: ./resources/citations.md
-          - Translation: ./resources/translate.md
-          - TrioDocs PDF: ./trio-docs.pdf
+          - Citations: ./0.2.x/resources/citations.md
+          - Translation: ./0.2.x/resources/translate.md
+          - TrioDocs PDF: ./0.2.x/trio-docs.pdf
