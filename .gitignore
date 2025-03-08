@@ -10,6 +10,7 @@ target/
 /build/
 /site/
 
+
 # JS
 node_modules/
 
@@ -18,3 +19,7 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Do not ignore this folder
+!/docs/install/build/
