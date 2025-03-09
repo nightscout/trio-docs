@@ -1,15 +1,15 @@
 ## Overview
 
 !!! info "Time Estimate"
-
+    
     - 15-20 minutes to complete the enrollment forms.
     - Up to 2 days to wait for a confirmation email that enrollment has been activated.
 
 !!! abstract "Summary"
-
+    
     - There are two options: Paid ($99/year) or Free (rebuild weekly, Xcode only).
     - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
-    - Free: No action is required at this time. Continue to [Prepare your Computer](xc-computer.md).
+    - Free: No action is required at this time. Continue to [Prepare your Computer](../mac/computer.md).
     
 !!! question "FAQs"
 
@@ -26,7 +26,7 @@ You have two options for an individual account: free or paid.
 
 If you decide to use a **FREE** developer account, here's what you need to know:
 
-- You can only use the [Buid Trio with Mac](xc-overview.md) method to build Trio.
+- You can only use the [Buid Trio with Mac](../mac/overview.md) method to build Trio.
 - Apps signed with a free developer account will expire after 7 days. On the 7th day, your Trio app will turn white when you open it and immediately close. To rebuild Trio, you must find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5, hoping to reset the 7-day clock. The app will still expire on the 7th day from when it was first signed and created.
 - If you switch to a paid account after trying out the free account, you must rebuild your Trio app to sign it with the new paid account. Furthermore, switching from a free account requires entering all the settings again and starting a fresh pod.
 - You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use Remote Commands through Nightscout.
@@ -38,8 +38,8 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 - The paid developer account is $99 per year. The default setting is to auto-renew annually. You can change that selection in your developer account settings at any time.
 - It can take up to two days for your Apple Developer account to become active.
 - If your household has multiple Trio users, only one developer account is needed. This account can be used to build Trio on multiple phones; however, each phone must have its own Apple ID.
-- If you use the [Build Trio with Browser](INSERT LINK TO BROWSER BUILD) method you must update the build once every 90 days.
-- If you use the [Build Trio with Mac](XC-OVERVIEW.MD) method, you must build it at least once a year.
+- If you use the [Build Trio with Browser](../browser/overview.md) method you must update the build once every 90 days.
+- If you use the [Build Trio with Mac](../mac/overview.md) method, you must build it at least once a year.
 
 ### Enrolling in the Apple Developer Program
 

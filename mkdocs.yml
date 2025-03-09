@@ -210,7 +210,7 @@ nav:
               - iPhone: install/build/requirements/devices/iphone.md
               - Mac ✏️: install/build/requirements/devices/mac.md # TODO
               - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility_matrix.md # TODO
-          - Apple Developer Account: install/build/requirements/apple_developer.md
+          - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build with Mac:
           - Mac Build Overview: install/build/mac/overview.md
           - Prepare your Computer: install/build/mac/computer.md
