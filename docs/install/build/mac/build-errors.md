@@ -20,7 +20,7 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 2. Select `Xcode` and tap on the `Force Quit` button
 
     ![menu to select application to force quit](img/xc-forcequit.png){width="450"}
-      {align="center"}
+    {align=center}
 
 ## Start with The Obvious Error Causes
 
@@ -64,10 +64,10 @@ This is reported to fix a variety of watch building errors and `cannot prepare p
     - On left side, Right-Click (or Control-Click) on your phone.
     - Choose Unpair Device.
 
-It may not be necessary, but the suggestion is to reboot phone, watch and Mac - in other words, you can try to build without rebooting, but if that fails, repeat the steps and reboot before trying again.
-
-    ![unpair device from xcode](img/xc-unpair.png){width="400"}
-      {align=center}
+It may not be necessary, but the suggestion is to reboot phone, watch and Mac - in other words, you can try to build without rebooting, but if that fails, repeat the steps and reboot before trying again.  
+    
+![unpair device from xcode](img/xc-unpair.png){width="400"}
+  {align=center}
 
 The next time you plug this phone into your computer, you will be asked to trust the computer on the phone (and watch).  Note, this is unpairing the device from Xcode and your computer, not the same as, and much faster than, unpairing your watch from your phone.
 
