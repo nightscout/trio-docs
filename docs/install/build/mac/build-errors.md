@@ -26,9 +26,9 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
-1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. Please review the iOS driven requirements for minimum version of macOS and Xcode. Please see, [Preparing your Computer](xc-computer.md#Computer-Compatibility).
+1. **Did you check that you have the minimum Xcode version for your iOS?** This is critical. Please review the iOS-driven requirements for the minimum version of macOS and Xcode. Please see [Preparing your Computer](computer.md#computer-compatibility).
 
-2. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
+2. **Did you check your Apple developer account for a new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there is a new license agreement.
 
 3. **Do you have a new computer, never used to build Trio?** Did you add you [Apple ID](xcode-setup.md#add-apple-id-to-xcode) to Xcode?
 

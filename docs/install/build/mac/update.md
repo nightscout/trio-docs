@@ -262,11 +262,10 @@ Here are the different steps you need to follow when doing the Direct Download i
     - Look at the available applications, which should include one or more Xcode version
     - Scroll down until you find the item you want (for example, Xcode 15.4 or Xcode 16)
     - Click on View Details and click on the Download button for the "xip" file
-1. Wait for Download to complete
-1. Expand the file by clicking on it in Finder
-1. Move the Xcode icon to Applications after the expansion completes
-1. Check the [Command Line Tools](xc-computer.md#command-line-tools) setting under Xcode->Settings
-1. Check the [Command Line Tools](computer.md#command-line-tools) setting under Xcode->Settings
+2. Wait for Download to complete
+3. Expand the file by clicking on it in Finder
+4. Move the Xcode icon to Applications after the expansion completes
+5. Check the [Command Line Tools](computer.md#command-line-tools) setting under Xcode->Settings
     - The selection cannot be blank or Build-Script will fail to open Xcode automatically
     - It should be the same version as your Xcode
-1. Reboot the computer
+6. Reboot the computer
