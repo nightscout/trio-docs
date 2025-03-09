@@ -17,8 +17,8 @@ Sometimes, Xcode stops responding. You have to fix this before any of the other 
 This can happen sometimes. You just need to force quit Xcode. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up Xcode again and keep going.
 
 1. Hold down these 3 keys ++option+command+escape++ (or ++alt+command+escape++),  until the `Force Quit` menu appears (should be fast)
-2. Select `Xcode` and tap on the `Force Quit` button
-
+2. Select `Xcode` and tap on the `Force Quit` button  
+     
     ![menu to select application to force quit](img/xc-forcequit.png){width="450"}
     {align=center}
 
@@ -38,7 +38,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 6. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in [Free Developer Account Build](build.md#free-apple-developer-account-build).
 
-1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Trio might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
+7. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Trio might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
 ## Fix 95% of errors
 
@@ -46,9 +46,9 @@ If you have checked all those steps above and think you have a true build error,
 
 1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the `Product` menu item. Use the drop down selection for `Clean Build Folder` or press ++shift+command+k++. Either will work the same. Wait for the clean to finish before trying to build again.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-1. Return to Xcode and try building your app again.
-1. Still failing for phone or watch or both? Try the [Unpair and Reboot](#unpair-and-reboot) procedure.
 2. If you are updating Loop and did not [Delete Old Provisioning Profiles](update.md#delete-provisioning-profiles), do it now
+3. Return to Xcode and try building your app again.
+4. Still failing for phone or watch or both? Try the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
 ### Unpair and Reboot
 
@@ -87,7 +87,8 @@ If the build fails again, look through the list below and see if you can match y
     
     ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Trio and less time answering questions that can be addressed by using this page.
 
-Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
+Therefore, try to resolve your build error yourself.  
+Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
 
 !!! warning "Your Post Must Include:"
     * The version of Xcode you are using.
