@@ -111,7 +111,7 @@ The Build Select Script is designed to walk you through downloading Trio. Please
     ![Screenshot: Build Select Script 4](img/xc-bs4.png){width="682"}
       {align= "center"}
 
-8. If you receive a failure message, scroll up through the window to find the error message(s). For assistance, visit [Xcode Errors with Build Select](xc-errors.md#xcode-errors-with-build-select).
+8. If you receive a failure message, scroll up through the window to find the error message(s). For assistance, visit [Xcode Errors with Build Select](build-errors.md#xcode-errors-with-build-select).
 
 9. You can hit return to continue if you did not receive errors.
 
@@ -161,7 +161,7 @@ The Build Select Script is designed to walk you through downloading Trio. Please
 
 !!! bug "Red Errors"
 
-    If you receive any red errors, your application will fail to be built. Please visit the [Build Errors](xc-errors.md) page to troubleshoot the errors. Once these errors have been addressed, you can return to the build documents and continue on.
+    If you receive any red errors, your application will fail to be built. Please visit the [Build Errors](build-errors.md) page to troubleshoot the errors. Once these errors have been addressed, you can return to the build documents and continue on.
 
 ###Successful Update
 

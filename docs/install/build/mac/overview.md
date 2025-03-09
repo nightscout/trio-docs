@@ -9,13 +9,13 @@ Congratulations on choosing to build Trio using your Mac computer. This document
 - [Compatible Insulin Pump](../Getting-Started/pump.md)
 - [Apple Developer Account](apple-developer.md)
 - [Compatible Computer](xc-computer.md)
-- [Xcode](./XCBuild/xc-downconfig.md)
+- [Xcode](xcode-setup.md)
 
 ## Getting Ready to Build
 
 The first step in getting ready to build Trio using your Mac computer is to review the above requirements. These are considered the minimum requirements for Building Trio using your Mac. Don't stress if you are unable to meet the above requirements. Other options are available for building Trio, and I recommend you start with [Build Trio with Brower](INSERT LINK TO BROWSER BUILD). 
 
-The second step is to read over and become familiar with the build instructions in their entirety. This includes familiarising yourself with common [Build Errors](xc-errors.md). Most mistakes you can make while building Trio have already been made, and our dedicated community has documented necessary fixes.
+The second step is to read over and become familiar with the build instructions in their entirety. This includes familiarising yourself with common [Build Errors](build-errors.md). Most mistakes you can make while building Trio have already been made, and our dedicated community has documented necessary fixes.
 
 When you are ready to proceed, take your time, read carefully, and complete the tasks on each page. Read the top three boxes on each page; icons for those boxes are displayed below for reference. 
 

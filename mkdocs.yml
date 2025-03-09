@@ -205,18 +205,20 @@ nav:
   - Installation and Update:
       - Requirements:
           - Compatible Devices:
-              - Insulin Pump: install/build/devices/pump.md
-              - CGM: install/build/devices/cgm.md
-              - iPhone: install/build/devices/iphone.md
-              - Mac ✏️: install/build/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/devices/compatibility_matrix.md # TODO
+              - Insulin Pump: install/build/requirements/devices/pump.md
+              - CGM: install/build/requirements/devices/cgm.md
+              - iPhone: install/build/requirements/devices/iphone.md
+              - Mac ✏️: install/build/requirements/devices/mac.md # TODO
+              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility_matrix.md # TODO
+          - Apple Developer Account: install/build/requirements/apple_developer.md
       - Build with Mac:
           - Mac Build Overview: install/build/mac/overview.md
           - Prepare your Computer: install/build/mac/computer.md
           - Prepare your iPhone: install/build/mac/iphone.md
+          - Set Up Xcode: install/build/mac/xcode-setup.md
           - Builld Select Script ✏️: install/build/mac/build_select_script.md
           - Builld Trio with Xcode: install/build/mac/build.md
-          - Builld Errors: install/build/mac/errors.md
+          - Builld Errors: install/build/mac/build_errors.md
           - Customizations: install/build/mac/customize.md
           - Update Trio wih Xcode: install/build/mac/update.md
       - Build with Browser:
