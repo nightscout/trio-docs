@@ -258,16 +258,16 @@ nav:
               - Autosens: configuration/settings/algorithm/autosens.md
               - Super Micro Bolus (SMB): configuration/settings/algorithm/smb_settings.md
               - Dynamic Settings: configuration/settings/algorithm/dynamic_settings.md
-              - Target Behavior ✏️: configuration/settings/algorithm/target_behavior.md
-              - Target Behavior ✏️: configuration/settings/algorithm/additionals.md
-              - Features:
-                  - todo.md
-                  - Bolus Calculator ✏️: configuration/settings/features/bolus_calculator.md
-                  - Meal Settings ✏️: configuration/settings/features/meal_settings.md
-                  - Shortcuts ✏️: configuration/settings/features/shortcuts.md
-                  - Remote Control ✏️: configuration/settings/features/remote_control.md
-                  - User Interface ✏️: configuration/settings/features/user_interface.md
-                  - App Icons ✏️: configuration/settings/features/app_icons.md
+              - Target Behavior: configuration/settings/algorithm/target_behavior.md
+              - Additionals: configuration/settings/algorithm/additionals.md
+          - Features:
+              - todo.md
+              - Bolus Calculator ✏️: configuration/settings/features/bolus_calculator.md
+              - Meal Settings ✏️: configuration/settings/features/meal_settings.md
+              - Shortcuts ✏️: configuration/settings/features/shortcuts.md
+              - Remote Control ✏️: configuration/settings/features/remote_control.md
+              - User Interface ✏️: configuration/settings/features/user_interface.md
+              - App Icons ✏️: configuration/settings/features/app_icons.md
           - Notfications:
               - Trio Notifications ✏️: configuration/settings/notifications/trio_notifications.md
               - Live Activity ✏️: configuration/settings/notifications/live_activity.md
