@@ -61,8 +61,8 @@ The next step is to adjust the standard safety limits that will allow Trio to fu
  2. [Max IOB](../settings/configuration/preferences/mainsettings.md#max-iob)
  3. [Max COB](../settings/configuration/preferences/mainsettings.md#max-cob)
  4. [Bolus Increment](../settings/configuration/preferences/smbsettings.md#bolus-increment)
- 5. [Enable SMB](../settings/configuration/preferences/smbsettings.md)
- 6. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
+ 5. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
+ 6. [Enable SMB as needed](../settings/configuration/preferences/smbsettings.md)
  7. <b>HANDS OFF DYNAMIC SETTINGS!</b>
 
 ## Step 4: Enable Closed Loop
