@@ -5,3 +5,7 @@ Trio will target this value when calculating insulin needs. It should be set to 
 !!! tip
     
     You can set different targets at different times. Some users only have one target. Others have a lower target during the day and a higher target during the night to avoid lows.
+
+## How to Enter Your Target Glucose Into Trio
+
+<!-- TODO: Add description with images -->
