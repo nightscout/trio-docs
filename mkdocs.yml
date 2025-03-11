@@ -261,7 +261,6 @@ nav:
               - Target Behavior: configuration/settings/algorithm/target_behavior.md
               - Additionals: configuration/settings/algorithm/additionals.md
           - Features:
-              - todo.md
               - Bolus Calculator ✏️: configuration/settings/features/bolus_calculator.md
               - Meal Settings ✏️: configuration/settings/features/meal_settings.md
               - Shortcuts ✏️: configuration/settings/features/shortcuts.md

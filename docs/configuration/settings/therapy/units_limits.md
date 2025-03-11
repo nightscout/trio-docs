@@ -1,14 +1,52 @@
-# Pump Settings
+# Units and Limits
 
 !!! tip  "Highlights"
     
 	- Max Basal = 4x highest hourly basal
 	- Max Bolus = Max bolus you give for a meal
 	- Max Carbs = Maximum carbs allowed by a single entry
-	- DIA = Duration of Insulin Action (typically 7 hours)
+ 
+<!-- TODO: Update Highlight admonition -->
 
-## Delivery Limits
-These are safety limiters for Trio. Note that Trio will prevent you from entering anything higher than these limits, but it won't alert or notify you about it. 
+## Glucose Units
+<!-- TODO: Add description with options -->
+
+- - -
+
+## Max IOB
+**Default:** _0 units_  
+
+<!-- TODO: Add description -->
+
+- - -
+
+## Max Bolus
+**Default:** _10 units_  
+**Setting Limits:** _1-30 units_  
+
+<!-- TODO: Add description -->
+
+- - -
+
+## Max Basal
+**Default:** _2 units_  
+**Setting Limits:** _0.5-30 units_  
+
+<!-- TODO: Add description -->
+
+- - -
+
+## Max COB
+**Default:** _2 units_  
+**Setting Limits:** _0.5-30 units_  
+
+<!-- TODO: Add description -->
+
+- - -
+
+<!-- TODO: Delete below after utilizing relevant information for the above settings -->
+
+<!-- These are safety limiters for Trio. Note that Trio will prevent you from entering anything higher than these limits, but it won't alert or notify you about it. 
 
 ### Max Basal
 This is the highest temp basal allowed to be set. 4 times your highest scheduled basal rate is generally adequate. 
@@ -34,3 +72,4 @@ Note that, for now, this setting does not limit the maximum number of carbs that
     It is not advised to decrease this setting
 
 Duration of insulin action (DIA) affects Trio calculations through its impact on insulin on board (IOB). The default DIA of 5 hours is likely too low and can cause insulin stacking. Increasing to 7 hours should suit most users. For more information on DIA in loop systems, read [this](https://www.diabettech.com/insulin/why-we-are-regularly-wrong-in-the-duration-of-insulin-action-dia-times-we-use-and-why-it-matters/) from Tim Street.
+-->
