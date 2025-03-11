@@ -1,4 +1,112 @@
 # User Interface
+<!-- TODO: Add screenshot of new Trio 1.0 User Interface and add link to User Interface detailed description document -->
+
+## Appearance
+**Default:** _System Default_
+
+### Options
+**System Default:**  
+<!-- TODO: Add description -->
+
+**Light:**  
+<!-- TODO: Add description and screenshot -->
+
+**Dark:**  
+<!-- TODO: Add description and screenshot -->
+
+- - -
+
+## Glucose Color Scheme
+**Default:** _Static_  
+<!-- TODO: Add description -->
+
+### Options
+**Static:**  
+<!-- TODO: Add description and image -->
+
+**Dynamic:**  
+<!-- TODO: Add description and image -->
+
+- - -
+
+## Axis Grid Lines
+<!-- TODO: Add description -->
+
+### Show X-Axis Grid Lines
+**Default:** _ON_  
+
+### Show Y-Axis Grid Lines
+**Default:** _ON_  
+
+- - -
+
+## Show Low and High Thresholds
+**Default:** _ON_
+<!-- TODO: Add description -->
+
+### Low Threshold
+**Default:** _70 mg/dL_  <!-- TODO: Add mmol conv -->
+<!-- TODO: Add description -->
+
+### High Threshold
+**Default:** _180 mg/dL (10mmol/L)_  
+<!-- TODO: Add description -->
+
+- - -
+
+## Forecast Display Type
+**Default:** _Cone_
+
+### Options
+**Cone (of Uncertainty):**  
+<!-- TODO: Add description and image -->
+
+**Lines:**
+<!-- TODO: Add description and image -->
+
+- - -
+
+## Total Insulin Display Type
+**Default:** _TDD_  
+<!-- TODO: Add description -->
+
+### Options
+**TDD (Total Daily Dose):**  
+<!-- TODO: Add description -->
+
+**TINS (Total Insulin in Scope):**  
+<!-- TODO: Add description -->
+
+- - -
+
+## eA1c Display Unit
+**Default:** _Percent_  
+<!-- TODO: Add description -->
+
+### Options
+**Percent:**  
+<!-- TODO: Add description -->
+
+**mmol/mol:**
+<!-- TODO: Add description -->
+
+- - -
+
+## Time in Range Chart Style
+<!-- TODO: Ask Dan if this needs to be updated in the hints section. Still shows "vertical" and "horizontal" for TIR, when it is now a pie chart in the updates statistics UI-->
+
+- - -
+
+## Show Carbs Required Badge
+**Default:** _OFF_  
+<!-- TODO: Add description -->
+
+### Carbs Required Threshold
+<!-- TODO: Add description -->
+
+- - -
+
+<!-- TODO: Use this as a model to create a new User Interface detailed description document page for Trio 1.0 (usage/interface.md)
 
 ## Main Screen
 
@@ -72,3 +180,4 @@ The Statistics Icon shows your statistical data in the app.
 
 The Settings icon allows you to access your Trio settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
 </details>
+-->
