@@ -80,7 +80,8 @@ Min 4 hours, max 10 hours.
 ## Enable Fat and Protein Entries
 **Default:** _OFF_  
 
-<!-- TODO: Add description -->
+Enabling this setting adds a "Fatty Meal" option to the bolus calculator. Once this feature is enabled, a percentage setting will appear for you to select.
+
 
 - - -
 
@@ -88,7 +89,10 @@ Min 4 hours, max 10 hours.
 **Default:** _60 min_  
 **Setting Limits:** _60-120 min_  
 
-<!-- TODO: Add description -->
+Enabling this setting adds a "Fatty Meal" option to the bolus calculator. Once this feature is enabled, a percentage setting will appear for you to select.
+
+This delay accounts for the slower absorption of fat and protein, as calculated by the Warsaw Method, ensuring insulin delivery is properly timed to manage glucose spikes caused by high-fat, high-protein meals.
+
 
 - - -
 
@@ -110,7 +114,11 @@ Decreasing this setting may result in fewer FPU entries with larger carb values.
 **Default:** _30 min_  
 **Setting Limits:** _10-60 min_  
 
-<!-- TODO: Add description -->
+This determines how many minutes will be between individual Fat-Protein Unit Carb Equivalent (FPU) entries from a single Fat and/or Protein bolus calculator entry.
+
+The shorter the interval, the smoother the correlating dosing result.
+
+Increasing this setting may result in fewer FPU entries with larger carb values.
 
 - - -
 
