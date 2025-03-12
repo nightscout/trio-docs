@@ -244,7 +244,7 @@ nav:
       - New User Setup: configuration/new_user_setup.md
       - Trio Settings:
           - Devices:
-              - Insulin Pump: configuration/settings/devices/pump.md
+              - Insulin Pump ✏️: configuration/settings/devices/pump.md
               - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
               - Smart Watch ✏️: configuration/settings/devices/smart_watch.md
           - Therapy:
@@ -261,7 +261,7 @@ nav:
               - Target Behavior: configuration/settings/algorithm/target_behavior.md
               - Additionals: configuration/settings/algorithm/additionals.md
           - Features:
-              - Bolus Calculator ✏️: configuration/settings/features/bolus_calculator.md
+              - Bolus Calculator: configuration/settings/features/bolus_calculator.md
               - Meal Settings ✏️: configuration/settings/features/meal_settings.md
               - Shortcuts ✏️: configuration/settings/features/shortcuts.md
               - Remote Control ✏️: configuration/settings/features/remote_control.md
