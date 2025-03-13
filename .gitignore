@@ -10,7 +10,6 @@ target/
 /build/
 /site/
 
-
 # JS
 node_modules/
 
@@ -23,3 +22,6 @@ node_modules/
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Do not ignore this folder
 !/docs/install/build/
+
+# Python
+__pycache__/
