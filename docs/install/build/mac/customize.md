@@ -1,9 +1,13 @@
-# Overview
+# Customizations available with Trio
+
+Here are a few ways to customize the *Trio* code to better suit your needs. 
+
+## Overview
 
 !!! info "Time Estimate"
 
     - 0 minutes if you choose not to customize.
-    - 60-80 minutes for first time customizers.
+    - 60-80 minutes for first-time customizers.
     - 30 minutes for repeat customizers.
 
 !!! abstract "Summary"
@@ -11,16 +15,14 @@
     You will:
     
     - Choose your desired customization.
-    - Make the required changes in Trio's source code.
-    - Rebuild your Trio app with the customized source code.
+    - Make the required changes in *Trio*'s source code.
+    - Rebuild your *Trio* app with the customized source code.
 
 !!! question "FAQs"
 
-    - **Do I have to customize?** No. Customization is a choice for those who wish to have greater control over how Trio fuctions. However, please be aware that limited support will be available for errors associated with customizations. 
+    - **Do I have to customize?** No.  
+      Customization is a choice for those who wish to have greater control over how *Trio* functions. However, please be aware that limited support will be available for errors associated with customizations. 
     
-#Customizations available with Trio
-
-Here are a few ways to customize the Trio code to better suit your needs. 
 
 ## Bypass Authentication for Bolusing
 
@@ -29,7 +31,7 @@ Here are a few ways to customize the Trio code to better suit your needs.
     - If you disable this, you remove an important safety feature.
 	- In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
-Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in Trio. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
+Depending on your iPhone settings and model, you may have Face ID or Touch ID enabled. Those security features will also be used to authenticate bolus delivery in *Trio*. You can disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 **Steps:**
 
@@ -47,18 +49,18 @@ if false, context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
 
 ## Omnipod: Add Extra Insulin on Insertion
 
-The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you come from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Trio - be conservative.
+The default value is 0.0 U of extra insulin. If you use this customization, start with a small number and work your way up. If you come from manual podding and routinely gave yourself an extra bolus with your PDM at Pod change time, you may not need nearly as much with *Trio* - be conservative.
 
 !!! tip "It is important to know"
     
-    Trio does not include the amount of insulin in the prime or insertion steps in your IOB. 
+    *Trio* does not include the amount of insulin in the prime or insertion steps in your IOB. 
     
-     - The pod reports every pulse that it delivers to Trio. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts.
+     - The Pod reports every pulse that it delivers to Trio. If you look in the Pod Settings insulin delivered row, that is the total delivered by the Pod minus the (prime plus insertion) amounts.
      - The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you slide to insert.
 
-[Eros Pods](#eros) and [Dash Pods](#dash) have different locations for this change. Some change both files just in case, but that is unnecessary if you're only using one type of pod.
+[Eros Pods](#eros) and [DASH Pods](#dash) have different locations for this change. Some change both files just in case, but that is unnecessary if you are only using one type of Pod.
 
-### Dash
+### Omnipod DASH Pod
 
 Edit line 82 of the file `OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
 
@@ -71,7 +73,9 @@ Code after modification adding 0.25U of insulin:
 ```swift
 public static let cannulaInsertionUnitsExtra = 0.25
 ```
-### Eros
+
+### Omnipod Eros Pod
+
 Edit line 84 of the file `OmniKit/OmniKit/OmnipodCommon/Pod.swift`
 
 Code before modification: 
@@ -86,7 +90,7 @@ public static let cannulaInsertionUnitsExtra = 0.25
 
 ## Custom Icon's
 
-There are several different app icon options built into Trio, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.
+Several different app icon options are built into Trio, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.
 
 ![Logo Alicorn](img/logo-alicorn.png){width=250}
 {align=center}
