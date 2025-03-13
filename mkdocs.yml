@@ -210,24 +210,24 @@ nav:
               - iPhone: install/build/requirements/devices/iphone.md
               - Mac ✏️: install/build/requirements/devices/mac.md # TODO
               - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility_matrix.md # TODO
-          - Apple Developer Account: install/build/requirements/apple-developer.md
+          - Apple Developer Account: install/build/requirements/apple_developer.md
       - Build with Mac:
           - Mac Build Overview: install/build/mac/overview.md
           - Prepare your Computer: install/build/mac/computer.md
           - Prepare your iPhone: install/build/mac/iphone.md
-          - Set Up Xcode: install/build/mac/xcode-setup.md
+          - Set Up Xcode: install/build/mac/xcode_setup.md
           - Builld Select Script ✏️: install/build/mac/build_select_script.md
           - Builld Trio with Xcode: install/build/mac/build.md
           - Builld Errors: install/build/mac/build_errors.md
           - Customizations: install/build/mac/customize.md
           - Update Trio wih Xcode: install/build/mac/update.md
       - Build with Browser:
-          - Browser Build Overview ✏️: todo.md
+          - Browser Build Overview ✏️: install/build/browser/browser_build_overview.md
           - Create GitHub Account ✏️: install/build/browser/create_github_account.md
           - Collect Secrets ✏️: install/build/browser/collect_secrets.md
           - Fork and Prepare your Trio Repository✏️: install/build/browser/fork_prepare_repo.md
           - GitHub Actions:
-              - Validate Secrets ✏️: todo.md
+              - Validate Secrets ✏️: install/build/browser/actions/validate_secrets.md
               - Add Identifiers ✏️: install/build/browser/actions/add_identifiers.md
               - Prepare App ✏️: install/build/browser/actions/prepare_app.md
               - Generate Certificates ✏️: install/build/browser/actions/generate_certificates.md
