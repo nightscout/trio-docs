@@ -238,10 +238,10 @@ nav:
           - Update with Browser ✏️: install/build/browser/update_with_browser.md
       - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
-          - Nightscout ✏️: configuration/companion_apps/nightscout_app.md
-          - Loop Follow ✏️: configuration/companion_apps/loop_follow.md
-          - Loop CareGiver ✏️: configuration/companion_apps/loop_caregiver.md
-          - XDrip4iOS ✏️: configuration/companion_apps/nightscout_app.md
+          - Nightscout ✏️: configuration/ecosystem/nightscout_app.md
+          - Loop Follow ✏️: configuration/ecosystem/loop_follow.md
+          - Loop CareGiver ✏️: configuration/ecosystem/loop_caregiver.md
+          - XDrip4iOS ✏️: configuration/ecosystem/xdrip4ios.md
   - Configuration:
       - New User Setup: configuration/new_user_setup.md
       - Trio Settings:
