@@ -1,16 +1,16 @@
 # CGM
 
 ## CGM Options
-This section allows you to choose your glucose data source. Most options are self-explanatory.  For more information on compatible CGMs, please see the following: [link](../settings/devices/cgm.md#compatible-cgm)
+This section allows you to choose your glucose data source. Most options are self-explanatory.  For more information on compatible CGMs, please see the following [link](../configuration/CompatibleDevices.md#cgm)
 
-CGM selection includes the following:
-* [Nightscout](#nightscout)
-* [xDrip](#xdrip-xdrip4ios)
-* [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-g6-and-dexcom-one)
-* [Dexcom G7/Dexcom ONE+](#dexcom-g7-and-dexcom-one)
-* [Glucose Simulator](#glucose-simulator)
-* [Libre Transmitter](#libre-transmitter)
-* [Medtronic Enlite](#medtronic-enlite)
+CGM selection includes the following:  
+    - [Nightscout](#nightscout)  
+    - [xDrip](#xdrip-xdrip4ios)  
+    - [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-g6-and-dexcom-one)  
+    - [Dexcom G7/Dexcom ONE+](#dexcom-g7-and-dexcom-one)  
+    - [Glucose Simulator](#glucose-simulator)  
+    - [Libre Transmitter](#libre-transmitter)  
+    - [Medtronic Enlite](#medtronic-enlite)  
 
 ### Nightscout
 While using Nightscout as a CGM is an option, it should be avoided if possible because it does not keep Trio running in the background like other CGM options.
