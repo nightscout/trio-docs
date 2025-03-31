@@ -155,7 +155,7 @@ If this is your first time building an app with this device. You may get some of
     ![Screenshot: Codesign](img/xc-codesign.png){width=500"}
       {align= "center"}
 
-## Build Error's
+## Build Errors
 
 !!! warning "Yellow Errors"
 
