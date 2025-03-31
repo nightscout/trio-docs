@@ -25,9 +25,9 @@
 
     If you previously built Trio using the Browser Build method, it is recommended that you disable 'Automatic Install' from TestFlight. This will ensure that the app created with Xcode remains on the phone.
 
-### Download Trio with 'Build Select Script'
+### Download Trio with 'Trio Build Select Script'
 
-Trio uses the Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
+Trio uses the Trio Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
 
 #### Open Terminal
 
@@ -39,9 +39,9 @@ Trio uses the Build Select Script to download Trio's source code, prepare your c
 
 4. Scroll to and open the 'Terminal' application.
 
-#### Run the 'Build Select Script' in 'Terminal'
+#### Run the 'Trio Build Select Script' in 'Terminal'
 
-The Build Select Script is designed to walk you through downloading Trio. Please take some to carefully read each step. 
+The Trio Build Select Script is designed to walk you through downloading Trio. Please take some to read each step carefully. 
 
 1. Copy the below script by hovering the mouse near the bottom right side of the text and clicking the copy icon. 
 
