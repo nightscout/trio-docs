@@ -1,6 +1,6 @@
 ## Build Trio with Mac - Overview  
 
-Congratulations on choosing to build Trio using your Mac computer. This documentation provides all the necessary instructions to download a local copy of the Trio repository using the Loop'n'Learn `BuildSelectScript`. It will then guide you on using a compatible computer with the Xcode application to build and deploy the Trio application to a compatible device.
+Congratulations on choosing to build Trio using your Mac computer. This documentation provides all the necessary instructions to download a local copy of the Trio repository using the loopandlearn `BuildSelectScript`. It will then guide you on using a compatible computer with the Xcode application to build and deploy the Trio application to a compatible device.
 
 **Requirements:**
 
