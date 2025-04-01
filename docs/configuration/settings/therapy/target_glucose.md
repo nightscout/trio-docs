@@ -8,4 +8,53 @@ Trio will target this value when calculating insulin needs. It should be set to 
 
 ## How to Enter Your Target Glucose Into Trio
 
-<!-- TODO: Add description with images -->
+### Step 1
+
+Enter the Target Glucose screen
+
+![Target Profile Menu](img/glucose_target_menu.png){ width="600px"  }
+{align=center}
+
+### Step 2
+
+Tap the "Add Rate +" on the top right of the screen until you have the number of targets you require. Then, edit each target by tapping the arrow to the right of the Glucose Target.
+
+![Add Edit GT](img/edit_target_glucose.png){ width="300px"  }
+{align=center}
+
+### Step 3
+
+Adjust the target glucose value
+
+![Edit Glucose Target](img/set_glucose_target.png){ width="600px"  }
+{align=center}
+
+### Step 4
+
+Adjust the time
+
+![Edit Target Time](img/set_target_time.png){ width="600px"  }
+{align=center}
+
+### Step 5
+
+Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all CRs are set
+
+### Delete an ISF Entry
+
+Should you need to delete an CR entry, just swipe left on the rate you need to remove. 
+
+![Delete Target](img/5_delete_target.png){ width="300px"  }
+{align=center}
+
+### Step 6 **IMPORTANT**
+
+Save your changes!
+
+![Save CR Changes](img/save_glucose_target.png){ width="300px"  }
+{align=center}
+
+### Step 7
+
+Return to New User Setup and begin [Step 4: Enable UAMs and SMBs](/configuration/new_user_setup/)
+

@@ -62,7 +62,7 @@ The next step is to enter your Therapy Settings under Trio Configuration.
 
 - - -
 
-## Step 4: Enable UAM and SMBs
+## Step 4: Enable UAMs and SMBs
 
 After you've entered your therapy settings, you will want to enable UAMs first. Then, you will enable either 'SMB Always' or the configuration of SMBs that you choose.
 

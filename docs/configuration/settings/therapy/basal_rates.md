@@ -1,7 +1,5 @@
 # Basal Profile
 
-<!-- TODO: Update section with instructions and screenshots on how to enter basal profiles into the user's basal schedule -->
-
 !!! tip "Highlights"
     
 	 - Basal profile can be imported from a Medtronic pump or Nightscout account
@@ -36,19 +34,26 @@ Tap the "Add Rate +" on the top right of the screen until you have the number of
 
 Adjust the rate
 
-![Edit Rate](img/set_basal_profile_rate.png){ width="600px"  }
+![Edit Basal Rate](img/set_basal_profile_rate.png){ width="600px"  }
 {align=center}
 
 ### Step 4
 
 Adjust the time
 
-![Edit Rate](img/set_basal_profile_time.png){ width="600px"  }
+![Edit Basal Time](img/set_basal_profile_time.png){ width="600px"  }
 {align=center}
 
 ### Step 5
 
 Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all basal rates are set
+
+### Delete a Basal Rate
+
+Should you need to delete a basal rate, just swipe left on the rate you need to remove. 
+
+![Delete Basal](img/5_delete_basal.png){ width="300px"  }
+{align=center}
 
 ### Step 6 **IMPORTANT**
 
