@@ -5,7 +5,9 @@ There are three pumps compatible with Trio:
 * Omnipod Dash pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
-* DanaRS (_Coming Soon!_)
+* DanaRS-v1, DanaRS-V3, Dana-i
+* Medtrum - (in testing)
+* Tandem Mobi - (in early development)
 
 
 No other pumps work with Trio at this time, but other open-source closed-loop options, such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/), support other pumps.

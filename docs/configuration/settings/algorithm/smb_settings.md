@@ -3,7 +3,8 @@
 !!! summary "Highlights"
 
     - UAMs should be enabled **first**, then other SMBs should be enabled as needed.
-    - Max UAM Basal Minutes should be set **lower** than Max SMB Basal Minutes.
+    - If entering carbs and/or bolusing: Max UAM Basal Minutes should be set **lower** than Max SMB Basal Minutes.
+    - If **NOT** entering carbs and/or bolusing (FCL): Max UAM Basal Minutes should be set **higher** than Max SMB Basal Minutes.
     - Super micro boluses (SMB) often include your basal insulin. Your basal rate will be temporarily reduced after an SMB is delivered to prevent overdosing insulin.
     - SMBs reduce blood sugar more quickly than temporary basal rates.
     - If you want to configure SMBs only to run in certain conditions, do not turn on 'Enable SMB Always'.
@@ -142,11 +143,15 @@ $$
 
     Increasing this value above 90 minutes may impact Trio's ability to effectively zero temp and prevent lows.
 
+!!! tip
+    
+    If you are entering carbs or bolusing for meals, your **Max SMB Basal Minutes should be set _higher_** than your Max UAM Basal Minutes
+
 - - -
 
 ## Max UAM Basal Minutes
 **Default:** _30 minutes_  
-**Setting Limits:** _30-180_
+**Setting Limits:** _30-180 minutes_
 
 If UAM is enabled, this setting limits the size of each UAM SMB. One UAM SMB can only be as large as this many minutes of your current profile basal rate.  
 
@@ -159,6 +164,10 @@ $$
 !!! warning
 
     Increasing this value above 90 minutes may impact Trio's ability to effectively zero temp and prevent lows.
+
+!!! tip
+    
+    If you are **NOT** entering carbs or bolusing for meals and using Trio as a Fully Closed Loop (FCL), your **Max UAM Basal Minutes should be set _higher_** than your Max SMB Basal Minutes
 
 - - -
 
@@ -211,7 +220,7 @@ This safety limiter looks at the difference between your last two blood glucose 
 
 !!! tip
     
-    For a fully closed loop, 30% is advised.
+    For Fully Closed Loop (FCL), 30% is advised.
 
 - - -
 

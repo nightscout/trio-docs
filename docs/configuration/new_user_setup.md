@@ -1,84 +1,112 @@
 # New User Setup
 
-Welcome to the New User Setup Guide! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the [Build Instructions](../operate/build.md) and come back here when you are ready to start the setup process!
+![Home Screen Mockup](img/trio_phone_mockup.png){ width="500px"  }
+{align=center}
 
-To set up your Trio app, touch the settings icon ⚙️ located on the bottom right of the main screen. Each step contains links to information on setting up each part of your Trio app. Use this as your home base to refer back to as you set up your app.
+Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the [Build Instructions](../operate/build.md) and come back here when you are ready to start the setup process!
 
-## Step 1: Connect your Devices
+To set up your Trio app, touch the settings icon located on the bottom right of the main screen. Each step contains links to information on setting up each part of your Trio app. Use this as your home base to refer back to as you set up your app.
 
-The first step in setting up your Trio app is to connect your devices to the app. 
+## Step 1: Verify Compatibility and Connect Your Devices
+
+The first step in setting up your Trio app is to connect your devices to the app, located in the Devices menu under Trio Configuration. 
 
 ### Verify Compatibility
 
 If you have not already, please verify that your devices are compatible:
 
- 1. [Phones/Watches](../Getting-Started/iphone.md)
- 2. [Pumps](../Getting-Started/pump.md)
- 3. [CGMs](../settings/devices/cgm.md)
+ 1. [Phones](../configuration/CompatibleDevices.md#phones)
+ 2. [Watches](../configuration/CompatibleDevices.md#watches)
+ 3. [Pumps](../configuration/CompatibleDevices.md#pump)
+ 4. [CGMs](../configuration/CompatibleDevices.md#cgm)
 
 ### Connect Devices
 
 Once you have verified that you are using compatible devices, you can connect them in the Trio app settings menu.
 
-![Devices Settings](img/DeviceMenu.png){ width="300px"  }
+![Devices Settings](img/DeviceMenu.png){ width="500px"  }
 {align=center}
 
- 1. [Pump](../configuration/Devices.md#pump)
- 2. [CGM](../configuration/Devices.md#cgm)
- 3. [Watch (optional)](../configuration/Devices.md#watches)
+ a. [Connect Insulin Pump](settings/devices/pump.md)  
+ b. [Connect Continuous Glucose Monitor (CGM)](settings/devices/cgm.md)  
+ c. [Connect Smart Watch (optional)](settings/devices/smart_watch.md)
 
-## Step 2: Add Profile Settings
+- - -
 
-The next step is to enter your main profile settings: Basal, ISF, CR, and Target Glucose.
+## Step 2: Enter Preferred Units and Safety Limits
 
-!!! important "Important"
+The next step is to follow the guidance linked here for [Units and Limits](settings/therapy/units_limits.md). These settings not only give Trio the ability to dose you based on your settings (entered in Step 3), but they also act as safety limits to prevent over-correction. 
 
-    If you use `mg/dL`, you must first change the 'Glucose Units' **before** entering your profile settings.
-    
-    This is found in the Trio Settings menu under 'Preferences'
+![Units and Limits](img/unitsandlimits.png){ width="500px"  }
+{align=center}
 
+ a. [Glucose Units](settings/therapy/units_limits.md#glucose-units)  
+ b. [Max IOB](settings/therapy/units_limits.md#max-iob)  
+ c. [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
+ d. [Max Basal](settings/therapy/units_limits.md#max-basal)  
+ e. [Max COB](settings/therapy/units_limits.md#max-cob)  
 
- 1. [Basal](../settings/configuration/basalprofile.md)
- 2. [Insulin Sensitivity Factor (ISF)](../settings/configuration/insulinsensitivities.md)
- 3. [Carb Ratio (CR)](../settings/configuration/carbratios.md)
- 4. [Set Target Glucose](../settings/configuration/targetglucose.md)
+- - -
 
-## Step 3: Adjust Safety Limits
+## Step 3: Add Therapy Settings
 
-The next step is to adjust the standard safety limits that will allow Trio to function effectively. There are many more settings that are not mentioned in this section. It is not advised to adjust those until you have familiarized yourself with the system by using it for a while.
+The next step is to enter your Therapy Settings under Trio Configuration.
 
-!!! warning 
+![Therapy Settings](img/TherapyMenu.png){ width="500px"  }
+{align=center}
 
-    **DO NOT ENABLE DYNAMIC SETTINGS YET**
-    
-    It is essential that Trio have enough data to make sound recommendations. It is essential that your settings are tuned to be used in an Oref algorithm and you feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:
-    
-    - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm
-     - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of 7 consecutive days
-     - You are comfortable with the Trio app
+ a. [Basal Rates](settings/therapy/basal_rates.md)  
+ b. [Insulin Sensitivities (ISF)](settings/therapy/isf.md)  
+ c. [Carb Ratios (CR)](settings/therapy/carb_ratios.md)  
+ d. [Glucose Targets](settings/therapy/target_glucose.md)  
 
- 1. [Recommended Bolus Percentage](../settings/configuration/preferences/trio.md#recommended-bolus-percentage)
- 2. [Max IOB](../settings/configuration/preferences/mainsettings.md#max-iob)
- 3. [Max COB](../settings/configuration/preferences/mainsettings.md#max-cob)
- 4. [Bolus Increment](../settings/configuration/preferences/smbsettings.md#bolus-increment)
- 5. [Enable UAM](../settings/configuration/preferences/smbsettings.md#enable-uam)
- 6. [Enable SMB as needed](../settings/configuration/preferences/smbsettings.md)
- 7. <b>HANDS OFF DYNAMIC SETTINGS!</b>
+- - -
 
-## Step 4: Enable Closed Loop
+## Step 4: Enable UAMs and SMBs
+
+After you've entered your therapy settings, you will want to enable UAMs first. Then, you will enable either 'SMB Always' or the configuration of SMBs that you choose.
+
+![SMB Settings](img/smbSettings.png){ width="500px"  }
+{align=center}
+
+ a. [Enable UAMs](settings/algorithm/smb_settings.md#enable-uam)  
+ b. [Enable chosen SMBs](settings/algorithm/smb_settings.md)  
+        
+- - -
+
+## Step 5: Enable Closed Loop
 
 Closed loop functionality is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running an 'open loop.'
 
-![Enable Closed loop](img/closeLoop.png)
+![Enable Closed loop](img/closeLoop.png){ width="500px"  }
 {align=center}
 
 [More on closing the loop](../configuration/Configure.md)
 
-## Step 5: Change App Icon (Optional)
+- - -
+
+!!! danger "DO NOT ENABLE DYNAMIC SETTINGS YET"  
+    
+    It is essential that Trio has enough data to make sound recommendations. Your settings must be tuned to be used in an Oref algorithm and you must feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:  
+    
+    - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm 
+    - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of **7 consecutive days**
+    - You are comfortable with the Trio app
+    
+
+!!! danger "DO NOT ALTER ANYTHING ELSE UNTIL YOU'VE TESTED AND VERIFIED YOUR SETTINGS"
+    - If you are coming from another Oref-based system, like Trio 0.2, iAPS, or AAPS, you will want to watch your current settings to ensure they are performing as they did previously. You may need to make some adjustments, but you also may find your settings work as well as they did in the previous system.  
+    - If you are coming from Loop, a commercial system, or multiple daily injections (MDI), you will want to first test your settings to ensure they do not require any adjustments. You've been using a completely different algorithm to manage your insulin dosing and that means you've tailored your settings to be optimized using that method of dosing. Because Trio uses a different algorithm, your settings will almost assuredly need to be adjusted to work optimally within the Oref algorithm.
+    
+    You can find more information on transitioning to Trio [here](transition-qa.md)
+
+- - -
+
+## Step 6: Change App Icon (Optional)
 
 Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.
 
-![Change App Icon](img/changeAppIcon.png)
+![Change App Icon](img/icon_selection.png)
 {align=center}
 
 

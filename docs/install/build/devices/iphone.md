@@ -1,22 +1,8 @@
-## Compatible Devices
+## Compatible Phones
 
 Trio requires a relatively recent iPhone. The faster the phone, the better for the algorithm and battery life. You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone. Trio is compatible with iPhones running on iOS 16 or newer.
 
-### iPhone
-
-These devices are compatible with iOS 16 and newer iOS.
-
-- iPhone 15, all variants
-- iPhone 14, all variants
-- iPhone 13, all variants
-- iPhone 12, all variants
-- iPhone 11, all variants
-- iPhone X, all variants
-- iPhone 8, all variants
-- iPhone SE (3rd generation; 2022 first release)
-- iPhone SE (2nd generation; 2020 first release)
-
-#### iOS Version and Developer Mode
+### iOS Version and Developer Mode
 
 **Find Your iOS Version**
 
@@ -38,7 +24,7 @@ When you build Trio on your phone from Xcode directly, you must enable Developer
     
     You cannot run Trio on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
-#### Automatic Updates
+### Automatic Updates
 
 Apple provides frequent updates to the iOS. These updates often include critical security patches and improved new features. Updates to iOS _could_ make Trio stop working.  
 **Minor** updates (like 16.5 -> 16.5.1) are usually not an issue.  
@@ -54,7 +40,7 @@ Apple provides frequent updates to the iOS. These updates often include critical
         1) Configure your phone to *download* the updates automatically    
         2) Choose to perform the *installation* of the updates manually
 
-#### Battery Health
+### Battery Health
 
 Make sure your phone's battery is functioning optimally. Your phone will become a critical health device, and you want it to keep working.
 
@@ -65,9 +51,3 @@ Make sure your phone's battery is functioning optimally. Your phone will become 
     
     Some people have reported that Trio continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others have reported that they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low-power mode. Otherwise, the best practice is to avoid Low-Power Mode.
 
-
-### Apple Watch
-
-Trio has a companion app for the Apple Watch. The companion app shows the loop status and current insulin and carbs onboard. It also lets you add carbs, do a manual bolus, and set a temporary target. However, the companion app only serves as a remote control for the iPhone app; connection to the CGM and pump is still done through your iPhone, and you will have to bring it with you.
-
-Apple Watch Series 3 and newer are supported. Newer versions of the Apple Watch have better battery life and support always-on display.
