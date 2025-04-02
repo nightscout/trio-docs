@@ -45,6 +45,7 @@ The next step is to follow the guidance linked here for [Units and Limits](setti
  c. [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
  d. [Max Basal](settings/therapy/units_limits.md#max-basal)  
  e. [Max COB](settings/therapy/units_limits.md#max-cob)  
+ f. [Minimum Safety Threshold](settings/therapy/units_limits.md#maximum-safety-threshold)
 
 - - -
 

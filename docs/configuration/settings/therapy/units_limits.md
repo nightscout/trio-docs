@@ -69,3 +69,73 @@ This setting defines the maximum amount of Carbs On Board (COB) allowed at any g
 For example, if Max COB is 120g and you enter a meal containing 150g of carb, your COB will remain at 120g until the remaining 30g have replaced absorbed carbs.
 
 - - -
+
+## Minimum Safety Threshold
+**Default:** _Set By Algorithm_  
+**Setting Limits:** _60 - 120 mg/dL_
+
+Trio uses a Safety Threshold to prevent insulin dosing when your current glucose reading is too low. This threshold is always active, but you can increase this threshold from the system-determined value by entering a value into this setting in Trio.
+
+The system-determined value is based on this calculation:
+
+$$
+Target\ Glucose - \frac{Target\ Glucose - 40}{2}
+$$
+
+The threshold is a safety limiter function. If blood sugar at any point is predicted to go below this value, Trio will suspend insulin delivery (SMBs are halted and Temp Basal of 0 U/hr set) and wait until forcasting says otherwise. Increasing this setting can be useful if you are experiencing a high number of hypoglycemia events. Please review the [OpenAPS documents](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html?highlight=Safety%20Threshold) if you want a better understanding of how it is used. 
+
+This setting allows you to choose a higher threshold setting than the default. Note that you cannot choose something lower than the default setting for a certain blood glucose target.
+
+??? question "Bill has set a BG target of 110 mg/dl.  In his Trio Dynamic Settings, he has set his threshold to 65 mg/dl. Will Trio use the default threshold or the minimum safety threshold he set?"
+    
+    ??? info "Here are the formulas you'll need:"
+        
+        **Default Safety Threshold**:
+        
+        $$
+        Target\ Glucose - \frac{Target\ Glucose - 40}{2}
+        $$
+        
+        **Then, compare that value to the Minimum Safety Threshold**  
+        
+        Default Safety Threshold $\gt$ or $=$ or $\lt$ Minimum Safety Threshold
+        
+        
+    ??? note "Now, enter in Bill's values"
+        
+        $$
+        110 - \frac{110-40}{2} =
+        $$
+        
+        $$
+        110 - \frac{70}{2} =
+        $$
+        
+        $$
+        110 - 35 =
+        $$
+        
+        $$
+        65\ mg/dL
+        $$
+        
+        $$
+        75\ mg/dL \gt 65\ mg/dL
+        $$
+        
+    ??? success "Answer"
+        Because Trio's default threshold setting is 75 mg/dL for a 110 mg/dL blood glucose target, and that is greater than Bill's Minimum Safety Threshold, Trio will use the higher target of **_75 mg/dL_** and ignore this setting.
+        
+??? question "Bonus Question: Assuming Bill's target stays at 110 mg/dL, what would Bill have to set his Minimum Safety Threshold to for it to be used by Trio?"
+    
+    $$
+    \geq 75\ mg/dL
+    $$
+
+
+!!! tip
+    Basal may be resumed if there is negative IOB and glucose is rising faster than the forecast
+    
+- - -
+
+Return to [New User Setup](/configuration/new_user_setup/)
