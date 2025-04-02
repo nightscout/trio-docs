@@ -34,7 +34,7 @@ If a calculated amount exceeds this limit, the suggested and/or delivered amount
 **Default:** _10 units_  
 **Setting Limits:** _1-30 units_  
 
-This is the maximum bolus allowed to be delivered at one time. This limits manual and automatic boluses.
+This is the maximum bolus allowed to be delivered at one time. This only limits manual boluses given on the Treatments screen.
 
 If you attempt to request a bolus larger than this, the bolus will not be accepted or proceed. So if your max bolus is set to 5U but you enter a 6U bolus, the "Enact Bolus" button will turn red and display a warning message. You will be unable to proceed until you lower your bolus to within this limit.
 
