@@ -95,6 +95,48 @@ This is defaulted to on because it resets any active temporary basal rate to a 0
 
 - - -
 
+## SMB Delivery Ratio
+**Default:** _50%_  
+**Setting Limits:** _30%-70%_
+
+This is a safety limiter. Trio determines how much insulin is required to get you back to your target glucose. If SMB is enabled, Trio then delivers an SMB that defaults to half the required insulin.
+
+Because SMBs can occur every 5 minutes with each loop cycle, it is important to set this value to a conservative level that will allow Trio to safely decrease insulin should needs suddenly change.
+
+??? question "Trio determines Bill needs 2.4 units to return him to his target glucose. His `SMB Delivery Ratio` is set to 50%. What amount of insulin will Trio deliver?"
+
+    $$
+    2.4 \times 50\% = 1.2\ units
+    $$
+
+
+??? question "_Bonus Question_: Based on Bill's `Max SMB Basal Minutes` setting above, will he get an SMB of 1.2 units?"
+
+    $$
+    1.0 \lt 1.2
+    $$
+    
+    No, Bill will only get **1.0 unit** because after Trio calculated his needed insulin, it reduced it by his `SMB Delivery Ratio`, and _then_ Trio limited the amount to his `Max SMB Basal Minutes` because it was higher than this setting.
+
+
+!!! tip
+
+    Allowed range for this setting is 30% - 70%
+
+- - -
+
+## SMB Interval
+**Default** _3 min_  
+**Setting Limits:** _1-10 min_
+
+The minimum minutes since the last SMB or manual bolus that an automated SMB will be permitted.  
+
+!!! tip
+
+    Keep this setting at the default of 3 minutes to help Trio enact needed SMBs without interruption
+
+- - -
+
 ## Min 5m Carb Impact
 **Default:** _5 mg/dL_  
 **Setting Limits:** _1-20 mg/dL_
