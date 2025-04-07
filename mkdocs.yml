@@ -139,6 +139,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - def_list
+  - md_in_html
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
@@ -214,9 +215,9 @@ nav:
           - Mac Build Overview ✏️: todo.md
           - Prepare your Computer ✏️: install/build/mac/prepare_computer.md
           - Prepare your iPhone ✏️: install/build/mac/prepare_iphone.md
-          - Builld Select Script ✏️: install/build/mac/build_select_script.md
-          - Builld Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
-          - Builld Errors ✏️: install/build/mac/build_errors.md
+          - Build Select Script ✏️: install/build/mac/build_select_script.md
+          - Build Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
+          - Build Errors ✏️: install/build/mac/build_errors.md
           - Customizations ✏️: install/build/mac/mac_customizations.md
           - Update Trio wih Xcode ✏️: install/build/mac/update_with_xcode.md
       - Build with Browser:
@@ -244,16 +245,16 @@ nav:
       - New User Setup: configuration/new_user_setup.md
       - Trio Settings:
           - Devices:
-              - Insulin Pump ✏️: configuration/settings/devices/pump.md
+              - Insulin Pump : configuration/settings/devices/pump.md
               - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
-              - Smart Watch ✏️: configuration/settings/devices/smart_watch.md
+              - Smart Watch : configuration/settings/devices/smart_watch.md
           - Therapy:
               - todo.md
-              - Units and Limits ✏️: configuration/settings/therapy/units_limits.md
-              - Basal Rates ✏️: configuration/settings/therapy/basal_rates.md
-              - Insulin Sensitivities ✏️: configuration/settings/therapy/isf.md
+              - Units and Limits : configuration/settings/therapy/units_limits.md
+              - Basal Rates : configuration/settings/therapy/basal_rates.md
+              - Insulin Sensitivities : configuration/settings/therapy/isf.md
               - Carb Ratios: configuration/settings/therapy/carb_ratios.md
-              - Target Glucose ✏️: configuration/settings/therapy/target_glucose.md
+              - Target Glucose : configuration/settings/therapy/target_glucose.md
           - Algorithm:
               - Autosens: configuration/settings/algorithm/autosens.md
               - Super Micro Bolus (SMB): configuration/settings/algorithm/smb_settings.md
