@@ -1,5 +1,7 @@
 # Shortcuts
-<!-- TODO: Add screenshot of Shortcuts screen -->
+
+![Trio Shortcuts](img/trio_shortcuts.png){width="400"}
+{align="center"}
 
 ## Allow Bolusing with Shortcuts
 **Default:** _OFF_  
@@ -9,55 +11,76 @@ Enabling this setting allows the iOS Shortcuts App to send bolus commands to Tri
 !!! tip
     Disabling this setting will still allow other Shortcut commands, like Temp Targets, Add Carbs, and Start/End Overrides.
 
-<!-- TODO: Add list of Shortcuts allowed by Trio -->
+- - -
 
-<!-- TODO: Add link to new section on How to Use Shortcuts -->
-### List last state available with Trio
+## Available Shortcut actions: 
 
+- [Bolus](#bolus) (if [enabled](#allow-bolusing-with-shortcuts))
+- [List State](#list-state)
+- [Add Carbs](#add-carbs)
+- [Activate Override](#activate-override)
+- [Cancel Override](#cancel-override)
+- [Temporary Target](#temporary-target)
+- [Cancel Temporary Target](#cancel-temporary-target)
+- [Restart Live Activity](#restart-live-activity)
 
-Allow to list the last glucose reading, trends, IOB and COB available in Trio
+- - -
 
+### Bolus
 
-### Activate an override 
-Activates an override:
-- Override choice
-- Confirm before appling _If toggled, you will need to confirm before applying._
+If [Allow Bolusing with Shortcuts](#allow-bolusing-with-shortcuts) is enabled, you will be able to use shortcuts to deliver a bolus.
 
+- - -
 
-### Cancel a Temporary Target
+### List State
 
-Cancels a temp target.
+Shows the last glucose reading, glucose trend arrow, time since last reading, and glucose delta. It also shows current IOB and COB.
 
-
-### Apply a Temporary Target
-
-
-- Enable a Temporary Target
-- Confirm Before applying _If toggled, you will need to confirm before applying_
-
-
-### Enact Bolus
-
-Allow to send a bolus to the app
-
-## Amount
-Bolus amount in U
-## Confirm before applying
-If toggled, you will need to confirm before applying
+- - -
 
 ### Add Carbs
-Allow to add carbs in Trio.
-- Quantity Carbs _Quantity of carbs in g_
 
-- Quantity fat _Quantity of fat in g_
+Adds a carb entry into Trio.  
 
-- Quantity Protein _Quantity of protein in g_
+!!! tip
+    You can only add a carb entry using shortcuts. You cannot add a fat or protein entry.
 
-- Date _Date of adding_
+- - -
 
-- Note _Emoji or short text_
+### Activate Override
 
-- Confirm Before applying _If toggled, you will need to confirm before applying_
+Activates a chosen preset override.  
+
+!!! tip
+    You must first save the Preset Override on the [Adjustments](usage/interface.md#action-buttons) screen before you can activate an override using Shortcuts.
+
+- - -
+
+### Cancel Override
+
+Cancels an already set override.
+
+- - -
+
+### Temporary Target
+    
+Activates a chosen preset temp target.  
+
+!!! tip
+    You must first save the Preset Temp Target on the [Adjustments](usage/interface.md#action-buttons) screen before you can activate a temp target using Shortcuts.
+
+- - -
+
+### Cancel Temporary Target
+
+Cancels and already active temp target.
+
+- - -
 
 ### Restart Live Activity
-Restarts Trio's live activity
+
+Restarts Trio's live activity.
+
+- - -
+
+<!--TODO: Add a How to use Shortcuts & Automations page and reference it here-->

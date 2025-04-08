@@ -1,183 +1,119 @@
-# User Interface
-<!-- TODO: Add screenshot of new Trio 1.0 User Interface and add link to User Interface detailed description document -->
+# User Interface Settings Menu
+
+![Trio 1.0 User Interface](img/light_vs_dark_mode.png){width="600"}
+{align="center"}
 
 ## Appearance
 **Default:** _System Default_
 
 ### Options
 **System Default:**  
-<!-- TODO: Add description -->
+This option follows the phone's current color scheme.
 
 **Light:**  
-<!-- TODO: Add description and screenshot -->
+Always in Light Mode
 
 **Dark:**  
-<!-- TODO: Add description and screenshot -->
+Always in Dark Mode
 
 - - -
 
 ## Glucose Color Scheme
 **Default:** _Static_  
-<!-- TODO: Add description -->
 
 ### Options
 **Static:**  
-<!-- TODO: Add description and image -->
+This option uses orange, green, and red to indicate where the glucose reading falls on the range set.  
+
+!!! info inline "Threshold Graph Legend"
+    
+    ![High Threshold Static Icon](img/high_threshold_static.png){width="15" style="vertical-align: middle;"}  High Threshold   
+    ![Low Threshold Static Icon](img/low_threshold_static.png){width="15" style="vertical-align: middle;"}  Low Threshold  
+    <span style="color: #fe9607;">:fontawesome-solid-circle:</span>  Above Range Glucose  
+    <span style="color: #35c759;">:fontawesome-solid-circle:</span>  In Range Glucose  
+    <span style="color: #ff3131;">:fontawesome-solid-circle:</span>  Below Range Glucose      
+            
+![Static Color Graph](img/static_color_graph.png){width="250"}
+        {align="left"}
 
 **Dynamic:**  
-<!-- TODO: Add description and image -->
+This option uses the color wheel to indicate where the glucose reading falls in relation to your target glucose.  
+_*The colors of the threshold lines are also dynamic, so the exact coloring will depend on your settings_ 
+
+!!! info inline "Threshold Graph Legend"
+    
+    ![High Threshold Dynamic Icon](img/high_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  High Threshold (=180)  
+    ![Low Threshold Dynamic Icon](img/low_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  Low Threshold (=70)  
+    ![Above Target Icon](img/above_target_glucose_icon.png){width="15" style="vertical-align: middle;"}  Above Target  
+    ![At Target Icon](img/at_or_near_target.png){width="15" style="vertical-align: middle;"}  At or Near Target  
+    ![Below Target Icon](img/below_target_glucose_icon.png){width="15" style="vertical-align: middle;"}  Below Target  
+        
+![Dynamic Color Graph](img/dynamic_color_graph.png){width="250"}
+{align="left"}
 
 - - -
 
-## Axis Grid Lines
-<!-- TODO: Add description -->
+## Axis Grid Lines  
 
 ### Show X-Axis Grid Lines
 **Default:** _ON_  
+Choose whether or not to display the X-Axis (horizontal) grid lines on the glucose graph.  
 
 ### Show Y-Axis Grid Lines
 **Default:** _ON_  
+Choose whether or not to display the Y-Axis (vertical) grid lines on the glucose graph.  
 
 - - -
 
 ## Show Low and High Thresholds
-**Default:** _ON_
-<!-- TODO: Add description -->
+**Default:** _ON_  
+This setting displays the upper and lower values for your glucose target range.  
 
 ### Low Threshold
-**Default:** _70 mg/dL_  <!-- TODO: Add mmol conv -->
-<!-- TODO: Add description -->
+**Default:** _70 mg/dL (3.9 mmol/L)_  
+The lower value of your displayed glucose target range.  
 
 ### High Threshold
 **Default:** _180 mg/dL (10mmol/L)_  
-<!-- TODO: Add description -->
+The upper value of your displayed glucose target range.  
+
+!!! tip
+    This range is for display and statistical purposes only and does not influence insulin dosing.
 
 - - -
 
 ## Forecast Display Type
-**Default:** _Cone_
+**Default:** _Cone_  
+This setting allows you to choose between the Cone of Uncertainty (Cone) and OpenAPS Forecast Lines (Lines) for the glucose forecast display. Descriptions for each option found below.  
 
 ### Options
 **Cone (of Uncertainty):**  
-<!-- TODO: Add description and image -->
+<!-- TODO: Add image -->
+Uses a combines range of all possible forecast from the OpenAPS lines and provides you with a range of possible forecasts. This option has shown to reduce confusion and stess around algorithm forecasts by providing a less concerning visual representation.
 
 **Lines:**
-<!-- TODO: Add description and image -->
-
-- - -
-
-## Total Insulin Display Type
-**Default:** _TDD_  
-<!-- TODO: Add description -->
-
-### Options
-**TDD (Total Daily Dose):**  
-<!-- TODO: Add description -->
-
-**TINS (Total Insulin in Scope):**  
-<!-- TODO: Add description -->
+<!-- TODO: Add image -->
+Uses the IOB, COB, UAM, and ZT forecast lines from the OpenAPS (Oref) Algorithm used in Trio. This option provides a more detailed view of the algorithm's forecast and may be more or less helpful depending on the user's preference.
 
 - - -
 
 ## eA1c Display Unit
 **Default:** _Percent_  
-<!-- TODO: Add description -->
+Choose which format you'd prefer the eA1c (estimated A1c) value to be displayed as. Choose between percentage (Ex: 6.5%) or mmol/mol (Ex: 48 mmol/mol).
 
 ### Options
-**Percent:**  
-<!-- TODO: Add description -->
-
-**mmol/mol:**
-<!-- TODO: Add description -->
-
-- - -
-
-## Time in Range Chart Style
-<!-- TODO: Ask Dan if this needs to be updated in the hints section. Still shows "vertical" and "horizontal" for TIR, when it is now a pie chart in the updates statistics UI-->
+**Percent** or **mmol/mol**
 
 - - -
 
 ## Show Carbs Required Badge
 **Default:** _OFF_  
-<!-- TODO: Add description -->
+Turning this on will show the grams of carbs needed to prevent a low as a notification badge on the Trio home screen, located above the main icon.  
 
 ### Carbs Required Threshold
-<!-- TODO: Add description -->
+If `Show Carbs Required Badge` is enabled, this setting will appear. Set this to the lowest number of carbs you'd like to be recommended. A recommendation will not be given if the carbs required is below this number.  
+
+!!! tip
+    The carb suggested with this feature are to be used as a recommendation, not as a requirement. Depending on the current accuracy of your sensor and the accuracy of your settings, the suggested carbs can vary widely from what is actually required. Ultimately, use your best judgement before ingesting the suggested quantity of carbs.
 
 - - -
-
-<!-- TODO: Use this as a model to create a new User Interface detailed description document page for Trio 1.0 (usage/interface.md)
-
-## Main Screen
-
-<b> The main screen of Trio can be divided into three sections: </b>
-
-[Status](#status) | [Graphs & Statistics](#graphs-and-statistics) | [Actions](#actions)
-
-![Trio Main Screen](./img/trio-ui-main_screen.png){width="400"}
-{align="center"}
-
-### Status
-
-The Status section shows your current insulin on board (IOB), carbs on board (COB), blood glucose, pump status, and looping status. 
-The looping indicator will be grey if no data is present. It will be green when it has been less than 5 minutes since a successful loop cycle. It will turn yellow if no loop cycle has been completed for over 5 minutes. If more than 10 minutes go by without a successful loop cycle, the loop circle will turn red. The section to the left of the loop circle shows you the approximate units of insulin left in your pump. If you're using Omnipod, 50+ U means more than 50 units of insulin are left. Below the insulin left, you will see your pump battery status if you're using a Medtronic pump and the days/hours left if you're using an Omnipod.
-
-![Trio Status Row](./img/trio-ui-status_row.png){width="400"}
-{align="center"}
-
-Tapping the top of the screen will bring up a History screen with information on changes implemented by the most recent loop cycle. Tapping the pump status will bring you to pump settings.
-
-
-### Graphs and Statistics
-
-The middle of the screen graphs your current blood sugar data and inputted carbs overlaid with Trio's insulin delivery and blood sugar predictions.
-
-![Trio Graphs and Statistics](img/trio-ui-graphs_statistics.png){width="400"}
-{align="center"}
-
-Below the graph is the prediction line legend so you can determine the meaning of your prediction lines.
-
-![Trio Prediction Line Legend](img/trio-ui-prediction_row_legend.png){width="400"}
-{align="center"}
-
-The zero temp (ZT) line predicts where your blood sugar would be if insulin delivery and carb absorption ceased. The IOB line predicts where blood sugar would be if insulin delivery was ceased and carb absorption was minimal. The unannounced meal (UAM) line predicts how long blood glucose will continue to rise, to dose insulin accordingly. The COB line predicts the effects of entered carbs on future blood glucose. For more information on prediction lines, see the [OpenAPS documentation.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html)
-
-If enabled, statistics detailing your time in range, coefficient of variance (CV), and average glucose are displayed underneath these graphs. Tapping in this area allows you to change the time interval used to calculate these statistics.
-
-### Actions
-
-At the bottom of the screen, you have five action icons:
-
-![Trio Action Row](img/trio-ui-action_row.png){width="400"}
-{align="center"}
-
-<details>
-<summary> <b>Meal Bolus</b> </summary>
-
-The Meal Bolus option allows you to enter Carbs and bolus accordingly. If you have "Fat And Protein Conversion" enabled, you will also be provided the option to enter fat and protein content in grams.
-</details>
-
-<details>
-<summary> <b>Temp Target</b> </summary>
-
-The Temp Target icon allows you to set temporary blood glucose targets. The most common targets are a high target for exercise and a low target for meal preparation. 
-</details>
-
-<details>
-<summary> <b>Bolus</b> </summary>
-
-The Bolus icon allows you to give manual correction boluses. Manually correcting is not recommended if you are using Trio's SMB and UAM features.
-</details>
-
-<details>
-<summary> <b>Statistics</b> </summary>
-
-The Statistics Icon shows your statistical data in the app.
-</details>
-
-<details>
-<summary> <b>Settings</b> </summary>
-
-The Settings icon allows you to access your Trio settings. The settings screen allows you to adjust your configuration. Please see [Configure](../settings/devices/pump.md) for more information on each configuration option.
-</details>
--->
