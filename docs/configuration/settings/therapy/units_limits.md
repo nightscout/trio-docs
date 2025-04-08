@@ -27,7 +27,6 @@ If a calculated amount exceeds this limit, the suggested and/or delivered amount
     You can still manually bolus above this limit, but the suggested bolus amount will never exceed this in the bolus calculator
 
 
-
 - - -
 
 ## Max Bolus
