@@ -190,7 +190,7 @@ Please see the [New User Guide](../Setup/New-User-Setup.md) to get started with 
 
 The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortnately, it doesnt work that way.
 
-### Select the FreeAPS Folder
+### Select the Trio Folder
 
 !!! danger "Don't touch that button!"
     You will be told exactly where on each screen you should click. Please only click in the designated places.
@@ -199,12 +199,12 @@ Follow the directions and compare your Xcode screen to the graphics as you walk 
 
 1. Follow the 'Build Select Script' prompts to open Xcode. Ensure you follow the instructions on each screen.
 
-2. Once Xcode is open, in the navigation pane one the left side of the screen, double click on 'FreeAPS'
+2. Once Xcode is open, in the navigation pane one the left side of the screen, double click on 'Trio'
 
     ![Screenshot: Free Build - Xcode 1](img/xc-free1.png){width="1024"}
       {align="center"}
       
-3. Next, ensure your phone is set as the build location. If not, click on the build location and select you device from the drop down list. 
+3. Next, ensure your phone is set as the build location. If not, click on the build location and select your device from the drop down list. 
 
     - If this is the first time your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
 
@@ -224,7 +224,7 @@ Follow the directions and compare your Xcode screen to the graphics as you walk 
 
 The graphic below indicates in red the places you need to click in order to begin signing targets.
 
-1. First, ensure the target 'FreeAPS' is selected.
+1. First, ensure the target 'Trio' is selected.
 
 2. Next, we are going to select the 'Signing & Capabilities tab.
 
@@ -248,8 +248,8 @@ This section is required if you are using the free account. Some features of Tri
 
 1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
 
-    - **FreeAPS Target:** Push Notifications; Siri and Time Sensitive Notifications
-    - **FreeAPS WatchKit Extension Target:** Siri
+    - **Trio Target:** Push Notifications; Siri and Time Sensitive Notifications
+    - **Trio WatchKit Extension Target:** Siri
     
 2. Add the keyword `SIRI_DISABLED` to the ConfigOverride.xcconfig file.
 
