@@ -132,7 +132,7 @@ The shorter the interval, the smoother the correlating dosing result.
 **Default:** _50%_  
 **Setting Limits:** _10-120%_  
 
-This setting changes how much effect the fat and protein entry has on the FPU calulations.  
+This setting changes how much effect the fat and protein entry has on the FPU calculations.  
 
 At the default setting of 50%, this reduces the converted amount by half.  
 
