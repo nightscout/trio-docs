@@ -92,7 +92,7 @@ You can personalize the conversion calculation by adjusting the following settin
 
 This setting defines the time between when you log fat & protein and when the system start delivering insulin for the Fat-Protein Unit Carb Equivalents (FPUs).
 
-This delay accounts for the slower absorption of fat and protein, as calculated by the Warsaw Methos, ensuring insulin delivery is properly times to manage glucose spikes caused by high-fat, high-protein meals.  
+This delay accounts for the slower absorption of fat and protein, as calculated by the Warsaw Method, ensuring insulin delivery is properly times to manage glucose spikes caused by high-fat, high-protein meals.  
 
 ***Increasing*** this setting may result in ***fewer*** FPU entries with ***larger*** carb values that begin later.
 
