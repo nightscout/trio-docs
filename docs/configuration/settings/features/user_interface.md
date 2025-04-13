@@ -89,7 +89,7 @@ This setting allows you to choose between the Cone of Uncertainty (Cone) and Ope
 ### Options
 **Cone (of Uncertainty):**  
 <!-- TODO: Add image -->
-Uses a combines range of all possible forecast from the OpenAPS lines and provides you with a range of possible forecasts. This option has shown to reduce confusion and stess around algorithm forecasts by providing a less concerning visual representation.
+Uses a combines range of all possible forecast from the OpenAPS lines and provides you with a range of possible forecasts. This option has shown to reduce confusion and stress around algorithm forecasts by providing a less concerning visual representation.
 
 **Lines:**
 <!-- TODO: Add image -->
@@ -114,6 +114,6 @@ Turning this on will show the grams of carbs needed to prevent a low as a notifi
 If `Show Carbs Required Badge` is enabled, this setting will appear. Set this to the lowest number of carbs you'd like to be recommended. A recommendation will not be given if the carbs required is below this number.  
 
 !!! tip
-    The carb suggested with this feature are to be used as a recommendation, not as a requirement. Depending on the current accuracy of your sensor and the accuracy of your settings, the suggested carbs can vary widely from what is actually required. Ultimately, use your best judgement before ingesting the suggested quantity of carbs.
+    The carbs suggested with this feature are to be used as a recommendation, not as a requirement. Depending on the current accuracy of your sensor and the accuracy of your settings, the suggested carbs can vary widely from what is actually required. Ultimately, use your best judgment before ingesting the suggested quantity of carbs.
 
 - - -
