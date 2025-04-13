@@ -104,7 +104,7 @@ This delay accounts for the slower absorption of fat and protein, as calculated 
 **Default:** _8 hours_  
 **Setting Limits:** _5-12 hours_  
 
-This sets the maximum length of time that Fat and Protein Carb Equivalents (FPUs) will be extended over from a single Fat and/or Protein bolus calcultor entry.
+This sets the maximum length of time that Fat and Protein Carb Equivalents (FPUs) will be extended over from a single Fat and/or Protein bolus calculator entry.
 
 It is one factor used in combination with the Fat and Protein Delay, Spread Interval, and Fat and Protein Factor to create the FPU entries.
 
