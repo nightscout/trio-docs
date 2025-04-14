@@ -42,8 +42,8 @@ _*The colors of the threshold lines are also dynamic, so the exact coloring will
 
 !!! info inline "Threshold Graph Legend"
     
-    ![High Threshold Dynamic Icon](img/high_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  High Threshold (=180)  
-    ![Low Threshold Dynamic Icon](img/low_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  Low Threshold (=70)  
+    ![High Threshold Dynamic Icon](img/high_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  High Threshold (=180 mg/dL)  
+    ![Low Threshold Dynamic Icon](img/low_threshold_dynamic.png){width="15" style="vertical-align: middle;"}  Low Threshold (=70 mg/dL)  
     ![Above Target Icon](img/above_target_glucose_icon.png){width="15" style="vertical-align: middle;"}  Above Target  
     ![At Target Icon](img/at_or_near_target.png){width="15" style="vertical-align: middle;"}  At or Near Target  
     ![Below Target Icon](img/below_target_glucose_icon.png){width="15" style="vertical-align: middle;"}  Below Target  
