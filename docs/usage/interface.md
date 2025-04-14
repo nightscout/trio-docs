@@ -1,5 +1,5 @@
 # User Interface
-## New Trio 1.0 User Interface
+## Trio User Interface
 
 ![Trio 1.0 UI](img/light_vs_dark_mode.png){width="600"}
 {align="center"}
@@ -95,7 +95,7 @@ Use the tabs below the image to learn more about each section.
 === "Basal Adjustments"
     Here you will find the adjustments made to your basal delivery. See below for more details:  
     
-    ![Basal Line](img/blue_basal_line.png){width="40" style="vertical-align: middle;"}  **Therapy Basal Reference Line:** The rate you entered in settings. Trio 0.2 "Profile Basal Rate"  
+    ![Basal Line](img/blue_basal_line.png){width="40" style="vertical-align: middle;"}  **Therapy Basal Reference Line:** The rate you entered in settings. (In Trio 0.2.x, this was called "Profile Basal Rate")  
     ![No Adjustment](img/no_adjustment.png){width="40" style="vertical-align: middle;"}  **No Basal Adjustment** Basal is being delivered at your current therapy basal rate.  
     ![Basal Increase](img/basal_increase.png){width="40" style="vertical-align: middle;"}  **Basal Increase** Basal increased above your current therapy basal rate.  
     ![Basal Decrease](img/basal_decrease.png){width="40" style="vertical-align: middle;"}  **Basal Decrease** Basal decreased below your current therapy basal rate.  
