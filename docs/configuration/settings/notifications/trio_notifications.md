@@ -3,10 +3,29 @@ Notifications give you important Trio information without requiring you to open 
 
 <div class="grid" markdown>
 
-![Notifications On](img/notifications-on.PNG){ width="175px" }
-![Notifications OFF Warning](img/safety-notifications-off.png){ width="175px" }
-![Notifications OFF](img/notifications-off.PNG){ width="175px" }
-![Notifications Warning Popup](img/notifications-warning.PNG){ width="175px" }
+=== "Notifications ON"
+    You are good to go! Your notifications are turned on. Proceed to the 3 notification options on the app screen to customize your app notifications.
+    
+    ![Notifications On](img/notifications-on.PNG){ width="200px" }
+    {align=center}
+    
+=== "Notifications OFF"
+    Your notifications are off. Open iOS Settings and enable them
+    
+    ![Notifications OFF](img/notifications-off.PNG){ width="200px" }
+    {align=center}
+
+=== "Notifications Warning Popup"
+    If notifications are off, this warning will pop up on the notifications screen. Follow the instructions to turn them on in iOS Settings.
+    
+    ![Notifications Warning Popup](img/notifications-warning.PNG){ width="200px" }
+    {align=center}
+
+=== "Safety Notifications Warning"
+    If you ignore the warnings, you will see this banner across the top of the main Trio screen. Tap the warning and follow the instructions to resolve the issue.
+    
+    ![Notifications OFF Warning](img/safety-notifications-off.png){ width="200px" }
+    {align=center}
 
 </div>
 
