@@ -34,6 +34,9 @@ Use the tabs below to learn more about each section:
     ![Current Glucose](img/current_glucose.png){width="300"}
     {align="center"}
     
+    !!! tip "Pro Tip"
+        If you long press the bobble, it will snooze cgm alerts
+    
 === "Pump Info"
 
     === "Omnipod Users"
@@ -72,6 +75,9 @@ Use the tabs below to learn more about each section:
     <span style="color: #d9d9d9;">:fontawesome-regular-circle:</span> **Grey:**  
         No data or not enough data to complete a loop cycle
         
+    !!! tip "Pro Tip"
+        If you long press the loop indicator, it will force a loop cycle
+    
 === "Current Metrics"
     Below the bobble, you'll find 3 icons that provide you with the current IOB, COB, and adjusted basal rate. These values were determined by the calculations made in the most recent loop cycle.
     
@@ -292,6 +298,7 @@ At the bottom of the screen, you have five action buttons. Use the tabs below to
             - Override your Max SMB Basal Minutes and/or Max UAM Basal Minutes
             - Enable indefinitely or for a set length of time
         - You can save it as a preset to enact later or start the override now
+            - If you need to edit or delete a preset override, just swipe left on the override
         
     === "Temp Targets"
         - Add a temp target by tapping the "+" at the top right
@@ -301,7 +308,8 @@ At the bottom of the screen, you have five action buttons. Use the tabs below to
             - Set it to start now or in the future
             - Set the duration of your temp target
         - You can save it as a preset to enact later, start the temp target now, or set a start time for a future time and/or date.
-    
+            - If you need to edit or delete a preset temp target, just swipe left on the temp target
+                
 === "![Settings Icon](img/icon_settings.png){width="15" style="vertical-align: middle;"} Settings"
     This button opens the settings menu
     Below you will (_soon_) find links to each of the settings pages within the docs that correlate to the menus you see:  
