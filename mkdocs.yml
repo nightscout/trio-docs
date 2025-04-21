@@ -219,7 +219,6 @@ nav:
           - Build Select Script ✏️: install/build/mac/build_select_script.md
           - Build Trio with Xcode: install/build/mac/build.md
           - Build Errors: install/build/mac/build_errors.md
-          - Customizations: install/build/mac/customize.md
           - Update Trio with Xcode: install/build/mac/update.md
       - Build with Browser:
           - Browser Build Overview ✏️: install/build/browser/browser_build_overview.md
