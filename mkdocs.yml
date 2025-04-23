@@ -276,16 +276,16 @@ nav:
           - Settings Homepage: configuration/settings/settings.md
           - Devices:
               - Devices Homepage: configuration/settings/devices/devices.md
-              - Insulin Pump : configuration/settings/devices/pump.md
+              - Insulin Pump: configuration/settings/devices/pump.md
               - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
-              - Smart Watch : configuration/settings/devices/smart_watch.md
+              - Smart Watch: configuration/settings/devices/smart_watch.md
           - Therapy:
               - Therapy Homepage: configuration/settings/therapy/therapy.md
-              - Units and Limits : configuration/settings/therapy/units_limits.md
-              - Basal Rates : configuration/settings/therapy/basal_rates.md
-              - Insulin Sensitivities : configuration/settings/therapy/isf.md
+              - Units and Limits: configuration/settings/therapy/units_limits.md
+              - Basal Rates: configuration/settings/therapy/basal_rates.md
+              - Insulin Sensitivities: configuration/settings/therapy/isf.md
               - Carb Ratios: configuration/settings/therapy/carb_ratios.md
-              - Target Glucose : configuration/settings/therapy/target_glucose.md
+              - Target Glucose: configuration/settings/therapy/target_glucose.md
           - Algorithm:
               - Algorithm Homepage: configuration/settings/algorithm/algorithm.md
               - Autosens: configuration/settings/algorithm/autosens.md
