@@ -3,7 +3,8 @@
 !!! summary "Highlights"
 
     - UAMs should be enabled **first**, then other SMBs should be enabled as needed.
-    - Max UAM Basal Minutes should be set **lower** than Max SMB Basal Minutes.
+    - If entering carbs and/or bolusing: Max UAM Basal Minutes should be set **lower** than Max SMB Basal Minutes.
+    - If **NOT** entering carbs and/or bolusing (FCL): Max UAM Basal Minutes should be set **higher** than Max SMB Basal Minutes.
     - Super micro boluses (SMB) often include your basal insulin. Your basal rate will be temporarily reduced after an SMB is delivered to prevent overdosing insulin.
     - SMBs reduce blood sugar more quickly than temporary basal rates.
     - If you want to configure SMBs only to run in certain conditions, do not turn on 'Enable SMB Always'.
@@ -142,11 +143,15 @@ $$
 
     Increasing this value above 90 minutes may impact Trio's ability to effectively zero temp and prevent lows.
 
+!!! tip
+    
+    If you are entering carbs or bolusing for meals, your **Max SMB Basal Minutes should be set _higher_** than your Max UAM Basal Minutes
+
 - - -
 
 ## Max UAM Basal Minutes
 **Default:** _30 minutes_  
-**Setting Limits:** _30-180_
+**Setting Limits:** _30-180 minutes_
 
 If UAM is enabled, this setting limits the size of each UAM SMB. One UAM SMB can only be as large as this many minutes of your current profile basal rate.  
 
@@ -159,6 +164,10 @@ $$
 !!! warning
 
     Increasing this value above 90 minutes may impact Trio's ability to effectively zero temp and prevent lows.
+
+!!! tip
+    
+    If you are **NOT** entering carbs or bolusing for meals and using Trio as a Fully Closed Loop (FCL), your **Max UAM Basal Minutes should be set _higher_** than your Max SMB Basal Minutes
 
 - - -
 
@@ -211,49 +220,7 @@ This safety limiter looks at the difference between your last two blood glucose 
 
 !!! tip
     
-    For a fully closed loop, 30% is advised.
-
-- - -
-
-## SMB Delivery Ratio
-**Default:** _50%_  
-**Setting Limits:** _30%-70%_
-
-This is a safety limiter. Trio determines how much insulin is required to get you back to your target glucose. If SMB is enabled, Trio then delivers an SMB that defaults to half the required insulin.
-
-Because SMBs can occur every 5 minutes with each loop cycle, it is important to set this value to a conservative level that will allow Trio to safely decrease insulin should needs suddenly change.
-
-??? question "Trio determines Bill needs 2.4 units to return him to his target glucose. His `SMB Delivery Ratio` is set to 50%. What amount of insulin will Trio deliver?"
-
-    $$
-    2.4 \times 50\% = 1.2\ units
-    $$
-
-
-??? question "_Bonus Question_: Based on Bill's `Max SMB Basal Minutes` setting above, will he get an SMB of 1.2 units?"
-
-    $$
-    1.0 \lt 1.2
-    $$
-    
-    No, Bill will only get **1.0 unit** because after Trio calculated his needed insulin, it reduced it by his `SMB Delivery Ratio`, and _then_ Trio limited the amount to his `Max SMB Basal Minutes` because it was higher than this setting.
-
-
-!!! tip
-
-    Allowed range for this setting is 30% - 70%
-
-- - -
-
-## SMB Interval
-**Default** _3 min_  
-**Setting Limits:** _1-10 min_
-
-The minimum minutes since the last SMB or manual bolus that an automated SMB will be permitted.  
-
-!!! tip
-
-    Keep this setting at the default of 3 minutes to help Trio enact needed SMBs without interruption
+    For Fully Closed Loop (FCL), 30% is advised.
 
 - - -
 

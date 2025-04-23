@@ -1,4 +1,4 @@
-## Compatible Devices
+## Compatible Phones
 
 Trio requires a relatively recent iPhone. The faster the phone, the better for the algorithm and battery life. You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone. Trio is compatible with iPhones running on iOS 17 or newer.
 
@@ -52,7 +52,7 @@ When you build Trio on your phone from Xcode directly, you must enable Developer
     
     You cannot run Trio on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
-#### Automatic Updates
+### Automatic Updates
 
 Apple provides frequent updates to the iOS. These updates often include critical security patches and improved new features. Updates to iOS _could_ make Trio stop working.  
 **Minor** updates (like 16.5 -> 16.5.1) are usually not an issue.  
@@ -68,7 +68,7 @@ Apple provides frequent updates to the iOS. These updates often include critical
         1) Configure your phone to *download* the updates automatically    
         2) Choose to perform the *installation* of the updates manually
 
-#### Battery Health
+### Battery Health
 
 Make sure your phone's battery is functioning optimally. Your phone will become a critical health device, and you want it to keep working.
 
