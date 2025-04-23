@@ -184,12 +184,40 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
+  0.2.x/Analyze/EvaluateBasal.md
+  0.2.x/Analyze/EvaluateCR.md
+  0.2.x/Getting-Started/cgm.md
+  0.2.x/settings/loop.md
+  0.2.x/settings/configuration/preferences/statistics.md
+  0.2.x/settings/devices/pump.md
   Analyze/EvaluateBasal.md
   Analyze/EvaluateCR.md
+  configuration/Configure.md
   Getting-Started/cgm.md
-  settings/loop.md
+  configuration/CompatibleDevices.md
+  configuration/configure.md
+  configuration/transition-qa.md
+  operate/build.md
+  operate/customize.md
+  operate/temptarget.md
+  resources/citations.md
   settings/configuration/preferences/statistics.md
   settings/devices/pump.md
+  settings/configuration/autotune.md
+  settings/configuration/basalprofile.md
+  settings/configuration/targetglucose.md
+  settings/configuration/insulinsensitivities.md
+  settings/configuration/target_glucose.md
+  settings/configuration/concepts/sigmoid.md
+  settings/configuration/concepts/smb-uam.md
+  settings/configuration/preferences/mainsettings.md
+  settings/configuration/preferences/othersettings.md
+  settings/configuration/preferences/targetsettings.md
+  settings/configuration/preferences/trio.md
+  settings/loop.md
+  settings/services/fatprotein.md
+  todo.md
+  usage/statistics.md
 
 # Navigation (Page tree)
 nav:
