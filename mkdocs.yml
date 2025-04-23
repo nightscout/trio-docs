@@ -364,4 +364,4 @@ nav:
       - Resources:
           - Citations: ./0.2.x/resources/citations.md
           - Translation: ./0.2.x/resources/translate.md
-          - TrioDocs PDF: ./0.2.x/trio-docs.pdf
+#          - TrioDocs PDF: ./0.2.x/trio-docs.pdf
