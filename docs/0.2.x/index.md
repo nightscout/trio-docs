@@ -37,7 +37,7 @@ Upon installation, you will need to configure your settings appropriately. By de
 >
 
 >- Enable Closed Loop for automation
->- Increase Max IOB to "average meal bolus + 3x max daily basal"
+>- Increase Max IOB to "average meal bolus + 3x max hourly basal"
 >- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
 >See [Configure](./Configuration/Configure.md#device-configuration) for more information on Trio configuration.
 
