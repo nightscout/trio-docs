@@ -12,7 +12,7 @@
 
 !!! question "FAQs"
 
-    - **Do I need a Mac?** No, you can [Build Trio with Browser](INSERT LINK TO BROWSER BUILD) on any computer.
+    - **Do I need a Mac?** No, you can [Build Trio with Browser](../browser/browser-build-overview.md) on any computer.
     - **How often do I need to use the computer to build with the Mac method?** Computer access is required when:
         - Initially installing the Trio app.
         - Trio will expire annually for a paid account or weekly for a free account.

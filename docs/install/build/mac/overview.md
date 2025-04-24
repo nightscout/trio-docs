@@ -13,7 +13,7 @@ Congratulations on choosing to build Trio using your Mac computer. This document
 
 ## Getting Ready to Build
 
-The first step in getting ready to build Trio using your Mac computer is to review the above requirements. These are considered the minimum requirements for Building Trio using your Mac. Don't stress if you are unable to meet the above requirements. Other options are available for building Trio, and I recommend you start with [Build Trio with Brower](../browser/overview.md). 
+The first step in getting ready to build Trio using your Mac computer is to review the above requirements. These are considered the minimum requirements for Building Trio using your Mac. Don't stress if you are unable to meet the above requirements. Other options are available for building Trio, and I recommend you start with [Build Trio with Browser](../browser/browser-build-overview.md). 
 
 The second step is to read over and become familiar with the build instructions in their entirety. This includes familiarising yourself with common [Build Errors](build-errors.md). Most mistakes you can make while building Trio have already been made, and our dedicated community has documented necessary fixes.
 
