@@ -265,7 +265,7 @@ Here are the different steps you need to follow when doing the Direct Download i
 2. Wait for Download to complete
 3. Expand the file by clicking on it in Finder
 4. Move the Xcode icon to Applications after the expansion completes
-5. Check the [Command Line Tools](computer.md#command-line-tools) setting under Xcode->Settings
+5. Check the  [Command Line Tools](xcode-setup.md#command-line-tools) setting under Xcode->Settings
     - The selection cannot be blank or Build-Script will fail to open Xcode automatically
     - It should be the same version as your Xcode
 6. Reboot the computer

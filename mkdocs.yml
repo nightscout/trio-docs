@@ -238,32 +238,32 @@ nav:
               - CGM: install/build/requirements/devices/cgm.md
               - iPhone: install/build/requirements/devices/iphone.md
               - Mac ✏️: install/build/requirements/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility_matrix.md # TODO
-          - Apple Developer Account: install/build/requirements/apple_developer.md
+              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
+          - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build with Mac:
           - Mac Build Overview: install/build/mac/overview.md
           - Prepare your Computer: install/build/mac/computer.md
           - Prepare your iPhone: install/build/mac/iphone.md
-          - Set Up Xcode: install/build/mac/xcode_setup.md
-          - Build Select Script ✏️: install/build/mac/build_select_script.md
+          - Set Up Xcode: install/build/mac/xcode-setup.md
+          - Build Select Script ✏️: install/build/mac/build-select-script.md
           - Build Trio with Xcode: install/build/mac/build.md
-          - Build Errors: install/build/mac/build_errors.md
+          - Build Errors: install/build/mac/build-errors.md
           - Update Trio with Xcode: install/build/mac/update.md
       - Build with Browser:
-          - Browser Build Overview ✏️: install/build/browser/browser_build_overview.md
-          - Create GitHub Account ✏️: install/build/browser/create_github_account.md
-          - Collect Secrets ✏️: install/build/browser/collect_secrets.md
-          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork_prepare_repo.md
+          - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
+          - Create GitHub Account ✏️: install/build/browser/create-github-account.md
+          - Collect Secrets ✏️: install/build/browser/collect-secrets.md
+          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork-prepare-repo.md
           - GitHub Actions:
-              - Validate Secrets ✏️: install/build/browser/actions/validate_secrets.md
-              - Add Identifiers ✏️: install/build/browser/actions/add_identifiers.md
-              - Prepare App ✏️: install/build/browser/actions/prepare_app.md
-              - Generate Certificates ✏️: install/build/browser/actions/generate_certificates.md
-              - Build the App ✏️: install/build/browser/actions/build_app.md
-          - Install Trio from TestFlight ✏️: install/build/browser/install_from_testflight.md
-          - Browser Build Errors ✏️: install/build/browser/browser_build_errors.md
-          - Customizations ✏️: install/build/browser/browser_customizations.md
-          - Update with Browser ✏️: install/build/browser/update_with_browser.md
+              - Validate Secrets ✏️: install/build/browser/actions/validate-secrets.md
+              - Add Identifiers ✏️: install/build/browser/actions/add-identifiers.md
+              - Prepare App ✏️: install/build/browser/actions/prepare-app.md
+              - Generate Certificates ✏️: install/build/browser/actions/generate-certificates.md
+              - Build the App ✏️: install/build/browser/actions/build-app.md
+          - Install Trio from TestFlight ✏️: install/build/browser/install-from-testflight.md
+          - Browser Build Errors ✏️: install/build/browser/browser-build-errors.md
+          - Customizations ✏️: install/build/browser/browser-customizations.md
+          - Update with Browser ✏️: install/build/browser/update-with-browser.md
       - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
           - Nightscout ✏️: configuration/ecosystem/nightscout_app.md
