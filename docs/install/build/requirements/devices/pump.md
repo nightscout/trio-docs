@@ -56,7 +56,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
-![pump_model](img/pump_model.jpg)
+![pump_model](img/pump-model.jpg)
 {align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
@@ -84,11 +84,11 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 1. Press the ![esc](img/esc.png) button on your pump.  
 
-2. Scroll down to the bottom of the status display by clicking the ![light](img/light_button.png) button.  
+2. Scroll down to the bottom of the status display by clicking the ![light](img/light-button.png) button.  
 
 3. Read the bottom line of the display.
 
-![pump_firmware](img/pump_firmware.png)
+![pump_firmware](img/pump-firmware.png)
 {align=center}
 
 #### Medtronic Pump Differences
