@@ -2,16 +2,21 @@
 Various resources, including [Facebook](https://www.facebook.com/groups/diytrio), and [Discord](https://discord.com/invite/FnwFEFUwXE), are available to assist you with setting up, maintaining, and succeeding in your Trio journey. Below is a series of questions we see asked daily. We hope it helps. 
 
 ## Trio FAQs
+
 ### What is Trio?
+
 Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. It uses your entered settings, carbohydrates, and historical data to automate insulin delivery and reduce the time spent managing your diabetes. 
- 
+
+ !!! important "Important"
+    _Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk._
+
+### Trio History
+
 The project started with Ivan Valkou's FreeAPS X implementation of the OpenAPS algorithm for iPhone and was later forked and rebranded as iAPS. Since then, many developers have contributed substantial work, leading to new features and enhancements.
 
-Following the release of version 3.0.0, the project’s direction significantly changed due to differing views on development, open source, and peer review. This led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project’s new phase, symbolizing its evolution and the collaborative development’s dynamic nature.
+There were differing views on development, open source, and peer review that led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project's new phase, symbolizing its evolution and the collaborative development's dynamic nature.
 
-!!! important "Important"
-    _Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio      community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk._
-
+Trio continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from its community.
 
 ### Can I download Trio from the App Store?
 Trio is not available to download from the App Store. Trio is an open-source, do-it-yourself automated insulin delivery application. Community members who wish to utilize Trio must build it themselves. 

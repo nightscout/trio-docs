@@ -8,13 +8,6 @@
 
 Trio is an automated insulin delivery system for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).
 
-The project started as Ivan Valkou's [FreeAPS X](https://github.com/ivalkou/freeaps) implementation of the OpenAPS algorithm for iPhone and later forked and rebranded as iAPS.
-Since then, many developers have contributed substantial work, leading to a range of new features and enhancements.
-
-There were differing views on development, open source, and peer review that led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project's new phase, symbolizing its evolution and the collaborative development's dynamic nature.
-
-Trio continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from its community.
-
 Before starting with Trio, you should evaluate all your closed-loop options, including:
 
 * Commercial systems such as Medtronic's 780G, Tandem's Control-IQ, or Insulet's Omnipod 5
