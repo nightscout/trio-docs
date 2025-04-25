@@ -248,7 +248,7 @@ This section is required if you are using the free account. Some features of Tri
 
 1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
 
-    - **Trio Target:** Push Notifications; Siri and Time Sensitive Notifications
+    - **Trio Target:** Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications
     - **Trio WatchKit Extension Target:** Siri
     
 2. Add the keyword `SIRI_DISABLED` to the ConfigOverride.xcconfig file.
@@ -258,7 +258,7 @@ This section is required if you are using the free account. Some features of Tri
 
 **Details about removing unsupported capabilities:**
 
-- You must disable Push Notification, Siri and Time Sensitive Notifications
+- You must disable Push Notification, Siri, Near Field Communication, and Time Sensitive Notifications
     - If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
     - If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
@@ -266,6 +266,11 @@ This section is required if you are using the free account. Some features of Tri
 - Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone
 - You are done with this target
 - Proceed to the next target
+
+!!! info "Libre Transmitter not supported with a FREE Apple Developer Account" 
+    Libre transmitters require *Near Field Communication (NFC)* for background tag reading.  
+     ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
+     You need a **paid** Apple Developer Account for that.
 
 ## End of Free Account Steps
 
