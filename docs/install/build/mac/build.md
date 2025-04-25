@@ -246,14 +246,12 @@ The graphic below indicates in red the places you need to click in order to begi
 
 This section is required if you are using the free account. Some features of Trio are not available with a free Apple Developer Account. You will need to remove features that are not supported.
 
-1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
+1. You must remove unsupported capabilities from 2 targets. This is best done as you sign each target:
 
     - **Trio Target:** Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications
     - **Trio WatchKit Extension Target:** Siri
     
-2. Add the keyword `SIRI_DISABLED` to the ConfigOverride.xcconfig file.
-
-3. Add the keywork `SIRI_DISABLED` to the 
+2. Add the `SIRI_DISABLED` keyword to the ConfigOverride.xcconfig file:
     - Click on the filename in the left pane of Xcode and view it in the Xcode editor
 
 **Details about removing unsupported capabilities:**
