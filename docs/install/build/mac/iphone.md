@@ -19,7 +19,7 @@
     - **Does my phone need a cell plan?** No. Trio works using your phone's Bluetooth communications with your CGM and your insulin pump; no internet connection is required. However, an active internet connection is required if access to Dexcom Follow or Nightscout monitoring is a priority. 
     - **What watches work with Trio?** Trio has a companion application for the Apple Watch. The Trio watch app can add carbs and boluses, set temporary targets, and visualize your glucose, insulin, and carbs onboard. This application works only with the Apple Watch. Some Garmin watches are also compatible but only display data. 
 
-## Compatible Devices
+## Compatible iPhones
 
 Trio requires a relatively recent phone. The faster the phone, the better for the algorithm and battery life. You need a minimum version of the mobile operating software, called the phone's 'iOS', to be installed on your phone. Trio is compatible with phones running on iOS 17 or newer.
 
