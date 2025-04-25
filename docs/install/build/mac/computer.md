@@ -33,7 +33,7 @@ The iOS of the phone on which you wish to build Trio dictates the required macOS
 
 The table below lists the **minimum** requirements to build the current release of Trio. If your macOS or Xcode version is higher, you can build on a Mac.
 
-Find your phone iOS in the table below. 
+Find your iPhone iOS version in the table below. 
 
 !!! info "iOS Version"
     If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.

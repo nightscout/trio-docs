@@ -3,7 +3,8 @@
 !!! tip "Highlights"
     - *Nightscout* is optional but encouraged
     - *Nightscout* is a useful tool for data analysis and followers
-    - Create a *Nightscout* server and input your URL and `API_SECRET` in *Trio*. Test the connection and enable `Allow Uploading to Nightscout`.
+    - Create a *Nightscout* server and input your URL and `API_SECRET` in *Trio*.  
+      Test the connection and enable `Allow Uploading to Nightscout`.
 
 ## Nightscout Introduction
 

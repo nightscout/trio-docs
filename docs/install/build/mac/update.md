@@ -34,7 +34,10 @@ Before updating Trio, it is important to check for any iOS updates. It's good pr
 
 ### macOS and Xcode Version
 
-The table below lists the minimum requirements to build the current release of Trio. Find your iOS version and review the correlating minimum MacOS and Xcode versions. If required, update your MacOS and Xcode. 
+The table below lists the minimum requirements to build the current release of Trio.  
+First, you need to know your [iOS version](iphone.md#find-your-ios-version), [macOS version](computer.md#check-your-macos-version), and [Xcode version](xcode-setup.md#check-xcode-version).  
+Next, find your iOS version in the table below, and review the correlating minimum macOS and Xcode versions.  
+If required, update your macOS and Xcode. 
 
 !!! info "iOS Version"
 
