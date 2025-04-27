@@ -88,6 +88,9 @@ plugins:
   - htmlproofer:
       enabled: !ENV [CHECK_BROKEN_LINKS, False]
       raise_error_after_finish: true
+  - include-markdown:
+      start: <!--include-markdown-start-->
+      end: <!--include-markdown-end-->
   - unused_files:
       enabled: !ENV [CHECK_UNUSED_FILES, False]
       strict: true
