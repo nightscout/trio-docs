@@ -6,7 +6,8 @@
 !!! tip "Tips"
     
     - Pump site changes can temporarily impact control. 
-    - Pump site failures can negatively impact control for hours. Turn off closed loop when failure is discovered, and only turn back on when a new pump is installed.
+    - Pump site failures can negatively impact control for hours.  
+      Turn off closed loop when failure is discovered, and only turn it back on when a new pump is installed.
 
 ### Site Change
 
