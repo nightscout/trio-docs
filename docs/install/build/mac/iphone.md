@@ -37,16 +37,10 @@ These devices are compatible with iOS 17 and newer iOS.
 - iPhone SE (3rd generation; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-!!! info "iOS Version"
-    If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
+{%
+    include-markdown "../requirements/devices/compatibility-matrix.md"
+%}
 
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 17.0 | 15.0 | 13.5 |
 
 ## Find your iOS Version 
 

@@ -35,20 +35,10 @@ The table below lists the **minimum** requirements to build the current release 
 
 Find your iPhone iOS version in the table below. 
 
-!!! info "iOS Version"
-    If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
+{%
+    include-markdown "../requirements/devices/compatibility-matrix.md"
+%}
 
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 16.3 to 17.0 | 15.0 | 13.5 |
-
-!!! warning "Warning"
-
-    **Your phone iOS dictates your MacOS requirements**  - The more up-to-date you keep your phone iOS, the more up-to-date your computer and MacOS must be to build Trio with Xcode. 
 
 ### Check your iOS version
 
