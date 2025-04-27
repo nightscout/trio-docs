@@ -10,7 +10,10 @@
 
 ### Site Change
 
-Pump site changes can negatively impact your immediate glycemic control. Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity. Trio should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
+Pump site changes can negatively impact your immediate glycemic control.
+Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity.
+Trio should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../configuration/settings/algorithm/autosens.md/#rewind-resets-autosens) and adapting as needed.
+
 
 
 ### Site Failure
@@ -28,7 +31,8 @@ When you find out your pump has failed, immediately open loop to prevent Trio fr
 
 Low blood sugar events can happen from time to time, but you will typically not require as many carbs to treat your lows as opposed to MDI or using a pump. When you treat a low, you should enter the carbs consumed into the Trio system so its autotune functionality can make better choices on your ICR, ISF, and basal rates.
 
-If you experience a roller coaster pattern of highs and lows after treatment, your [insulin sensitivity factor (ISF)](../settings/configuration/insulinsensitivities.md) is most likely to blame. Consider making your insulin sensitivity less aggressive by 10% or reducing your adjustment factor by 0.1 increments. 
+If you experience a roller coaster pattern of highs and lows after treatment, your [insulin sensitivity factor (ISF)](../configuration/settings/therapy/isf.md) is most likely to blame. Consider making your insulin sensitivity less aggressive by 10% or reducing your adjustment factor by 0.1 increments. 
+
 
 ## Rebound Lows
 
