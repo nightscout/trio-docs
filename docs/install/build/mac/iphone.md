@@ -21,9 +21,11 @@
 
 ## Compatible iPhones
 
-Trio requires a relatively recent phone. The faster the phone, the better for the algorithm and battery life. You need a minimum version of the mobile operating software, called the phone's 'iOS', to be installed on your phone. Trio is compatible with phones running on iOS 17 or newer.
+Trio requires a relatively recent phone. The faster the phone, the better for the algorithm and battery life. You need a minimum version of the mobile operating software, called the phone's iOS, to be installed on your phone. 
 
-These devices are compatible with iOS 17 and newer iOS.
+Trio is compatible with phones running on **iOS 17 or newer**.
+
+These iPhones are compatible with iOS version 17 and newer.
 
 - iPhone 16, all variants
 - iPhone 15, all variants

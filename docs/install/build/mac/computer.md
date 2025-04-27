@@ -55,7 +55,7 @@ Find your iPhone iOS version in the table below.
     ![Screenshot: iOS Version Image](img/ios-version.png){width="481"}
       {align= "center"}
 
-### Check your 'macOS' version.
+### Check your macOS version
 
 1. Select the 'Apple' icon at the top left corner of your computer screen. 
 
