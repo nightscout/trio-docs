@@ -30,6 +30,6 @@ This page provides a compatibility matrix listing the supported versions of iOS,
 
 Click the links below to check your version of:
 
-- [iOS](../mac/computer/#check-your-ios-version)
-- [Xcode](../mac/xcode-setup/#check-xcode-version)
-- [macOS](../mac/computer/#check-your-macos-version)
+- [iOS](../../mac/computer.md#check-your-ios-version)
+- [Xcode](../../mac/xcode-setup.md#check-xcode-version)
+- [macOS](../../mac/computer.md#check-your-macos-version)
