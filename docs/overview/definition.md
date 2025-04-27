@@ -14,9 +14,9 @@ Before starting with Trio, you should understand CR, ISF, and Basal Rates.
 
 If you do not understand the terminology, please read the appropriate documentation here:
 
-- **[Carb Ratio (CR)](../configuration/settings/therapy/carb_ratios.md)**
-- **[Insulin Sensitivity Factor (ISF)](../configuration/settings/therapy/isf.md)**
-- **[Basal Rates](../configuration/settings/therapy/basal_rates.md)**
+- **[Carb Ratio (CR)](../configuration/settings/therapy/carb_ratios.md){: target="_blank" }**
+- **[Insulin Sensitivity Factor (ISF)](../configuration/settings/therapy/isf.md){: target="_blank" }**
+- **[Basal Rates](../configuration/settings/therapy/basal_rates.md){: target="_blank" }**
 
 
 If you require help defining and determining those settings, please seek assistance from your diabetes healthcare team.
