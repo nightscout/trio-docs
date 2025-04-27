@@ -2,7 +2,7 @@
 
 ## What is Trio?
 
-Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. Using your entered settings, carbohydrates, and historical data, it aims to automate insulin delivery to reduce the time spent managing your diabetes. Before starting with Trio, you should consider alternative commercial options such as the Tandem Control-IQ and Omnipod 5 or other open-source applications like Loop and AndroidAPS. 
+Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. Using your entered settings, carbohydrates, and historical data, it aims to automate insulin delivery to reduce the time spent managing your diabetes. Before starting with Trio, you should consider alternative commercial options such as the Tandem Control-IQ and Omnipod 5, or the Medtronic MiniMed 780G, as well as other open-source applications like Loop and AndroidAPS.
 
 !!! important "Important"
     
