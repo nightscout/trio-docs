@@ -39,18 +39,9 @@ First, you need to know your [iOS version](iphone.md#find-your-ios-version), [ma
 Next, find your iOS version in the table below, and review the correlating minimum macOS and Xcode versions.  
 If required, update your macOS and Xcode. 
 
-!!! info "iOS Version"
-
-    If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 16.3 to 17.0 | 15.0 | 13.5 |
-
+{%
+    include-markdown "../requirements/devices/compatibility-matrix.md"
+%}
 
 !!! warning "Update MacOS first, Then Xcode"
 
