@@ -73,7 +73,7 @@ Trio calculates the amount of insulin needed to bring blood glucose back into ra
 
 **Scenario:** _Your BG rises and ends up too high after a meal, then falls and ends up too low._
 
-In this scenario, you are not getting enough insulin upfront to deal with the carb absorption, but the total amount of insulin you're getting is too much - causing a low. If this is a repeating scenario, you should look into <b>all of</b> the following:
+In this scenario, you are not getting enough insulin upfront to deal with the carb absorption, but the total amount of insulin you're getting is too much - causing a low. If this is a repeating scenario, you should look into **all of** the following:
 
 1. If all the delivered insulin is from one bolus, you should consider adjusting your CR setting so that the bolus calculator gives you less insulin. You could also consider pre-bolusing, giving the insulin some time to absorb before you start eating.
 2. If the delivered insulin is part bolus and part SMBs, you should consider adjusting your ISF setting so that the SMBs give you less insulin. It would help if you also considered pre-bolusing, giving the insulin more time to absorb before you start eating.
