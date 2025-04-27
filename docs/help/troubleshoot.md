@@ -12,8 +12,6 @@
 
 Pump site changes can negatively impact your immediate glycemic control. Different delivery sites' ability to absorb insulin varies, impacting your perceived insulin sensitivity. Trio should be able to accommodate this change by resetting its Autosens measurements [(assuming "Rewind Resets Autosens" is on)](../settings/configuration/preferences/othersettings.md) and adapting as needed.
 
-**For Omnipod**  
-If you think you need more insulin primed in the new pod, consider customizing that line of code with [these instructions](./customize.md#omnipod-add-extra-insulin-on-insertion).
 
 ### Site Failure
 
