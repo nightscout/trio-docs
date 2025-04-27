@@ -199,7 +199,6 @@ not_in_nav: |
   configuration/transition-qa.md
   operate/build.md
   operate/customize.md
-  operate/temptarget.md
   resources/citations.md
   settings/configuration/preferences/statistics.md
   settings/devices/pump.md
@@ -230,6 +229,7 @@ nav:
       #- Safety ✏️: overview/safety.md
   - Usage:
       - User Interface: usage/interface.md
+      - Temporary Targets: usage/temptarget.md
   - Installation and Update:
       - Requirements:
           - Compatible Devices:
