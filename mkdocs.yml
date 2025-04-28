@@ -88,6 +88,9 @@ plugins:
   - htmlproofer:
       enabled: !ENV [CHECK_BROKEN_LINKS, False]
       raise_error_after_finish: true
+  - include-markdown:
+      start: <!--include-markdown-start-->
+      end: <!--include-markdown-end-->
   - unused_files:
       enabled: !ENV [CHECK_UNUSED_FILES, False]
       strict: true
@@ -184,12 +187,40 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
+  0.2.x/Analyze/EvaluateBasal.md
+  0.2.x/Analyze/EvaluateCR.md
+  0.2.x/Getting-Started/cgm.md
+  0.2.x/settings/loop.md
+  0.2.x/settings/configuration/preferences/statistics.md
+  0.2.x/settings/devices/pump.md
   Analyze/EvaluateBasal.md
   Analyze/EvaluateCR.md
+  configuration/Configure.md
   Getting-Started/cgm.md
-  settings/loop.md
+  configuration/CompatibleDevices.md
+  configuration/configure.md
+  configuration/transition-qa.md
+  includes/version-compatility-matrix.md
+  includes/supported-iphones.md
+  operate/build.md
+  operate/customize.md
+  resources/citations.md
   settings/configuration/preferences/statistics.md
   settings/devices/pump.md
+  settings/configuration/autotune.md
+  settings/configuration/basalprofile.md
+  settings/configuration/targetglucose.md
+  settings/configuration/insulinsensitivities.md
+  settings/configuration/target_glucose.md
+  settings/configuration/concepts/sigmoid.md
+  settings/configuration/concepts/smb-uam.md
+  settings/configuration/preferences/mainsettings.md
+  settings/configuration/preferences/othersettings.md
+  settings/configuration/preferences/targetsettings.md
+  settings/configuration/preferences/trio.md
+  settings/loop.md
+  settings/services/fatprotein.md
+  usage/statistics.md
 
 # Navigation (Page tree)
 nav:
@@ -203,60 +234,62 @@ nav:
       #- Safety ✏️: overview/safety.md
   - Usage:
       - User Interface: usage/interface.md
+      - Temporary Targets: usage/temptarget.md
   - Installation and Update:
       - Requirements:
           - Compatible Devices:
-              - Insulin Pump: install/build/devices/pump.md
-              - CGM: install/build/devices/cgm.md
-              - iPhone: install/build/devices/iphone.md
-              - Mac ✏️: install/build/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/devices/compatibility_matrix.md # TODO
+              - Insulin Pump: install/build/requirements/devices/pump.md
+              - CGM: install/build/requirements/devices/cgm.md
+              - iPhone: install/build/requirements/devices/iphone.md
+              - Mac ✏️: install/build/requirements/devices/mac.md # TODO
+              - Compatibility Matrix: install/build/requirements/devices/compatibility-matrix.md # TODO
+          - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build with Mac:
-          - Mac Build Overview ✏️: todo.md
-          - Prepare your Computer ✏️: install/build/mac/prepare_computer.md
-          - Prepare your iPhone ✏️: install/build/mac/prepare_iphone.md
-          - Build Select Script ✏️: install/build/mac/build_select_script.md
-          - Build Trio with Xcode ✏️: install/build/mac/build_with_xcode.md
-          - Build Errors ✏️: install/build/mac/build_errors.md
-          - Customizations ✏️: install/build/mac/mac_customizations.md
-          - Update Trio wih Xcode ✏️: install/build/mac/update_with_xcode.md
+          - Mac Build Overview: install/build/mac/overview.md
+          - Prepare your Computer: install/build/mac/computer.md
+          - Prepare your iPhone: install/build/mac/iphone.md
+          - Set Up Xcode: install/build/mac/xcode-setup.md
+          - Build Select Script ✏️: install/build/mac/build-select-script.md
+          - Build Trio with Xcode: install/build/mac/build.md
+          - Build Errors: install/build/mac/build-errors.md
+          - Update Trio with Xcode: install/build/mac/update.md
       - Build with Browser:
-          - Browser Build Overview ✏️: todo.md
-          - Create GitHub Account ✏️: install/build/browser/create_github_account.md
-          - Collect Secrets ✏️: install/build/browser/collect_secrets.md
-          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork_prepare_repo.md
+          - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
+          - Create GitHub Account ✏️: install/build/browser/create-github-account.md
+          - Collect Secrets ✏️: install/build/browser/collect-secrets.md
+          - Fork and Prepare your Trio Repository✏️: install/build/browser/fork-prepare-repo.md
           - GitHub Actions:
-              - Validate Secrets ✏️: todo.md
-              - Add Identifiers ✏️: install/build/browser/actions/add_identifiers.md
-              - Prepare App ✏️: install/build/browser/actions/prepare_app.md
-              - Generate Certificates ✏️: install/build/browser/actions/generate_certificates.md
-              - Build the App ✏️: install/build/browser/actions/build_app.md
-          - Install Trio from TestFlight ✏️: install/build/browser/install_from_testflight.md
-          - Browser Build Errors ✏️: install/build/browser/browser_build_errors.md
-          - Customizations ✏️: install/build/browser/browser_customizations.md
-          - Update with Browser ✏️: install/build/browser/update_with_browser.md
+              - Validate Secrets ✏️: install/build/browser/actions/validate-secrets.md
+              - Add Identifiers ✏️: install/build/browser/actions/add-identifiers.md
+              - Prepare App ✏️: install/build/browser/actions/prepare-app.md
+              - Generate Certificates ✏️: install/build/browser/actions/generate-certificates.md
+              - Build the App ✏️: install/build/browser/actions/build-app.md
+          - Install Trio from TestFlight ✏️: install/build/browser/install-from-testflight.md
+          - Browser Build Errors ✏️: install/build/browser/browser-build-errors.md
+          - Customizations ✏️: install/build/browser/browser-customizations.md
+          - Update with Browser ✏️: install/build/browser/update-with-browser.md
       - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
-          - Nightscout ✏️: configuration/companion_apps/nightscout_app.md
-          - Loop Follow ✏️: configuration/companion_apps/loop_follow.md
-          - Loop CareGiver ✏️: configuration/companion_apps/loop_caregiver.md
-          - XDrip4iOS ✏️: configuration/companion_apps/nightscout_app.md
+          - Nightscout ✏️: configuration/ecosystem/nightscout_app.md
+          - Loop Follow ✏️: configuration/ecosystem/loop_follow.md
+          - Loop CareGiver ✏️: configuration/ecosystem/loop_caregiver.md
+          - XDrip4iOS ✏️: configuration/ecosystem/xdrip4ios.md
   - Configuration:
       - New User Setup: configuration/new_user_setup.md
       - Trio Settings:
           - Settings Homepage: configuration/settings/settings.md
           - Devices:
               - Devices Homepage: configuration/settings/devices/devices.md
-              - Insulin Pump : configuration/settings/devices/pump.md
+              - Insulin Pump: configuration/settings/devices/pump.md
               - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
-              - Smart Watch : configuration/settings/devices/smart_watch.md
+              - Smart Watch: configuration/settings/devices/smart_watch.md
           - Therapy:
               - Therapy Homepage: configuration/settings/therapy/therapy.md
-              - Units and Limits : configuration/settings/therapy/units_limits.md
-              - Basal Rates : configuration/settings/therapy/basal_rates.md
-              - Insulin Sensitivities : configuration/settings/therapy/isf.md
+              - Units and Limits: configuration/settings/therapy/units_limits.md
+              - Basal Rates: configuration/settings/therapy/basal_rates.md
+              - Insulin Sensitivities: configuration/settings/therapy/isf.md
               - Carb Ratios: configuration/settings/therapy/carb_ratios.md
-              - Target Glucose : configuration/settings/therapy/target_glucose.md
+              - Target Glucose: configuration/settings/therapy/target_glucose.md
           - Algorithm:
               - Algorithm Homepage: configuration/settings/algorithm/algorithm.md
               - Autosens: configuration/settings/algorithm/autosens.md
@@ -335,4 +368,4 @@ nav:
       - Resources:
           - Citations: ./0.2.x/resources/citations.md
           - Translation: ./0.2.x/resources/translate.md
-          - TrioDocs PDF: ./0.2.x/trio-docs.pdf
+#          - TrioDocs PDF: ./0.2.x/trio-docs.pdf

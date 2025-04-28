@@ -19,5 +19,9 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Do not ignore this folder
+!/docs/install/build/
+
 # Python
 __pycache__/

@@ -6,19 +6,11 @@ Below is the list of compatible devices available for use with Trio.
 
 ## Phone
 
-These devices are compatible with iOS 17 and newer iOS.  
+{%
+    include-markdown "includes/supported-iphones.md"
+%}
 
-- iPhone 16, all variants  
-- iPhone 15, all variants  
-- iPhone 14, all variants  
-- iPhone 13, all variants  
-- iPhone 12, all variants  
-- iPhone 11, all variants  
-- iPhone XS and XR  
-- iPhone SE (3rd generation; 2022 first release)  
-- iPhone SE (2nd generation; 2020 first release)  
-
-Follow this [link](../install/build/devices/iphone.md) for more information about checking your iOS version or establishing Developer Mode.
+Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-and-developer-mode) for more information about checking your iOS version or establishing Developer Mode.
     
 - - -
 
