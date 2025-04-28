@@ -1,8 +1,8 @@
 ## Compatible Pumps
 
-There are three pumps compatible with Trio:
+The following pumps are compatible with Trio:
 
-* Omnipod Dash pumps
+* Omnipod DASH pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
 * DanaRS-v1, DanaRS-V3, Dana-i
@@ -27,14 +27,14 @@ Eros pods were launched in 2013 and continue to be sold by Insulet. As of Decemb
 
 #### Omnipod DASH
 
-The DASH pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
+The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH Pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
 
 ![dash](img/dash.png)
 {align=center}
 
 !!! danger "Omnipod 5"
     
-    **Omnipod 5 pods are _NOT_ compatible with Trio**
+    **Omnipod 5 Pods are _NOT_ compatible with Trio**
 
 
 ### Medtronic Pumps

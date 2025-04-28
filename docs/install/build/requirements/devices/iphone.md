@@ -36,9 +36,11 @@ When you build Trio on your phone from Xcode directly, you must enable Developer
 
 ## Automatic Updates
 
-Apple provides frequent updates to the iOS. These updates often include critical security patches and improved new features. Updates to iOS _could_ make Trio stop working.  
-**Minor** updates (like 16.5 -> 16.5.1) are usually not an issue.  
-**Major** updates (like 17.x -> 18.x) often contain changes that Trio developers need to include in the app.
+Apple provides frequent updates to the iOS. These updates often include critical security patches and improved new features. 
+
+Updates to iOS _could_ make Trio stop working.  
+- **Minor** updates (like 16.5 -> 16.5.1) are usually not an issue.  
+- **Major** updates (like 17.x -> 18.x) often contain changes that Trio developers need to include in the app.
 
 !!! warning "Turn Off Automatic Update Installs!"
     
