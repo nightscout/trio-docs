@@ -28,7 +28,7 @@ Trio requires a relatively recent phone. The faster the phone, the better for th
 %}
 
 {%
-    include-markdown "../requirements/devices/compatibility-matrix.md"
+    include-markdown "includes/version-compatibility-matrix.md"
 %}
 
 

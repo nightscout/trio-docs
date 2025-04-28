@@ -36,7 +36,7 @@ The table below lists the **minimum** requirements to build the current release 
 Find your iPhone iOS version in the table below. 
 
 {%
-    include-markdown "../requirements/devices/compatibility-matrix.md"
+    include-markdown "includes/version-compatibility-matrix.md"
 %}
 
 

@@ -40,7 +40,7 @@ Next, find your iOS version in the table below, and review the correlating minim
 If required, update your macOS and Xcode. 
 
 {%
-    include-markdown "../requirements/devices/compatibility-matrix.md"
+    include-markdown "includes/version-compatibility-matrix.md"
 %}
 
 !!! warning "Update MacOS first, Then Xcode"

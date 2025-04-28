@@ -8,15 +8,9 @@ Trio requires a relatively recent iPhone. The faster the phone, the better for t
     include-markdown "includes/supported-iphones.md"
 %}
 
-
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 17.0 | 15.0 | 13.5 |
+{%
+    include-markdown "includes/version-compatibility-matrix.md"
+%}
 
 
 **Find Your iOS Version**
