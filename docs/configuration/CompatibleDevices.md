@@ -10,7 +10,7 @@ Below is the list of compatible devices available for use with Trio.
     include-markdown "includes/supported-iphones.md"
 %}
 
-Follow this [link](../install/build/requirements/devices/iphone.md) for more information about checking your iOS version or establishing Developer Mode.
+Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-and-developer-mode) for more information about checking your iOS version or establishing Developer Mode.
     
 - - -
 
