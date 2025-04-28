@@ -1,8 +1,8 @@
 ## Compatible Pumps
 
-There are three pumps compatible with Trio:
+The following pumps are compatible with Trio:
 
-* Omnipod Dash pumps
+* Omnipod DASH pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
 * DanaRS-v1, DanaRS-V3, Dana-i
@@ -27,14 +27,14 @@ Eros pods were launched in 2013 and continue to be sold by Insulet. As of Decemb
 
 #### Omnipod DASH
 
-The DASH pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
+The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH Pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
 
 ![dash](img/dash.png)
 {align=center}
 
 !!! danger "Omnipod 5"
     
-    **Omnipod 5 pods are _NOT_ compatible with Trio**
+    **Omnipod 5 Pods are _NOT_ compatible with Trio**
 
 
 ### Medtronic Pumps
@@ -56,7 +56,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
-![pump_model](img/pump_model.jpg)
+![pump_model](img/pump-model.jpg)
 {align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
@@ -84,11 +84,11 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 1. Press the ![esc](img/esc.png) button on your pump.  
 
-2. Scroll down to the bottom of the status display by clicking the ![light](img/light_button.png) button.  
+2. Scroll down to the bottom of the status display by clicking the ![light](img/light-button.png) button.  
 
 3. Read the bottom line of the display.
 
-![pump_firmware](img/pump_firmware.png)
+![pump_firmware](img/pump-firmware.png)
 {align=center}
 
 #### Medtronic Pump Differences
@@ -153,3 +153,31 @@ Red flags that may indicate a scam:
 #### Pump Supplies
 
 Medtronic will not typically sell pump supplies directly to customers who have yet to purchase a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, ask for help from friends to try a variety of infusion sets before purchasing an entire 90-day supply of any type in particular.
+
+### Sooil Dana pumps
+
+!!! warning "Future Feature Only"
+    Sorry, but the Dana pump has not landed in the released code or even the dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }.
+
+    The information below is for the convenience of people reading along in zulipchat.
+
+**Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Trio* app.**
+
+#### Dana-i
+
+The Dana-i is the latest and greatest from the Korean pump manufacturer *Sooil*, released in 2020.
+
+The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana-i. If your version of the *Trio* app is not from that fork, you cannot use the Dana-i.
+
+![Dana-i](img/dana-i.png){width="250"}
+{align="center"}
+
+#### DanaRS
+
+The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the *Trio* app.
+[Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version.
+
+The special fork (see [link](#sooil-dana-pumps) for details) works with the DanaRS-v3. If your version of the *Trio* app is not from that fork, you cannot use the DanaRS-v3.
+
+![DanaRS-v3](img/danars.png){width="250"}
+{align="center"}

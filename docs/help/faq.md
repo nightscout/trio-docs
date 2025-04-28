@@ -2,16 +2,21 @@
 Various resources, including [Facebook](https://www.facebook.com/groups/diytrio), and [Discord](https://discord.com/invite/FnwFEFUwXE), are available to assist you with setting up, maintaining, and succeeding in your Trio journey. Below is a series of questions we see asked daily. We hope it helps. 
 
 ## Trio FAQs
+
 ### What is Trio?
+
 Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. It uses your entered settings, carbohydrates, and historical data to automate insulin delivery and reduce the time spent managing your diabetes. 
- 
+
+ !!! important "Important"
+    _Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk._
+
+### Trio History
+
 The project started with Ivan Valkou's FreeAPS X implementation of the OpenAPS algorithm for iPhone and was later forked and rebranded as iAPS. Since then, many developers have contributed substantial work, leading to new features and enhancements.
 
-Following the release of version 3.0.0, the project’s direction significantly changed due to differing views on development, open source, and peer review. This led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project’s new phase, symbolizing its evolution and the collaborative development’s dynamic nature.
+There were differing views on development, open source, and peer review that led to the separation from the iAPS repository and the birth of Trio as a distinct entity. This transition marks the project's new phase, symbolizing its evolution and the collaborative development's dynamic nature.
 
-!!! important "Important"
-    _Trio is a DIY, open-source community project. As such, the user must build and maintain their app with the support of the Trio      community. Trio has not undergone evaluation by any regulatory agency and is for use at your own risk._
-
+Trio continues to leverage a variety of frameworks from the DIY looping community and remains at the forefront of DIY diabetes management solutions, constantly evolving with valuable contributions from its community.
 
 ### Can I download Trio from the App Store?
 Trio is not available to download from the App Store. Trio is an open-source, do-it-yourself automated insulin delivery application. Community members who wish to utilize Trio must build it themselves. 
@@ -54,7 +59,7 @@ Why? Trio is only as good as the information you give it. Basal, carb ratios, an
     _Before commencing on Trio, users must test and refine their basals, carb ratios, and insulin sensitivity factors._
 
 ### What about other pumps? When can I use them with Trio?
-Cracking of pumps for use with the Trio app is a significant undertaking. At the same time, developers are constantly monitoring pumps that could be integrated into Trio. Ultimately, cracking and creating drivers for these pumps requires multiple developers to devote significant amounts of their time. Realistically, it can take upwards of 12 months for new pump integration. Information on supported pumps can be found under [Compatible Pumps](../Getting-Started/pump.md).
+Cracking of pumps for use with the Trio app is a significant undertaking. At the same time, developers are constantly monitoring pumps that could be integrated into Trio. Ultimately, cracking and creating drivers for these pumps requires multiple developers to devote significant amounts of their time. Realistically, it can take upwards of 12 months for new pump integration. Information on supported pumps can be found under [Compatible Pumps](../install/build/requirements/devices/pump.md#compatible-pumps).
 
 ### I regularly go places without phone service or an internet connection. Will Trio work without these?
 Yes. Trio does not require internet or cell coverage to work. So long as the Trio user has Bluetooth enabled on the iPhone, the CGM and insulin pump will continue working in conjunction with Trio. 
@@ -65,11 +70,14 @@ Yes. Trio does not require internet or cell coverage to work. So long as the Tri
 ### Can I have someone follow my Trio app?
 There are multiple options available for someone to follow your loop data.
 
-**Nightscout**
-<br>Nightscout is an open-source cloud application used by people with diabetes and parents of kids with diabetes to visualize, store, and share the data from their Continuous Glucose Monitors in real-time. Once set up, Nightscout acts as a central repository of blood glucose and insulin dosing/treatment data for a single person, allowing you to view the CGM graph and treatment data anywhere using just a web browser connected to the internet. Detail of Trio's integration with Nightscout can be found [here](../settings/services/nightscout.md). Information on creating your Nightscout site can be found [here](https://nightscout.github.io/).
+**Nightscout**  
+Nightscout is an open-source cloud application used by people with diabetes and parents of kids with diabetes to visualize, store, and share the data from their Continuous Glucose Monitors in real-time. Once set up, Nightscout acts as a central repository of blood glucose and insulin dosing/treatment data for a single person, allowing you to view the CGM graph and treatment data anywhere using just a Web browser connected to the internet.
 
-**LoopFollow**
-<br>LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's display information and alerts into a single, easy-to-use interface. LoopFollow pulls data from your Nightscout or Dexcom Share server. You can set up more than one app on a phone if you follow more than one person with diabetes. Information on creating your LoopFollow app can be found [here](https://www.loopandlearn.org/loop-follow/).
+Details of Trio's **integration** with Nightscout can be found [here](../configuration/settings/services/nightscout.md).  
+Information on **creating** your Nightscout **site** can be found [here](https://nightscout.github.io/).
+
+**LoopFollow**  
+LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's display information and alerts into a single, easy-to-use interface. LoopFollow pulls data from your Nightscout or Dexcom Share server. You can set up more than one app on a phone if you follow more than one person with diabetes. Information on creating your LoopFollow app can be found [here](https://www.loopandlearn.org/loop-follow/).
 
 !!! warning
     _All options for following your Trio app rely on an active internet connection. If you or the person you are following loses connection to the internet, your LoopFollow app will stop receiving data._

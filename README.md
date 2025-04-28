@@ -214,9 +214,9 @@ git push -u origin add_FAQ_page
 > [!NOTE]
 > Please add!
 
-### Adding a Chapter
+### Add a Chapter
 
-Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determines the level.
+Using the `#` sign shows a chapter on the menu/index. The number of `#`'s determines the level.
 
 **Example**:
 
@@ -241,14 +241,14 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 > | `**bold text**`    | **bold text** |
 > | `<b>bold text</b>` | **bold text** |
 
-### Adding a Link to Another File
+### Add a Link to Another File
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
 **Example**: `../directoryname/filename.md`
 
 
-### Updating the Glossary
+### Update the Glossary
 
 
 > Trio's glossary is a dictionary for the acronyms and technical terms used in the documentation. It explains them in simple terms.
@@ -290,9 +290,9 @@ The website uses the Markdown page of the glossary.
 > Remember to commit these 2 files.
 
 
-### Migrating a Sphinx page to Mkdocs
+### Migrate a Sphinx page to Mkdocs
 
-#### Migrating an Admonition from Sphinx to Mkdocs
+#### Migrate an Admonition from Sphinx to Mkdocs
 
 > [!NOTE] 
 > **What is an admonition?**  
