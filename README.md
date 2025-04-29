@@ -245,8 +245,22 @@ Using the `#` sign shows a chapter on the menu/index. The number of `#`'s determ
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
-**Example**: `../directoryname/filename.md`
+In the below example, assuming you are editing `docs/install/index.md`, to add a link pointing to `docs/configuration/new-user-setup.md` with the text `new user setup`:
 
+```html
+Now on to the [new user setup](../configuration/new-user-setup.md)
+```
+
+Do not forget the `.md` suffix.
+
+```
+docs                    <== ../ 
+├── install             <== ./ denotes the current folder (docs/install/)
+│ └── index.md          <== You are here (the current file)
+│   
+├── configuration       <== ../configuration
+│ └── new-user-setup.md <== ../configuration/new-user-setup.md
+```
 
 ### Update the Glossary
 
