@@ -200,7 +200,7 @@ not_in_nav: |
   configuration/CompatibleDevices.md
   configuration/configure.md
   configuration/transition-qa.md
-  includes/version-compatility-matrix.md
+  includes/version-compatibility-matrix.md
   includes/supported-iphones.md
   operate/build.md
   operate/customize.md

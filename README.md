@@ -245,8 +245,22 @@ Using the `#` sign shows a chapter on the menu/index. The number of `#`'s determ
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
-**Example**: `../directoryname/filename.md`
+In the below example, assuming you are editing `docs/install/index.md`, to add a link pointing to `docs/configuration/new-user-setup.md` with the text `new user setup`:
 
+```html
+Now on to the [new user setup](../configuration/new-user-setup.md)
+```
+
+Do not forget the `.md` suffix.
+
+```
+docs                    <== ../ 
+├── install             <== ./ denotes the current folder (docs/install/)
+│ └── index.md          <== You are here (the current file)
+│   
+├── configuration       <== ../configuration
+│ └── new-user-setup.md <== ../configuration/new-user-setup.md
+```
 
 ### Update the Glossary
 
@@ -288,6 +302,51 @@ The website uses the Markdown page of the glossary.
 
 > [!NOTE]
 > Remember to commit these 2 files.
+
+### Create an Include File
+
+When the same section of text is repeated in several files, it is time to consolidate all these occurrences into a single file and include it in all relevant files, that means:
+
+- Move the existing redundant section of text to a new dedicated file.
+- Replace all redundant occurrences of that section with an include directive in all the files that previously defined it.
+
+Let's break down these steps:
+
+1. **Create a new file**  
+    Create a **Markdown file** in the `docs/includes/` folder, for example:  
+    `docs/includes/version-compatibility-matrix.md`.
+2. **Move the duplicated content**  
+    Move the duplicated section into this new file.  
+3. **Mark it as includable**  
+   [Wrap the content](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/docs/includes/version-compatibility-matrix.md?plain=1#L2-L20) within `<!--include-markdown-start-->` and `<!--include-markdown-end-->` comments to define what will be included.
+   ```markdown
+     Content before the start comment will not be included.
+     
+    <!--include-markdown-start-->
+    …your reusable content (duplicated text section)…
+    <!--include-markdown-end-->
+
+	 Content after the end comment will not be included.
+    ```
+1. **Replace each original redundant section with an include directive**  
+   In each file that originally contained the duplicated text, **replace it with the following [include directive](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/docs/install/build/requirements/devices/iphone.md?plain=1#L12)**:
+    ```markdown
+    {%
+      include-markdown "includes/version-compatibility-matrix.md"
+    %}
+    ```
+     Make sure the path is relative to the `docs/` folder.
+2. **Update `mkdocs.yml`**  
+   To prevent the included file from appearing in the navigation or triggering a warning, add it to the [**`not_in_nav`** section](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/mkdocs.yml#L203):
+    ```yaml
+    not_in_nav: |
+      includes/version-compatibility-matrix.md
+    ```
+
+> [!NOTE]
+> Do not overuse this feature!
+>
+> Use it sparingly, as it adds a layer of abstraction that makes it harder to see the full contents of a page when editing it.
 
 
 ### Migrate a Sphinx page to Mkdocs
