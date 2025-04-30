@@ -14,6 +14,32 @@ If you are coming from a pump, transferring basal profiles from your pump settin
 
 - - -
 
+## Testing/Adjusting Your Basal Rate
+
+### Baseline Calculation
+
+If your current basal rates are close, but need some testing and adjustment, skip to the [next section](#basal-testing).
+
+If your current basal rates are inaccurate or you are unsure where to even start, the formulas developed by Walsh, et.al. and may help you find a starting point to then test or adjust your basal rates. Autosens and dynamicISF use these calculations as their foundation for making adjustments, so it stands to reason that a similar balancing of these settings would assist Trio in a more optimal performance.
+
+!!! warning
+    This calculation is to be used as a starting point for testing and is not considered definitive or exact.
+    
+<!-- TODO: Add description and formulas from Walsh-->
+<!-- TODO: Add Bill Example Question to calculate -->
+
+### Basal Testing
+
+<!-- TODO: Update basal testing description -->
+The standard method is to test your basal by having a relaxing 4-6 hours without eating at least two hours before you begin the test. Does your blood sugar stay steady? Or do you climb and need a correction? Or do you go low and need to eat? Setting accurate basal rates is crucial for Trio success. They determine how much of the insulin delivered (from basal and bolus) is counted as insulin on board (IOB).
+
+### Basal Adjustment
+
+<!-- TODO: Update description -->
+You can also monitor your IOB to determine if your basal profile is accurate. Consistently negative or positive IOB during times of fasting _may_ suggest that these hours need to decrease or increase their basal rate, respectively.
+
+- - -
+
 ## How To Enter Your Basal Profile(s) Into Trio
 
 ### Step 1
@@ -64,30 +90,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](/configuration/new_user_setup/)
-
-- - -
-
-## Testing/Adjusting Your Basal Rate
-
-### Baseline Calculation
-
-If your current basal rates are close, but need some testing and adjustment, skip to the [next section](#basal-testing).
-
-If your current basal rates are inaccurate or you are unsure where to even start, the formulas developed by Walsh, et.al. and may help you find a starting point to then test or adjust your basal rates. Autosens and dynamicISF use these calculations as their foundation for making adjustments, so it stands to reason that a similar balancing of these settings would assist Trio in a more optimal performance.
-
-!!! warning
-    This calculation is to be used as a starting point for testing and is not considered definitive or exact.
-    
-<!-- TODO: Add description and formulas from Walsh-->
-<!-- TODO: Add Bill Example Question to calculate -->
-
-### Basal Testing
-
-<!-- TODO: Update basal testing description -->
-The standard method is to test your basal by having a relaxing 4-6 hours without eating at least two hours before you begin the test. Does your blood sugar stay steady? Or do you climb and need a correction? Or do you go low and need to eat? Setting accurate basal rates is crucial for Trio success. They determine how much of the insulin delivered (from basal and bolus) is counted as insulin on board (IOB).
-
-### Basal Adjustment
-
-<!-- TODO: Update description -->
-You can also monitor your IOB to determine if your basal profile is accurate. Consistently negative or positive IOB during times of fasting _may_ suggest that these hours need to decrease or increase their basal rate, respectively.
+Proceed to [Carb Ratios](carb_ratios.md) or return to [New User Setup](/configuration/new_user_setup/)

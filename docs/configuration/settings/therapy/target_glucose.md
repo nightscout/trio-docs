@@ -40,7 +40,7 @@ Adjust the time
 
 Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all CRs are set
 
-### Delete an ISF Entry
+### Delete a Glucose Target Entry
 
 Should you need to delete an CR entry, just swipe left on the rate you need to remove. 
 
@@ -56,5 +56,5 @@ Save your changes!
 
 ### Step 7
 
-Return to New User Setup and begin [Step 4: Enable UAMs and SMBs](/configuration/new_user_setup/)
+Proceed to [Basal Rates](basal_rates.md) or return to [New User Setup](/configuration/new_user_setup/)
 

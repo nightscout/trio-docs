@@ -84,7 +84,7 @@ Autosens Max sets the maximum Sensitivity Ratio used by Autosens, Logarithmic Dy
 - - -
 
 ## Autosens Min
-**Default:** *80%*  
+**Default:** *70%*  
 **Setting Limits:** _50%-100%_
 
 Autosens Min sets the minimum Sensitivity Ratio used by Autosens, Logarithmic Dynamic ISF, and Sigmoid Dynamic ISF.  

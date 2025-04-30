@@ -39,6 +39,34 @@ Like basal rates, ISF is not used verbatim by Trio but is modified over time as 
 
 It is safe to transfer your ISF from your pump settings. Note that almost all issues when starting with Trio are a result of an improperly set ISF. If you find you have lows with corrections, or you have SMB/UAM on and the application provides too much insulin at any time, resulting in a rollercoaster pattern, your ISF is likely to blame.
 
+- - -
+
+## Testing/Adjusting Your ISF
+
+### Baseline Calculation
+
+If your current ISF is close, but needs some testing and adjustment, skip to the [next section](#isf-testing).
+
+If your current ISF is inaccurate or you are unsure where to even start, the adjustments in Trio are based on formulas developed by Walsh, et.al. and may help you find a starting point to then test or adjust your ISF.
+
+!!! warning
+    This calculation is to be used as a starting point for testing and is not considered definitive or exact.
+    
+<!-- TODO: Add description and formulas from Walsh-->
+<!-- TODO: Add Bill Example Question to calculate -->
+
+### ISF Testing
+
+<!-- TODO: Add description -->
+
+### ISF Adjustment
+
+<!-- TODO: Update description -->
+
+There are a few ways you can work to adjust your ISF. The easiest method is simply bringing yourself to a higher glucose with a glucose tab or choosing a time when you are "stuck" higher than your target, then correcting based on your ISF. If you are higher than your target after 4 hours, make your ISF more aggressive by _DECREASING_ the value. If you are lower than your target after 4 hours, make your ISF less aggressive by _INCREASING_ the value.
+
+- - -
+
 ## How To Enter Your ISF Into Trio
 
 ### Step 1
@@ -89,29 +117,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Carb Ratios](carb_ratios.md) or return to [New User Setup](/configuration/new_user_setup/)
-
-
-## Testing/Adjusting Your ISF
-
-### Baseline Calculation
-
-If your current ISF is close, but needs some testing and adjustment, skip to the [next section](#isf-testing).
-
-If your current ISF is inaccurate or you are unsure where to even start, the adjustments in Trio are based on formulas developed by Walsh, et.al. and may help you find a starting point to then test or adjust your ISF.
-
-!!! warning
-    This calculation is to be used as a starting point for testing and is not considered definitive or exact.
-    
-<!-- TODO: Add description and formulas from Walsh-->
-<!-- TODO: Add Bill Example Question to calculate -->
-
-### ISF Testing
-
-<!-- TODO: Add description -->
-
-### ISF Adjustment
-
-<!-- TODO: Update description -->
-
-There are a few ways you can work to adjust your ISF. The easiest method is simply bringing yourself to a higher glucose with a glucose tab or choosing a time when you are "stuck" higher than your target, then correcting based on your ISF. If you are higher than your target after 4 hours, make your ISF more aggressive by _DECREASING_ the value. If you are lower than your target after 4 hours, make your ISF less aggressive by _INCREASING_ the value.
+Return to [New User Setup](/configuration/new_user_setup/)
