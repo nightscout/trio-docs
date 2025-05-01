@@ -27,10 +27,10 @@ Many users feel the need to stay in open loop initially for a variety of reasons
 
 </div>
 
-This will allow Trio to continue communications with your pump and cgm uninterrupted. Setting Max IOB this way will allow Trio to prevent lows by reducing basal, but will not allow Trio to treat highs automatically. Setting Autosens Max and Min this way will stop all algorithm sensitivity adjustments and Trio will only utilize your profile settings as you entered them. This will significantly hinder the algorithm, turning it into a non-dynamic system with only low-prevention. This is much safer than attempting to run in open loop.
+This will allow Trio to continue communications with your pump and CGM uninterrupted. Setting Max IOB this way will allow Trio to prevent lows by reducing basal, but will not allow Trio to treat highs automatically. Setting Autosens Max and Min this way will stop all algorithm sensitivity adjustments, and Trio will only utilize your profile settings as you entered them. This will significantly hinder the algorithm, turning it into a non-dynamic system with only low-prevention. This is much safer than attempting to run in open loop.
 
 !!! caution "Former Loop Users"
-    Loop and Trio function differently in open loop due to the differences in the underlying algorithms. It is rarely advised to stay in open loop with Trio as most of the functionality of the algorithm depends on a closed loop system.
+    Loop and Trio function differently in open loop due to the differences in the underlying algorithms. It is rarely advised to stay in open loop with Trio, as most of the functionality of the algorithm depends on a closed loop system.
 
 
 <!--## Settings

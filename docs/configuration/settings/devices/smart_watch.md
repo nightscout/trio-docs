@@ -4,9 +4,13 @@
 
 On an Apple Watch, you can add carbs and boluses, set a temporary target, and display BG, IOB, COB, etc.
 
-Trio has a companion app for the Apple Watch. The companion app shows the loop status and current insulin and carbs onboard. It also lets you add carbs, do a manual bolus, and set a temporary target. However, the companion app only serves as a remote control for the iPhone app; connection to the CGM and pump is still done through your iPhone, and you will have to bring it with you.
+Trio has a companion app for the Apple Watch.  
+The companion app shows the loop status and current insulin and carbs onboard. 
+It also lets you add carbs, do a manual bolus, and set a temporary target.
+However, the companion app only serves as a remote control for the iPhone app; connection to the CGM and pump is still done through your iPhone, and you will have to bring it with you.
 
-Apple Watch Series 3 and newer are supported. Newer versions of the Apple Watch have better battery life and support always-on display.
+Apple Watch Series 3 and newer are supported.  
+Newer versions of the Apple Watch have better battery life and support an always-on display.
 
 ### Confirm Bolus Faster
 <!-- TODO: Add description of confirm bolus faster -->
@@ -18,10 +22,13 @@ Apple Watch Series 3 and newer are supported. Newer versions of the Apple Watch 
 
 ## Garmin
 
-Garmin watches only display data and do not allow interaction for adding carbs or insulin. There are two components that can be installed on Garmin watches: a watch face that continuously displays information, and a data field that shows glucose information during activities. Both components are independent of each other and need to be sideloaded onto the watch as described below. No need for Garmin Connect in the background — the watch just needs to be connected to the phone that runs Trio. The watch face updates with Trio loob cycles.
+Garmin watches only display data and do not allow interaction for adding carbs or insulin. Two components can be installed on Garmin watches: a watch face that continuously displays information, and a data field that shows glucose information during activities.
+Both components are independent of each other and need to be sideloaded onto the watch as described below. 
+No need for Garmin Connect in the background — the watch just needs to be connected to the phone that runs Trio.
+The watch face updates with Trio loop cycles.
 
 ### Releases
-As long as nothing is published in Garmin Connect IQ, every garmin watch needs be individually compiled. You can do this yourself using VS Code with monkeyC plugin and a Garmin SDK. If not see the link below for the released watches.
+As long as nothing is published in Garmin Connect IQ, every Garmin watch needs to be individually compiled. You can do this yourself using VS Code with the monkeyC plugin and a Garmin SDK. If not, see the link below for the released watches.
 
 ### How to do it
 1. Choose a folder on your Mac and get the latest release from [this GitHub repo](https://github.com/mountrcg/garminWatch).
