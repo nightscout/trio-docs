@@ -29,8 +29,7 @@ This does not require substantial technical know-how but is a time-consuming pro
 You may need to carry this out through several sessions on your first attempt.
 
 Upon installation, you will need to configure your settings appropriately. 
-For step-by-step instructions on using the app, follow the [New User Guide](../configuration/new_user_setup.md). 
 
 **Ready to Get Started?**  
-Head to the [New User Guide](../configuration/new_user_setup.md) to get started!
+Head to the [New User Guide](../configuration/new_user_setup.md) for step-by-step instructions on using the app and get started!
 

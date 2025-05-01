@@ -3,7 +3,7 @@
 !!! tip "Highlights"
     
 	 - CR can be transferred from your pump
-	 - Adjust your CR by performing a test meal experiment or observing autotune.
+	 - Adjust your CR by performing a test meal experiment
 
 CR refers to the amount of carbohydrates one unit of insulin is able to neutralize.  
 
@@ -28,7 +28,7 @@ CR refers to the amount of carbohydrates one unit of insulin is able to neutrali
     ??? success "Answer"
         Bill needs 5 units of insulin for his meal.
 
-CR is not changed as drastically as basal rates or ISF unless Dynamic CR is enabled. Your CR must be as accurate as possible for proper Trio function.
+CR is not changed like basal rates or ISF. Your CR must be as accurate as possible for proper Trio function.
 
 It is safe to transfer your CR from your pump settings. However, your settings may not be accurate if you are experiencing high peaks with meals or lows three hours afterward. If you have SMB/UAM on and are experiencing sharp drops, you may also need to optimize your ISF.
 
@@ -109,4 +109,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](/configuration/new_user_setup/)
+Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](../../new_user_setup.md)

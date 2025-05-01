@@ -3,7 +3,7 @@
 ![Home Screen Mockup](img/trio_phone_mockup.png){ width="500px"  }
 {align=center}
 
-Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the [Build Instructions](../operate/build.md) and come back here when you are ready to start the setup process!
+Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the Build Instructions for [Mac](../install/build/mac/overview.md) or [Browser](../install/build/browser/browser-build-overview.md) and come back here when you are ready to start the setup process!
 
 Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for During Onboarding and After Onboarding. The "During Onboarding" tab will provide additional information for that step of the Onboarding Wizard. The "After Onboarding" tab will show you where to edit the relevant settings after onboarding is complete as well as the additional information on those settings.
 
@@ -68,7 +68,7 @@ The next step is to enter your Therapy Settings. These include:
 
 - **Target Glucose**: Trio's dosing will aim for this glucose when calculating insulin dosage
 - **Basal Rates**: Used as a baseline for increasing or decreasing insulin needs
-- **Carb Ratios**: How many grams of carb are countered by 1 unit of insulin
+- **Carb Ratios**: How many grams of carbohydrate are countered by 1 unit of insulin
 - **Insulin Sensitivities**: How much 1 unit of insulin will lower your blood glucose
 
 <div class="grid" markdown>
@@ -280,25 +280,15 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 
 ## Step 7: Enable Closed Loop (Not in Onboarding Wizard)
 
-Closed loop functionality is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop.
+Closed loop functionality is turned off by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed Loop is **OFF**. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop.
 
-### Want to stay in open loop?
-Many users feel the need to stay in open loop initially for a variety of reasons, such as testing settings or weariness about a new algorithm. It is not advised to keep the loop open with Trio due to the significant loss in functionality. Rather, configure the following settings as such:
+!!! important
+    Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration [here](configure.md#want-to-stay-in-open-loop).
     
-- Set [Max IOB](settings/therapy/units_limits.md#max-iob) to **0**
-- Set [Autosens Max](settings/algorithm/autosens.md#autosens-max) to **1**
-- Set [Autosens Min](settings/algorithm/autosens.md#autosens-min) to **1**
-    
-This will allow Trio to continue communications with your pump and cgm uninterrupted. Setting Max IOB this way will allow Trio to prevent lows by reducing basal, but will not allow Trio to treat highs automatically. Setting Autosens Max and Min this way will stop all algorithm sensitivity adjustments and Trio will only utilize your profile settings as you entered them. This will significantly hinder the algorithm, but in a safer manner than attempting to run in open loop.
-
-!!! caution "Former Loop Users"
-    Loop and Trio function differently in open loop due to the differences in the underlying algorithms. It is rarely advised to stay in open loop with Trio as most of the functionality of the algorithm depends on a closed loop system.
-
+[More on closing the loop](Configure.md)
 
 ![Enable Closed loop](img/closeLoop.png){ width="500px"  }
 {align=center}
-
-[More on closing the loop](../configuration/Configure.md)
 
 - - -
 
@@ -315,7 +305,7 @@ This will allow Trio to continue communications with your pump and cgm uninterru
     - If you are coming from another Oref-based system, like Trio 0.2, iAPS, or AAPS, you will want to watch your current settings to ensure they are performing as they did previously. You may need to make some adjustments, but you also may find your settings work as well as they did in the previous system.  
     - If you are coming from Loop, a commercial system, or multiple daily injections (MDI), you will want to first test your settings to ensure they do not require any adjustments. You've been using a completely different algorithm to manage your insulin dosing and that means you've tailored your settings to be optimized using that method of dosing. Because Trio uses a different algorithm, your settings will almost assuredly need to be adjusted to work optimally within the Oref algorithm.
     
-    You can find more information on transitioning to Trio [here](transition-qa.md)
+<!--    You can find more information on transitioning to Trio [here](transition-qa.md) -->
 
 - - -
 
