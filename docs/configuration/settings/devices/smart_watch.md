@@ -14,7 +14,6 @@ Apple Watch Series 3 and newer are supported. Newer versions of the Apple Watch 
 ### Contacts Configuration
 <!-- TODO: Add contacts configuration instructions -->
 
-Continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
 - - -
 
 ## Garmin
@@ -39,5 +38,4 @@ The watch face will not display information after another has been used. In that
 
 If your watch is not listed in the Release section, please ask about it in the Garmin channel on Discord.
 
-Continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
 - - -

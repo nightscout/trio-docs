@@ -8,18 +8,7 @@ Welcome to the New User Setup Guide and congratulations on a successful Trio bui
 Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for During Onboarding and After Onboarding. The "During Onboarding" tab will provide additional information for that step of the Onboarding Wizard. The "After Onboarding" tab will show you where to edit the relevant settings after onboarding is complete as well as the additional information on those settings.
 
 Use this documentation as your home base to refer back to as needed.
-<!--
-## Connect Your Devices
 
-The first step in setting up your Trio app is to connect your devices to the app, located in the Devices menu under Trio Configuration. 
-
-![Devices Settings](img/DeviceMenu.png){ width="500px"  }
-{align=center}
-
- a. [Connect Insulin Pump](settings/devices/pump.md)  
- b. [Connect Continuous Glucose Monitor (CGM)](settings/devices/cgm.md)  
- c. [Connect Smart Watch (optional)](settings/devices/smart_watch.md)
--->
 - - -
 
 ## Step 1: Prepare Trio
@@ -293,17 +282,18 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 
 Closed loop functionality is turned off by default. This means Trio cannot make adjustments automatically. The system relies solely on you to make any recommended adjustments while Closed Loop is OFF. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop.
 
-!!! important "Former Loop Users"
+### Want to stay in open loop?
+Many users feel the need to stay in open loop initially for a variety of reasons, such as testing settings or weariness about a new algorithm. It is not advised to keep the loop open with Trio due to the significant loss in functionality. Rather, configure the following settings as such:
+    
+- Set [Max IOB](settings/therapy/units_limits.md#max-iob) to **0**
+- Set [Autosens Max](settings/algorithm/autosens.md#autosens-max) to **1**
+- Set [Autosens Min](settings/algorithm/autosens.md#autosens-min) to **1**
+    
+This will allow Trio to continue communications with your pump and cgm uninterrupted. Setting Max IOB this way will allow Trio to prevent lows by reducing basal, but will not allow Trio to treat highs automatically. Setting Autosens Max and Min this way will stop all algorithm sensitivity adjustments and Trio will only utilize your profile settings as you entered them. This will significantly hinder the algorithm, but in a safer manner than attempting to run in open loop.
+
+!!! caution "Former Loop Users"
     Loop and Trio function differently in open loop due to the differences in the underlying algorithms. It is rarely advised to stay in open loop with Trio as most of the functionality of the algorithm depends on a closed loop system.
 
-!!! tip "Want to stay in open loop?"
-    Many users feel the need to stay in open loop initially for a variety of reasons, such as testing settings or weariness about a new algorithm. It is not advised to keep the loop open with Trio due to the significant loss in functionality. Rather, configure the following settings as such:
-    
-    - Set [Max IOB](settings/therapy/units_limits.md#max-iob) to **0**
-    - Set [Autosens Max](settings/algorithm/autosens.md#autosens-max) to **1**
-    - Set [Autosens Min](settings/algorithm/autosens.md#autosens-min) to **1**
-    
-    This will allow Trio to continue communications with your pump and cgm uninterrupted. Setting Max IOB this way will allow Trio to prevent lows by reducing basal, but will not allow Trio to treat highs automatically. Setting Autosens Max and Min this way will stop all algorithm sensitivity adjustments and Trio will only utilize your profile settings as you entered them. This will significantly hinder the algorithm, but in a safer manner than attempting to run in open loop.
 
 ![Enable Closed loop](img/closeLoop.png){ width="500px"  }
 {align=center}
