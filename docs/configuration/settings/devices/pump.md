@@ -1,5 +1,5 @@
 # Insulin Pump
-This section allows you to choose your insulin pump. Most options are self-explanatory.  For more information on compatible insulin pumps, please see the following [link](../configuration/CompatibleDevices.md#pump)
+This section allows you to choose your insulin pump. Most options are self-explanatory.  For more information on compatible insulin pumps, please see the following [link](../../../install/build/requirements/devices/pump.md/#compatible-pumps)
 
 ## Step 1: Add Pump
 
@@ -9,7 +9,7 @@ The first step in setting up your insulin pump on Trio is to tap the "Add Pump" 
 {align=center}
 
 ## Step 2: Select Your Pump
-Select your pump from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific pump.
+Select your pump from the in-app menu and from the options below for step-by-step instructions. The links below will guide you through the connection instructions for your specific pump.
  
 - [Medtronic](#medtronic)  
 - [Omnipod Eros](#omnipod-eros)  
@@ -44,7 +44,7 @@ Then, tap the "Connect" button when it turns blue at the bottom.
 {align=center}
 
 **Step 6**
-Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/configuration/new_user_setup/)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -80,7 +80,8 @@ Connect your RileyLink, OrangeLink, or EmaLink and tap "Continue"
 {align=center}
 
 **Step 8**
-Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/configuration/new_user_setup/)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+
 - - -
 
 ### Omnipod Dash
@@ -109,7 +110,7 @@ Choose your insulin type and tap "Continue"
 {align=center}
 
 **Step 7**
-Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/configuration/new_user_setup/)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -145,7 +146,7 @@ Select your pump from the list of found pumps
 {align=center}
 
 **Step 8**
-Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/configuration/new_user_setup/)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -153,18 +154,19 @@ Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/conf
 
 !!! warning
     If using a pump simulator, it is important to understand:
+     
     - You will only experience the user interface of Trio.
-    - Using a pump simulator does not indicate how the app will perform nor will it give accurate guidance or suggestions for insulin dosing.  
+    - Using a pump simulator does not indicate how the app will perform, nor will it give accurate guidance or suggestions for insulin dosing.
     - Trio may not run consistently in the background when using a pump simulator
     - **Only use a pump simulator if you understand the conditions above.**
     
 **Step 3**
-Choose from the variety of simulator pump options and tap "Done" at the upper right corner to activate the pump simulator
+Choose from the variety of simulator pump options and tap "Done" in the upper right corner to activate the pump simulator
 
 ![Pump Simulator](img/pump_simulator.png){ width="300px"  }
 {align=center}
 
 **Step 4**
-Continue to [Step 1b: Connect CGM](cgm.md) _OR_ return to [New User Setup](/configuration/new_user_setup/)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -

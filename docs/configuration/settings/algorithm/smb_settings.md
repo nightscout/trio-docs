@@ -2,7 +2,7 @@
 
 !!! summary "Highlights"
 
-    - UAMs should be enabled **first**, then other SMBs should be enabled as needed.
+    - UAMs should be enabled when SMBs are enabled.
     - If entering carbs and/or bolusing: Max UAM Basal Minutes should be set **lower** than Max SMB Basal Minutes.
     - If **NOT** entering carbs and/or bolusing (FCL): Max UAM Basal Minutes should be set **higher** than Max SMB Basal Minutes.
     - Super micro boluses (SMB) often include your basal insulin. Your basal rate will be temporarily reduced after an SMB is delivered to prevent overdosing insulin.
@@ -87,17 +87,22 @@ Enabling this feature allows Trio to deliver insulin required using SMBs when a 
 ## Enable UAM
 **Default:** _OFF_
 
-_This setting should be enabled **before** other SMBs are enabled._  
+!!! warning "**Important**"
 
-Enabling Unannounced Meal SMBs (UAM) allows Trio to detect and respond to unexpected rises in glucose readings caused by unannounced or miscalculated meals, meals high in fat or protein, or other factors like adrenaline or cortisol.  
+    This setting should be _ON_ if other SMBs are enabled. 
+
+Enabling Unannounced Meal SMBs (UAMs) allows Trio to detect and respond to unexpected rises in glucose readings caused by unannounced or miscalculated meals, meals high in fat or protein, or other factors like adrenaline or cortisol.  
 
 It uses SMBs to deliver insulin in small amounts to correct glucose spikes. UAM also works in reverse, reducing or stopping insulin if glucose levels drop unexpectedly.  
 
-The size of UAM SMBs is limited by [Max UAM Basal Minutes](#max-uam-basal-minutes)  
+The size of UAMs is limited by [Max UAM Basal Minutes](#max-uam-basal-minutes)  
 
 !!! tip
 
-    Enabling UAM will give minor adjustments in your insulin dosing to account for the difference in expected glucose and actual glucose readings. For this reason, **UAM should be enabled first** and `Max UAM Basal Minutes` should be set more conservatively than `Max SMB Basal Minutes`.
+    Enabling UAM will give minor adjustments in your insulin dosing to account for the difference in expected glucose and actual glucose readings.
+    
+        - If you are entering carbs and/or bolusing for meals, `Max UAM Basal Minutes` should be set lower than `Max SMB Basal Minutes`.
+        - If you are **not** entering carbs or bolusing for meals, `Max UAM Basal Minutes` should be set higher than `Max SMB Basal Minutes`.
 
 - - -
 

@@ -1,5 +1,5 @@
 # CGM
-This section allows you to choose your glucose data source. Most options are self-explanatory.  For more information on compatible CGMs, please see the following [link](../configuration/CompatibleDevices.md#cgm).
+This section allows you to choose your glucose data source. Most options are self-explanatory.  For more information on compatible CGMs, please see the following [link](../../../install/build/requirements/devices/cgm.md#compatible-cgm).
 
 ## Step 1: Add CGM
 
@@ -11,8 +11,8 @@ The first step in setting up your continuous glucose monitor (CGM) on Trio is to
 ## Step 2: Select Your CGM
 Select your cgm from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific cgm:  
 
-- [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-and-dexcom-g6-one)  
-- [Dexcom G7/Dexcom ONE+](#dexcom-g7-dexcom-one)  
+- [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-and-dexcom-g6dexcom-one)
+- [Dexcom G7/Dexcom ONE+](#dexcom-g7dexcom-one)
 - [Dexcom Share](#dexcom-share)
 - [Freestyle Libre](#freestyle-libre)
 - [Freestyle Libre Demo](#freestyle-libre-demo)
@@ -33,7 +33,7 @@ Enter your 6-digit Dexcom transmitter ID.
 {align=center}
 
 **Step 4**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -47,7 +47,7 @@ Tap "Continue" to use the G7/ONE+ as your CGM source
 {align=center}
 
 **Step 4**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -78,7 +78,7 @@ Select your 3rd party transmitter from the list of found devices and tap "Save"
 {align=center}
 
 **Step 5**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -86,7 +86,7 @@ Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: E
 <!-- TODO: add information on Libre Demo -->
 
 **Step 2**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -94,7 +94,7 @@ Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: E
 This option should ***only*** be used when learning how to interact with the app. It should not be used to learn how the algorithm will respond, nor should it ever be used on a living being.
 
 **Step 2**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -102,7 +102,7 @@ Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: E
 The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic CGM data directly from the pump using a RileyLink-compatible device.
 
 **Step 2**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -110,7 +110,7 @@ Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: E
 While using Nightscout as a CGM is an option, it should be avoided if possible because it does not keep Trio running in the background like other CGM options.
 
 **Step 2**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
@@ -120,7 +120,7 @@ To use xDrip4iOS as a cgm source, you must build it yourself with the same Apple
 However, if you are using Dexcom G6 or ONE with xDrip4iOS, you can choose the Dexcom G6 option in Trio rather than xDrip4iOS, and Trio will intercept the glucose readings even if you're using Shuggah or someone else's TestFlight of xDrip4iOS.
 
 **Step 2**
-Continue to [Step 1c: Connect Watch](smart_watch.md) _OR_ continue to [Step 2: Enter Preferred Units and Safety Limits](/configuration/new_user_setup/#step-2-enter-preferred-units-and-safety-limits) in New User Setup
+Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
 
 - - -
 
