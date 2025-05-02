@@ -56,5 +56,5 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Basal Rates](basal_rates.md) or return to [New User Setup](/configuration/new_user_setup/)
+Proceed to [Basal Rates](basal_rates.md) or return to [New User Setup](../../new_user_setup/)
 

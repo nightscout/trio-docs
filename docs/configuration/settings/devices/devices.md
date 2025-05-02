@@ -8,25 +8,25 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
  
 <div class="grid cards" markdown>
 
--   __[Phones](/install/build/requirements/devices/iphone.md#compatible-phones)__
+-   __[Phones](../../../install/build/requirements/devices/iphone.md#compatible-phones)__
 
     - - -
     
     List of compatible phones
 
--   __[Watches](/install/build/requirements/devices/iphone/#apple-watch)__
+-   __[Watches](../../../install/build/requirements/devices/iphone.md/#apple-watch)__
 
     - - -
     
     List of compatible watches
     
--   __[Pumps](/install/build/requirements/devices/pump.md#compatible-pumps)__
+-   __[Pumps](../../../install/build/requirements/devices/pump.md#compatible-pumps)__
 
     - - -
     
     List of compatible insulin pumps
 
--   __[CGMs](/install/build/requirements/devices/cgm.md#compatible-cgm)__
+-   __[CGMs](../../../install/build/requirements/devices/cgm.md#compatible-cgm)__
 
     - - -
     

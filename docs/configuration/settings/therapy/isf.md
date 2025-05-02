@@ -8,7 +8,7 @@
 	 - ISF can be transferred from your pump to start.
 	 - Adjust ISF by performing a correction and seeing how far your glucose drops in 4 hours.
 
-ISF, also called insulin correction factor (ICF), refers to the amount of blood glucose in mmol/L (or mg/dL, depending on your settings) one unit of insulin can neutralize.
+ISF, also called insulin correction factor (ICF), refers to the amount of blood glucose in mmol/L (or mg/dL, depending on your settings) that one unit of insulin can neutralize.
 
 ??? question "Bill has an ISF of 50 (this is also written in shorthand as an ISF of 50 mg/dL/U (2.8 mmol/L/U)). This means 1 U of rapid insulin will bring Bill's sugar down by 50 mg/dL (2.8 mmol/L). How many units of insulin would Bill need to reach his target glucose of 100 if his current glucose reading is 250 mg/dL (13.9 mmol/L)?"
     
@@ -117,4 +117,4 @@ Save your changes!
 
 ### Step 7
 
-Return to [New User Setup](/configuration/new_user_setup/)
+Return to [New User Setup](../../new_user_setup.md)
