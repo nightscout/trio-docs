@@ -1,5 +1,5 @@
-# Closed Loop
-Closed loop is turned off by default. This means Trio cannot make adjustments autonomously. Until you enable closed loop, the system relies on your approval of its actions.
+# Closing The Loop
+Closed loop is turned off by default. This means Trio cannot make adjustments autonomously. Until you enable closed loop, the system relies on your approval of any and all actions it takes.
 
 ## What is Closed Loop?
 "Closed Loop" means Trio will use the settings and parameters you have inputted into the system to make automated insulin dosing decisions for you every 5 minutes.

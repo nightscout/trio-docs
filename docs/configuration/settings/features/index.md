@@ -1,6 +1,8 @@
 # Features
 
-Welcome to the features homepage!  
+![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the features homepage! Here you'll find information on a variety of customization features available to you in the Trio app.  
+
+- - -
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 

@@ -1,6 +1,8 @@
 # Devices
 
-Welcome to the devices homepage!  
+![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Devices homepage! Here you'll find information on which devices are compatible with Trio and how to add your compatible devices to your Trio app.
+
+- - -
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 

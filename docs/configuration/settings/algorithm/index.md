@@ -1,6 +1,8 @@
 # Algorithm
 
-Welcome to the algorithm homepage!  
+![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Algorithm Settings homepage! Here you'll find information on the settings that influence the algorithm that runs Trio.
+
+- - -
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 

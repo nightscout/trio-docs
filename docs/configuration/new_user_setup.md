@@ -1,4 +1,4 @@
-# New User Setup
+# New User Setup Guide
 
 ![Home Screen Mockup](img/trio_phone_mockup.png){ width="500px"  }
 {align=center}
@@ -283,9 +283,9 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 Closed loop functionality is turned off by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed Loop is **OFF**. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop.
 
 !!! important
-    Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration [here](configure.md#want-to-stay-in-open-loop).
+    Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration [here](settings/closed-loop.md#want-to-stay-in-open-loop).
     
-[More on closing the loop](Configure.md)
+[More on closing the loop](settings/closed-loop.md)
 
 ![Enable Closed loop](img/closeLoop.png){ width="500px"  }
 {align=center}

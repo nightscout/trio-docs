@@ -1,4 +1,4 @@
-# Trio Notifications
+# Notifications
 Notifications give you important Trio information without requiring you to open the app. It is essential that these are allowed in your iPhone system settings. You can tailor them to your needs in this section.
 
 You may notice a few different alerts and warnings in regards to notifications. Click on the tabs below to see what they are and how to remedy them.  

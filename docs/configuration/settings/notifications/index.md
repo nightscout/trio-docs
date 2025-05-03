@@ -1,6 +1,8 @@
 # Notifications
 
-Welcome to the notifications homepage!  
+![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Notifications homepage! Here you'll find information on the various methods of keeping you updated on Trio's status and important information while you are not actively using the app.
+
+- - -  
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 
