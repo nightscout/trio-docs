@@ -6,32 +6,32 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Insulin Pumps](devices/pump.md)__
+-   __[Insulin Pumps](pump.md)__
     
     - - -
     
     Information about insulin pumps compatible with Trio
     
--   __[CGM](devices/cgm.md)__
+-   __[CGM](cgm.md)__
 
     - - -
     
     Information about continuous glucose monitors (CGMs) that are compatible with Trio
     
--   __[iPhone](devices/iphone.md)__
+-   __[iPhone](iphone.md)__
 
     - - -
     
     Answers the question: What phones will work with Trio?
     
--   __[Mac](devices/mac.md)__
+-   __[Mac](mac.md)__
 
     - - -
     
     ***🚧Work in Progress🚧  
     Coming Soon!***
     
--   __[Compatibility Matrix](devices/compatibility-matrix.md)__
+-   __[Compatibility Matrix](compatibility-matrix.md)__
 
     - - -
     

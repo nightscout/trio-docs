@@ -35,7 +35,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     How to upgrade Trio to the latest version
     
--   __[Companion Apps](configuration/ecosystem/index.md)__
+-   __[Companion Apps](ecosystem/index.md)__
 
     - - -
     
