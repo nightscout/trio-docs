@@ -8,7 +8,8 @@
 	- Max COB = Maximum carbs active at any given time
 
 ## Glucose Units
-Select either mg/dL or mmol/L. All settings descriptions and screen information will be adjusted to match your selection here.
+Select either mg/dL or mmol/L.  
+All settings descriptions and screen information will be adjusted to match your selection here.
 
 - - -
 
