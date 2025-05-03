@@ -10,17 +10,17 @@ Closed loop is turned off by default. This means Trio cannot make adjustments au
 ## What is Open Loop?
 "Open Loop" means Trio cannot make any adjustments automatically. In open loop, the system relies solely on you to make any adjustments.  
 
-You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop. Trio essentially becomes a fancy non-AID pdm with a bolus calculator.
+You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop. Trio essentially becomes a fancy non-AID PDM with a bolus calculator.
 
 ## Want to stay in Open Loop?
 Many users feel the need to stay in open loop initially for a variety of reasons, such as testing settings or weariness about a new algorithm. It is not advised to keep the loop open with Trio due to the significant loss in functionality. Rather, configure the following settings as such:
 
 <div class="grid cards" markdown>
     
--   - Set [Max IOB](settings/therapy/units_limits.md#max-iob) to **0**
-    - Set [Autosens Max](settings/algorithm/autosens.md#autosens-max) to **1**
-    - Set [Autosens Min](settings/algorithm/autosens.md#autosens-min) to **1**
-    - All other [Algorithm Settings](settings/algorithm/algorithm.md) should remain at their defaults if you are a new user
+-   - Set [Max IOB](therapy/units_limits.md#max-iob) to **0**
+    - Set [Autosens Max](algorithm/autosens.md#autosens-max) to **1**
+    - Set [Autosens Min](algorithm/autosens.md#autosens-min) to **1**
+    - All other [Algorithm Settings](algorithm/index.md) should remain at their defaults if you are a new user
 
 -   !!! tip "Existing Users"
     If you are an existing user making these adjustments for testing your settings, Algorithm Settings can remain as you had them previously configured. Keep in mind: you may need to adjust them after your settings test is completed if there are significant changes made to your Core Trio Settings (basal, ISF, CR).
