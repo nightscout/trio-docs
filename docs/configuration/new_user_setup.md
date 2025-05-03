@@ -3,15 +3,33 @@
 ![Home Screen Mockup](img/trio_phone_mockup.png){ width="500px"  }
 {align=center}
 
-Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone. If you still need to install the app, head to the Build Instructions for [Mac](../install/build/mac/overview.md) or [Browser](../install/build/browser/browser-build-overview.md) and come back here when you are ready to start the setup process!
+Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone.  
+
+If you still need to install the app, head to the Build Instructions for [Mac](../install/build/mac/overview.md) or [Browser](../install/build/browser/browser-build-overview.md) and come back here when you are ready to start the setup process!
 
 Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for During Onboarding and After Onboarding. The "During Onboarding" tab will provide additional information for that step of the Onboarding Wizard. The "After Onboarding" tab will show you where to edit the relevant settings after onboarding is complete as well as the additional information on those settings.
+
+If you've completed the Onboarding Wizard and need guidance on what to do next, jump to [Step 7: Connect Your Devices](#step-7-connect-your-devices)
 
 Use this documentation as your home base to refer back to as needed.
 
 - - -
 
-## Step 1: Prepare Trio
+***Jump to:***  
+
+[**Step 1:** Prepare Trio](#step-1-prepare-trio)  
+[**Step 2:** Therapy Settings](#step-2-therapy-settings)  
+[**Step 3:** Delivery Limits](#step-3-delivery-limits)  
+[**Step 4:** Algorithm Settings](#step-4-algorithm-settings)  
+[**Step 5:** Notifications](#step-5-notifications)  
+[**Step 6:** Bluetooth](#bluetooth)  
+[**Step 7:** Connect Your Devices](#step-7-connect-your-devices)  
+[**Step 8:** Enable Closed Loop](#step-8-enable-closed-loop)  
+[**Step 9:** Change App Icon (Optional)](#step-9-change-app-icon-optional)  
+
+- - -
+ 
+## **Step 1:** Prepare Trio
 
 In this step, you'll configure diagnostics sharing, optionally sync with Nightscout, and enter other essential setup information.
 
@@ -33,9 +51,7 @@ In this step, you'll configure diagnostics sharing, optionally sync with Nightsc
     
     ### Units & Pump
     
-    In the Onboarding Wizard, you will select your [Glucose Units](settings/therapy/units_limits.md#glucose-units) and Pump Model, but you will not pair your pump yet. You will pair your pump after completing the Onboarding process.
-    
-    [Learn how to connect your insulin pump](settings/devices/pump.md#step-1-add-pump)
+    In the Onboarding Wizard, you will select your [Glucose Units](settings/therapy/units_limits.md#glucose-units) and Pump Model, but you will not pair your pump yet. You will pair your pump and CGM after completing the Onboarding process (See [Step 7](#step-7-connect-your-devices)).
         
 === "After Onboarding"
     ### Edit Diagnostics
@@ -56,13 +72,13 @@ In this step, you'll configure diagnostics sharing, optionally sync with Nightsc
     
     ![Devices Settings](img/pumpMenu.png){ width="400px" }  
     [Learn how to connect or change your insulin pump](settings/devices/pump.md)
-    {align=center}
+    {align=center}  
     
 </div>
 
 - - -
 
-## Step 2: Therapy Settings
+## **Step 2:** Therapy Settings
 
 The next step is to enter your Therapy Settings. These include:
 
@@ -99,7 +115,7 @@ The next step is to enter your Therapy Settings. These include:
 
 - - -
 
-## Step 3: Delivery Limits
+## **Step 3:** Delivery Limits
 
 In this step you will set the boundaries for insulin delivery and carb entries to help Trio keep your insulin dosing safe, yet effective.
 
@@ -133,7 +149,7 @@ In this step you will set the boundaries for insulin delivery and carb entries t
 
 - - -
 
-## Step 4: Algorithm Settings
+## **Step 4:** Algorithm Settings
 
 Trio includes several algorithm settings that allow you to customize the Oref algorithm behavior to suit your specific needs.
 
@@ -268,25 +284,37 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
 
 - - -
 
-## Step 5: Notifications
+## **Step 5:** Notifications
 In this step you will allow Trio to send you [notifications](settings/notifications/notifications.md). These include alerts, sounds, and icon badges of your choosing. Notifications give you important Trio information without requiring you to open the app. It is essential that these are allowed in your iPhone system settings.  
 
 - - -
 
-## Step 6: Bluetooth
+## **Step 6:** Bluetooth
 Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do not have Bluetooth enabled in your iOS settings, you will not be able to connect your phone to your insulin pump or CGM.
 
 - - -
 
-## Step 7: Enable Closed Loop (Not in Onboarding Wizard)
+!!! important "You're Not Finished Yet!"
+    **Steps 7 & 8 are not in the Onboarding Wizard**  
+    These cannot be completed until you've finished onboarding, but _must_ be completed before you can start using Trio.
+    
+    If you are not ready to start using Trio with a live pump or cgm, you can either use the simulator pump/cgm option or wait to complete these steps and leave no pump or cgm connected.
+
+## **Step 7:** Connect Your Devices
+[Connect your Insulin Pump](settings/devices/pump.md)  
+[Connect your CGM](settings/devices/cgm.md)  
+[Connect your Watch](smart_watch.md)  
+
+- - -
+
+## **Step 8:** Enable Closed Loop
+
+!!! warning
+    Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration instructions [here](settings/closed-loop.md#want-to-stay-in-open-loop).
 
 Closed loop functionality is turned off by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed Loop is **OFF**. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop.
 
-!!! important
-    Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration [here](settings/closed-loop.md#want-to-stay-in-open-loop).
-    
-[More on closing the loop](settings/closed-loop.md)
-
+[More on closing the loop](settings/closed-loop.md)  
 ![Enable Closed loop](img/closeLoop.png){ width="500px"  }
 {align=center}
 
@@ -297,7 +325,7 @@ Closed loop functionality is turned off by default. This means Trio cannot make 
     It is essential that Trio has enough data to make sound recommendations. Your settings must be tuned to be used in an Oref algorithm and you must feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:  
     
     - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm 
-    - You have used Trio with a real CGM and real pump (not simulators) for the recommended minimum of **7 consecutive days**
+    - You have used this version of Trio with a real CGM and real pump (not simulators) for the recommended minimum of **7 consecutive days**
     - You are comfortable with the Trio app
     
 
@@ -309,17 +337,17 @@ Closed loop functionality is turned off by default. This means Trio cannot make 
 
 - - -
 
-## Step 8: Change App Icon (Optional)
+## **Step 9:** Change App Icon (Optional)
 
 Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.
 
 ![Change App Icon](img/icon_selection.png)
 {align=center}
 
-
+<!-- NOTE: Commented out until customizations page (install/customize.md) is updated. Will be removed if we do not include build customizations.
 Have a special icon in mind?  
-You can use your own custom icon by following the instructions under [Customizations](../operate/customize.md).
-
+You can use your own custom icon by following the instructions under [Customizations](../install/customize.md#add-custom-icon).
+-->
 ***Congratulations!*** You've completed the New User Setup for Trio!
 
 

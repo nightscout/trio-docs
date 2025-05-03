@@ -91,7 +91,14 @@ Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../.
 - - -
 
 ### Glucose Simulator
-This option should ***only*** be used when learning how to interact with the app. It should not be used to learn how the algorithm will respond, nor should it ever be used on a living being.
+
+!!! warning
+    If using a Glucose Simulator, it is important to understand:
+     
+    - You will only experience the user interface of Trio.
+    - Using a Glucose Simulator does not indicate how the app will perform, nor will it give accurate guidance or suggestions for insulin dosing.
+    - A Glucose Simulator should **NEVER** be used with a live pump connected to a living person or pet.
+    - **Only use a Glucose Simulator if you understand the conditions above.**
 
 **Step 2**
 Continue to [Connect Watch](smart_watch.md) _OR_ return to [New User Setup](../../new_user_setup.md)
