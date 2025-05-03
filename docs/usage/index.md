@@ -10,7 +10,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[User Interface](usage/interface.md)__
+-   __[User Interface](interface.md)__
 
     - - -
     
