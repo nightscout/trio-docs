@@ -15,18 +15,28 @@ Use this documentation as your home base to refer back to as needed.
 
 - - -
 
-***Jump to:***  
+***Jump to:***
+<div class="grid" markdown>
 
-[**Step 1:** Prepare Trio](#step-1-prepare-trio)  
-[**Step 2:** Therapy Settings](#step-2-therapy-settings)  
-[**Step 3:** Delivery Limits](#step-3-delivery-limits)  
-[**Step 4:** Algorithm Settings](#step-4-algorithm-settings)  
-[**Step 5:** Notifications](#step-5-notifications)  
-[**Step 6:** Bluetooth](#bluetooth)  
-[**Step 7:** Connect Your Devices](#step-7-connect-your-devices)  
-[**Step 8:** Enable Closed Loop](#step-8-enable-closed-loop)  
-[**Step 9:** Change App Icon (Optional)](#step-9-change-app-icon-optional)  
+[**Step 1:** Prepare Trio](#step-1-prepare-trio)
 
+[**Step 6:** Bluetooth](#step-6-bluetooth)
+
+[**Step 2:** Therapy Settings](#step-2-therapy-settings)
+
+[**Step 7:** Connect Your Devices](#step-7-connect-your-devices)
+
+[**Step 3:** Delivery Limits](#step-3-delivery-limits)
+
+[**Step 8:** Enable Closed Loop](#step-8-enable-closed-loop)
+
+[**Step 4:** Algorithm Settings](#step-4-algorithm-settings)
+
+[**Step 9:** Change App Icon (Optional)](#step-9-change-app-icon-optional)
+
+[**Step 5:** Notifications](#step-5-notifications)
+
+</div>
 - - -
  
 ## **Step 1:** Prepare Trio
@@ -274,23 +284,26 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
     ### Edit Target Behavior
     [Target Behavior](settings/algorithm/target_behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.
     
-    [Learn more about High Temp Target Raises Sensitivity](settings/algorithm/target_behavior.md#high-temp-target-raises-sensitivity)  
-    [Learn more about Low Temp Target Lowers Sensitivity here](settings/algorithm/target_behavior.md#low-temp-target-lowers-sensitivity)  
-    [Learn more about Sensitivity Raises Target](settings/algorithm/target_behavior.md#sensitivity-raises-target)  
-    [Learn more about Resistance Lowers Target](settings/algorithm/target_behavior.md#resistance-lowers-target)  
-    [Learn more about Half Basal Exercise Target](settings/algorithm/target_behavior.md#half-basal-exercise-target)  
+    Below you'll find more information on the Target Behavior settings:  
+    
+    [High Temp Target Raises Sensitivity](settings/algorithm/target_behavior.md#high-temp-target-raises-sensitivity)  
+    [Low Temp Target Lowers Sensitivity here](settings/algorithm/target_behavior.md#low-temp-target-lowers-sensitivity)  
+    [Sensitivity Raises Target](settings/algorithm/target_behavior.md#sensitivity-raises-target)  
+    [Resistance Lowers Target](settings/algorithm/target_behavior.md#resistance-lowers-target)  
+    [Half Basal Exercise Target](settings/algorithm/target_behavior.md#half-basal-exercise-target)  
 
 </div>
 
 - - -
 
 ## **Step 5:** Notifications
-In this step you will allow Trio to send you [notifications](settings/notifications/notifications.md). These include alerts, sounds, and icon badges of your choosing. Notifications give you important Trio information without requiring you to open the app. It is essential that these are allowed in your iPhone system settings.  
+In this step you will allow Trio to send you notifications. These include alerts, sounds, and icon badges of your choosing. Notifications give you important Trio information without requiring you to open the app. It is essential that these are allowed in your iPhone system settings. Once you complete onboarding, you can customize your notifications. 
 
+To edit Notifications after you've completed onboarding, head over to the [Notifications](settings/notifications/index.md) section for more information on each type of notification and how to edit them.
 - - -
 
 ## **Step 6:** Bluetooth
-Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do not have Bluetooth enabled in your iOS settings, you will not be able to connect your phone to your insulin pump or CGM.
+Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do not have Bluetooth enabled in your iOS settings, you will not be able to connect your phone to your insulin pump or CGM. A pop up will appear that makes this easy to enable if it hasn't been already.
 
 - - -
 
@@ -303,7 +316,7 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 ## **Step 7:** Connect Your Devices
 [Connect your Insulin Pump](settings/devices/pump.md)  
 [Connect your CGM](settings/devices/cgm.md)  
-[Connect your Watch](smart_watch.md)  
+[Connect your Watch](settings/devices/smart_watch.md)  
 
 - - -
 
@@ -312,21 +325,21 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 !!! warning
     Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration instructions [here](settings/closed-loop.md#want-to-stay-in-open-loop).
 
-Closed loop functionality is turned off by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed Loop is **OFF**. You can control your pump and bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will get no Trio-initiated protection from lows or highs while in open loop.
+Closed loop functionality is turned **OFF** by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed Loop is **OFF**. You can control your pump and manually bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will ***not receive any Trio-initiated protection from lows or highs while in open loop***.
 
-[More on closing the loop](settings/closed-loop.md)  
-![Enable Closed loop](img/closeLoop.png){ width="500px"  }
+![Enable Closed loop](img/closeLoop.png){ width="500px" }  
+[More on closing the loop](settings/closed-loop.md)
 {align=center}
 
 - - -
 
-!!! danger "DO NOT ENABLE DYNAMIC SETTINGS YET"  
+!!! warning "Dynamic Settings"  
     
-    It is essential that Trio has enough data to make sound recommendations. Your settings must be tuned to be used in an Oref algorithm and you must feel comfortable using the Trio app. It is not recommended to enable dynamic settings until ALL criteria below are met:  
+    Trio will not allow you to enable Dynamic Settings until it has accumulated 7 days of data. This is essential so Trio can make sound dosing recommendations. Once it has enough data and you can enable Dynamic Settings, it is still recommended that you have already...  
     
-    - You are confident that your ISF, CR, and Basal Rates are tuned for use in the Oref algorithm 
-    - You have used this version of Trio with a real CGM and real pump (not simulators) for the recommended minimum of **7 consecutive days**
-    - You are comfortable with the Trio app
+    - ...tuned your core Trio settings (ISF, CR, and Basal Rates) for use in the Oref algorithm.
+    - ...used Trio with a _real_ CGM and _real_ pump (not simulators) for the recommended minimum of **7 consecutive days**.
+    - ...read and understand the Dynamic Settings and how they interact with each other.
     
 
 !!! danger "DO NOT ALTER ANYTHING ELSE UNTIL YOU'VE TESTED AND VERIFIED YOUR SETTINGS"
