@@ -20,11 +20,11 @@ Before starting with Trio, you should evaluate all your closed-loop options, inc
 
 # Getting Started
 
-Before starting with Trio, you should understand [carb ratio (CR)](./settings/configuration/carbratios.md#insulin-carbohydrate-ratio), [insulin sensitivity factor (ISF)](./settings/configuration/insulinsensitivities.md#insulin-sensitivity-factor), and [basal rates](./settings/configuration/basalprofile.md#basal-profile). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
+Before starting with Trio, you should understand [carb ratio (CR)](configuration/settings/therapy/carb_ratios.md){: target="_blank" }, [insulin sensitivity factor (ISF)](configuration/settings/therapy/isf.md){: target="_blank" }, and [basal rates](configuration/settings/therapy/basal_rates.md){: target="_blank" }). If you have read the documentation and still require help identifying your settings, please seek advice from your healthcare provider.
 
 To use Trio, you are required to build the application from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](./configuration/settings/closed-loop.md), enabling [Super Micro Bolus (SMB)](./settings/configuration/preferences/smbsettings.md#smb-settings) features, and turning on [dynamic features](./settings/configuration/preferences/dynamicsettings.md#dynamic-settings).
+Upon installation, you will need to configure your settings appropriately. By default Trio acts no differently than your pump, with the exception that it may recommend temporary basals from time to time. The magic happens by turning on ["Closed Loop"](./configuration/settings/closed-loop.md), enabling [Super Micro Bolus (SMB)](configuration/settings/algorithm/smb_settings.md) features, and turning on [dynamic features](configuration/settings/algorithm/dynamic_settings.md#activate-dynamic-isf).
 
 >In general, these are the first three settings you will want to configure as you gain confidence in the app and your settings:
 >
@@ -32,7 +32,8 @@ Upon installation, you will need to configure your settings appropriately. By de
 >- Enable Closed Loop for automation
 >- Increase Max IOB to "average meal bolus + 3x max hourly basal"
 >- Enable SMB and UAM for automatic bolusing (ensure your ISF is optimized before enabling this)
->See [Configure](./configuration/Configure.md#device-configuration) for more information on Trio configuration.
+>  
+> See [this  page](./configuration/index.md) for more information on Trio configuration.
 
 If you are considering a transition from another closed loop system, please read [this section](./configuration/transition-qa.md) first.
 
