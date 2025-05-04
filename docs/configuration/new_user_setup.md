@@ -116,7 +116,7 @@ The next step is to enter your Therapy Settings. These include:
     
     Below you'll find a step by step guide to edit each of these settings:
     
-    - [Glucose Targets](settings/therapy/target_glucose.md#how-to-enter-your-target-glucose-into-trio)  
+    - [Glucose Targets](settings/therapy/target_glucose.md#how-to-enter-your-glucose-targets-into-trio)  
     - [Basal Rates](settings/therapy/basal_rates.md#how-to-enter-your-basal-profiles-into-trio)  
     - [Carb Ratios (CR)](settings/therapy/carb_ratios.md#how-to-enter-your-carb-ratios-cr-into-trio)  
     - [Insulin Sensitivities (ISF)](settings/therapy/isf.md#how-to-enter-your-isf-into-trio)  

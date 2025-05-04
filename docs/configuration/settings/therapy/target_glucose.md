@@ -1,4 +1,4 @@
-# Target Glucose
+# Glucose Targets
 
 Trio will target this value when calculating insulin needs. It should be set to the blood glucose you would like to reach when corrections are made. A recommended value is between 90-110mg/dL or 5-6mmol/L
 
@@ -8,11 +8,11 @@ Trio will target this value when calculating insulin needs. It should be set to 
     Some users only have one target.  
     Others have a lower target during the day and a higher target during the night to avoid lows.
 
-## How to Enter Your Target Glucose Into Trio
+## How to Enter Your Glucose Targets Into Trio
 
 ### Step 1
 
-Enter the Target Glucose screen
+Enter the Glucose Targets screen
 
 ![Target Profile Menu](img/glucose_target_menu.png){ width="600px"  }
 {align=center}

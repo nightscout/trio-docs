@@ -295,7 +295,7 @@ nav:
               - Basal Rates: configuration/settings/therapy/basal_rates.md
               - Insulin Sensitivities: configuration/settings/therapy/isf.md
               - Carb Ratios: configuration/settings/therapy/carb_ratios.md
-              - Target Glucose: configuration/settings/therapy/target_glucose.md
+              - Glucose Targets: configuration/settings/therapy/target_glucose.md
           - Algorithm:
               - configuration/settings/algorithm/index.md
               - Autosens: configuration/settings/algorithm/autosens.md
