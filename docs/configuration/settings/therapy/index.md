@@ -34,7 +34,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Step by step guide on setting your carb ratio(s)
     
--   __[Target Glucose](target_glucose.md)__
+-   __[Glucose Targets](glucose_targets.md)__
 
     - - -
     
