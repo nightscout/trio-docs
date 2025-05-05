@@ -1,17 +1,34 @@
 # New User Setup Guide
 
-![Home Screen Mockup](img/trio_phone_mockup.png){ width="500px"  }
-{align=center}
-
 Welcome to the New User Setup Guide and congratulations on a successful Trio build! This guide walks you through how to set up your Trio app once you have installed it on your phone.  
 
 If you still need to install the app, head to the Build Instructions for [Mac](../install/build/mac/overview.md) or [Browser](../install/build/browser/browser-build-overview.md) and come back here when you are ready to start the setup process!
 
-Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for During Onboarding and After Onboarding. The "During Onboarding" tab will provide additional information for that step of the Onboarding Wizard. The "After Onboarding" tab will show you where to edit the relevant settings after onboarding is complete as well as the additional information on those settings.
+- - -
+## Onboarding Wizard
 
-If you've completed the Onboarding Wizard and need guidance on what to do next, jump to [Step 7: Connect Your Devices](#step-7-connect-your-devices)
+Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for **During Onboarding** and **After Onboarding**, explained below.  
+    
+<div class="grid" markdown>
 
-Use this documentation as your home base to refer back to as needed.
+![Onboarding Screen](img/onboarding-guide.png)
+
+=== "During Onboarding"
+    
+    Information under the **During Onboarding** tab provides additional information for that step of the Onboarding Wizard.  
+    
+    Use this documentation as your home base to refer back to as needed.
+    
+=== "After Onboarding"
+    
+    Information under the **After Onboarding** tab shows you where to edit the relevant settings after onboarding is complete as well as the additional information on those settings.  
+    
+    Use this documentation as your home base to refer back to as needed.
+    
+</div>
+
+!!! tip
+    If you've completed the Onboarding Wizard and need guidance on what to do next, jump to [Step 7: Connect Your Devices](#step-7-connect-your-devices)
 
 - - -
 
@@ -306,12 +323,14 @@ To edit Notifications after you've completed onboarding, head over to the [Notif
 Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do not have Bluetooth enabled in your iOS settings, you will not be able to connect your phone to your insulin pump or CGM. A pop up will appear that makes this easy to enable if it hasn't been already.
 
 - - -
+<p style="text-align: center; font-size: 32px;">Congratulations!</p>
+<p style="text-align: center; font-size: 24px;">But, you're not done yet!</p>  
 
-!!! important "You're Not Finished Yet!"
-    **Steps 7 & 8 are not in the Onboarding Wizard**  
-    These cannot be completed until you've finished onboarding, but _must_ be completed before you can start using Trio.
-    
-    If you are not ready to start using Trio with a live pump or cgm, you can either use the simulator pump/cgm option or wait to complete these steps and leave no pump or cgm connected.
+![Home Screen Mockup](img/trio-phone-mockup.mp4){ width="500px" }
+{ align=center }
+
+**Steps 7 & 8 are not in the Onboarding Wizard**  
+These cannot be completed until you've finished onboarding, but _must_ be completed before you can start using Trio.
 
 ## **Step 7:** Connect Your Devices
 [Connect your Insulin Pump](settings/devices/pump.md)  
