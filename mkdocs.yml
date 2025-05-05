@@ -187,6 +187,9 @@ validation:
     absolute_links: info
     unrecognized_links: info
 
+exclude_docs: |
+  /includes/
+
 not_in_nav: |
   0.2.x/Analyze/EvaluateBasal.md
   0.2.x/Analyze/EvaluateCR.md
@@ -201,8 +204,6 @@ not_in_nav: |
   configuration/CompatibleDevices.md
   configuration/configure.md
   configuration/transition-qa.md
-  includes/version-compatibility-matrix.md
-  includes/supported-iphones.md
   operate/build.md
   operate/customize.md
   resources/citations.md
