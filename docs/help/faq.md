@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Frequently Asked Questions ✏️
 Various resources, including [Facebook](https://www.facebook.com/groups/diytrio), and [Discord](https://discord.com/invite/FnwFEFUwXE), are available to assist you with setting up, maintaining, and succeeding in your Trio journey. Below is a series of questions we see asked daily. We hope it helps. 
 
 ## Trio FAQs
