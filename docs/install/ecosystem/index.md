@@ -8,8 +8,8 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Nightscout](nightscout-app.md)__
--   __[Loop Follow](loop-follow.md)__
--   __[XDrip4iOS](xdrip4ios.md)__
+-   __[Nightscout ✏️](nightscout-app.md)__
+-   __[Loop Follow ✏️](loop-follow.md)__
+-   __[XDrip4iOS ✏️](xdrip4ios.md)__
 
 </div>

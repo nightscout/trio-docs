@@ -24,14 +24,14 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Answers the question: What phones will work with Trio?
     
--   __[Mac](mac.md)__
+-   __[Mac ✏️](mac.md)__
 
     - - -
     
     ***🚧Work in Progress🚧  
     Coming Soon!***
     
--   __[Compatibility Matrix](compatibility-matrix.md)__
+-   __[Compatibility Matrix ✏️](compatibility-matrix.md)__
 
     - - -
     

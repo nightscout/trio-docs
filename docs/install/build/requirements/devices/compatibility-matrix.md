@@ -1,5 +1,5 @@
 
-# Version Compatibility Matrix
+# Version Compatibility Matrix ✏️
 
 This page provides a compatibility matrix listing the supported versions of iOS, Xcode, and macOS for building Trio. It helps ensure you are using the correct combination of tools and operating systems when creating your own version of Trio.
 
