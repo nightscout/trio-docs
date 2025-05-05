@@ -319,15 +319,16 @@ nav:
               - Calendar Events: configuration/settings/notifications/calendar_events.md
           - Services:
               - configuration/settings/services/index.md
-              - Nightscout: configuration/settings/services/nightscout.md
+              - Nightscout ✏️: configuration/settings/services/nightscout.md
               - Tidepool ✏️: configuration/settings/services/tidepool.md
-              - Apple Health: configuration/settings/services/apple_health.md
+              - Apple Health ✏️: configuration/settings/services/apple_health.md
           - Closing The Loop: configuration/settings/closed-loop.md
   - Help:
-      - FAQs: help/faq.md
+      - help/index.md
+      - FAQs ✏️: help/faq.md
       - Safety ✏️: help/safety.md
-      - Glossary: help/glossary.md
-      - Troubleshooting: help/troubleshoot.md
+      - Glossary ✏️: help/glossary.md
+      - Troubleshooting ✏️: help/troubleshoot.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
       - Translate: help/translate.md
       - Support Communities:
