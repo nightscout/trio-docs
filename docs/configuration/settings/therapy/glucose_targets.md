@@ -40,7 +40,7 @@ Adjust the time
 
 ### Step 5
 
-Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all CRs are set
+Repeat Steps [2](#step-2), [3](#step-3), and [4](#step-4) until all CRs are set
 
 ### Delete a Glucose Target Entry
 
@@ -58,5 +58,5 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Basal Rates](basal_rates.md) or return to [New User Setup](../../new_user_setup/)
+Proceed to [Basal Rates](basal_rates.md) or return to [New User Setup](../../new_user_setup.md)
 

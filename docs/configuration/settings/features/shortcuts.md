@@ -52,7 +52,7 @@ Adds a carb entry into Trio.
 Activates a chosen preset override.  
 
 !!! tip
-    You must first save the Preset Override on the [Adjustments](usage/interface.md#action-buttons) screen before you can activate an override using Shortcuts.
+    You must first save the Preset Override on the [Adjustments](../../../usage/interface.md#action-buttons) screen before you can activate an override using Shortcuts.
 
 - - -
 

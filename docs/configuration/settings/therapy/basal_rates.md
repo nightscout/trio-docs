@@ -72,7 +72,7 @@ Adjust the time
 
 ### Step 5
 
-Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all basal rates are set
+Repeat Steps [2](#step-2), [3](#step-3), and [4](#step-4) until all basal rates are set
 
 ### Delete a Basal Rate
 
@@ -90,4 +90,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Carb Ratios](carb_ratios.md) or return to [New User Setup](/configuration/new_user_setup/)
+Proceed to [Carb Ratios](carb_ratios.md) or return to [New User Setup](../../new_user_setup.md)

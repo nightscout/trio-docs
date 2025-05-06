@@ -1,6 +1,6 @@
 # Companion Apps
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Companion Applications homepage! These apps all work within the Trio ecosystem. They are separate apps that are interoperable with Trio and many other DIY AID systems.  
+![Trio Logo](../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Companion Applications homepage! These apps all work within the Trio ecosystem. They are separate apps that are interoperable with Trio and many other DIY AID systems.  
 
 - - -
 
