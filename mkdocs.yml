@@ -178,16 +178,6 @@ markdown_extensions:
       title: On this Page
       toc_depth: 3
 
-validation:
-  nav:
-    omitted_files: info
-    not_found: warn
-    absolute_links: info
-  links:
-    not_found: warn
-    absolute_links: info
-    unrecognized_links: info
-
 exclude_docs: |
   /includes/
 
