@@ -27,7 +27,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧Documentation Under Construction🚧
     A compilation of Trio terms and definitions
 
--   __[Troubleshooting](troubleshooting.md) ✏️__
+-   __[Troubleshooting](troubleshoot.md) ✏️__
 
     - - -
     

@@ -138,4 +138,4 @@ This setting allows you to choose a higher threshold setting than the default. N
     
 - - -
 
-Return to [New User Setup](/configuration/new_user_setup/)
+Return to [New User Setup](../../../configuration/new_user_setup.md)

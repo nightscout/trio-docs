@@ -1,6 +1,6 @@
 # Installation and Update
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../assets/images/trio-logo.png){ width="75", align="left"}
 
 Welcome to the installation and update homepage! Here you will find information about building, installing, and updating your Trio app.
 
