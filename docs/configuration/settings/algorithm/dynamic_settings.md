@@ -70,7 +70,7 @@ Turning on the Sigmoid Formula setting replaces the default logarithmic formula 
 
 The curve's steepness, reflecting how big adjustments are from one reading to another, is influenced by the [Adjustment Factor](#sigmoid-adjustment-factor), while [Autosens Max](./autosens.md#autosens-max) and [Min](./autosens.md#autosens-min) settings determine the limits of the ratio adjustment. Autosens Max and Min can also influence the curve's steepness with the Sigmoid Formula.
 
-When using the Sigmoid Formula, the [Weighted Average of TDD](#weighted-average-of-tdd) and Total Daily Dose (TDD) has much less impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from target your glucose readings are.
+When using the Sigmoid Formula, the [Weighted Average of TDD](#weighted-average-of-tdd) and Total Daily Dose (TDD) have much less impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from the target your glucose readings are.
 
 Before enabling this setting, please read the dedicated section on [sigmoid](../concepts/sigmoid.md). 
 
