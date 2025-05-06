@@ -9,7 +9,10 @@
 
 # What is Trio?
 
-![Trio Intro Video](assets/images/trio-intro.mp4)
+<video controls  preload="metadata">
+  <source src="assets/videos/trio-intro.mp4" type="video/mp4">
+  Your browser doesn’t support the HTML5 video tag.
+</video>
 
 ![Trio Logo](assets/images/trio-logo.png){ width="150", align="right" }
 
