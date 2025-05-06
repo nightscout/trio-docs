@@ -35,13 +35,13 @@ Because Trio utilizes SMBs and UAMs to help you reach your target glucose and ot
 ### Enable Fatty Meal Option
 **Default:** _OFF_  
 
-Enabling this setting adds a "Fatty Meal" option to the bolus calculator. Once this feature is enabled, a [Fatty Meal Bolus Percentage](#fatty_meal_bolus_percentage) setting will appear for you to select. The default for this setting is 70% of the full calculated bolus.
+Enabling this setting adds a "Fatty Meal" option to the bolus calculator. Once this feature is enabled, a [Fatty Meal Bolus Percentage](#fatty-meal-bolus-percentage) setting will appear for you to select. The default for this setting is 70% of the full calculated bolus.
 
 ### Fatty Meal Bolus Percentage
 **Default:** _70%_  
 **Setting Limits:** _5%-100%_  
 
-When entering a meal into the bolus calculator, select the Fatty Meal option to utilize this lower precentage rather than your [Recommended Bolus Percentage](#recommended_bolus_percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage using the formula below:
+When entering a meal into the bolus calculator, select the Fatty Meal option to utilize this lower percentage rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage using the formula below:
 
 $$
 \frac{Recommended\ Bolus\ Percentage \times Fatty\ Meal\ Bolus\ Percentage}{100}
@@ -79,7 +79,7 @@ This setting is useful for meals that require less insulin up front and more lat
 ### Enable Super Bolus Option
 **Default:** _OFF_  
 
-Enabling this setting adds a "Super Bolus" Option to the bolus calculator. Once this feature is enabled, a [Super Bolus Percentage](#super_bolus_percentage) setting will appear for you to set.
+Enabling this setting adds a "Super Bolus" Option to the bolus calculator. Once this feature is enabled, a [Super Bolus Percentage](#super-bolus-percentage) setting will appear for you to set.
 
 This option adds this set percentage of your current basal rate to your suggested bolus amount in the bolus calculator. If you want to receive all of your current basal rate in addition to your suggested meal bolus, use 100% for your Super Bolus Percentage.
 
@@ -87,7 +87,7 @@ This option adds this set percentage of your current basal rate to your suggeste
 **Default:** _100%_  
 **Setting Limits:** _5%-200%_  
 
-When entering a meal into the bolus calculator, select the Super Bolus option to utilize this higher bolus amount rather than your [Recommended Bolus Percentage](#recommended_bolus_percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage and current basal rate using the formula below:
+When entering a meal into the bolus calculator, select the Super Bolus option to utilize this higher bolus amount rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage and current basal rate using the formula below:
 
 <!-- TODO: Add formula for Super Bolus Calculation "bolus req x rec bolus % + current basal x (super bolus %/100)" -->
 

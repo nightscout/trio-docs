@@ -76,7 +76,7 @@ Before enabling this setting, please read the dedicated section on [sigmoid](../
 
 !!! warning
     
-    It is not recommended to set [Autosens Max](./autosens.md#autosens_max) higher than 150% when using Sigmoid
+    It is not recommended to set [Autosens Max](./autosens.md#autosens-max) higher than 150% when using Sigmoid
      
 !!! info
     

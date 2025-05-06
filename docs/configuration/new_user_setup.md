@@ -156,7 +156,7 @@ In this step you will set the boundaries for insulin delivery and carb entries t
     - [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
     - [Max Basal Rate](settings/therapy/units_limits.md#max-basal)  
     - [Max COB](settings/therapy/units_limits.md#max-cob)  
-    - [Minimum Safety Threshold](settings/therapy/units_limits.md#maximum-safety-threshold)
+    - [Minimum Safety Threshold](settings/therapy/units_limits.md#minimum-safety-threshold)
     
 === "After Onboarding"
     
@@ -170,7 +170,7 @@ In this step you will set the boundaries for insulin delivery and carb entries t
     - [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
     - [Max Basal Rate](settings/therapy/units_limits.md#max-basal)  
     - [Max COB](settings/therapy/units_limits.md#max-cob)  
-    - [Minimum Safety Threshold](settings/therapy/units_limits.md#maximum-safety-threshold)
+    - [Minimum Safety Threshold](settings/therapy/units_limits.md#minimum-safety-threshold)
 
 </div>
 
