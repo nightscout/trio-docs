@@ -195,6 +195,7 @@ not_in_nav: |
   configuration/CompatibleDevices.md
   configuration/configure.md
   configuration/transition-qa.md
+  install/customize.md
   operate/build.md
   operate/customize.md
   resources/citations.md
@@ -213,7 +214,9 @@ not_in_nav: |
   settings/configuration/preferences/trio.md
   settings/loop.md
   settings/services/fatprotein.md
+  usage/overrides.md
   usage/statistics.md
+  usage/temptarget.md
 
 # Navigation (Page tree)
 nav:
