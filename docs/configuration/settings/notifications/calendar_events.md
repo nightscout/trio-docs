@@ -3,9 +3,9 @@
 ## Create Events in Calendar
 **Default:** _OFF_
 
-When enabled, Trio will create a customizable calendar event to keep you notified of you current glucose reading with every successful loop cycle.  
+When enabled, Trio will create a customizable calendar event to keep you notified of your current glucose reading with every successful loop cycle.  
 
-After this setting is turned on, the available cusstomizations will appear. You can customize with the [calendar](#choose-calendar) of your choosing, use of [emoji labels](#display-emojis-as-labels), and the inclusion of [IOB and COB data](#display-iob-and-cob).
+After this setting is turned on, the available customizations will appear. You can customize with the [calendar](#choose-calendar) of your choosing, use of [emoji labels](#display-emojis-as-labels), and the inclusion of [IOB and COB data](#display-iob-and-cob).
 
 !!! info
     Once a new calendar event is created, the previous event will be automatically deleted
