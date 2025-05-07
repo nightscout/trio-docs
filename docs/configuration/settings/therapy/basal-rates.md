@@ -90,4 +90,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Carb Ratios](carb_ratios.md) or return to [New User Setup](../../new-user-setup.md)
+Proceed to [Carb Ratios](carb-ratios.md) or return to [New User Setup](../../new-user-setup.md)
