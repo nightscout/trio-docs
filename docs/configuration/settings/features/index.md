@@ -8,13 +8,13 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Bolus Calculator](bolus_calculator.md)__
+-   __[Bolus Calculator](bolus-calculator.md)__
 
     - - -
     
     Personalize the bolus calculator using these settings
 
--   __[Meal Settings](meal_settings.md)__
+-   __[Meal Settings](meal-settings.md)__
 
     - - -
     
@@ -26,19 +26,19 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Enable and set up shortcuts
     
--   __[Remote Control](remote_control.md)__
+-   __[Remote Control](remote-control.md)__
 
     - - -
     
     Allow remote control and find the shared secret used in Loop Follow
     
--   __[User Interface](user_interface.md)__
+-   __[User Interface](user-interface.md)__
 
     - - -
     
     Personalize the User Interface with a variety of options and preferences
     
--   __[App Icons](app_icons.md)__
+-   __[App Icons](app-icons.md)__
 
     - - -
     
