@@ -44,7 +44,7 @@ Then, tap the "Connect" button when it turns blue at the bottom.
 {align=center}
 
 **Step 6**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -80,7 +80,7 @@ Connect your RileyLink, OrangeLink, or EmaLink and tap "Continue"
 {align=center}
 
 **Step 8**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -110,7 +110,7 @@ Choose your insulin type and tap "Continue"
 {align=center}
 
 **Step 7**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -146,7 +146,7 @@ Select your pump from the list of found pumps
 {align=center}
 
 **Step 8**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -157,7 +157,8 @@ Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user
      
     - You will only experience the user interface of Trio.
     - Using a pump simulator does not indicate how the app will perform, nor will it give accurate guidance or suggestions for insulin dosing.
-    - Trio may not run consistently in the background when using a pump simulator
+    - Trio may not run consistently in the background when using a pump simulator.
+    - If you use a pump simulator and switch to a live pump, you must delete all insulin dosing history.
     - **Only use a pump simulator if you understand the conditions above.**
     
 **Step 3**
@@ -167,6 +168,6 @@ Choose from the variety of simulator pump options and tap "Done" in the upper ri
 {align=center}
 
 **Step 4**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -

@@ -28,22 +28,22 @@ Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-a
 
 ## CGM
 
-- [Nightscout](settings/devices/cgm.md#nightscout)  
-- [xDrip](settings/devices/cgm.md#xdrip-xdrip4ios)  
-- [Dexcom G5/Dexcom G6/Dexcom ONE](settings/devices/cgm.md#dexcom-g5-g6-and-dexcom-one)  
-- [Dexcom G7/Dexcom ONE+](settings/devices/cgm.md#dexcom-g7-and-dexcom-one)  
-- [Glucose Simulator](settings/devices/cgm.md#glucose-simulator)  
-- [Libre Transmitter](settings/devices/cgm.md#libre-transmitter)  
+- [Nightscout](settings/devices/cgm.md#nightscout-as-cgm)  
+- [xDrip](settings/devices/cgm.md#xdrip4ios)
+- [Dexcom G5/Dexcom G6/Dexcom ONE](settings/devices/cgm.md#dexcom-g5-and-dexcom-g6dexcom-one)
+- [Dexcom G7/Dexcom ONE+](settings/devices/cgm.md#dexcom-g7dexcom-one)
+- [Glucose Simulator](settings/devices/cgm.md#glucose-simulator)
+- [Libre Transmitter](settings/devices/cgm.md#freestyle-libre)
     - Libre 1, all models (requires Miao-Miao)  
     - Libre 2/2 Plus, EU models (US models not supported)  
     - Libre 3/3 Plus, all models (requires LibreLinkUp and continuous internet connection)  
-- [Medtronic Enlite](settings/devices/cgm.md#medtronic-enlite)  
+- [Medtronic Enlite](settings/devices/cgm.md#medtronic-enlite)
 
 - - -
 
 ## Watches
 
-- [Apple Watch](settings/devices/smart_watch.md#apple-watch)  
+- [Apple Watch](settings/devices/smart-watch.md#apple-watch)  
     - Ultra 1  
     - Series 9  
     - Series 8  
@@ -52,6 +52,6 @@ Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-a
     - SE (2nd Gen)  
     - Series 5  
     - Series 4  
-- [Garmin Watch](settings/devices/smart_watch.md#garmin)  
+- [Garmin Watch](settings/devices/smart-watch.md#garmin)  
 
 - - -

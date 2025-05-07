@@ -1,4 +1,4 @@
-# Glossary
+# Glossary ✏️
 
 Each item in the glossary is also a Tooltip. The word or phrase is repeated in parentheses to assist those using Google Translate.
 

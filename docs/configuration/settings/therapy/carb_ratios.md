@@ -91,7 +91,7 @@ Adjust the time
 
 ### Step 5
 
-Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all CRs are set
+Repeat Steps [2](#step-2), [3](#step-3), and [4](#step-4) until all CRs are set
 
 ### Delete an ISF Entry
 
@@ -109,4 +109,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](../../new_user_setup.md)
+Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](../../new-user-setup.md)

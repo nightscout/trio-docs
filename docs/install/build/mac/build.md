@@ -177,7 +177,7 @@ Once you've resolved a build error and started the build process again, Xcode wi
 ## Successful Build
 
 Congratulations on building Trio, and welcome to the community.  
-Please see the [New User Guide](../../../configuration/new_user_setup.md) to get started with Trio. 
+Please see the [New User Guide](../../../configuration/new-user-setup.md) to get started with Trio. 
 
 ![Alt Text](img/xc-congratulations.gif){width=500"}
 {align= "center"}

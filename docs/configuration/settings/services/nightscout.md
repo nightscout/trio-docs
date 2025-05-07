@@ -1,4 +1,4 @@
-# Visualization and Monitoring
+# Visualization and Monitoring ✏️
 
 !!! tip "Highlights"
     - *Nightscout* is optional but encouraged

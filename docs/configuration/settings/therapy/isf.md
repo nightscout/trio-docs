@@ -99,7 +99,7 @@ Adjust the time
 
 ### Step 5
 
-Repeat Steps [2](#step-2), [3](#step-3), and [4](step-4) until all ISFs are set
+Repeat Steps [2](#step-2), [3](#step-3), and [4](#step-4) until all ISFs are set
 
 ### Delete an ISF Entry
 
@@ -117,4 +117,4 @@ Save your changes!
 
 ### Step 7
 
-Return to [New User Setup](../../new_user_setup.md)
+Return to [New User Setup](../../new-user-setup.md)
