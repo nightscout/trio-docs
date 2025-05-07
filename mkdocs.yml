@@ -252,12 +252,12 @@ nav:
           - Build Trio with Xcode: install/build/mac/build.md
           - Build Errors: install/build/mac/build-errors.md
           - Update Trio with Xcode: install/build/mac/update.md
-      - Build with Browser:
+      - Build with Browser ✏️:
           - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
           - Create GitHub Account ✏️: install/build/browser/create-github-account.md
           - Collect Secrets ✏️: install/build/browser/collect-secrets.md
           - Fork and Prepare your Trio Repository✏️: install/build/browser/fork-prepare-repo.md
-          - GitHub Actions:
+          - GitHub Actions ✏️:
               - Validate Secrets ✏️: install/build/browser/actions/validate-secrets.md
               - Add Identifiers ✏️: install/build/browser/actions/add-identifiers.md
               - Prepare App ✏️: install/build/browser/actions/prepare-app.md
@@ -310,7 +310,7 @@ nav:
               - Trio Notifications: configuration/settings/notifications/trio_notifications.md
               - Live Activity: configuration/settings/notifications/live_activity.md
               - Calendar Events: configuration/settings/notifications/calendar_events.md
-          - Services:
+          - Services ✏️:
               - configuration/settings/services/index.md
               - Nightscout ✏️: configuration/settings/services/nightscout.md
               - Tidepool ✏️: configuration/settings/services/tidepool.md

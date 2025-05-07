@@ -9,7 +9,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Close The Loop](closed-loop.md)__
 -   __[Devices](devices/index.md)__
 
     - - -
@@ -45,5 +44,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
     
     Connect Nightscout, Tidepool, and Apple Health
+    
+-   __[Close The Loop](closed-loop.md)__
     
 </div>
