@@ -7,7 +7,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[New User Setup Guide](new_user_setup.md)__
+-   __[New User Setup Guide](new-user-setup.md)__
 
     - - -
     
