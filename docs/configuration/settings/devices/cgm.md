@@ -78,7 +78,7 @@ Select your 3rd party transmitter from the list of found devices and tap "Save"
 {align=center}
 
 **Step 5**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -86,7 +86,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 <!-- TODO: add information on Libre Demo -->
 
 **Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -101,7 +101,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
     - **Only use a Glucose Simulator if you understand the conditions above.**
 
 **Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -109,7 +109,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic CGM data directly from the pump using a RileyLink-compatible device.
 
 **Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -117,7 +117,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 While using Nightscout as a CGM is an option, it should be avoided if possible because it does not keep Trio running in the background like other CGM options.
 
 **Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -127,7 +127,7 @@ To use xDrip4iOS as a cgm source, you must build it yourself with the same Apple
 However, if you are using Dexcom G6 or ONE with xDrip4iOS, you can choose the Dexcom G6 option in Trio rather than xDrip4iOS, and Trio will intercept the glucose readings even if you're using Shuggah or someone else's TestFlight of xDrip4iOS.
 
 **Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md.md)
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
