@@ -134,7 +134,7 @@ This limits Autotune's ability to make more aggressive adjustments to your CR, b
 ## Autosens Min
 Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) and [Autotune](../autotune.md) before adjusting this setting.
 
-This setting determines the minimum ratio autosens can use for its adjustments. 
+This setting determines the minimum ratio autosens can use for its adjustments. Decreasing this value allows autosens to reduce insulin given through your basal profile, ISF, and target blood glucose.
 
 ### Autosens Min with Dynamic ISF and/or Dynamic CR
 This setting prevents Dynamic ISF and Dynamic CR from driving insulin delivery below a safe threshold.
