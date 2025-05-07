@@ -12,7 +12,7 @@ The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amo
 There are 3 options for you to select from for how your Sensitivity Ratio is calculated:
     
 - [Autosens](#autosens): Adjusts your Sensitivity Ratio based on a series of comparisons of the last 8 hours versus the last 24 hours of insulin usage. **This is the default calculation.**
-- [Logarithmic Dynamic ISF](./dynamic_settings.md#activate-dynamic-isf): Adjusts your Sensitivity Ratio based on your Total Daily Dose (TDD) from the last 24 hours vs the last 10 days to adjust your Sensitivity Ratio.
+- [Logarithmic Dynamic ISF](./dynamic-settings.md#activate-dynamic-isf): Adjusts your Sensitivity Ratio based on your Total Daily Dose (TDD) from the last 24 hours vs the last 10 days to adjust your Sensitivity Ratio.
 - [Sigmoid Dynamic ISF](): Adjusts your Sensitivity Ratio based on how far above or below target your current glucose reading is.
 
 !!! note
