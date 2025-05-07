@@ -1,8 +1,8 @@
-# Translation
+# Translation ✏️
 
 ## Language List
 
-Click on a language on the links below to turn on Google's automatic translation.
+<!-- Click on a language on the links below to turn on Google's automatic translation.
 
 
 [عربي](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ar)
@@ -99,3 +99,5 @@ The graphic below shows the *Google Translate* Tool when maximized (default) for
 
 ![TODO](img/google-xslate.svg){ "width": "600px" }
 { align: center}
+
+-->

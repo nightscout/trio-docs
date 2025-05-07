@@ -11,34 +11,35 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
-    🚧Documentation Under Construction🚧
+    🚧 Documentation Under Construction 🚧  
     Frequently Asked Questions
 
 -   __[Safety](safety.md) ✏️__
 
     - - -
     
-    🚧Documentation Under Construction🚧
+    🚧 Documentation Under Construction 🚧
 
 -   __[Glossary](glossary.md) ✏️__
 
     - - -
     
-    🚧Documentation Under Construction🚧
+    🚧 Documentation Under Construction 🚧  
     A compilation of Trio terms and definitions
 
 -   __[Troubleshooting](troubleshoot.md) ✏️__
 
     - - -
     
-    🚧Documentation Under Construction🚧
+    🚧 Documentation Under Construction 🚧
 
 -   __[Submit an Issue](https://github.com/nightscout/trio-docs/issues/new/choose)__
 
--   __[Translate](translate.md)__
+-   __[Translate](translate.md) ✏️__
 
     - - -
     
+    🚧 Documentation Under Construction 🚧      
     Documentation in other languages
 
 -   __Support Communities__
