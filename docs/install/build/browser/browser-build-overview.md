@@ -7,7 +7,7 @@ Congratulations on choosing to build Trio using your web browser, aka "Browser B
     
 **Requirements:**
 
-- [Compatible Phone](iphone.md#compatible-iphones)
+- [Compatible Phone](../mac/iphone.md#compatible-iphones)
 - [Compatible CGM](../requirements/devices/cgm.md)
 - [Compatible Insulin Pump](../requirements/devices/pump.md)
 - [Apple Developer Account](../requirements/apple-developer.md)

@@ -196,24 +196,7 @@ not_in_nav: |
   configuration/configure.md
   configuration/transition-qa.md
   install/customize.md
-  operate/build.md
-  operate/customize.md
   resources/citations.md
-  settings/configuration/preferences/statistics.md
-  settings/devices/pump.md
-  settings/configuration/autotune.md
-  settings/configuration/basalprofile.md
-  settings/configuration/targetglucose.md
-  settings/configuration/insulinsensitivities.md
-  settings/configuration/target_glucose.md
-  settings/configuration/concepts/sigmoid.md
-  settings/configuration/concepts/smb-uam.md
-  settings/configuration/preferences/mainsettings.md
-  settings/configuration/preferences/othersettings.md
-  settings/configuration/preferences/targetsettings.md
-  settings/configuration/preferences/trio.md
-  settings/loop.md
-  settings/services/fatprotein.md
   usage/overrides.md
   usage/statistics.md
   usage/temptarget.md
