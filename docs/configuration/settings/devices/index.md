@@ -52,7 +52,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Step by step guide to add your CGM
     
--   __[Smart Watch](smart_watch.md)__
+-   __[Smart Watch](smart-watch.md)__
 
     - - -
     

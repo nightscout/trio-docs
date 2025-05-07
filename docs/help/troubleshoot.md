@@ -67,7 +67,7 @@ If your BG rises fast and ends up too high, it is usually because the carbs were
 Trio calculates the amount of insulin needed to bring blood glucose back into range. Additional insulin is needed when blood glucose remains high after a meal, but Trio needs the correct settings to make those adjustments. 
 
 - The first adjustment should be to reduce your CR. Reducing your carb ratio will result in **more** insulin for the carbs entered.
-- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../configuration/settings/algorithm/dynamic_settings.md#activate-dynamic-cr) setting. 
+- If you notice that your CR needs fluctuate based on your blood sugar level at the time, evaluate activating the [Dynamic CR](../configuration/settings/algorithm/dynamic-settings.md#activate-dynamic-cr) setting. 
 
 ### Fast Rise, Then Low
 
@@ -79,4 +79,4 @@ In this scenario, you are not getting enough insulin upfront to deal with the ca
 2. If the delivered insulin is part bolus and part SMBs, you should consider adjusting your ISF setting so that the SMBs give you less insulin. It would help if you also considered pre-bolusing, giving the insulin more time to absorb before you start eating.
 3. In both (1) and (2), if you use dynamic ISF and CR features, you should consider lowering the Adjustment Factor and adjusting the Autosens max/min settings.
 
-Please read through the chapters on [Autosens](../configuration/settings/algorithm/autosens.md) and [Dynamic settings](../configuration/settings/algorithm/dynamic_settings.md).
+Please read through the chapters on [Autosens](../configuration/settings/algorithm/autosens.md) and [Dynamic settings](../configuration/settings/algorithm/dynamic-settings.md).

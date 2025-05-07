@@ -117,4 +117,4 @@ Save your changes!
 
 ### Step 7
 
-Return to [New User Setup](../../new_user_setup.md)
+Return to [New User Setup](../../new-user-setup.md)

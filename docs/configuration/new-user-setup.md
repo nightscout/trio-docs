@@ -78,7 +78,7 @@ In this step, you'll configure diagnostics sharing, optionally sync with Nightsc
     
     ### Units & Pump
     
-    In the Onboarding Wizard, you will select your [Glucose Units](settings/therapy/units_limits.md#glucose-units) and Pump Model, but you will not pair your pump yet. You will pair your pump and CGM after completing the Onboarding process (See [Step 7](#step-7-connect-your-devices)).
+    In the Onboarding Wizard, you will select your [Glucose Units](settings/therapy/units-limits.md#glucose-units) and Pump Model, but you will not pair your pump yet. You will pair your pump and CGM after completing the Onboarding process (See [Step 7](#step-7-connect-your-devices)).
         
 === "After Onboarding"
     ### Edit Diagnostics
@@ -92,7 +92,7 @@ In this step, you'll configure diagnostics sharing, optionally sync with Nightsc
     ### Edit Glucose Units
     
     ![Units and Limits](img/unitsandlimits.png){ width="400px" }  
-    [Learn more about setting your Glucose Units](settings/therapy/units_limits.md#glucose-units)
+    [Learn more about setting your Glucose Units](settings/therapy/units-limits.md#glucose-units)
     {align=center}
     
     ### Edit Insulin Pump
@@ -152,11 +152,11 @@ In this step you will set the boundaries for insulin delivery and carb entries t
 
     Below you'll find more information on each of the settings in order of appearance in the Onboarding Wizard:
     
-    - [Max IOB](settings/therapy/units_limits.md#max-iob)  
-    - [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
-    - [Max Basal Rate](settings/therapy/units_limits.md#max-basal)  
-    - [Max COB](settings/therapy/units_limits.md#max-cob)  
-    - [Minimum Safety Threshold](settings/therapy/units_limits.md#minimum-safety-threshold)
+    - [Max IOB](settings/therapy/units-limits.md#max-iob)  
+    - [Max Bolus](settings/therapy/units-limits.md#max-bolus)  
+    - [Max Basal Rate](settings/therapy/units-limits.md#max-basal)  
+    - [Max COB](settings/therapy/units-limits.md#max-cob)  
+    - [Minimum Safety Threshold](settings/therapy/units-limits.md#minimum-safety-threshold)
     
 === "After Onboarding"
     
@@ -166,11 +166,11 @@ In this step you will set the boundaries for insulin delivery and carb entries t
     
     Below you'll find more information on each of these settings:
     
-    - [Max IOB](settings/therapy/units_limits.md#max-iob)  
-    - [Max Bolus](settings/therapy/units_limits.md#max-bolus)  
-    - [Max Basal Rate](settings/therapy/units_limits.md#max-basal)  
-    - [Max COB](settings/therapy/units_limits.md#max-cob)  
-    - [Minimum Safety Threshold](settings/therapy/units_limits.md#minimum-safety-threshold)
+    - [Max IOB](settings/therapy/units-limits.md#max-iob)  
+    - [Max Bolus](settings/therapy/units-limits.md#max-bolus)  
+    - [Max Basal Rate](settings/therapy/units-limits.md#max-basal)  
+    - [Max COB](settings/therapy/units-limits.md#max-cob)  
+    - [Minimum Safety Threshold](settings/therapy/units-limits.md#minimum-safety-threshold)
 
 </div>
 

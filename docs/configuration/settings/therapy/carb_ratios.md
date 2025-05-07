@@ -109,4 +109,4 @@ Save your changes!
 
 ### Step 7
 
-Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](../../new_user_setup.md)
+Proceed to [Insulin Sensitivities](isf.md) or return to [New User Setup](../../new-user-setup.md)

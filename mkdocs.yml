@@ -275,17 +275,17 @@ nav:
           - XDrip4iOS ✏️: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
-      - New User Setup Guide: configuration/new_user_setup.md
+      - New User Setup Guide: configuration/new-user-setup.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
               - configuration/settings/devices/index.md
               - Insulin Pump: configuration/settings/devices/pump.md
               - Continuous Glucose Monitor: configuration/settings/devices/cgm.md
-              - Smart Watch: configuration/settings/devices/smart_watch.md
+              - Smart Watch: configuration/settings/devices/smart-watch.md
           - Therapy:
               - configuration/settings/therapy/index.md
-              - Units and Limits: configuration/settings/therapy/units_limits.md
+              - Units and Limits: configuration/settings/therapy/units-limits.md
               - Basal Rates: configuration/settings/therapy/basal_rates.md
               - Insulin Sensitivities: configuration/settings/therapy/isf.md
               - Carb Ratios: configuration/settings/therapy/carb_ratios.md
@@ -294,7 +294,7 @@ nav:
               - configuration/settings/algorithm/index.md
               - Autosens: configuration/settings/algorithm/autosens.md
               - Super Micro Bolus (SMB): configuration/settings/algorithm/smb_settings.md
-              - Dynamic Settings: configuration/settings/algorithm/dynamic_settings.md
+              - Dynamic Settings: configuration/settings/algorithm/dynamic-settings.md
               - Target Behavior: configuration/settings/algorithm/target_behavior.md
               - Additionals: configuration/settings/algorithm/additionals.md
           - Features:

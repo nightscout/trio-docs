@@ -44,7 +44,7 @@ Then, tap the "Connect" button when it turns blue at the bottom.
 {align=center}
 
 **Step 6**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -80,7 +80,7 @@ Connect your RileyLink, OrangeLink, or EmaLink and tap "Continue"
 {align=center}
 
 **Step 8**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -110,7 +110,7 @@ Choose your insulin type and tap "Continue"
 {align=center}
 
 **Step 7**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -146,7 +146,7 @@ Select your pump from the list of found pumps
 {align=center}
 
 **Step 8**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
 
@@ -168,6 +168,6 @@ Choose from the variety of simulator pump options and tap "Done" in the upper ri
 {align=center}
 
 **Step 4**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new_user_setup.md)
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -

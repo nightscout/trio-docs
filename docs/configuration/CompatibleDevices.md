@@ -43,7 +43,7 @@ Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-a
 
 ## Watches
 
-- [Apple Watch](settings/devices/smart_watch.md#apple-watch)  
+- [Apple Watch](settings/devices/smart-watch.md#apple-watch)  
     - Ultra 1  
     - Series 9  
     - Series 8  
@@ -52,6 +52,6 @@ Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-a
     - SE (2nd Gen)  
     - Series 5  
     - Series 4  
-- [Garmin Watch](settings/devices/smart_watch.md#garmin)  
+- [Garmin Watch](settings/devices/smart-watch.md#garmin)  
 
 - - -

@@ -37,7 +37,7 @@ Before starting with Trio, you should evaluate all your closed-loop options, inc
 
 To use Trio, you are required to [build the application](install/index.md) from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
-Upon installation, you will follow an onboarding wizard in the app to configure your settings optimally. We strongly recommend using the [New User Setup Guide](configuration/new_user_setup.md) as you walk through onboarding so you are able to easily reference any additional information you may need.
+Upon installation, you will follow an onboarding wizard in the app to configure your settings optimally. We strongly recommend using the [New User Setup Guide](configuration/new-user-setup.md) as you walk through onboarding so you are able to easily reference any additional information you may need.
 
 If you find yourself stuck, the community is here to help on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio).
 

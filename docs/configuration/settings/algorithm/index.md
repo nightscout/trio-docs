@@ -20,7 +20,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Details on Super Micro Bolus settings
     
--   __[Dynamic Settings](dynamic_settings.md)__
+-   __[Dynamic Settings](dynamic-settings.md)__
 
     - - -
     
