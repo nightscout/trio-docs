@@ -37,7 +37,7 @@ Carb entries will be fully decayed by the number of hours specified as Max Meal 
 If carb entries decay too slowly, it is possible to set a lower than default setting. But this should typically be adressed by tuning ISF and CR settings instead, which in combination determines the rate of carb decay.  
 
 !!! tip "Gastroparesis"
-    If you have gastroparesis, increasing this setting may help keep carbs around for delayed digestion. Please also adjust [Recommended Bolus Percentage](bolus_calculator.md/#recommended-bolus-percentage) to a lower percent to avoid lows due to delayed digestion.
+    If you have gastroparesis, increasing this setting may help keep carbs around for delayed digestion. Please also adjust [Recommended Bolus Percentage](bolus-calculator.md/#recommended-bolus-percentage) to a lower percent to avoid lows due to delayed digestion.
 
 - - -
 
