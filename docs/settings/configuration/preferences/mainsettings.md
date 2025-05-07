@@ -124,9 +124,9 @@ This setting determines the maximum ratio autosens can use for its adjustments. 
 ### Autosens Max with Dynamic ISF and/or Dynamic CR
 This setting caps how much Dynamic ISF and Dynamic CR can amplify insulin delivery.
 
-Lowering the value (e.g. from 1.20 → 1.15) limits the maximum insulin delivered when Dynamic ISF and CR are at their strongest (most aggressive) setting.
+* Lowering the value (e.g. from 1.20 → 1.15) limits the maximum insulin delivered when Dynamic ISF and CR are at their strongest (most aggressive) setting.
 
-Raising the value (e.g. from 1.20 → 1.25) allows Autosens to deliver more insulin when Dynamic ISF and CR are at their most aggressive.
+* Raising the value (e.g. from 1.20 → 1.25) allows Autosens to deliver more insulin when Dynamic ISF and CR are at their most aggressive.
 
 ### Autosens Max with Autotune
 This limits Autotune's ability to make more aggressive adjustments to your CR, basal profile, and ISF.
@@ -139,9 +139,9 @@ This setting determines the minimum ratio autosens can use for its adjustments.
 ### Autosens Min with Dynamic ISF and/or Dynamic CR
 This setting prevents Dynamic ISF and Dynamic CR from driving insulin delivery below a safe threshold.
 
-Lowering the value (e.g. from 0.80 → 0.75) permits Autosens to deliver less insulin when Dynamic ISF and CR are at their weakest (least aggressive) setting.
+* Lowering the value (e.g. from 0.80 → 0.75) permits Autosens to deliver less insulin when Dynamic ISF and CR are at their weakest (least aggressive) setting.
 
-Raising the value (e.g. from 0.80 → 0.85) forces Autosens to deliver more insulin even when Dynamic ISF and CR are at their least aggressive.
+* Raising the value (e.g. from 0.80 → 0.85) forces Autosens to deliver more insulin even when Dynamic ISF and CR are at their least aggressive.
 
 ### Autosens Min with Autotune
 This setting Autotune's ability to reduce insulin needs in your CR, basal profile, and ISF.
