@@ -17,7 +17,7 @@ Many users feel the need to stay in open loop initially for a variety of reasons
 
 <div class="grid cards" markdown>
     
--   - Set [Max IOB](therapy/units_limits.md#max-iob) to **0**
+-   - Set [Max IOB](therapy/units-limits.md#max-iob) to **0**
     - Set [Autosens Max](algorithm/autosens.md#autosens-max) to **1**
     - Set [Autosens Min](algorithm/autosens.md#autosens-min) to **1**
     - All other [Algorithm Settings](algorithm/index.md) should remain at their defaults if you are a new user

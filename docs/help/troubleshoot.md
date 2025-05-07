@@ -42,7 +42,7 @@ If you experience a roller coaster pattern of highs and lows after treatment, yo
     - Treating lows with fast carbs can give a fast BG rise
     - Under certain circumstances, Trio might react to the fast BG rise by giving insulin, leading to another low
 
-To avoid a second low, you can instruct Trio not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](../usage/temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../configuration/settings/algorithm/smb_settings.md#allow-smb-with-high-temptarget) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
+To avoid a second low, you can instruct Trio not to give any SMBs for a while after a low, giving your BG time to stabilize. Set up a [Temporary Target](../usage/temptarget.md) preset that is a bit higher than your usual target (e.g., 7,5 mmol/L | 136 mg/dl). Ensure that [Allow SMB With High Temptarget](../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is disabled. Make the temporary target last for a while (e.g., 30-45 min).
 
 !!! warning
 

@@ -10,13 +10,13 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Units and Limits](units_limits.md)__
+-   __[Units and Limits](units-limits.md)__
 
     - - -
     
     Set your preferred glucose units and main dosing limitations
 
--   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Basal Rates](basal_rates.md)__
+-   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Basal Rates](basal-rates.md)__
 
     - - -
     
@@ -28,13 +28,13 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Step by step guide on setting your insulin sensitivity factor(s)
     
--   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Carb Ratios](carb_ratios.md)__
+-   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Carb Ratios](carb-ratios.md)__
 
     - - -
     
     Step by step guide on setting your carb ratio(s)
     
--   __[Glucose Targets](glucose_targets.md)__
+-   __[Glucose Targets](glucose-targets.md)__
 
     - - -
     

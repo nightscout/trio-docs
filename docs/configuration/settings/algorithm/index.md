@@ -14,7 +14,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Explanations of the Autosens settings
 
--   __[Super Micro Bolus (SMB)](smb_settings.md)__
+-   __[Super Micro Bolus (SMB)](smb-settings.md)__
 
     - - -
     
@@ -26,7 +26,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Information on Dynamic Settings, including the mathematical equations behind them
     
--   __[Target Behavior](target_behavior.md)__
+-   __[Target Behavior](target-behavior.md)__
 
     - - -
     

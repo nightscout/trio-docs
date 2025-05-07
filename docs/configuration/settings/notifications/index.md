@@ -8,19 +8,19 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Trio Notifications](trio_notifications.md)__
+-   __[Trio Notifications](trio-notifications.md)__
 
     - - -
     
     Set up and customize Trio's alerts and notifications
 
--   __[Live Activity](live_activity.md)__
+-   __[Live Activity](live-activity.md)__
 
     - - -
     
     Configure live activity widgets
     
--   __[Calendar Events](calendar_events.md)__
+-   __[Calendar Events](calendar-events.md)__
 
     - - -
     

@@ -97,5 +97,5 @@ Once Google Translate has been turned on, clicking the language link above shows
 
 The graphic below shows the *Google Translate* Tool when maximized (default) for a browser and mobile display. The tool can be minimized by tapping on the up/down carets at the right of the tool. This is very useful if the tool obstructs part of the original screen. Additional options can be selected with the three-dot menu as shown in the graphic.
 
-![TODO](img/google-xslate.svg){ "width": "600px" }
+![TODO](../assets/images/google-xslate.svg){ "width": "600px" }
 { align: center}

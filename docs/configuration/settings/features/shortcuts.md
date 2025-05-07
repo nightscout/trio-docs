@@ -67,7 +67,7 @@ Cancels an already set override.
 Activates a chosen preset temp target.  
 
 !!! tip
-    You must first save the Preset Temp Target on the [Adjustments](usage/interface.md#action-buttons) screen before you can activate a temp target using Shortcuts.
+    You must first save the Preset Temp Target on the [Adjustments](../../../usage/interface.md#action-buttons) screen before you can activate a temp target using Shortcuts.
 
 - - -
 

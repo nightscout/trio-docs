@@ -1,8 +1,9 @@
-!!! important "🚧Documentation Under Construction🚧"
+!!! important "🚧 Documentation Under Construction 🚧"
     
     This documentation is being released while still under construction. Please, keep in mind the following information:
     
-    - This documentation is for the future open beta release of Trio. If you plan to be an open beta tester, please review this documentation in preparation for the release. If you are looking for the Trio 0.2.x documentation, you can still find it here: [0.2.x](0.2.x/index.md)
+    - This documentation is for the future open testing branch of Trio. If you plan to test prior to formal release, please review this documentation in preparation for testing Trio 0.4.x when it is publicly available.
+    - If you are looking for the Trio 0.2.x documentation, you can still find it here: [0.2.x](0.2.x/index.md)
     - Any page with a ✏️ indicates the information has not yet been updated. The information on those pages should not be referenced at this time.
     - We welcome assistance with proofreading, editing, and updating the information in this documentation. If you would like to contribute to the documentation, please submit issues or PRs [here](https://github.com/nightscout/trio-docs)
     - New educational videos are coming soon.

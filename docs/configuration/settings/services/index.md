@@ -20,7 +20,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧Documentation Under Construction🚧
     Connect Tidepool
     
--   __[Apple Health ✏️](apple_health.md)__
+-   __[Apple Health ✏️](apple-health.md)__
 
     - - -
     

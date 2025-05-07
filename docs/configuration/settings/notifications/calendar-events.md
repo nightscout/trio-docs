@@ -38,7 +38,7 @@ _Step 2_: Once you've created a Trio calendar, you can return to this setting in
 ### Display Emojis as Labels
 **Default:** _OFF_
 
-When enabled, the calendar event created will indicate where the current glucose reading is in relation to your [statistical target range](../features/user_interface.md#show-low-and-high-thresholds).
+When enabled, the calendar event created will indicate where the current glucose reading is in relation to your [statistical target range](../features/user-interface.md#show-low-and-high-thresholds).
 
 
 🟠 = Above Range Glucose  

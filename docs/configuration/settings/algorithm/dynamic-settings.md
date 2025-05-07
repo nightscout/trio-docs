@@ -1,15 +1,5 @@
 # Dynamic Settings
 
-!!! warning "Attention"
-    
-    Please read [Autosens and Dynamic ISF/CR](../concepts/autosens-dynamic.md) before continuing.
-
-!!! tip
-    
-	 - _Dynamic ISF and Dynamic CR:_ Enable for more responsive changes to your current blood glucose and TDD. 
-	 - _Adjustment Factor:_ A higher adjustment factor will result in a lower ISF/CR (increase in insulin dosage), and a lower adjustment factor will give a higher ISF/CR (decrease in insulin dosage). Adjust by 0.1 steps as needed.
-	 - _Adjust basal:_ Enable if your basal rates are otherwise not being adjusted adequately.
-
 ## Activate Dynamic ISF
 **Default:** _OFF_
 
@@ -70,9 +60,7 @@ Turning on the Sigmoid Formula setting replaces the default logarithmic formula 
 
 The curve's steepness, reflecting how big adjustments are from one reading to another, is influenced by the [Adjustment Factor](#sigmoid-adjustment-factor), while [Autosens Max](./autosens.md#autosens-max) and [Min](./autosens.md#autosens-min) settings determine the limits of the ratio adjustment. Autosens Max and Min can also influence the curve's steepness with the Sigmoid Formula.
 
-When using the Sigmoid Formula, the [Weighted Average of TDD](#weighted-average-of-tdd) and Total Daily Dose (TDD) have much less impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from the target your glucose readings are.
-
-Before enabling this setting, please read the dedicated section on [sigmoid](../concepts/sigmoid.md). 
+When using the Sigmoid Formula, Total Daily Dose (TDD) has much less of an impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from the target your glucose readings are.
 
 !!! warning
     
