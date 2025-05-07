@@ -205,7 +205,7 @@ not_in_nav: |
   settings/configuration/basalprofile.md
   settings/configuration/targetglucose.md
   settings/configuration/insulinsensitivities.md
-  settings/configuration/targetglucose.md
+  settings/configuration/target_glucose.md
   settings/configuration/concepts/sigmoid.md
   settings/configuration/concepts/smb-uam.md
   settings/configuration/preferences/mainsettings.md

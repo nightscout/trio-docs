@@ -120,9 +120,9 @@ The next step is to enter your Therapy Settings. These include:
     
     For more information about each therapy setting in this step, use the links below:
     
-    - [Glucose Targets](settings/therapy/glucose_targets.md)  
-    - [Basal Rates](settings/therapy/basal_rates.md)  
-    - [Carb Ratios (CR)](settings/therapy/carb_ratios.md)  
+    - [Glucose Targets](settings/therapy/glucose-targets.md)  
+    - [Basal Rates](settings/therapy/basal-rates.md)  
+    - [Carb Ratios (CR)](settings/therapy/carb-ratios.md)  
     - [Insulin Sensitivities (ISF)](settings/therapy/isf.md)  
     
 === "After Onboarding"
@@ -133,9 +133,9 @@ The next step is to enter your Therapy Settings. These include:
     
     Below you'll find a step by step guide to edit each of these settings:
     
-    - [Glucose Targets](settings/therapy/glucose_targets.md#how-to-enter-your-glucose-targets-into-trio)  
-    - [Basal Rates](settings/therapy/basal_rates.md#how-to-enter-your-basal-profiles-into-trio)  
-    - [Carb Ratios (CR)](settings/therapy/carb_ratios.md#how-to-enter-your-carb-ratios-cr-into-trio)  
+    - [Glucose Targets](settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio)  
+    - [Basal Rates](settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio)  
+    - [Carb Ratios (CR)](settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio)  
     - [Insulin Sensitivities (ISF)](settings/therapy/isf.md#how-to-enter-your-isf-into-trio)  
 
 </div>
@@ -209,11 +209,11 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
     [Learn more about Autosens Max](settings/algorithm/autosens.md#autosens-max).  
     
     ### Super Micro Bolus (SMB)
-    [SMB (Super Micro Bolus)](settings/algorithm/smb_settings.md) is an oref algorithm feature that delivers small, frequent boluses instead of temporary basal adjustments, creating a more responsive system.
+    [SMB (Super Micro Bolus)](settings/algorithm/smb-settings.md) is an oref algorithm feature that delivers small, frequent boluses instead of temporary basal adjustments, creating a more responsive system.
     
     **Step 3: Enable/Disable SMB Always**  
     If you do not want to always allow SMBs, and would rather be more selective with the SMBs you enable, keep `Enable SMB Always` ***OFF*** and follow the SMB documentation below to select other SMB options _after_ you've completed the Onboarding Wizard.  
-    [Learn more about SMBs](settings/algorithm/smb_settings.md).
+    [Learn more about SMBs](settings/algorithm/smb-settings.md).
     
     **Step 4: Allow SMB with High Temp Target**  
     This is the only setting not enabled when `Enable SMB Always` is turned on. Turning this setting on will allow SMBs when a manual Temp Target is set greater than 100 mg/dL (5.5 mmol/L). 
@@ -222,45 +222,45 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
         
     **Step 5: Enable UAM**  
     Best practice is to have both UAM and SMBs enabled at the same time. If you have enabled SMB Always (or plan to enable individual SMBs as soon as you complete onboarding), it is advised to turn `Enable UAM` ***ON*** during this step.  
-    [Learn more about UAM](settings/algorithm/smb_settings.md#enable-uam).  
+    [Learn more about UAM](settings/algorithm/smb-settings.md#enable-uam).  
     
     !!! tip
         The settings in Steps 6, 7, and 8 are often misunderstood. Follow the links to understand what they do more clearly.
     
     **Step 6: Set Max SMB Basal Minutes**  
     This setting limits the size of a single SMB dose.  
-    [Learn more about Max SMB Basal Minutes here](settings/algorithm/smb_settings.md#max-smb-basal-minutes).  
+    [Learn more about Max SMB Basal Minutes here](settings/algorithm/smb-settings.md#max-smb-basal-minutes).  
     
     **Step 7: Set Max UAM Basal Minutes**  
     This setting limits the size of a single unannounced meal SMB dose, aka UAM.  
-    [Learn more about Max UAM Basal Minutes here](settings/algorithm/smb_settings.md#max-uam-basal-minutes).  
+    [Learn more about Max UAM Basal Minutes here](settings/algorithm/smb-settings.md#max-uam-basal-minutes).  
 
     **Step 8: Set Max Delta-BG Threshold SMB**  
     This setting disables SMBs if the last two glucose values differ by more than this percent.  
-    [Learn more about Max Delta-BG Threshold SMB here](settings/algorithm/smb_settings.md#max-delta-bg-threshold-smb).
+    [Learn more about Max Delta-BG Threshold SMB here](settings/algorithm/smb-settings.md#max-delta-bg-threshold-smb).
     
     ### Target Behavior
-    [Target Behavior](settings/algorithm/target_behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.  
+    [Target Behavior](settings/algorithm/target-behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.  
     
     **Step 9: High Temp Target Raises Sensitivity**  
     This setting increases sensitivity when glucose is above target if a manual Temp Target > 100mg/dL (5.5mmol/L) is set.  
-    [Learn more about High Temp Target Raises Sensitivity here](settings/algorithm/target_behavior.md#high-temp-target-raises-sensitivity).  
+    [Learn more about High Temp Target Raises Sensitivity here](settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity).  
     
     **Step 10: Low Temp Target Lowers Sensitivity**  
     This setting decreases sensitivity when glucose is below target if a manual Temp Target < 100mg/dL (5.5mmol/L) is set.  
-    [Learn more about Low Temp Target Lowers Sensitivity here](settings/algorithm/target_behavior.md#low-temp-target-lowers-sensitivity).  
+    [Learn more about Low Temp Target Lowers Sensitivity here](settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity).  
     
     **Step 11: Sensitivity Raises Target**  
     This setting raises the glucose target if the Sensitivity Ratio is > 1.0.  
-    [Learn more about Sensitivity Raises Target here](settings/algorithm/target_behavior.md#sensitivity-raises-target).  
+    [Learn more about Sensitivity Raises Target here](settings/algorithm/target-behavior.md#sensitivity-raises-target).  
 
     **Step 12: Resistance Lowers Target**  
     This setting lowers the glucose target if the Sensitivity Ratio is < 1.0.  
-    [Learn more about Resistance Lowers Target here](settings/algorithm/target_behavior.md#resistance-lowers-target).  
+    [Learn more about Resistance Lowers Target here](settings/algorithm/target-behavior.md#resistance-lowers-target).  
     
     **Step 13: Half Basal Exercise Target**
     This setting scales your basal rate such that your basal will be set to 50% at this value. This setting is only applied when `High Temp Target Raises Sensitivity` and/or `Low Temp Target Lowers Sensitivity` are enabled.  
-    [Learn more about Half Basal Exercise Target here](settings/algorithm/target_behavior.md#half-basal-exercise-target).  
+    [Learn more about Half Basal Exercise Target here](settings/algorithm/target-behavior.md#half-basal-exercise-target).  
 
 === "After Onboarding"
     
@@ -277,37 +277,37 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
     - [Autosens Max](settings/algorithm/autosens.md#autosens-max)  
     
     ### Edit Super Micro Bolus (SMB)
-    [SMB (Super Micro Bolus)](settings/algorithm/smb_settings.md) is an oref algorithm feature that delivers small, frequent boluses instead of temporary basal adjustments, creating a more responsive system.
+    [SMB (Super Micro Bolus)](settings/algorithm/smb-settings.md) is an oref algorithm feature that delivers small, frequent boluses instead of temporary basal adjustments, creating a more responsive system.
     
     !!! tip
         - Best practice is to have both UAM and SMBs enabled at the same time. If you enable any SMBs, also enable UAM.
-        - Individual SMB Options are inclusive, not exclusive. Only **ONE** enabled setting needs to be true for SMBs to be allowed. More info in the flow chart: [Are SMBs Allowed?](settings/algorithm/smb_settings.md#are-smbs-allowed)
+        - Individual SMB Options are inclusive, not exclusive. Only **ONE** enabled setting needs to be true for SMBs to be allowed. More info in the flow chart: [Are SMBs Allowed?](settings/algorithm/smb-settings.md#are-smbs-allowed)
     
     Below you'll find more information on the SMB settings:
     
-    - [Enable SMB Always](settings/algorithm/smb_settings.md#enable-smb-always) 
+    - [Enable SMB Always](settings/algorithm/smb-settings.md#enable-smb-always) 
     - Enable Individual SMB Options
-        - [Enable SMB with COB](settings/algorithm/smb_settings.md#enable-smb-with-cob)
-        - [Enable SMB with TempTarget](settings/algorithm/smb_settings.md#enable-smb-with-temptarget)
-        - [Enable SMB After Carbs](settings/algorithm/smb_settings.md#enable-smb-after-carbs)
-        - [Enable SMB with High BG](settings/algorithm/smb_settings.md#enable-smb-with-high-bg)
-        - [Allow SMB with High Temp Target](settings/algorithm/smb_settings.md#allow-smb-with-high-temptarget)
-    - [Enable UAM](settings/algorithm/smb_settings.md#enable-uam)  
+        - [Enable SMB with COB](settings/algorithm/smb-settings.md#enable-smb-with-cob)
+        - [Enable SMB with TempTarget](settings/algorithm/smb-settings.md#enable-smb-with-temptarget)
+        - [Enable SMB After Carbs](settings/algorithm/smb-settings.md#enable-smb-after-carbs)
+        - [Enable SMB with High BG](settings/algorithm/smb-settings.md#enable-smb-with-high-bg)
+        - [Allow SMB with High Temp Target](settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget)
+    - [Enable UAM](settings/algorithm/smb-settings.md#enable-uam)  
     - SMB Limiting Settings
-        - [Max SMB Basal Minutes](settings/algorithm/smb_settings.md#max-smb-basal-minutes)
-        - [Max UAM Basal Minutes](settings/algorithm/smb_settings.md#max-uam-basal-minutes)
-        - [Max Delta-BG Threshold SMB](settings/algorithm/smb_settings.md#max-delta-bg-threshold-smb)
+        - [Max SMB Basal Minutes](settings/algorithm/smb-settings.md#max-smb-basal-minutes)
+        - [Max UAM Basal Minutes](settings/algorithm/smb-settings.md#max-uam-basal-minutes)
+        - [Max Delta-BG Threshold SMB](settings/algorithm/smb-settings.md#max-delta-bg-threshold-smb)
     
     ### Edit Target Behavior
-    [Target Behavior](settings/algorithm/target_behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.
+    [Target Behavior](settings/algorithm/target-behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.
     
     Below you'll find more information on the Target Behavior settings:  
     
-    [High Temp Target Raises Sensitivity](settings/algorithm/target_behavior.md#high-temp-target-raises-sensitivity)  
-    [Low Temp Target Lowers Sensitivity here](settings/algorithm/target_behavior.md#low-temp-target-lowers-sensitivity)  
-    [Sensitivity Raises Target](settings/algorithm/target_behavior.md#sensitivity-raises-target)  
-    [Resistance Lowers Target](settings/algorithm/target_behavior.md#resistance-lowers-target)  
-    [Half Basal Exercise Target](settings/algorithm/target_behavior.md#half-basal-exercise-target)  
+    [High Temp Target Raises Sensitivity](settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity)  
+    [Low Temp Target Lowers Sensitivity here](settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity)  
+    [Sensitivity Raises Target](settings/algorithm/target-behavior.md#sensitivity-raises-target)  
+    [Resistance Lowers Target](settings/algorithm/target-behavior.md#resistance-lowers-target)  
+    [Half Basal Exercise Target](settings/algorithm/target-behavior.md#half-basal-exercise-target)  
 
 </div>
 
@@ -335,7 +335,7 @@ These cannot be completed until you've finished onboarding, but _must_ be comple
 ## **Step 7:** Connect Your Devices
 [Connect your Insulin Pump](settings/devices/pump.md)  
 [Connect your CGM](settings/devices/cgm.md)  
-[Connect your Watch](settings/devices/smart_watch.md)  
+[Connect your Watch](settings/devices/smart-watch.md)  
 
 - - -
 
