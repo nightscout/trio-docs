@@ -153,18 +153,18 @@ Trio can’t determine the glucose value when over 400mg/dL (22.2 mmol/L). This 
 
 ## Omnipod FAQs
 
-### What pods work with Trio?
-You can use DASH and Eros Omnipod pods with the Loop app. You cannot use Omnipod 5 pods. 
+### What Pods work with Trio?
+You can use DASH and Eros Omnipod Pods with the Loop app. You cannot use Omnipod 5 Pods. 
 
 ### Do I still need a PDM with Trio?
-You do not need the Omnipod Personal Diabetes Manager (PDM); you need the pod supplies. They will pair with only one device at a time. So, a pod is either paired with a PDM or your Trio app on your iPhone. 
+You do not need the Omnipod Personal Diabetes Manager (PDM); you need the Pod supplies. They will pair with only one device at a time. So, a Pod is either paired with a PDM or your Trio app on your iPhone. 
 
-In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod activated with the Trio app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. 
+In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a Pod activated with the Trio app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. 
 
-### Does Trio cause an increase in pod failures?
-There is more communication between your phone and the pod than the PDM. This increases the load on the pod battery. Most people have no increase in pod failures. However, it does occasionally happen. Below are some tips to take to limit battery drain:
-* The pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected such that Trio cannot determine if a dosing command sent to the pod was received, the app will try once a minute to get a response.
-* If using Eros pods with a RileyLink device. Be mindful of situations that may lead to poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
+### Does Trio cause an increase in Pod failures?
+There is more communication between your phone and the Pod than the PDM. This increases the load on the Pod battery. Most people have no increase in Pod failures. However, it does occasionally happen. Below are some tips to take to limit battery drain:
+* The Pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
+* If using Eros Pods with a RileyLink device. Be mindful of situations that may lead to poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
 <br>
 
 ## CGM FAQs
