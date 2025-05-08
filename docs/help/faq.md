@@ -190,9 +190,10 @@ In other words, your PDM can stay in the diabetes closet while you are Looping. 
 
 ### Does Trio cause an increase in Pod failures?
 
-There is more communication between your phone and the Pod than the PDM. This increases the load on the Pod battery. Most people have no increase in Pod failures. However, it does occasionally happen. Below are some tips to take to limit battery drain:
-* The Pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
-* If using Eros Pods with a RileyLink device. Be mindful of situations that may lead to poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
+There is more communication between your phone and the Pod than the PDM, which increases the load on the Pod battery. Most people have no increase in Pod failures. However, it does occasionally happen. Below are some tips to **limit battery drain:**
+
+* The Pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected, such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
+* If using Eros Pods with a RileyLink device. Be mindful of situations that may lead to a poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
 
 
 ## CGM FAQs
@@ -200,16 +201,17 @@ There is more communication between your phone and the Pod than the PDM. This in
 ### What CGMs are supported by Trio?
 
 The following CGM can be used with Trio:
+
 * Dexcom G5
-* Dexcom G6/ONE
-* Dexcom G7/ONE+
+* Dexcom G6 / ONE
+* Dexcom G7 / ONE+
 * Medtronic Enlite (must use compatible pump)
 * Libre (limited Models)
->* US Libre 1 10-day sensors via Transmitters
->* US Libre 1 14-day sensors via Transmitters
->* International Libre 1 sensors via Transmitters
->* European Libre 2 sensors via Transmitters
->* European Libre 2 sensors directly via Bluetooth
+    * US Libre 1 10-day sensors via Transmitters
+    * US Libre 1 14-day sensors via Transmitters
+    * International Libre 1 sensors via Transmitters
+    * European Libre 2 sensors via Transmitters
+    * European Libre 2 sensors directly via Bluetooth
 
 ###What CGM apps can be used with Trio?
 
