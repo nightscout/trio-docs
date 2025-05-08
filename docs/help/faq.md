@@ -145,11 +145,11 @@ Yes. SMBs effectively borrow insulin from the future to front load insulin deliv
 ### How do I make SMBs more responsive?
 SMBs are limited by your Max `Max SMB Basal Minutes` and `Max UAM SMB Basal Minutes`. The default for both of these settings is 30 minutes. This default is conservative for most users, and it is suggested that this value be increased while monitoring the effect gradually. Raising this value will allow for bigger SMBs, thus making the dosing stronger. You need to decide how much you want to limit (or not limit) your SMBs.
 
-### Why isn't Trio looping when CGM glucose is 40 mg/dl (2.2 mmol/l) or lower?
+### Why isn't Trio looping when CGM glucose is 40 mg/dL (2.2 mmol/L) or lower?
 Trio can’t determine the glucose value when under 40mg/dL (2.2 mmol/L). This is why the CGM apps from Dexcom and Libre are displaying “Low.” A “Low” reading is also sometimes due to a sensor error or a faulty sensor needing replacement. Trio can't safely make a glucose prediction without knowing the glucose value or if it’s rising or falling.
 
-### Why isn't Trio looping or delivering insulin when CGM glucose is 400 mg/dl (22 mmol/l) or higher?
-Trio can’t determine the glucose value when over 400mg/dL (22 mmol/L). This is why the CGM apps from Dexcom and Libre display “High.” A “High” reading is also sometimes due to a sensor error or a faulty sensor needing replacement. Trio can't safely make a glucose prediction without knowing the glucose value or if it’s rising or falling.  
+### Why isn't Trio looping or delivering insulin when CGM glucose is 400 mg/dL (22.2 mmol/L) or higher?
+Trio can’t determine the glucose value when over 400mg/dL (22.2 mmol/L). This is why the CGM apps from Dexcom and Libre display “High.” A “High” reading is also sometimes due to a sensor error or a faulty sensor needing replacement. Trio can't safely make a glucose prediction without knowing the glucose value or if it’s rising or falling.  
 
 ## Omnipod FAQs
 
