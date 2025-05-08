@@ -8,7 +8,7 @@ on:
   # Remark: Next 5 lines triggers the workflow on push events for the main branch
   push:
     branches:
-      - docs-0.4.0
+      - dev
     paths-ignore:
       - "README.md"
 
@@ -57,7 +57,7 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Build Website
-        run: mkdocs build
+        run: MKDOCS_EXPORTER_PDF=true mkdocs build
 
       - name: Push Website to gh-pages Branch
         uses: JamesIves/github-pages-deploy-action@v4

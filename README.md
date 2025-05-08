@@ -21,6 +21,7 @@ Repository for [Trio documentation (under development)](https://docs.diy-trio.or
   ```shell
   cd trio-docs # where you cloned the trio-docs repository
 
+  python -m pip install -r dev-requirements.txt
   python -m pip install -r requirements.txt
   ```
 
@@ -66,7 +67,26 @@ MKDOCS_EXPORTER_PDF=true  mkdocs build
 ```
 
  The PDF file is generated in`site/trio-docs.pdf`.
+
+### Find Unused Files
+
+To find unused (orphaned) files in the project:
+
+```shell
+CHECK_UNUSED_FILES=true mkdocs build -s
+```
+
+> [!NOTE] 
+> We use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin.
  
+### Find Broken Links
+
+To list broken links, we use [`mkdocs-htmlproofer-plugin`](https://github.com/manuzhang/mkdocs-htmlproofer-plugin):
+
+```shell
+CHECK_BROKEN_LINKS=true mkdocs build --quiet
+```
+
 ## Contribute
 
 You can contribute to the Trio documentation by correcting typos or suggesting new content.
@@ -132,17 +152,27 @@ git push -u origin add_FAQ_page
   This page displays a box saying you can create a Pull-Request for your branch.
 - Click the button to do so, then follow the instructions.
 
-### Add a Plugin
+### Add a Package
 
-- Create a feature branch
-- Add the pinned version of the new plugin to the **`requirements.in`** file
+> [!NOTE]
+> In this section, the terms Python **package** and **dependency** refer to the same thing.
+
+- **Create** a feature **branch** (aka. topic branch)
+  ```shell
+  git switch dev
+  git switch -c feature/add_dependency_XXX
+  ```
+- **Add** the pinned version of the new **package** to the **`requirements.in`** file
   ```shell
     MY_FAVORITE_EDITOR_HERE requirements.in
     
-    # Add the pinned version (i.e. plugin name + version) to `requirements.in
-    XXX_PLUGIN_NAME_HERE==XXX_PLUGIN_VERSION_HERE
+    # Add the pinned version of the package to `requirements.in
+    XXX_PACKAGE_NAME_HERE==XXX_PACKAGE_VERSION_HERE
     ```
-    For example, add this line `mkdocs-exporter==6.1.1` to `requirements.in`
+    For example, to add the `mkdocs-exporter` package version `6.1.1`, I added the following line to the `requirements.in` file:
+     ```text
+     mkdocs-exporter==6.1.1
+     ```
 - Generate **`requirements.txt`**
   ```shell
     cd trio-docs
@@ -150,29 +180,43 @@ git push -u origin add_FAQ_page
     # IMPORTANT: The project's virtual environment MUST be activated first
     source venv/bin/activate
     
-    # Remove already installed plugins
-    python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
+    # Remove the already installed packages in case you need to start from a blank slate
+    # python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
     
-    # Install the dependencies listed in `requirements.in`
-    # This installs the indirect dependencies these plugins depend upon.
+    # Install the development packages
+    # (among which `pip-tools` that contains `pip-compile`)
+    pip install -r dev-requirements.txt
+    
+    # Install the direct dependencies (listed in `requirements.in`
+    # This also installs the indirect dependencies these packages depend upon.
     pip install -r requirements.in
     
-    # Generate `requirements.txt` with both direct AND indirect dependencies
-    pip freeze > requirements.txt
+    # Add code/doc using this package and test until it is ready.
     
-    # Commit the changes (where XXX denotes the plugin name)
+    # Generate the `requirements.txt` file from `requirements.in`
+    pip-compile
+    
+    # Commit the changes (where XXX denotes the package name)
     git add requirements.in requirements.txt
-    git commit -m "➕ Add dependency XXX"
+    git commit -m "➕ Add dependency: XXX"
+    
+    # Push your feature branch to your `origin` repository
+    git push -u origin feature/add_dependency_XXX
     ```
-  
-## Tips & Tricks
+- [**Create a Pull Request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes:
+	- Open your clone repository of `trio-docs` on *GitHub* (`https://github.com/YOUR_USERNAME/trio-docs`)
+		- Click the `Pull Requests` tab 
+		- Click "`Compare & pull request`" in the yellow banner next to your branch name
+
+
+## FAQs
 
 > [!NOTE]
 > Please add!
 
 ### Add a Chapter
 
-Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determines the level.
+Using the `#` sign shows a chapter on the menu/index. The number of `#`'s determines the level.
 
 **Example**:
 
@@ -197,11 +241,113 @@ Using the `#` sign shows a chapter on the menu/index. The amount of `#`'s determ
 > | `**bold text**`    | **bold text** |
 > | `<b>bold text</b>` | **bold text** |
 
-### Link to Another File
+### Add a Link to Another File
 
 When linking to another Markdown file (ending with `.md`) in another directory, the link must start with `../`.
 
-**Example**: `../directoryname/filename.md`
+In the below example, assuming you are editing `docs/install/index.md`, to add a link pointing to `docs/configuration/new-user-setup.md` with the text `new user setup`:
+
+```html
+Now on to the [new user setup](../configuration/new-user-setup.md)
+```
+
+Do not forget the `.md` suffix.
+
+```
+docs                    <== ../ 
+├── install             <== ./ denotes the current folder (docs/install/)
+│ └── index.md          <== You are here (the current file)
+│   
+├── configuration       <== ../configuration
+│ └── new-user-setup.md <== ../configuration/new-user-setup.md
+```
+
+### Update the Glossary
+
+
+> Trio's glossary is a dictionary for the acronyms and technical terms used in the documentation. It explains them in simple terms.
+> It is kind of a personal translator for all the diabetes jargon you will find there.
+
+The glossary is composed of a source file and a generated Markdown page.  
+The website uses the Markdown page of the glossary.
+
+**Updating the glossary** is a 3-step **manual process**:
+1. Modify the glossary source file ([`includes/glossary.txt`](https://github.com/nightscout/trio-docs/tree/dev/includes/glossary.txt) ) to add/update/remove entries.
+2. Generate the glossary Markdown page (`docs/faqs/glossary.md`) using this handy shell script:
+    ```shell
+    ./make-glossary.sh
+    ```
+    ```mermaid
+    ---
+    title: Generate the Glossary Page
+    ---
+    flowchart LR
+      subgraph Glossary Source
+        text_glossary[/ includes/glossary.txt /]
+      end
+      subgraph Run Shell Script
+        generator{ ./make-glossary.sh }
+      end
+      subgraph Glossary Page
+        markdown_glossary[/ docs/faqs/glossary.md /]
+      end
+
+      text_glossary --> generator --> markdown_glossary
+     ```
+3. **Commit** the changed files (glossary source file and generated page):
+     ```shell
+     git add includes/glossary.txt docs/faqs/glossary.md
+     git commit -m "Update Glossary: ..."
+     ```
+
+> [!NOTE]
+> Remember to commit these 2 files.
+
+### Create an Include File
+
+When the same section of text is repeated in several files, it is time to consolidate all these occurrences into a single file and include it in all relevant files, that means:
+
+- Move the existing redundant section of text to a new dedicated file.
+- Replace all redundant occurrences of that section with an include directive in all the files that previously defined it.
+
+Let's break down these steps:
+
+1. **Create a new file**  
+    Create a **Markdown file** in the `docs/includes/` folder, for example:  
+    `docs/includes/version-compatibility-matrix.md`.
+2. **Move the duplicated content**  
+    Move the duplicated section into this new file.  
+3. **Mark it as includable**  
+   [Wrap the content](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/docs/includes/version-compatibility-matrix.md?plain=1#L2-L20) within `<!--include-markdown-start-->` and `<!--include-markdown-end-->` comments to define what will be included.
+   ```markdown
+     Content before the start comment will not be included.
+     
+    <!--include-markdown-start-->
+    …your reusable content (duplicated text section)…
+    <!--include-markdown-end-->
+
+	 Content after the end comment will not be included.
+    ```
+1. **Replace each original redundant section with an include directive**  
+   In each file that originally contained the duplicated text, **replace it with the following [include directive](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/docs/install/build/requirements/devices/iphone.md?plain=1#L12)**:
+    ```markdown
+    {%
+      include-markdown "includes/version-compatibility-matrix.md"
+    %}
+    ```
+     Make sure the path is relative to the `docs/` folder.
+2. **Update `mkdocs.yml`**  
+   To prevent the included file from appearing in the navigation or triggering a warning, add it to the [**`not_in_nav`** section](https://github.com/ebouchut/Trio-dev-docs/blob/9f22039213d5ac055b8dd171d5648d94fe0d506a/mkdocs.yml#L203):
+    ```yaml
+    not_in_nav: |
+      includes/version-compatibility-matrix.md
+    ```
+
+> [!NOTE]
+> Do not overuse this feature!
+>
+> Use it sparingly, as it adds a layer of abstraction that makes it harder to see the full contents of a page when editing it.
+
 
 ### Migrate a Sphinx page to Mkdocs
 

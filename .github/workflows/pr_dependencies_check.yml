@@ -1,7 +1,7 @@
 name: Prevent Blocked PRs from being Merged
 
 on:
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - edited
@@ -18,6 +18,10 @@ on:
 
 jobs:
   blocking_issues:
+    permissions:
+      checks: write
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: Levi-Lesches/blocking-issues@v2

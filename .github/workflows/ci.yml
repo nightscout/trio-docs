@@ -1,0 +1,43 @@
+name: CI
+
+# Controls when the action will run.
+on:
+  # Remark: uncomment one section only
+  # Remark: Next 1 line requires manual action, Click on action tab, then publish
+  # workflow_dispatch
+  # Remark: Next 5 lines triggers the workflow on push events for the main branch
+  push:
+    branches:
+      - dev
+    paths-ignore:
+      - "README.md"
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'nightscout'
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Create, Activate and share a Python Virtual Env
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          # Persist venv related variables across the steps below
+          # See: https://stackoverflow.com/a/74669486/386517
+          echo "PATH=$PATH"               >> "$GITHUB_ENV"
+          echo "VIRTUAL_ENV=$VIRTUAL_ENV" >> "$GITHUB_ENV"
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check for unused files
+        run: CHECK_UNUSED_FILES=true mkdocs build -s

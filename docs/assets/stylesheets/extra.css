@@ -33,3 +33,203 @@
   -webkit-mask-image: var(--md-admonition-icon--important);
   mask-image: var(--md-admonition-icon--important);
 }
+
+/*
+ * Add admonition type: plain (grey box with simple "i" icon)
+ */
+
+:root {
+    --md-admonition-icon--plain: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 224 32 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32l32 0 0-192-32 0c-17.7 0-32-14.3-32-32z"/></svg>');
+}
+.md-typeset .admonition.plain,
+.md-typeset details.plain {
+    border-color: #575757;
+}
+.md-typeset .plain > .admonition-title,
+.md-typeset details.plain > summary {
+    background-color: #808080;
+}
+.md-typeset .plain > .admonition-title::before,
+.md-typeset .plain > summary::before {
+    background-color: #575757;
+    -webkit-mask-image: var(--md-admonition-icon--plain);
+    mask-image: var(--md-admonition-icon--plain);
+}
+
+/*
+ * Add admonition type: main (grey box with similar icon used for Main/Home Screen)
+ */
+
+:root {
+    --md-admonition-icon--main: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>');
+}
+.md-typeset .admonition.main,
+.md-typeset details.main {
+    border-color: #575757;
+}
+.md-typeset .main > .admonition-title,
+.md-typeset details.main > summary {
+    background-color: #808080;
+}
+.md-typeset .main > .admonition-title::before,
+.md-typeset .main > summary::before {
+    background-color: #575757;
+    -webkit-mask-image: var(--md-admonition-icon--main);
+    mask-image: var(--md-admonition-icon--main);
+}
+
+/*
+ * Add admonition type: history (grey box with similar icon used for History)
+ */
+
+:root {
+    --md-admonition-icon--history: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');
+}
+.md-typeset .admonition.history,
+.md-typeset details.history {
+    border-color: #575757;
+}
+.md-typeset .history > .admonition-title,
+.md-typeset details.history > summary {
+    background-color: #808080;
+}
+.md-typeset .history > .admonition-title::before,
+.md-typeset .history > summary::before {
+    background-color: #575757;
+    -webkit-mask-image: var(--md-admonition-icon--history);
+    mask-image: var(--md-admonition-icon--history);
+}
+
+/*
+ * Add admonition type: treatments (grey box with purple icon used for Bolus Calculator)
+ */
+
+:root {
+    --md-admonition-icon--treatments: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>');
+}
+.md-typeset .admonition.treatments,
+.md-typeset details.treatments {
+    border-color: #575757;
+}
+.md-typeset .treatments > .admonition-title,
+.md-typeset details.treatments > summary {
+    background-color: #808080;
+}
+.md-typeset .treatments > .admonition-title::before,
+.md-typeset .treatments > summary::before {
+    background-color: #7d8cf2;
+    -webkit-mask-image: var(--md-admonition-icon--treatments);
+    mask-image: var(--md-admonition-icon--treatments);
+}
+
+/*
+ * Add admonition type: adjustments (grey box with similar icon used for Adjustments)
+ */
+
+:root {
+    --md-admonition-icon--adjustments: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/></svg>');
+}
+.md-typeset .admonition.adjustments,
+.md-typeset details.adjustments {
+    border-color: #575757;
+}
+.md-typeset .adjustments > .admonition-title,
+.md-typeset details.adjustments > summary {
+    background-color: #808080;
+}
+.md-typeset .adjustments > .admonition-title::before,
+.md-typeset .adjustments > summary::before {
+    background-color: #575757;
+    -webkit-mask-image: var(--md-admonition-icon--adjustments);
+    mask-image: var(--md-admonition-icon--adjustments);
+}
+
+/*
+ * Add admonition type: settings (grey box with similar icon used for Settings)
+ */
+
+:root {
+    --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"></path></svg>');
+}
+.md-typeset .admonition.settings,
+.md-typeset details.settings {
+    border-color: #575757;
+}
+.md-typeset .settings > .admonition-title,
+.md-typeset details.settings > summary {
+    background-color: #808080;
+}
+.md-typeset .settings > .admonition-title::before,
+.md-typeset .settings > summary::before {
+    background-color: #575757;
+    -webkit-mask-image: var(--md-admonition-icon--settings);
+    mask-image: var(--md-admonition-icon--settings);
+}
+
+/*
+ * Add admonition type: temptarget (grey box with similar icon used for Temp Targets)
+ */
+
+:root {
+    --md-admonition-icon--temptarget: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>');
+}
+.md-typeset .admonition.temptarget,
+.md-typeset details.temptarget {
+    border-color: #575757;
+}
+.md-typeset .temptarget > .admonition-title,
+.md-typeset details.temptarget > summary {
+    background-color: #808080;
+}
+.md-typeset .temptarget > .admonition-title::before,
+.md-typeset .temptarget > summary::before {
+    background-color: #6ecf97;
+    -webkit-mask-image: var(--md-admonition-icon--temptarget);
+    mask-image: var(--md-admonition-icon--temptarget);
+}
+
+/*
+ * Add admonition type: override (grey box with similar icon used for Overrides)
+ */
+
+:root {
+    --md-admonition-icon--override: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>');
+}
+.md-typeset .admonition.override,
+.md-typeset details.override {
+    border-color: #575757;
+}
+.md-typeset .override > .admonition-title,
+.md-typeset details.override > summary {
+    background-color: #808080;
+}
+.md-typeset .override > .admonition-title::before,
+.md-typeset .override > summary::before {
+    background-color: #ae51dd;
+    -webkit-mask-image: var(--md-admonition-icon--override);
+    mask-image: var(--md-admonition-icon--override);
+}
+
+/* Add custom Trio colors */
+
+.trioPink {
+    color: #d12bf7;
+}
+.trioTeal {
+    color: #31f1fc;
+}
+.trioBlue {
+    color: #608bf4;
+}
+.trioPurple {
+    color: #7d8cf2;
+}
+.loopYellow {
+    color: #EB5757;
+}
+.loopRed {
+    color: #FFC145;
+}
+.loopGreen {
+    color: #6FCE96
+}
