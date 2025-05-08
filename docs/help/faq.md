@@ -35,8 +35,9 @@ Often, the non-tech people do better than the tech people in building Trio. Why?
 
 The answer to this question is very user-dependent. If you are new to building and need to immerse yourself in the documentation, then a few hours. However, some users like to break this down into smaller, more manageable chunks and complete the task over 24 hours. If you are a repeat builder familiar with the documentation, build, and update process, then 10 - 15 minutes. 
 There are two options for building at present:
-* The 'Browser Build' method using GitHub.
-* The 'Mac Build' method using XCode.
+
+* The [Browser Build](../install/build/browser/browser-build-overview.md) method using GitHub.
+* The [Mac Build](../install/build/mac/overview.md) method using Xcode.
 
 ### Do I need to own an Apple computer?
 
