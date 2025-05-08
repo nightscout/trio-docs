@@ -210,8 +210,8 @@ The following CGM can be used with Trio:
     * US Libre 1 10-day sensors via Transmitters
     * US Libre 1 14-day sensors via Transmitters
     * International Libre 1 sensors via Transmitters
-    * European Libre 2 sensors via Transmitters
-    * European Libre 2 sensors directly via Bluetooth
+    * European Libre 2 / 2 Plus sensors via Transmitters
+    * European Libre 2 / 2 Plus sensors directly via Bluetooth
 
 ###What CGM apps can be used with Trio?
 
