@@ -132,6 +132,7 @@ Autosens allows the system to analyze historical data on the go and make adjustm
 `Autosens Max` and `Autosens Min` are the safety limiters the algorithm places on Autosens.`Autosens Max` determines the maximum ratio autosens can use for its adjustments. Increasing this value allows autosens to increase insulin through your basal profile, ISF, and target blood glucose. Conversely, `Autosens Min` determines the minimum ratio autosens can use for adjustments. Decreasing this value allows autosens to reduce insulin given through your basal profile, ISF, and target blood glucose.
 
 Various blog posts have been written over the years regarding Autosens, and links to some can be found below: 
+
 * Dana Lewis, [Autosensitivity](https://diyps.org/2016/12/02/autosensitivity-automatically-adjusting-insulin-sensitivity-factor-for-insulin-dosing-with-openaps/).
 * Tim Street, [Understanding Autosens](https://www.diabettech.com/artificial-pancreas/understanding-autosens/).
 
@@ -140,6 +141,7 @@ Various blog posts have been written over the years regarding Autosens, and link
 Super micro bolus, or SMB, is designed to give you reasonable amounts of bolus insulin upfront and use reduced temporary basal rates to balance out the peak insulin timing safely. Why? The reason for using SMB over a higher temporary basal rate is that it allows insulin to be delivered sooner. Thus, avoiding glucose spikes by front-loading insulin delivery. 
 
 Various blog posts have been written over the years regarding SMBs, and links to some can be found below:
+
 * Dana Lewis, [Introducing oref1 and super-microboluses](https://diyps.org/2017/04/30/introducing-oref1-and-super-microboluses-smb-and-what-it-means-compared-to-oref0-the-original-openaps-algorithm/)
 * Tim Street, [Understanding SMB and oref1](https://diyps.org/2017/04/30/introducing-oref1-and-super-microboluses-smb-and-what-it-means-compared-to-oref0-the-original-openaps-algorithm/).
 
