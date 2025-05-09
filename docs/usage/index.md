@@ -16,17 +16,16 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     A detailed look at Trio's user interface and features
 
-<!-- -   __[Temporary Targets ✏️](usage/temptarget.md)__
+-   __[Temporary Targets ✏️](features/temp-target.md)__
 
     - - -
     
     How and when to use Temporary Targets
 
--   __[Overrides](usage/overrides.md)__
+-   __[Overrides](features/override.md)__
 
     - - -
     
     How and when to use Overrides
     
--->    
 </div>
