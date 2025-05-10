@@ -58,6 +58,7 @@ Should you choose Nightscout
 - - -
 
 ## Trio App: Enable Remote Control
+
 **Default:** _OFF_  
 
 Remote control must be enabled on the Trio phone as well as configured on the *LoopFollow* phone. The Trio screen is shown below. The `SHARED SECRET` should be copied from the Trio phone and added to the [`Shared Secret`](#shared-secret) row of the *LoopFollow* Remote Settings screen.
