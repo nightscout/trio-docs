@@ -9,7 +9,7 @@ The first step in setting up your continuous glucose monitor (CGM) on Trio is to
 {align=center}
 
 ## Step 2: Select Your CGM
-Select your cgm from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific cgm:  
+Select your CGM from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific CGM:  
 
 - [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-and-dexcom-g6dexcom-one)
 - [Dexcom G7/Dexcom ONE+](#dexcom-g7dexcom-one)
@@ -57,7 +57,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 - - -
 
 ### Freestyle Libre
-This option can be used to pair a compatible Libre cgm directly to Trio without going through a separate app like xDrip4iOS.
+This option can be used to pair a compatible Libre CGM directly to Trio without going through a separate app like xDrip4iOS.
 
 **Step 3**
 Tap "Libre 2 Direct" to use Libre 2 sensors or "Bluetooth Transmitters" to use Libre 1 sensors with a Miao Miao or other 3rd party transmitter.
@@ -122,7 +122,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 - - -
 
 ### xDrip4iOS
-To use xDrip4iOS as a cgm source, you must build it yourself with the same Apple Developer account you used to build your Trio app. You cannot use Shuggah or a version distributed by someone else's TestFlight. Please see the following for instructions on how to build xDrip4iOS yourself: [link](../../../install/ecosystem/xdrip4ios.md)
+To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. You cannot use Shuggah or a version distributed by someone else's TestFlight. Please see the following for instructions on how to build xDrip4iOS yourself: [link](../../../install/ecosystem/xdrip4ios.md)
 
 However, if you are using Dexcom G6 or ONE with xDrip4iOS, you can choose the Dexcom G6 option in Trio rather than xDrip4iOS, and Trio will intercept the glucose readings even if you're using Shuggah or someone else's TestFlight of xDrip4iOS.
 
