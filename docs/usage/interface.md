@@ -35,7 +35,7 @@ Use the tabs below to learn more about each section:
     {align="center"}
     
     !!! tip "Pro Tip"
-        If you long press the bobble, it will snooze cgm alerts
+        If you long press the bobble, it will snooze CGM alerts
     
 === "Pump Info"
 
