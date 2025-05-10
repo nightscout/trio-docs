@@ -16,7 +16,7 @@ Remote Control using Trio 0.5.x and newer (`dev` branch) is different from the v
 With Trio 0.5.x (and newer), secure remote capabilities are provided using the *LoopFollow* app.
 
 * For specific Trio Remote Control features, please stay on this page
-* For more general *LoopFollow* information, this link opens a new page [Loop and Learn: *LoopFollow*](https://www.loopandlearn.org/loop-follow/){: target="_blank" }
+* For more general *LoopFollow* information, this link opens a new page [Loop and Learn: *LoopFollow*](https://www.loopandlearn.org/loop-follow/)
 
 The *LoopFollow* Trio Remote Control Screen provides access to:
 
@@ -52,7 +52,7 @@ Most people will select `Trio Remote Control`.
 Should you choose Nightscout
 
 * Remote control is limited to starting and canceling Temp Targets
-* You must provide the Nightscout URL and [token](https://nightscout.github.io/nightscout/admin_tools/#subjects-and-roles){: target="_blank" } with privileges for at least `careportal` access
+* You must provide the Nightscout URL and [token](https://nightscout.github.io/nightscout/admin_tools/#subjects-and-roles) with privileges for at least `careportal` access
 * Your Nightscout must be configured for remote control as explained in [Nightscout for Temp Target Control](#nightscout-for-temp-target-control)
 
 - - -
@@ -132,7 +132,7 @@ The configuration for Nightscout described in this section is required for eithe
 * You selected the remote type of `Nightscout` for your *LoopFollow* settings
 * You want to use the Remote Options in the Careportal at your Nightscout site
 
-If you are new to this topic, please refer to [LoopDocs: Remote Configuration](https://loopkit.github.io/loopdocs/nightscout/remote-config/){: target="_blank" } for more details
+If you are new to this topic, please refer to [LoopDocs: Remote Configuration](https://loopkit.github.io/loopdocs/nightscout/remote-config/) for more details
 
 * The same set of Nightscout config vars are used by Trio and Loop
     * Ignore references to LoopCaregiver in the LoopDocs link, you will use *LoopFollow* or the Nightscout `Careportal`
