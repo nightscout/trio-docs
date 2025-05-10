@@ -37,12 +37,12 @@ For those who have never used *LoopFollow*, the graphic below shows the features
 ![LoopFollow main screen](img/lf-table-overview.png){width="800"}
 {align="center"}
 
-You tap on the settings icon at the bottom right of the tool bar to configure *LoopFollow*. The top half of the setttings is shown in the graphic below.
+You tap on the settings icon at the bottom right of the toolbar to configure *LoopFollow*. The top half of the settings is shown in the graphic below.
 
 ![LoopFollow settings](img/lf-settings-screen.png){width="400"}
 {align="center"}
 
-The Remote Settings rows is used to select the type of remote access you wish to use.
+The Remote Settings row is used to select the type of remote access you wish to use.
 
 ![LoopFollow remote settings type](img/lf-trc-selection.jpg){width="400"}
 {align="center"}
@@ -70,7 +70,7 @@ When Remote Control is enabled, you can send boluses, set overrides or temporary
 To ensure security, these commands are protected by a shared secret located on the Trio user's Remote Control menu screen, which must be entered in the *LoopFollow* app.
 
 !!! warning "Important"
-    The ability for the Trio app to be remotely controlled will be **disabled** when `Enable Remote Control` is turned OFF even if you have *LoopFollow* configured with the correct shared secret. This is for the protection of the Trio user, that they **always** are the primary controller of their insulin dosing app.
+    The ability for the Trio app to be remotely controlled will be **disabled** when `Enable Remote Control` is turned OFF, even if you have *LoopFollow* configured with the correct shared secret. This is for the protection of the Trio user, so that they **always** are the primary controller of their insulin dosing app.
 
 ## LoopFollow App: Remote Settings
 
@@ -134,7 +134,7 @@ The configuration for Nightscout described in this section is required for eithe
 
 If you are new to this topic, please refer to [LoopDocs: Remote Configuration](https://loopkit.github.io/loopdocs/nightscout/remote-config/) for more details
 
-* The same set of Nightscout config vars are used by Trio and Loop
+* The same set of Nightscout config vars is used by Trio and Loop
     * Ignore references to LoopCaregiver in the LoopDocs link, you will use *LoopFollow* or the Nightscout `Careportal`
 * The Apple Push Notification (APNS) config vars must be configured for the *Apple* developer ID (`LOOP_DEVELOPER_TEAM_ID` in the table below) of the person who builds the Trio app
 * The first two values in this table are the same ones added to the *LoopFollow* app when configuring the [LoopFollow App: Remote Settings](#loopfollow app-remote-settings)
