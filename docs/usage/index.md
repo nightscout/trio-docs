@@ -16,17 +16,26 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     A detailed look at Trio's user interface and features
 
-<!-- -   __[Temporary Targets ✏️](usage/temptarget.md)__
+-   __[Temporary Targets ✏️](usage/temptarget.md)__
 
     - - -
     
+    🚧 Documentation Under Construction 🚧  
     How and when to use Temporary Targets
 
--   __[Overrides](usage/overrides.md)__
+-   __[Overrides ✏️](usage/overrides.md)__
 
     - - -
-    
+
+    🚧 Documentation Under Construction 🚧   
     How and when to use Overrides
     
--->    
+-   __[Statistics ✏️](usage/statistics.md)__
+
+    - - -
+
+    🚧 Documentation Under Construction 🚧      
+    A detailed look at Trio's Statistics interface
+    
+   
 </div>

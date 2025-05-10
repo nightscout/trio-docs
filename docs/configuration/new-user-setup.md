@@ -109,11 +109,19 @@ In this step, you'll configure diagnostics sharing, optionally sync with Nightsc
 
 The next step is to enter your Therapy Settings. These include:
 
-- **Target Glucose**: Trio's dosing will aim for this glucose when calculating insulin dosage
+- **Glucose Targets**: Trio's dosing will aim for this glucose when calculating insulin dosage
 - **Basal Rates**: Used as a baseline for increasing or decreasing insulin needs
 - **Carb Ratios**: How many grams of carbohydrate are countered by 1 unit of insulin
 - **Insulin Sensitivities**: How much 1 unit of insulin will lower your blood glucose
 
+!!! tip "Need help finding these settings in your current DIY app?"
+    If you are coming from another Open Source Automated Insulin Dosing (OS-AID) app, these guides may help you with finding these settings in your previous app and inputing them into Trio.
+    
+    - [Trio 0.2.x](migration/trio-02x-migration.md)
+    - [iAPS](migration/iaps-migration.md)
+    - [Loop](migration/loop-migration.md)
+    - [AndroidAPS](migration/aaps-migration.md)
+    
 <div class="grid" markdown>
 
 === "During Onboarding"
