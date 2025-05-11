@@ -37,25 +37,34 @@ Trio has an Onboarding Wizard that walks you through these steps when you first 
 
 [**Step 1:** Prepare Trio](#step-1-prepare-trio)
 
-[**Step 6:** Bluetooth](#step-6-bluetooth)
-
 [**Step 2:** Therapy Settings](#step-2-therapy-settings)
-
-[**Step 7:** Connect Your Devices](#step-7-connect-your-devices)
 
 [**Step 3:** Delivery Limits](#step-3-delivery-limits)
 
-[**Step 8:** Enable Closed Loop](#step-8-enable-closed-loop)
-
 [**Step 4:** Algorithm Settings](#step-4-algorithm-settings)
-
-[**Step 9:** Change App Icon (Optional)](#step-9-change-app-icon-optional)
 
 [**Step 5:** Notifications](#step-5-notifications)
 
+[**Step 6:** Bluetooth](#step-6-bluetooth)
+
+[**Step 7:** Connect Your Devices](#step-7-connect-your-devices)
+
+[**Step 8:** Enable Closed Loop](#step-8-enable-closed-loop)
+
+[**Step 9:** Change App Icon (Optional)](#step-9-change-app-icon-optional)
+
+
 </div>
 - - -
- 
+
+!!! tip "Need help finding these settings in your current DIY app?"
+    If you are coming from another Open Source Automated Insulin Dosing (OS-AID) app, these guides may help you with finding these settings in your previous app and inputing them into Trio.
+    
+    - [Trio 0.2.x](migration/trio-02x-migration.md)
+    - [iAPS](migration/iaps-migration.md)
+    - [Loop](migration/loop-migration.md)
+    - [AndroidAPS](migration/aaps-migration.md)
+
 ## **Step 1:** Prepare Trio
 
 In this step, you'll configure diagnostics sharing, optionally sync with Nightscout, and enter other essential setup information.
@@ -113,14 +122,6 @@ The next step is to enter your Therapy Settings. These include:
 - **Basal Rates**: Used as a baseline for increasing or decreasing insulin needs
 - **Carb Ratios**: How many grams of carbohydrate are countered by 1 unit of insulin
 - **Insulin Sensitivities**: How much 1 unit of insulin will lower your blood glucose
-
-!!! tip "Need help finding these settings in your current DIY app?"
-    If you are coming from another Open Source Automated Insulin Dosing (OS-AID) app, these guides may help you with finding these settings in your previous app and inputing them into Trio.
-    
-    - [Trio 0.2.x](migration/trio-02x-migration.md)
-    - [iAPS](migration/iaps-migration.md)
-    - [Loop](migration/loop-migration.md)
-    - [AndroidAPS](migration/aaps-migration.md)
     
 <div class="grid" markdown>
 
@@ -243,9 +244,9 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
     This setting limits the size of a single unannounced meal SMB dose, aka UAM.  
     [Learn more about Max UAM Basal Minutes here](settings/algorithm/smb-settings.md#max-uam-basal-minutes).  
 
-    **Step 8: Set Max Delta-BG Threshold SMB**  
+    **Step 8: Set Max Allowed Glucose Rise for SMB**  
     This setting disables SMBs if the last two glucose values differ by more than this percent.  
-    [Learn more about Max Delta-BG Threshold SMB here](settings/algorithm/smb-settings.md#max-delta-bg-threshold-smb).
+    [Learn more about Max Allowed Glucose Rise for SMB here](settings/algorithm/smb-settings.md#max-allowed-glucose-rise-for-smb).
     
     ### Target Behavior
     [Target Behavior](settings/algorithm/target-behavior.md) allows you to adjust how temporary targets influence ISF, basal, and auto-targeting based on sensitivity or resistance.  
