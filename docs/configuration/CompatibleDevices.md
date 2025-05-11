@@ -28,16 +28,9 @@ Follow this [link](../install/build/requirements/devices/iphone.md#ios-version-a
 
 ## CGM
 
-- [Nightscout](settings/devices/cgm.md#nightscout-as-cgm)  
-- [xDrip](settings/devices/cgm.md#xdrip4ios)
-- [Dexcom G5/Dexcom G6/Dexcom ONE](settings/devices/cgm.md#dexcom-g5-and-dexcom-g6dexcom-one)
-- [Dexcom G7/Dexcom ONE+](settings/devices/cgm.md#dexcom-g7dexcom-one)
-- [Glucose Simulator](settings/devices/cgm.md#glucose-simulator)
-- [Libre Transmitter](settings/devices/cgm.md#freestyle-libre)
-    - Libre 1, all models (requires Miao-Miao)  
-    - Libre 2/2 Plus, EU models (US models not supported)  
-    - Libre 3/3 Plus, all models (requires LibreLinkUp and continuous internet connection)  
-- [Medtronic Enlite](settings/devices/cgm.md#medtronic-enlite)
+{%
+    include-markdown "includes/supported-cgms.md"
+%}
 
 - - -
 

@@ -1,15 +1,10 @@
 # Compatible CGM
 
-CGM selection includes the following:
-
-* Nightscout
-* xDrip4iOS
-* Dexcom G5
-* Dexcom G6 / ONE
-* Dexcom G7 / ONE+
-* Glucose Simulator
-* Libre Transmitter
-* Medtronic Enlite
+{%
+    include-markdown "includes/supported-cgms.md"
+     start="<!--include-markdown-supported-cgms-start-->"
+     end="<!--include-markdown-supported-cgms-end-->"
+%}
 
 ## Nightscout
 
@@ -48,17 +43,20 @@ The Glucose Simulator adds artificial CGM readings to the screen so you can see 
 This option pairs a compatible Libre CGM directly with Trio without using a separate app like xDrip4iOS.
 
 ### Supported Sensors
-* US Libre 1 10-day *via Transmitters*
-* US Libre 1 14-day *via Transmitters*
-* International Libre 1 *via Transmitters*
-* European Libre 2 / 2 Plus *via Transmitters*
-* European Libre 2 / 2 Plus *directly via Bluetooth*
+
+{% include-markdown "includes/supported-cgms.md"
+	dedent=true
+	start="<!--include-markdown-supported-freestyle-sensors-start-->"
+	end="<!--include-markdown-supported-freestyle-sensors-end-->"
+%}
 
 ### Unsupported Sensors
-* Non-European Libre 2
-* Libre Pro
-* Libre H
-* Libre 3
+
+{%
+    include-markdown "includes/supported-cgms.md"
+      start="<!--include-markdown-unsupported-freestyle-sensors-start-->"
+      end="<!--include-markdown-unsupported-freestyle-sensors-end-->"
+%}
   
 ## Medtronic Enlite
 
