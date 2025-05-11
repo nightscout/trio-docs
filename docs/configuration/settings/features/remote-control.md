@@ -171,7 +171,7 @@ The person using the *LoopFollow* app should enter the name they want to show up
 
 ### Shared Secret
 
-This is the unique shared secret that can be generated or entered into the Trio app in the Remote Control screen. These shared secret in Trio and *LoopFollow* must match to provide the ability to remotely send commands to this Trio app.
+This is the unique shared secret that can be generated or entered into the Trio app in the Remote Control screen. The shared secret in Trio and *LoopFollow* must match to provide the ability to remotely send commands to this Trio app.
 
 > Please use a secure secret - the automatically generated secret is recommended.
 
@@ -185,7 +185,7 @@ See [Nightscout for Temp Target Control](#nightscout-for-temp-target-control). T
 
 ### Guardrails
 
-The maximum allowed entries for Bolus, Carbs, Protein and Fat are configured in the guardrails section show in the graphic below. This example is one in which the Shared Secret and APNS values have not yet been added.
+The maximum allowed entries for Bolus, Carbs, Protein and Fat are configured in the guardrails section shown in the graphic below. This example is one in which the Shared Secret and APNS values have not yet been added.
 
 ![default guardrails](img/lf-trc-guardrails.jpg){width="500"}
 
@@ -196,7 +196,7 @@ The user can decide to enable or disable two features independently.
 * Meal with Bolus
     * When enabled, a bolus command can be sent at the same time as the meal entry
 * Meal with Fat/Protein 
-    * When enabled, the user is presented with a Protein and Fat row in addition to the carb and Bolus amount rows
+    * When enabled, the user is presented with a Protein and Fat row in addition to the Carbs and Bolus Amount rows
 
 Refer to the graphic in the [Guardrails](#guardrails) section.
 
@@ -238,9 +238,7 @@ When entering meals and choosing to schedule the meal, any bolus included in the
 
 ### Overrides
 
-
 ***More info coming soon!***
-
 
 - - -
 
