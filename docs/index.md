@@ -9,6 +9,8 @@
     - New educational videos are coming soon.
 
 # What is Trio?
+!!! note
+    The video refers to Trio 1.0, which will not be the official version number until beta testing is complete and it is released to the main branch.
 
 <video controls  preload="metadata">
   <source src="assets/videos/trio-intro.mp4" type="video/mp4">

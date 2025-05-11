@@ -7,7 +7,14 @@
     - Autosens Max/Min limits sensitivity adjustments
 
 ## Sensitivity Ratio
-The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amount of adjustment needed to your basal rates and ISF. If Dynamic CR is enabled, it will also apply to your carb ratio.    
+The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amount of adjustment needed to your basal rates and ISF. If Dynamic CR is enabled, it will also apply to your carb ratio.  
+
+!!! tip
+    This previously was shown as a decimal value as `Autosens Ratio` and is now shown as a percentage as `Sensitivity Ratio`.
+    
+    If your Sensitivity Ratio is showing 120%, this means Trio has calculated that your insulin needs are 120% of your standard needs.
+    
+    If your Senstivitity Ratio is 100%, Trio is using your entered Therapy Settings without any adjustments.
 
 There are 3 options for you to select from for how your Sensitivity Ratio is calculated:
     
@@ -48,7 +55,7 @@ $$
 \frac{ProfileISF}{Sensitivity\ Ratio} = Calculated\ Sensitivity
 $$
 
-??? question "Bill has a Profile ISF of 54 mg/dL/U (3 mmol/L/U). Trio detects Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has a [Sensitivity Ratio](#sensitivity-ratio) of 1.1 using Autosens. What Calculated Sensitivity, aka temporary ISF, will Trio use for this loop cycle?"
+??? question "Bill has a Profile ISF of 54 mg/dL/U (3 mmol/L/U). Trio detects Bill has been more resistant to insulin lately and needs to increase his insulin. It calculates Bill has a [Sensitivity Ratio](#sensitivity-ratio) of 110% using Autosens. What Calculated Sensitivity, aka temporary ISF, will Trio use for this loop cycle?"
     
     ??? info "Here is the formula used for Calculated Sensitivity:"
     
@@ -59,7 +66,7 @@ $$
     ??? note "Calculate the temporary ISF, Calculated Sensitivity, used in this loop cycle:"
         
         $$
-        \frac{54\ mg/dL/U}{1.1} =
+        \frac{54\ mg/dL/U}{110\%} =
         $$
         
         $$
@@ -96,7 +103,7 @@ Autosens Min sets the minimum Sensitivity Ratio used by Autosens, Logarithmic Dy
 - - -
 
 ## Rewind Resets Autosens
-**Default:** *OFF*  
+**Default:** *ON*  
 **_This setting applies to Medtronic Users only_**
 
 This feature resets the Sensitivity Ratio to neutral when you rewind your pump on the assumption that this corresponds to a site change.
