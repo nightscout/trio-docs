@@ -753,16 +753,30 @@
 </a>
 
 <h1 id="compatible-cgm">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#compatible-cgm" title="Link to this section for reference">¶</a></h1>
-<p><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> selection includes the following:</p>
+<p>✅ The following CGMs can be used with Trio:</p>
 <ul>
-<li><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></li>
-<li>xDrip4iOS</li>
-<li>Dexcom G5</li>
-<li>Dexcom G6 / ONE</li>
-<li>Dexcom G7 / ONE+</li>
-<li>Glucose Simulator</li>
-<li>Libre Transmitter</li>
-<li>Medtronic Enlite</li>
+<li><a href="../../../../../configuration/settings/devices/cgm/#dexcom-g5-and-dexcom-g6dexcom-one">Dexcom G5</a></li>
+<li><a href="../../../../../configuration/settings/devices/cgm/#dexcom-g5-and-dexcom-g6dexcom-one">Dexcom G6 / ONE</a></li>
+<li><a href="../../../../../configuration/settings/devices/cgm/#dexcom-g7dexcom-one">Dexcom G7 / ONE+</a></li>
+</ul>
+<!--include-markdown-supported-freestyle-sensors-start-->
+<ul>
+<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre">FreeStyle Libre (limited models)</a><ul>
+<li>US Libre 1 10-day sensors (via transmitters)</li>
+<li>US Libre 1 14-day sensors (via transmitters)</li>
+<li>International Libre 1 sensors (via transmitters)</li>
+<li>European Libre 2 / 2 Plus sensors (via transmitters)</li>
+<li>European Libre 2 / 2 Plus sensors (direct via Bluetooth)</li>
+<li>Libre 3 / 3 Plus, all models (requires <a href="https://librelinkup.com/">LibreLinkUp</a> and continuous internet connection)</li>
+</ul>
+</li>
+</ul>
+<!--include-markdown-supported-freestyle-sensors-end-->
+<ul>
+<li><a href="../../../../../configuration/settings/devices/cgm/#medtronic-enlite">Medtronic Enlite</a> (requires a compatible pump)</li>
+<li><a href="../../../../../configuration/settings/devices/cgm/#xdrip4ios">xDrip4iOS</a></li>
+<li>(<a href="../../../../../configuration/settings/devices/cgm/#nightscout-as-cgm"><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></a>)</li>
+<li>(<a href="../../../../../configuration/settings/devices/cgm/#glucose-simulator">Glucose Simulator</a>)</li>
 </ul>
 <h2 id="nightscout"><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr><a class="headerlink" href="#nightscout" title="Link to this section for reference">¶</a></h2>
 <p>While using <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is an option, it should be avoided if possible because it will not keep Trio running in the background like other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> options. You will have to open Trio manually to make it run loop cycles.</p>
@@ -788,19 +802,25 @@ Remember to enable <code>Upload Readings</code> to have <em>Trio</em> send gluco
 <p>This option pairs a compatible Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> directly with Trio without using a separate app like xDrip4iOS.</p>
 <h3 id="supported-sensors">Supported Sensors<a class="headerlink" href="#supported-sensors" title="Link to this section for reference">¶</a></h3>
 <ul>
-<li>US Libre 1 10-day <em>via Transmitters</em></li>
-<li>US Libre 1 14-day <em>via Transmitters</em></li>
-<li>International Libre 1 <em>via Transmitters</em></li>
-<li>European Libre 2 / 2 Plus <em>via Transmitters</em></li>
-<li>European Libre 2 / 2 Plus <em>directly via Bluetooth</em></li>
+<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre">FreeStyle Libre (limited models)</a><ul>
+<li>US Libre 1 10-day sensors (via transmitters)</li>
+<li>US Libre 1 14-day sensors (via transmitters)</li>
+<li>International Libre 1 sensors (via transmitters)</li>
+<li>European Libre 2 / 2 Plus sensors (via transmitters)</li>
+<li>European Libre 2 / 2 Plus sensors (direct via Bluetooth)</li>
+<li>Libre 3 / 3 Plus, all models (requires <a href="https://librelinkup.com/">LibreLinkUp</a> and continuous internet connection)</li>
+</ul>
+</li>
 </ul>
 <h3 id="unsupported-sensors">Unsupported Sensors<a class="headerlink" href="#unsupported-sensors" title="Link to this section for reference">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">❌ Unsupported FreeStyle Libre sensors</p>
 <ul>
-<li>Non-European Libre 2</li>
-<li>Libre Pro</li>
-<li>Libre H</li>
-<li>Libre 3</li>
+<li>Non-European FreeStyle Libre 2 (US models not supported)</li>
+<li>FreeStyle Libre Pro</li>
+<li>FreeStyle Libre H</li>
 </ul>
+</div>
 <h2 id="medtronic-enlite">Medtronic Enlite<a class="headerlink" href="#medtronic-enlite" title="Link to this section for reference">¶</a></h2>
 <p>The Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data directly from the pump using a RileyLink-compatible device.</p>
 </article>
