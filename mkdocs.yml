@@ -229,7 +229,6 @@ nav:
           - Prepare your Computer: install/build/mac/computer.md
           - Prepare your iPhone: install/build/mac/iphone.md
           - Set Up Xcode: install/build/mac/xcode-setup.md
-          - Build Select Script ✏️: install/build/mac/build-select-script.md
           - Build Trio with Xcode: install/build/mac/build.md
           - Build Errors: install/build/mac/build-errors.md
           - Update Trio with Xcode: install/build/mac/update.md
