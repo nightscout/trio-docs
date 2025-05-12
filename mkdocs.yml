@@ -299,10 +299,10 @@ nav:
           - Closing The Loop: configuration/settings/closed-loop.md
       - Migration from other OS-AID Systems:
           - configuration/migration/index.md
-          - Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
-          - iAPS: configuration/migration/iaps-migration.md
-          - Loop ✏️: configuration/migration/loop-migration.md
-          - AndroidAPS ✏️: configuration/migration/aaps-migration.md
+          - Migration from Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
+          - Migration from iAPS: configuration/migration/iaps-migration.md
+          - Migration from Loop ✏️: configuration/migration/loop-migration.md
+          - Migration from AndroidAPS ✏️: configuration/migration/aaps-migration.md
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md
