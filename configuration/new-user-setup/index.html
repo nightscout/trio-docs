@@ -526,6 +526,60 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../migration/">
+<span class="md-ellipsis">
+    Migration from other OS-AID Systems
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Migration from other OS-AID Systems
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../migration/trio-02x-migration/">
+<span class="md-ellipsis">
+    Trio 0.2.x ✏️
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../migration/iaps-migration/">
+<span class="md-ellipsis">
+    iAPS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../migration/loop-migration/">
+<span class="md-ellipsis">
+    Loop ✏️
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../migration/aaps-migration/">
+<span class="md-ellipsis">
+    AndroidAPS ✏️
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -770,16 +824,26 @@
 <p><strong><em>Jump to:</em></strong></p>
 <div class="grid">
 <p><a href="#step-1-prepare-trio"><strong>Step 1:</strong> Prepare Trio</a></p>
-<p><a href="#step-6-bluetooth"><strong>Step 6:</strong> Bluetooth</a></p>
 <p><a href="#step-2-therapy-settings"><strong>Step 2:</strong> Therapy Settings</a></p>
-<p><a href="#step-7-connect-your-devices"><strong>Step 7:</strong> Connect Your Devices</a></p>
 <p><a href="#step-3-delivery-limits"><strong>Step 3:</strong> Delivery Limits</a></p>
-<p><a href="#step-8-enable-closed-loop"><strong>Step 8:</strong> Enable Closed <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></p>
 <p><a href="#step-4-algorithm-settings"><strong>Step 4:</strong> Algorithm Settings</a></p>
-<p><a href="#step-9-change-app-icon-optional"><strong>Step 9:</strong> Change App Icon (Optional)</a></p>
 <p><a href="#step-5-notifications"><strong>Step 5:</strong> Notifications</a></p>
+<p><a href="#step-6-bluetooth"><strong>Step 6:</strong> Bluetooth</a></p>
+<p><a href="#step-7-connect-your-devices"><strong>Step 7:</strong> Connect Your Devices</a></p>
+<p><a href="#step-8-enable-closed-loop"><strong>Step 8:</strong> Enable Closed <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></p>
+<p><a href="#step-9-change-app-icon-optional"><strong>Step 9:</strong> Change App Icon (Optional)</a></p>
 </div>
 <hr/>
+<div class="admonition tip">
+<p class="admonition-title">Need help finding these settings in your current <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app?</p>
+<p>If you are coming from another Open Source Automated Insulin Dosing (OS-AID) app, these guides may help you with finding these settings in your previous app and inputing them into Trio.</p>
+<ul>
+<li><a href="../migration/trio-02x-migration/">Trio 0.2.x</a></li>
+<li><a href="../migration/iaps-migration/">iAPS</a></li>
+<li><a href="../migration/loop-migration/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
+<li><a href="../migration/aaps-migration/">AndroidAPS</a></li>
+</ul>
+</div>
 <h2 id="step-1-prepare-trio"><strong>Step 1:</strong> Prepare Trio<a class="headerlink" href="#step-1-prepare-trio" title="Link to this section for reference">¶</a></h2>
 <p>In this step, you'll configure diagnostics sharing, optionally sync with <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr>, and enter other essential setup information.</p>
 <div class="grid">
@@ -817,7 +881,7 @@
 <h2 id="step-2-therapy-settings"><strong>Step 2:</strong> Therapy Settings<a class="headerlink" href="#step-2-therapy-settings" title="Link to this section for reference">¶</a></h2>
 <p>The next step is to enter your Therapy Settings. These include:</p>
 <ul>
-<li><strong>Target Glucose</strong>: Trio's dosing will aim for this glucose when calculating insulin dosage</li>
+<li><strong>Glucose Targets</strong>: Trio's dosing will aim for this glucose when calculating insulin dosage</li>
 <li><strong>Basal Rates</strong>: Used as a baseline for increasing or decreasing insulin needs</li>
 <li><strong>Carb Ratios</strong>: How many grams of carbohydrate are countered by 1 unit of insulin</li>
 <li><strong>Insulin Sensitivities</strong>: How much 1 unit of insulin will lower your blood glucose</li>
@@ -938,9 +1002,9 @@ This setting limits the size of a single SMB dose.<br/>
 <p><strong>Step 7: Set Max UAM Basal Minutes</strong><br/>
 This setting limits the size of a single unannounced meal SMB dose, aka UAM.<br/>
 <a href="../settings/algorithm/smb-settings/#max-uam-basal-minutes">Learn more about Max UAM Basal Minutes here</a>.  </p>
-<p><strong>Step 8: Set Max Delta-BG Threshold SMB</strong><br/>
+<p><strong>Step 8: Set Max Allowed Glucose Rise for SMB</strong><br/>
 This setting disables SMBs if the last two glucose values differ by more than this percent.<br/>
-<a href="../settings/algorithm/smb-settings/#max-delta-bg-threshold-smb">Learn more about Max Delta-BG Threshold SMB here</a>.</p>
+<a href="../settings/algorithm/smb-settings/#max-allowed-glucose-rise-for-smb">Learn more about Max Allowed Glucose Rise for SMB here</a>.</p>
 <h3 id="target-behavior">Target Behavior<a class="headerlink" href="#target-behavior" title="Link to this section for reference">¶</a></h3>
 <p><a href="../settings/algorithm/target-behavior/">Target Behavior</a> allows you to adjust how temporary targets influence <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, basal, and auto-targeting based on sensitivity or resistance.  </p>
 <p><strong>Step 9: High Temp Target Raises Sensitivity</strong><br/>

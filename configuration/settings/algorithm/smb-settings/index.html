@@ -417,9 +417,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#max-delta-bg-threshold-smb">
+<a class="md-nav__link" href="#max-allowed-glucose-rise-for-smb">
 <span class="md-ellipsis">
-      Max Delta-BG Threshold SMB
+      Max Allowed Glucose Rise for SMB
     </span>
 </a>
 </li>
@@ -509,6 +509,60 @@
 <a class="md-nav__link" href="../../closed-loop/">
 <span class="md-ellipsis">
     Closing The Loop
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../migration/">
+<span class="md-ellipsis">
+    Migration from other OS-AID Systems
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Migration from other OS-AID Systems
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../migration/trio-02x-migration/">
+<span class="md-ellipsis">
+    Trio 0.2.x ✏️
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../migration/iaps-migration/">
+<span class="md-ellipsis">
+    iAPS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../migration/loop-migration/">
+<span class="md-ellipsis">
+    Loop ✏️
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../migration/aaps-migration/">
+<span class="md-ellipsis">
+    AndroidAPS ✏️
     
   </span>
 </a>
@@ -626,9 +680,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#max-delta-bg-threshold-smb">
+<a class="md-nav__link" href="#max-allowed-glucose-rise-for-smb">
 <span class="md-ellipsis">
-      Max Delta-BG Threshold SMB
+      Max Allowed Glucose Rise for SMB
     </span>
 </a>
 </li>
@@ -679,7 +733,7 @@
 <li>SMBs reduce blood sugar more quickly than temporary basal rates.</li>
 <li>If you want to configure SMBs only to run in certain conditions, do not turn on 'Enable SMB Always'.</li>
 <li>For a detailed look at when SMBs are used, see the chart in <a href="#are-smbs-allowed">Are SMBs Allowed?</a> section. </li>
-<li>For setup recommendations, see the <a href="http://diy-trio.org/start-up-guide">Start-Up Guide</a>.</li>
+<li>For help with setup, see the <a href="https://docs.diy-trio.org/configuration/new-user-setup.md">New User Guide</a>.</li>
 </ul>
 </div>
 <hr/>
@@ -817,8 +871,8 @@ Enabling this feature allows Trio to deliver insulin required using SMBs when a 
 <p>If you are <strong>NOT</strong> entering carbs or bolusing for meals and using Trio as a Fully Closed <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (FCL), your <strong>Max UAM Basal Minutes should be set <em>higher</em></strong> than your Max SMB Basal Minutes</p>
 </div>
 <hr/>
-<h2 id="max-delta-bg-threshold-smb">Max Delta-BG Threshold SMB<a class="headerlink" href="#max-delta-bg-threshold-smb" title="Link to this section for reference">¶</a></h2>
-<p><strong>Default:</strong> <em>30%</em><br/>
+<h2 id="max-allowed-glucose-rise-for-smb">Max Allowed Glucose Rise for SMB<a class="headerlink" href="#max-allowed-glucose-rise-for-smb" title="Link to this section for reference">¶</a></h2>
+<p><strong>Default:</strong> <em>20%</em><br/>
 <strong>Setting Limits:</strong> <em>10%-40%</em></p>
 <p>This safety limiter looks at the difference between your last two blood glucose readings. If the difference is above this percent, Trio suspects them to be incorrect and will suspend all SMB delivery accordingly (including UAM). You can adjust the amount of change that should be allowed before SMBs are delivered.  </p>
 <details class="question">
@@ -829,9 +883,9 @@ Enabling this feature allows Trio to deliver insulin required using SMBs when a 
 <div class="arithmatex">\[
 \frac{Current\ Glucose - Previous\ Glucose}{Previous\ Glucose}
 \]</div>
-<p>Compare to Max Delta-BG Threshold SMB</p>
+<p>Compare to Max Allowed Glucose Rise for SMB</p>
 <div class="arithmatex">\[
-Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Delta-BG\ Threshold\ Setting
+Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ Setting
 \]</div>
 <p><strong>No SMB</strong>: <span class="arithmatex">\(\gt\)</span><br/>
 <strong>Yes SMB</strong>: <span class="arithmatex">\(\lt\)</span> or <span class="arithmatex">\(=\)</span></p>
@@ -847,14 +901,14 @@ Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Delta-BG\ Threshold\ Setting
 <div class="arithmatex">\[
 +0.28\ or\ +28\%
 \]</div>
-<p>His delta, or change in glucose, is an increase of <strong><em>28%</em></strong></p>
+<p>His rise, or increase in glucose, is an increase of <strong><em>28%</em></strong></p>
 <div class="arithmatex">\[
 28\%\gt 20\% = No\ SMBs
 \]</div>
 </details>
 <details class="success">
 <summary>Answer</summary>
-<p>This change is larger than the threshold, so <strong>no SMBs will be given</strong>. Trio will administer needed insulin via temp basal adjustment.</p>
+<p>This increase is larger than the threshold, so <strong>no SMBs will be given</strong>. Trio will administer needed insulin via temp basal adjustment.</p>
 </details>
 </details>
 <div class="admonition tip">
