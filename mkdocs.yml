@@ -211,11 +211,11 @@ nav:
       - User Interface: usage/interface.md
       - Concepts and Features:
           - usage/concepts/index.md
-          - 🔵 Basal Rates: usage/concepts/basal-rates.md
-          - 🟢 Insulin Sensitivities: usage/concepts/isf.md
-          - 🟣 Carb Ratios: usage/concepts/carb-ratios.md
-          - Override ✏️: usage/features/override.md
-          - Temporary Target ✏️: usage/features/temp-target.md
+          - 🔵 Basal Rates ✏️: usage/concepts/basal-rates.md
+          - 🟢 Insulin Sensitivities ✏️: usage/concepts/isf.md
+          - 🟣 Carb Ratios ✏️: usage/concepts/carb-ratios.md
+          - Overrides ✏️: usage/features/overrides.md
+          - Temporary Targets ✏️: usage/features/temp-targets.md
   - Installation and Update:
       - install/index.md
       - Requirements:
