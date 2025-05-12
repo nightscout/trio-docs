@@ -190,13 +190,14 @@ not_in_nav: |
   0.2.x/settings/configuration/preferences/statistics.md
   0.2.x/settings/devices/pump.md
   configuration/CompatibleDevices.md
+  configuration/migration/trio-02x-migration.md
+  configuration/migration/iaps-migration.md
+  configuration/migration/loop-migration.md
+  configuration/migration/aaps-migration.md
   configuration/transition-qa.md
   install/customize.md
   resources/citations.md
-  usage/overrides.md
-  usage/statistics.md
-  usage/temptarget.md
-
+  
 # Navigation (Page tree)
 nav:
   - index.md
@@ -209,8 +210,9 @@ nav:
   - Usage:
       - usage/index.md
       - User Interface: usage/interface.md
-      #- Temporary Targets ✏️: usage/temptarget.md
-      #- Overrides ✏️: usage/overrides.md
+      - Temporary Targets ✏️: usage/temptarget.md
+      - Overrides ✏️: usage/overrides.md
+      - Statistics ✏️: usage/statistics.md
   - Installation and Update:
       - install/index.md
       - Requirements:
@@ -295,6 +297,12 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
+      - Migration from other OS-AID Systems:
+          - configuration/migration/index.md
+          - Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
+          - iAPS: configuration/migration/iaps-migration.md
+          - Loop ✏️: configuration/migration/loop-migration.md
+          - AndroidAPS ✏️: configuration/migration/aaps-migration.md
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md

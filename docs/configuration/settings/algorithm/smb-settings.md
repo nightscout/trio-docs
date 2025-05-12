@@ -9,7 +9,7 @@
     - SMBs reduce blood sugar more quickly than temporary basal rates.
     - If you want to configure SMBs only to run in certain conditions, do not turn on 'Enable SMB Always'.
     - For a detailed look at when SMBs are used, see the chart in [Are SMBs Allowed?](#are-smbs-allowed) section. 
-    - For setup recommendations, see the [Start-Up Guide](http://diy-trio.org/start-up-guide).
+    - For help with setup, see the [New User Guide](https://docs.diy-trio.org/configuration/new-user-setup.md).
 
 - - -
 
@@ -176,8 +176,8 @@ $$
 
 - - -
 
-## Max Delta-BG Threshold SMB
-**Default:** _30%_  
+## Max Allowed Glucose Rise for SMB
+**Default:** _20%_  
 **Setting Limits:** _10%-40%_
 
 This safety limiter looks at the difference between your last two blood glucose readings. If the difference is above this percent, Trio suspects them to be incorrect and will suspend all SMB delivery accordingly (including UAM). You can adjust the amount of change that should be allowed before SMBs are delivered.  
@@ -191,10 +191,10 @@ This safety limiter looks at the difference between your last two blood glucose 
         \frac{Current\ Glucose - Previous\ Glucose}{Previous\ Glucose}
         $$
         
-        Compare to Max Delta-BG Threshold SMB
+        Compare to Max Allowed Glucose Rise for SMB
         
         $$
-        Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Delta-BG\ Threshold\ Setting
+        Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ Setting
         $$
         
         **No SMB**: $\gt$  
@@ -214,14 +214,14 @@ This safety limiter looks at the difference between your last two blood glucose 
         +0.28\ or\ +28\%
         $$
 
-        His delta, or change in glucose, is an increase of **_28%_**
+        His rise, or increase in glucose, is an increase of **_28%_**
 
         $$
         28\%\gt 20\% = No\ SMBs
         $$
     
     ??? success "Answer"
-        This change is larger than the threshold, so **no SMBs will be given**. Trio will administer needed insulin via temp basal adjustment.
+        This increase is larger than the threshold, so **no SMBs will be given**. Trio will administer needed insulin via temp basal adjustment.
 
 !!! tip
     

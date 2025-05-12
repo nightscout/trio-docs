@@ -19,4 +19,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     A compilation of all settings found in Trio with explanations and definitions
 
+-   __[Migration from other OS-AIDs](migration/index.md)__
+
+    - - -
+    
+    Guidance on locating and identifying the necessary settings for onboarding
+
 </div>
