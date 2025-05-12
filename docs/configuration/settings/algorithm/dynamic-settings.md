@@ -244,16 +244,16 @@ See [Weighted Average of TDD](#weighted-average-of-tdd) setting to understand ho
 
 ## Logarithmic Desmos Graphs
 
-[Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/zrkugmdnob)
+[Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/ousohtexbk)
 
-[Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/aoxzzrhpro)
+[Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/q3hzvylki3)
 
 - - -
 
 ## Sigmoid Desmos Graphs
 
-[Click here to view a graph depicting the sigmoid formula in mg/dL](https://www.desmos.com/calculator/s9jxdmqhh8)
+[Click here to view a graph depicting the sigmoid formula in mg/dL](https://www.desmos.com/calculator/eyf32mtgxo)
 
-[Click here to view a graph depicting the sigmoid formula in mmol/L](https://www.desmos.com/calculator/nb5l47yx0h)
+[Click here to view a graph depicting the sigmoid formula in mmol/L](https://www.desmos.com/calculator/2vvtudm20p)
 
 - - -
