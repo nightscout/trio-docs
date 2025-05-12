@@ -5,7 +5,7 @@ The following pumps are compatible with Trio:
 * Omnipod DASH pumps
 * Omnipod Eros pumps
 * Older Medtronic pumps
-* DanaRS-v1, DanaRS-V3, Dana-i
+* DanaRS-v3, Dana-i
 * Medtrum - (in testing)
 * Tandem Mobi - (in early development)
 
@@ -156,18 +156,11 @@ Medtronic will not typically sell pump supplies directly to customers who have y
 
 ### Sooil Dana pumps
 
-!!! warning "Future Feature Only"
-    Sorry, but the Dana pump has not landed in the released code or even the dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }.
-
-    The information below is for the convenience of people reading along in zulipchat.
-
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Trio* app.**
 
 #### Dana-i
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer *Sooil*, released in 2020.
-
-The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana-i. If your version of the *Trio* app is not from that fork, you cannot use the Dana-i.
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
@@ -175,9 +168,7 @@ The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana
 #### DanaRS
 
 The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the *Trio* app.
-[Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version.
-
-The special fork (see [link](#sooil-dana-pumps) for details) works with the DanaRS-v3. If your version of the *Trio* app is not from that fork, you cannot use the DanaRS-v3.
+[Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
