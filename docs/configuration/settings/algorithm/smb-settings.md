@@ -58,11 +58,11 @@ Enabling this feature allows Trio to deliver insulin required using SMBs for **6
 
 - - -
 
-## Enable SMB with High BG
+## Enable SMB with High Glucose
 **Default:** _OFF_  
-Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your 'High BG Target'. This additional setting will appear when you enable this feature.  
+Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your 'High Glucose Target'. This additional setting will appear when you enable this feature.  
 
-### High BG Target
+### High Glucose Target
 **Default:** _110 mg/dL_ | _6.1 mmol/L_  
 If 'Enable SMB with High BG' is enabled, SMBs will be allowed if your glucose is above this value.  
 
@@ -115,7 +115,7 @@ If any of the SMB options are enabled, this limit will apply to all SMBs except 
 To calculate the maximum SMB allowed based on this setting, use the following formula:  
 
 $$
-\frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+\frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
 $$
 
 ??? question "Bill's current basal rate is 2.0 units/hr. His `Max SMB Basal Minutes` is set to 30 minutes. What is the largest SMB he can receive?"
@@ -123,7 +123,7 @@ $$
     ??? info "Here is the formula you will need:"
     
         $$
-        \frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+        \frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
         $$
         
     ??? note "Calculate Bill's largest SMB:"
@@ -185,7 +185,7 @@ This safety limiter looks at the difference between your last two blood glucose 
 ??? question "Bill's last CGM reading was 90 mg/dL. The very next reading is 115 mg/dL. Will Bill receive the insulin needed as an SMB?"
     
     ??? info "Here are the formulas you'll need:"
-        Delta Percentage:
+        Rise Percentage:
         
         $$
         \frac{Current\ Glucose - Previous\ Glucose}{Previous\ Glucose}
@@ -194,7 +194,7 @@ This safety limiter looks at the difference between your last two blood glucose 
         Compare to Max Allowed Glucose Rise for SMB
         
         $$
-        Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ Setting
+        Rise\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ \mathit{SM}\mathit{B}\ Setting
         $$
         
         **No SMB**: $\gt$  
@@ -217,7 +217,7 @@ This safety limiter looks at the difference between your last two blood glucose 
         His rise, or increase in glucose, is an increase of **_28%_**
 
         $$
-        28\%\gt 20\% = No\ SMBs
+        28\%\gt 20\% = No\ \mathit{SM}\mathit{B}s
         $$
     
     ??? success "Answer"
