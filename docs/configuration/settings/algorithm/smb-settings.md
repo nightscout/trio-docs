@@ -115,7 +115,7 @@ If any of the SMB options are enabled, this limit will apply to all SMBs except 
 To calculate the maximum SMB allowed based on this setting, use the following formula:  
 
 $$
-\frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+\frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
 $$
 
 ??? question "Bill's current basal rate is 2.0 units/hr. His `Max SMB Basal Minutes` is set to 30 minutes. What is the largest SMB he can receive?"
@@ -123,7 +123,7 @@ $$
     ??? info "Here is the formula you will need:"
     
         $$
-        \frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+        \frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
         $$
         
     ??? note "Calculate Bill's largest SMB:"
@@ -194,7 +194,7 @@ This safety limiter looks at the difference between your last two blood glucose 
         Compare to Max Allowed Glucose Rise for SMB
         
         $$
-        Rise\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ Setting
+        Rise\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ \mathit{SM}\mathit{B}\ Setting
         $$
         
         **No SMB**: $\gt$  
@@ -217,7 +217,7 @@ This safety limiter looks at the difference between your last two blood glucose 
         His rise, or increase in glucose, is an increase of **_28%_**
 
         $$
-        28\%\gt 20\% = No\ SMBs
+        28\%\gt 20\% = No\ \mathit{SM}\mathit{B}s
         $$
     
     ??? success "Answer"
