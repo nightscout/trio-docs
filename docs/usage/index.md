@@ -51,7 +51,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧 Documentation Under Construction 🚧  
     How and when to use Overrides
     
--   __[Statistics ✏️](statistics.md)__
+-   __[Statistics ✏️](features/statistics.md)__
 
     - - -
 

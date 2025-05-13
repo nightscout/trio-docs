@@ -192,7 +192,7 @@ Use the tabs below the image to learn more about each section.
         {align="center"}
     
     === "Statistics"
-        This opens the statistics view. You can learn more about the new statistics page [here](statistics.md).
+        This opens the statistics view. You can learn more about the new statistics page [here](features/statistics.md).
             
     === "Time Frame"
         This allows you to choose the time frame shown in the graph.  
