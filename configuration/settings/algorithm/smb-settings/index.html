@@ -371,17 +371,17 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#enable-smb-with-high-bg">
+<a class="md-nav__link" href="#enable-smb-with-high-glucose">
 <span class="md-ellipsis">
-      Enable SMB with High BG
+      Enable SMB with High Glucose
     </span>
 </a>
-<nav aria-label="Enable SMB with High BG" class="md-nav">
+<nav aria-label="Enable SMB with High Glucose" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#high-bg-target">
+<a class="md-nav__link" href="#high-glucose-target">
 <span class="md-ellipsis">
-      High BG Target
+      High Glucose Target
     </span>
 </a>
 </li>
@@ -538,7 +538,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../migration/trio-02x-migration/">
 <span class="md-ellipsis">
-    Trio 0.2.x ✏️
+    Migration from Trio 0.2.x ✏️
     
   </span>
 </a>
@@ -546,7 +546,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../migration/iaps-migration/">
 <span class="md-ellipsis">
-    iAPS
+    Migration from iAPS
     
   </span>
 </a>
@@ -554,7 +554,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../migration/loop-migration/">
 <span class="md-ellipsis">
-    Loop ✏️
+    Migration from Loop ✏️
     
   </span>
 </a>
@@ -562,7 +562,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../migration/aaps-migration/">
 <span class="md-ellipsis">
-    AndroidAPS ✏️
+    Migration from AndroidAPS ✏️
     
   </span>
 </a>
@@ -634,17 +634,17 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#enable-smb-with-high-bg">
+<a class="md-nav__link" href="#enable-smb-with-high-glucose">
 <span class="md-ellipsis">
-      Enable SMB with High BG
+      Enable SMB with High Glucose
     </span>
 </a>
-<nav aria-label="Enable SMB with High BG" class="md-nav">
+<nav aria-label="Enable SMB with High Glucose" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#high-bg-target">
+<a class="md-nav__link" href="#high-glucose-target">
 <span class="md-ellipsis">
-      High BG Target
+      High Glucose Target
     </span>
 </a>
 </li>
@@ -772,10 +772,10 @@ Enabling this feature allows Trio to deliver insulin required using SMBs for <st
 <p>Carbs do not digest at the same rate. Allowing SMBs for the 6 hours after entering a meal will help Trio counter those carbs faster.</p>
 </div>
 <hr/>
-<h2 id="enable-smb-with-high-bg">Enable SMB with High BG<a class="headerlink" href="#enable-smb-with-high-bg" title="Link to this section for reference">¶</a></h2>
+<h2 id="enable-smb-with-high-glucose">Enable SMB with High Glucose<a class="headerlink" href="#enable-smb-with-high-glucose" title="Link to this section for reference">¶</a></h2>
 <p><strong>Default:</strong> <em>OFF</em><br/>
-Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your 'High BG Target'. This additional setting will appear when you enable this feature.  </p>
-<h3 id="high-bg-target">High BG Target<a class="headerlink" href="#high-bg-target" title="Link to this section for reference">¶</a></h3>
+Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your 'High Glucose Target'. This additional setting will appear when you enable this feature.  </p>
+<h3 id="high-glucose-target">High Glucose Target<a class="headerlink" href="#high-glucose-target" title="Link to this section for reference">¶</a></h3>
 <p><strong>Default:</strong> <em>110 mg/dL</em> | <em>6.1 mmol/L</em><br/>
 If 'Enable SMB with High BG' is enabled, SMBs will be allowed if your glucose is above this value.  </p>
 <div class="admonition warning">
@@ -818,14 +818,14 @@ Enabling this feature allows Trio to deliver insulin required using SMBs when a 
 <p>If any of the SMB options are enabled, this limit will apply to all SMBs except UAM SMBs. This is a limit on the size of a single SMB. One SMB can only be as large as this many minutes of your current profile basal rate.  </p>
 <p>To calculate the maximum SMB allowed based on this setting, use the following formula:  </p>
 <div class="arithmatex">\[
-\frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+\frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
 \]</div>
 <details class="question">
 <summary>Bill's current basal rate is 2.0 units/hr. His <code>Max SMB Basal Minutes</code> is set to 30 minutes. What is the largest SMB he can receive?</summary>
 <details class="info">
 <summary>Here is the formula you will need:</summary>
 <div class="arithmatex">\[
-\frac{Max\ SMB\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
+\frac{Max\ \mathit{SM}\mathit{B}\ Basal\ Minutes}{60} \times Current\ Basal\ Rate
 \]</div>
 </details>
 <details class="note">
@@ -879,13 +879,13 @@ Enabling this feature allows Trio to deliver insulin required using SMBs when a 
 <summary>Bill's last <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading was 90 mg/dL. The very next reading is 115 mg/dL. Will Bill receive the insulin needed as an SMB?</summary>
 <details class="info">
 <summary>Here are the formulas you'll need:</summary>
-<p>Delta Percentage:</p>
+<p>Rise Percentage:</p>
 <div class="arithmatex">\[
 \frac{Current\ Glucose - Previous\ Glucose}{Previous\ Glucose}
 \]</div>
 <p>Compare to Max Allowed Glucose Rise for SMB</p>
 <div class="arithmatex">\[
-Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ Setting
+Rise\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ \mathit{SM}\mathit{B}\ Setting
 \]</div>
 <p><strong>No SMB</strong>: <span class="arithmatex">\(\gt\)</span><br/>
 <strong>Yes SMB</strong>: <span class="arithmatex">\(\lt\)</span> or <span class="arithmatex">\(=\)</span></p>
@@ -903,7 +903,7 @@ Delta\ Percentage \gt \ or\ = \ or\ \lt Max\ Allowed\ Glucose\ Rise\ for\ SMB\ S
 \]</div>
 <p>His rise, or increase in glucose, is an increase of <strong><em>28%</em></strong></p>
 <div class="arithmatex">\[
-28\%\gt 20\% = No\ SMBs
+28\%\gt 20\% = No\ \mathit{SM}\mathit{B}s
 \]</div>
 </details>
 <details class="success">
