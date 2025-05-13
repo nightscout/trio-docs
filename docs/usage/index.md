@@ -14,27 +14,48 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
+    🚧 Documentation Under Construction 🚧  
     A detailed look at Trio's user interface and features
 
--   __[Temporary Targets ✏️](temptarget.md)__
+-   __[🔵 Basal Rates ✏️](concepts/basal-rates.md)__
 
     - - -
     
     🚧 Documentation Under Construction 🚧  
+    How Trio uses your *basal rates* to manage your continuous delivery throughout the day.
+
+-   __[🟢 Insulin Sensitivities ✏️](concepts/isf.md)__
+
+    - - -
+    
+    🚧 Documentation Under Construction 🚧  
+    How *Insulin Sensitivities*  helps adjust your insulin based on your glucose levels.
+
+-   __[🟣 Carb Ratios ✏️](concepts/carb-ratios.md)__
+
+    - - -
+    
+    🚧 Documentation Under Construction 🚧  
+    How *carb ratios* determine the insulin you need for the carbs you eat.
+
+-   __[Temporary Targets ✏️](features/temp-targets.md)__
+
+    - - -
+    🚧 Documentation Under Construction 🚧  
     How and when to use Temporary Targets
 
--   __[Overrides ✏️](overrides.md)__
+-   __[Overrides](features/overrides.md)__
 
     - - -
 
-    🚧 Documentation Under Construction 🚧   
+    🚧 Documentation Under Construction 🚧  
     How and when to use Overrides
     
--   __[Statistics ✏️](statistics.md)__
+-   __[Statistics ✏️](features/statistics.md)__
 
     - - -
 
-    🚧 Documentation Under Construction 🚧      
+    🚧 Documentation Under Construction 🚧  
     A detailed look at Trio's Statistics interface
     
    
