@@ -509,15 +509,31 @@
          <lastmod>2025-05-13</lastmod>
     </url>
     <url>
-         <loc>https://docs.diy-trio.org/usage/overrides/</loc>
+         <loc>https://docs.diy-trio.org/usage/concepts/</loc>
          <lastmod>2025-05-13</lastmod>
     </url>
     <url>
-         <loc>https://docs.diy-trio.org/usage/statistics/</loc>
+         <loc>https://docs.diy-trio.org/usage/concepts/basal-rates/</loc>
          <lastmod>2025-05-13</lastmod>
     </url>
     <url>
-         <loc>https://docs.diy-trio.org/usage/temptarget/</loc>
+         <loc>https://docs.diy-trio.org/usage/concepts/carb-ratios/</loc>
+         <lastmod>2025-05-13</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diy-trio.org/usage/concepts/isf/</loc>
+         <lastmod>2025-05-13</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diy-trio.org/usage/features/overrides/</loc>
+         <lastmod>2025-05-13</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diy-trio.org/usage/features/statistics/</loc>
+         <lastmod>2025-05-13</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diy-trio.org/usage/features/temp-targets/</loc>
          <lastmod>2025-05-13</lastmod>
     </url>
 </urlset>
