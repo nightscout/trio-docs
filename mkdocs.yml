@@ -190,13 +190,14 @@ not_in_nav: |
   0.2.x/settings/configuration/preferences/statistics.md
   0.2.x/settings/devices/pump.md
   configuration/CompatibleDevices.md
+  configuration/migration/trio-02x-migration.md
+  configuration/migration/iaps-migration.md
+  configuration/migration/loop-migration.md
+  configuration/migration/aaps-migration.md
   configuration/transition-qa.md
   install/customize.md
   resources/citations.md
-  usage/overrides.md
-  usage/statistics.md
-  usage/temptarget.md
-
+  
 # Navigation (Page tree)
 nav:
   - index.md
@@ -216,6 +217,7 @@ nav:
           - 🟣 Carb Ratios ✏️: usage/concepts/carb-ratios.md
           - Overrides ✏️: usage/features/overrides.md
           - Temporary Targets ✏️: usage/features/temp-targets.md
+          - Statistics ✏️: usage/statistics.md
   - Installation and Update:
       - install/index.md
       - Requirements:
@@ -232,7 +234,6 @@ nav:
           - Prepare your Computer: install/build/mac/computer.md
           - Prepare your iPhone: install/build/mac/iphone.md
           - Set Up Xcode: install/build/mac/xcode-setup.md
-          - Build Select Script ✏️: install/build/mac/build-select-script.md
           - Build Trio with Xcode: install/build/mac/build.md
           - Build Errors: install/build/mac/build-errors.md
           - Update Trio with Xcode: install/build/mac/update.md
@@ -300,6 +301,12 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
+      - Migration from other OS-AID Systems:
+          - configuration/migration/index.md
+          - Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
+          - iAPS: configuration/migration/iaps-migration.md
+          - Loop ✏️: configuration/migration/loop-migration.md
+          - AndroidAPS ✏️: configuration/migration/aaps-migration.md
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md
