@@ -5,57 +5,57 @@
 <!-- Click on a language on the links below to turn on Google's automatic translation.
 
 
-[عربي](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ar)
+[عربي](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ar)
 
-[Български](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=bg)
+[Български](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=bg)
 
-[Čeština](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=cs)
+[Čeština](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=cs)
 
-[Deutsch](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=de)
+[Deutsch](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=de)
 
-[Dansk](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=da)
+[Dansk](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=da)
 
-[Ελληνικά](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=el)
+[Ελληνικά](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=el)
 
-[Español](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=es)
+[Español](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=es)
 
-[日本](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ja)
+[日本](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ja)
 
-[Suomi](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=fi)
+[Suomi](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=fi)
 
-[Français](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=fr)
+[Français](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=fr)
 
-[עברית](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=iw)
+[עברית](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=iw)
 
-[Hrvatski](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hr)
+[Hrvatski](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hr)
 
-[हिंदी](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi)
+[हिंदी](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi)
 
-[Italiano](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=it)
+[Italiano](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=it)
 
-[한국어](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ko)
+[한국어](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ko)
 
-[Norsk](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=no)
+[Norsk](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=no)
 
-[Nederlands](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl)
+[Nederlands](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl)
 
-[Polski](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=pl)
+[Polski](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=pl)
 
-[Português](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=pt)
+[Português](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=pt)
 
-[Română](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ro)
+[Română](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ro)
 
-[Русский](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ru)
+[Русский](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=ru)
 
-[Slovenčina](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=sk)
+[Slovenčina](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=sk)
 
-[Svenska](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=sv)
+[Svenska](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=sv)
 
-[Turkish](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=tr)
+[Turkish](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=tr)
 
-中文（[简体](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=zh-CN))
+中文（[简体](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=zh-CN))
 
-中文（[繁體](https://docs-diy--trio-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=zh-TW))
+中文（[繁體](https://triodocs-org.translate.goog/?_x_tr_sl=auto&_x_tr_tl=zh-TW))
 
 
 ## Change Language
@@ -63,16 +63,16 @@
 To modify the language choice for the whole site, copy the line below, paste it into the URL, and then choose the desired language from the list above.
 
 ```
-https://docs.diy-trio.org/resources/translate.html
+https://triodocs.org/help/translate
 ```
 
 **OR**
 
-Use the Google Translation three-dot menu (`⠇`) and select `Go to original URL ↗` while on the Translation page.
+Use the Google Translate three-dot menu (`⠇`) and select `Go to original URL ↗` while on the Translation page.
 
 ## More Information
 
-- Every website page gets automatically translated to the selected language as do links to other websites
+- Every website page gets automatically translated to the selected language, as do links to other websites
 
 - The Google Translate Tool will appear at the top of each page
   - Trio Docs how-to: [Google Translate Tool Instructions](#google-translate-tool-instructions)

@@ -1,7 +1,7 @@
 # Project information
 site_name: TrioDocs
 site_description: Documentation of Trio, an Automated Insulin Delivery system for iOS.
-site_url: https://docs.diy-trio.org/
+site_url: https://triodocs.org/
 site_author: Trio Community
 use_directory_urls: !ENV [CHECK_BROKEN_LINKS, True]
 
