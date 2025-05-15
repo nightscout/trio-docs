@@ -16,17 +16,17 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Set your preferred glucose units and main dosing limitations
 
+-   __[Glucose Targets](glucose-targets.md)__
+
+    - - -
+    
+    Step by step guide on setting your glucose target(s)
+    
 -   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Basal Rates](basal-rates.md)__
 
     - - -
     
     Step by step guide on setting your basal rates
-    
--   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Insulin Sensitivities](isf.md)__
-
-    - - -
-    
-    Step by step guide on setting your insulin sensitivity factor(s)
     
 -   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Carb Ratios](carb-ratios.md)__
 
@@ -34,10 +34,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Step by step guide on setting your carb ratio(s)
     
--   __[Glucose Targets](glucose-targets.md)__
+-   __![Trio Logo](../../../assets/images/trio-logo.png){ width="20" }[Insulin Sensitivities](isf.md)__
 
     - - -
     
-    Step by step guide on setting your glucose target(s)
+    Step by step guide on setting your insulin sensitivity factor(s)
     
 </div>

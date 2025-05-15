@@ -271,10 +271,10 @@ nav:
           - Therapy:
               - configuration/settings/therapy/index.md
               - Units and Limits: configuration/settings/therapy/units-limits.md
-              - Basal Rates: configuration/settings/therapy/basal-rates.md
-              - Insulin Sensitivities: configuration/settings/therapy/isf.md
-              - Carb Ratios: configuration/settings/therapy/carb-ratios.md
               - Glucose Targets: configuration/settings/therapy/glucose-targets.md
+              - Basal Rates: configuration/settings/therapy/basal-rates.md
+              - Carb Ratios: configuration/settings/therapy/carb-ratios.md
+              - Insulin Sensitivities: configuration/settings/therapy/isf.md
           - Algorithm:
               - configuration/settings/algorithm/index.md
               - Autosens: configuration/settings/algorithm/autosens.md
