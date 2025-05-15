@@ -1,4 +1,4 @@
-Repository for [Trio documentation (under development)](https://docs.diy-trio.org)
+Repository for [Trio documentation (under development)](https://triodocs.org)
 
 ## Install
 
