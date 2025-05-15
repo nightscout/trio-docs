@@ -290,6 +290,7 @@ nav:
               - Remote Control: configuration/settings/features/remote-control.md
               - User Interface: configuration/settings/features/user-interface.md
               - App Icons: configuration/settings/features/app-icons.md
+              - App Diagnostics ✏️: configuration/settings/features/app-diagnostics.md
           - Notifications:
               - configuration/settings/notifications/index.md
               - Trio Notifications: configuration/settings/notifications/trio-notifications.md
