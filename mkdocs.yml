@@ -110,6 +110,7 @@ plugins:
         - pdf.scss
         - primary_color.css
         - trio-docs.pdf
+        - trio-intro.mp4
   - search
 
 extra_css:
