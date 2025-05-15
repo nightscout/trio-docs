@@ -254,7 +254,7 @@ If you are new to this topic, please refer to [LoopDocs: Remote Configuration](h
 * The same set of Nightscout config vars is used by Trio and Loop
     * Ignore references to LoopCaregiver in the LoopDocs link, you will use *LoopFollow* or the Nightscout `Careportal`
 * The Apple Push Notification (APNS) config vars must be configured for the *Apple* developer ID of the person who builds the Trio app (`LOOP_DEVELOPER_TEAM_ID` in the table below)
-* The first two values in this table are the same ones added to the *LoopFollow* app when configuring the [LoopFollow App: Remote Settings](#loopfollow-app-trio-remote-control)
+* The first two values in this table are the same ones added to the *LoopFollow* app when configuring the [LoopFollow App: Trio Remote Control](#loopfollow-app-trio-remote-control)
 
 | Build<br>Method | <div style="width:220px"></div> Config Var | Format of Config Var Value |
 |:-:|:--|:--|
