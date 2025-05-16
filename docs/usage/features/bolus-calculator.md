@@ -276,7 +276,7 @@ Now that Trio has the full bolus determined, Trio reduces this based on the sett
 
 ### Limiting Factors Adjustment
 
-Trio will reduce your bolus amount by the [Recommended Bolus Percentage](bolus-calculator.md/#recommended-bolus-percentage) you've set.
+Trio will reduce your bolus amount by the [Recommended Bolus Percentage](../../configuration/settings/features/bolus-calculator.md#recommended-bolus-percentage) you've set.
 
 Let's look at how Trio will adjust Bill's bolus based on the default setting of 50%:
 
