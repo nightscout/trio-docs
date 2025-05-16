@@ -7,7 +7,7 @@
 
 Crash Reporting (Opt-In by default, with ability to Opt-Out).
 
-Read the [Trio Privacy Policy](https://github.com/nightscout/Trio-dev/blob/dev/PRIVACY_POLICY.md).
+Read the [Trio Privacy Policy](https://github.com/nightscout/Trio/blob/dev/PRIVACY_POLICY.md).
 
 When activated, Trio’s App Diagnostics feature automatically captures anonymized crash reports so the developers can keep the app stable and safe.
 
