@@ -252,7 +252,7 @@ Let's look at the combination used in the image to see what the full bolus recom
     ??? info "Here is the formula you will need:"
     
         $$
-        Glucose\ Calc + \mathit{IO}\mathit{B}\ Calc + \mathit{CO}\mathit{B} Calc + Delta Calc
+        \mathit{Glucose\ Calc} + \mathit{IO}\mathit{B\ Calc} + \mathit{CO}\mathit{B\ Calc} + \mathit{Delta\ Calc}
         $$
         
     ??? note "Calculate Bill's Full Bolus Calculation:"
