@@ -87,7 +87,7 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 > **Be aware that building from the `dev` branch will upgrade to Trio 0.5.x. Once you have upgraded to 0.5.0, going back to 0.2.x is not supported.**
 
-Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date. This graphic was borrowed from LoopDocs - so you look for `nightscout` instead of `LoopKit` and `Trio` instead of `LoopWorkspace`.
+Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.This graphic was copied from LoopDocs - so substitute `nightscout` for `LoopKit` and `Trio` for `LoopWorkspace` or `Loop`.
 
 * Select the desired branch in the dropdown menu (this graphic shows `main` branch, to get 0.5.0, you must choose `dev` branch)
 * If the message indicates this branch is "behind", tap on the sync `fork` button and then the Update branch button
@@ -99,22 +99,66 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: Add Identifiers after you update your fork.
 
--<!-- TODO -->
-insert instructions here
+Refer to the graphic below for the numbered steps. This graphic was copied from LoopDocs - so substitute `nightscout` for `LoopKit` and `Trio` for `LoopWorkspace` or `Loop`:
+
+1. Click on the `Actions` tab of your <code>Trio</code> repository
+1. On the left side, click on 2. <code>Add Identifiers</code>
+1. On the right side, click `Run Workflow` to show a dropdown menu
+    * You will see your default branch (typically this is `main`)
+    * To update the Identifiers so you can build the Trio 0.5.x, you must select `dev`
+1. Tap the green button that says `Run workflow`.
+
+    ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
+    {align="center"}
+
+!!! tip "Be Patient"
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
+
+The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
 ### Update Certificates
 
-For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. After to add this capability is to the Trio Identifier, you must update the Certificate by running the Action: Create Certificates.
+For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: Create Certificates.
 
--<!-- TODO -->
-insert instructions here
+Refer to the graphic below for the numbered steps:
+
+1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
+1. On the left side, click on "`Create Certificates`"
+1. On the right side, click "`Run Workflow`" to show a dropdown menu
+    * You will see your default branch (typically `main`)
+    * Because you plan to build Trio 0.5.x, select `dev`
+1. Tap the green button that says "`Run workflow`".
+
+    ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
+    {align="center"}
+
+1. Wait a minute or two for the action to finish
+
+!!! tip "Be Patient"
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
+
+Once you see the green check mark by `Create Certificates`, the next step is to Build the app.
 
 ### Build the App
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
 
--<!-- TODO -->
-insert instructions here
+> **We recommend most users leave their default branch as `main`. That means you must remember to select `dev` branch each time you build Trio 0.5.x**
+
+If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button. This graphic was copied from LoopDocs - so substitute `nightscout` for `LoopKit` and `Trio` for `LoopWorkspace` or `Loop`:
+
+![build loop using github actions](img/action-04-build-loop.svg){width="700"}
+{align="center"}
+
+#### Refresh, Do Not Repeat
+
+!!! tip "Hit Refresh"
+    After you tap the green Run workflow button, *GitHub* can be slow to update.
+
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
 
 ## Update Build Errors
 
