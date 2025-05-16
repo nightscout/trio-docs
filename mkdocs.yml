@@ -66,6 +66,10 @@ theme:
     - toc.follow
 
 plugins:
+  - redirects:
+      redirect_maps:
+        'startup-guide.md': 'configuration/new-user-setup.md'
+        'startup-guide/index.md': 'configuration/new-user-setup.md'
   - open-in-new-tab
   - macros
   - exporter:
