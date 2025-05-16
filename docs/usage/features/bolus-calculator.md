@@ -289,7 +289,7 @@ Let's look at the combination used in the image to see what the full bolus recom
     ??? info "Here is the formula you will need:"
     
         $$
-        Glucose\ Calc + \mathit{IO}\mathit{B}\ Calc + \mathit{CO}\mathit{B} Calc + Delta Calc
+        \mathit{Glucose\ Calc} + \mathit{IO}\mathit{B\ Calc} + \mathit{CO}\mathit{B\ Calc} + \mathit{Delta\ Calc}
         $$
         
     ??? note "Calculate Bill's Full Bolus Calculation:"
@@ -313,7 +313,7 @@ Now that Trio has the full bolus determined, Trio reduces this based on the sett
 
 ### Limiting Factors Adjustment
 
-Trio will reduce your bolus amount by the [Recommended Bolus Percentage](bolus-calculator.md/#recommended-bolus-percentage) you've set.
+Trio will reduce your bolus amount by the [Recommended Bolus Percentage](../../configuration/settings/features/bolus-calculator.md#recommended-bolus-percentage) you've set.
 
 Let's look at how Trio will adjust Bill's bolus based on the default setting of 50%:
 
@@ -352,7 +352,7 @@ This is pretty simple. Trio will round up or down the bolus calculation. If the 
     ??? success "Answer"
         Because Bill's recommended bolus ends in a number less than 0.05, it will be **rounded down to 2.30 units**.
 
-Congratulations! You've completed the full bolus calculation. We realize this is an extensive and lengthy process, so we encourage you to ensure your [core settings](../therapy/index.md) are tested and accurate for the Trio algorithm and your [algorithm settings](../algorithm/index.md) are set appropriately so that you do not need to constantly second guess these determinations.
+Congratulations! You've completed the full bolus calculation. We realize this is an extensive and lengthy process, so we encourage you to ensure your [core settings](../../configuration/settings/therapy/index.md) are tested and accurate for the Trio algorithm and your [algorithm settings](../../configuration/settings/algorithm/index.md) are set appropriately so that you do not need to constantly second guess these determinations.
 
 !!! tip
     - While it is **always** wise to use your best judgement rather than trusting the bolus recommendation blindly, accurate settings will prevent the need for you to manually intervene and override the bolus recommendation.

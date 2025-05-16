@@ -6,7 +6,6 @@
     - If you want Trio to make all SMB decisions, select Enable SMB Always and leave the other settings deselected.
        - Follow the directions below if you want to configure SMBs only to run in certain conditions.
     - For a detailed look at when SMBs are delivered, see the chart in [Are SMBs Allowed?](#are-smbs-allowed) section. 
-    - For setup recommendations, see the [Start-Up Guide](http://diy-trio.org/start-up-guide).
 
 ## Enable SMB Always
 Enabling this setting allows SMBs to be delivered if your blood sugar is predicted to go above target. 

@@ -9,7 +9,7 @@
     - SMBs reduce blood sugar more quickly than temporary basal rates.
     - If you want to configure SMBs only to run in certain conditions, do not turn on 'Enable SMB Always'.
     - For a detailed look at when SMBs are used, see the chart in [Are SMBs Allowed?](#are-smbs-allowed) section. 
-    - For help with setup, see the [New User Guide](https://docs.diy-trio.org/configuration/new-user-setup.md).
+    - For help with setup, see the [New User Guide](../../new-user-setup.md).
 
 - - -
 
