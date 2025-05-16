@@ -315,7 +315,7 @@ This is pretty simple. Trio will round up or down the bolus calculation. If the 
     ??? success "Answer"
         Because Bill's recommended bolus ends in a number less than 0.05, it will be **rounded down to 2.30 units**.
 
-Congratulations! You've completed the full bolus calculation. We realize this is an extensive and lengthy process, so we encourage you to ensure your [core settings](../therapy/index.md) are tested and accurate for the Trio algorithm and your [algorithm settings](../algorithm/index.md) are set appropriately so that you do not need to constantly second guess these determinations.
+Congratulations! You've completed the full bolus calculation. We realize this is an extensive and lengthy process, so we encourage you to ensure your [core settings](../../configuration/settings/therapy/index.md) are tested and accurate for the Trio algorithm and your [algorithm settings](../../configuration/settings/algorithm/index.md) are set appropriately so that you do not need to constantly second guess these determinations.
 
 !!! tip
     - While it is **always** wise to use your best judgement rather than trusting the bolus recommendation blindly, accurate settings will prevent the need for you to manually intervene and override the bolus recommendation.
