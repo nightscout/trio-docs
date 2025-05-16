@@ -11,7 +11,44 @@
 
 You can access the bolus calculator by tapping the <span style="color: #7d8cf2;">:fontawesome-solid-circle-plus:</span> icon
 
-There are 3 main sections of the Bolus Calculator Interface
+There are 4 main sections of the Bolus Calculator Interface
+
+![Bolus Calculation Sections](../img/calculator-sections.png){width="500"}
+{align="center"}
+
+### Dynamic Glucose Forecast
+
+As you enter your carbs and insulin, this dynamic graph at the top of the bolus calculator will adjust the forecast lines or cone to account for your future data.
+
+![Dynamic Bolus Entry](../img/bolus-entry-dynamic-graph.mp4){width="500"}
+{align="center"}
+
+### Meal Entry
+
+In the Meal Entry section, you will enter your carbs. If you have [FPU](../../configuration/settings/features/meal-settings.md#enable-fat-and-protein-entries)'s enabled, you can also enter your fat and protein.
+
+Below this, there is a place to enter the time for future or past carbs.
+
+You can also add a note for this meal.
+
+### Dosing Calculation
+
+In the Dosing Calculation section, it starts with the [Fatty Meal and Super Bolus options](../../configuration/settings/features/bolus-calculator.md#fatty-meal-and-super-bolus-options) at the top, if you have those enabled.
+
+Below that is the suggested bolus amount that Trio has calculated. Tap the "i" icon for more details and [read the section below](#how-does-the-bolus-calculator-determine-dosage) for more details on the information shared when you tap on this icon.
+
+If you check the "External Insulin" box, the bolus will be added to your IOB, but it will not be delivered by Trio.
+
+### Enact Button
+
+This button will show one of the following messages:
+
+- **Continue Without Treatment**: This means no COB or IOB will be added
+- **Log Carbs**: Carbs will be logged, but no insulin will be delivered
+- **Log FPU**: FPUs will be logged, but no insulin will be delivered
+- **Log Meal**: Both carbs and FPUs will be logged, but no insulin will be delivered
+- **Log Meal/FPU/Carbs and Enact Bolus**: Carbs and/or FPUs will be logged and insulin will be delivered
+- **Log External Insulin**: Insulin will be added to IOB, but it will **not** be delivered
 
 ## How Does the Bolus Calculator Determine Dosage?
 
