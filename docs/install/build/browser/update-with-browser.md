@@ -68,10 +68,32 @@ The numbered steps correspond to numbers in graphics below:
 The open beta testing for Trio uses the `dev` branch.
 
 * If you do not have a dev branch you must first configure one following these directions.
-* If you already have a `dev` branch, then just update it. 
+* If you already have a `dev` branch, skip ahead to [Update Branch](#update-branch) and be sure to select the `dev` branch when you update your `fork`. 
 
--<!-- TODO -->
-insert instructions here
+#### Add `Branch`
+
+Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections. This graphic was borrowed from LoopDocs - so you look for `nightscout` instead of `LoopKit` and `Trio` instead of `LoopWorkspace`:
+
+1. Click on the drop down menu labeled 1 in the graphic and choose nightscout/Trio similar to the top right graphic
+2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
+3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`
+    * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
+4. Review the dialog items to make sure everything is correct and then tap on Create branch
+
+![steps to add a branch continued](img/add-branch-02.svg){width="700"}
+{align="center"}
+
+#### Update `Branch`
+
+> **Be aware that building from the `dev` branch will upgrade to Trio 0.5.x. Once you have upgraded to 0.5.0, going back to 0.2.x is not supported.**
+
+Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date. This graphic was borrowed from LoopDocs - so you look for `nightscout` instead of `LoopKit` and `Trio` instead of `LoopWorkspace`.
+
+* Select the desired branch in the dropdown menu (this graphic shows `main` branch, to get 0.5.0, you must choose `dev` branch)
+* If the message indicates this branch is "behind", tap on the sync `fork` button and then the Update branch button
+
+![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
+{align="center"}
 
 ### Update Identifiers
 
