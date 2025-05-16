@@ -185,7 +185,7 @@ See [Nightscout for Temp Target Control](#nightscout-for-temp-target-control). T
 
 ### Guardrails
 
-The maximum allowed entries for Bolus, Carbs, Protein and Fat are configured in the guardrails section shown in the graphic below. This example is one in which the Shared Secret and APNS values have not yet been added.
+The maximum allowed entries for Bolus, Carbs, Protein, and Fat are configured in the guardrails section shown in the graphic below. This example is one in which the Shared Secret and APNS values have not yet been added.
 
 ![default guardrails](img/lf-trc-guardrails.jpg){width="500"}
 
@@ -218,7 +218,7 @@ Once the *LoopFollow* phone is configured, and while the Trio phone is handy, te
 
 Remember to give the system time to update.
 
-The sequence is *LoopFollow* to *Apple Push Notifications* to *Trio* which uploads to *Nightscout* and then is displayed in the *LoopFollow* main screen.
+The sequence is *LoopFollow* to *Apple Push Notifications* to *Trio*, which uploads to *Nightscout* and then is displayed in the *LoopFollow* main screen.
 
 ### Remote Meal
 
@@ -254,7 +254,7 @@ If you are new to this topic, please refer to [LoopDocs: Remote Configuration](h
 * The same set of Nightscout config vars is used by Trio and Loop
     * Ignore references to LoopCaregiver in the LoopDocs link, you will use *LoopFollow* or the Nightscout `Careportal`
 * The Apple Push Notification (APNS) config vars must be configured for the *Apple* developer ID of the person who builds the Trio app (`LOOP_DEVELOPER_TEAM_ID` in the table below)
-* The first two values in this table are the same ones added to the *LoopFollow* app when configuring the [LoopFollow App: Remote Settings](#loopfollow-app-remote-settings)
+* The first two values in this table are the same ones added to the *LoopFollow* app when configuring the [LoopFollow App: Trio Remote Control](#loopfollow-app-trio-remote-control)
 
 | Build<br>Method | <div style="width:220px"></div> Config Var | Format of Config Var Value |
 |:-:|:--|:--|

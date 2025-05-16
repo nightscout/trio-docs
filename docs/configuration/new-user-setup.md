@@ -236,7 +236,7 @@ To configure the algorithm, you'll define the settings for Autosens, Super Micro
         Enabling this feature allows Trio to deliver insulin required using SMBs for **6 hours** after any carb entry, regardless of whether there are active carbs on board (COB).  
         
         **Step 3d: [Enable SMB with High Glucose](settings/algorithm/smb-settings.md#enable-smb-with-high-glucose)**  
-        Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your [High Glucose Target](settings/algorithm/smb-settings/#high-glucose-target). This additional setting will appear when you enable this feature.  
+        Enabling this feature allows Trio to deliver insulin required using SMBs when your glucose reading is above the value set as your [High Glucose Target](settings/algorithm/smb-settings.md#high-glucose-target). This additional setting will appear when you enable this feature.  
     
     **Step 4: [Allow SMB with High Temp Target](settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget)**  
     This is the only setting not enabled when `Enable SMB Always` is turned on. Turning this setting on will allow SMBs when a manual Temp Target is set greater than 100 mg/dL (5.5 mmol/L). 

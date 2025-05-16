@@ -110,6 +110,7 @@ plugins:
         - pdf.scss
         - primary_color.css
         - trio-docs.pdf
+        - trio-intro.mp4
   - search
 
 extra_css:
@@ -134,7 +135,7 @@ extra:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/groups/diytrio
       name: Trio on Facebook
-  version: 0.2.1
+  version: 0.4.0
 
 watch:
   - includes
@@ -190,10 +191,6 @@ not_in_nav: |
   0.2.x/settings/configuration/preferences/statistics.md
   0.2.x/settings/devices/pump.md
   configuration/CompatibleDevices.md
-  configuration/migration/trio-02x-migration.md
-  configuration/migration/iaps-migration.md
-  configuration/migration/loop-migration.md
-  configuration/migration/aaps-migration.md
   configuration/transition-qa.md
   install/customize.md
   resources/citations.md
