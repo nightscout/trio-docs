@@ -101,8 +101,8 @@ The size of UAMs is limited by [Max UAM Basal Minutes](#max-uam-basal-minutes)
 
     Enabling UAM will give minor adjustments in your insulin dosing to account for the difference in expected glucose and actual glucose readings.
     
-        - If you are entering carbs and/or bolusing for meals, `Max UAM Basal Minutes` should be set lower than `Max SMB Basal Minutes`.
-        - If you are **not** entering carbs or bolusing for meals, `Max UAM Basal Minutes` should be set higher than `Max SMB Basal Minutes`.
+    - If you are entering carbs and/or bolusing for meals, `Max UAM Basal Minutes` should be set lower than `Max SMB Basal Minutes`.
+    - If you are **not** entering carbs or bolusing for meals, `Max UAM Basal Minutes` should be set higher than `Max SMB Basal Minutes`.
 
 - - -
 
