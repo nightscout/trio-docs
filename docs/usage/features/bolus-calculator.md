@@ -255,7 +255,7 @@ Let's look at how Trio accounts for an increasing trend and a decreasing trend i
     ??? success "Answer"
         Based on his current ISF, Bill needs **0.49 units** to counter the current trend in his glucose readings.
 
-??? question "**Decreasing Trend**: Bill's last 3 glucose readings were steadily increasing for a combined change of -15 mg/dL. His current ISF is 100 mg/dL/U How will Trio treat this trend in glucose?"
+??? question "**Decreasing Trend**: Bill's last 3 glucose readings were steadily decreasing for a combined change of -15 mg/dL. His current ISF is 100 mg/dL/U How will Trio treat this trend in glucose?"
     
     ??? info "Here is the formula you will need:"
     
