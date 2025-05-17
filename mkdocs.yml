@@ -219,6 +219,7 @@ nav:
           - Overrides ✏️: usage/features/overrides.md
           - Temporary Targets ✏️: usage/features/temp-targets.md
           - Statistics ✏️: usage/features/statistics.md
+          - Bolus Calculator ✏️: usage/features/bolus-calculator.md
   - Installation and Update:
       - install/index.md
       - Requirements:
