@@ -1,6 +1,8 @@
 ## Remote Control
 
-Secure remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
+The use of Nightscout Careportal and [Shortcuts](shortcuts.md){: target="_blank" } continue to be supported with Trio.
+
+Addtional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
 
 * Trio 0.5.x (and newer)
 * *LoopFollow* version 2.4.0 (and newer)
@@ -21,7 +23,7 @@ To ensure security, these commands are protected by a shared secret located on t
     Remote Control using Trio 0.5.x and newer (`dev` branch) is different from the version supplied by Trio 0.2.x and older.
 
     ??? tip "Remote Control Changes if Updating from Trio 0.2.x"
-        Trio can use Nightscout Careportal to start and cancel Temp Targets.
+        Trio can use Nightscout Careportal to enter `Carb Correction`, and start and cancel `Temporary Target`.
         
         * This was available in Trio 0.2.x and continues to be available in Trio 0.5.x (and newer).
 

@@ -53,9 +53,9 @@ The numbered steps correspond to numbers in graphics below:
 1. Choose Actions
 1. Choose Variable
 1. Tap on “Create new organization variable” or “Create new repository variable”
-1. Add the variable ENABLE_NUKE CERTS 
-1. Add the value true
-1. Add Variable.
+1. Add the variable `ENABLE_NUKE_CERTS`
+1. Type in the value `true`
+1. Tap on Add Variable.
 
 ![add ENABLE_NUKE_CERTS variable](img/add-variable-01.png){ width="800"}
 {align="center"}
