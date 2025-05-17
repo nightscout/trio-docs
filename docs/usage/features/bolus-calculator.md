@@ -18,10 +18,16 @@ There are 4 main sections of the Bolus Calculator Interface
 
 ### Dynamic Glucose Forecast
 
-As you enter your carbs and insulin, this dynamic graph at the top of the bolus calculator will adjust the forecast lines or cone to account for your future data.
+As you enter your carbs and insulin, this dynamic graph at the top of the bolus calculator will adjust the forecast lines or cone to account for your future data.  
+Watch the video below to see this in action.
 
-![Dynamic Bolus Entry](../img/bolus-entry-dynamic-graph.mp4){width="500"}
-{align="center"}
+<div class="video-center">
+  <video controls  preload="metadata" height="664" width="334">
+    <source src="/usage/img/bolus-entry-dynamic-graph.mp4" type="video/mp4">
+    Your browser doesn’t support the HTML5 video tag.
+  </video>
+</div>
+
 
 ### Meal Entry
 
