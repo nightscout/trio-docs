@@ -61,7 +61,7 @@ A positive calculation will be shown in green and a negative calculation will be
 
 ### Glucose Calculation
 
-The bolus calculator in Trio starts with your basic dosage needed to address your current glucose reading. This can be a positive or negative number. If your glucose is below your target, it will be negative. If your glucose is above your target, it will be positive.
+The bolus calculator in Trio starts with your basic dosage needed to address your current glucose reading. If your glucose is below your target, it will be a negative number. If your glucose is above your target, it will be a positive number.
 
 Let's walk through Bill's current bolus calculation, starting with the first step, **Glucose Calculation**.  
 
@@ -122,11 +122,11 @@ Trio takes many additional factors into account. Next, it will adjust for the am
 
 The next step in the bolus calculation is the adjustment for current insulin on board (IOB). To prevent the calculator from giving you insulin already given, it subtracts your current IOB.  
 
-This will also replace any missing insulin that may have occurred after basal suspension. If you are trending low before a meal, this will add any negative IOB to return you to baseline basal in preparation for addressing your insulin needed for the incoming carbs.
+This will also replace any missing insulin that may have occurred after basal reduction or suspension. If you are trending low before a meal, this will add any negative IOB to return you to baseline basal in preparation for addressing your insulin needed for the incoming carbs.
 
 Let's look at how Trio addresses both positive and negative IOB:
 
-??? question "**Postive IOB**: Bill currently has 1.0 units of insulin on board (IOB) from previous manual boluses and SMBs. How will the bolus calculator adjust for this IOB?"
+??? question "**Postive IOB**: Bill currently has 1.0 units of insulin on board (IOB) from previous SMBs, manual boluses, and/or increased temp basal rates. How will the bolus calculator adjust for this IOB?"
 
     ??? info "Here is the formula you will need:"
     
@@ -147,7 +147,7 @@ Let's look at how Trio addresses both positive and negative IOB:
     ??? success "Answer"
         The bolus calculator will **subtract 1.0 units** from the bolus recommendation.
         
-??? question "**Negative IOB**: Bill currently has -1.0 units of insulin on board (IOB) from previous manual boluses and SMBs. How will the bolus calculator adjust for this IOB?"
+??? question "**Negative IOB**: Bill currently has -1.0 units of insulin on board (IOB) from previous reduced or suspended basal rates. How will the bolus calculator adjust for this IOB?"
 
     ??? info "Here is the formula you will need:"
     
@@ -172,11 +172,11 @@ There are still more factors for Trio to take into account, so we aren't done ye
 
 ### Carbs on Board Adjustment
 
-The previous step took into account the insulin you already have in your system. Most likely, some of that insulin is to counter carbs on board. This step will add the insulin needed for both the carbs already on board and the new carbs you just entered. This allows Trio to prevent over-correcting for new carbs just in case your absorption or last bolus calculation has adjusted since it was administered.
+The previous step took into account the insulin you already have in your system. This next step will add the insulin needed for both the carbs already on board and the new carbs you just entered, which serves to negate any IOB that was due to previous meals (COB).
 
 Let's look at how Trio addresses times when there are carbs on board and times when there are no carbs on board:
 
-??? question "**Without COB**: Bill currently has no carbs on board (COB), but he is entering 50g into the bolus calculator. How much insulin does he need to counter both the existing and new carbs in his system?"
+??? question "**Without COB**: Bill currently has no carbs on board (COB), but he is entering 50g into the bolus calculator. His current carb ratio (CR) is 10 g/U. How much insulin does he need to counter both the existing and new carbs in his system?"
     
     ??? info "Here is the formula you will need:"
     
@@ -201,7 +201,7 @@ Let's look at how Trio addresses times when there are carbs on board and times w
     ??? success "Answer"
         Based on his current core settings, Bill needs **5.00 units** to counter the carbs he's entered.
 
-??? question "**With COB**: Bill currently has 20g carbs on board (COB), but he is entering 50g into the bolus calculator. How much insulin does he need to counter both the existing and new carbs in his system?"
+??? question "**With COB**: Bill currently has 20g carbs on board (COB), but he is entering 50g into the bolus calculator. His current carb ratio (CR) is 10 g/U. How much insulin does he need to counter both the existing and new carbs in his system?"
     
     ??? info "Here is the formula you will need:"
     
