@@ -233,3 +233,13 @@
 .loopGreen {
     color: #6FCE96
 }
+
+/*
+ * Video
+ */
+.video-center {
+  text-align: center;
+}
+.video-center video {
+  max-width: 100%;
+}
