@@ -72,7 +72,7 @@ The open beta testing for Trio uses the `dev` branch.
 
 #### Add `Branch`
 
-Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections. This graphic was borrowed from LoopDocs - so you look for `nightscout` instead of `LoopKit` and `Trio` instead of `LoopWorkspace`:
+Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections.:
 
 1. Click on the drop down menu labeled 1 in the graphic and choose nightscout/Trio similar to the top right graphic
 2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
