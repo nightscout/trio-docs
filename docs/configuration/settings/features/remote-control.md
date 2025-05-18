@@ -1,8 +1,8 @@
 ## Remote Control
 
-The use of Nightscout Careportal and [Shortcuts](shortcuts.md){: target="_blank" } continue to be supported with Trio.
+The limited use of remote control with Nightscout, i.e., entry of Carb Correction and Temporary Targets when Careportal is authenticated continue to be supported with Trio.
 
-Addtional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
+Additional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
 
 * Trio 0.5.x (and newer)
 * *LoopFollow* version 2.4.0 (and newer)
