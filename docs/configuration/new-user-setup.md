@@ -340,8 +340,13 @@ Trio requires Bluetooth to function as a (hybrid) closed-loop system. If you do 
 <p style="text-align: center; font-size: 32px;">Congratulations!</p>
 <p style="text-align: center; font-size: 24px;">But, you're not done yet!</p>  
 
-![Home Screen Mockup](img/trio-phone-mockup.mp4){ width="500px" }
-{ align=center }
+<div class="video-center" label="Home Screen Mockup">
+  <video controls  preload="metadata" width="500" height="500">
+    <source src="/configuration/img/trio-phone-mockup.mp4" type="video/mp4">
+      Your browser doesn’t support the HTML5 video tag.
+       <p>The video cannot be displayed. You can <a href="https://triodocs.org/usage/img/trio-phone-mockup.mp4">download it here</a>.</p>
+  </video>
+<</div>
 
 **Steps 7 & 8 are not in the Onboarding Wizard**  
 These cannot be completed until you've finished onboarding, but _must_ be completed before you can start using Trio.
