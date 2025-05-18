@@ -176,6 +176,9 @@ markdown_extensions:
         - includes/glossary.txt
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - tables
   - toc:
       permalink: true
