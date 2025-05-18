@@ -37,5 +37,46 @@ When you run into issues while building or using the Trio app, follow the steps 
     - [ ] **Edit** your **original message** to **include** the word **RESOLVED** at the beginning.  
           This helps mentors know they don't need to respond to help you.
 
-<!-- TODO -->
-Coming soon...
+## How to Ask for Help
+
+The key details to include in your question depend on the build method you used:
+
+- **Browser Build**
+    - [ ] ❌ Do NOT send screenshots
+    - [ ] **Your GitHub username** (required)
+    - [ ] Link to **build logs**
+    - [ ]  Describe **which step failed**
+- **Mac Build**
+	- ✅ Include **screenshots** (Xcode, app screen, settings)
+    - Describe **what you were doing**
+    - **Error messages** or **logs**
+
+In all cases:
+- Make it easy for volunteers to understand your situation.
+- Respect their time by including the right info.
+
+```mermaid
+---
+title: What to Share when Asking for Help
+---
+flowchart LR
+	B{Which 
+     **build method** 
+     are you using?}
+    
+    B --> C["**Browser** Build (GitHub)"]
+    B --> D["**Mac** Build"]
+
+    %% Browser Build Path
+    C --> C1["Include your 
+    **GitHub username**"]
+    C --> C2[Do **NOT** send screenshots]
+    C --> C3[Share **build link** if available]
+    C --> C4["Describe what **step** you **reached**"]
+
+    %% Mac Build Path
+    D --> D1["Include helpful **screenshots** 
+    (Xcode **errors**, app screen, signing settings...)"]
+    D --> D3[**Be specific**: **what were you trying to do**?]
+    D --> D4["Include **error messages** or **logs** "]
+```
