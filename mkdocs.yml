@@ -178,6 +178,10 @@ markdown_extensions:
         - includes/glossary.txt
   - pymdownx.tabbed:
       alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - tables
   - toc:
       permalink: true
