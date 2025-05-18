@@ -103,6 +103,7 @@ plugins:
       excluded_files:
         - back.html.j2
         - background.png
+        - bolus-entry-dynamic-graph.mp4
         - CNAME
         - .DS_Store
         - extra.css
@@ -115,6 +116,7 @@ plugins:
         - primary_color.css
         - trio-docs.pdf
         - trio-intro.mp4
+        - trio-phone-mockup.mp4
   - search
 
 extra_css:
