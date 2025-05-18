@@ -1,6 +1,8 @@
 ## Remote Control
 
-The limited use of remote control with Nightscout, i.e., entry of Carb Correction and Temporary Targets when Careportal is authenticated continue to be supported with Trio.
+The limited use of remote control with Nightscout, i.e., entry of Carb Correction and Temporary Targets when Careportal is authenticated, continues to be supported with Trio.
+
+> Nightscout version must be 15.0.2 or newer to properly display the OpenAPS pill with Trio 0.5.x (and newer)
 
 Additional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
 
