@@ -111,9 +111,7 @@ The graphic below shows the display when you tap on the *Dexcom* Settings row.
 ![enter dexcom credentials](img/lf-data-source-dexcom.svg){width="300"}
 {align="center"}
 
-- - -
-
-## *LoopFollow* Remote Setting Type 
+### *LoopFollow* Remote Setting Type 
 
 The Remote Settings row in the *LoopFollow* Settings screen is used to select the type of remote access you wish to use.
 
@@ -138,7 +136,22 @@ The graphic below shows the top portion of the Remote Settings screen when None,
 ![LoopFollow remote options - all types](img/lf-remote-options.svg){width="400"}
 {align="center"}
 
+- - -
+
+## *LoopFollow* Nightscout Remote Control
+
+If you select Nightscout as the Remote Control Type for *LoopFollow*, this enables Temporary Targets to the set and disabled from *LoopFollow*.
+
+> This is the only remote option that works for Trio 0.2.x when using *LoopFollow*.
+
+![LoopFollow remote options - all types](img/lf-nightscout.png){width="300"}
+{align="center"}
+
+- - -
+
 ## *LoopFollow* Trio Remote Control
+
+> This is supported for Trio 0.5.x or newer when using *LoopFollow* 2.4.0 or newer.
 
 When you select Trio Remote Control as the Remote Type in the *LoopFollow* app, you must fill in the (1) [Shared Secret](#shared-secret), (2) [APNS Key ID](#apns-key-id) and (3) [APNS Key](#apns-key).
 
