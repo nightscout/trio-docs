@@ -367,7 +367,7 @@ In addition to this step, you may need to force the profile (from Trio) to uploa
 ### Update Profile
 
 !!! warning "Must on Trio 0.5.x (or newer)"
-    If you are on Trio 0.2.x, you might see the option for Trio Remote Control in *LoopFollow* Remote Settings, but you can't use it. See [*LoopFollow* *Nightscout* Remote Control](#loopfollow-nightscout-remote-control).
+    If you are on Trio 0.2.x, you might see the option for Trio Remote Control in *LoopFollow* Remote Settings, but you can't use it. See [Use *LoopFollow* *Nightscout* Remote Control](#use-loopfollow-nightscout-remote-control).
 
 If you were previously running the *Loop* app, take the actions in the [previous section](#stop-nightscout-access-from-the-loop-app) and then force the profile to update.
 
