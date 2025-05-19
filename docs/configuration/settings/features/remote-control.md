@@ -316,11 +316,11 @@ If you do not have APNS credentials, you need to create a key and grant it acces
     This step will download a file with a name that starts with `AuthKey` and ends with `.p8`.
 > ![img/apns-download.png](img/apns-download.png)
 6. Find your `AuthKey` downloaded file in your downloads folder. It's a good idea to store this file where you can find it again if you need it. 
-   Double-click to open it and you will be presented a message asking how you'd like to open it. The graphic and instructions below are for a Mac. Make sure your editor does not change any characters in your APN key; use a text-only editor like NotePad (PC) or TextEdit (Mac).
-   Click on `Choose Application...` and then select *`TextEdit`* as your application to open it with.  
-> ![img/apns-open.png](img/apns-open.png)
-> ![img/apns-textedit.png](img/apns-textedit.png)
-7. When the file opens, it will look similar to the screenshot below. You need to highlight **ALL OF THE CONTENTS** of that file and copy it and then paste it both into your Secrets Reference file and into the row for *LoopFollow* [APNS Key](#apns-key). Yes, *allllll* of the contents.  
+    The next task is to rename the file so you can open it. 
+    Highlight the filename and choose rename, then add ".txt" after ".p8". In other words, modify `AuthKey_AAAAAAAAAA.p8` to `AuthKey_AAAAAAAAAA.p8.txt` and click on `Use .txt` when questioned.
+> ![rename the p8 file](img/apns-rename.png){width=200}
+{align=center}
+7. Double-click to open the `AuthKey_AAAAAAAAAA.p8.txt` file. It will look similar to the screenshot below. You need to highlight **ALL OF THE CONTENTS** of that file and copy it and then paste it both into your Secrets Reference file and into the row for *LoopFollow* [APNS Key](#apns-key). Yes, *allllll* of the contents.  
     So, the easiest way is to:
       * **Click inside that file**
       * Highlight **all** the text, and then
@@ -330,7 +330,7 @@ If you do not have APNS credentials, you need to create a key and grant it acces
 
     > ![img/apns-copy-key.png](img/apns-copy-key.png)
 
-8. The APNS Key ID is the 10-character name embedded in the filename: `AuthKey_AAAAAAAAAA.p8`. You can also see it if you return to Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list) as highlighted in this graphic. You copy that APNS Key ID and then paste it both into your Secrets Reference file and into the row for *LoopFollow* [APNS Key ID](#apns-key-id)
+8. The APNS Key ID is the 10-character name embedded in the filename: `AuthKey_AAAAAAAAAA.p8.txt`. You can also see it if you return to Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list) as highlighted in this graphic. You copy that APNS Key ID and then paste it both into your Secrets Reference file and into the row for *LoopFollow* [APNS Key ID](#apns-key-id)
 
     > ![APNS KEY ID is highlighted by red rectangle](img/apns-key-id.png)
 
