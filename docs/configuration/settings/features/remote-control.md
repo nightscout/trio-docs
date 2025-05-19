@@ -140,7 +140,7 @@ The graphic below shows the top portion of the Remote Settings screen when None,
 
 ## *LoopFollow* Nightscout Remote Control
 
-If you select Nightscout as the Remote Control Type for *LoopFollow*, this enables Temporary Targets to the set and disabled from *LoopFollow*.
+If you select Nightscout as the Remote Control Type for *LoopFollow*, this enables Temporary Targets to be set and disabled from *LoopFollow*.
 
 > This is the only remote option that works for Trio 0.2.x when using *LoopFollow*.
 
@@ -345,7 +345,7 @@ If you were previously running the *Loop* app, be sure to remove Nightscout from
 
 Then you may need to force a new default profile from Trio to Nightscout.
 
-If the Debug Info in *LoopFollow* is missing a Device Token or a Bundle ID, as shown on the left side of the graphic, go to the Trio app and make sure you have enable Uploading to Nightscout. You may need to toggle it off (disable) and then enable it again to force a new (Trio) profile to upload to Nightscout.
+If the Debug Info in *LoopFollow* is missing a Device Token or a Bundle ID, as shown on the left side of the graphic, go to the Trio app and make sure you enable Uploading to Nightscout. You may need to toggle it off (disable) and then enable it again to force a new (Trio) profile to upload to Nightscout.
 
 ![LoopFollow debug info indicates a problem](img/lf-force-ns-profile.svg){width=600}
 {align=center}
