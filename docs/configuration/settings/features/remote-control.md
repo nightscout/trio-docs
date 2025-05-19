@@ -78,23 +78,30 @@ You tap on the settings icon at the bottom right of the toolbar to configure *Lo
 
 You provide *LoopFollow* with information about the person you are following. At least one of these must be entered:
 
-* [*Nightscout* URL with access token](#add-nightscout)
+* [*Nightscout* URL](#add-nightscout)
 * [*Dexcom* Share credentials](#add-dexcom)
-
-!!! tip "What is an Access Token?"
-    Any *Nightscout* site used for remote control must be secured. Typically you provide the URL for the site and a token that indicates how much access is allowed (read only, careportal, etc.). For more information:
-    
-    * [Admin Tools in *Nightscout*](https://nightscout.github.io/nightscout/admin_tools/#subjects-and-roles)
 
 #### Add *Nightscout*
 
-The *Nightscout* URL with an appropriate token is required to enable display of the Information Table. The type of token depends on the type of remote control desired. The table below indicates the minimum token access for each type of remote control available with Trio. When you enter your credentials, *LoopFollow* tries to reach the site and then provides the status.
+!!! tip "*Nightscout* Access"
+    It is possible to have your *Nightscout* site readable by the world, in which case you do not need to add a token. If you choose to do that, just ignore references to entering the token below. The status will show up as `OK (Read)`.
+
+    The only exception is if you choose to [Use *LoopFollow* *Nightscout* Remote Control](#use-loopfollow-nightscout-remote-control). In that case, you must have a token with careportal access.
+
+    For more information:
+    
+    * [Admin Tools in *Nightscout*](https://nightscout.github.io/nightscout/admin_tools/#subjects-and-roles)
+
+The *Nightscout* URL is required to enable display of the Information Table. It is recommended that you secure you *Nightscout* site so a token is required to view it. The type of token depends on the type of remote control desired. The table below indicates the minimum token access for each type of remote control available with Trio. When you enter your credentials, *LoopFollow* tries to reach the site and then provides the status.
 
 | *LoopFollow* Remote Type | Minimum Token Access| *LoopFollow* Status |
 |:--|:--|:--|
 | **None** | Read | OK (Read) |
 | ***Nightscout*** | Read & Careportal | OK (Read & Write) |
 | **Trio Remote Control** | Read | OK (Read) |
+
+!!! question "Do I need a token for Trio Remote Contol"
+    The security for using *LoopFollow* Trio Remote Contol comes from the Shared Secret and the APNS credentials. Your *Nightscout* site can be readable by the world if you so choose. In that case, no token is required and status will appear as `OK (Read)`.
 
 The graphic below shows the display when you tap on the *Nightscout* Settings row.
 
@@ -124,6 +131,7 @@ The Remote Settings row in the *LoopFollow* Settings screen is used to select th
 
 * *Nightscout* option
     * Remote control with *LoopFollow* is limited to starting and canceling Temp Targets
+    * Available with Trio 0.2.x
 * Trio Remote Control option
     * Remote control with *LoopFollow* includes adding remote carbs, enacting remote bolus, and starting and canceling Temp Targets and Overrides
     * Requires Trio 0.5.x (or newer) and *LoopFollow* 2.4.x (or newer)
@@ -211,17 +219,15 @@ Refer to the graphic in the [Guardrails](#guardrails) section.
 
 ### Debug / Info
 
-This section indicates if the *LoopFollow* app entries match the Shared Secret in the Trio phone and contain valid Apple Push Notification Values. If all rows are not filled out, the settings need to be updated.
-
-If you are sure you filled everything in properly when configuring, but have empty rows in the Debug / Info screen, the most likely problem is the default profile is not coming from Trio. See [Update Profile](#update-profile). 
-If you took those steps and still have missing rows, return to [Configure *LoopFollow* Trio Remote Control](#configure-loopfollow-trio-remote-control) and try again.
-
-Refer to the graphic in the [Guardrails](#guardrails) section to view an example when the Shared Secret and APNS values have not been entered.
+This section indicates if *Trio* has uploaded required information to *Nightscout*.
 
 The graphic below shows a properly configured *LoopFollow* when the Trio app was built using the Browser Build method.
 
 ![shows credentials entered into loopfollow are correct](img/lf-trc-debug-blurred.png){width="300"}
 {align=center}
+
+If you have empty rows in the Debug / Info screen, the most likely problem is the default profile is not coming from Trio. See [Update Profile](#update-profile). 
+If you took those steps and still have missing rows, return to [Configure *LoopFollow* Trio Remote Control](#configure-loopfollow-trio-remote-control) and try again.
 
 - - -
 
