@@ -77,7 +77,7 @@ First you need to get to your Trio repository and tap on the branch icon. (Do no
 > ![Trio repo - tap on branch icon](img/trio-branch.png){width="700"}
 {align="center"}
 
-The next screen display the branches you currently have. It shows a `New branch` icon to upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
+The next screen displays the branches you currently have. It shows a `New branch` icon to upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
 
 >  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
 {align="center"}
