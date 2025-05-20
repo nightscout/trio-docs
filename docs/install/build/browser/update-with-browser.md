@@ -57,10 +57,10 @@ The numbered steps correspond to numbers in graphics below:
 1. Type in the value `true`
 1. Tap on Add Variable.
 
-![add ENABLE_NUKE_CERTS variable](img/add-variable-01.png){ width="800"}
+> ![add ENABLE_NUKE_CERTS variable](img/add-variable-01.png){ width="800"}
 {align="center"}
 
-![add ENABLE_NUKE_CERTS variable](img/add-variable-02.png){ width="600"}
+> ![add ENABLE_NUKE_CERTS variable](img/add-variable-02.png){ width="600"}
 {align="center"}
 
 ### Configure `Fork` with `dev` branch
@@ -72,6 +72,16 @@ The open beta testing for Trio uses the `dev` branch.
 
 #### Add `Branch`
 
+First you need to get to your Trio repository and tap on the branch icon. (Do not worry how many branches you have - yours will be different):
+
+> ![Trio repo - tap on branch icon](img/trio-branch.png){width="700"}
+{align="center"}
+
+The next screen display the branches you currently have. It shows a `New branch` icon to upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
+
+>  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
+{align="center"}
+
 Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections.:
 
 1. Click on the drop down menu labeled 1 in the graphic and choose nightscout/Trio similar to the top right graphic
@@ -80,7 +90,7 @@ Each step in the list below matches with the number in the graphic. In the top h
     * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
-![steps to add a branch continued](img/add-branch-02.svg){width="700"}
+> ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
 
 #### Update `Branch`
@@ -92,7 +102,7 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 * Select the desired branch in the dropdown menu (this graphic shows `main` branch, to get 0.5.0, you must choose `dev` branch)
 * If the message indicates this branch is "behind", tap on the sync `fork` button and then the Update branch button
 
-![message displayed when your fork of is behind the origin version](img/github-build-check-fork-status.svg){width="700"}
+> ![message displayed when your fork of is behind the origin version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
 ### Update Identifiers
@@ -108,7 +118,7 @@ Refer to the graphic below for the numbered steps:
     * To update the Identifiers so you can build the Trio 0.5.x, you must select `dev`
 1. Tap the green button that says `Run workflow`.
 
-    ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
+    > ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
 !!! tip "Be Patient"
@@ -130,7 +140,7 @@ Refer to the graphic below for the numbered steps:
     * Because you plan to build Trio 0.5.x, select `dev`
 1. Tap the green button that says "`Run workflow`".
 
-    ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
+    > ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
     {align="center"}
 
 1. Wait a minute or two for the action to finish
@@ -149,7 +159,7 @@ If you completed all the steps on this page successfully (got a green checkmark 
 
 If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
 
-![build app using github actions](img/action-04-build-trio.svg){width="700"}
+> ![build app using github actions](img/action-04-build-trio.svg){width="700"}
 {align="center"}
 
 #### Refresh, Do Not Repeat
@@ -166,13 +176,13 @@ The most likely build error is that you did not [Update Identifiers and Certific
 
 #### Error
 
-![Trio annotation error for missing identifier update](img/trio-annotation-need-to-run-add-identifiers.png){ width="600", align="center"}
+> ![Trio annotation error for missing identifier update](img/trio-annotation-need-to-run-add-identifiers.png){ width="600", align="center"}
 
 If you decide to look at the log, instead of reading the annotations, you may see an error similar to the two graphics below.
 
-![Trio log error for missing identifier update](img/trio-log-detail-need-to-run-add-identifiers.png){ width="600", align="center"}
+> ![Trio log error for missing identifier update](img/trio-log-detail-need-to-run-add-identifiers.png){ width="600", align="center"}
 
-![Trio log error for missing identifier update](img/trio-log-real-error-need-to-run-add-identifiers.png){ width="600", align="center"}
+> ![Trio log error for missing identifier update](img/trio-log-real-error-need-to-run-add-identifiers.png){ width="600", align="center"}
 
 #### Solution
 
