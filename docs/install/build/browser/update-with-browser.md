@@ -186,7 +186,8 @@ If you decide to look at the log, instead of reading the annotations, you may se
 
 #### Solution
 
-[Update Identifiers and Certificates](#update-identifiers-and-certificates).
+1. [Update Identifiers](#update-identifiers).
+2. [Update Certificates](#update-certificates).
 
 
 
