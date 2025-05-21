@@ -1,7 +1,7 @@
 ## Update to Trio dev branch from Trio 0.2.x main
 
 !!! important "A Note on Compatibility"
-    Upgrading to Trio `0.5.x` from `0.2.x` is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings and the last 24 hours of treatment and glucose history will be brought over automatically.
+    Upgrading to Trio `0.5.x` from `0.2.x` is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
 
     **Be Aware**
     
@@ -19,7 +19,7 @@ The Browser Build documentation is under construction for versions Trio 0.5.x an
 
 This temporary set of instructions is intended for the subset of users who **previously built Trio 0.2.x using Browser Build**. Because this is aimed at experienced builders, some of the steps are abbreviated and will be expanded as the documents are updated.
 
-> If you are new to Trio - please wait until the documents have been expanded and preferrably until the release of Trio 1.0.
+> If you are new to Trio - please wait until the documents have been expanded and preferably until the release of Trio 1.0.
 
 #### Mac-Xcode to Browser Build
 
@@ -61,9 +61,9 @@ In order to utilize the new automatic certificate renewal feature, you’ll need
 
 If you use a personal account, click on your Trio repository.  If you have other repositories, just follow these same steps for each of them.
 
-If you build using a *GitHub* organization and have already added this variable to your organization - there’s nothing for you to do. All repositories in your organization are covered. Otherwise, click on your organization name.
+If you build using a *GitHub* organization and have already added this variable to your organization, there’s nothing for you to do. All repositories in your organization are covered. Otherwise, click on your organization name.
 
-The numbered steps correspond to numbers in graphics below:
+The numbered steps correspond to numbers in the graphics below:
 
 1. Choose settings 
 1. Scroll down to select Secret and variables
@@ -89,23 +89,23 @@ The open beta testing for Trio uses the `dev` branch.
 
 #### Add `Branch`
 
-First you need to get to your Trio repository and tap on the branch icon. (Do not worry how many branches you have.):
+First, you need to get to your Trio repository and tap on the branch icon. (Do not worry about how many branches you have.):
 
 > ![Trio repo - tap on branch icon](img/trio-branch.png){width="700"}
 {align="center"}
 
-The next screen displays the branches you currently have. It shows a `New branch` icon to upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
+The next screen displays the branches you currently have. It shows a `New branch` icon in the upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
 
 >  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
 {align="center"}
 
-Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections.:
+Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display, and the right side shows the display after making the indicated selections.:
 
-1. Click on the drop down menu labeled 1 in the graphic and choose nightscout/Trio similar to the top right graphic
-2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
+1. Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio, similar to the top right graphic
+2. Click on the drop-down menu labeled 2 in the graphic and choose `dev`
 3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`
     * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
-4. Review the dialog items to make sure everything is correct and then tap on Create branch
+4. Review the dialog items to make sure everything is correct, and then tap on Create branch
 
 > ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
@@ -172,9 +172,9 @@ Once you see the green check mark by `Create Certificates`, the next step is to 
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
 
-> **We recommend most users leave their default branch as `main`. That means you must remember to select `dev` branch each time you build Trio 0.5.x**
+> **We recommend most users leave their default branch as `main`. That means you must remember to select the `dev` branch each time you build Trio 0.5.x**
 
-If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
+If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
 
 > ![build app using github actions](img/action-04-build-trio.svg){width="700"}
 {align="center"}
@@ -191,9 +191,9 @@ If you have one branch as default, for example `main`, and choose to build a dif
 
 ## Disable the DO NOT RUN Actions
 
-You may notice some *GitHub* actions that have `DONT RUN` or `DO NOT RUN` in their names. Those are special actions that are used by the developers. They are skipped in your `Fork` but you may see logs for them.
+You may notice some *GitHub* actions that have `DONT RUN` or `DO NOT RUN` in their names. Those are special actions that are used by the developers. They are skipped in your `Fork`, but you may see logs for them.
 
-If they already have the notation `disabled` beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right and then select `Disable workflow`. You will not be annoyed by seeing logs that say the action was automatically run and then skipped.
+If they already have the notation `disabled` beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select `Disable workflow`. You will not be annoyed by seeing logs that say the action was automatically run and then skipped.
 
 > ![disable developer actions](img/trio-disable-do-not-run.png){width="500"}
 
@@ -279,4 +279,4 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
-Return to the main set of instructions on this page, [Update Certificates](#update-certificates) and keep going until you have a successful build.
+Return to the main set of instructions on this page, [Update Certificates](#update-certificates), and keep going until you have a successful build.
