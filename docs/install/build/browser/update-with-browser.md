@@ -255,7 +255,7 @@ If you do not have a `Trio App Group`:
 
 ### Table of Identifiers
 
-These are the identifiers created by running the *GitHub* action Add Identifiers. Only 3 of them need to have the Trio App Group added. Be sure that you selected `dev` branch when you start the Add Identifier action. For more details, see [Update Identifiers](#update-identifiers) but then return here when that action succeeds.
+These are the identifiers created by running the *GitHub* action "<code>Add Identifiers</code>". Only 3 of them need to have the Trio App Group added. Be sure that you selected the `dev` branch when you start the "<code>Add Identifiers</code>" action. For more details, see [Update Identifiers](#update-identifiers), but then return here when that action succeeds.
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
@@ -266,13 +266,10 @@ These are the identifiers created by running the *GitHub* action Add Identifiers
 
 ### Add Trio App Group to Identifiers
 
-Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
-
-Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
-
-> ![add Trio App Group to identifiers](img/choose-trio-app-group.png)
-
-Repeat this for the other 2 identifiers that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
+- Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
+    - Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
+      > ![add Trio App Group to identifiers](img/choose-trio-app-group.png)
+    - Repeat this for the other 2 identifiers that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
 
 ### Configure Trio App
 
