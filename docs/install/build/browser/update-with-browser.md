@@ -7,11 +7,10 @@
     
     * **Once you have upgraded to `0.5.x`, going back to `0.2.x` is not supported**
         * If you choose to downgrade, you will need to set everything up again from scratch
-    * Some guardrails may be more limiting that `0.2.x`
-        * They can be customized by you if required, reach out for help on how to do this
+    * Some guardrails have changed compared to `0.2.x`
     * **Your saved Temp Targets and Overrides will not be maintained**
         * The storage method in `0.5.x` is different from `0.2.x`, so you will need to recreate them
-        * Capture a screenshot of each important TT or Override that you want to add to `0.5.x`
+        * Capture a screenshot of each named Temp Target or Override that you want to add to `0.5.x`
     
     We have designed this release to be a stable and long-term foundation—so when you are ready, you can upgrade with confidence.
 
