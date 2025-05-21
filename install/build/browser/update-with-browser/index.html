@@ -454,11 +454,75 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#disable-the-do-not-run-actions">
+<span class="md-ellipsis">
+      Disable the DO NOT RUN Actions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#update-build-errors">
 <span class="md-ellipsis">
       Update Build Errors
     </span>
 </a>
+<nav aria-label="Update Build Errors" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#error">
+<span class="md-ellipsis">
+      Error
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solution">
+<span class="md-ellipsis">
+      Solution
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#new-trio-builders">
+<span class="md-ellipsis">
+      New Trio Builders
+    </span>
+</a>
+<nav aria-label="New Trio Builders" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-the-trio-app-group">
+<span class="md-ellipsis">
+      Create the Trio App Group
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-of-identifiers">
+<span class="md-ellipsis">
+      Table of Identifiers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-trio-app-group-to-identifiers">
+<span class="md-ellipsis">
+      Add Trio App Group to Identifiers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-trio-app">
+<span class="md-ellipsis">
+      Configure Trio App
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -621,11 +685,75 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#disable-the-do-not-run-actions">
+<span class="md-ellipsis">
+      Disable the DO NOT RUN Actions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#update-build-errors">
 <span class="md-ellipsis">
       Update Build Errors
     </span>
 </a>
+<nav aria-label="Update Build Errors" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#error">
+<span class="md-ellipsis">
+      Error
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solution">
+<span class="md-ellipsis">
+      Solution
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#new-trio-builders">
+<span class="md-ellipsis">
+      New Trio Builders
+    </span>
+</a>
+<nav aria-label="New Trio Builders" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-the-trio-app-group">
+<span class="md-ellipsis">
+      Create the Trio App Group
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-of-identifiers">
+<span class="md-ellipsis">
+      Table of Identifiers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-trio-app-group-to-identifiers">
+<span class="md-ellipsis">
+      Add Trio App Group to Identifiers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-trio-app">
+<span class="md-ellipsis">
+      Configure Trio App
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -642,24 +770,43 @@
 <h2 id="update-to-trio-dev-branch-from-trio-02x-main">Update to Trio dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> from Trio 0.2.x main<a class="headerlink" href="#update-to-trio-dev-branch-from-trio-02x-main" title="Link to this section for reference">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">A Note on Compatibility</p>
-<p>Upgrading to Trio <code>v0.5.0</code> from <code>0.2.x</code> is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, therapy settings and the last 24 hours of treatment and glucose history will be brought over automatically.</p>
+<p>Upgrading to Trio <code>0.5.x</code> from <code>0.2.x</code> is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.</p>
 <p><strong>Be Aware</strong></p>
 <ul>
-<li><strong>Once you have upgraded to <code>v0.5.0</code>, going back to <code>0.2.x</code> is not supported</strong>.</li>
-<li>If you choose to downgrade, you will need to set everything up again from scratch.</li>
+<li><strong>Once you have upgraded to <code>0.5.x</code>, going back to <code>0.2.x</code> is not supported</strong><ul>
+<li>If you choose to downgrade, you will need to set everything up again from scratch</li>
+</ul>
+</li>
+<li>Some guardrails have changed compared to <code>0.2.x</code></li>
+<li><strong>Your saved Temp Targets and Overrides will not be maintained</strong><ul>
+<li>The storage method in <code>0.5.x</code> is different from <code>0.2.x</code>, so you will need to recreate them</li>
+<li>Capture a screenshot of each named Temp Target or Override that you want to add to <code>0.5.x</code></li>
+</ul>
+</li>
 </ul>
 <p>We have designed this release to be a stable and long-term foundation—so when you are ready, you can upgrade with confidence.</p>
 </div>
 <p>The Browser Build documentation is under construction for versions Trio 0.5.x and newer.</p>
 <p>This temporary set of instructions is intended for the subset of users who <strong>previously built Trio 0.2.x using Browser Build</strong>. Because this is aimed at experienced builders, some of the steps are abbreviated and will be expanded as the documents are updated.</p>
 <blockquote>
-<p>If you are new to Trio - please wait until the documents have been expanded and preferrably until the release of Trio 1.0.</p>
+<p>If you are new to Trio - please wait until the documents have been expanded and preferably until the release of Trio 1.0.</p>
+</blockquote>
+<h4 id="mac-xcode-to-browser-build">Mac-<abbr title="program used to build an app">Xcode</abbr> to Browser Build<a class="headerlink" href="#mac-xcode-to-browser-build" title="Link to this section for reference">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Experienced Mac-<abbr title="program used to build an app">Xcode</abbr> Builder</p>
 <p>If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-<abbr title="program used to build an app">Xcode</abbr> build to Browser Build - welcome. For the time being, please do this:</p>
 <ul>
-<li>Use the <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> instructions to build Trio 0.2.5 and wait for it to show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. Do not install it - you just want to make sure you can succeed with a Browser Build.</li>
-<li>Then return to this page and follow the directions</li>
+<li>Use the <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> instructions to build Trio 0.2.x and wait for it to show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. Do not install it - you just want to make sure you can succeed with a Browser Build.</li>
+<li>Then return to this page and follow the directions; you will need to run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create Certificates again when updating to 0.5.x.</li>
 </ul>
-</blockquote>
+</div>
+<h4 id="transition-from-other-apps-to-trio-browser-build">Transition from Other Apps to Trio Browser Build<a class="headerlink" href="#transition-from-other-apps-to-trio-browser-build" title="Link to this section for reference">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Coming from Other Apps</p>
+<p>If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to 3 identifiers and create a Trio App in App Store Connect.</p>
+<p>The steps are summarized in <a href="#new-trio-builders">New Trio Builders</a>.</p>
+<p>If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> first. Then return to this page to update to 0.5.x; you will need to run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create Certificates again when updating to 0.5.x.</p>
+</div>
 <h3 id="summary-of-tasks-to-build-trio-05x">Summary of Tasks to Build Trio 0.5.x<a class="headerlink" href="#summary-of-tasks-to-build-trio-05x" title="Link to this section for reference">¶</a></h3>
 <p>These steps assume:</p>
 <ul>
@@ -678,8 +825,8 @@
 <p>Browser Build <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Automation was added to Trio 0.2.3 - if you have not added the <code>ENABLE_NUKE_CERTS</code> variable, you should add it now. Otherwise, skip ahead to <a href="#configure-fork-with-dev-branch">Configure <code>Fork</code> with <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>.</p>
 <p>In order to utilize the new automatic certificate renewal feature, you’ll need to add a new Variable.  Variables are located in <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, in the same location as your Secrets.  The exact location will depend upon whether you build using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> organization</em> or a personal account.</p>
 <p>If you use a personal account, click on your Trio <abbr title="contains project files and each file's revision history">repository</abbr>.  If you have other repositories, just follow these same steps for each of them.</p>
-<p>If you build using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization and have already added this variable to your organization - there’s nothing for you to do. All repositories in your organization are covered. Otherwise, click on your organization name.</p>
-<p>The numbered steps correspond to numbers in graphics below:</p>
+<p>If you build using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization and have already added this variable to your organization, there’s nothing for you to do. All repositories in your organization are covered. Otherwise, click on your organization name.</p>
+<p>The numbered steps correspond to numbers in the graphics below:</p>
 <ol>
 <li>Choose settings </li>
 <li>Scroll down to select Secret and variables</li>
@@ -690,8 +837,10 @@
 <li>Type in the value <code>true</code></li>
 <li>Tap on Add Variable.</li>
 </ol>
+<blockquote>
 <p align="center"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-01.png" width="800"/></p>
 <p align="center"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-02.png" width="600"/></p>
+</blockquote>
 <h3 id="configure-fork-with-dev-branch">Configure <code>Fork</code> with <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><a class="headerlink" href="#configure-fork-with-dev-branch" title="Link to this section for reference">¶</a></h3>
 <p>The open beta testing for Trio uses the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <ul>
@@ -699,27 +848,39 @@
 <li>If you already have a <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, skip ahead to <a href="#update-branch">Update Branch</a> and be sure to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> when you update your <code>fork</code>. </li>
 </ul>
 <h4 id="add-branch">Add <code>Branch</code><a class="headerlink" href="#add-branch" title="Link to this section for reference">¶</a></h4>
-<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections.:</p>
+<p>First, you need to get to your Trio <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the <abbr title="version of code within a single repository or workspace repository">branch</abbr> icon. (Do not worry about how many branches you have.):</p>
+<blockquote>
+<p align="center"><img alt="Trio repo - tap on branch icon" src="../img/trio-branch.png" width="700"/></p>
+</blockquote>
+<p>The next screen displays the branches you currently have. It shows a <code>New branch</code> icon in the upper right. If you don't see that, you are not logged in. Tap on the <code>New branch</code> button.</p>
+<blockquote>
+<p align="center"><img alt="Trio branch display - tap on new branch" src="../img/trio-new-branch.png" width="700"/></p>
+</blockquote>
+<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display, and the right side shows the display after making the indicated selections.:</p>
 <ol>
-<li>Click on the drop down menu labeled 1 in the graphic and choose nightscout/Trio similar to the top right graphic</li>
-<li>Click on the drop down menu labeled 2 in the graphic and choose <code>dev</code></li>
+<li>Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio, similar to the top right graphic</li>
+<li>Click on the drop-down menu labeled 2 in the graphic and choose <code>dev</code></li>
 <li>Click on the <code>Branch</code> name box labeled 3 in the graphic and type <code>dev</code><ul>
 <li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <code>fork</code> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
 </ul>
 </li>
-<li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Review the dialog items to make sure everything is correct, and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ol>
+<blockquote>
 <p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700"/></p>
+</blockquote>
 <h4 id="update-branch">Update <code>Branch</code><a class="headerlink" href="#update-branch" title="Link to this section for reference">¶</a></h4>
 <blockquote>
-<p><strong>Be aware that building from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> will upgrade to Trio 0.5.x. Once you have upgraded to 0.5.0, going back to 0.2.x is not supported.</strong></p>
+<p><strong>Be aware that building from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> will upgrade to Trio 0.5.x. Once you have upgraded to 0.5.x, going back to 0.2.x is not supported.</strong></p>
 </blockquote>
 <p>Tap the <code>Code</code> button (upper left) and ensure this <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <code>fork</code> is up to date.</p>
 <ul>
-<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, to get 0.5.0, you must choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, to get 0.5.x, you must choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
 <li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <code>fork</code> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
 </ul>
+<blockquote>
 <p align="center"><img alt="message displayed when your fork of is behind the origin version" src="../img/github-build-check-fork-status.svg" width="700"/></p>
+</blockquote>
 <h3 id="update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#update-identifiers" title="Link to this section for reference">¶</a></h3>
 <p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after you update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
 <p>Refer to the graphic below for the numbered steps:</p>
@@ -728,12 +889,14 @@
 <li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
 <li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
-<li>To update the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> so you can build the Trio 0.5.x, you must select <code>dev</code></li>
+<li><strong>To update the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> so you can build the Trio 0.5.x, you must select <code>dev</code></strong></li>
 </ul>
 </li>
 <li>
 <p>Tap the green button that says <code>Run workflow</code>.</p>
+<blockquote>
 <p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700"/></p>
+</blockquote>
 </li>
 </ol>
 <div class="admonition tip">
@@ -752,12 +915,14 @@
 <li>On the left side, click on "<code>Create Certificates</code>"</li>
 <li>On the right side, click "<code>Run Workflow</code>" to show a dropdown menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
-<li>Because you plan to build Trio 0.5.x, select <code>dev</code></li>
+<li><strong>Because you plan to build Trio 0.5.x, select <code>dev</code></strong></li>
 </ul>
 </li>
 <li>
 <p>Tap the green button that says "<code>Run workflow</code>".</p>
+<blockquote>
 <p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700"/></p>
+</blockquote>
 </li>
 <li>
 <p>Wait a minute or two for the action to finish</p>
@@ -774,10 +939,12 @@
 <h3 id="build-the-app">Build the App<a class="headerlink" href="#build-the-app" title="Link to this section for reference">¶</a></h3>
 <p>If you completed all the steps on this page successfully (got a green checkmark ✅), you are ready to run Action: Build Trio.</p>
 <blockquote>
-<p><strong>We recommend most users leave their default <abbr title="version of code within a single repository or workspace repository">branch</abbr> as <code>main</code>. That means you must remember to select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> each time you build Trio 0.5.x</strong></p>
+<p><strong>We recommend most users leave their default <abbr title="version of code within a single repository or workspace repository">branch</abbr> as <code>main</code>. That means you must remember to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> each time you build Trio 0.5.x</strong></p>
 </blockquote>
-<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example <code>main</code>, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Trio</code>. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the <code>dev branch</code> in the <code>branch dropdown</code> menu before continuing to step 4 and tapping on the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button:</p>
+<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example <code>main</code>, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Trio</code>. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the <code>dev branch</code> in the <code>branch dropdown</code> menu before continuing to step 4 and tapping on the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button:</p>
+<blockquote>
 <p align="center"><img alt="build app using github actions" src="../img/action-04-build-trio.svg" width="700"/></p>
+</blockquote>
 <h4 id="refresh-do-not-repeat">Refresh, Do Not Repeat<a class="headerlink" href="#refresh-do-not-repeat" title="Link to this section for reference">¶</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Hit Refresh</p>
@@ -787,15 +954,125 @@
 <li>Do not start a new action until the first one completes</li>
 </ul>
 </div>
+<hr/>
+<h2 id="disable-the-do-not-run-actions">Disable the DO NOT RUN Actions<a class="headerlink" href="#disable-the-do-not-run-actions" title="Link to this section for reference">¶</a></h2>
+<p>You may notice some <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> actions that have <code>DONT RUN</code> or <code>DO NOT RUN</code> in their names. Those are special actions that are used by the developers. They are skipped in your <code>Fork</code>, but you may see logs for them.</p>
+<p>If they already have the notation <code>disabled</code> beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select <code>Disable workflow</code>. You will not be annoyed by seeing logs that say the action was automatically run and then skipped.</p>
+<blockquote>
+<p><img alt="disable developer actions" src="../img/trio-disable-do-not-run.png" width="500"/></p>
+</blockquote>
+<hr/>
 <h2 id="update-build-errors">Update Build Errors<a class="headerlink" href="#update-build-errors" title="Link to this section for reference">¶</a></h2>
-<p>The most likely build error is that you did not <a href="#update-identifiers-and-certificates">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Certificates</a>. In that case, you will see this error in the build action annotations.</p>
-<h4 id="error">Error<a class="headerlink" href="#error" title="Link to this section for reference">¶</a></h4>
+<p>The most likely build error is that you did not <a href="#solution">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Certificates</a>.<br/>
+In that case, you will see this <strong>error</strong> in the <strong>build action annotations</strong>.</p>
+<h3 id="error">Error<a class="headerlink" href="#error" title="Link to this section for reference">¶</a></h3>
+<blockquote>
 <p><img _="," align="center" alt="Trio annotation error for missing identifier update" src="../img/trio-annotation-need-to-run-add-identifiers.png" width="600"/></p>
-<p>If you decide to look at the log, instead of reading the annotations, you may see an error similar to the two graphics below.</p>
+</blockquote>
+<p>If you decide to look at the action <strong>log</strong>, instead of reading the annotations, you may see an <strong>error</strong> similar to the two graphics below.</p>
+<blockquote>
 <p><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-detail-need-to-run-add-identifiers.png" width="600"/></p>
 <p><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-real-error-need-to-run-add-identifiers.png" width="600"/></p>
-<h4 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h4>
-<p><a href="#update-identifiers-and-certificates">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Certificates</a>.</p>
+</blockquote>
+<h3 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h3>
+<ol>
+<li><a href="#update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li><a href="#update-certificates">Update Certificates</a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<hr/>
+<h2 id="new-trio-builders">New Trio Builders<a class="headerlink" href="#new-trio-builders" title="Link to this section for reference">¶</a></h2>
+<p>For experienced browser builders, this minimal set of instructions might be sufficient.<br/>
+Warning - there is no hand holding in these directions.</p>
+<p><strong>Every app you build will use the same <a href="https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file">6 Secrets</a>.</strong></p>
+<ul>
+<li>Fork from: <a href="https://github.com/nightscout/Trio">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/nightscout/Trio</a></li>
+<li>You use the <code>Trio App Group</code> for Trio, see <a href="#create-the-trio-app-group">Create the <code>Trio App Group</code></a></li>
+<li><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Trio: see <a href="#table-of-identifiers">Table of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+<li>Add the <code>Trio App Group</code> to these identifiers:<ul>
+<li><code>Trio</code></li>
+<li><code>Trio Watch</code></li>
+<li><code>Trio WatchKit Extension</code></li>
+</ul>
+</li>
+<li>In <code>App Store Connect</code>, the <code>Bundle ID</code> for Trio will be: <code>org.nightscout.TEAMID.trio</code></li>
+</ul>
+<h3 id="create-the-trio-app-group">Create the <code>Trio App Group</code><a class="headerlink" href="#create-the-trio-app-group" title="Link to this section for reference">¶</a></h3>
+<p>If you already have a <code>Trio App Group</code></p>
+<ul>
+<li>You can skip this step - your existing App Groups are found at this link: <a href="https://developer.apple.com/account/resources/identifiers/list/applicationGroup"><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> List</a></li>
+<li>If your <code>Trio App Group</code> was created from a Mac with <abbr title="program used to build an app">Xcode</abbr>, you may choose to edit the Description to make the <strong>NAME</strong> match</li>
+</ul>
+<p>If you do not have a <code>Trio App Group</code>:</p>
+<ul>
+<li>Go to <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr></a> on the Apple developer site and use the table below to help you create one.</li>
+<li>Replace <code>TEAMID</code> with your <em>Apple</em> Developer ID.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">NAME</th>
+<th style="text-align: left;"><abbr title="program used to build an app">Xcode</abbr> version (NAME)</th>
+<th style="text-align: left;">IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr></td>
+<td style="text-align: left;">group org nightscout <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> trio trio-app-group</td>
+<td style="text-align: left;"><code>group.org.nightscout.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.trio.trio-app-group</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-of-identifiers">Table of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#table-of-identifiers" title="Link to this section for reference">¶</a></h3>
+<p>These are the identifiers created by running the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>". Only 3 of them need to have the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> added. Be sure that you selected the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> when you start the "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>" action. For more details, see <a href="#update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>, but then return here when that action succeeds.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">NAME</th>
+<th style="text-align: left;"><abbr title="program used to build an app">Xcode</abbr> version (NAME)</th>
+<th style="text-align: left;">IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Trio</td>
+<td style="text-align: left;">XC org nightscout <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> trio</td>
+<td style="text-align: left;"><code>org.nightscout.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.trio</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trio LiveActivity</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>org.nightscout.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.trio.LiveActivity</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trio Watch</td>
+<td style="text-align: left;">XC IDENTIFIER</td>
+<td style="text-align: left;"><code>org.nightscout.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.trio.watchkitapp</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trio WatchKit Extension</td>
+<td style="text-align: left;">XC IDENTIFIER</td>
+<td style="text-align: left;"><code>org.nightscout.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.trio.watchkitapp.watchkitextension</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-trio-app-group-to-identifiers">Add Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-trio-app-group-to-identifiers" title="Link to this section for reference">¶</a></h3>
+<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">App IDs Identifier page for your Apple Developer Account</a>.<ul>
+<li>Click on the <code>Trio</code> Identifier and assign the <code>Trio App Group</code> to the Identifier - see graphic below.<blockquote>
+<p><img alt="add Trio App Group to identifiers" src="../img/choose-trio-app-group.png"/></p>
+</blockquote>
+</li>
+<li>Repeat this for the other 2 identifiers that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch</code> and <code>Trio WatchKit Extension</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="configure-trio-app">Configure Trio App<a class="headerlink" href="#configure-trio-app" title="Link to this section for reference">¶</a></h3>
+<p>Follow the directions in <a href="https://loopkit.github.io/loopdocs/browser/prepare-app/#create-loop-app-in-app-store-connect">LoopDocs</a>, but use the Trio <code>Bundle ID</code></p>
+<ul>
+<li>In <code>App Store Connect</code>, the <code>Bundle ID</code> for Trio will be: <code>org.nightscout.TEAMID.trio</code></li>
+</ul>
+<p>Return to the main set of instructions on this page, <a href="#update-certificates">Update Certificates</a>, and keep going until you have a successful build.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
