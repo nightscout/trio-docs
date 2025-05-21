@@ -25,7 +25,7 @@ This temporary set of instructions is intended for the subset of users who **pre
 !!! important "Experienced Mac-Xcode Builder"
     If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build - welcome. For the time being, please do this:
 
-    * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.5 and wait for it to show up in your TestFlight. Do not install it - you just want to make sure you can succeed with a Browser Build.
+    * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it - you just want to make sure you can succeed with a Browser Build.
     * Then return to this page and follow the directions; you will need to run Add Identifiers and Create Certificates again when updating to 0.5.x.
 
 #### Transition from Other Apps to Trio Browser Build
