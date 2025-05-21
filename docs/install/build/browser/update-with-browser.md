@@ -223,7 +223,8 @@ If you decide to look at the action **log**, instead of reading the annotations,
 
 ## New Trio Builders
 
-For experienced browser builders, this minimal set of instructions might be sufficient. Warning - there is no hand holding in these directions.
+For experienced browser builders, this minimal set of instructions might be sufficient.  
+Warning - there is no hand holding in these directions.
 
 **Every app you build will use the same [6 Secrets](https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file).**
 
@@ -250,7 +251,7 @@ If you do not have a `Trio App Group`:
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
-| Trio App Group | group org nightscout TEAMID trio trio-app-group| group.org.nightscout.TEAMID.trio.trio-app-group |
+| Trio App Group | group org nightscout TEAMID trio trio-app-group| <code>group.org.nightscout.TEAMID.trio.trio-app-group</code> |
 
 ### Table of Identifiers
 
@@ -258,10 +259,10 @@ These are the identifiers created by running the *GitHub* action Add Identifiers
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
-| Trio | XC org nightscout TEAMID trio | org.nightscout.TEAMID.trio |
-| Trio LiveActivity | - | org.nightscout.TEAMID.trio.LiveActivity |
-| Trio Watch | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp |
-| Trio WatchKit Extension | XC IDENTIFIER | org.nightscout.TEAMID.trio.watchkitapp.watchkitextension |
+| Trio | XC org nightscout TEAMID trio | <code>org.nightscout.TEAMID.trio</code> |
+| Trio LiveActivity | - | <code>org.nightscout.TEAMID.trio.LiveActivity</code> |
+| Trio Watch | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp</code> |
+| Trio WatchKit Extension | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp.watchkitextension</code> |
 
 ### Add Trio App Group to Identifiers
 
