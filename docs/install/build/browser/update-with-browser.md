@@ -201,13 +201,14 @@ If they already have the notation `disabled` beside them, so won't see them run.
 
 ## Update Build Errors
 
-The most likely build error is that you did not [Update Identifiers and Certificates](#solution). In that case, you will see this error in the build action annotations.
+The most likely build error is that you did not [Update Identifiers and Certificates](#solution).  
+In that case, you will see this **error** in the **build action annotations**.
 
 ### Error
 
 > ![Trio annotation error for missing identifier update](img/trio-annotation-need-to-run-add-identifiers.png){ width="600", align="center"}
 
-If you decide to look at the log, instead of reading the annotations, you may see an error similar to the two graphics below.
+If you decide to look at the action **log**, instead of reading the annotations, you may see an **error** similar to the two graphics below.
 
 > ![Trio log error for missing identifier update](img/trio-log-detail-need-to-run-add-identifiers.png){ width="600", align="center"}
 
