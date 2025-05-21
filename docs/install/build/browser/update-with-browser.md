@@ -203,7 +203,7 @@ If they already have the notation `disabled` beside them, so won't see them run.
 
 The most likely build error is that you did not [Update Identifiers and Certificates](#update-identifiers-and-certificates). In that case, you will see this error in the build action annotations.
 
-#### Error
+### Error
 
 > ![Trio annotation error for missing identifier update](img/trio-annotation-need-to-run-add-identifiers.png){ width="600", align="center"}
 
@@ -213,7 +213,7 @@ If you decide to look at the log, instead of reading the annotations, you may se
 
 > ![Trio log error for missing identifier update](img/trio-log-real-error-need-to-run-add-identifiers.png){ width="600", align="center"}
 
-#### Solution
+### Solution
 
 1. [Update Identifiers](#update-identifiers) - make sure you select `dev` branch
 2. [Update Certificates](#update-certificates) - make sure you select `dev` branch
