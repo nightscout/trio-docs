@@ -26,16 +26,16 @@ This temporary set of instructions is intended for the subset of users who **pre
     If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build - welcome. For the time being, please do this:
 
     * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it - you just want to make sure you can succeed with a Browser Build.
-    * Then return to this page and follow the directions; you will need to run Add Identifiers and Create Certificates again when updating to 0.5.x.
+    * Then return to this page and follow the directions; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5.x.
 
 #### Transition from Other Apps to Trio Browser Build
 
 !!! important "Coming from Other Apps"
-    If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio App Group to 3 identifiers and create a Trio App in App Store Connect.
+    If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio App Group to 3 <code>Identifiers</code> and create a Trio App in App Store Connect.
 
     The steps are summarized in [New Trio Builders](#new-trio-builders).
 
-    If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run Add Identifiers and Create Certificates again when updating to 0.5.x.
+    If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5.x.
 
 ### Summary of Tasks to Build Trio 0.5.x
 
@@ -48,8 +48,8 @@ These are the new steps for you to follow:
 
 1. [Configure Browser Build Certificate Automation](#browser-build-certificate-automation)
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
-1. [Update Identifiers](#update-identifiers)
-1. [Update Certificates](#update-certificates)
+1. [Update <code>Identifiers</code>](#update-identifiers)
+1. [Update <code>Certificates</code>](#update-certificates)
 1. [Build Trio 0.5.x](#build-the-app)
 
 ### Browser Build Certificate Automation
@@ -121,9 +121,9 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 > ![message displayed when your fork of is behind the origin version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-### Update Identifiers
+### Update <code>Identifiers</code>
 
-For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: Add Identifiers after you update your fork.
+For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: `Add Identifiers` after you update your fork.
 
 Refer to the graphic below for the numbered steps:
 
@@ -131,7 +131,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on 2. <code>Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
-    * **To update the Identifiers so you can build the Trio 0.5.x, you must select `dev`**
+    * **To update the <code>Identifiers</code> so you can build the Trio 0.5.x, you must select `dev`**
 1. Tap the green button that says `Run workflow`.
 
     > ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -141,11 +141,11 @@ Refer to the graphic below for the numbered steps:
     * Refresh the browser if you are unsure if the action started
     * Do not start a new action until the first one completes
 
-The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
-### Update Certificates
+### Update <code>Certificates</code>
 
-For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: Create Certificates.
+For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: `Create Certificates`.
 
 Refer to the graphic below for the numbered steps:
 
@@ -200,7 +200,7 @@ If they already have the notation `disabled` beside them, so won't see them run.
 
 ## Update Build Errors
 
-The most likely build error is that you did not [Update Identifiers and Certificates](#solution).  
+The most likely build error is that you did not [Update <code>Identifiers</code> and <code>Certificates</code>](#solution).  
 In that case, you will see this **error** in the **build action annotations**.
 
 ### Error
@@ -215,8 +215,8 @@ If you decide to look at the action **log**, instead of reading the annotations,
 
 ### Solution
 
-1. [Update Identifiers](#update-identifiers) - make sure you select `dev` branch
-2. [Update Certificates](#update-certificates) - make sure you select `dev` branch
+1. [Update <code>Identifiers</code>](#update-identifiers) - make sure you select `dev` branch
+2. [Update <code>Certificates</code>](#update-certificates) - make sure you select `dev` branch
 
 - - -
 
@@ -229,8 +229,8 @@ Warning - there is no hand holding in these directions.
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
 * You use the `Trio App Group` for Trio, see [Create the `Trio App Group`](#create-the-trio-app-group)
-* Identifiers for Trio: see [Table of Identifiers](#table-of-identifiers)
-* Add the `Trio App Group` to these identifiers:
+* <code>Identifiers</code> for Trio: see [Table of <code>Identifiers</code>](#table-of-identifiers)
+* Add the `Trio App Group` to these <code>Identifiers</code>:
     * `Trio`
     * `Trio Watch`
     * `Trio WatchKit Extension`
@@ -252,9 +252,9 @@ If you do not have a `Trio App Group`:
 |:--|:--|:--|
 | Trio App Group | group org nightscout TEAMID trio trio-app-group| <code>group.org.nightscout.TEAMID.trio.trio-app-group</code> |
 
-### Table of Identifiers
+### Table of <code>Identifiers</code>
 
-These are the identifiers created by running the *GitHub* action "<code>Add Identifiers</code>". Only 3 of them need to have the Trio App Group added. Be sure that you selected the `dev` branch when you start the "<code>Add Identifiers</code>" action. For more details, see [Update Identifiers](#update-identifiers), but then return here when that action succeeds.
+These are the <code>Identifiers</code> created by running the *GitHub* action "<code>Add Identifiers</code>". Only 3 of them need to have the Trio App Group added. Be sure that you selected the `dev` branch when you start the "<code>Add Identifiers</code>" action. For more details, see [Update <code>Identifiers</code>](#update-identifiers), but then return here when that action succeeds.
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
@@ -263,12 +263,12 @@ These are the identifiers created by running the *GitHub* action "<code>Add Iden
 | Trio Watch | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp</code> |
 | Trio WatchKit Extension | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp.watchkitextension</code> |
 
-### Add Trio App Group to Identifiers
+### Add Trio App Group to <code>Identifiers</code>
 
 - Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
     - Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
       > ![add Trio App Group to identifiers](img/choose-trio-app-group.png)
-    - Repeat this for the other 2 identifiers that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
+    - Repeat this for the other 2 <code>Identifiers</code> that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
 
 ### Configure Trio App
 
@@ -276,4 +276,4 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
-Return to the main set of instructions on this page, [Update Certificates](#update-certificates), and keep going until you have a successful build.
+Return to the main set of instructions on this page, [Update <code>Certificates</code>](#update-certificates), and keep going until you have a successful build.
