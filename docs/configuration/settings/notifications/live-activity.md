@@ -8,6 +8,29 @@ With Live Activities enabled, Trio displays your current data on your phone's Lo
 ![Live Activity](img/live-activity.png){ width="600px" }
 { align=center }
 
+!!! tip "Fix hidden Live Activity values on lock screen"
+    
+    If Trio Live Activities appear greyed out when your iPhone is locked and you want them to remain visible at all times, you need to adjust [this setting](#show-live-activity-values-on-locked-iphone).
+
+### Show Live Activity Values on Locked iPhone
+
+If **Trio Live Activities appear greyed out (blurred/hidden) when your iPhone is locked**, this is caused by a privacy setting in iOS.
+
+![Trio Live Activities Values Hidden](img/trio-live_activities-values_hidden.png)
+{align="center"}
+
+To show all Live Activities even when the phone is locked:
+
+- Open the Apple **Settings** app.
+- Tap **`Face ID & Passcode`**.
+- Enter your passcode if prompted.
+- Scroll down to the **`Allow Access When Locked`** section.
+- Enable the toggle for **Live Activities**.
+
+!!! info "This setting affects all apps"
+    
+    Once enabled, Live Activities from Trio—and other apps—will be shown on the Lock Screen.
+
 - - -
 
 ## Live Screen Widget Style
@@ -44,4 +67,6 @@ You'll find more details on both "Simple" and "Detailed" styles below:
     { align=center }
     
 </div>
+
 - - -
+
