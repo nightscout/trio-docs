@@ -797,15 +797,15 @@
 <p>If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-<abbr title="program used to build an app">Xcode</abbr> build to Browser Build - welcome. For the time being, please do this:</p>
 <ul>
 <li>Use the <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> instructions to build Trio 0.2.x and wait for it to show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. Do not install it - you just want to make sure you can succeed with a Browser Build.</li>
-<li>Then return to this page and follow the directions; you will need to run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create Certificates again when updating to 0.5.x.</li>
+<li>Then return to this page and follow the directions; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5.x.</li>
 </ul>
 </div>
 <h4 id="transition-from-other-apps-to-trio-browser-build">Transition from Other Apps to Trio Browser Build<a class="headerlink" href="#transition-from-other-apps-to-trio-browser-build" title="Link to this section for reference">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Coming from Other Apps</p>
-<p>If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to 3 identifiers and create a Trio App in App Store Connect.</p>
+<p>If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to 3 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> and create a Trio App in App Store Connect.</p>
 <p>The steps are summarized in <a href="#new-trio-builders">New Trio Builders</a>.</p>
-<p>If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> first. Then return to this page to update to 0.5.x; you will need to run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create Certificates again when updating to 0.5.x.</p>
+<p>If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> first. Then return to this page to update to 0.5.x; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5.x.</p>
 </div>
 <h3 id="summary-of-tasks-to-build-trio-05x">Summary of Tasks to Build Trio 0.5.x<a class="headerlink" href="#summary-of-tasks-to-build-trio-05x" title="Link to this section for reference">¶</a></h3>
 <p>These steps assume:</p>
@@ -817,8 +817,8 @@
 <ol>
 <li><a href="#browser-build-certificate-automation">Configure Browser Build <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Automation</a></li>
 <li><a href="#configure-fork-with-dev-branch">Configure <code>Fork</code> with <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></li>
-<li><a href="#update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
-<li><a href="#update-certificates">Update Certificates</a></li>
+<li><a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a></li>
+<li><a href="#update-certificates">Update <code>Certificates</code></a></li>
 <li><a href="#build-the-app">Build Trio 0.5.x</a></li>
 </ol>
 <h3 id="browser-build-certificate-automation">Browser Build <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Automation<a class="headerlink" href="#browser-build-certificate-automation" title="Link to this section for reference">¶</a></h3>
@@ -856,9 +856,9 @@
 <blockquote>
 <p align="center"><img alt="Trio branch display - tap on new branch" src="../img/trio-new-branch.png" width="700"/></p>
 </blockquote>
-<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display, and the right side shows the display after making the indicated selections.:</p>
+<p>Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your <code>fork</code> when <code>main</code> is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The right side shows the display after making the indicated selections.:</p>
 <ol>
-<li>Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio, similar to the top right graphic</li>
+<li>Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio</li>
 <li>Click on the drop-down menu labeled 2 in the graphic and choose <code>dev</code></li>
 <li>Click on the <code>Branch</code> name box labeled 3 in the graphic and type <code>dev</code><ul>
 <li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <code>fork</code> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
@@ -881,15 +881,15 @@
 <blockquote>
 <p align="center"><img alt="message displayed when your fork of is behind the origin version" src="../img/github-build-check-fork-status.svg" width="700"/></p>
 </blockquote>
-<h3 id="update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#update-identifiers" title="Link to this section for reference">¶</a></h3>
-<p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after you update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<h3 id="update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#update-identifiers" title="Link to this section for reference">¶</a></h3>
+<p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: <code>Add Identifiers</code> after you update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
 <li>Click on the <code>Actions</code> tab of your <code>Trio</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
 <li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
-<li><strong>To update the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> so you can build the Trio 0.5.x, you must select <code>dev</code></strong></li>
+<li><strong>To update the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> so you can build the Trio 0.5.x, you must select <code>dev</code></strong></li>
 </ul>
 </li>
 <li>
@@ -906,9 +906,9 @@
 <li>Do not start a new action until the first one completes</li>
 </ul>
 </div>
-<p>The <code>Add Identifiers</code>  <span class="notranslate">Action</span>  should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
-<h3 id="update-certificates">Update Certificates<a class="headerlink" href="#update-certificates" title="Link to this section for reference">¶</a></h3>
-<p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> by running the Action: Create Certificates.</p>
+<p>The <code>Add Identifiers</code> <span class="notranslate">Action</span>  should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
+<h3 id="update-certificates">Update <code>Certificates</code><a class="headerlink" href="#update-certificates" title="Link to this section for reference">¶</a></h3>
+<p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> by running the Action: <code>Create Certificates</code>.</p>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
 <li>Click on the "<code>Actions</code>" tab of your <code>Trio</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
@@ -963,7 +963,7 @@
 </blockquote>
 <hr/>
 <h2 id="update-build-errors">Update Build Errors<a class="headerlink" href="#update-build-errors" title="Link to this section for reference">¶</a></h2>
-<p>The most likely build error is that you did not <a href="#solution">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Certificates</a>.<br/>
+<p>The most likely build error is that you did not <a href="#solution">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> and <code>Certificates</code></a>.<br/>
 In that case, you will see this <strong>error</strong> in the <strong>build action annotations</strong>.</p>
 <h3 id="error">Error<a class="headerlink" href="#error" title="Link to this section for reference">¶</a></h3>
 <blockquote>
@@ -976,8 +976,8 @@ In that case, you will see this <strong>error</strong> in the <strong>build acti
 </blockquote>
 <h3 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h3>
 <ol>
-<li><a href="#update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li><a href="#update-certificates">Update Certificates</a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li><a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li><a href="#update-certificates">Update <code>Certificates</code></a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ol>
 <hr/>
 <h2 id="new-trio-builders">New Trio Builders<a class="headerlink" href="#new-trio-builders" title="Link to this section for reference">¶</a></h2>
@@ -987,8 +987,8 @@ Warning - there is no hand holding in these directions.</p>
 <ul>
 <li>Fork from: <a href="https://github.com/nightscout/Trio">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/nightscout/Trio</a></li>
 <li>You use the <code>Trio App Group</code> for Trio, see <a href="#create-the-trio-app-group">Create the <code>Trio App Group</code></a></li>
-<li><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Trio: see <a href="#table-of-identifiers">Table of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
-<li>Add the <code>Trio App Group</code> to these identifiers:<ul>
+<li><code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> for Trio: see <a href="#table-of-identifiers">Table of <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a></li>
+<li>Add the <code>Trio App Group</code> to these <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>:<ul>
 <li><code>Trio</code></li>
 <li><code>Trio Watch</code></li>
 <li><code>Trio WatchKit Extension</code></li>
@@ -1023,8 +1023,8 @@ Warning - there is no hand holding in these directions.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="table-of-identifiers">Table of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#table-of-identifiers" title="Link to this section for reference">¶</a></h3>
-<p>These are the identifiers created by running the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>". Only 3 of them need to have the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> added. Be sure that you selected the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> when you start the "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>" action. For more details, see <a href="#update-identifiers">Update <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>, but then return here when that action succeeds.</p>
+<h3 id="table-of-identifiers">Table of <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#table-of-identifiers" title="Link to this section for reference">¶</a></h3>
+<p>These are the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> created by running the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>". Only 3 of them need to have the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> added. Be sure that you selected the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> when you start the "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>" action. For more details, see <a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a>, but then return here when that action succeeds.</p>
 <table>
 <thead>
 <tr>
@@ -1056,14 +1056,14 @@ Warning - there is no hand holding in these directions.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="add-trio-app-group-to-identifiers">Add Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-trio-app-group-to-identifiers" title="Link to this section for reference">¶</a></h3>
+<h3 id="add-trio-app-group-to-identifiers">Add Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#add-trio-app-group-to-identifiers" title="Link to this section for reference">¶</a></h3>
 <ul>
 <li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">App IDs Identifier page for your Apple Developer Account</a>.<ul>
 <li>Click on the <code>Trio</code> Identifier and assign the <code>Trio App Group</code> to the Identifier - see graphic below.<blockquote>
 <p><img alt="add Trio App Group to identifiers" src="../img/choose-trio-app-group.png"/></p>
 </blockquote>
 </li>
-<li>Repeat this for the other 2 identifiers that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch</code> and <code>Trio WatchKit Extension</code></li>
+<li>Repeat this for the other 2 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch</code> and <code>Trio WatchKit Extension</code></li>
 </ul>
 </li>
 </ul>
@@ -1072,7 +1072,7 @@ Warning - there is no hand holding in these directions.</p>
 <ul>
 <li>In <code>App Store Connect</code>, the <code>Bundle ID</code> for Trio will be: <code>org.nightscout.TEAMID.trio</code></li>
 </ul>
-<p>Return to the main set of instructions on this page, <a href="#update-certificates">Update Certificates</a>, and keep going until you have a successful build.</p>
+<p>Return to the main set of instructions on this page, <a href="#update-certificates">Update <code>Certificates</code></a>, and keep going until you have a successful build.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
