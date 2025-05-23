@@ -39,7 +39,7 @@ You can also add a note for this meal.
 
 ### Dosing Calculation
 
-In the Dosing Calculation section, it starts with the [Fatty Meal and Super Bolus options](../../configuration/settings/features/bolus-calculator.md#fatty-meal-and-super-bolus-options) at the top, if you have those enabled.
+In the Dosing Calculation section, it starts with the [Reduced Bolus and Super Bolus options](../../configuration/settings/features/bolus-calculator.md#reduced-bolus-and-super-bolus-options) at the top, if you have those enabled.
 
 Below that is the suggested bolus amount that Trio has calculated. Tap the "i" icon for more details and [read the section below](#how-does-the-bolus-calculator-determine-dosage) for more details on the information shared when you tap on this icon.
 

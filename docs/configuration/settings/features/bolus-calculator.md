@@ -25,36 +25,36 @@ Because Trio utilizes SMBs and UAMs to help you reach your target glucose and ot
 
 - - -
 
-## Fatty Meal and Super Bolus Options
+## Reduced Bolus and Super Bolus Options
 
-<!-- TODO: Add a screenshot of the Fatty Meal and Super Bolus Option in the bolus calculator -->
+<!-- TODO: Add a screenshot of the Reduced Bolus and Super Bolus Option in the bolus calculator -->
 
 !!! warning
     Do not enable these features until you have verified and optimized your carb ratio (CR) setting
 
-### Enable Fatty Meal Option
+### Enable Reduced Bolus Option
 **Default:** _OFF_  
 
-Enabling this setting adds a "Fatty Meal" option to the bolus calculator. Once this feature is enabled, a [Fatty Meal Bolus Percentage](#fatty-meal-bolus-percentage) setting will appear for you to select. The default for this setting is 70% of the full calculated bolus.
+Enabling this setting adds a "Reduced Bolus" option to the bolus calculator. Once this feature is enabled, a [Reduced Bolus Percentage](#reduced-bolus-percentage) setting will appear for you to select. The default for this setting is 70% of the full calculated bolus.
 
-### Fatty Meal Bolus Percentage
+### Reduced Bolus Percentage
 **Default:** _70%_  
 **Setting Limits:** _5%-100%_  
 
-When entering a meal into the bolus calculator, select the Fatty Meal option to utilize this lower percentage rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage using the formula below:
+When entering a meal into the bolus calculator, select the Reduced Bolus option to utilize this lower percentage rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage using the formula below:
 
 $$
-\frac{Recommended\ Bolus\ Percentage \times Fatty\ Meal\ Bolus\ Percentage}{100}
+\frac{Recommended\ Bolus\ Percentage \times Reduced\ Bolus\ Percentage}{100}
 $$
 
 This setting is useful for meals that require less insulin up front and more later, like pizza.
 
-??? question "Bill has a Recommended Bolus Percentage of 80% and sets his Fatty Meal Bolus Percentage to 50%. What percentage will his insulin dose be adjusted by when he uses the Fatty Meal Option in the bolus calculator?"
+??? question "Bill has a Recommended Bolus Percentage of 80% and sets his Reduced Bolus Percentage to 50%. What percentage will his insulin dose be adjusted by when he uses the Reduced Bolus Option in the bolus calculator?"
 
     ??? info "Here is the formula:"
     
         $$
-        \frac{Recommended\ Bolus\ Percentage \times Fatty\ Meal\ Bolus\ Percentage}{100}
+        \frac{Recommended\ Bolus\ Percentage \times Reduced\ Bolus\ Percentage}{100}
         $$
     
     ??? note "Enter Bill's numbers to calculate the actual percentage used:"
