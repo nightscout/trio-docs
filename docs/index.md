@@ -17,7 +17,7 @@
   Your browser doesn’t support the HTML5 video tag.
 </video>
 
-![Trio Logo](assets/images/trio-logo.png){ width="150", align="right" }
+![Trio Logo](assets/images/trio-logo.png){ .skip-lightbox width="150" align="right" }
 
 Trio is an open-source automated insulin delivery system (OS-AID) for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).  
 

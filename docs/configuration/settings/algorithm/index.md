@@ -1,6 +1,6 @@
 # Algorithm
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Algorithm Settings homepage! Here you'll find information on the settings that influence the algorithm that runs Trio.
+![Trio Logo](../../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" } Welcome to the Algorithm Settings homepage! Here you'll find information on the settings that influence the algorithm that runs Trio.
 
 - - -
 

@@ -1,6 +1,6 @@
 # Notifications
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Notifications homepage! Here you'll find information on the various methods of keeping you updated on Trio's status and important information while you are not actively using the app.
+![Trio Logo](../../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" } Welcome to the Notifications homepage! Here you'll find information on the various methods of keeping you updated on Trio's status and important information while you are not actively using the app.
 
 - - -  
 
