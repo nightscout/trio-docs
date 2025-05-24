@@ -6,7 +6,7 @@
 !!! danger "Important"
     It is important to enter your information into the Desmos graphs found [here](#logarithmic-desmos-graphs) **before** turning on Logarithmic Dynamic ISF. The default settings work for a majority of users, but not all.  
     
-    Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at **_150 mg/dL_**.  
+    Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at **_150 mg/dL(8.3 mmol/l)_**.  
 
 
 !!! tip
