@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -807,7 +816,7 @@
 </a>
 
 <h1 id="user-interface-settings-menu">User Interface Settings Menu<a class="headerlink" href="#user-interface-settings-menu" title="Link to this section for reference">¶</a></h1>
-<p align="center"><img alt="Trio 1.0 User Interface" src="../img/light_vs_dark_mode.png" width="600"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/light_vs_dark_mode.png"><img alt="Trio 1.0 User Interface" src="../img/light_vs_dark_mode.png" width="600"/></a></p>
 <h2 id="appearance">Appearance<a class="headerlink" href="#appearance" title="Link to this section for reference">¶</a></h2>
 <p><strong>Default:</strong> <em>System Default</em></p>
 <h3 id="options">Options<a class="headerlink" href="#options" title="Link to this section for reference">¶</a></h3>
@@ -825,25 +834,25 @@ Always in Dark Mode</p>
 This option uses orange, green, and red to indicate where the glucose reading falls on the range set.  </p>
 <div class="admonition info inline">
 <p class="admonition-title">Threshold Graph Legend</p>
-<p><img alt="High Threshold Static Icon" src="../img/high_threshold_static.png" style="vertical-align: middle;" width="15"/>  High Threshold <br/>
-<img alt="Low Threshold Static Icon" src="../img/low_threshold_static.png" style="vertical-align: middle;" width="15"/>  Low Threshold<br/>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/high_threshold_static.png"><img alt="High Threshold Static Icon" src="../img/high_threshold_static.png" style="vertical-align: middle;" width="15"/></a>  High Threshold <br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/low_threshold_static.png"><img alt="Low Threshold Static Icon" src="../img/low_threshold_static.png" style="vertical-align: middle;" width="15"/></a>  Low Threshold<br/>
 <span style="color: #fe9607;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Above Range Glucose<br/>
 <span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  In Range Glucose<br/>
 <span style="color: #ff3131;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Below Range Glucose      </p>
 </div>
-<p align="left"><img alt="Static Color Graph" src="../img/static_color_graph.png" width="250"/></p>
+<p align="left"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/static_color_graph.png"><img alt="Static Color Graph" src="../img/static_color_graph.png" width="250"/></a></p>
 <p><strong>Dynamic:</strong><br/>
 This option uses the color wheel to indicate where the glucose reading falls in relation to your target glucose.<br/>
 <em>*The colors of the threshold lines are also dynamic, so the exact coloring will depend on your settings</em> </p>
 <div class="admonition info inline">
 <p class="admonition-title">Threshold Graph Legend</p>
-<p><img alt="High Threshold Dynamic Icon" src="../img/high_threshold_dynamic.png" style="vertical-align: middle;" width="15"/>  High Threshold (=180 mg/dL)<br/>
-<img alt="Low Threshold Dynamic Icon" src="../img/low_threshold_dynamic.png" style="vertical-align: middle;" width="15"/>  Low Threshold (=70 mg/dL)<br/>
-<img alt="Above Target Icon" src="../img/above_target_glucose_icon.png" style="vertical-align: middle;" width="15"/>  Above Target<br/>
-<img alt="At Target Icon" src="../img/at_or_near_target.png" style="vertical-align: middle;" width="15"/>  At or Near Target<br/>
-<img alt="Below Target Icon" src="../img/below_target_glucose_icon.png" style="vertical-align: middle;" width="15"/>  Below Target  </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/high_threshold_dynamic.png"><img alt="High Threshold Dynamic Icon" src="../img/high_threshold_dynamic.png" style="vertical-align: middle;" width="15"/></a>  High Threshold (=180 mg/dL)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/low_threshold_dynamic.png"><img alt="Low Threshold Dynamic Icon" src="../img/low_threshold_dynamic.png" style="vertical-align: middle;" width="15"/></a>  Low Threshold (=70 mg/dL)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/above_target_glucose_icon.png"><img alt="Above Target Icon" src="../img/above_target_glucose_icon.png" style="vertical-align: middle;" width="15"/></a>  Above Target<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/at_or_near_target.png"><img alt="At Target Icon" src="../img/at_or_near_target.png" style="vertical-align: middle;" width="15"/></a>  At or Near Target<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/below_target_glucose_icon.png"><img alt="Below Target Icon" src="../img/below_target_glucose_icon.png" style="vertical-align: middle;" width="15"/></a>  Below Target  </p>
 </div>
-<p align="left"><img alt="Dynamic Color Graph" src="../img/dynamic_color_graph.png" width="250"/></p>
+<p align="left"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dynamic_color_graph.png"><img alt="Dynamic Color Graph" src="../img/dynamic_color_graph.png" width="250"/></a></p>
 <hr/>
 <h2 id="axis-grid-lines">Axis Grid Lines<a class="headerlink" href="#axis-grid-lines" title="Link to this section for reference">¶</a></h2>
 <h3 id="show-x-axis-grid-lines">Show X-Axis Grid Lines<a class="headerlink" href="#show-x-axis-grid-lines" title="Link to this section for reference">¶</a></h3>
@@ -972,5 +981,7 @@ Turning this on will show the grams of carbs needed to prevent a low as a notifi
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

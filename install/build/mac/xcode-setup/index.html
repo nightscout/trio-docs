@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -767,7 +776,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 <li>
 <p>Select download. Be patient; depending on your download speeds, this could take a couple of hours. </p>
-<p align="align"><img alt="Screenshot: App Store" src="../img/xc-appstore.png" width="1024"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-appstore.png"><img alt="Screenshot: App Store" src="../img/xc-appstore.png" width="1024"/></a></p>
 </li>
 <li>
 <p>the <abbr title="program used to build an app">Xcode</abbr> application will be available from your Launchpad or Applications file once the download is complete. </p>
@@ -809,7 +818,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 <li>
 <p>A window will open, and you can review the <abbr title="program used to build an app">Xcode</abbr> version installed on the computer. </p>
-<p align="align"><img alt="Screenshot: Xcode Version" src="../img/xc-version.png" width="642"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-version.png"><img alt="Screenshot: Xcode Version" src="../img/xc-version.png" width="642"/></a></p>
 </li>
 </ol>
 <h3 id="privacy-settings">Privacy Settings<a class="headerlink" href="#privacy-settings" title="Link to this section for reference">¶</a></h3>
@@ -820,21 +829,21 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 <li>
 <p>Next, select 'System Settings'.</p>
-<p align="align"><img alt="Screenshot: System settings" src="../img/xc-systemsettings.png" width="827"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-systemsettings.png"><img alt="Screenshot: System settings" src="../img/xc-systemsettings.png" width="827"/></a></p>
 </li>
 <li>
 <p>Next, we are going to select 'Privacy &amp; Security".</p>
 </li>
 <li>
 <p>Then, we are going to select the 'Files &amp; Folders' option.</p>
-<p align="align"><img alt="Screenshot: System settings" src="../img/xc-privacy.png" width="827"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-privacy.png"><img alt="Screenshot: System settings" src="../img/xc-privacy.png" width="827"/></a></p>
 </li>
 <li>
 <p>We can then select the <abbr title="program used to build an app">Xcode</abbr> application. </p>
 </li>
 <li>
 <p>Once you select the <abbr title="program used to build an app">Xcode</abbr> application, ensure access to the downloads folder is toggled on.</p>
-<p align="align"><img alt="Screenshot: System settings" src="../img/xc-privacy1.png" width="827"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-privacy1.png"><img alt="Screenshot: System settings" src="../img/xc-privacy1.png" width="827"/></a></p>
 </li>
 </ol>
 <h3 id="command-line-tools">Command Line Tools<a class="headerlink" href="#command-line-tools" title="Link to this section for reference">¶</a></h3>
@@ -854,7 +863,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 <li>
 <p>In the 'Locations' tab, you will observe a drop-down menu for 'Command Line Tools'. Ensure the <abbr title="program used to build an app">Xcode</abbr> version listed matches the version you just downloaded and installed. </p>
-<p align="align"><img alt="Screenshot: Command line tools" src="../img/xc-clt.png" width="942"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-clt.png"><img alt="Screenshot: Command line tools" src="../img/xc-clt.png" width="942"/></a></p>
 </li>
 </ol>
 <h3 id="add-apple-id-to-xcode">Add Apple ID to <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#add-apple-id-to-xcode" title="Link to this section for reference">¶</a></h3>
@@ -874,7 +883,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 <li>
 <p>Press the plus symbol in the bottom left-hand corner of the screen. Follow the prompts to add your Apple ID.</p>
-<p align="align"><img alt="Screenshot: XC Apple ID" src="../img/xc-appid.png" width="942"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-appid.png"><img alt="Screenshot: XC Apple ID" src="../img/xc-appid.png" width="942"/></a></p>
 </li>
 </ol>
 </article>
@@ -955,5 +964,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

@@ -19,7 +19,16 @@
 <link href="../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -776,16 +785,16 @@
 </div>
 <h4 id="omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros<a class="headerlink" href="#omnipod-eros" title="Link to this section for reference">¶</a></h4>
 <p>Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> System", "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.</p>
-<p align="center"><img alt="eros" src="../img/eros.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eros.png"><img alt="eros" src="../img/eros.png"/></a></p>
 <h4 id="omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH<a class="headerlink" href="#omnipod-dash" title="Link to this section for reference">¶</a></h4>
 <p>The DASH pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH pods are easy to identify with their blue tab instead of the clear tab used on Eros and <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5.</p>
-<p align="center"><img alt="dash" src="../img/dash.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dash.png"><img alt="dash" src="../img/dash.png"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5</p>
 <p><strong><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods are <em>NOT</em> compatible with Trio</strong></p>
 </div>
 <h3 id="medtronic-pumps">Medtronic Pumps<a class="headerlink" href="#medtronic-pumps" title="Link to this section for reference">¶</a></h3>
-<p><img alt="pump" src="../img/pump.png"/>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump.png"><img alt="pump" src="../img/pump.png"/></a>
 {align=center})</p>
 <p>There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Trio compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.</p>
 <ul>
@@ -798,7 +807,7 @@
 <p>If you have one of the pumps listed above, you are good to go on Trio! Congrats!</p>
 <h4 id="medtronic-pump-model">Medtronic Pump Model<a class="headerlink" href="#medtronic-pump-model" title="Link to this section for reference">¶</a></h4>
 <p>To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX</p>
-<p align="center"><img alt="pump_model" src="../img/pump_model.jpg"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump_model.jpg"><img alt="pump_model" src="../img/pump_model.jpg"/></a></p>
 <div class="language-text highlight"><pre><span></span><code>* MMT ---&gt; Pump Manufacturer Model (MiniMed Medtronic)
 * 722 ---&gt; Pump Model Number
 * NA ---&gt; Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
@@ -819,16 +828,16 @@
 <p>If the pump has been active recently or has a reservoir installed, follow these steps:</p>
 <ol>
 <li>
-<p>Press the <img alt="esc" src="../img/esc.png"/> button on your pump.  </p>
+<p>Press the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/esc.png"><img alt="esc" src="../img/esc.png"/></a> button on your pump.  </p>
 </li>
 <li>
-<p>Scroll down to the bottom of the status display by clicking the <img alt="light" src="../img/light_button.png"/> button.  </p>
+<p>Scroll down to the bottom of the status display by clicking the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/light_button.png"><img alt="light" src="../img/light_button.png"/></a> button.  </p>
 </li>
 <li>
 <p>Read the bottom line of the display.</p>
 </li>
 </ol>
-<p align="center"><img alt="pump_firmware" src="../img/pump_firmware.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump_firmware.png"><img alt="pump_firmware" src="../img/pump_firmware.png"/></a></p>
 <h4 id="medtronic-pump-differences">Medtronic Pump Differences<a class="headerlink" href="#medtronic-pump-differences" title="Link to this section for reference">¶</a></h4>
 <p>If you are in the position of being able to shop around for different pump models, there are some slight differences between the Trio-compatible Medtronic pumps.</p>
 <p><strong>500 vs 700</strong>: The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180-unit reservoir, and the 700 series pumps use a 300-unit reservoir (or a smaller 180-unit reservoir, if you want).</p>
@@ -1002,5 +1011,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

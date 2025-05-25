@@ -19,7 +19,16 @@
 <link href="../../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -995,7 +1004,7 @@ A setting of 0.2 means it will only give SMBs if the difference between the curr
 <h2 id="bolus-increment">Bolus Increment<a class="headerlink" href="#bolus-increment" title="Link to this section for reference">¶</a></h2>
 <p>The minimum amount of insulin that can be bolused by Trio via an SMB. This is determined by your pump hardware.</p>
 <h2 id="are-smbs-allowed">Are SMBs Allowed?<a class="headerlink" href="#are-smbs-allowed" title="Link to this section for reference">¶</a></h2>
-<p align="center"><img alt="SMB-flow-chart" src="../img/smb_allowed_flowchart.jpeg"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/smb_allowed_flowchart.jpeg"><img alt="SMB-flow-chart" src="../img/smb_allowed_flowchart.jpeg"/></a></p>
 <h3 id="by-following-the-flow-chart-above-you-can-see-which-combination-of-settings-will-allow-smbs">By following the flow chart above, you can see which combination of settings will allow SMBs.<a class="headerlink" href="#by-following-the-flow-chart-above-you-can-see-which-combination-of-settings-will-allow-smbs" title="Link to this section for reference">¶</a></h3>
 <ul>
 <li>If a setting in the top row is toggled off, look at the next box to the right. If no box in the top row is toggled on, then SMBs will not be allowed. </li>
@@ -1090,5 +1099,7 @@ A setting of 0.2 means it will only give SMBs if the difference between the curr
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

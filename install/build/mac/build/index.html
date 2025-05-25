@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -783,22 +792,22 @@
 </li>
 <li>
 <p>Running the script will display a series of menu options in the '<abbr title="interface for entering commands to the computer">Terminal</abbr>' window, as shown below. To build Trio, you will type 1, and the press return. </p>
-<p align="align"><img alt="Screenshot: Build Select Script 1" src="../img/xc-bs1.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs1.png"><img alt="Screenshot: Build Select Script 1" src="../img/xc-bs1.png" width="682"/></a></p>
 </li>
 <li>
 <p>Next, the script will inform you that you are downloading open-source software. If you understand the warning, you will Type 1 and press return.</p>
-<p align="align"><img alt="Screenshot: Build Select Script 2" src="../img/xc-bs2.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs2.png"><img alt="Screenshot: Build Select Script 2" src="../img/xc-bs2.png" width="682"/></a></p>
 </li>
 <li>
 <p>Next, the script will prompt you to select which Trio <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to download. Unless you are actively contributing to app development, you will type 1 and press return. </p>
-<p align="align"><img alt="Screenshot: Build Select Script 3" src="../img/xc-bs3.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs3.png"><img alt="Screenshot: Build Select Script 3" src="../img/xc-bs3.png" width="682"/></a></p>
 </li>
 <li>
 <p>Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the <abbr title="interface for entering commands to the computer">Terminal</abbr> window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. </p>
 </li>
 <li>
 <p>Once successfully downloaded, your terminal window will appear as below.</p>
-<p align="align"><img alt="Screenshot: Build Select Script 4" src="../img/xc-bs4.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs4.png"><img alt="Screenshot: Build Select Script 4" src="../img/xc-bs4.png" width="682"/></a></p>
 </li>
 <li>
 <p>If you receive a failure message, scroll up through the window to find the error message(s). For assistance, visit <a href="../build-errors/#xcode-errors-with-build-select"><abbr title="program used to build an app">Xcode</abbr> Errors with Build Select</a>.</p>
@@ -811,23 +820,23 @@
 </li>
 <li>
 <p>If you are building with a paid Apple Developer account, type 1 and press return. If you are building with a free Apple Developer Account, type 2 and press return. Free account users go to <a href="#free-apple-developer-account-build">Free Apple Developer Account Build</a> now. </p>
-<p align="align"><img alt="Screenshot: Build Select Script 5" src="../img/xc-bs5.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs5.png"><img alt="Screenshot: Build Select Script 5" src="../img/xc-bs5.png" width="682"/></a></p>
 </li>
 <li>
 <p>Once users select option 1, they will be prompted to gather their Apple Developer Team ID. To do so, follow the link provided in the <abbr title="interface for entering commands to the computer">Terminal</abbr> window.</p>
-<p align="align"><img alt="Screenshot: Build Select Script 6" src="../img/xc-bs6.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs6.png"><img alt="Screenshot: Build Select Script 6" src="../img/xc-bs6.png" width="682"/></a></p>
 </li>
 <li>
 <p>Once you have gathered your Team ID, you can return to <abbr title="interface for entering commands to the computer">Terminal</abbr> and press return as prompted. The build script will prompt you to enter your Team ID into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Once you have entered the Team ID, you can press return.</p>
-<p align="align"><img alt="Screenshot: Build Select Script 7" src="../img/xc-bs7.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs7.png"><img alt="Screenshot: Build Select Script 7" src="../img/xc-bs7.png" width="682"/></a></p>
 </li>
 <li>
 <p>If you have previously built with the build script, you will be asked to confirm that your Team ID is correct. If it is, you can type 1 and press return.</p>
-<p align="align"><img alt="Screenshot: Build Select Script 8" src="../img/xc-bs8.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs8.png"><img alt="Screenshot: Build Select Script 8" src="../img/xc-bs8.png" width="682"/></a></p>
 </li>
 <li>
 <p>The next question asks if you want to ensure a year with your new build. Unless you have a specific reason, type 1 and press return. </p>
-<p align="align"><img alt="Screenshot: Build Select Script 9" src="../img/xc-bs9.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs9.png"><img alt="Screenshot: Build Select Script 9" src="../img/xc-bs9.png" width="682"/></a></p>
 </li>
 <li>
 <p>In the next <abbr title="interface for entering commands to the computer">Terminal</abbr> window, you will be prompted to do the following:</p>
@@ -837,7 +846,7 @@
 <li>Plug your phone into the computer.</li>
 <li>Press return to continue.</li>
 </ul>
-<p align="align"><img alt="Screenshot: Build Select Script 10" src="../img/xc-bs10.png" width="682"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs10.png"><img alt="Screenshot: Build Select Script 10" src="../img/xc-bs10.png" width="682"/></a></p>
 </li>
 </ol>
 <h3 id="build-trio">Build Trio<a class="headerlink" href="#build-trio" title="Link to this section for reference">¶</a></h3>
@@ -847,11 +856,11 @@
 </li>
 <li>
 <p>Next, we will set our build destination (a.k.a. your device). At the top of the screen, there is a progress/information bar. To the left of the bar, you will see 'Trio' and the logo. Next to this is your build location. Click this and select the device you would like to build to. </p>
-<p align="align"><img alt="Screenshot: Xcode 1" src="../img/xc-xc1.png" width="1024"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc1.png"><img alt="Screenshot: Xcode 1" src="../img/xc-xc1.png" width="1024"/></a></p>
 </li>
 <li>
 <p>We will now build to the location we selected. You can now select the run button. </p>
-<p align="align"><img alt="Screenshot: Xcode 2" src="../img/xc-xc2.png" width="1024"/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc2.png"><img alt="Screenshot: Xcode 2" src="../img/xc-xc2.png" width="1024"/></a></p>
 </li>
 <li>
 <p>Once you press the run button, you can monitor progress in the information bar.</p>
@@ -868,7 +877,7 @@
 <ul>
 <li>If this message occurs, select 'Register Device', and Trio will continue to build.</li>
 </ul>
-<p align="align"><img alt="Screenshot: Xcode 3" src="../img/xc-xc3.png" width='300"'/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc3.png"><img alt="Screenshot: Xcode 3" src="../img/xc-xc3.png" width='300"'/></a></p>
 </li>
 <li>
 <p>"Unlock "YOUR DEVICE NAME" to Continue"</p>
@@ -877,7 +886,7 @@
 </ul>
 </li>
 </ul>
-<p align="align"><img alt="Screenshot: Xcode 4" src="../img/xc-xc4.png" width='500"'/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc4.png"><img alt="Screenshot: Xcode 4" src="../img/xc-xc4.png" width='500"'/></a></p>
 <ul>
 <li>
 <p>"code sign wants to access key "access" in your keychain".</p>
@@ -885,7 +894,7 @@
 <li>Enter your computer password and press 'Always Allow'. </li>
 <li>Please note: This message may appear numerous times. <strong>Do not get frustrated and press 'Deny'</strong>. Just keep entering your computer password and press 'Always Allow'.</li>
 </ul>
-<p align="align"><img alt="Screenshot: Codesign" src="../img/xc-codesign.png" width='500"'/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-codesign.png"><img alt="Screenshot: Codesign" src="../img/xc-codesign.png" width='500"'/></a></p>
 </li>
 </ul>
 <h2 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Link to this section for reference">¶</a></h2>
@@ -909,7 +918,7 @@
 <h2 id="successful-build">Successful Build<a class="headerlink" href="#successful-build" title="Link to this section for reference">¶</a></h2>
 <p>Congratulations on building Trio, and welcome to the community.<br/>
 Please see the <a href="../../../../configuration/new-user-setup/">New User Guide</a> to get started with Trio. </p>
-<p align="align"><img alt="Alt Text" src="../img/xc-congratulations.gif" width='500"'/></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-congratulations.gif"><img alt="Alt Text" src="../img/xc-congratulations.gif" width='500"'/></a></p>
 <h2 id="free-apple-developer-account-build">Free Apple Developer Account Build<a class="headerlink" href="#free-apple-developer-account-build" title="Link to this section for reference">¶</a></h2>
 <h3 id="prepare-to-sign">Prepare to Sign<a class="headerlink" href="#prepare-to-sign" title="Link to this section for reference">¶</a></h3>
 <p>You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Accout option or if you want to build to a simulator on your computer.</p>
@@ -926,14 +935,14 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 </li>
 <li>
 <p>Once <abbr title="program used to build an app">Xcode</abbr> is open, in the navigation pane one the left side of the screen, double click on 'Trio'</p>
-<p align="center"><img alt="Screenshot: Free Build - Xcode 1" src="../img/xc-free1.png" width="1024"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-free1.png"><img alt="Screenshot: Free Build - Xcode 1" src="../img/xc-free1.png" width="1024"/></a></p>
 </li>
 <li>
 <p>Next, ensure your phone is set as the build location. If not, click on the build location and select your device from the drop down list. </p>
 <ul>
 <li>If this is the first time your phone or watch has been connected to <abbr title="program used to build an app">Xcode</abbr>, you will need to tell the phone and watch to "Trust this Computer".</li>
 </ul>
-<p align="center"><img alt="Screenshot: Xcode 2" src="../img/xc-free2.png" width="1024"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-free2.png"><img alt="Screenshot: Xcode 2" src="../img/xc-free2.png" width="1024"/></a></p>
 </li>
 </ol>
 <div class="admonition question">
@@ -965,11 +974,11 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 </li>
 <li>
 <p>You can now add your 'Team'. Click the drop down box and ensure you select your free team.</p>
-<p align="center"><img alt="Screenshot: Free Build - Xcode 3" src="../img/xc-free3.png" width="1024"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-free3.png"><img alt="Screenshot: Free Build - Xcode 3" src="../img/xc-free3.png" width="1024"/></a></p>
 </li>
 <li>
 <p>Repeat the same steps for the remaining targets.</p>
-<p align="center"><img alt="Screenshot: Free Build - Xcode 4" src="../img/xc-free4.png" width="1024"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-free4.png"><img alt="Screenshot: Free Build - Xcode 4" src="../img/xc-free4.png" width="1024"/></a></p>
 </li>
 </ol>
 <h3 id="disable-features">Disable Features<a class="headerlink" href="#disable-features" title="Link to this section for reference">¶</a></h3>
@@ -1090,5 +1099,7 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

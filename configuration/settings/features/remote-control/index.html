@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -1052,7 +1061,7 @@
 <p>You can search for this screen in Trio settings or go through the sequence: Trio, Settings, Features, Remote Control.</p>
 </blockquote>
 <p>Once Remote Control is enabled, a Shared Secret is available. This is only used if you want to <a href="#configure-loopfollow-trio-remote-control">Configure <em>LoopFollow</em> Trio Remote Control</a>.</p>
-<p align="center"><img alt="Trio remote control settings" src="../img/trio-enable-remote-control.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-enable-remote-control.png"><img alt="Trio remote control settings" src="../img/trio-enable-remote-control.png" width="300"/></a></p>
 <p>When Remote Control is enabled on the Trio app and the <em>LoopFollow</em> phone is properly configured, you can add carbs, send boluses, set or cancel overrides or temporary targets from the <em>LoopFollow</em> phone to the Trio phone via <em>Apple</em> push notifications.</p>
 <p>The <code>SHARED SECRET</code> should be copied from the Trio phone and added to the <a href="#shared-secret"><code>Shared Secret</code></a> row of the <em>LoopFollow</em> Remote Settings screen as part of the configuration for using <em>LoopFollow</em>.</p>
 <div class="admonition warning">
@@ -1063,10 +1072,10 @@
 <h2 id="loopfollow-overview"><em>LoopFollow</em> Overview<a class="headerlink" href="#loopfollow-overview" title="Link to this section for reference">¶</a></h2>
 <p>Experienced <em>LoopFollow</em> users should still read this section - it touches on important configuration requirements for remote control.</p>
 <p>The graphic below shows the <em>LoopFollow</em> features on the main screen of the app.</p>
-<p align="center"><img alt="LoopFollow main screen" src="../img/lf-table-overview.png" width="600"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-table-overview.png"><img alt="LoopFollow main screen" src="../img/lf-table-overview.png" width="600"/></a></p>
 <h3 id="loopfollow-settings"><em>LoopFollow</em> Settings<a class="headerlink" href="#loopfollow-settings" title="Link to this section for reference">¶</a></h3>
 <p>You tap on the settings icon at the bottom right of the toolbar to configure <em>LoopFollow</em>. The setting screen is shown in the graphic below.</p>
-<p align="center"><img alt="LoopFollow settings" src="../img/lf-settings.svg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-settings.svg"><img alt="LoopFollow settings" src="../img/lf-settings.svg" width="300"/></a></p>
 <h3 id="loopfollow-data-source"><em>LoopFollow</em> Data Source<a class="headerlink" href="#loopfollow-data-source" title="Link to this section for reference">¶</a></h3>
 <p>You provide <em>LoopFollow</em> with information about the person you are following. At least one of these must be entered:</p>
 <ul>
@@ -1116,16 +1125,16 @@
 </div>
 <p>The graphic below shows the display when you tap on the <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> Settings row.</p>
 <p>To simplify setup, you can copy your <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (including the token) from the <a href="https://nightscout.github.io/nightscout/admin_tools/#subjects-and-roles">Admin Tools in <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em></a>. When pasted into <em>LoopFollow</em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> row, the app will automatically extract and fill in both the <abbr title="website address (Uniform Resource Locator)">URL</abbr> and token.</p>
-<p align="center"><img alt="enter nightscout credentials" src="../img/lf-data-source-ns.svg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-data-source-ns.svg"><img alt="enter nightscout credentials" src="../img/lf-data-source-ns.svg" width="300"/></a></p>
 <h4 id="add-dexcom">Add <em>Dexcom</em><a class="headerlink" href="#add-dexcom" title="Link to this section for reference">¶</a></h4>
 <p>The graphic below shows the display when you tap on the <em>Dexcom</em> Settings row.</p>
 <blockquote>
 <p>The <em>Dexcom</em> Share credentials are optional, but can be useful when the <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> is unavailable.</p>
 </blockquote>
-<p align="center"><img alt="enter dexcom credentials" src="../img/lf-data-source-dexcom.svg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-data-source-dexcom.svg"><img alt="enter dexcom credentials" src="../img/lf-data-source-dexcom.svg" width="300"/></a></p>
 <h3 id="loopfollow-remote-setting-type"><em>LoopFollow</em> Remote Setting Type<a class="headerlink" href="#loopfollow-remote-setting-type" title="Link to this section for reference">¶</a></h3>
 <p>The Remote Settings row in the <em>LoopFollow</em> Settings screen is used to select the type of remote access you wish to use.</p>
-<p align="center"><img alt="LoopFollow remote settings type" src="../img/lf-trc-selection.jpg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-selection.jpg"><img alt="LoopFollow remote settings type" src="../img/lf-trc-selection.jpg" width="300"/></a></p>
 <div class="admonition warning">
 <p class="admonition-title">The Trio Remote Contol option is not available</p>
 <p>The <code>Trio Remote Control</code> option is only available in <em>LoopFollow</em> if you have already entered a <a href="#add-nightscout"><em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr></a> with a default profile recognized as a Trio profile. Review <a href="#troubleshooting">Troubleshooting</a> for possible reasons for not seeing the option.</p>
@@ -1147,14 +1156,14 @@
 <p>The <em>LoopFollow</em> app provides amazing display and alarm capabilities, whether remote control is enabled or not.</p>
 <p>It can be used with the Trio or the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app with the <code>Nightscout</code> option for starting and stopping temp targets (Trio) or overrides (<code>Loop</code>).</p>
 <p>The graphic below shows the top portion of the Remote Settings screen when None, <code>Nightscout</code> or <code>Trio Remote Control</code> is selected. The lower portion of the screen is found in the <a href="#guardrails"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> section.</p>
-<p align="center"><img alt="LoopFollow remote options - all types" src="../img/lf-remote-options.svg" width="400"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-remote-options.svg"><img alt="LoopFollow remote options - all types" src="../img/lf-remote-options.svg" width="400"/></a></p>
 <hr/>
 <h2 id="use-loopfollow-nightscout-remote-control">Use <em>LoopFollow</em> <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> Remote Control<a class="headerlink" href="#use-loopfollow-nightscout-remote-control" title="Link to this section for reference">¶</a></h2>
 <p>If you select <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> as the Remote Control Type for <em>LoopFollow</em>, this enables Temporary Targets to be set and disabled from <em>LoopFollow</em>.</p>
 <blockquote>
 <p>This is the only remote option that works for Trio 0.2.x when using <em>LoopFollow</em>.</p>
 </blockquote>
-<p align="center"><img alt="LoopFollow remote options - all types" src="../img/lf-nightscout.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-nightscout.png"><img alt="LoopFollow remote options - all types" src="../img/lf-nightscout.png" width="300"/></a></p>
 <hr/>
 <h2 id="configure-loopfollow-trio-remote-control">Configure <em>LoopFollow</em> Trio Remote Control<a class="headerlink" href="#configure-loopfollow-trio-remote-control" title="Link to this section for reference">¶</a></h2>
 <blockquote>
@@ -1170,8 +1179,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img alt="default remote trc settings " src="../img/lf-trc-empty-control-settings.jpg" width="300"/></td>
-<td style="text-align: center;"><img alt="LoopFollow settings" src="../img/lf-trc-filled-control-settings.png" width="300"/></td>
+<td style="text-align: center;"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-empty-control-settings.jpg"><img alt="default remote trc settings " src="../img/lf-trc-empty-control-settings.jpg" width="300"/></a></td>
+<td style="text-align: center;"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-filled-control-settings.png"><img alt="LoopFollow settings" src="../img/lf-trc-filled-control-settings.png" width="300"/></a></td>
 </tr>
 </tbody>
 </table>
@@ -1200,7 +1209,7 @@
 <p>If you have never created an APNS (or have lost the credentials), follow the directions in <a href="#new-apns">New APNS</a> and copy the APNS Key into <em>LoopFollow</em> and save the value in your Secrets Reference file.</p>
 <h3 id="guardrails"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#guardrails" title="Link to this section for reference">¶</a></h3>
 <p>The maximum allowed entries for Bolus, Carbs, Protein, and Fat are configured in the guardrails section shown in the graphic below. This example is one in which the Shared Secret and APNS values have not yet been added.</p>
-<p align="center"><img alt="default guardrails" src="../img/lf-trc-guardrails.jpg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-guardrails.jpg"><img alt="default guardrails" src="../img/lf-trc-guardrails.jpg" width="300"/></a></p>
 <h3 id="meal-settings">Meal Settings<a class="headerlink" href="#meal-settings" title="Link to this section for reference">¶</a></h3>
 <p>The user can decide to enable or disable two features independently.</p>
 <ul>
@@ -1217,7 +1226,7 @@
 <h3 id="debug-info">Debug / Info<a class="headerlink" href="#debug-info" title="Link to this section for reference">¶</a></h3>
 <p>This section indicates if <em>Trio</em> has uploaded required information to <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em>.</p>
 <p>The graphic below shows a properly configured <em>LoopFollow</em> when the Trio app was built using the Browser Build method.</p>
-<p align="center"><img alt="shows credentials entered into loopfollow are correct" src="../img/lf-trc-debug-blurred.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-debug-blurred.png"><img alt="shows credentials entered into loopfollow are correct" src="../img/lf-trc-debug-blurred.png" width="300"/></a></p>
 <p>If you have empty rows in the Debug / Info screen, the most likely problem is the default profile is not coming from Trio. See <a href="#update-profile">Update Profile</a>. 
 If you took those steps and still have missing rows, return to <a href="#configure-loopfollow-trio-remote-control">Configure <em>LoopFollow</em> Trio Remote Control</a> and try again.</p>
 <hr/>
@@ -1225,11 +1234,11 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <p>Once the <em>LoopFollow</em> phone is configured, and while the Trio phone is handy, test sending Remote Commands. It is good to also have a browser open with the <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> displayed.</p>
 <p>Remember to give the system time to update.</p>
 <p>The sequence is <em>LoopFollow</em> to <em>Apple Push Notifications</em> to <em>Trio</em>, which uploads to <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> and then is displayed in the <em>LoopFollow</em> main screen.</p>
-<p align="center"><img alt="loopfollow trio remote control choices" src="../img/lf-trc.jpg" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc.jpg"><img alt="loopfollow trio remote control choices" src="../img/lf-trc.jpg" width="300"/></a></p>
 <h3 id="remote-meal">Remote Meal<a class="headerlink" href="#remote-meal" title="Link to this section for reference">¶</a></h3>
 <p><strong><em>More info coming soon!</em></strong></p>
 <p>When entering meals and choosing to schedule the meal, any bolus included in the meal is enacted immediately. Only the carb entry is entered according to the schedule.</p>
-<p align="center"><img alt="scheduled meal warning" src="../img/lf-trc-scheduled-meal.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-scheduled-meal.png"><img alt="scheduled meal warning" src="../img/lf-trc-scheduled-meal.png" width="300"/></a></p>
 <h3 id="remote-bolus">Remote Bolus<a class="headerlink" href="#remote-bolus" title="Link to this section for reference">¶</a></h3>
 <p><strong><em>More info coming soon!</em></strong></p>
 <h3 id="temp-target">Temp Target<a class="headerlink" href="#temp-target" title="Link to this section for reference">¶</a></h3>
@@ -1281,7 +1290,7 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <li>If not already open in your browser (compare with the below screenshot), <ul>
 <li>Click on <strong><code>Keys</code></strong> (located in the left-hand column). </li>
 <li>Either click on the blue <strong><code>Create a new key</code></strong> button <strong>OR</strong> the plus button (<font color="#2997FF"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg></span></font>)  to add a new key.<blockquote>
-<p><img alt="img/apns-add-key.png" src="../img/apns-add-key.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-add-key.png"><img alt="img/apns-add-key.png" src="../img/apns-add-key.png"/></a></p>
 </blockquote>
 </li>
 </ul>
@@ -1292,24 +1301,24 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <li>Then click the <strong><code>Configure</code></strong> button to the right of the name</li>
 <li>Choose <strong><code>Sandbox &amp; Production</code></strong> and then <strong><code>Save</code></strong></li>
 <li>Tap on the <strong><code>Continue</code></strong> button, upper right<blockquote>
-<p><img alt="updated instructions for creating and configuring an APNS key" src="../img/key-apns.svg"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/key-apns.svg"><img alt="updated instructions for creating and configuring an APNS key" src="../img/key-apns.svg"/></a></p>
 </blockquote>
 </li>
 </ul>
 </li>
 <li>In the screen that follows, click the blue <strong><code>Register</code></strong> button.  <blockquote>
-<p><img alt="img/apns-register.png" src="../img/apns-register.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-register.png"><img alt="img/apns-register.png" src="../img/apns-register.png"/></a></p>
 </blockquote>
 </li>
 <li>In the screen that follows, click the blue <strong><code>Download</code></strong> button.<br/>
     This step will download a file with a name that starts with <code>AuthKey</code> and ends with <code>.p8</code>.<blockquote>
-<p><img alt="img/apns-download.png" src="../img/apns-download.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-download.png"><img alt="img/apns-download.png" src="../img/apns-download.png"/></a></p>
 </blockquote>
 </li>
 <li>Find your <code>AuthKey</code> downloaded file in your downloads folder. It's a good idea to store this file where you can find it again if you need it. 
     The next task is to rename the file so you can open it. 
     Highlight the filename and choose rename, then add ".txt" after ".p8". In other words, modify <code>AuthKey_AAAAAAAAAA.p8</code> to <code>AuthKey_AAAAAAAAAA.p8.txt</code> and click on <code>Use .txt</code> when questioned.<blockquote>
-<p align="center"><img alt="rename the p8 file" src="../img/apns-rename.png" width="200"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-rename.png"><img alt="rename the p8 file" src="../img/apns-rename.png" width="200"/></a></p>
 </blockquote>
 </li>
 <li>
@@ -1325,13 +1334,13 @@ If you took those steps and still have missing rows, return to <a href="#configu
 </li>
 </ul>
 <blockquote>
-<p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-copy-key.png"><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png"/></a></p>
 </blockquote>
 </li>
 <li>
 <p>The APNS Key ID is the 10-character name embedded in the filename: <code>AuthKey_AAAAAAAAAA.p8.txt</code>. You can also see it if you return to Apple Developer's <a href="https://developer.apple.com/account/resources/authkeys/list"><code>Certificates, Identifiers &amp; Profiles</code></a> as highlighted in this graphic. You copy that APNS Key ID and then paste it both into your Secrets Reference file and into the row for <em>LoopFollow</em> <a href="#apns-key-id">APNS Key ID</a></p>
 <blockquote>
-<p><img alt="APNS KEY ID is highlighted by red rectangle" src="../img/apns-key-id.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/apns-key-id.png"><img alt="APNS KEY ID is highlighted by red rectangle" src="../img/apns-key-id.png"/></a></p>
 </blockquote>
 </li>
 </ol>
@@ -1393,7 +1402,7 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <p>To force a profile to update to <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em>, go to the Trio app and toggle Allow Uploading to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> off (disable) and then enable it again.</p>
 <p>Once the user has toggled "Allow Uploading to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr>", <em>LoopFollow</em> needs to be refreshed (pull down glucose value to refresh) or re-started in order to fetch the correct information. <em>LoopFollow</em> will refresh eventually, but most users are impatient.</p>
 <p>If the Debug Info in <em>LoopFollow</em> is missing a Device Token or a Bundle ID, as shown on the left side of the graphic, you need to make sure the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is no longer uploading to <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> and force the profile to update.</p>
-<p align="center"><img alt="LoopFollow debug info indicates a problem" src="../img/lf-force-ns-profile.svg" width="600"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-force-ns-profile.svg"><img alt="LoopFollow debug info indicates a problem" src="../img/lf-force-ns-profile.svg" width="600"/></a></p>
 <h3 id="trio-remote-control-stops-working">Trio Remote Control Stops Working<a class="headerlink" href="#trio-remote-control-stops-working" title="Link to this section for reference">¶</a></h3>
 <p>Other signatures that you need to <a href="#update-profile">force the update</a> are shown in the graphics below - for both these instances, Trio Remote Control (TRC) was working with <em>LoopFollow</em> and then stopped working:</p>
 <table>
@@ -1405,8 +1414,8 @@ If you took those steps and still have missing rows, return to <a href="#configu
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img alt="cannot select trio remote control " src="../img/lf-trc-not-shown.png" width="300"/></td>
-<td style="text-align: center;"><img alt="LoopFollow settings" src="../img/lf-trc-error-wrong-profile.png" width="300"/></td>
+<td style="text-align: center;"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-not-shown.png"><img alt="cannot select trio remote control " src="../img/lf-trc-not-shown.png" width="300"/></a></td>
+<td style="text-align: center;"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-error-wrong-profile.png"><img alt="LoopFollow settings" src="../img/lf-trc-error-wrong-profile.png" width="300"/></a></td>
 </tr>
 </tbody>
 </table>
@@ -1492,5 +1501,7 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

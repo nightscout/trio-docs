@@ -19,7 +19,16 @@
 <link href="../../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -707,7 +716,7 @@
 <h1 id="sigmoid-function">Sigmoid Function<a class="headerlink" href="#sigmoid-function" title="Link to this section for reference">¶</a></h1>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Link to this section for reference">¶</a></h2>
 <p>The sigmoid function provides an alternative to the default logarithmic function. It is called <strong>Sigmoid</strong> because the math used to calculate adjustments forms a sigmoid shape.</p>
-<p align="center"><img alt="Sigmoid Function" src="../img/sigmoid_chart.png" width="865"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/sigmoid_chart.png"><img alt="Sigmoid Function" src="../img/sigmoid_chart.png" width="865"/></a></p>
 <h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Link to this section for reference">¶</a></h2>
 <p>Sigmoid relies upon how far your blood glucose is from your target BG to determine how much to adjust <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>. As blood sugars get farther away from your target BG, sigmoid adjustments get larger. The adjustments are limited by autosens max and autosens min settings.</p>
 <p><a href="https://www.desmos.com/calculator/s9jxdmqhh8">Click here to view a graph depicting the sigmoid formula in mg/dL</a></p>
@@ -790,5 +799,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

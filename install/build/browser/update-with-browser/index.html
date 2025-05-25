@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -838,8 +847,8 @@
 <li>Tap on Add Variable.</li>
 </ol>
 <blockquote>
-<p align="center"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-01.png" width="800"/></p>
-<p align="center"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-02.png" width="600"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/add-variable-01.png"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-01.png" width="800"/></a></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/add-variable-02.png"><img alt="add ENABLE_NUKE_CERTS variable" src="../img/add-variable-02.png" width="600"/></a></p>
 </blockquote>
 <h3 id="configure-fork-with-dev-branch">Configure <code>Fork</code> with <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><a class="headerlink" href="#configure-fork-with-dev-branch" title="Link to this section for reference">¶</a></h3>
 <p>The open beta testing for Trio uses the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
@@ -850,11 +859,11 @@
 <h4 id="add-branch">Add <code>Branch</code><a class="headerlink" href="#add-branch" title="Link to this section for reference">¶</a></h4>
 <p>First, you need to get to your Trio <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the <abbr title="version of code within a single repository or workspace repository">branch</abbr> icon. (Do not worry about how many branches you have.):</p>
 <blockquote>
-<p align="center"><img alt="Trio repo - tap on branch icon" src="../img/trio-branch.png" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-branch.png"><img alt="Trio repo - tap on branch icon" src="../img/trio-branch.png" width="700"/></a></p>
 </blockquote>
 <p>The next screen displays the branches you currently have. It shows a <code>New branch</code> icon in the upper right. If you don't see that, you are not logged in. Tap on the <code>New branch</code> button.</p>
 <blockquote>
-<p align="center"><img alt="Trio branch display - tap on new branch" src="../img/trio-new-branch.png" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-new-branch.png"><img alt="Trio branch display - tap on new branch" src="../img/trio-new-branch.png" width="700"/></a></p>
 </blockquote>
 <p>Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your <code>fork</code> when <code>main</code> is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The right side shows the display after making the indicated selections.:</p>
 <ol>
@@ -867,7 +876,7 @@
 <li>Review the dialog items to make sure everything is correct, and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ol>
 <blockquote>
-<p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/add-branch-02.svg"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700"/></a></p>
 </blockquote>
 <h4 id="update-branch">Update <code>Branch</code><a class="headerlink" href="#update-branch" title="Link to this section for reference">¶</a></h4>
 <blockquote>
@@ -879,7 +888,7 @@
 <li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <code>fork</code> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
 </ul>
 <blockquote>
-<p align="center"><img alt="message displayed when your fork of is behind the origin version" src="../img/github-build-check-fork-status.svg" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/github-build-check-fork-status.svg"><img alt="message displayed when your fork of is behind the origin version" src="../img/github-build-check-fork-status.svg" width="700"/></a></p>
 </blockquote>
 <h3 id="update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#update-identifiers" title="Link to this section for reference">¶</a></h3>
 <p>For Trio 0.5.x and newer, you must have <em>Apple</em> Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: <code>Add Identifiers</code> after you update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
@@ -895,7 +904,7 @@
 <li>
 <p>Tap the green button that says <code>Run workflow</code>.</p>
 <blockquote>
-<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/action-02-add-identifiers.svg"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700"/></a></p>
 </blockquote>
 </li>
 </ol>
@@ -921,7 +930,7 @@
 <li>
 <p>Tap the green button that says "<code>Run workflow</code>".</p>
 <blockquote>
-<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/action-03-create-certs.svg"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700"/></a></p>
 </blockquote>
 </li>
 <li>
@@ -943,7 +952,7 @@
 </blockquote>
 <p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example <code>main</code>, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Trio</code>. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the <code>dev branch</code> in the <code>branch dropdown</code> menu before continuing to step 4 and tapping on the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button:</p>
 <blockquote>
-<p align="center"><img alt="build app using github actions" src="../img/action-04-build-trio.svg" width="700"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/action-04-build-trio.svg"><img alt="build app using github actions" src="../img/action-04-build-trio.svg" width="700"/></a></p>
 </blockquote>
 <h4 id="refresh-do-not-repeat">Refresh, Do Not Repeat<a class="headerlink" href="#refresh-do-not-repeat" title="Link to this section for reference">¶</a></h4>
 <div class="admonition tip">
@@ -959,7 +968,7 @@
 <p>You may notice some <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> actions that have <code>DONT RUN</code> or <code>DO NOT RUN</code> in their names. Those are special actions that are used by the developers. They are skipped in your <code>Fork</code>, but you may see logs for them.</p>
 <p>If they already have the notation <code>disabled</code> beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select <code>Disable workflow</code>. You will not be annoyed by seeing logs that say the action was automatically run and then skipped.</p>
 <blockquote>
-<p><img alt="disable developer actions" src="../img/trio-disable-do-not-run.png" width="500"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-disable-do-not-run.png"><img alt="disable developer actions" src="../img/trio-disable-do-not-run.png" width="500"/></a></p>
 </blockquote>
 <hr/>
 <h2 id="update-build-errors">Update Build Errors<a class="headerlink" href="#update-build-errors" title="Link to this section for reference">¶</a></h2>
@@ -967,12 +976,12 @@
 In that case, you will see this <strong>error</strong> in the <strong>build action annotations</strong>.</p>
 <h3 id="error">Error<a class="headerlink" href="#error" title="Link to this section for reference">¶</a></h3>
 <blockquote>
-<p><img _="," align="center" alt="Trio annotation error for missing identifier update" src="../img/trio-annotation-need-to-run-add-identifiers.png" width="600"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-annotation-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio annotation error for missing identifier update" src="../img/trio-annotation-need-to-run-add-identifiers.png" width="600"/></a></p>
 </blockquote>
 <p>If you decide to look at the action <strong>log</strong>, instead of reading the annotations, you may see an <strong>error</strong> similar to the two graphics below.</p>
 <blockquote>
-<p><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-detail-need-to-run-add-identifiers.png" width="600"/></p>
-<p><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-real-error-need-to-run-add-identifiers.png" width="600"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-log-detail-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-detail-need-to-run-add-identifiers.png" width="600"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-log-real-error-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-real-error-need-to-run-add-identifiers.png" width="600"/></a></p>
 </blockquote>
 <h3 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h3>
 <ol>
@@ -1060,7 +1069,7 @@ Warning - there is no hand holding in these directions.</p>
 <ul>
 <li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">App IDs Identifier page for your Apple Developer Account</a>.<ul>
 <li>Click on the <code>Trio</code> Identifier and assign the <code>Trio App Group</code> to the Identifier - see graphic below.<blockquote>
-<p><img alt="add Trio App Group to identifiers" src="../img/choose-trio-app-group.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/choose-trio-app-group.png"><img alt="add Trio App Group to identifiers" src="../img/choose-trio-app-group.png"/></a></p>
 </blockquote>
 </li>
 <li>Repeat this for the other 2 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch</code> and <code>Trio WatchKit Extension</code></li>
@@ -1151,5 +1160,7 @@ Warning - there is no hand holding in these directions.</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

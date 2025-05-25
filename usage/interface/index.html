@@ -19,7 +19,16 @@
 <link href="../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -491,24 +500,24 @@
 
 <h1 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Link to this section for reference">¶</a></h1>
 <h2 id="trio-user-interface">Trio User Interface<a class="headerlink" href="#trio-user-interface" title="Link to this section for reference">¶</a></h2>
-<p align="center"><img alt="Trio 1.0 UI" src="../img/light_vs_dark_mode.png" width="600"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/light_vs_dark_mode.png"><img alt="Trio 1.0 UI" src="../img/light_vs_dark_mode.png" width="600"/></a></p>
 <hr/>
 <h2 id="main-screen">Main Screen<a class="headerlink" href="#main-screen" title="Link to this section for reference">¶</a></h2>
 <p><strong>The main screen of Trio can be divided into four sections:</strong></p>
-<p align="center"><img alt="Trio Main Screen" src="../img/light_mode_sections.png" width="500"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/light_mode_sections.png"><img alt="Trio Main Screen" src="../img/light_mode_sections.png" width="500"/></a></p>
 <p>Use the links below to learn more about each section:<br/>
 <a href="#current-status">Current Status</a> | <a href="#graph-and-history">Graph &amp; History</a> | <a href="#adjustment-status">Adjustment Status</a> | <a href="#action-buttons">Action Buttons</a></p>
 <hr/>
 <h3 id="current-status">Current Status<a class="headerlink" href="#current-status" title="Link to this section for reference">¶</a></h3>
 <p>The Current Status section functions as an easy reference point for a variety of important data points.<br/>
 Use the tabs below to learn more about each section:  </p>
-<p align="center"><img alt="Trio Current Status" src="../img/current_status.png" width="400"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/current_status.png"><img alt="Trio Current Status" src="../img/current_status.png" width="400"/></a></p>
 <div class="grid">
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="current-status-current-glucose" name="__tabbed_1" type="radio"/><input id="current-status-pump-info" name="__tabbed_1" type="radio"/><input id="current-status-loop-info" name="__tabbed_1" type="radio"/><input id="current-status-current-metrics" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="current-status-current-glucose">Current Glucose</label><label for="current-status-pump-info">Pump Info</label><label for="current-status-loop-info"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Info</label><label for="current-status-current-metrics">Current Metrics</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Here you will find a centered bobble containing your current glucose reading, the time since the last glucose reading, the change in glucose from the previous reading, and an arrow that indicates the trending direction of your glucose.</p>
-<p align="center"><img alt="Current Glucose" src="../img/current_glucose.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/current_glucose.png"><img alt="Current Glucose" src="../img/current_glucose.png" width="300"/></a></p>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>If you long press the bobble, it will snooze <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> alerts</p>
@@ -518,7 +527,7 @@ Use the tabs below to learn more about each section:  </p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="current-status-omnipod-users" name="__tabbed_2" type="radio"/><input id="current-status-medtronic--dana-users" name="__tabbed_2" type="radio"/><div class="tabbed-labels"><label for="current-status-omnipod-users"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Users</label><label for="current-status-medtronic--dana-users">Medtronic &amp; Dana Users</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p align="center"><img alt="Pump Info Omnipod" src="../img/pump_info_omnipod.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump_info_omnipod.png"><img alt="Pump Info Omnipod" src="../img/pump_info_omnipod.png" width="300"/></a></p>
 <ul>
 <li><strong>Reservoir Status:</strong> Units Remaining in your pod  </li>
 <li><strong>Remaining Pod Life:</strong> Remaining time left on your current pod<br/>
@@ -526,7 +535,7 @@ Use the tabs below to learn more about each section:  </p>
 </ul>
 </div>
 <div class="tabbed-block">
-<p align="center"><img alt="Pump Info Medt" src="../img/pump_info_medt.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump_info_medt.png"><img alt="Pump Info Medt" src="../img/pump_info_medt.png" width="300"/></a></p>
 <ul>
 <li><strong>Reservoir Status:</strong> Units remaining in your reservoir  </li>
 <li><strong>Pump Battery:</strong> Pump battery percentage remaining  </li>
@@ -537,7 +546,7 @@ Use the tabs below to learn more about each section:  </p>
 </div>
 <div class="tabbed-block">
 <p>To the right of the bobble, you will find the current looping status and the time since the last loop cycle. Below that, is your 4-hour glucose forecast.</p>
-<p align="center"><img alt="Loop Info" src="../img/loop_info.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/loop_info.png"><img alt="Loop Info" src="../img/loop_info.png" width="300"/></a></p>
 <p>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Indicator tells you how long it has been since the last loop cycle using specific colors:</p>
 <p><span style="color: #6FCE96;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M464 256a208 208 0 1 0-416 0 208 208 0 1 0 416 0M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0"></path></svg></span></span> <strong>Green:</strong><br/>
     It has been <strong><em>5 minutes or less</em></strong> since a successful loop cycle</p>
@@ -554,7 +563,7 @@ Use the tabs below to learn more about each section:  </p>
 </div>
 <div class="tabbed-block">
 <p>Below the bobble, you'll find 3 icons that provide you with the current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>, <abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr>, and adjusted basal rate. These values were determined by the calculations made in the most recent loop cycle.</p>
-<p align="center"><img alt="Current Metrics" src="../img/current_metrics.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/current_metrics.png"><img alt="Current Metrics" src="../img/current_metrics.png" width="300"/></a></p>
 </div>
 </div>
 </div>
@@ -563,20 +572,20 @@ Use the tabs below to learn more about each section:  </p>
 <h3 id="graph-and-history">Graph and History<a class="headerlink" href="#graph-and-history" title="Link to this section for reference">¶</a></h3>
 <p>The middle of the screen graphs your blood sugar data and entered carbs overlaid with Trio's insulin delivery and glucose forecasting.<br/>
 Use the tabs below the image to learn more about each section.  </p>
-<p align="center"><img alt="Trio Graph and History" src="../img/graph_and_history.png" width="400"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/graph_and_history.png"><img alt="Trio Graph and History" src="../img/graph_and_history.png" width="400"/></a></p>
 <div class="grid">
 <div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="graph-and-history-basal-adjustments" name="__tabbed_3" type="radio"/><input id="graph-and-history-current--previous-activity" name="__tabbed_3" type="radio"/><input id="graph-and-history-active-insulin--carbs" name="__tabbed_3" type="radio"/><input id="graph-and-history-stats--display-info" name="__tabbed_3" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-basal-adjustments">Basal Adjustments</label><label for="graph-and-history-current--previous-activity">Current &amp; Previous Activity</label><label for="graph-and-history-active-insulin--carbs">Active Insulin &amp; Carbs</label><label for="graph-and-history-stats--display-info">Stats &amp; Display Info</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Here you will find the adjustments made to your basal delivery. See below for more details:  </p>
-<p><img alt="Basal Line" src="../img/blue_basal_line.png" style="vertical-align: middle;" width="40"/> <strong>Therapy Basal Reference Line:</strong> The rate you entered in settings. (In Trio 0.2.x, this was called "Profile Basal Rate")<br/>
-<img alt="No Adjustment" src="../img/no_adjustment.png" style="vertical-align: middle;" width="40"/> <strong>No Basal Adjustment</strong> Basal is being delivered at your current therapy basal rate.<br/>
-<img alt="Basal Increase" src="../img/basal_increase.png" style="vertical-align: middle;" width="40"/> <strong>Basal Increase</strong> Basal increased above your current therapy basal rate.<br/>
-<img alt="Basal Decrease" src="../img/basal_decrease.png" style="vertical-align: middle;" width="40"/> <strong>Basal Decrease</strong> Basal decreased below your current therapy basal rate.  </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/blue_basal_line.png"><img alt="Basal Line" src="../img/blue_basal_line.png" style="vertical-align: middle;" width="40"/></a> <strong>Therapy Basal Reference Line:</strong> The rate you entered in settings. (In Trio 0.2.x, this was called "Profile Basal Rate")<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/no_adjustment.png"><img alt="No Adjustment" src="../img/no_adjustment.png" style="vertical-align: middle;" width="40"/></a> <strong>No Basal Adjustment</strong> Basal is being delivered at your current therapy basal rate.<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/basal_increase.png"><img alt="Basal Increase" src="../img/basal_increase.png" style="vertical-align: middle;" width="40"/></a> <strong>Basal Increase</strong> Basal increased above your current therapy basal rate.<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/basal_decrease.png"><img alt="Basal Decrease" src="../img/basal_decrease.png" style="vertical-align: middle;" width="40"/></a> <strong>Basal Decrease</strong> Basal decreased below your current therapy basal rate.  </p>
 </div>
 <div class="tabbed-block">
 <p>This section shows a combined view of your previous, current, and forecasted activity.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="graph-and-history-cone-of-uncertainty" name="__tabbed_4" type="radio"/><input id="graph-and-history-forecast-lines" name="__tabbed_4" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-cone-of-uncertainty"><img alt="Cone of Uncertainty" src="../img/cone_of_uncertainty.png" style="vertical-align: middle;" width="20"/> <strong>Cone of Uncertainty</strong></label><label for="graph-and-history-forecast-lines"><img alt="Forecast Lines" src="../img/forecast_lines.png" style="vertical-align: middle;" width="20"/> <strong>Forecast Lines</strong></label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="graph-and-history-cone-of-uncertainty" name="__tabbed_4" type="radio"/><input id="graph-and-history-forecast-lines" name="__tabbed_4" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-cone-of-uncertainty"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/cone_of_uncertainty.png"><img alt="Cone of Uncertainty" src="../img/cone_of_uncertainty.png" style="vertical-align: middle;" width="20"/></a> <strong>Cone of Uncertainty</strong></label><label for="graph-and-history-forecast-lines"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/forecast_lines.png"><img alt="Forecast Lines" src="../img/forecast_lines.png" style="vertical-align: middle;" width="20"/></a> <strong>Forecast Lines</strong></label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition info inline end">
@@ -584,12 +593,12 @@ Use the tabs below the image to learn more about each section.  </p>
 <p><span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span> <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Glucose Value<br/>
 <span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192"></path></svg></span></span> <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Glucose Value (Smoothed)<br/>
 <span style="color: red;"><span class="twemoji"><svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320 0 228.8 130.2 57.7 166.6 11.7c6-7.5 14.9-11.7 24.5-11.7h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192M96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112 8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80"></path></svg></span></span>  Manual Glucose Entry<br/>
-<img alt="Bolus Icon" src="../img/bolus.png" style="vertical-align: middle;" width="15"/>  Bolus (SMB or Manual)<br/>
-<img alt="Carb Icon" src="../img/carb.png" style="vertical-align: middle;" width="15"/>  Carb Entry<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/bolus.png"><img alt="Bolus Icon" src="../img/bolus.png" style="vertical-align: middle;" width="15"/></a>  Bolus (SMB or Manual)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/carb.png"><img alt="Carb Icon" src="../img/carb.png" style="vertical-align: middle;" width="15"/></a>  Carb Entry<br/>
 <span style="color: #a1845c;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Fat-Protein Carb Equivalent (FPU)<br/>
-<img alt="Override Icon" src="../img/override_icon.png" style="vertical-align: middle;" width="15"/>  Override Active<br/>
-<img alt="Temp Target Icon" src="../img/temp_target_icon.png" style="vertical-align: middle;" width="15"/>  Temp Target Active<br/>
-<img alt="Target Glucose Icon" src="../img/target_glucose.png" style="vertical-align: middle;" width="15"/>  Target Glucose  </p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/override_icon.png"><img alt="Override Icon" src="../img/override_icon.png" style="vertical-align: middle;" width="15"/></a>  Override Active<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/temp_target_icon.png"><img alt="Temp Target Icon" src="../img/temp_target_icon.png" style="vertical-align: middle;" width="15"/></a>  Temp Target Active<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/target_glucose.png"><img alt="Target Glucose Icon" src="../img/target_glucose.png" style="vertical-align: middle;" width="15"/></a>  Target Glucose  </p>
 </div>
 <p>This forecast option displays the full range of possible forecasted predictions as a simplified view of oref's four forecast lines.  </p>
 </div>
@@ -599,12 +608,12 @@ Use the tabs below the image to learn more about each section.  </p>
 <p><span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span> <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Glucose Value<br/>
 <span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192"></path></svg></span></span> <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Glucose Value (Smoothed)<br/>
 <span style="color: red;"><span class="twemoji"><svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320 0 228.8 130.2 57.7 166.6 11.7c6-7.5 14.9-11.7 24.5-11.7h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192M96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112 8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80"></path></svg></span></span>  Manual Glucose Entry<br/>
-<img alt="Bolus Icon" src="../img/bolus.png" style="vertical-align: middle;" width="15"/>  Bolus (SMB or Manual)<br/>
-<img alt="Carb Icon" src="../img/carb.png" style="vertical-align: middle;" width="15"/>  Carb Entry<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/bolus.png"><img alt="Bolus Icon" src="../img/bolus.png" style="vertical-align: middle;" width="15"/></a>  Bolus (SMB or Manual)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/carb.png"><img alt="Carb Icon" src="../img/carb.png" style="vertical-align: middle;" width="15"/></a>  Carb Entry<br/>
 <span style="color: #a1845c;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Fat-Protein Carb Equivalent (FPU)<br/>
-<img alt="Override Icon" src="../img/override_icon.png" style="vertical-align: middle;" width="15"/>  Override Active<br/>
-<img alt="Temp Target Icon" src="../img/temp_target_icon.png" style="vertical-align: middle;" width="15"/>  Temp Target Active<br/>
-<img alt="Target Glucose Icon" src="../img/target_glucose.png" style="vertical-align: middle;" width="15"/>  Target Glucose  </p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/override_icon.png"><img alt="Override Icon" src="../img/override_icon.png" style="vertical-align: middle;" width="15"/></a>  Override Active<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/temp_target_icon.png"><img alt="Temp Target Icon" src="../img/temp_target_icon.png" style="vertical-align: middle;" width="15"/></a>  Temp Target Active<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/target_glucose.png"><img alt="Target Glucose Icon" src="../img/target_glucose.png" style="vertical-align: middle;" width="15"/></a>  Target Glucose  </p>
 </div>
 <p><span style="color: #1895ff;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span> <strong><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> Forecast:</strong> Forecasts future glucose readings based on the amount of insulin still active in the body<br/>
 <span style="color: #6f62f3;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span> <strong>ZT Forecast:</strong> Forecasts the worst-case future glucose reading scenario if no carbs are absorbed and insulin delivery is stopped until glucose begins to rise<br/>
@@ -614,42 +623,42 @@ Use the tabs below the image to learn more about each section.  </p>
 </div>
 </div>
 <hr/>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="graph-and-history-static-glucose-color" name="__tabbed_5" type="radio"/><input id="graph-and-history-dynamic-glucose-color" name="__tabbed_5" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-static-glucose-color"><img alt="Static Glucose" src="../img/static_glucose.png" style="vertical-align: middle;" width="18"/> Static Glucose Color</label><label for="graph-and-history-dynamic-glucose-color"><img alt="Dynamic Glucose" src="../img/dynamic_glucose.png" style="vertical-align: middle;" width="20"/> Dynamic Glucose Color</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="graph-and-history-static-glucose-color" name="__tabbed_5" type="radio"/><input id="graph-and-history-dynamic-glucose-color" name="__tabbed_5" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-static-glucose-color"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/static_glucose.png"><img alt="Static Glucose" src="../img/static_glucose.png" style="vertical-align: middle;" width="18"/></a> Static Glucose Color</label><label for="graph-and-history-dynamic-glucose-color"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dynamic_glucose.png"><img alt="Dynamic Glucose" src="../img/dynamic_glucose.png" style="vertical-align: middle;" width="20"/></a> Dynamic Glucose Color</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition info inline end">
 <p class="admonition-title">Threshold Graph Legend</p>
-<p><img alt="High Threshold Static Icon" src="../img/high_threshold_static.png" style="vertical-align: middle;" width="15"/>  High Threshold <br/>
-<img alt="Low Threshold Static Icon" src="../img/low_threshold_static.png" style="vertical-align: middle;" width="15"/>  Low Threshold<br/>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/high_threshold_static.png"><img alt="High Threshold Static Icon" src="../img/high_threshold_static.png" style="vertical-align: middle;" width="15"/></a>  High Threshold <br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/low_threshold_static.png"><img alt="Low Threshold Static Icon" src="../img/low_threshold_static.png" style="vertical-align: middle;" width="15"/></a>  Low Threshold<br/>
 <span style="color: #fe9607;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Above Range Glucose<br/>
 <span style="color: #35c759;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  In Range Glucose<br/>
 <span style="color: #ff3131;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512"></path></svg></span></span>  Below Range Glucose      </p>
 </div>
-<p align="center"><img alt="Static Color Graph" src="../img/static_color_graph.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/static_color_graph.png"><img alt="Static Color Graph" src="../img/static_color_graph.png" width="300"/></a></p>
 </div>
 <div class="tabbed-block">
 <div class="admonition info inline end">
 <p class="admonition-title">Threshold Graph Legend</p>
-<p><img alt="High Threshold Dynamic Icon" src="../img/high_threshold_dynamic.png" style="vertical-align: middle;" width="15"/>  High Threshold (=180)<br/>
-<img alt="Low Threshold Dynamic Icon" src="../img/low_threshold_dynamic.png" style="vertical-align: middle;" width="15"/>  Low Threshold (=70)<br/>
-<img alt="Above Target Icon" src="../img/above_target_glucose_icon.png" style="vertical-align: middle;" width="15"/>  Above Target<br/>
-<img alt="At Target Icon" src="../img/at_or_near_target.png" style="vertical-align: middle;" width="15"/>  At or Near Target<br/>
-<img alt="Below Target Icon" src="../img/below_target_glucose_icon.png" style="vertical-align: middle;" width="15"/>  Below Target  </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/high_threshold_dynamic.png"><img alt="High Threshold Dynamic Icon" src="../img/high_threshold_dynamic.png" style="vertical-align: middle;" width="15"/></a>  High Threshold (=180)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/low_threshold_dynamic.png"><img alt="Low Threshold Dynamic Icon" src="../img/low_threshold_dynamic.png" style="vertical-align: middle;" width="15"/></a>  Low Threshold (=70)<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/above_target_glucose_icon.png"><img alt="Above Target Icon" src="../img/above_target_glucose_icon.png" style="vertical-align: middle;" width="15"/></a>  Above Target<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/at_or_near_target.png"><img alt="At Target Icon" src="../img/at_or_near_target.png" style="vertical-align: middle;" width="15"/></a>  At or Near Target<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/below_target_glucose_icon.png"><img alt="Below Target Icon" src="../img/below_target_glucose_icon.png" style="vertical-align: middle;" width="15"/></a>  Below Target  </p>
 <p><em>*The colors of the threshold lines are also dynamic, so the exact coloring will depend on your settings</em> </p>
 </div>
-<p align="center"><img alt="Dynamic Color Graph" src="../img/dynamic_color_graph.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dynamic_color_graph.png"><img alt="Dynamic Color Graph" src="../img/dynamic_color_graph.png" width="300"/></a></p>
 </div>
 </div>
 </div>
 </div>
 <div class="tabbed-block">
 <p>This section shows the decay of your active insulin and carbohydrates.  </p>
-<p align="center"><img alt="Active Insulin Carbs" src="../img/active_ins_carb.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/active_ins_carb.png"><img alt="Active Insulin Carbs" src="../img/active_ins_carb.png" width="300"/></a></p>
 <p>Insulin is shown in <span style="color: #7d8cf2;">blue</span> and carbs are shown in <span style="color: #ff8340;">orange</span>.</p>
 </div>
 <div class="tabbed-block">
 <p>Here you will find 3 main sections for statistics and display information.</p>
-<p align="center"><img alt="Stats and Display" src="../img/stats_and_display.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/stats_and_display.png"><img alt="Stats and Display" src="../img/stats_and_display.png" width="300"/></a></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="graph-and-history-statistics" name="__tabbed_6" type="radio"/><input id="graph-and-history-time-frame" name="__tabbed_6" type="radio"/><input id="graph-and-history-legend" name="__tabbed_6" type="radio"/><div class="tabbed-labels"><label for="graph-and-history-statistics">Statistics</label><label for="graph-and-history-time-frame">Time Frame</label><label for="graph-and-history-legend">Legend</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -673,33 +682,33 @@ It defaults to 6 hours, but you can choose 4, 6, 12, or 24 hours to be displayed
 <p>Under the graph you'll find the current status of any adjustment currently active. Adjustments include boluses in progress, temp targets, and overrides.<br/>
 Use the tabs below to learn more:    </p>
 <div class="grid">
-<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="adjustment-status-no-active-adjustment" name="__tabbed_7" type="radio"/><input id="adjustment-status-bolus-in-progress" name="__tabbed_7" type="radio"/><input id="adjustment-status-active-override" name="__tabbed_7" type="radio"/><input id="adjustment-status-active-temp-target" name="__tabbed_7" type="radio"/><div class="tabbed-labels"><label for="adjustment-status-no-active-adjustment">No Active Adjustment</label><label for="adjustment-status-bolus-in-progress"><img alt="Bolus Active Icon" src="../img/bolus_icon.png" style="vertical-align: middle;" width="10"/> Bolus in Progress</label><label for="adjustment-status-active-override"><img alt="Override Icon" src="../img/icon_override.png" style="vertical-align: middle;" width="15"/> Active Override</label><label for="adjustment-status-active-temp-target"><img alt="Temp Target Icon" src="../img/target.png" style="vertical-align: middle;" width="15"/> Active Temp Target</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="adjustment-status-no-active-adjustment" name="__tabbed_7" type="radio"/><input id="adjustment-status-bolus-in-progress" name="__tabbed_7" type="radio"/><input id="adjustment-status-active-override" name="__tabbed_7" type="radio"/><input id="adjustment-status-active-temp-target" name="__tabbed_7" type="radio"/><div class="tabbed-labels"><label for="adjustment-status-no-active-adjustment">No Active Adjustment</label><label for="adjustment-status-bolus-in-progress"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/bolus_icon.png"><img alt="Bolus Active Icon" src="../img/bolus_icon.png" style="vertical-align: middle;" width="10"/></a> Bolus in Progress</label><label for="adjustment-status-active-override"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_override.png"><img alt="Override Icon" src="../img/icon_override.png" style="vertical-align: middle;" width="15"/></a> Active Override</label><label for="adjustment-status-active-temp-target"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/target.png"><img alt="Temp Target Icon" src="../img/target.png" style="vertical-align: middle;" width="15"/></a> Active Temp Target</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p align="center"><img alt="No Active Adjustment" src="../img/no_active_adjustment.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/no_active_adjustment.png"><img alt="No Active Adjustment" src="../img/no_active_adjustment.png" width="300"/></a></p>
 <ul>
 <li>This is the default view when there is no bolus-in-progress, active override, or active temp target</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<p align="center"><img alt="Bolus in Progress" src="../img/bolus_in_progress.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/bolus_in_progress.png"><img alt="Bolus in Progress" src="../img/bolus_in_progress.png" width="300"/></a></p>
 <ul>
 <li>Shows the status of current bolus</li>
-<li>Press the <img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/> to cancel the current bolus</li>
+<li>Press the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/x_square.png"><img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/></a> to cancel the current bolus</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<p align="center"><img alt="Active Override" src="../img/override_active.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/override_active.png"><img alt="Active Override" src="../img/override_active.png" width="300"/></a></p>
 <ul>
 <li>Shows details of the current override running</li>
-<li>Press the <img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/> to cancel the override</li>
+<li>Press the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/x_square.png"><img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/></a> to cancel the override</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<p align="center"><img alt="Active Temp Target" src="../img/temp_target_active.png" width="300"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/temp_target_active.png"><img alt="Active Temp Target" src="../img/temp_target_active.png" width="300"/></a></p>
 <ul>
 <li>Shows details of the current temp target running</li>
-<li>Press the <img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/> to cancel the temp target</li>
+<li>Press the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/x_square.png"><img alt="Cancel Icon" src="../img/x_square.png" style="vertical-align: middle;" width="20"/></a> to cancel the temp target</li>
 </ul>
 </div>
 </div>
@@ -708,10 +717,10 @@ Use the tabs below to learn more:    </p>
 <hr/>
 <h3 id="action-buttons">Action Buttons<a class="headerlink" href="#action-buttons" title="Link to this section for reference">¶</a></h3>
 <p>At the bottom of the screen, you have five action buttons. Use the tabs below to learn more about each section:  </p>
-<p align="center"><img alt="Trio Actions" src="../img/actions.png" width="400"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/actions.png"><img alt="Trio Actions" src="../img/actions.png" width="400"/></a></p>
 <!-- Intentionally left off the "s" in the nested Adjustments tab title because it keeps jumping to the Adjustments tab above -->
 <div class="grid">
-<div class="tabbed-set tabbed-alternate" data-tabs="8:5"><input checked="checked" id="action-buttons-main" name="__tabbed_8" type="radio"/><input id="action-buttons-history" name="__tabbed_8" type="radio"/><input id="action-buttons-carb--bolus-entry" name="__tabbed_8" type="radio"/><input id="action-buttons-adjustments" name="__tabbed_8" type="radio"/><input id="action-buttons-settings" name="__tabbed_8" type="radio"/><div class="tabbed-labels"><label for="action-buttons-main"><img alt="Main Icon" src="../img/icon_main.png" style="vertical-align: middle;" width="15"/> Main</label><label for="action-buttons-history"><img alt="History Icon" src="../img/icon_history.png" style="vertical-align: middle;" width="15"/> History</label><label for="action-buttons-carb--bolus-entry"><span style="color: #7d8cf2;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-24-168v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24"></path></svg></span></span> Carb &amp; Bolus Entry</label><label for="action-buttons-adjustments"><img alt="Adjustments Icon" src="../img/icon_adjust.png" style="vertical-align: middle;" width="15"/> Adjustments</label><label for="action-buttons-settings"><img alt="Settings Icon" src="../img/icon_settings.png" style="vertical-align: middle;" width="15"/> Settings</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:5"><input checked="checked" id="action-buttons-main" name="__tabbed_8" type="radio"/><input id="action-buttons-history" name="__tabbed_8" type="radio"/><input id="action-buttons-carb--bolus-entry" name="__tabbed_8" type="radio"/><input id="action-buttons-adjustments" name="__tabbed_8" type="radio"/><input id="action-buttons-settings" name="__tabbed_8" type="radio"/><div class="tabbed-labels"><label for="action-buttons-main"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_main.png"><img alt="Main Icon" src="../img/icon_main.png" style="vertical-align: middle;" width="15"/></a> Main</label><label for="action-buttons-history"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_history.png"><img alt="History Icon" src="../img/icon_history.png" style="vertical-align: middle;" width="15"/></a> History</label><label for="action-buttons-carb--bolus-entry"><span style="color: #7d8cf2;"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-24-168v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24"></path></svg></span></span> Carb &amp; Bolus Entry</label><label for="action-buttons-adjustments"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_adjust.png"><img alt="Adjustments Icon" src="../img/icon_adjust.png" style="vertical-align: middle;" width="15"/></a> Adjustments</label><label for="action-buttons-settings"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_settings.png"><img alt="Settings Icon" src="../img/icon_settings.png" style="vertical-align: middle;" width="15"/></a> Settings</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>This button takes you back to the home screen no matter where you are in the app.</p>
@@ -891,5 +900,7 @@ Below you will (<em>soon</em>) find links to each of the settings pages within t
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

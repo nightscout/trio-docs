@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -674,7 +683,7 @@
 <p>This section allows you to choose your glucose data source. Most options are self-explanatory.  For more information on compatible CGMs, please see the following <a href="../../../../install/build/requirements/devices/cgm/#compatible-cgm">link</a>.</p>
 <h2 id="step-1-add-cgm">Step 1: Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#step-1-add-cgm" title="Link to this section for reference">¶</a></h2>
 <p>The first step in setting up your continuous glucose monitor (<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>) on Trio is to tap the "Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>" button in the Devices Menu</p>
-<p align="center"><img alt="CGM Setup" src="../img/cgm_setup.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/cgm_setup.png"><img alt="CGM Setup" src="../img/cgm_setup.png"/></a></p>
 <h2 id="step-2-select-your-cgm">Step 2: Select Your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#step-2-select-your-cgm" title="Link to this section for reference">¶</a></h2>
 <p>Select your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>:  </p>
 <ul>
@@ -693,7 +702,7 @@
 <p>Trio will intercept glucose readings between the transmitter and the Dexcom app. If you are using a Dexcom G5, G6, or ONE sensor, tap Configuration <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to enter your transmitter's 6-digit ID. <em>Dexcom Share Credentials are not necessary</em>. When you switch transmitters, you must delete your current transmitter from Trio by tapping Configuration <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, scrolling down, and tapping Delete <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>. Once you do this, you can add the new transmitter with its Transmitter ID.</p>
 <p><strong>Step 3</strong>
 Enter your 6-digit Dexcom transmitter ID.</p>
-<p align="center"><img alt="Dexcom G5 G6 One" src="../img/1_dexcom_g5_g6_setup.png" width="300px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/1_dexcom_g5_g6_setup.png"><img alt="Dexcom G5 G6 One" src="../img/1_dexcom_g5_g6_setup.png" width="300px"/></a></p>
 <p><strong>Step 4</strong>
 Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a href="../../../new-user-setup/">New User Setup</a></p>
 <hr/>
@@ -701,7 +710,7 @@ Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a
 <p>As long as the Dexcom G7 or ONE+ app is installed on the same phone, Trio can intercept its glucose readings. When a new G7 or ONE+ sensor is paired to the Dexcom app, Trio will automatically start reading it.</p>
 <p><strong>Step 3</strong>
 Tap "Continue" to use the G7/ONE+ as your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> source</p>
-<p align="center"><img alt="Dexcom G7 One+" src="../img/1_dexcom_g7_setup.png" width="300px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/1_dexcom_g7_setup.png"><img alt="Dexcom G7 One+" src="../img/1_dexcom_g7_setup.png" width="300px"/></a></p>
 <p><strong>Step 4</strong>
 Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a href="../../../new-user-setup/">New User Setup</a></p>
 <hr/>
@@ -712,13 +721,13 @@ Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a
 <p>This option can be used to pair a compatible Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> directly to Trio without going through a separate app like xDrip4iOS.</p>
 <p><strong>Step 3</strong>
 Tap "Libre 2 Direct" to use Libre 2 sensors or "Bluetooth Transmitters" to use Libre 1 sensors with a Miao Miao or other 3<sup>rd</sup> party transmitter.</p>
-<p align="center"><img alt="Libre Setup" src="../img/1_libre_setup.png" width="300px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/1_libre_setup.png"><img alt="Libre Setup" src="../img/1_libre_setup.png" width="300px"/></a></p>
 <p><strong>Step 4:Libre 2 Direct</strong>
 Tap "Pair Sensor" to connect your Libre 2/2+ sensor to Trio</p>
-<p align="center"><img alt="Libre 2 Setup" src="../img/2_libre2_pairing.png" width="300px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/2_libre2_pairing.png"><img alt="Libre 2 Setup" src="../img/2_libre2_pairing.png" width="300px"/></a></p>
 <p><strong>Step 4:Bluetooth Transmitters (Libre 1)</strong>
 Select your 3<sup>rd</sup> party transmitter from the list of found devices and tap "Save"</p>
-<p align="center"><img alt="Libre 1 Setup" src="../img/2_libre1_bluetooth_transmitter.png" width="300px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/2_libre1_bluetooth_transmitter.png"><img alt="Libre 1 Setup" src="../img/2_libre1_bluetooth_transmitter.png" width="300px"/></a></p>
 <p><strong>Step 5</strong>
 Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a href="../../../new-user-setup/">New User Setup</a></p>
 <hr/>
@@ -840,5 +849,7 @@ Continue to <a href="../smart-watch/">Connect Watch</a> <em>OR</em> return to <a
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

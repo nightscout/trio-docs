@@ -19,7 +19,16 @@
 <link href="../../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -743,7 +752,7 @@
 <p><strong>Default:</strong> <em>10 hours</em><br/>
 <strong>Setting Limits:</strong> <em>5-10 hours</em></p>
 <p>The Duration of Insulin Action (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>) defines how long your insulin continues to lower glucose readings after it is given. This helps the system accurately track Insulin on Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>), avoid over- or under- corrections by considering the tail end of insulin's effect.</p>
-<p align="center"><img alt="Bionic Wookie DIA" src="../img/burren_dia_chart.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/burren_dia_chart.png"><img alt="Bionic Wookie DIA" src="../img/burren_dia_chart.png"/></a></p>
 <p>Trio, as with other Oref-based systems like AndroidAPS, uses an exponential decay model for <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>. Working in collaboration with David Burren (Bionic Wookie), we found the <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> that most accurately reflects actual insulin activity in the body, is a 10 hour <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>. You can read more about insulin decay models used in Oref-based systems at <a href="https://bionicwookiee.com/2022/12/04/insulin-timings-2022/">bionicwookie.com</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -948,5 +957,7 @@ Target\ Glucose \times NoisyCGM\ Target\ Increase
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

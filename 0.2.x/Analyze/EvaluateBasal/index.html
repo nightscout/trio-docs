@@ -17,7 +17,16 @@
 <link href="../../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -349,7 +358,7 @@ When in doubt, consult your diabetes care team for settings guidance.</p>
 <p class="admonition-title">Example</p>
 <p>This person noticed an increase in their average <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings starting around 1:00 AM. They were in open loop and had no late-night snacks so that they could rule out <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> and <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> as factors. Because the rise began at 1:00 AM, they should increase their basal rate at 12:00 AM.</p>
 </div>
-<p align="center"><img alt="Adjust Basal" src="../img/adjustBasal.png" width="600px"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/adjustBasal.png"><img alt="Adjust Basal" src="../img/adjustBasal.png" width="600px"/></a></p>
 <h3 id="nightscout"><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr><a class="headerlink" href="#nightscout" title="Link to this section for reference">¶</a></h3>
 <p><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> (NS) is a valuable resource that provides detailed information for analyzing your settings. <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> reports and Loopalyzer can be great tools for understanding your data.</p>
 <h4 id="build-nightscout">Build <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr><a class="headerlink" href="#build-nightscout" title="Link to this section for reference">¶</a></h4>
@@ -406,5 +415,7 @@ When in doubt, consult your diabetes care team for settings guidance.</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

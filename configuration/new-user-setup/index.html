@@ -19,7 +19,16 @@
 <link href="../../assets/stylesheets/primary_color.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="deep-purple" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -802,7 +811,7 @@
 <h2 id="onboarding-wizard">Onboarding Wizard<a class="headerlink" href="#onboarding-wizard" title="Link to this section for reference">¶</a></h2>
 <p>Trio has an Onboarding Wizard that walks you through these steps when you first start the app. Each step contains a tab for <strong>During Onboarding</strong> and <strong>After Onboarding</strong>, explained below.  </p>
 <div class="grid">
-<p><img alt="Onboarding Screen" src="../img/onboarding-guide.png"/></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/onboarding-guide.png"><img alt="Onboarding Screen" src="../img/onboarding-guide.png"/></a></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="onboarding-wizard-during-onboarding" name="__tabbed_1" type="radio"/><input id="onboarding-wizard-after-onboarding" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="onboarding-wizard-during-onboarding">During Onboarding</label><label for="onboarding-wizard-after-onboarding">After Onboarding</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -868,10 +877,10 @@
 <h3 id="edit-nightscout">Edit <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr><a class="headerlink" href="#edit-nightscout" title="Link to this section for reference">¶</a></h3>
 <p>To connect or edit your <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> credentials after you've completed onboarding, follow the guidance <a href="../settings/services/nightscout/">here</a>.</p>
 <h3 id="edit-glucose-units">Edit Glucose Units<a class="headerlink" href="#edit-glucose-units" title="Link to this section for reference">¶</a></h3>
-<p align="center"><img alt="Units and Limits" src="../img/unitsandlimits.png" width="400px"/><br/>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/unitsandlimits.png"><img alt="Units and Limits" src="../img/unitsandlimits.png" width="400px"/></a><br/>
 <a href="../settings/therapy/units-limits/#glucose-units">Learn more about setting your Glucose Units</a></p>
 <h3 id="edit-insulin-pump">Edit Insulin Pump<a class="headerlink" href="#edit-insulin-pump" title="Link to this section for reference">¶</a></h3>
-<p align="center"><img alt="Devices Settings" src="../img/pumpMenu.png" width="400px"/><br/>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pumpMenu.png"><img alt="Devices Settings" src="../img/pumpMenu.png" width="400px"/></a><br/>
 <a href="../settings/devices/pump/">Learn how to connect or change your insulin pump</a></p>
 </div>
 </div>
@@ -900,7 +909,7 @@
 </div>
 <div class="tabbed-block">
 <p align="center">Here is how to locate these settings after onboarding:<br/>
-<img alt="Therapy Settings" src="../img/TherapyMenu.png" width="400px"/></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/TherapyMenu.png"><img alt="Therapy Settings" src="../img/TherapyMenu.png" width="400px"/></a></p>
 <p>Below you'll find a step by step guide to edit each of these settings:</p>
 <ul>
 <li><a href="../settings/therapy/glucose-targets/#how-to-enter-your-glucose-targets-into-trio">Glucose Targets</a> </li>
@@ -930,7 +939,7 @@
 </div>
 <div class="tabbed-block">
 <p align="center">Here is how to locate these settings after onboarding:<br/>
-<img alt="Units and Limits" src="../img/unitsandlimits.png" width="400px"/></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/unitsandlimits.png"><img alt="Units and Limits" src="../img/unitsandlimits.png" width="400px"/></a></p>
 <p>Below you'll find more information on each of these settings:</p>
 <ul>
 <li><a href="../settings/therapy/units-limits/#max-iob">Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr></a> </li>
@@ -1113,7 +1122,7 @@ These cannot be completed until you've finished onboarding, but <em>must</em> be
 <p>Trio works best as a closed loop system. If you need to test your settings or are concerned about trying a new algorithm, it's best to close the loop and follow the configuration instructions <a href="../settings/closed-loop/#want-to-stay-in-open-loop">here</a>.</p>
 </div>
 <p>Closed loop functionality is turned <strong>OFF</strong> by default. This means Trio cannot make any adjustments automatically. The system relies solely on you to make any adjustments while Closed <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is <strong>OFF</strong>. You can control your pump and manually bolus with the Trio app, but nothing can be done without your approval. This is often referred to as running in open loop. You will <strong><em>not receive any Trio-initiated protection from lows or highs while in open loop</em></strong>.</p>
-<p align="center"><img alt="Enable Closed loop" src="../img/closeLoop.png" width="500px"/><br/>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/closeLoop.png"><img alt="Enable Closed loop" src="../img/closeLoop.png" width="500px"/></a><br/>
 <a href="../settings/closed-loop/">More on closing the loop</a></p>
 <hr/>
 <div class="admonition warning">
@@ -1136,7 +1145,7 @@ These cannot be completed until you've finished onboarding, but <em>must</em> be
 <hr/>
 <h2 id="step-9-change-app-icon-optional"><strong>Step 9:</strong> Change App Icon (Optional)<a class="headerlink" href="#step-9-change-app-icon-optional" title="Link to this section for reference">¶</a></h2>
 <p>Under "App Icons" in the Settings Menu, you can find various icons for your Trio app.</p>
-<p align="center"><img alt="Change App Icon" src="../img/icon_selection.png"/></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/icon_selection.png"><img alt="Change App Icon" src="../img/icon_selection.png"/></a></p>
 <!-- NOTE: Commented out until customizations page (install/customize.md) is updated. Will be removed if we do not include build customizations.
 Have a special icon in mind?  
 You can use your own custom icon by following the instructions under [Customizations](../install/customize.md#add-custom-icon).
@@ -1220,5 +1229,7 @@ You can use your own custom icon by following the instructions under [Customizat
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
 <script src="../../js/open_in_new_tab.js"></script>
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
