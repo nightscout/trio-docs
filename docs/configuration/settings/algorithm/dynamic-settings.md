@@ -23,7 +23,7 @@ $$
 Here is that same formula adjusted for mmol/L:
 
 $$
-Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{0.0555 \times Peak}\right)+1}{1800}\right)
+Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{0.0555 \times Peak}\right)+1}{100}\right)
 $$
 
 !!! info
