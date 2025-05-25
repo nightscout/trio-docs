@@ -5,6 +5,10 @@
 The "*Share Logs*" feature lets you export the app’s logs (from today and yesterday) 
 and opens the iOS share sheet so you can transmit them to support channels, developers, or storage services for troubleshooting and record-keeping.
 
+!!! tip "Check existing solutions"
+    
+    When you run into an issue and want to share your logs, please take a moment to check if it’s already been solved by browsing through [Facebook](https://facebook.triodocs.org/) or [Discord](https://discord.triodocs.org/) first.
+
 Follow the steps below to save and share the logs.
 
 ## Export Logs
