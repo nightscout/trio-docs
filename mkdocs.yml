@@ -323,6 +323,7 @@ nav:
       - Safety ✏️: help/safety.md
       - Glossary ✏️: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
+      - Share Logs: help/share-logs.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
       - Translate ✏️: help/translate.md
       - Support Communities:

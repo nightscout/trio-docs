@@ -33,7 +33,13 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     🚧 Documentation Under Construction 🚧
 
--   __[Submit an Issue](https://github.com/nightscout/trio-docs/issues/new/choose)__
+  - __[Share Logs](share-logs.md) ✏️__
+
+    - - -
+    
+     Export Trio’s application logs through the iOS share sheet for quick support.
+
+- -   __[Submit an Issue](https://github.com/nightscout/trio-docs/issues/new/choose)__
 
 -   __[Translate](translate.md) ✏️__
 
