@@ -1,6 +1,6 @@
 # Migration from other OS-AIDs
 
-![Trio Logo](../../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 Welcome to the Migration homepage! Here you will find guidance on locating and identifying the necessary settings needed to start using Trio. Select the app you are moving from in the list below.
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.

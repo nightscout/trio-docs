@@ -1,6 +1,6 @@
 # Features
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the features homepage! Here you'll find information on a variety of customization features available to you in the Trio app.  
+![Trio Logo](../../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" } Welcome to the features homepage! Here you'll find information on a variety of customization features available to you in the Trio app.  
 
 - - -
 

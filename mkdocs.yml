@@ -91,6 +91,10 @@ plugins:
           icon: material-file-download-outline
           enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
           attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - glightbox:
+      zoomable: false
+      skip_classes:
+        - skip-lightbox
   - htmlproofer:
       enabled: !ENV [CHECK_BROKEN_LINKS, False]
       raise_error_after_finish: true

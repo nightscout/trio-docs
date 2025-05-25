@@ -1,6 +1,6 @@
 # Usage
 
-![Trio Logo](../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 
 Welcome to the Usage homepage! Here you will find a variety of topics to learn about that will help you in using Trio to manage your diabetes.  
 

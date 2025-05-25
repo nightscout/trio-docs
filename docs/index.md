@@ -17,7 +17,7 @@
   Your browser doesn’t support the HTML5 video tag.
 </video>
 
-![Trio Logo](assets/images/trio-logo.png){ width="150", align="right" }
+![Trio Logo](assets/images/trio-logo.png){ .skip-lightbox width="150" align="right" }
 
 Trio is an open-source automated insulin delivery system (OS-AID) for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).  
 
@@ -49,4 +49,4 @@ If you find yourself stuck, the community is here to help on [Discord](https://d
 
 Trio is built by a volunteer community. If you are interested in helping as a programmer, you can contribute to the [Trio](https://github.com/nightscout/Trio) or [Trio-Oref](https://github.com/nightscout/trio-oref) code base. Trio is written in Swift, and the Trio-Oref/OpenAPS algorithm is currently written in JS and is in the process of being converted into Swift.
 
-You can also provide support in online support groups by sharing your own success and troubleshoot common errors.
+You can also provide support in online support groups by sharing your own success and troubleshooting common errors.
