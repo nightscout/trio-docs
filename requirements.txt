@@ -77,6 +77,8 @@ mkdocs-exporter==6.2.0
     # via -r requirements.in
 mkdocs-get-deps==0.2.0
     # via mkdocs
+mkdocs-glightbox==0.4.0
+    # via -r requirements.in
 mkdocs-htmlproofer-plugin==1.3.0
     # via -r requirements.in
 mkdocs-include-markdown-plugin==7.1.5

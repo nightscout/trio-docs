@@ -91,6 +91,10 @@ plugins:
           icon: material-file-download-outline
           enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
           attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - glightbox:
+      zoomable: false
+      skip_classes:
+        - skip-lightbox
   - htmlproofer:
       enabled: !ENV [CHECK_BROKEN_LINKS, False]
       raise_error_after_finish: true
@@ -103,6 +107,7 @@ plugins:
       excluded_files:
         - back.html.j2
         - background.png
+        - bolus-entry-dynamic-graph.mp4
         - CNAME
         - .DS_Store
         - extra.css
@@ -115,6 +120,7 @@ plugins:
         - primary_color.css
         - trio-docs.pdf
         - trio-intro.mp4
+        - trio-phone-mockup.mp4
   - search
 
 extra_css:
@@ -176,6 +182,10 @@ markdown_extensions:
         - includes/glossary.txt
   - pymdownx.tabbed:
       alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
@@ -296,6 +306,7 @@ nav:
               - Remote Control: configuration/settings/features/remote-control.md
               - User Interface: configuration/settings/features/user-interface.md
               - App Icons: configuration/settings/features/app-icons.md
+              - App Diagnostics ✏️: configuration/settings/features/app-diagnostics.md
           - Notifications:
               - configuration/settings/notifications/index.md
               - Trio Notifications: configuration/settings/notifications/trio-notifications.md
