@@ -47,9 +47,9 @@ The key details to include in your question depend on the build method you used:
     - [ ] Link to **build logs**
     - [ ]  Describe **which step failed**
 - **Mac Build**
-	- ✅ Include **screenshots** (Xcode, app screen, settings)
-    - Describe **what you were doing**
-    - **Error messages** or **logs**
+	- [ ]  ✅ Include **screenshots** (Xcode, app screen, settings)
+    - [ ] Describe **what you were doing**
+    - [ ] **Error messages** or **logs**
 
 In all cases:
 - Make it easy for volunteers to understand your situation.
