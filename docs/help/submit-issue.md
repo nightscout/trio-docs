@@ -27,7 +27,7 @@ I you haven't found an answer to solve your issue in [TrioDocs](https://triodocs
 ## How to Ask for Help
 
 - [ ] **Avoid posting the same question in multiple groups.**  
-    Many mentors follow several communities, and cross-posting can lead to confusion. Only try another group if you've received no replies after several hours.
+    Many mentors follow several communities, and cross-posting can lead to confusion. Even if you feel your situation cannot wait, give the mentors several hours to respond. Most questions get an answer the same day.
 
     !!! important "Do not cross-post your message"
       
