@@ -55,28 +55,54 @@ In all cases:
 - Make it easy for volunteers to understand your situation.
 - Respect their time by including the right info.
 
+## What to Share When Asking for Help
+
+What to share when asking for help depends on when the issue occurs when **building** or **using** the Trio app.
+
+If you are experiencing an **issue** while **building** the Trio app, what you share will depend on your **build method** with a Web browser on *GitHub* (also known as "**Browser Build**") or "with *Xcode on a **Mac** (often referred to as "**Mac Build*")).
+
+- Issue when **building** the Trio app
+	- - [ ] When **building** Trio with your **Browser** (on GitHub):
+		- [ ] Share your **GitHub username**.
+		- [ ] Do **NOT** send screenshots.
+		- [ ] Share the **build link** if available.
+		- [ ] Describe the **build actions** you **ran** and what **step** you **reached**.
+	- [ ] When **building** Trio on a **Mac**:
+		- [ ] Include helpful **screenshots** (Xcode **errors**, app screen).
+		- [ ] Describe what you were trying to do.
+		- [ ] Include **error messages** and **logs**.
+		- [ ] Include the [**versions** of **iOS**, **Xcode**, and **macOS**](../install/build/requirements/devices/compatibility-matrix.md#check-your-software-versions).
+- Issue when **using** the Trio app
+	- [ ] Share the [Trio app logs](share-logs.md) (if requested)
+
+
+
+
+
 ```mermaid
 ---
 title: What to Share when Asking for Help
 ---
 flowchart LR
-	B{Which 
+	B{"`Which 
      **build method** 
-     are you using?}
+     are you using?`"}
     
-    B --> C["**Browser** Build (GitHub)"]
-    B --> D["**Mac** Build"]
+    B --> C["`**Browser** Build (GitHub)`"]
+    B --> D["`**Mac** Build`"]
 
     %% Browser Build Path
-    C --> C1["Include your 
-    **GitHub username**"]
-    C --> C2[Do **NOT** send screenshots]
-    C --> C3[Share **build link** if available]
-    C --> C4["Describe what **step** you **reached**"]
-
+    C --> C1["`Your **GitHub username**`"]
+    C --> C2["`Do **NOT** send screenshots`"]
+    C --> C3["`Share **build link** if available`"]
+    C --> C4["`Describe what **step** you **reached**`"]
+    C --> C5["`Share **Trio** app's **logs** (if requested)`"]
+    
     %% Mac Build Path
-    D --> D1["Include helpful **screenshots** 
-    (Xcode **errors**, app screen, signing settings...)"]
-    D --> D3[**Be specific**: **what were you trying to do**?]
-    D --> D4["Include **error messages** or **logs** "]
+    D --> D1["`Include helpful **screenshots** 
+    (Xcode **errors**, app screen, signing settings...)`"]
+    D --> D3["`Be specific: **what were you trying to do**?`"]
+    D --> D4["`Include **error messages** or **logs**`"]
+    D --> D5["`**Version** of iOS, Xcode, and macOS`"]
+    D --> D6["`Share **Trio** app **logs** (if requested)`"]
 ```
