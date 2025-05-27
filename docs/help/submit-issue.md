@@ -38,8 +38,8 @@ I you haven't found an answer to solve your issue in [TrioDocs](https://triodocs
   Before doing so, review the tips on **[what to share when asking for help](#what-to-share-when-asking-for-help)**: this ensures our volunteers have all the details they need without having to ask multiple follow-up questions.
 - [ ] Once your **issue is resolved**:
     - [ ] **Leave** your **post online** so it can help others
-    - [ ] **Edit** your **original message** to **include** the word **RESOLVED** at the beginning.  
-          This helps mentors know they don't need to respond to help you.
+    - [ ] **Edit** your **original Facebook message** to **include** the word **RESOLVED** at the beginning.  
+          This step (not necessary for *Discord*) helps mentors know they don't need to respond to help you.
 
 Do not forget to share key information about the issue as described in the next section.
 
