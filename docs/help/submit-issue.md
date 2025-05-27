@@ -5,8 +5,9 @@
 
 When you run into issues while building or using the Trio app, follow the steps below to get help efficiently and show respect for the time our volunteers generously offer.
 
--  [ ] Always start by searching [**TrioDocs**](https://triodocs.org) — just use the 🔎 search bar at the top.
-- [ ] Search your favorite support group (Facebook or Discord):  
+- [ ] 🔍 **Start with** [**TrioDocs**](https://triodocs.org) — Use the 🔍 search bar at the top of the page.
+- [ ] ⚙️ **Looking for a specific setting in the app**: Use the search field in `⚙️ Settings` to find it quickly without digging through every menu.
+- [ ] 💬 **Search your support group** (Discord or Facebook) before posting your question:  
       
     !!! tip "Help the Community Help You"
         
@@ -94,7 +95,7 @@ flowchart LR
     %% Browser Build Path
     C --> C1["`Your **GitHub username**`"]
     C --> C2["`Do **NOT** send screenshots`"]
-    C --> C3["`Share **build link** if available`"]
+    C --> C3["`Share the **build link** if available`"]
     C --> C4["`Describe what **step** you **reached**`"]
     C --> C5["`Share **Trio** app's **logs** (if requested)`"]
     
