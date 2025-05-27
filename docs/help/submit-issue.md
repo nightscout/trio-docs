@@ -61,8 +61,8 @@ What to share when asking for help depends on when the issue occurs when **build
 
 If you are experiencing an **issue** while **building** the Trio app, what you share will depend on your **build method** with a Web browser on *GitHub* (also known as "**Browser Build**") or "with *Xcode on a **Mac** (often referred to as "**Mac Build*")).
 
-- Issue when **building** the Trio app
-	- - [ ] When **building** Trio with your **Browser** (on GitHub):
+- [ ] Issue when **building** the Trio app
+	- [ ] When **building** Trio with your **Browser** (on GitHub):
 		- [ ] Share your **GitHub username**.
 		- [ ] Do **NOT** send screenshots.
 		- [ ] Share the **build link** if available.
