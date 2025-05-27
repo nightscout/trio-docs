@@ -101,6 +101,10 @@ flowchart LR
 
 If you are experiencing an **issue** while **using** the Trio app:
 
-- [ ] Describe your actions in the app when the issue happened.
-- [ ] If possible, include a helpful [screenshot](https://support.apple.com/en-us/HT200289) or [screen recording](https://support.apple.com/guide/iphone/take-a-screen-recording-iph52f6e1987/ios) of the app to help illustrate the issue.
+- [ ] **Describe** the **issue** you are encountering and **what you were doing** in the app **when it occurred**.
+- [ ] **Setup Details**
+	- [ ] **Trio** app **version**
+	- [ ] **Pump**
+	- [ ] **CGM** and **CGM app**
+- [ ] If possible, include a helpful **[screenshot](https://support.apple.com/en-us/HT200289)** or **[screen recording](https://support.apple.com/guide/iphone/take-a-screen-recording-iph52f6e1987/ios)** of the app to help illustrate the issue.
 - [ ] Be ready to share your [Trio app logs](share-logs.md) upon request.
