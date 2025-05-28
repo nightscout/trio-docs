@@ -98,7 +98,6 @@ flowchart LR
     D --> D3["`Be specific: **what were you trying to do**?`"]
     D --> D4["`Include **error messages** or **logs**`"]
     D --> D5["`**Version** of iOS, Xcode, and macOS`"]
-    D --> D6["`Share **Trio** app **logs** (if requested)`"]
 ```
 
 
