@@ -66,7 +66,10 @@ If you are experiencing an **issue** while **building** the Trio app, what you s
 	- [ ] Include helpful **screenshots** (Xcode **errors**, app screen).
 	- [ ] Describe what you were trying to do.
 	- [ ] Include **error messages** and **logs**.
-	- [ ] Include the [**versions** of **iOS**, **Xcode**, and **macOS**](../install/build/requirements/devices/compatibility-matrix.md#check-your-software-versions).
+	- [ ] Include the versions of iOS, Xcode, and macOS:
+		- [ ]  [**iOS** version](../install/build/mac/iphone.md#find-your-ios-version)
+		- [ ] [**Xcode** version](../install/build/mac/xcode-setup.md#check-xcode-version)
+		- [ ] [**macOS** version](../install/build/mac/computer.md#check-your-macos-version)
 
 A diagram illustrating these steps is provided below for those who prefer a visual representation.
 
@@ -103,13 +106,15 @@ flowchart LR
 
 If you are experiencing an **issue** while **using** the Trio app:
 
-- [ ] **Describe** the **issue** you are encountering and **what you were doing** in the app **when it occurred**.
+- [ ] Please **describe** the **issue** you are encountering and **what you were doing** in the app **when it occurred**.
 - [ ] **Setup Details**
-	- [ ] **Trio** app **version**
-	- [ ] **Pump**
-	- [ ] **CGM** and **CGM app**
-- [ ] If possible, include a helpful **[screenshot](https://support.apple.com/en-us/HT200289)** or **[screen recording](https://support.apple.com/guide/iphone/take-a-screen-recording-iph52f6e1987/ios)** of the app to help illustrate the issue.
-- [ ] Be ready to share your [Trio app logs](share-logs.md) upon request.
+	- [ ] Trio app version (`Trio > ⚙️ Settings > )
+	- [ ] [iOS version](../install/build/mac/iphone.md#find-your-ios-version)
+	- [ ] [iPhone model](../install/build/mac/iphone.md#compatible-iphones)
+	- [ ] [Insulin Pump](../install/build/requirements/devices/pump.md#compatible-pumps)
+	- [ ] [CGM](../install/build/requirements/devices/cgm.md#compatible-cgm) and CGM app
+- [ ] Include a helpful **[screenshot](https://support.apple.com/en-us/HT200289)** or **[screen recording](https://support.apple.com/guide/iphone/take-a-screen-recording-iph52f6e1987/ios)** of the app to help illustrate the issue.
+- [ ] Be ready to share your [Trio **app logs**](share-logs.md) upon request.
 
 ## Create a GitHub Issue
 
