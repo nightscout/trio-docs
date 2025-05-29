@@ -107,7 +107,7 @@ If you are experiencing an **issue** while **using** the Trio app:
 
 - [ ] Please **describe** the **issue** you are encountering and **what you were doing** in the app **when it occurred**.
 - [ ] **Setup Details**
-	- [ ] Trio app version (`Trio > ⚙️ Settings > )
+	- [ ] Trio app version (you can find it at the top `Trio > ⚙️ Settings >` )
 	- [ ] [iOS version](../install/build/mac/iphone.md#find-your-ios-version)
 	- [ ] [iPhone model](../install/build/mac/iphone.md#compatible-iphones)
 	- [ ] [Insulin Pump](../install/build/requirements/devices/pump.md#compatible-pumps)
@@ -126,12 +126,12 @@ A Trio developer may ask you to create a GitHub issue when your support request 
 *Trio* has 2 main repositories, one for the iOS app and the other for the documentation.
 
 - [ ] 📱 If the issue is related to the **Trio app** 
-	- [ ] [Create a new Issue](https://github.com/nightscout/Trio/issues/new/choose) on the **Trio app** repository
+	- [ ] [Create a new Issue](https://github.com/nightscout/Trio/issues/new/choose) in the **Trio app** repository
 		- [ ] Choose the **issue type**:
 			- A **`Bug Report`** helps us fix things in Trio.
 			- A **`Feature Request`** suggests an idea for the Trio application.
 - [ ]  📚 If the issue is related to the **documentation of Trio** 
-	- [ ] [Create a new issue](https://github.com/nightscout/trio-docs/issues/new/choose) on the **TrioDocs** repository
+	- [ ] [Create a new issue](https://github.com/nightscout/trio-docs/issues/new/choose) in the **TrioDocs** repository
 		- [ ] Choose the **issue type**:
 			- Use **`Proofreading: Error Report`** to create a report to correct typos, misspellings, or other formatting errors.
 			- Use **`Section/Topic Request`** to suggest an idea for the documentation.
