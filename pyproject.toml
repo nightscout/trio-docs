@@ -1,2 +1,14 @@
 [project]
+name = "trio-docs"
+version = "0.1.0"
 requires-python = ">=3.9"
+description = "Documentation of Trio, an Automated Insulin Delivery system for iOS"
+readme = "README.md"
+license = {text = "AGPL-3.0-only"}
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://triodocs.org/"
+Documentation = "https://triodocs.org/"
+Repository = "https://github.com/nightscout/trio-docs.git"
+Issues = "https://github.com/nightscout/trio-docs/issues"
