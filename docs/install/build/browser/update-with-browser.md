@@ -260,8 +260,8 @@ These are the <code>Identifiers</code> created by running the *GitHub* action "<
 |:--|:--|:--|
 | Trio | XC org nightscout TEAMID trio | <code>org.nightscout.TEAMID.trio</code> |
 | Trio LiveActivity | - | <code>org.nightscout.TEAMID.trio.LiveActivity</code> |
-| Trio Watch | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp</code> |
-| Trio WatchKit Extension | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp.watchkitextension</code> |
+| Trio Watch App | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp</code> |
+| Trio Watch Complication | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp.TrioWatchComplication</code> |
 
 ### Add Trio App Group to <code>Identifiers</code>
 
