@@ -360,23 +360,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#activate-dynamic-isf">
+<a class="md-nav__link" href="#dynamic-isf-logarithmic">
 <span class="md-ellipsis">
-      Activate Dynamic ISF
+      Dynamic ISF: Logarithmic
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#activate-dynamic-cr">
+<a class="md-nav__link" href="#dynamic-isf-sigmoid">
 <span class="md-ellipsis">
-      Activate Dynamic CR
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#use-sigmoid-formula">
-<span class="md-ellipsis">
-      Use Sigmoid Formula
+      Dynamic ISF: Sigmoid
     </span>
 </a>
 </li>
@@ -572,23 +565,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#activate-dynamic-isf">
+<a class="md-nav__link" href="#dynamic-isf-logarithmic">
 <span class="md-ellipsis">
-      Activate Dynamic ISF
+      Dynamic ISF: Logarithmic
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#activate-dynamic-cr">
+<a class="md-nav__link" href="#dynamic-isf-sigmoid">
 <span class="md-ellipsis">
-      Activate Dynamic CR
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#use-sigmoid-formula">
-<span class="md-ellipsis">
-      Use Sigmoid Formula
+      Dynamic ISF: Sigmoid
     </span>
 </a>
 </li>
@@ -646,49 +632,38 @@
 </a>
 
 <h1 id="dynamic-settings">Dynamic Settings<a class="headerlink" href="#dynamic-settings" title="Link to this section for reference">¶</a></h1>
-<h2 id="activate-dynamic-isf">Activate Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr><a class="headerlink" href="#activate-dynamic-isf" title="Link to this section for reference">¶</a></h2>
-<p><strong>Default:</strong> <em>OFF</em></p>
+<h2 id="dynamic-isf-logarithmic">Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>: Logarithmic<a class="headerlink" href="#dynamic-isf-logarithmic" title="Link to this section for reference">¶</a></h2>
+<p><strong>Default:</strong> <em>Disabled</em></p>
 <div class="admonition danger">
 <p class="admonition-title">Important</p>
 <p>It is important to enter your information into the Desmos graphs found <a href="#logarithmic-desmos-graphs">here</a> <strong>before</strong> turning on Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>. The default settings work for a majority of users, but not all.  </p>
-<p>Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at <strong><em>150 mg/dL</em></strong>.  </p>
+<p>Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at <strong><em>150 mg/dL (8.3 mmol/L)</em></strong>.  </p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You must first turn on <code>Activate Dynamic ISF</code> before any other dynamic features will appear</p>
+<p>You must first choose <code>Logarithmic</code> or <code>Sigmoid</code> before any other dynamic features will appear</p>
 </div>
-<p>Activating this feature allows Trio to calculate your <a href="../autosens/#sensitivity-ratio">Sensitivity Ratio</a> using the logarithmic dynamic formula, rather than the <a href="../autosens/#autosens">Autosens formula</a> with each loop cycle by considering factors such as: your current glucose (BG), the weighted total daily dose of insulin (TDD), your adjustment factor setting (AF), and a few other data points. Using Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> allows you to customize your Sensitivity Ratio calculation beyond what is allowed with Autosens.  </p>
-<p>Below is the formula used for calculating the Sensitivity Ratio using Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>:</p>
+<p>Activating this feature allows Trio to calculate your <a href="../autosens/#sensitivity-ratio">Sensitivity Ratio</a> using the logarithmic dynamic formula, rather than the <a href="../autosens/#autosens">Autosens formula</a> with each loop cycle by considering factors such as: your current glucose, the weighted total daily dose of insulin (TDD), your adjustment factor setting (AF), and a few other data points. Using Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> allows you to customize your Sensitivity Ratio calculation beyond what is allowed with Autosens.  </p>
+<p>Below is the formula used for calculating the Sensitivity Ratio using Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> for mg/dL:</p>
 <div class="arithmatex">\[
-Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \log{}\left(\frac{\left(\frac{BG}{peak}\right)+1}{1800}\right)
+Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{Peak}\right)+1}{1800}\right)
+\]</div>
+<p>Here is that same formula adjusted for mmol/L:</p>
+<div class="arithmatex">\[
+Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{0.0555 \times Peak}\right)+1}{100}\right)
 \]</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This formula considers your Profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (ProfileISF in mg/dL), current blood glucose (BG in mg/dL), total daily dose (TDD over the last 24 hours), insulin peak effect (Peak), and Adjustment Factor (AF) that allows for user tuning of Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>/<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>.</p>
+<p>This formula considers your profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, current glucose, total daily dose (TDD over the last 24 hours), insulin peak effect (Peak), and Adjustment Factor (AF) that allows for user tuning of Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>.</p>
 </div>
 <p>After the Sensitivity Ratio is calculated, your Calculated Sensitivity is then determined by using the same formula as <a href="../autosens/#calculated-sensitivity">Autosens</a>:</p>
 <div class="arithmatex">\[
 Calculated\ Sensitivity = \frac{ProfileISF}{Sensitivity\ Ratio}
 \]</div>
 <hr/>
-<h2 id="activate-dynamic-cr">Activate Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr><a class="headerlink" href="#activate-dynamic-cr" title="Link to this section for reference">¶</a></h2>
-<p><strong>Default:</strong> <em>OFF</em></p>
-<p>This experimental feature alters the carb ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) based on current blood sugar and total daily dose (TDD). Unlike <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> will lead to a dramatic change in how <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> is calculated by Trio. Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> uses the same <a href="#activate-dynamic-isf">formula</a> as logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> to calculate Sensitivity Ratio. It then uses that to adjust your Carb Ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) using this formula:</p>
-<div class="arithmatex">\[
-NewCR = \frac{ProfileCR}{Sensitivity\ Ratio}
-\]</div>
-<p>When your Sensitivity Ratio increases, indicating you need more insulin, the carb ratio value is decreased to make your insulin dosing more effective. Conversely, when your Sensitivity Ratio decreases, the carb ratio is increased to avoid over-delivery.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the calculated Sensitivity Ratio used by Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> is greater than 1, the following formula is used to make the resulting <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> less aggressive: </p>
-<div class="arithmatex">\[
-Sensitivity\ Ratio = \left(\frac{Sensitivity\ Ratio - 1}{2}\right) + 1
-\]</div>
-</div>
-<hr/>
-<h2 id="use-sigmoid-formula">Use Sigmoid Formula<a class="headerlink" href="#use-sigmoid-formula" title="Link to this section for reference">¶</a></h2>
-<p><strong>Default:</strong> <em>OFF</em></p>
-<p>Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. Your Calculated Sensitivity and Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> (if enabled) are calculated using a sigmoid curve rather than the default logarithmic function.</p>
+<h2 id="dynamic-isf-sigmoid">Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>: Sigmoid<a class="headerlink" href="#dynamic-isf-sigmoid" title="Link to this section for reference">¶</a></h2>
+<p><strong>Default:</strong> <em>Disabled</em></p>
+<p>Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. Your Calculated Sensitivity is calculated using a sigmoid curve rather than the logarithmic function.</p>
 <p>The curve's steepness, reflecting how big adjustments are from one reading to another, is influenced by the <a href="#sigmoid-adjustment-factor">Adjustment Factor</a>, while <a href="../autosens/#autosens-max">Autosens Max</a> and <a href="../autosens/#autosens-min">Min</a> settings determine the limits of the ratio adjustment. Autosens Max and Min can also influence the curve's steepness with the Sigmoid Formula.</p>
 <p>When using the Sigmoid Formula, Total Daily Dose (TDD) has much less of an impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from the target your glucose readings are.</p>
 <div class="admonition warning">
@@ -713,7 +688,7 @@ Sensitivity\ Ratio = \left(\frac{Sensitivity\ Ratio - 1}{2}\right) + 1
 <p class="admonition-title">Caution</p>
 <p><strong><em>Adjustment Factor (AF) is not a safety limiter</em></strong></p>
 <ul>
-<li>Increasing AF means you are telling the system that ALL dynamically calculated <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>/<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> values have not been aggressive enough, and you want the system to make them more aggressive.</li>
+<li>Increasing AF means you are telling the system that ALL dynamically calculated <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> values have not been aggressive enough, and you want the system to make them more aggressive.</li>
 <li>Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them less so.</li>
 </ul>
 </div>

@@ -598,7 +598,6 @@ Trio should be able to accommodate this change by resetting its Autosens measure
 <p>Trio calculates the amount of insulin needed to bring blood glucose back into range. Additional insulin is needed when blood glucose remains high after a meal, but Trio needs the correct settings to make those adjustments. </p>
 <ul>
 <li>The first adjustment should be to reduce your <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>. Reducing your carb ratio will result in <strong>more</strong> insulin for the carbs entered.</li>
-<li>If you notice that your <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> needs fluctuate based on your blood sugar level at the time, evaluate activating the <a href="../../configuration/settings/algorithm/dynamic-settings/#activate-dynamic-cr">Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr></a> setting. </li>
 </ul>
 <h3 id="fast-rise-then-low">Fast Rise, Then Low<a class="headerlink" href="#fast-rise-then-low" title="Link to this section for reference">¶</a></h3>
 <p><strong>Scenario:</strong> <em>Your BG rises and ends up too high after a meal, then falls and ends up too low.</em></p>
@@ -606,7 +605,7 @@ Trio should be able to accommodate this change by resetting its Autosens measure
 <ol>
 <li>If all the delivered insulin is from one bolus, you should consider adjusting your <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> setting so that the bolus calculator gives you less insulin. You could also consider pre-bolusing, giving the insulin some time to absorb before you start eating.</li>
 <li>If the delivered insulin is part bolus and part SMBs, you should consider adjusting your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> setting so that the SMBs give you less insulin. It would help if you also considered pre-bolusing, giving the insulin more time to absorb before you start eating.</li>
-<li>In both (1) and (2), if you use dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> features, you should consider lowering the Adjustment Factor and adjusting the Autosens max/min settings.</li>
+<li>In both (1) and (2), if you use the dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> feature, you should consider lowering the Adjustment Factor and adjusting the Autosens max/min settings.</li>
 </ol>
 <p>Please read through the chapters on <a href="../../configuration/settings/algorithm/autosens/">Autosens</a> and <a href="../../configuration/settings/algorithm/dynamic-settings/">Dynamic settings</a>.</p>
 </article>
