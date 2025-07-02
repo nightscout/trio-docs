@@ -177,7 +177,7 @@ In combination with the previous setting, Trio will limit the number of carbs th
 
 This setting raises your glucose target by this percent of your current target glucose when CGM readings are fluctuating widely.
 
-This helps reduce the risk of incorrect insulin fosing based on inaccurate sensor data, ensuring safer insulin adjustments during periods of poor CGM accuracy.
+This helps reduce the risk of incorrect insulin dosing based on inaccurate sensor data, ensuring safer insulin adjustments during periods of poor CGM accuracy.
 
 ??? question "Bill has a Dexcom G7 and his CGM readings are very jumpy for the first 24 hours. His current glucose target is 110 mg/dL (6.1 mmol/L). What will Trio adjust his target glucose to in order to prevent extra, unnecessary insulin?"
     
