@@ -161,7 +161,7 @@ Your default branch has been changed.
 
 #### Update `Branch`
 
-The `dev` branch of the `nightscout/Trio` repository will be updated frequently. This is how you know if your `fork` needs to be updated as well.
+The `dev` branch of the `nightscout/Trio` repository will be updated frequently. This is how you know if your `fork` needs to be updated as well. As long as the automatic runs are happening weekly for your repository - you will not need these manual instructions.
 
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
@@ -222,7 +222,7 @@ Once you see the green check mark by `Create Certificates`, the next step is to 
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
 
-> **We recommend that while participating in the public beta, user should [Configure the `dev` branch as default](#configure-the-dev-branch-as-default). This will ensure weekly updates to TestFlight. The user must still manually install updates to their phone from TestFlight.**
+> **We recommend that while participating in the public beta, you should [Configure the `dev` branch as default](#configure-the-dev-branch-as-default). This will ensure weekly updates to TestFlight. You must still manually install updates to your phone from TestFlight.**
 
 If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
 
