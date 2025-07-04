@@ -1,3 +1,19 @@
+## Use Browser Build for Public Beta Version
+
+This page is provided to help the people currently running the public beta version of Trio.
+
+!!! important "Public Beta"
+
+    The public beta is built from the `dev` branch of Trio.
+    
+    This code is undergoing test and rapid update. Be sure to follow along in Trio discord and be sure to update frequently (at least weekly).
+
+    * [Trio Discord Invitation](https://discord.gg/FnwFEFUwXE)
+
+    To ensure weekly updates, you will be instructed to make the `dev` branch your default branch. Remember, this ensure weekly builds to TestFlight. You are still responsible to manually install the latest build of Trio onto your phone from TestFlight.
+
+    Once this is released to main, then you should return to building from the main branch.
+
 ## Update to Trio dev branch from Trio 0.2.x main
 
 !!! important "A Note on Compatibility"
@@ -48,6 +64,7 @@ These are the new steps for you to follow:
 
 1. [Configure Browser Build Certificate Automation](#browser-build-certificate-automation)
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
+    * [Configure the `dev` branch as default](#configure-the-dev-branch-as-default) (while public beta is ongoing)
 1. [Update <code>Identifiers</code>](#update-identifiers)
 1. [Update <code>Certificates</code>](#update-certificates)
 1. [Build Trio 0.5.x](#build-the-app)
@@ -109,9 +126,42 @@ Each step in the list below matches with the number in the graphic. On the left 
 > ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
 
+### Configure the `dev` branch as default
+
+> **This recommendation is only while the public beta is ongoing. Typically only developers configure the `dev` branch as their default branch.**
+
+1. Once you commit to the 0.5.x version of Trio, you want to stay with it
+2. By making the `dev` branch your default, you will get automatic build updates weekly
+
+These are the steps to modify the default branch.
+
+For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+
+For the numbered steps below, refer to the graphic found under each group of steps.
+
+1. Click on the Settings Icon near the top right of your Trio repository
+    * You may need to scroll down to see the `Default Branch` as shown in the graphic
+    * Do not tap on the Branches tab to the left under Code and Automation, that is not the correct menu
+
+    > ![show default branch](img/gh-settings-branch-01.svg){width="600"}
+
+1. To the right of the default branch name there is a pencil and a left-right arrow icon
+    * Tap on the left-right arrow icon to bring up the `Switch default branch to another branch` dialog
+1. Click on the dropdown next to the current default branch, in this example, `main`
+
+   > ![modify default branch](img/gh-settings-branch-02.svg){width="400"}
+
+1. Select the desired default branch, for the public beta, choose `dev`
+1. Click on the `Update` button
+
+1. You will be presented with an are-you-sure question.
+    * Click on the red `I understand, update the default branch.` button
+
+Your default branch has been changed.
+
 #### Update `Branch`
 
-> **Be aware that building from the `dev` branch will upgrade to Trio 0.5.x. Once you have upgraded to 0.5.x, going back to 0.2.x is not supported.**
+The `dev` branch of the `nightscout/Trio` repository will be updated frequently. This is how you know if your `fork` needs to be updated as well.
 
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
@@ -120,6 +170,7 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 > ![message displayed when your fork of is behind the origin version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
+
 
 ### Update <code>Identifiers</code>
 
@@ -171,7 +222,7 @@ Once you see the green check mark by `Create Certificates`, the next step is to 
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
 
-> **We recommend most users leave their default branch as `main`. That means you must remember to select the `dev` branch each time you build Trio 0.5.x**
+> **We recommend that while participating in the public beta, user should [Configure the `dev` branch as default](#configure-the-dev-branch-as-default). This will ensure weekly updates to TestFlight. The user must still manually install updates to their phone from TestFlight.**
 
 If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
 

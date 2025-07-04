@@ -21,9 +21,13 @@
     
 ## Build Trio with Xcode
 
-!!! warning "Browser Builders"
+!!! important "Public Beta"
 
-    If you previously built Trio using the Browser Build method, it is recommended that you disable 'Automatic Install' from TestFlight. This will ensure that the app created with Xcode remains on the phone.
+    The public beta is built from the `dev` branch of Trio.
+    
+    This code is undergoing test and rapid update. Be sure to follow along in Trio discord and be sure to download a new version of code and build an update frequently (at least weekly).
+
+    * [Trio Discord Invitation](https://discord.gg/FnwFEFUwXE)
 
 ### Download Trio with 'Trio Build Select Script'
 
@@ -62,7 +66,11 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
     ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
       {align= "center"}
 
-5. Next, the script will prompt you to select which Trio branch you want to download. Unless you are actively contributing to app development, you will type 1 and press return. 
+5. Next, the script will prompt you to select which Trio branch you want to download. Unless you are actively contributing to app development by running the public beta, you will type 1 and press return. 
+
+    !!! important "Public Beta"
+
+        To build the public beta, select 2 at this point to select the `dev` branch. Follow along in Trio discord and be sure to download a new version of code and build an update frequently (at least weekly).
 
     ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
       {align= "center"}
