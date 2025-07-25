@@ -23,6 +23,10 @@ This page is provided to help people currently running the public beta version o
     
     * **Once you have upgraded to 0.5.x, going back to 0.2.x is not supported**
         * If you choose to downgrade, you will need to set everything up again from scratch
+        * If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:
+            * You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app
+            * But all your "stuff" is there
+            * See [Remove Annoying Message](#remove-annoying-message)
     * Some guardrails have changed compared to 0.2.x
     * **Your saved Temp Targets and Overrides will not be maintained**
         * The storage method in 0.5.x is different from 0.2.x, so you will need to recreate them
@@ -326,3 +330,34 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 Return to the main set of instructions on this page, [Update <code>Certificates</code>](#update-certificates), and keep going until you have a successful build.
+
+## Extra Tips
+
+### Remove Annoying Message
+
+If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:
+
+* You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app
+* But all your "stuff" is there
+
+You see that because some special files are labeled with `.migrated` by 0.5.x when you complete the onboarding action when you upgrade from 0.2.x to 0.5.x.
+
+* When you accidentally build 0.2.x over 0.5.x, the old names for the files are recreated
+* When you restore to 0.5.x, it sees the duplicate files, one set has `.migrated` in the file name and one set does not
+* You are warned that migration can't happen - but for this case, you don't need it
+
+You can get rid of the annoying message by taking these steps:
+
+First quit (stop running, swipe up) the Trio app
+
+* Search for Files on your phone
+* Open the `Trio` folder on your phone
+* Open the `enact` folder
+    * you may see 4 files, instead of 2
+    * delete the ones that do **not** have `.migrated` in the name
+* Open the `monitor` folder
+    * you will probably see many files, but 3 of them have `.migrated` in the name
+    * find the files with the same name except for `.migrated` and delete them
+
+Open the Trio app and it should just say "Getting everything ready for you" and just keep going. Annoying message is gone.
+
