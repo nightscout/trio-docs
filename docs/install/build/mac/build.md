@@ -25,9 +25,9 @@
 
     The public beta is built from the `dev` branch of Trio.
     
-    This code is undergoing test and rapid update. Be sure to follow along in Trio discord and be sure to download a new version of code and build an update frequently (at least weekly).
+    This code is undergoing testing and receives rapid updates. Be sure to follow along in Trio Discord and to download the latest code and update frequently (at least weekly).
 
-    * [Trio Discord Invitation](https://discord.gg/FnwFEFUwXE)
+    * [Trio Discord Invitation](https://discord.triodocs.org)
 
 ### Download Trio with 'Trio Build Select Script'
 

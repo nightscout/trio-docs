@@ -1,47 +1,45 @@
 ## Use Browser Build for Public Beta Version
 
-This page is provided to help the people currently running the public beta version of Trio.
+This page is provided to help people currently running the public beta version of Trio.
 
 !!! important "Public Beta"
 
     The public beta is built from the `dev` branch of Trio.
     
-    This code is undergoing testing and rapid updating. Be sure to follow along in Trio discord and be sure to update frequently (at least weekly).
+    This code is undergoing testing and receives rapid updates. Be sure to follow along in Trio Discord and to update frequently (at least weekly).
 
-    * [Trio Discord Invitation](https://discord.gg/FnwFEFUwXE)
+    * [Trio Discord Invitation](https://discord.triodocs.org)
 
-    To ensure weekly updates, you will be instructed to make the `dev` branch your default branch. Remember, this ensure weekly builds to TestFlight. You are still responsible to manually install the latest build of Trio onto your phone from TestFlight.
+    To ensure weekly updates, make the `dev` branch the default branch in your fork on GitHub. Remember, this will just automatically trigger a build of the latest `dev` to TestFlight every Wednesday at 08:43 UTC. You are still responsible for manually installing the update via the TestFlight app on your phone. 
 
-    Once this is released to main, then you should return to building from the main branch.
+    Once this beta is released to `main` as 1.0, then you should return to building from the `main` branch.
 
 ## Update to Trio dev branch from Trio 0.2.x main
 
 !!! important "A Note on Compatibility"
-    Upgrading to Trio `0.5.x` from `0.2.x` is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
+    Upgrading to Trio 0.5.x from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
 
     **Be Aware**
     
-    * **Once you have upgraded to `0.5.x`, going back to `0.2.x` is not supported**
+    * **Once you have upgraded to 0.5.x, going back to 0.2.x is not supported**
         * If you choose to downgrade, you will need to set everything up again from scratch
-    * Some guardrails have changed compared to `0.2.x`
+    * Some guardrails have changed compared to 0.2.x
     * **Your saved Temp Targets and Overrides will not be maintained**
-        * The storage method in `0.5.x` is different from `0.2.x`, so you will need to recreate them
-        * Capture a screenshot of each named Temp Target or Override that you want to add to `0.5.x`
-    
-    We have designed this release to be a stable and long-term foundation—so when you are ready, you can upgrade with confidence.
+        * The storage method in 0.5.x is different from 0.2.x, so you will need to recreate them
+        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5.x
 
-The Browser Build documentation is under construction for versions Trio 0.5.x and newer.
+The Browser Build documentation is under construction for Trio version 0.5.x and newer.
 
 This temporary set of instructions is intended for the subset of users who **previously built Trio 0.2.x using Browser Build**. Because this is aimed at experienced builders, some of the steps are abbreviated and will be expanded as the documents are updated.
 
-> If you are new to Trio - please wait until the documents have been expanded and preferably until the release of Trio 1.0.
+> If you are new to Trio — please wait until the documents have been expanded and preferably until the release of Trio 1.0.
 
 #### Mac-Xcode to Browser Build
 
 !!! important "Experienced Mac-Xcode Builder"
-    If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build - welcome. For the time being, please do this:
+    If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build — welcome. For the time being, please do this:
 
-    * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it - you just want to make sure you can succeed with a Browser Build.
+    * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it — you just want to make sure you can succeed with a Browser Build.
     * Then return to this page and follow the directions; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5.x.
 
 #### Transition from Other Apps to Trio Browser Build
@@ -85,9 +83,9 @@ The numbered steps correspond to numbers in the graphics below:
 1. Scroll down to select Secret and variables
 1. Choose Actions
 1. Choose Variable
-1. Tap on “Create new organization variable” or “Create new repository variable”
-1. Add the variable `ENABLE_NUKE_CERTS`
-1. Type in the value `true`
+1. Tap on “Create new organization variable” or “New repository variable”
+1. For the Name, type `ENABLE_NUKE_CERTS`
+1. For the Value, type `true`
 1. Tap on Add Variable.
 
 > ![add ENABLE_NUKE_CERTS variable](img/add-variable-01.png){ width="800"}
@@ -100,7 +98,7 @@ The numbered steps correspond to numbers in the graphics below:
 
 The open beta testing for Trio uses the `dev` branch.
 
-* If you do not have a dev branch you must first configure one following these directions.
+* If you do not have a `dev` branch you must first configure one following these directions.
 * If you already have a `dev` branch, skip ahead to [Update Branch](#update-branch) and be sure to select the `dev` branch when you update your `fork`. 
 
 #### Add `Branch`
@@ -110,7 +108,7 @@ First, you need to get to your Trio repository and tap on the branch icon. (Do n
 > ![Trio repo - tap on branch icon](img/trio-branch.png){width="700"}
 {align="center"}
 
-The next screen displays the branches you currently have. It shows a `New branch` icon in the upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
+The next screen displays the branches you currently have. It shows a `New branch` button in the upper right. If you don't see that, you are not logged in. Tap on the `New branch` button.
 
 >  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
 {align="center"}
@@ -135,7 +133,7 @@ Each step in the list below matches with the number in the graphic. On the left 
 
 These are the steps to modify the default branch.
 
-For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note — only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
 
 For the numbered steps below, refer to the graphic found under each group of steps.
 
@@ -145,8 +143,8 @@ For the numbered steps below, refer to the graphic found under each group of ste
 
     > ![show default branch](img/gh-settings-branch-01.svg){width="600"}
 
-1. To the right of the default branch name there is a pencil and a left-right arrow icon
-    * Tap on the left-right arrow icon to bring up the `Switch default branch to another branch` dialog
+1. To the right of the default branch name there is a pencil and a left-right arrow icon (⇄)
+    * Tap on the left-right arrow icon (⇄) to bring up the `Switch default branch to another branch` dialog
 1. Click on the dropdown next to the current default branch, in this example, `main`
 
    > ![modify default branch](img/gh-settings-branch-02.svg){width="400"}
@@ -161,7 +159,7 @@ Your default branch has been changed.
 
 #### Update `Branch`
 
-The `dev` branch of the `nightscout/Trio` repository will be updated frequently. This is how you know if your `fork` needs to be updated as well. As long as the automatic runs are happening weekly for your repository - you will not need these manual instructions.
+The `dev` branch of the `nightscout/Trio` repository will be updated frequently. This is how you know if your `fork` needs to be updated as well. As long as the automatic runs are happening weekly for your repository — you will not need these manual instructions, unless you want to manually build an update sooner.
 
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
@@ -174,12 +172,12 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### Update <code>Identifiers</code>
 
-For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: `Add Identifiers` after you update your fork.
+For Trio 0.5.x and newer, you must have Apple Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: `Add Identifiers` after you update your fork.
 
 Refer to the graphic below for the numbered steps:
 
-1. Click on the `Actions` tab of your <code>Trio</code> repository
-1. On the left side, click on 2. <code>Add Identifiers</code>
+1. Click on the `Actions` tab of your Trio repository
+1. On the left side, click on <code>2. Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
     * **To update the <code>Identifiers</code> so you can build the Trio 0.5.x, you must select `dev`**
@@ -196,16 +194,16 @@ The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 ### Update <code>Certificates</code>
 
-For Trio 0.5.x and newer, you must have *Apple* Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: `Create Certificates`.
+For Trio 0.5.x and newer, you must have Apple Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: `Create Certificates`.
 
 Refer to the graphic below for the numbered steps:
 
-1. Click on the "<code>Actions</code>" tab of your <code>Trio</code> repository
-1. On the left side, click on "`Create Certificates`"
-1. On the right side, click "`Run Workflow`" to show a dropdown menu
+1. Click on the <code>Actions</code> tab of your Trio repository
+1. On the left side, click on `3. Create Certificates`
+1. On the right side, click `Run workflow` to show a dropdown menu
     * You will see your default branch (typically `main`)
     * **Because you plan to build Trio 0.5.x, select `dev`**
-1. Tap the green button that says "`Run workflow`".
+1. Tap the green button that says `Run workflow`.
 
     > ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
     {align="center"}
@@ -224,7 +222,7 @@ If you completed all the steps on this page successfully (got a green checkmark 
 
 > **We recommend that while participating in the public beta, you should [Configure the `dev` branch as default](#configure-the-dev-branch-as-default). This will ensure weekly updates to TestFlight. You must still manually install updates to your phone from TestFlight.**
 
-If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button:
+If you choose to build a different branch than your default branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev` branch in the branch dropdown menu before continuing to step 4 and tapping on the green Run workflow button:
 
 > ![build app using github actions](img/action-04-build-trio.svg){width="700"}
 {align="center"}
@@ -243,7 +241,7 @@ If you have one branch as default, for example `main`, and choose to build a dif
 
 You may notice some *GitHub* actions that have `DONT RUN` or `DO NOT RUN` in their names. Those are special actions that are used by the developers. They are skipped in your `Fork`, but you may see logs for them.
 
-If they already have the notation `disabled` beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select `Disable workflow`. You will not be annoyed by seeing logs that say the action was automatically run and then skipped.
+If they already have the notation `disabled` beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select `Disable workflow`. Then you will avoid the annoyance of seeing logs that say the action was automatically run and then skipped.
 
 > ![disable developer actions](img/trio-disable-do-not-run.png){width="500"}
 
@@ -279,7 +277,7 @@ Warning - there is no hand holding in these directions.
 **Every app you build will use the same [6 Secrets](https://loopkit.github.io/loopdocs/browser/intro-summary/#make-a-secrets-reference-file).**
 
 * Fork from: [https://github.com/nightscout/Trio](https://github.com/nightscout/Trio)
-* You use the `Trio App Group` for Trio, see [Create the `Trio App Group`](#create-the-trio-app-group)
+* Use the `Trio App Group` for Trio, see [Create the `Trio App Group`](#create-the-trio-app-group)
 * <code>Identifiers</code> for Trio: see [Table of <code>Identifiers</code>](#table-of-identifiers)
 * Add the `Trio App Group` to these <code>Identifiers</code>:
     * `Trio`
