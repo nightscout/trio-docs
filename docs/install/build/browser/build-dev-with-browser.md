@@ -6,7 +6,7 @@ This page is provided to help the people currently running the public beta versi
 
     The public beta is built from the `dev` branch of Trio.
     
-    This code is undergoing test and rapid update. Be sure to follow along in Trio discord and be sure to update frequently (at least weekly).
+    This code is undergoing testing and rapid updating. Be sure to follow along in Trio discord and be sure to update frequently (at least weekly).
 
     * [Trio Discord Invitation](https://discord.gg/FnwFEFUwXE)
 
