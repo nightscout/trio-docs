@@ -68,8 +68,8 @@ theme:
 plugins:
   - redirects:
       redirect_maps:
-        'startup-guide.md': 'configuration/new-user-setup.md'
-        'startup-guide/index.md': 'configuration/new-user-setup.md'
+        "startup-guide.md": "configuration/new-user-setup.md"
+        "startup-guide/index.md": "configuration/new-user-setup.md"
   - open-in-new-tab
   - macros
   - exporter:
@@ -128,6 +128,7 @@ extra_css:
   - assets/stylesheets/extra.css
 
 extra_javascript:
+  - assets/javascripts/disable-instant-if-translated.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/mkdocs-exporter.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
