@@ -251,6 +251,7 @@ nav:
               - Build Trio with Xcode: install/build/mac/build.md
               - Build Errors: install/build/mac/build-errors.md
               - Update Trio with Xcode: install/build/mac/update.md
+          - Build Beta with Browser: install/build/browser/build-dev-with-browser.md
           - Build with Browser ✏️:
               - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
               - Create GitHub Account ✏️: install/build/browser/create-github-account.md
@@ -265,7 +266,7 @@ nav:
               - Install Trio from TestFlight ✏️: install/build/browser/install-from-testflight.md
               - Browser Build Errors ✏️: install/build/browser/browser-build-errors.md
               - Customizations ✏️: install/build/browser/browser-customizations.md
-              - Update with Browser ✏️: install/build/browser/update-with-browser.md
+              - Update with Browser ✏️: install/build/browser/browser-update.md
       - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
           - install/ecosystem/index.md
