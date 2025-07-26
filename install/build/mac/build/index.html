@@ -499,6 +499,14 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../browser/build-dev-with-browser/">
+<span class="md-ellipsis">
+    Build Beta with Browser
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
 <a class="md-nav__link" href="../../browser/browser-build-overview/">
 <span class="md-ellipsis">
@@ -757,9 +765,13 @@
 </ul>
 </div>
 <h2 id="build-trio-with-xcode">Build Trio with <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#build-trio-with-xcode" title="Link to this section for reference">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Browser Builders</p>
-<p>If you previously built Trio using the Browser Build method, it is recommended that you disable 'Automatic Install' from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. This will ensure that the app created with <abbr title="program used to build an app">Xcode</abbr> remains on the phone.</p>
+<div class="admonition important">
+<p class="admonition-title">Public Beta</p>
+<p>The public beta is built from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of Trio.</p>
+<p>This code is undergoing testing and receives rapid updates. Be sure to follow along in Trio Discord and to download the latest code and update frequently (at least weekly).</p>
+<ul>
+<li><a href="https://discord.triodocs.org">Trio Discord Invitation</a></li>
+</ul>
 </div>
 <h3 id="download-trio-with-trio-build-select-script">Download Trio with 'Trio Build Select Script'<a class="headerlink" href="#download-trio-with-trio-build-select-script" title="Link to this section for reference">¶</a></h3>
 <p>Trio uses the Trio Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.</p>
@@ -799,7 +811,11 @@
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs2.png"><img alt="Screenshot: Build Select Script 2" src="../img/xc-bs2.png" width="682"/></a></p>
 </li>
 <li>
-<p>Next, the script will prompt you to select which Trio <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to download. Unless you are actively contributing to app development, you will type 1 and press return. </p>
+<p>Next, the script will prompt you to select which Trio <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to download. Unless you are actively contributing to app development by running the public beta, you will type 1 and press return. </p>
+<div class="admonition important">
+<p class="admonition-title">Public Beta</p>
+<p>To build the public beta, select 2 at this point to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Follow along in Trio discord and be sure to download a new version of code and build an update frequently (at least weekly).</p>
+</div>
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs3.png"><img alt="Screenshot: Build Select Script 3" src="../img/xc-bs3.png" width="682"/></a></p>
 </li>
 <li>
