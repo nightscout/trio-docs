@@ -28,7 +28,7 @@ Logs are most commonly shared in the following cases:
       
     !!! tip "Overcoming file size limits: Compress Logs"
         
-        If Discord or Facebook complains about the file size when you upload the logs, **[compress them](#compress-logs)** into an archive before sending.
+        If Discord or Facebook complains about the file size when you upload the logs, **[compress them](#compressing-logs)** into an archive before sending.
 
 - **Developer bug reports**: When requested, attach logs to a [**GitHub issue**](https://github.com/nightscout/Trio/issues/new/choose) so that developers can use them to reproduce, investigate, and resolve the problem.
 
