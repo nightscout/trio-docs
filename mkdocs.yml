@@ -227,8 +227,8 @@ nav:
           - 🔵 Basal Rates ✏️: usage/concepts/basal-rates.md
           - 🟢 Insulin Sensitivities ✏️: usage/concepts/isf.md
           - 🟣 Carb Ratios ✏️: usage/concepts/carb-ratios.md
-          - Overrides ✏️: usage/features/overrides.md
-          - Temporary Targets ✏️: usage/features/temp-targets.md
+          - Overrides: usage/features/overrides.md
+          - Temporary Targets: usage/features/temp-targets.md
           - Statistics ✏️: usage/features/statistics.md
           - Bolus Calculator: usage/features/bolus-calculator.md
   - Installation and Update:
