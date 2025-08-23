@@ -3,12 +3,12 @@
 ## What is an Override?
 An Override is a set of parameters you can place on Trio temporarily. With an Override, you can alter a variety of variables to increase or decrease insulin delivery:
 
-    - Basal Rate Adjustment
-    - Inversely change ISF, CR, or both
-    - Override Target
-    - Disable SMBs
-    - Override Max SMB Minutes
-    - Set a time frame for the override or enable indefinitely until you cancel
+- Basal Rate Adjustment
+- Inversely change ISF, CR, or both
+- Override Target
+- Disable SMBs
+- Override Max SMB Minutes
+- Set a time frame for the override or enable indefinitely until you cancel
 
 There are multiple cases when an Override may be useful. Below you will find a few examples. This list is not all-inclusive and you may find additional uses for Overrides as you use Trio.
 
