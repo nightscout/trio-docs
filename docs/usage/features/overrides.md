@@ -10,6 +10,9 @@ An Override is a set of parameters you can place on Trio temporarily. With an Ov
 - Override Max SMB Minutes
 - Set a time frame for the override or enable indefinitely until you cancel
 
+!!! tip "Good To Know"
+    Overrides adjust your core profile settings. They do not influence the Oref algorithm adjustments to the sensitivity ratio used.
+    
 There are multiple cases when an Override may be useful. Below you will find a few examples. This list is not all-inclusive and you may find additional uses for Overrides as you use Trio.
 
 In addition to Overrides, Trio also has a more automated, less customizable feature called [Temporary Targets](temp-targets.md).
