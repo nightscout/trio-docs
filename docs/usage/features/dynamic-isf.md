@@ -12,20 +12,24 @@ If you've spent any time in the [Desmos Graphs](../../configuration/settings/alg
 - Your profile ISF is not directly used to determine your ISF when logarithmic dynamic ISF is enabled. It influences the limits of what ISF is allowed.
 - Adjusting your profile ISF when using logarithmic dynamic ISF will not have a direct impact on your sensitivity calculations. It will only have an impact on the Maximum and Minimum values allowed.
 
-Notice how the graph shifts towards (0,0) to increase the rate of change as Adjustment Factor increases. While this does increase how fast ISF adjusts, if Autosens Maximum and Autosens Minimum aren't also adjusted, it can have the unintended consequence of always using a much too high or much too low ISF.
-
-![AF of 40](../img/af_40.png){width="250"}
-![AF of 80](../img/af_80.png){width="250"}
-![AF of 180](../img/af_180.png){width="250"}
+![ISF of 54](../img/isf_54.png){width="250"}
+![ISF of 80](../img/isf_80.png){width="250"}
 {align="center"}
 
 !!! tip "Profile ISF Tip"
-    - This is why the Desmos graphs come in clutch whenever adjustments are needed with Logarithmic Dynamic ISF.
+    - This is why the Desmos graphs are invaluable whenever adjustments are needed with Logarithmic Dynamic ISF.
 
 ### Adjustment Factor
 
 - Changing your [Adjustment Factor](../../configuration/settings/algorithm/dynamic-settings.md#adjustment-factor-logarithmic) will have a huge impact on what sensitivity ratio and thus what ISF is used.
 - It is strongly advised to enter any planned changes to Adjustment Factor into the [Desmos Graph](../../configuration/settings/algorithm/dynamic-settings.md#logarithmic-desmos-graphs) before changing it in your settings.
+
+Notice how the graph shifts towards (0,0) to increase the rate of change as Adjustment Factor increases. While this does increase how fast ISF adjusts, if Autosens Maximum and Autosens Minimum aren't also adjusted, it can have the unintended consequence of always using a much too high or much too low ISF.
+
+![AF of 40](../img/af_40.png){width="200"}
+![AF of 80](../img/af_80.png){width="200"}
+![AF of 180](../img/af_180.png){width="200"}
+{align="center"}
 
 ### Using Overrides With Logarithmic Dynamic ISF
 
@@ -69,9 +73,9 @@ It's not unheard of for there to be occasions when your daily insulin use can ch
 
 Using a Total Daily Dose (TDD) of 40 units as a baseline, you can see how this changes the ISF calculations when TDD is halved (20 units) or doubled (80 units).
 
-![TDD Decrease](../img/tdd_20.png){width="250"}
-![TDD Baseline](../img/tdd_40.png){width="250"}
-![TDD Increase](../img/tdd_80.png){width="250"}
+![TDD Decrease](../img/tdd_20.png){width="200"}
+![TDD Baseline](../img/tdd_40.png){width="200"}
+![TDD Increase](../img/tdd_80.png){width="200"}
 {align="center"}
 
 !!! tip "TDD & Logarithmic Tip"
@@ -84,9 +88,9 @@ Using a Total Daily Dose (TDD) of 40 units as a baseline, you can see how this c
 ### Profile ISF
 When you make changes to your Profile ISF, either as a profile setting change or through an Override, it will shift your Sigmoid Dynamic ISF curve to ensure your Profile ISF is always used when you are at your target glucose.
     
-![ISF Decrease](../img/sig_isf_50.png){width="250"}
-![ISF Baseline](../img/sig_isf_70.png){width="250"}
-![ISF Increase](../img/sig_isf_100.png){width="250"}
+![ISF Decrease](../img/sig_isf_50.png){width="200"}
+![ISF Baseline](../img/sig_isf_70.png){width="200"}
+![ISF Increase](../img/sig_isf_100.png){width="200"}
 {align="center"}
     
 Though it can also shift how steep the curve is, and thus how quickly and to what degree adjustments change, changing your ISF should be done with caution and not as a means to change the curve. Rather, adjusting your [Adjustment Factor](../../configuration/settings/algorithm/dynamic-settings.md#sigmoid-adjustment-factor) is the preferred way to adjust how quickly values adjust.
@@ -125,9 +129,9 @@ When using Sigmoid, increasing your Adjustment Factor will cause your sensitivit
 
 You can see in the graphs below how the curve gets steeper as the Adjustment Factor increases.
 
-![Adjustment Factor Decrease](../img/sig_af_30.png){width="250"}
-![Adjustment Factor Baseline](../img/sig_af_50.png){width="250"}
-![Adjustment Factor Increase](../img/sig_af_80.png){width="250"}
+![Adjustment Factor Decrease](../img/sig_af_30.png){width="200"}
+![Adjustment Factor Baseline](../img/sig_af_50.png){width="200"}
+![Adjustment Factor Increase](../img/sig_af_80.png){width="200"}
 {align="center"}
 
 !!! tip "Sigmoid Adjustment Factor Tips"
@@ -150,9 +154,9 @@ It's not unheard of for there to be occasions when your daily insulin use can ch
 
 In the graphs below, you can see how the graph changes, but not by much as the Total Daily Dose (TDD) of 50 units is halved to 25 or doubled to 50 units. It does cause the steepness of the curve, thus the response time to adjust accordingly. It slows with a lower TDD and speeds up with a higher TDD.
 
-![TDD Decrease](../img/sig_tdd_25.png){width="250"}
-![TDD Baseline](../img/sig_tdd_50.png){width="250"}
-![TDD Increase](../img/sig_tdd_100.png){width="250"}
+![TDD Decrease](../img/sig_tdd_25.png){width="200"}
+![TDD Baseline](../img/sig_tdd_50.png){width="200"}
+![TDD Increase](../img/sig_tdd_100.png){width="200"}
 {align="center"}
 
 !!! tip "Sigmoid & TDD Tip"
