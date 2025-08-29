@@ -65,7 +65,7 @@ When you utilize a Temp Target AND have [Target Behavior](../../configuration/se
 Yes, you can enable both an Override and a Temp Target at the same time. When you do, Trio will first adjust your profile settings based on the Override set, then those profile settings will be sent to the Oref algorithm for the Sensitivity Ratio and insulin required calculations. The [Target Behavior](../../configuration/settings/algorithm/target-behavior.md) settings will influence the Sensitivity Ratio used as explained above. Your other override-adjusted profile settings will then be utilized to determine the next insulin dosing decision.
 
 ### Influence of Total Daily Dose on Logarithmic Dynamic ISF
-It's not unheard of for there to be occasions when your daily insulin use can change drastically. It can increase significantly if you need a dose of steroids or are coming down with an illness. It can decrease significantly if you start a new exercise regimine. It's important to know how those changes will influence Trio's calculation in dynamic ISF.
+It's not unheard of for there to be occasions when your daily insulin use can change drastically. It can increase significantly if you need a dose of steroids or are coming down with an illness. It can decrease significantly if you start a new exercise regimine. It's important to know how those changes will influence Trio's calculation in Logarithmic Dynamic ISF.
 
 Using a Total Daily Dose (TDD) of 40 units as a baseline, you can see how this changes the ISF calculations when TDD is halved (20 units) or doubled (80 units).
 
@@ -121,21 +121,39 @@ Notice how Sigmoid is still locked at your Profile ISF being used when glucose i
     - If you are looking to decrease Autosens Min because of lows, the issue may be with your [Profile ISF setting](#profile-isf_1).
 
 ### Adjustment Factor
-<Changes the steepness of the curve>
+When using Sigmoid, increasing your Adjustment Factor will cause your sensitivity ratio to increase and decrease at a faster pace as your glucose rises and falls.
+
+You can see in the graphs below how the curve gets steeper as the Adjustment Factor increases.
+
 ![Adjustment Factor Decrease](../img/sig_af_30.png){width="250"}
 ![Adjustment Factor Baseline](../img/sig_af_50.png){width="250"}
 ![Adjustment Factor Increase](../img/sig_af_80.png){width="250"}
 {align="center"}
 
+!!! tip "Sigmoid Adjustment Factor Tips"
+    - If you need Sigmoid to respond faster, increase the Adjustment Factor.
+    - If you need Sigmoid to respond slower, decrease the Adjustment Factor.
+    - This is a fine tuning tool, and should be adjusted only after your core settings have been established as accurate.
+    
 ### Target Glucose
-<Shifts whole sigmoid graph within boundaries of AS Max & AS Min>
+Changing your Target Glucose either with an Override, Temp Target, or profile Target change, shifts the Sigmoid graph so that your Profile ISF is used at the new Glucose Target set.
+
 ![Target Glucose Baseline](../img/sig_target_100.png){width="250"}
 ![Target Glucose Increase](../img/sig_target_150.png){width="250"}
 {align="center"}
 
+!!! tip "Target Glucose Tip"
+    - Be aware that if you make a drastic change your Profile Target Glucose while using Sigmoid, you may find that your ISF suddenly seems too weak or too strong. Watch for a few days to ensure you don't need to increase or decrease your ISF to match the new Glucose Target.
+
 ### Influence of Total Daily Dose on Sigmoid Dynamic ISF
-<changes steepness of curve>
+It's not unheard of for there to be occasions when your daily insulin use can change drastically. It can increase significantly if you need a dose of steroids or are coming down with an illness. It can decrease significantly if you start a new exercise regimine. While this has a big impact on Logarithmic Dynamic ISF, it does not have as much of an impact on Sigmoid Dynamic ISF.
+
+In the graphs below, you can see how the graph changes, but not by much as the Total Daily Dose (TDD) of 50 units is halved to 25 or doubled to 50 units. It does cause the steepness of the curve, thus the response time to adjust accordingly. It slows with a lower TDD and speeds up with a higher TDD.
+
 ![TDD Decrease](../img/sig_tdd_25.png){width="250"}
 ![TDD Baseline](../img/sig_tdd_50.png){width="250"}
 ![TDD Increase](../img/sig_tdd_100.png){width="250"}
 {align="center"}
+
+!!! tip "Sigmoid & TDD Tip"
+    - Most likely you won't need to make any adjustments to Sigmoid if you have a sudden increase or decrease in TDD.
