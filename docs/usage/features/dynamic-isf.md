@@ -9,8 +9,8 @@ If you've spent any time in the [Desmos Graphs](../../configuration/settings/alg
 
 ### Profile ISF
 
-- Your profile ISF is not directly used to determine your ISF when logarithmic dynamic ISF is enabled. It influences the limits of what ISF is allowed.
-- Adjusting your profile ISF when using logarithmic dynamic ISF will not have a direct impact on your sensitivity calculations. It will only have an impact on the Maximum and Minimum values allowed.
+- Your profile ISF is not directly used to determine your ISF when Logarithmic Dynamic ISF is enabled. It influences the limits of what ISF is allowed.
+- Adjusting your profile ISF when using Logarithmic Dynamic ISF will not have a direct impact on your sensitivity calculations. It will only have an impact on the Maximum and Minimum values allowed.
 
 ![ISF of 54](../img/isf_54.png){width="250"}
 ![ISF of 80](../img/isf_80.png){width="250"}
