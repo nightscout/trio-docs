@@ -41,7 +41,7 @@ Overrides change your profile settings before they are sent to the Oref algorith
     
     If you start with a Profile ISF of 50 mg/dL and set an override of 150%, this will change your Profile ISF to 33 mg/dL/U.
     
-    Notice how the calculated ISF line does not change with this adjustment to the Profile ISF, only the limits of what section of the curve are allowed. It shifts the limits to only allow the lower ISF portions of the graph, meaning the ISF allowable range will be 27-47 mg/dL/U and the adjustments are capped if glucose is reading higher than 87 mg/dL.
+    Notice how the calculated ISF line does not change with this adjustment to the Profile ISF, only the limits of what section of the curve are allowed. It shifts the limits to only allow the lower ISF portions of the graph, meaning the ISF allowable range will be 27-47 mg/dL/U and the adjustments stop at 47 mg/dL/U if glucose is reading below than 126 mg/dL.
     
     ![ISF of 50](../img/isf_50.png){width="250"}
     ![ISF of 33](../img/isf_33.png){width="250"}
@@ -49,9 +49,9 @@ Overrides change your profile settings before they are sent to the Oref algorith
     
 !!! question "What effect will using a <100% Override have on Logarithmic Dynamic ISF?"
     
-    If you start with a Profile ISF of 50 mg/dL and set an override of 70%, this will change your Profile ISF to 71 mg/dL/U.
+    If you start with a Profile ISF of 50 mg/dL/U and set an override of 70%, this will change your Profile ISF to 71 mg/dL/U.
     
-    Notice how the calculated ISF line does not change with this adjustment to the Profile ISF, only the limits of what section of the curve are allowed. It shifts the limits to only allow the higher ISF portions of the graph, meaning the ISF allowable range will be 59-100 mg/dL/U and the adjustments are capped if glucose is reading lower than 126 mg/dL.
+    Notice how the calculated ISF line does not change with this adjustment to the Profile ISF, only the limits of what section of the curve are allowed. It shifts the limits to only allow the higher ISF portions of the graph, meaning the ISF allowable range will be 59-100 mg/dL/U and the adjustments are capped if glucose is reading higher than 87 mg/dL.
     
     ![ISF of 50](../img/isf_50.png){width="250"}
     ![ISF of 71](../img/isf_71.png){width="250"}
