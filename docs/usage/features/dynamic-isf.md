@@ -1,7 +1,9 @@
 # Using Dynamic ISF
 
 !!! important
-    The images used are hypothetical graphs. Where the lines and values actually fall for you rely heavily on *your* personal settings. The focus of these illustrations is to show what shifts rather than what values will be used for your specific settings.
+    - The images used are hypothetical graphs. Where the lines and values actually fall for you rely heavily on *your* personal settings. The focus of these illustrations is to show what shifts rather than what values will be used for your specific settings.
+    - The blue line in these images shows what ISF is used (Y-axis) when your glucose is at a certain value (X-Axis). Each point on the graph (X,Y) means at a glucose of "X", an ISF of "Y" is used.
+    - The orange shaded area is what portions of that blue line Trio is allowed to use. The lower orange line is the ISF determined by your Autosens Maximum and the upper orange line is the ISF determined by your Autosens Minimum. Trio cannot use any values outside of the orange shaded area.
 
 ## Logarithmic Dynamic ISF
 
