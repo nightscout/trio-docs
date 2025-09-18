@@ -39,7 +39,7 @@ Overrides change your profile settings before they are sent to the Oref algorith
 
 !!! question "What effect will using a >100% Override have on Logarithmic Dynamic ISF?"
     
-    If you start with a Profile ISF of 50 mg/dL and set an override of 150%, this will change your Profile ISF to 33 mg/dL/U.
+    If you start with a Profile ISF of 50 mg/dL/U and set an override of 150%, this will change your Profile ISF to 33 mg/dL/U.
     
     Notice how the calculated ISF line does not change with this adjustment to the Profile ISF, only the limits of what section of the curve are allowed. It shifts the limits to only allow the lower ISF portions of the graph, meaning the ISF allowable range will be 27-47 mg/dL/U and the adjustments stop at 47 mg/dL/U if glucose is reading below than 126 mg/dL.
     
@@ -154,7 +154,7 @@ Changing your Target Glucose either with an Override, Temp Target, or profile Ta
 ### Influence of Total Daily Dose on Sigmoid Dynamic ISF
 It's not unheard of for there to be occasions when your daily insulin use can change drastically. It can increase significantly if you need a dose of steroids or are coming down with an illness. It can decrease significantly if you start a new exercise regimine. While this has a big impact on Logarithmic Dynamic ISF, it does not have as much of an impact on Sigmoid Dynamic ISF.
 
-In the graphs below, you can see how the graph changes, but not by much as the Total Daily Dose (TDD) of 50 units is halved to 25 or doubled to 50 units. It does cause the steepness of the curve, thus the response time to adjust accordingly. It slows with a lower TDD and speeds up with a higher TDD.
+In the graphs below, you can see how the graph changes, but not by much as the Total Daily Dose (TDD) of 50 units is halved to 25 or doubled to 100 units. It does cause the steepness of the curve, thus the response time to adjust accordingly. It slows with a lower TDD and speeds up with a higher TDD.
 
 ![TDD Decrease](../img/sig_tdd_25.png){width="200"}
 ![TDD Baseline](../img/sig_tdd_50.png){width="200"}
