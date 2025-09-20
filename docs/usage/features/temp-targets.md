@@ -32,10 +32,10 @@ Cardiovascular exercise can have immediate and extended effects on glycemic cont
 
 In preparation for exercise, you can use the following temp target features to reduce the occurence of lows:
 
-    - Set a temp target >100 mg/dL (>5.5 mmol/L) approximately 1-2 hours before you start exercising.
-    - *Enable* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity).
-    - If you want SMBs automatically disabled while exercising with a temp target above 100 mg/dL (>5.5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *OFF*.
-    - If you want SMBs to continue even when you set a temp target above 100 mg/dL (>5/5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *ON*.
+- Set a temp target >100 mg/dL (>5.5 mmol/L) approximately 1-2 hours before you start exercising.
+- *Enable* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity).
+- If you want SMBs automatically disabled while exercising with a temp target above 100 mg/dL (>5.5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *OFF*.
+- If you want SMBs to continue even when you set a temp target above 100 mg/dL (>5/5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *ON*.
     
 Having access to fast-acting carbs during this type of exercise is essential. Pack a snack in case you need a source of simple carbohydrates during your routine. Some find they need a slow acting carb before they exercise and others find having carbs on board leads to insulin on board, which leads to lows. Your diabetes may vary, so follow what you need.
  
@@ -52,8 +52,8 @@ Some users don't want to pre-bolus, but still would like a small boost of insuli
 
 In preparation for meals, you can use the following temp target features to boost insulin delivery and reduce post-meal spikes:
 
-    - For a small boost in insulin delivery, set a temp target approximately 20-40 mg/dL (approx 1-2 mmol/L) below your target, 1-2 hours prior to meals.
-    - Enable [Low Temptarget Lowers Sensitivity](../../configuration/settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) to give yourself more insulin for the upcoming meal and to bring your blood sugar down faster to the pre-meal range. Note: If you use this option, your temp target must be below 100 mg/dL (5.5 mmol/L) to trigger this feature.
+- For a small boost in insulin delivery, set a temp target approximately 20-40 mg/dL (approx 1-2 mmol/L) below your target, 1-2 hours prior to meals.
+- Enable [Low Temptarget Lowers Sensitivity](../../configuration/settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) to give yourself more insulin for the upcoming meal and to bring your blood sugar down faster to the pre-meal range. Note: If you use this option, your temp target must be below 100 mg/dL (5.5 mmol/L) to trigger this feature.
 
 - - -
 
@@ -67,6 +67,6 @@ In preparation for meals, you can use the following temp target features to boos
     
 When you are recovering from a low blood sugar, you especially do not want Trio to over-correct for the rapid rise in glucose readings. To prevent this, users often set a temp target above 100 mg/dL (>5.5 mmol/L) for a duration of 30-60 minutes following a low blood sugar. This will reduce the correction given for the rapid rise in glucose if you do the following:
 
-    - Set a temp target >100 mg/dL (>5.5 mmol/L) that is also higher than your usual target glucose for between 30-60 minutes
-    - Turn *OFF* [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget)
-    - Turn *ON* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity)
+- Set a temp target >100 mg/dL (>5.5 mmol/L) that is also higher than your usual target glucose for between 30-60 minutes
+- Turn *OFF* [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget)
+- Turn *ON* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity)
