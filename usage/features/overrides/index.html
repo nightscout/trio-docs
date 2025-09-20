@@ -366,6 +366,14 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dynamic-isf/">
+<span class="md-ellipsis">
+    Using Dynamic ISF
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -457,13 +465,18 @@
 <h1 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Link to this section for reference">¶</a></h1>
 <h2 id="what-is-an-override">What is an Override?<a class="headerlink" href="#what-is-an-override" title="Link to this section for reference">¶</a></h2>
 <p>An Override is a set of parameters you can place on Trio temporarily. With an Override, you can alter a variety of variables to increase or decrease insulin delivery:</p>
-<div class="language-text highlight"><pre><span></span><code>- Basal Rate Adjustment
-- Inversely change ISF, CR, or both
-- Override Target
-- Disable SMBs
-- Override Max SMB Minutes
-- Set a time frame for the override or enable indefinitely until you cancel
-</code></pre></div>
+<ul>
+<li>Basal Rate Adjustment</li>
+<li>Inversely change <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>, or both</li>
+<li>Override Target</li>
+<li>Disable SMBs</li>
+<li>Override Max SMB Minutes</li>
+<li>Set a time frame for the override or enable indefinitely until you cancel</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Good To Know</p>
+<p>Overrides adjust your core profile settings. They do not influence the Oref algorithm adjustments to the sensitivity ratio used.</p>
+</div>
 <p>There are multiple cases when an Override may be useful. Below you will find a few examples. This list is not all-inclusive and you may find additional uses for Overrides as you use Trio.</p>
 <p>In addition to Overrides, Trio also has a more automated, less customizable feature called <a href="../temp-targets/">Temporary Targets</a>.</p>
 <hr/>

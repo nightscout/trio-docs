@@ -391,6 +391,14 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dynamic-isf/">
+<span class="md-ellipsis">
+    Using Dynamic ISF
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -527,11 +535,12 @@
 </div>
 <p>Cardiovascular exercise can have immediate and extended effects on glycemic control. Generally, individuals will find their blood sugar drops during and continue to drop for 3-4 hours after. They may also experience increased insulin sensitivity for 24 hours after this type of exercise.</p>
 <p>In preparation for exercise, you can use the following temp target features to reduce the occurence of lows:</p>
-<div class="language-text highlight"><pre><span></span><code>- Set a temp target &gt;100 mg/dL (&gt;5.5 mmol/L) approximately 1-2 hours before you start exercising.
-- *Enable* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity).
-- If you want SMBs automatically disabled while exercising with a temp target above 100 mg/dL (&gt;5.5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *OFF*.
-- If you want SMBs to continue even when you set a temp target above 100 mg/dL (&gt;5/5 mmol/L), ensure [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) is *ON*.
-</code></pre></div>
+<ul>
+<li>Set a temp target &gt;100 mg/dL (&gt;5.5 mmol/L) approximately 1-2 hours before you start exercising.</li>
+<li><em>Enable</em> <a href="../../../configuration/settings/algorithm/target-behavior/#high-temp-target-raises-sensitivity">High Temp Target Raises Sensitivity</a>.</li>
+<li>If you want SMBs automatically disabled while exercising with a temp target above 100 mg/dL (&gt;5.5 mmol/L), ensure <a href="../../../configuration/settings/algorithm/smb-settings/#allow-smb-with-high-temptarget">Allow SMB With High Temptarget</a> is <em>OFF</em>.</li>
+<li>If you want SMBs to continue even when you set a temp target above 100 mg/dL (&gt;5/5 mmol/L), ensure <a href="../../../configuration/settings/algorithm/smb-settings/#allow-smb-with-high-temptarget">Allow SMB With High Temptarget</a> is <em>ON</em>.</li>
+</ul>
 <p>Having access to fast-acting carbs during this type of exercise is essential. Pack a snack in case you need a source of simple carbohydrates during your routine. Some find they need a slow acting carb before they exercise and others find having carbs on board leads to insulin on board, which leads to lows. Your diabetes may vary, so follow what you need.</p>
 <hr/>
 <h3 id="pre-meal-or-eating-soon">Pre-Meal or Eating Soon<a class="headerlink" href="#pre-meal-or-eating-soon" title="Link to this section for reference">¶</a></h3>
@@ -544,9 +553,10 @@
 </div>
 <p>Some users don't want to pre-bolus, but still would like a small boost of insulin before their meal. You can achieve this by setting a lower temp target than your usual glucose target approximately 1-2 hours before you plan to eat. How much you lower the target glucose will correlate to how much additional insulin will be calculated.</p>
 <p>In preparation for meals, you can use the following temp target features to boost insulin delivery and reduce post-meal spikes:</p>
-<div class="language-text highlight"><pre><span></span><code>- For a small boost in insulin delivery, set a temp target approximately 20-40 mg/dL (approx 1-2 mmol/L) below your target, 1-2 hours prior to meals.
-- Enable [Low Temptarget Lowers Sensitivity](../../configuration/settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) to give yourself more insulin for the upcoming meal and to bring your blood sugar down faster to the pre-meal range. Note: If you use this option, your temp target must be below 100 mg/dL (5.5 mmol/L) to trigger this feature.
-</code></pre></div>
+<ul>
+<li>For a small boost in insulin delivery, set a temp target approximately 20-40 mg/dL (approx 1-2 mmol/L) below your target, 1-2 hours prior to meals.</li>
+<li>Enable <a href="../../../configuration/settings/algorithm/target-behavior/#low-temp-target-lowers-sensitivity">Low Temptarget Lowers Sensitivity</a> to give yourself more insulin for the upcoming meal and to bring your blood sugar down faster to the pre-meal range. Note: If you use this option, your temp target must be below 100 mg/dL (5.5 mmol/L) to trigger this feature.</li>
+</ul>
 <hr/>
 <h3 id="recovery-from-a-low-blood-sugar">Recovery From a Low Blood Sugar<a class="headerlink" href="#recovery-from-a-low-blood-sugar" title="Link to this section for reference">¶</a></h3>
 <div class="admonition tip">
@@ -558,10 +568,11 @@
 </ul>
 </div>
 <p>When you are recovering from a low blood sugar, you especially do not want Trio to over-correct for the rapid rise in glucose readings. To prevent this, users often set a temp target above 100 mg/dL (&gt;5.5 mmol/L) for a duration of 30-60 minutes following a low blood sugar. This will reduce the correction given for the rapid rise in glucose if you do the following:</p>
-<div class="language-text highlight"><pre><span></span><code>- Set a temp target &gt;100 mg/dL (&gt;5.5 mmol/L) that is also higher than your usual target glucose for between 30-60 minutes
-- Turn *OFF* [Allow SMB With High Temptarget](../../configuration/settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget)
-- Turn *ON* [High Temp Target Raises Sensitivity](../../configuration/settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity)
-</code></pre></div>
+<ul>
+<li>Set a temp target &gt;100 mg/dL (&gt;5.5 mmol/L) that is also higher than your usual target glucose for between 30-60 minutes</li>
+<li>Turn <em>OFF</em> <a href="../../../configuration/settings/algorithm/smb-settings/#allow-smb-with-high-temptarget">Allow SMB With High Temptarget</a></li>
+<li>Turn <em>ON</em> <a href="../../../configuration/settings/algorithm/target-behavior/#high-temp-target-raises-sensitivity">High Temp Target Raises Sensitivity</a></li>
+</ul>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
