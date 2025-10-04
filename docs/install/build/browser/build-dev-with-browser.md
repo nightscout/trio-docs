@@ -17,20 +17,20 @@ This page is provided to help people currently running the public beta version o
 ## Update to Trio dev branch from Trio 0.2.x main
 
 !!! important "A Note on Compatibility"
-    Upgrading to Trio 0.5.x from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
+    Upgrading to Trio 0.5 (or newer) from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
 
     **Be Aware**
     
-    * **Once you have upgraded to 0.5.x, going back to 0.2.x is not supported**
+    * **Once you have upgraded to 0.5 (or newer), going back to 0.2.x is not supported**
         * If you choose to downgrade, you will need to set everything up again from scratch
-        * If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:
+        * If you accidentally build 0.2.x over 0.5 (or newer), and then return to 0.5 (or newer):
             * You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app
             * But all your "stuff" is there
             * See [Remove Annoying Message](#remove-annoying-message)
     * Some guardrails have changed compared to 0.2.x
     * **Your saved Temp Targets and Overrides will not be maintained**
-        * The storage method in 0.5.x is different from 0.2.x, so you will need to recreate them
-        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5.x
+        * The storage method in 0.5 and newer is different from 0.2.x, so you will need to recreate them
+        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5 (or newer)
 
 The Browser Build documentation is under construction for Trio version 0.5.x and newer.
 
@@ -44,7 +44,7 @@ This temporary set of instructions is intended for the subset of users who **pre
     If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build — welcome. For the time being, please do this:
 
     * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it — you just want to make sure you can succeed with a Browser Build.
-    * Then return to this page and follow the directions; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5.x.
+    * Then return to this page and follow the directions; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5 (or newer).
 
 #### Transition from Other Apps to Trio Browser Build
 
@@ -53,9 +53,9 @@ This temporary set of instructions is intended for the subset of users who **pre
 
     The steps are summarized in [New Trio Builders](#new-trio-builders).
 
-    If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5.x.
+    If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5 (or newer).
 
-### Summary of Tasks to Build Trio 0.5.x
+### Summary of Tasks to Build Trio `dev`
 
 These steps assume:
 
@@ -69,7 +69,7 @@ These are the new steps for you to follow:
     * [Configure the `dev` branch as default](#configure-the-dev-branch-as-default) (while public beta is ongoing)
 1. [Update <code>Identifiers</code>](#update-identifiers)
 1. [Update <code>Certificates</code>](#update-certificates)
-1. [Build Trio 0.5.x](#build-the-app)
+1. [Build Trio `dev`](#build-the-app)
 
 ### Browser Build Certificate Automation
 
@@ -132,7 +132,7 @@ Each step in the list below matches with the number in the graphic. On the left 
 
 > **This recommendation is only while the public beta is ongoing. Typically only developers configure the `dev` branch as their default branch.**
 
-1. Once you commit to the 0.5.x version of Trio, you want to stay with it
+1. Once you commit to the 0.5.x (or newer) version of Trio, you want to stay with it
 2. By making the `dev` branch your default, you will get automatic build updates weekly
 
 These are the steps to modify the default branch.
@@ -167,7 +167,7 @@ The `dev` branch of the `nightscout/Trio` repository will be updated frequently.
 
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
-* Select the desired branch in the dropdown menu (this graphic shows `main` branch, to get 0.5.x, you must choose `dev` branch)
+* Select the desired branch in the dropdown menu (this graphic shows `main` branch, to get 0.5 (or newer), you must choose `dev` branch)
 * If the message indicates this branch is "behind", tap on the sync `fork` button and then the Update branch button
 
 > ![message displayed when your fork of is behind the origin version](img/github-build-check-fork-status.svg){width="700"}
@@ -184,7 +184,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on <code>2. Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
-    * **To update the <code>Identifiers</code> so you can build the Trio 0.5.x, you must select `dev`**
+    * **To update the <code>Identifiers</code> so you can build the Trio 0.5 (or newer), you must select `dev`**
 1. Tap the green button that says `Run workflow`.
 
     > ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -206,7 +206,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on `3. Create Certificates`
 1. On the right side, click `Run workflow` to show a dropdown menu
     * You will see your default branch (typically `main`)
-    * **Because you plan to build Trio 0.5.x, select `dev`**
+    * **Because you plan to build Trio 0.5 (or newer), select `dev`**
 1. Tap the green button that says `Run workflow`.
 
     > ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -335,15 +335,15 @@ Return to the main set of instructions on this page, [Update <code>Certificates<
 
 ### Remove Annoying Message
 
-If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:
+If you accidentally build 0.2.x over 0.5 (or newer), and then return to 0.5 (or newer):
 
 * You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app
 * But all your "stuff" is there
 
-You see that because some special files are labeled with `.migrated` by 0.5.x when you complete the onboarding action when you upgrade from 0.2.x to 0.5.x.
+You see that because some special files are labeled with `.migrated` by 0.5 (or newer) when you complete the onboarding action when you upgrade from 0.2.x to 0.5 (or newer).
 
-* When you accidentally build 0.2.x over 0.5.x, the old names for the files are recreated
-* When you restore to 0.5.x, it sees the duplicate files, one set has `.migrated` in the file name and one set does not
+* When you accidentally build 0.2.x over 0.5 (or newer), the old names for the files are recreated
+* When you restore to 0.5 (or newer), it sees the duplicate files, one set has `.migrated` in the file name and one set does not
 * You are warned that migration can't happen - but for this case, you don't need it
 
 You can get rid of the annoying message by taking these steps:

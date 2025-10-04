@@ -2,7 +2,7 @@
     
     This documentation is being released while still under construction. Please, keep in mind the following information:
     
-    - This documentation is for the open testing branch of Trio (`dev` branch). Please review this documentation in preparation for testing Trio 0.5.x now that it is publicly available.
+    - This documentation is for the open testing branch of Trio (`dev` branch). Please review this documentation in preparation for testing Trio 0.5 or newer now that it is publicly available.
     - If you are looking for the Trio 0.2.x (`main` branch) documentation, you can still find it here: [0.2.x](0.2.x/index.md)
     - Any page with a ✏️ indicates the information has not yet been updated. The information on those pages should not be referenced at this time.
     - We welcome assistance with proofreading, editing, and updating the information in this documentation. If you would like to contribute to the documentation, please submit issues or PRs [here](https://github.com/nightscout/trio-docs)
