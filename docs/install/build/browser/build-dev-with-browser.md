@@ -17,7 +17,7 @@ This page is provided to help people currently running the public beta version o
 ## Update to Trio dev branch from Trio 0.2.x main
 
 !!! important "A Note on Compatibility"
-    Upgrading to Trio 0.5.x from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
+    Upgrading to Trio 0.5 (or newer) from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
 
     **Be Aware**
     
@@ -29,8 +29,8 @@ This page is provided to help people currently running the public beta version o
             * See [Remove Annoying Message](#remove-annoying-message)
     * Some guardrails have changed compared to 0.2.x
     * **Your saved Temp Targets and Overrides will not be maintained**
-        * The storage method in 0.5.x is different from 0.2.x, so you will need to recreate them
-        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5.x
+        * The storage method in 0.5 and newer is different from 0.2.x, so you will need to recreate them
+        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5 (or newer)
 
 The Browser Build documentation is under construction for Trio version 0.5.x and newer.
 
@@ -55,7 +55,7 @@ This temporary set of instructions is intended for the subset of users who **pre
 
     If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5 (or newer).
 
-### Summary of Tasks to Build Trio 0.5.x
+### Summary of Tasks to Build Trio `dev`
 
 These steps assume:
 
@@ -69,7 +69,7 @@ These are the new steps for you to follow:
     * [Configure the `dev` branch as default](#configure-the-dev-branch-as-default) (while public beta is ongoing)
 1. [Update <code>Identifiers</code>](#update-identifiers)
 1. [Update <code>Certificates</code>](#update-certificates)
-1. [Build Trio 0.5.x](#build-the-app)
+1. [Build Trio `dev`](#build-the-app)
 
 ### Browser Build Certificate Automation
 
@@ -132,7 +132,7 @@ Each step in the list below matches with the number in the graphic. On the left 
 
 > **This recommendation is only while the public beta is ongoing. Typically only developers configure the `dev` branch as their default branch.**
 
-1. Once you commit to the 0.5.x version of Trio, you want to stay with it
+1. Once you commit to the 0.5.x (or newer) version of Trio, you want to stay with it
 2. By making the `dev` branch your default, you will get automatic build updates weekly
 
 These are the steps to modify the default branch.
