@@ -351,9 +351,9 @@
 <nav aria-label="Update to Trio dev branch from Trio 0.2.x main" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#summary-of-tasks-to-build-trio-05x">
+<a class="md-nav__link" href="#summary-of-tasks-to-build-trio-dev">
 <span class="md-ellipsis">
-      Summary of Tasks to Build Trio 0.5.x
+      Summary of Tasks to Build Trio dev
     </span>
 </a>
 </li>
@@ -620,9 +620,9 @@
 <nav aria-label="Update to Trio dev branch from Trio 0.2.x main" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#summary-of-tasks-to-build-trio-05x">
+<a class="md-nav__link" href="#summary-of-tasks-to-build-trio-dev">
 <span class="md-ellipsis">
-      Summary of Tasks to Build Trio 0.5.x
+      Summary of Tasks to Build Trio dev
     </span>
 </a>
 </li>
@@ -787,12 +787,12 @@
 <h2 id="update-to-trio-dev-branch-from-trio-02x-main">Update to Trio dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> from Trio 0.2.x main<a class="headerlink" href="#update-to-trio-dev-branch-from-trio-02x-main" title="Link to this section for reference">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">A Note on Compatibility</p>
-<p>Upgrading to Trio 0.5.x from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.</p>
+<p>Upgrading to Trio 0.5 (or newer) from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.</p>
 <p><strong>Be Aware</strong></p>
 <ul>
-<li><strong>Once you have upgraded to 0.5.x, going back to 0.2.x is not supported</strong><ul>
+<li><strong>Once you have upgraded to 0.5 (or newer), going back to 0.2.x is not supported</strong><ul>
 <li>If you choose to downgrade, you will need to set everything up again from scratch</li>
-<li>If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:<ul>
+<li>If you accidentally build 0.2.x over 0.5 (or newer), and then return to 0.5 (or newer):<ul>
 <li>You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app</li>
 <li>But all your "stuff" is there</li>
 <li>See <a href="#remove-annoying-message">Remove Annoying Message</a></li>
@@ -802,8 +802,8 @@
 </li>
 <li>Some guardrails have changed compared to 0.2.x</li>
 <li><strong>Your saved Temp Targets and Overrides will not be maintained</strong><ul>
-<li>The storage method in 0.5.x is different from 0.2.x, so you will need to recreate them</li>
-<li>Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5.x</li>
+<li>The storage method in 0.5 and newer is different from 0.2.x, so you will need to recreate them</li>
+<li>Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5 (or newer)</li>
 </ul>
 </li>
 </ul>
@@ -819,7 +819,7 @@
 <p>If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-<abbr title="program used to build an app">Xcode</abbr> build to Browser Build — welcome. For the time being, please do this:</p>
 <ul>
 <li>Use the <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> instructions to build Trio 0.2.x and wait for it to show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. Do not install it — you just want to make sure you can succeed with a Browser Build.</li>
-<li>Then return to this page and follow the directions; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5.x.</li>
+<li>Then return to this page and follow the directions; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5 (or newer).</li>
 </ul>
 </div>
 <h4 id="transition-from-other-apps-to-trio-browser-build">Transition from Other Apps to Trio Browser Build<a class="headerlink" href="#transition-from-other-apps-to-trio-browser-build" title="Link to this section for reference">¶</a></h4>
@@ -827,9 +827,9 @@
 <p class="admonition-title">Coming from Other Apps</p>
 <p>If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> to 3 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> and create a Trio App in App Store Connect.</p>
 <p>The steps are summarized in <a href="#new-trio-builders">New Trio Builders</a>.</p>
-<p>If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> first. Then return to this page to update to 0.5.x; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5.x.</p>
+<p>If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: <a href="../../../../0.2.x/operate/build/#build-trio-with-github" target="_blank">0.2.x: Build Trio with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> first. Then return to this page to update to 0.5.x; you will need to run <code>Add Identifiers</code> and <code>Create Certificates</code> again when updating to 0.5 (or newer).</p>
 </div>
-<h3 id="summary-of-tasks-to-build-trio-05x">Summary of Tasks to Build Trio 0.5.x<a class="headerlink" href="#summary-of-tasks-to-build-trio-05x" title="Link to this section for reference">¶</a></h3>
+<h3 id="summary-of-tasks-to-build-trio-dev">Summary of Tasks to Build Trio <code>dev</code><a class="headerlink" href="#summary-of-tasks-to-build-trio-dev" title="Link to this section for reference">¶</a></h3>
 <p>These steps assume:</p>
 <ul>
 <li>You previously built Trio 0.2.x using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Actions (Browser Build)</li>
@@ -844,7 +844,7 @@
 </li>
 <li><a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a></li>
 <li><a href="#update-certificates">Update <code>Certificates</code></a></li>
-<li><a href="#build-the-app">Build Trio 0.5.x</a></li>
+<li><a href="#build-the-app">Build Trio <code>dev</code></a></li>
 </ol>
 <h3 id="browser-build-certificate-automation">Browser Build <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Automation<a class="headerlink" href="#browser-build-certificate-automation" title="Link to this section for reference">¶</a></h3>
 <p>Browser Build <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Automation was added to Trio 0.2.3 - if you have not added the <code>ENABLE_NUKE_CERTS</code> variable, you should add it now. Otherwise, skip ahead to <a href="#configure-fork-with-dev-branch">Configure <code>Fork</code> with <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>.</p>
@@ -899,7 +899,7 @@
 <p><strong>This recommendation is only while the public beta is ongoing. Typically only developers configure the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as their default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</strong></p>
 </blockquote>
 <ol>
-<li>Once you <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to the 0.5.x version of Trio, you want to stay with it</li>
+<li>Once you <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to the 0.5.x (or newer) version of Trio, you want to stay with it</li>
 <li>By making the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> your default, you will get automatic build updates weekly</li>
 </ol>
 <p>These are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
@@ -944,7 +944,7 @@
 <p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the <code>nightscout/Trio</code> <abbr title="contains project files and each file's revision history">repository</abbr> will be updated frequently. This is how you know if your <code>fork</code> needs to be updated as well. As long as the automatic runs are happening weekly for your <abbr title="contains project files and each file's revision history">repository</abbr> — you will not need these manual instructions, unless you want to manually build an update sooner.</p>
 <p>Tap the <code>Code</code> button (upper left) and ensure this <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <code>fork</code> is up to date.</p>
 <ul>
-<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, to get 0.5.x, you must choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, to get 0.5 (or newer), you must choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
 <li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <code>fork</code> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
 </ul>
 <blockquote>
@@ -958,7 +958,7 @@
 <li>On the left side, click on <code>2. Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
 <li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
-<li><strong>To update the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> so you can build the Trio 0.5.x, you must select <code>dev</code></strong></li>
+<li><strong>To update the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> so you can build the Trio 0.5 (or newer), you must select <code>dev</code></strong></li>
 </ul>
 </li>
 <li>
@@ -984,7 +984,7 @@
 <li>On the left side, click on <code>3. Create Certificates</code></li>
 <li>On the right side, click <code>Run workflow</code> to show a dropdown menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
-<li><strong>Because you plan to build Trio 0.5.x, select <code>dev</code></strong></li>
+<li><strong>Because you plan to build Trio 0.5 (or newer), select <code>dev</code></strong></li>
 </ul>
 </li>
 <li>
@@ -1144,15 +1144,15 @@ Warning - there is no hand holding in these directions.</p>
 <p>Return to the main set of instructions on this page, <a href="#update-certificates">Update <code>Certificates</code></a>, and keep going until you have a successful build.</p>
 <h2 id="extra-tips">Extra Tips<a class="headerlink" href="#extra-tips" title="Link to this section for reference">¶</a></h2>
 <h3 id="remove-annoying-message">Remove Annoying Message<a class="headerlink" href="#remove-annoying-message" title="Link to this section for reference">¶</a></h3>
-<p>If you accidentally build 0.2.x over 0.5.x, and then return to 0.5.x:</p>
+<p>If you accidentally build 0.2.x over 0.5 (or newer), and then return to 0.5 (or newer):</p>
 <ul>
 <li>You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app</li>
 <li>But all your "stuff" is there</li>
 </ul>
-<p>You see that because some special files are labeled with <code>.migrated</code> by 0.5.x when you complete the onboarding action when you upgrade from 0.2.x to 0.5.x.</p>
+<p>You see that because some special files are labeled with <code>.migrated</code> by 0.5 (or newer) when you complete the onboarding action when you upgrade from 0.2.x to 0.5 (or newer).</p>
 <ul>
-<li>When you accidentally build 0.2.x over 0.5.x, the old names for the files are recreated</li>
-<li>When you restore to 0.5.x, it sees the duplicate files, one set has <code>.migrated</code> in the file name and one set does not</li>
+<li>When you accidentally build 0.2.x over 0.5 (or newer), the old names for the files are recreated</li>
+<li>When you restore to 0.5 (or newer), it sees the duplicate files, one set has <code>.migrated</code> in the file name and one set does not</li>
 <li>You are warned that migration can't happen - but for this case, you don't need it</li>
 </ul>
 <p>You can get rid of the annoying message by taking these steps:</p>
