@@ -88,15 +88,15 @@ You can personalize the conversion calculation by adjusting the following settin
 
 ## Fat and Protein Delay
 **Default:** _60 min_  
-**Setting Limits:** _60-120 min_  
+**Setting Limits:** _15-120 min_  
 
 This setting defines the time between when you log fat & protein and when the system start delivering insulin for the Fat-Protein Unit Carb Equivalents (FPUs).
 
 This delay accounts for the slower absorption of fat and protein, as calculated by the Warsaw Method, ensuring insulin delivery is properly times to manage glucose spikes caused by high-fat, high-protein meals.  
 
-***Increasing*** this setting may result in ***fewer*** FPU entries with ***larger*** carb values that begin later.
+***Increasing*** this setting results in FPU entries that begin later.
 
-***Decreasing*** this setting may result in ***more*** FPU entries with ***smaller*** carb values that begin earlier. (Note: You cannot decrease below 60 minutes.)  
+***Decreasing*** this setting results in FPU entries that begin earlier.
 
 - - -
 
