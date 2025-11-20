@@ -1,1 +1,135 @@
-<!-- TODO -->
+# Basal Rates
+
+!!! tip "Highlights"
+
+    - Basal rates define your background insulin delivery throughout the day
+    - Different basal rates can be set for different times of day (up to 48 entries with 30-minute intervals)
+    - Trio uses your basal profile as a baseline but adjusts it every loop cycle based on your current glucose
+    - Accurate basal rates are crucial for correct insulin on board (IOB) calculations
+
+## What Are Basal Rates?
+
+Basal rates are the foundational insulin delivery settings in Trio. They represent the amount of rapid-acting insulin delivered continuously throughout the day to manage your glucose levels when you're not eating. Think of basal insulin as the background insulin your body needs to maintain steady glucose levels during fasting periods.
+
+Basal rates are measured in **units per hour (U/hr)**. For example, a basal rate of 0.8 U/hr means you receive 0.8 units of insulin every hour during that time period.
+
+## Why Basal Rates Matter
+
+Your basal rates serve several critical functions in Trio:
+
+1. **Baseline for Algorithm Adjustments**: Trio uses your scheduled basal profile as a starting point, then adjusts it every loop cycle based on your current glucose, trend, and other factors.
+
+2. **Insulin on Board (IOB) Calculations**: Your scheduled basal rate is treated as the "zero point" for IOB. When Trio delivers a temporary basal rate higher than your scheduled rate, your IOB increases. When it delivers a lower temporary basal rate, your IOB decreases (and can even become negative).
+
+3. **Foundation for Autosens**: If enabled, Autosens modifies your basal rates (along with ISF and targets) based on your sensitivity ratio.
+
+4. **Total Daily Dose (TDD) Calculations**: Your basal insulin contributes to your TDD, which Trio uses for Dynamic ISF and other algorithm features.
+
+## How Trio Uses Basal Rates
+
+!!! important
+    Trio does **not** use your scheduled basal rates verbatim. Instead, it uses them as a reference point and replaces them with temporary basal rates every loop cycle based on the OpenAPS algorithm.
+
+Every 5 minutes, Trio's algorithm:
+
+1. Reads your current scheduled basal rate
+2. Applies Autosens adjustments
+3. Calculates the optimal temporary basal rate based on:
+    - Current glucose level
+    - Glucose trend
+    - Insulin on board (IOB)
+    - Carbs on board (COB)
+    - Target glucose
+4. Sets a temporary basal rate (within your safety limits)
+
+This means your actual insulin delivery will vary throughout the day, even if you're fasting, as Trio responds to your glucose patterns in real time.
+
+## Time-Based Basal Schedules
+
+Because insulin needs vary throughout the day due to circadian rhythms, hormone fluctuations, and activity patterns, Trio supports **time-based basal schedules**:
+
+- You can define different basal rates for different times of day
+- Time slots are in 30-minute increments
+- Maximum of 48 entries (covering 24 hours)
+- The first entry must start at 00:00 (midnight)
+- Each rate applies from its start time until the next scheduled rate
+
+**Example Basal Schedule:**
+
+| Time | Basal Rate | Why It Might Vary |
+|------|------------|-------------------|
+| 00:00 | 0.6 U/hr | Lower overnight needs |
+| 03:00 | 0.9 U/hr | Dawn phenomenon (early morning glucose rise) |
+| 09:00 | 0.7 U/hr | Daytime baseline |
+| 17:00 | 0.8 U/hr | Evening increase |
+
+## Basal Rate Ranges
+
+The allowed basal rate range depends on your insulin pump:
+
+| Pump Type | Minimum | Maximum | Increment |
+|-----------|---------|---------|-----------|
+| Dana | 0.0 U/hr | 3.0 U/hr | 0.05 U/hr |
+| Omnipod Dash | 0.0 U/hr | 30.0 U/hr | 0.05 U/hr |
+| Omnipod Eros | 0.05 U/hr | 30.0 U/hr | 0.05 U/hr |
+| Minimed | 0.0 U/hr | 35.0 U/hr | 0.05 U/hr |
+
+!!! warning "Max Basal Safety Limit"
+    In addition to your pump's maximum, Trio has a **Max Basal** safety setting (default: 2.0 U/hr) that prevents the algorithm from setting temporary basal rates above this value. Make sure your Max Basal setting is appropriate for your needs.
+
+## Testing Your Basal Rates
+
+Accurate basal rates are essential for Trio to function optimally. Here are two methods to verify and adjust your basal rates:
+
+### 1. Fasting Tests
+
+The traditional method for testing basal rates:
+
+1. Fast for 4-6 hours (no food at least 2 hours before starting)
+2. Avoid exercise during the test
+3. Monitor your glucose:
+    - **Steady glucose**: Basal rate is accurate
+    - **Rising glucose**: Basal rate is too low (increase it)
+    - **Falling glucose**: Basal rate is too high (decrease it)
+
+Test different times of day separately, as your basal needs vary throughout the day.
+
+### 2. Monitor Your IOB Patterns
+
+Review your insulin on board (IOB) throughout the day when you're not eating:
+
+- **Consistently negative IOB** at certain times → Basal rate may be too low for those hours
+- **Consistently positive IOB** at certain times → Basal rate may be too high for those hours
+- **IOB hovering around zero** → Basal rate is appropriate
+
+## Starting Point for New Users
+
+If you're coming from pump therapy, you can start with your pump's basal settings, but be prepared to adjust them:
+
+- Trio may require different basal rates than traditional pump therapy
+- Monitor your glucose patterns during fasting periods
+- Make gradual adjustments (typically 10-20% changes)
+- Wait several days between adjustments to see the full effect
+
+If you don't have existing basal rates, work with your healthcare provider to establish safe starting values based on your total daily insulin requirements.
+
+## Relationship to Other Settings
+
+Your basal rates interact with other Trio settings:
+
+- **Autosens**: Multiplies your basal rates by the sensitivity ratio (default range: 70-120%)
+- **Dynamic Settings**: When "Adjust Basal" is enabled, Dynamic ISF adjustments also affect basal delivery
+- **SMB (Super Micro Bolus)**: SMB calculations reference your current basal rate (e.g., "50% of current basal rate")
+- **Total Daily Dose**: Basal insulin is a major component of your TDD calculation
+
+## Summary
+
+Basal rates are your baseline insulin delivery schedule that Trio uses as a foundation for its automated insulin delivery. While Trio adjusts these rates dynamically every loop cycle, having accurate scheduled basal rates ensures:
+
+- Correct IOB calculations
+- Effective Autosens adjustments
+- Appropriate algorithm behavior
+- Safe insulin delivery within your physiological needs
+
+Take the time to test and refine your basal rates—they're one of the most important settings for successful automated insulin delivery.
+
