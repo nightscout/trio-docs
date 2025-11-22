@@ -56,23 +56,24 @@ Because insulin needs vary throughout the day due to circadian rhythms, hormone 
 
 **Example Basal Schedule:**
 
-| Time | Basal Rate | Why It Might Vary |
+| Time | Basal Rate<br>(U/hr) | Why It Might Vary |
 |------|------------|-------------------|
-| 00:00 | 0.6 U/hr | Lower overnight needs |
-| 03:00 | 0.9 U/hr | Dawn phenomenon (early morning glucose rise) |
-| 09:00 | 0.7 U/hr | Daytime baseline |
-| 17:00 | 0.8 U/hr | Evening increase |
+| 00:00 | 0.6 | Lower overnight needs |
+| 03:00 | 0.9 | Dawn phenomenon (early morning glucose rise) |
+| 09:00 | 0.7 | Daytime baseline |
+| 17:00 | 0.8 | Evening increase |
 
 ## Basal Rate Ranges
 
 The allowed basal rate range depends on your insulin pump:
 
-| Pump Type | Minimum | Maximum | Increment |
+| Pump Type | Minimum<br>(U/hr) | Maximum<br>(U/hr) | Increment<br>(U/hr) |
 |-----------|---------|---------|-----------|
-| Dana | 0.0 U/hr | 3.0 U/hr | 0.05 U/hr |
-| Omnipod Dash | 0.0 U/hr | 30.0 U/hr | 0.05 U/hr |
-| Omnipod Eros | 0.05 U/hr | 30.0 U/hr | 0.05 U/hr |
-| Minimed | 0.0 U/hr | 35.0 U/hr | 0.05 U/hr |
+| Dana | 0.0 | 3.0 | 0.05 |
+| Omnipod DASH | 0.0 | 30.0 | 0.05 |
+| Omnipod Eros | 0.05 | 30.0 | 0.05 |
+| MiniMed x15 & x22 | 0.0 | 35.0 | 0.05 (0-10)<br>0.1 (10-35) |
+| MiniMed x23 & x54 | 0.0 | 35.0 | 0.025 (0-1)<br>0.05 (1-10)<br>0.1 (10-35) |
 
 !!! warning "Max Basal Safety Limit"
     In addition to your pump's maximum, Trio has a **Max Basal** safety setting (default: 2.0 U/hr) that prevents the algorithm from setting temporary basal rates above this value. Make sure your Max Basal setting is appropriate for your needs.
