@@ -67,26 +67,43 @@ When Autosens is enabled (which it is by default), Trio analyzes 8-24 hours of g
 
 - **Sensitivity Ratio > 1.0**: You're more insulin-resistant → ISF is decreased (more insulin)
 - **Sensitivity Ratio < 1.0**: You're more insulin-sensitive → ISF is increased (less insulin)
-- **Bounds**: Default range is 70-120% (controlled by Autosens Min/Max settings)
+- **Limits**: Default range is 70-120% (controlled by Autosens Min/Max settings)
 
 **Example**:
 
-- Profile ISF: 50 mg/dL/U
-- Autosens Sensitivity Ratio: 1.15 (you're 15% more resistant)
-- Calculated ISF: $\frac{50}{1.15} = 43.5$ mg/dL/U (requires more insulin per unit of glucose)
+??? question "Bill has an ISF of 50 mg/dL/U. Autosens detects resistance and has set his sensitivity ratio to 1.15 (115%). What will Bill's new ISF be?"
+
+    ??? info "Here is the formula:"
+
+        $$
+        \frac{Current\ ISF}{Autosens\ Ratio}
+        $$
+
+    ??? note "Calculate Bill's new ISF:"
+
+        $$
+        \frac{50}{1.15} = 43.5 mg/dL/U
+        $$
+
+    ??? success "Answer"
+        Bill's ISF is adjusted from 50 mg/dL/U to 43.5 mg/dL/U.
+        Bill requires 15% more insulin.
 
 ### 2. Dynamic ISF (Optional)
 
-Dynamic ISF is an advanced feature that adjusts your ISF based on current glucose levels and Total Daily Dose (TDD):
+Dynamic ISF is a more aggressive way to adjust your ISF based on current glucose and/or historical insulin dosing:
 
 - **Requires**: 7 days of TDD data with 85% coverage (minimum 1,715 data points)
 - **Types**: Logarithmic (default) or Sigmoid
 - **Output**: Dynamic Ratio that replaces the Autosens Ratio each loop cycle
 - **Temporary**: The adjustment changes every loop cycle; it's not a permanent ISF change
 
+!!! info
+    There are 2 algorithms available for Dynamic ISF. Logarithmic Dynamic ISF adjusts your ISF based on current glucose levels and Total Daily Dose (TDD). Sigmoid Dynamic ISF adjusts your profile ISF based on how far from your target glucose you currently are.
+
 **Key Parameters**:
 
-- **Adjustment Factor**: (Sigmoid) Controls how aggressively ISF changes. (Logarithmic) Controls what ISF is used at which glucose. (Logarithmic: set to $0.02 \times TDD$, Sigmoid: default is 50%)
+- **Adjustment Factor**: (Sigmoid) Controls how aggressively ISF changes. (Logarithmic) Controls what ISF is used at which glucose. (Logarithmic: should be manually set to $0.02 \times TDD$, Sigmoid: default is 50%)
 - **Autosens Maximum**: Controls the upper limit of the autosens ratio (default: 120%)
 - **Autosens Minimum**: Controls the lower limit of the autosens ratio (default: 70%)
 - **Weighted Average of TDD**: Blends recent (24h) and historical (10-day) insulin use (default: 35%)
@@ -138,8 +155,9 @@ If you're coming from pump therapy, you can transfer your pump's ISF as a starti
 To test if your ISF is accurate:
 
 1. **Choose a testing time**: When you're "stuck" above target (around 150 mg/dL or 8.3 mmol/L) or by bringing yourself to a higher glucose with glucose tabs
-2. **Prepare Trio for testing**: Set MaxIOB to 0
+2. **Prepare Trio for testing**: Set Max IOB to 0 (*Optional*: Set Autosens Max and Min to 100% to avoid Autosens adjustments)
 3. **Give a correction bolus** based on your current ISF
+    - To determine your testing dose, follow the formula $\frac{Current\ Glucose - Target\ Glucose}{ISF}$
 4. **Wait 4 hours** without eating or exercising
 5. **Evaluate the result**:
     - **Still above target after 4 hours**: ISF is too high (too conservative) → DECREASE the ISF value
@@ -161,21 +179,28 @@ ISF interacts with many Trio settings:
 
 ### Autosens Integration
 
-- **Autosens Min/Max**: Bounds how much Autosens can adjust your ISF (default: 70-120%)
+- **Autosens Min/Max**: Limits how much Autosens can adjust your ISF (default: 70-120%)
 - **Sensitivity Ratio**: Applied to ISF and basal rates simultaneously
 
 ### Dynamic ISF Integration
 
 - **Replaces Autosens**: When Dynamic ISF is enabled, it calculates a Dynamic Ratio instead of using the Autosens Ratio
 - **Bounded by Autosens Limits**: Dynamic Ratio is still constrained by Autosens Min/Max settings
-- **Affects Basal** (optional): When "Adjust Basal" is enabled, Dynamic Ratio also modifies basal delivery
+- **Affects Basal** (optional): When "Adjust Basal" is enabled, Dynamic Ratio also modifies the baseline basal rate
 - **Learn how your Profile ISF is used in Dynamic ISF by reviewing the page on [Using Dynamic ISF](../features/dynamic-isf.md)
 
-### [Target Glucose Behavior](../features/temp-targets.md) (when enabled)
+### [Temp Target Behavior](../features/temp-targets.md) (when enabled)
 
 - **High Temp Targets** (>100 mg/dL): Increases effective ISF (less aggressive insulin delivery)
 - **Low Temp Targets** (<100 mg/dL): Decreases effective ISF (more aggressive insulin delivery)
 - **Half Basal Exercise Target**: Default 160 mg/dL; affects ISF scaling during exercise targets
+- Temp Target Behavior settings will replace the Autosens or Dynamic Ratio calculations when enabled.
+
+### Sensitivity Target Behavior
+
+- Adjusts target glucose based on the Sensitivity Ratio calculated by the algorithm
+- `Sensitivity Raises Target` Increases your target glucose when Sensitivity Ratio is calculated less than 100%.
+- `Resistance Lowers Target` decreases your target glucose when Sensitivity Ratio is calculated greater than 100%.
 
 ### Bolus Calculator
 
@@ -184,6 +209,19 @@ ISF is used in the bolus calculator formula:
 $$
 Total\ Insulin = \frac{Current\ BG - Target\ BG}{ISF} + \frac{Carbs}{CR} + Trend\ Correction - IOB
 $$
+
+### Carbs on Board (COB) Calculations
+
+ISF is used to determine how quickly carbs are absorbed in your body and how fast Trio reduces the COB amount.
+
+- ISF is used to determine your Carb Sensitivity Factor (CSF)
+    - **Formula**: $CSF=\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}$
+    - CSF shows how much 1g of carbohydrate will raise your glucose
+- Carb Sensitivity Factor is used to determine how many carbs have been absorbed during that loop cycle
+    - **Formula**: $Increase\ in\ glucose \times CSF$
+    - Your COB will be reduced by this amount*
+
+*If no change is indicated in your glucose readings, your `Min 5m Carb Impact` setting will be used for COB determination
 
 ## Common ISF Mistakes
 
@@ -197,6 +235,7 @@ $$
 
 **Solution**: 
 
+- [**Test your ISF**](#testing-and-adjusting-your-isf)
 - **Autosens or Sigmoid Dynamic ISF**: Increase your profile ISF value (make it less aggressive)
 - **Logarithmic Dynamic ISF**: Re-evaluate your Adjustment Factor and other Dynamic settings using the [desmos graphs](../../configuration/settings/algorithm/dynamic-settings.md/#logarithmic-desmos-graphs)
 
@@ -210,6 +249,7 @@ $$
 
 **Solution**: 
 
+- [**Test your ISF**](#testing-and-adjusting-your-isf)
 - **Autosens or Sigmoid Dynamic ISF**: Decrease your profile ISF value (make it more aggressive)
 - **Logarithmic Dynamic ISF**: Re-evaluate your Adjustment Factor and other Dynamic Settings using the [desmos graphs](../../configuration/settings/algorithm/dynamic-settings.md/#logarithmic-desmos-graphs)
 
@@ -219,7 +259,7 @@ $$
 - Good control at some times of day, poor at others
 - Dawn phenomenon not adequately addressed
 
-**Solution**: Set different ISF values for different times of day
+**Solution**: Set different ISF values for different times of day based on need
 
 ## Best Practices
 
@@ -228,7 +268,7 @@ $$
 3. **Wait between changes**: Give each adjustment 2-3 days to see the full effect
 4. **Test systematically**: Test one time period at a time
 5. **Consider patterns**: Look for consistent trends over multiple days, not single events
-6. **Monitor Autosens Ratio**: Watching how your Autosens Ratio changes or doesn't change can indicate an issue with your Dynamic settings
+6. **Monitor Autosens Ratio**: Watching how your Autosens Ratio changes or doesn't change can indicate an issue with your Dynamic ISF settings
 7. **Work with your healthcare provider**: Especially when making significant changes
 
 ## Summary

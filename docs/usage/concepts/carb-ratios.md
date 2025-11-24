@@ -43,8 +43,9 @@ CR is essential for Trio because it determines:
 
 1. **Meal Bolus Calculations**: How much insulin is needed to cover the carbohydrates you eat
 2. **Carbs on Board (COB) Corrections**: How much insulin is needed for unabsorbed carbs still affecting your glucose
-3. **Bolus Calculator Recommendations**: The carb coverage component of total insulin needed
+3. [**Bolus Calculator Recommendations**](#in-the-bolus-calculator): The carb coverage component of total insulin needed
 4. **Automatic Bolusing**: When SMB (Super Micro Bolus) is enabled, CR affects insulin delivery for meals
+5. [**Carbs on Board (COB) Calculations**](#cob-carbs-on-board): Combined with your current ISF, your CR is used to calculate how many carbs have been absorbed and no longer need to be accounted for in corrections
 
 !!! important "Direct Usage"
     Unlike basal rates and ISF, which are modified by Autosens or Dynamic ISF, **carb ratio is used directly** by Trio's algorithm.
@@ -200,13 +201,14 @@ These factors affect meal timing and absorption, not necessarily your CR itself.
     - Max COB setting (default: 120g) prevents excessive insulin from carb stacking
 
 - CR is used to determine your Carb Sensitivity Factor (CSF)
-    - **Formula**: $\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}$
+    - **Formula**: $CSF=\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}$
     - CSF shows how much 1g of carbohydrate will raise your glucose
 
 - Carb Sensitivity Factor, derived from CR, is used to determine how many carbs have been absorbed during that loop cycle
     - **Formula**: $Increase\ in\ glucose \times CSF$
-    - Your COB will be reduced by this amount
-    - If no change is indicated in your glucose readings, your `Min 5m Carb Impact` setting will be used for COB determination
+    - Your COB will be reduced by this amount*
+
+*If no change is indicated in your glucose readings, your `Min 5m Carb Impact` setting will be used for COB determination
    
 - - -
 

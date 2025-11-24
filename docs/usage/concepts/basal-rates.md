@@ -11,7 +11,7 @@
 
 Basal rates are the foundational insulin delivery settings in Trio. They represent the amount of rapid-acting insulin delivered continuously throughout the day to manage your glucose levels when you're not eating. Think of basal insulin as the background insulin your body needs to maintain steady glucose levels during fasting periods.
 
-Basal rates are measured in **units per hour (U/hr)**. For example, a basal rate of 0.8 U/hr means you receive 0.8 units of insulin every hour during that time period.
+Basal rates are measured in **units per hour (U/hr)**. For example, a basal rate of 0.8 U/hr means you receive 0.8 units of insulin spread out over the course of that hour.
 
 ## Why Basal Rates Matter
 
@@ -120,8 +120,8 @@ Your basal rates interact with other Trio settings:
 
 - **Autosens**: Multiplies your basal rates by the sensitivity ratio (default range: 70-120%)
 - **Dynamic Settings**: When "Adjust Basal" is enabled, Dynamic ISF adjustments also affect basal delivery
-- **SMB (Super Micro Bolus)**: SMB calculations reference your current basal rate (e.g., "50% of current basal rate")
-- **Total Daily Dose**: Basal insulin is a major component of your TDD calculation
+- **SMB (Super Micro Bolus)**: SMB calculations reference your current basal rate for SMB limits (e.g., "50% of current basal rate")
+- **Total Daily Dose**: Basal insulin is included in your TDD calculation along with bolus insulin
 
 ## Summary
 
