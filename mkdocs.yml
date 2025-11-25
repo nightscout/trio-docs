@@ -318,12 +318,13 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
-      - Migration from other OS-AID Systems:
+      - Migration Help:
           - configuration/migration/index.md
-          - Migration from Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
+          - Migration from Trio 0.2.x: configuration/migration/trio-02x-migration.md
           - Migration from iAPS: configuration/migration/iaps-migration.md
-          - Migration from Loop ✏️: configuration/migration/loop-migration.md
-          - Migration from AndroidAPS ✏️: configuration/migration/aaps-migration.md
+          - Migration from Loop: configuration/migration/loop-migration.md
+          - Migration from AndroidAPS: configuration/migration/aaps-migration.md
+          - Migration from Commercial Systems: configuration/migration/commercial-migration.md
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md
