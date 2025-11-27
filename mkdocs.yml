@@ -234,6 +234,7 @@ nav:
           - Using Dynamic ISF: usage/features/dynamic-isf.md
   - Installation and Update:
       - install/index.md
+      - Versions and Releases: install/versions-releases/versions.md
       - Requirements:
           - Compatible Devices:
               - install/build/requirements/devices/index.md

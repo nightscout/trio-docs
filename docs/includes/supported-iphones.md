@@ -5,6 +5,7 @@ Trio is compatible with phones running on **iOS 17 or newer**.
 
 These iPhones are compatible with iOS version 17 and newer:
 
+- iPhone 17, all variants
 - iPhone 16, all variants
 - iPhone 15, all variants
 - iPhone 14, all variants
