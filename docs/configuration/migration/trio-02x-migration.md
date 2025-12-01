@@ -165,8 +165,8 @@ The charts below will help you see which setting names or formats have changed. 
 
 | Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Sensitivity Ratio | *N/A* | **percentage <br> (105%)**| Sensitivity Ratio | *N/A* | **integer <br> (1.05)** | **Format** |
-| Calculated Sensitivity | *N/A* | *integer <br> (45 mg/dL/U / 2.5 mmol/L/U)* | Calculated Sensitivity | *N/A* | *integer <br> (45)* | -- |
+| [Sensitivity Ratio](../settings/algorithm/autosens.md#sensitivity-ratio) | *N/A* | **percentage <br> (105%)**| Autosens Ratio | *N/A* | **integer <br> (1.05)** | **Format** |
+| [Calculated Sensitivity](../settings/algorithm/autosens.md#calculated-sensitivity) | *N/A* | *integer <br> (45 mg/dL/U / 2.5 mmol/L/U)* | Calculated Sensitivity | *N/A* | *integer <br> (45)* | -- |
 | [**Autosens Max**](../settings/algorithm/autosens.md#autosens-max) | **dial** | **percentage <br> (120%)** | **Autosens Maximum** | **typed value** | **integer <br> (1.2)** | **Name <br> Entry Type <br> Format** |
 | [**Autosens Min**](../settings/algorithm/autosens.md#autosens-min) | **dial** | **percentage <br> (70%)** | **Autosens Minimum** | **typed value** | **integer <br> (0.7)** | **Name <br> Entry Type <br> Format** |
 | [Rewind Resets Autosens](../settings/algorithm/autosens.md#rewind-resets-autosens) | *toggle* | *(On/Off)* | Rewind Resets Autosens | *toggle* | *(On/Off)* | -- |
@@ -176,11 +176,11 @@ The charts below will help you see which setting names or formats have changed. 
 | Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | (On/Off)* | Enable SMB Always | *toggle* | (On/Off)* | ***Now disables unused SMB settings*** |
-| Enable SMB With COB | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| Enable SMB with Temptarget | *toggle* | *(On/Off)* | Enable SMB with Temptarget | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| Enable SMB After Carbs | *toggle* | *(On/Off)* | Enable SMB After Carbs | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| **Enable SMB With High Glucose** | *toggle* | *(On/Off)* | **Enable SMB With High BG** | *toggle* | *(On/Off)* | **Name <br> *Now only appears if Enable SMB Always is OFF*** |
-| **High Glucose Target** | **dial** | **integer <br> (110 mg/dL / 6.1 mmol/L)** | **... When Blood Glucose is Over (mg/dl)** | **typed value** | **integer <br> (110)** | **Name <br> Entry Type <br> Format <br> *Now only appears when Enable SMB With High Glucose is ON*** |
+| [Enable SMB With COB](../settings/algorithm/smb-settings.md#enable-smb-with-cob) | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
+| [Enable SMB with Temptarget](../settings/algorithm/smb-settings.md#enable-smb-with-temptarget) | *toggle* | *(On/Off)* | Enable SMB with Temptarget | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
+| [Enable SMB After Carbs](../settings/algorithm/smb-settings.md#enable-smb-after-carbs) | *toggle* | *(On/Off)* | Enable SMB After Carbs | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
+| **[Enable SMB With High Glucose](../settings/algorithm/smb-settings.md#enable-smb-with-high-glucose)** | *toggle* | *(On/Off)* | **Enable SMB With High BG** | *toggle* | *(On/Off)* | **Name <br> *Now only appears if Enable SMB Always is OFF*** |
+| **[High Glucose Target](../settings/algorithm/smb-settings.md#high-glucose-target)** | **dial** | **integer <br> (110 mg/dL / 6.1 mmol/L)** | **... When Blood Glucose is Over (mg/dl)** | **typed value** | **integer <br> (110)** | **Name <br> Entry Type <br> Format <br> *Now only appears when Enable SMB With High Glucose is ON*** |
 | [Allow SMB with High Temptarget](../settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) | *toggle* | *(On/Off)* | Allow SMB With High Temptarget | *toggle* | *(On/Off)* | -- |
 | [Enable UAM](../settings/algorithm/smb-settings.md#enable-uam) | *toggle* | *(On/Off)* | Enable UAM | *toggle* | *(On/Off)* | -- |
 | [Max SMB Basal Minutes](../settings/algorithm/smb-settings.md#max-smb-basal-minutes) | **dial** | *integer <br> (30 min)* | Max SMB Basal Minutes | **typed value** | *integer <br> (30)* | **Entry Type** |
@@ -205,19 +205,19 @@ The charts below will help you see which setting names or formats have changed. 
 
 | Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Max Daily Safety Multiplier | **dial** | **percentage <br> (300%)** | Max Daily Safety Multiplier | **typed value** | **integer <br> (3)** | **Entry Type <br> Format** |
-| Current Basal Safety Multiplier | **dial** | **percentage <br> (400%)** | Current Basal Safety Multiplier | **typed value** | **integer <br> (4)** | **Entry Type <br> Format** |
-| Duration of Insulin Action | **dial** | *integer <br> (10 hr)* | Duration of Insulin Action | **typed value** | *integer <br> (10)* | **Entry Type** |
-| Use Custom Peak Time | *toggle* | *(On/Off)* | Use Custom Peak Time | *toggle* | *(On/Off)* | -- |
-| Insulin Peak Time | **dial** | *integer <br> (65 min)* | Insulin Peak Time | **typed value** | *integer <br> (65) | **Entry Type** |
-| Skip Neutral Temps | *toggle* | *(On/Off)* | Skip Neutral Temps | *toggle* | *(On/Off)* | -- |
-| Unsuspend If No Temp | *toggle* | *(On/Off)* | Unsuspend If No Temp | *toggle* | *(On/Off)* | -- |
-| **SMB Delivery Ratio** | **dial** | **percentage <br> (50%)** | **SMB DeliveryRatio** | **typed value** | **integer <br> (0.5)** | **Name <br> Entry Type <br> Format** |
-| SMB Interval | **dial** | *integer <br> (3 min)* | SMB Interval | **typed value** | *integer <br> (3)* | **Entry Type** |
-| **Min 5m Carb Impact** | **dial** | *integer <br> (8 mg/dL)* | **Min 5m Carbimpact** | **typed value** | *integer <br> (8)* | **Name <br> Entry Type** |
-| **Remaining Carbs Percentage** | **dial** | **percentage <br> (100%)** | **Remaining Carbs Fraction** | **typed value** | **integer <br> (1)** | **Name <br> Entry Type <br> Format** |
-| Remaining Carbs Cap | **dial** | *integer <br> (90g) | Remaining Carbs Cap | **typed value** | *integer <br> (90) | **Entry Type** |
-| **Noisy CGM Target Increase** | **dial** | **percentage <br> (130%)** | **Noisy CGM Target Multiplier** | **typed value** | **integer <br> (1.3)** | **Name <br> Entry Type <br> Format** |
+| [Max Daily Safety Multiplier](../settings/algorithm/additionals.md#max-daily-safety-multiplier) | **dial** | **percentage <br> (300%)** | Max Daily Safety Multiplier | **typed value** | **integer <br> (3)** | **Entry Type <br> Format** |
+| [Current Basal Safety Multiplier](../settings/algorithm/additionals.md#current-basal-safety-multiplier) | **dial** | **percentage <br> (400%)** | Current Basal Safety Multiplier | **typed value** | **integer <br> (4)** | **Entry Type <br> Format** |
+| [Duration of Insulin Action](../settings/algorithm/additionals.md#duration-of-insulin-action) | **dial** | *integer <br> (10 hr)* | Duration of Insulin Action | **typed value** | *integer <br> (10)* | **Entry Type** |
+| [Use Custom Peak Time](../settings/algorithm/additionals.md#use-custom-peak-time) | *toggle* | *(On/Off)* | Use Custom Peak Time | *toggle* | *(On/Off)* | -- |
+| [Insulin Peak Time](../settings/algorithm/additionals.md#insulin-peak-time) | **dial** | *integer <br> (65 min)* | Insulin Peak Time | **typed value** | *integer <br> (65) | **Entry Type** |
+| [Skip Neutral Temps](../settings/algorithm/additionals/.md#skip-neutral-temps) | *toggle* | *(On/Off)* | Skip Neutral Temps | *toggle* | *(On/Off)* | -- |
+| [Unsuspend If No Temp](../settings/algorithm/additionals.md#unsuspend-if-no-temp) | *toggle* | *(On/Off)* | Unsuspend If No Temp | *toggle* | *(On/Off)* | -- |
+| [**SMB Delivery Ratio**](../settings/algorithm/additionals.md#smb-delivery-ratio) | **dial** | **percentage <br> (50%)** | **SMB DeliveryRatio** | **typed value** | **integer <br> (0.5)** | **Name <br> Entry Type <br> Format** |
+| [SMB Interval](../settings/algorithm/additionals.md#smb-interval) | **dial** | *integer <br> (3 min)* | SMB Interval | **typed value** | *integer <br> (3)* | **Entry Type** |
+| [**Min 5m Carb Impact**](../settings/algorithm/additionals.md#min-5m-carb-impact) | **dial** | *integer <br> (8 mg/dL)* | **Min 5m Carbimpact** | **typed value** | *integer <br> (8)* | **Name <br> Entry Type** |
+| [**Remaining Carbs Percentage**](../settings/algorithm/additionals.md#remaining-carbs-percentage) | **dial** | **percentage <br> (100%)** | **Remaining Carbs Fraction** | **typed value** | **integer <br> (1)** | **Name <br> Entry Type <br> Format** |
+| [Remaining Carbs Cap](../settings/algorithm/additionals.md#remaining-carbs-cap) | **dial** | *integer <br> (90g) | Remaining Carbs Cap | **typed value** | *integer <br> (90) | **Entry Type** |
+| [**Noisy CGM Target Increase**](../settings/algorithm/additionals.md#noisy-cgm-target-increase) | **dial** | **percentage <br> (130%)** | **Noisy CGM Target Multiplier** | **typed value** | **integer <br> (1.3)** | **Name <br> Entry Type <br> Format** |
 
 - - -
 
