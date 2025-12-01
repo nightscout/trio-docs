@@ -324,7 +324,7 @@ nav:
           - Migration from iAPS: configuration/migration/iaps-migration.md
           - Migration from Loop: configuration/migration/loop-migration.md
           - Migration from AndroidAPS: configuration/migration/aaps-migration.md
-          - Migration from Commercial Systems: configuration/migration/commercial-migration.md
+
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md
