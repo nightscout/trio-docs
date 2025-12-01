@@ -13,7 +13,7 @@
 ## What to Expect After Install
 
 - **Brand New Interface**  
-    A completely redesigned UI across the app and watchOS—clean, modern, and easier to use. Learn more in the [User Interface Walk-Through](../../usage/interface.md).
+    A completely redesigned UI across the app, including the Watch app — clean, modern, and easier to use. Learn more in the [User Interface Walk-Through](../../usage/interface.md).
 - **All-New Onboarding**  
     Step-by-step setup for new and returning users with smart defaults and safety checks. ***All users* will need to complete the new Onboarding Wizard after upgrading**. Learn more in the [New User Setup Guide](../new-user-setup.md).
 - **Rewritten Backend & Data Storage**  
@@ -26,8 +26,8 @@
     More accurate, simple dosing with clearer breakdowns and improved safety logic. Learn more about the [Bolus Calculator](../../usage/features/bolus-calculator.md).
 - **Reworked Statistics**  
     All in-app statistics and graphs have been overhauled and extended. Learn more about the [New Statistics Screen](../../usage/features/statistics.md).
-- **Live Activity Widget**  
-    Real-time loop data with optional chart—configurable and tailored to your preferences. Learn more about the [Live Activity Widget](../settings/notifications/live-activity.md).
+- **Improved Live Activity Widget**  
+    Real-time loop data with optional chart—configurable and tailored to your preferences — visible on lockscreen, Watch, and CarPlay. Learn more about the [Live Activity Widget](../settings/notifications/live-activity.md).
 - **Live Data on Watch**  
     Highly customizable “contact widgets” for glucose, IOB, COB, and more, always visible. Learn more about the [Contacts Configuration on Apple Watch](../settings/devices/smart-watch.md#contacts-configuration).
 - **All-New Integrations**  
@@ -35,11 +35,11 @@
 - **Safety Improvements**  
     Dynamic ISF guarding (7-day required data), safer edge-case behavior, and improved support for high-insulin-resistance setups.
 - **Updated Language & Translations**  
-    Clear, friendly, and easy-to-understand. Fully localized with ongoing help from our Crowdin contributors (translators still welcome).
+    Clear, friendly, and easy-to-understand. Fully localized with ongoing help from our Crowdin contributors ([translators still welcome](https://crowdin.triodocs.org)).
 - **Now Requires Loop Follow v4.0 or Later**  
     More info at [LoopFollowDocs](https://loopfollowdocs.org/remote/remote-control-trio/)
 - **Autotune Removed**  
-    Autotune has not performed as it was intended for years with the addition of Dynamic ISF and the change from a single ISF and CR in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a new Autotune-like feature can be built.
+    For years, Autotune has not performed as it was intended to with the addition of Dynamic ISF and many users using multiple ISF and CR in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a until a new Autotune-like feature can be built.
 
 ### What *Will* Transfer from Trio 0.2 to Trio 0.7?
 
@@ -50,9 +50,10 @@
 
 ### What *Will Not* Transfer from Trio 0.2 to Trio 0.7?
 
-- Algorithm settings, dynamic ISF and some integrations (like Nightscout) will reset.
+- Algorithm settings, Dynamic ISF and some integrations (like Nightscout) will reset.
 - Treatment history older then 24 hours will not transfer
-- Historical data used for Dynamic ISF and Autosens will not transfer
+- Historical data used for Dynamic ISF and Statistics
+- Override, Temp Target, and Meal Presets
 
 !!! important "Upgrading is a one-way street"
     Once you upgrade to v0.7.0, going back to v0.2.x is not supported.
