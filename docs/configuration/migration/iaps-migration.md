@@ -52,7 +52,7 @@ The charts below will help you see which setting names or formats have changed, 
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | [**Maximum Insulin On Board (IOB)**](../settings/therapy/units-limits.md#max-iob) | integer <br> (2 U) | Settings → Therapy → Units and Limits → Maximum Insulin On Board (IOB) | **Max IOB** | integer <br> (2) | Settings → OpenAPS → Max IOB |
 | [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | integer <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Max Bolus** | integer <br> (10) | Settings → Pump Settings → Max Bolus |
-| [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | integer <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Max Basal** | integer <br> (2) | Settings → Pump Settings → Max Bolus |
+| [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | integer <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Max Basal** | integer <br> (2) | Settings → Pump Settings → Max Basal |
 | [**Maximum Carbs on Board (COB)**](../settings/therapy/units-limits.md#max-cob) | integer <br> (120 g) | Settings → Therapy → Units and Limits → Maximum Carbs on Board (COB) | **Max COB** | integer <br> (120) | Settings → OpenAPS → Max COB |
 | [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | integer <br> (60 mg/dL) | Settings → Therapy → Units and Limits → Minimum Safety Threshold | **Threshold Setting** | integer <br> (60) | Settings → Dynamic ISF → Threshold Setting |
 
