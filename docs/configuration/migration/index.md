@@ -1,4 +1,4 @@
-# Migration Help
+# Migration Guides
 
 ![Trio Logo](../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 Welcome to the Migration homepage! Here you will find information on what to expect when starting on Trio. Here you will also find guidance on locating and identifying the necessary settings needed to start using Trio. Select the app you are moving from in the list below to get started.
