@@ -141,61 +141,55 @@ The charts below will help you see which setting names or formats have changed. 
 
 ### [Therapy Settings](../settings/therapy/index.md)
 
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | *schedule* | *decimal <br> (100 mg/dL / 5.5 mmol/L)* | **Target Glucose** | *schedule* | *decimal <br> (100 mg/dL / 5.5 mmol/L)* | **Name** |
-| [Basal Rates](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | *schedule* | *decimal <br> (1 U/hr)* | Basal Profile | *schedule* | *decimal <br> (1 U/hr)* | -- |
+| <span style="color: #ff8340;">[**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio)</span> | *schedule* | *decimal <br> (100 mg/dL / 5.5 mmol/L)* | <span style="color: #ff8340;">**Target Glucose**</span> | *schedule* | *decimal <br> (100 / 5.5)* | <span style="color: #ff8340;">**Name**</span> |
+| [Basal Rates](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | *schedule* | *decimal <br> (1.0 U/hr)* | Basal Profile | *schedule* | *decimal <br> (1.0 U/hr)* | -- |
 | [Carb Ratios](../settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio) | *schedule* | *decimal <br> (10 g/U)* | Carb Ratios | *schedule* | *decimal <br> (10 g/U)* | -- |
-| [Insulin Sensitivities](../settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | *schedule* | *decimal <br> (54 mg/dL/U / 3.0 mmol/L/U)* | Insulin Sensitivities | *schedule* | *decimal <br> (54 mg/dL/U / 3.0 mmol/L/U)* | -- |
-
-#### [Units and Limits](../settings/therapy/units-limits.md)
-
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Glucose Units | *selection* | *label <br> (mg/dL or mmol/L)* | Glucose Units | *selection* | *label <br> (mg/dL or mmol/L)* | -- |
-| [**Maximum Insulin on Board (IOB)**](../settings/therapy/units-limits.md#max-iob) | **dial** | *decimal <br> (2 U)* | **Max IOB** | **typed value** | *decimal <br> (2)* | **Name <br> Entry Type** |
-| [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | **dial** | *decimal <br> (10 U)* | **Max Bolus** | **typed value** | *decimal <br> (10)* | **Name <br> Entry Type** |
-| [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | **dial** | *decimal <br> (2 U/hr)* | **Max Basal** | **typed value** | *decimal <br> (2)* | **Name <br> Entry Type** |
-| [**Maximum Carbs on Board (COB)**](../settings/therapy/units-limits.md#max-cob) | **dial** | *decimal <br> (120 g)* | **Max COB** | **typed value** | *decimal <br> (120)* | **Name <br> Entry Type** |
-| [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | **dial** | **decimal <br> (60 mg/dL / 3.3 mmol/L)** | **Threshold Setting** | **typed value** | *decimal <br> (60)* | **Name <br> Entry Type <br> mmol/L Option** |
+| [Insulin Sensitivities](../settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | *schedule* | *decimal <br> (54 mg/dL/U / 3.0 mmol/L/U)* | Insulin Sensitivities | *schedule* | *decimal <br> (54 / 3.0)* | -- |
+| [**Maximum Insulin on Board (IOB)**](../settings/therapy/units-limits.md#max-iob) | ***dial*** | *decimal <br> (2 U)* | <span style="color: #ff8340;">**Max IOB**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (2)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | ***dial*** | *decimal <br> (10 U)* | <span style="color: #ff8340;">**Max Bolus**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (10)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | ***dial*** | *decimal <br> (2 U/hr)* | <span style="color: #ff8340;">**Max Basal**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (2)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Maximum Carbs on Board (COB)**](../settings/therapy/units-limits.md#max-cob) | ***dial*** | *decimal <br> (120 g)* | <span style="color: #ff8340;">**Max COB**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (120)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | ***dial*** | *decimal <br> (60 mg/dL / 3.3 mmol/L)* | <span style="color: #ff8340;">**Threshold Settings**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (60)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
 
 ### [Algorithm Settings](../settings/algorithm/index.md)
 
 #### [Autosens](../settings/algorithm/autosens.md)
 
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Sensitivity Ratio](../settings/algorithm/autosens.md#sensitivity-ratio) | *N/A* | **percentage <br> (105%)**| Autosens Ratio | *N/A* | **decimal <br> (1.05)** | **Format** |
+| [Sensitivity Ratio](../settings/algorithm/autosens.md#sensitivity-ratio) | *N/A* | ***percentage <br> (105%)***| Autosens Ratio | *N/A* | <span style="color: #ff8340;">***decimal <br> (1.05)***</span> | <span style="color: #ff8340;">***Format***</span> |
 | [Calculated Sensitivity](../settings/algorithm/autosens.md#calculated-sensitivity) | *N/A* | *decimal <br> (45 mg/dL/U / 2.5 mmol/L/U)* | Calculated Sensitivity | *N/A* | *decimal <br> (45)* | -- |
-| [**Autosens Max**](../settings/algorithm/autosens.md#autosens-max) | **dial** | **percentage <br> (120%)** | **Autosens Maximum** | **typed value** | **decimal <br> (1.2)** | **Name <br> Entry Type <br> Format** |
-| [**Autosens Min**](../settings/algorithm/autosens.md#autosens-min) | **dial** | **percentage <br> (70%)** | **Autosens Minimum** | **typed value** | **decimal <br> (0.7)** | **Name <br> Entry Type <br> Format** |
+| [**Autosens Max**](../settings/algorithm/autosens.md#autosens-max) | ***dial*** | ***percentage <br> (120%)*** | <span style="color: #ff8340;">**Autosens Maximum**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (1.2)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
+| [**Autosens Min**](../settings/algorithm/autosens.md#autosens-min) | ***dial*** | ***percentage <br> (70%)*** | <span style="color: #ff8340;">**Autosens Minimum**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (0.7)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
 | [Rewind Resets Autosens](../settings/algorithm/autosens.md#rewind-resets-autosens) | *toggle* | *(On/Off)* | Rewind Resets Autosens | *toggle* | *(On/Off)* | -- |
 
 #### [SMB (Super Micro Bolus)](../settings/algorithm/smb-settings.md)
 
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | (On/Off)* | Enable SMB Always | *toggle* | (On/Off)* | ***Now disables unused SMB settings*** |
-| [Enable SMB With COB](../settings/algorithm/smb-settings.md#enable-smb-with-cob) | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| [Enable SMB with Temptarget](../settings/algorithm/smb-settings.md#enable-smb-with-temptarget) | *toggle* | *(On/Off)* | Enable SMB with Temptarget | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| [Enable SMB After Carbs](../settings/algorithm/smb-settings.md#enable-smb-after-carbs) | *toggle* | *(On/Off)* | Enable SMB After Carbs | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
-| **[Enable SMB With High Glucose](../settings/algorithm/smb-settings.md#enable-smb-with-high-glucose)** | *toggle* | *(On/Off)* | **Enable SMB With High BG** | *toggle* | *(On/Off)* | **Name <br> *Now only appears if Enable SMB Always is OFF*** |
-| **[High Glucose Target](../settings/algorithm/smb-settings.md#high-glucose-target)** | **dial** | **decimal <br> (110 mg/dL / 6.1 mmol/L)** | **... When Blood Glucose is Over (mg/dl)** | **typed value** | **decimal <br> (110)** | **Name <br> Entry Type <br> Format <br> *Now only appears when Enable SMB With High Glucose is ON*** |
+| [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | (On/Off)* | Enable SMB Always | *toggle* | (On/Off)* | <span style="color: #ff8340;">***Now disables unused SMB settings***</span> |
+| [Enable SMB With COB](../settings/algorithm/smb-settings.md#enable-smb-with-cob) | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
+| [Enable SMB with Temptarget](../settings/algorithm/smb-settings.md#enable-smb-with-temptarget) | *toggle* | *(On/Off)* | Enable SMB with Temptarget | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
+| [Enable SMB After Carbs](../settings/algorithm/smb-settings.md#enable-smb-after-carbs) | *toggle* | *(On/Off)* | Enable SMB After Carbs | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
+| **[Enable SMB With High Glucose](../settings/algorithm/smb-settings.md#enable-smb-with-high-glucose)** | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**Enable SMB With High BG**</span> | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**Name <br> *Now only appears if Enable SMB Always is OFF***</span> |
+| **[High Glucose Target](../settings/algorithm/smb-settings.md#high-glucose-target)** | **dial** | *decimal <br> (110 mg/dL / 6.1 mmol/L)* | <span style="color: #ff8340;">**... When Blood Glucose is Over (mg/dl)**</span> | <span style="color: #ff8340;">**typed value**</span> | *decimal <br> (110)* | <span style="color: #ff8340;">**Name <br> Entry Type <br> Format <br> *Now only appears when Enable SMB With High Glucose is ON***</span> |
 | [Allow SMB with High Temptarget](../settings/algorithm/smb-settings.md#allow-smb-with-high-temptarget) | *toggle* | *(On/Off)* | Allow SMB With High Temptarget | *toggle* | *(On/Off)* | -- |
 | [Enable UAM](../settings/algorithm/smb-settings.md#enable-uam) | *toggle* | *(On/Off)* | Enable UAM | *toggle* | *(On/Off)* | -- |
-| [Max SMB Basal Minutes](../settings/algorithm/smb-settings.md#max-smb-basal-minutes) | **dial** | *decimal <br> (30 min)* | Max SMB Basal Minutes | **typed value** | *decimal <br> (30)* | **Entry Type** |
-| [**Max UAM Basal Minutes**](../settings/algorithm/smb-settings.md#max-uam-basal-minutes) | **dial** | *decimal <br> (30 min)* | **Max UAM SMB Basal Minutes** | **typed value** | *decimal <br> (30)* | **Name <br> Entry Type** |
-| [**Max Allowed Glucose Rise for SMB**](../settings/algorithm/smb-settings.md#max-allowed-glucose-rise-for-smb) | **dial** | **percentage <br> (20%)** | **Max Delta-BG Threshold SMB** | **typed value** | **decimal <br> (0.2)** | **Name <br> Entry Type <br> Format** |
+| [Max SMB Basal Minutes](../settings/algorithm/smb-settings.md#max-smb-basal-minutes) | ***dial*** | *decimal <br> (30 min)* | Max SMB Basal Minutes | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (30)* | <span style="color: #ff8340;">***Entry Type***</span> |
+| [**Max UAM Basal Minutes**](../settings/algorithm/smb-settings.md#max-uam-basal-minutes) | ***dial*** | *decimal <br> (30 min)* | <span style="color: #ff8340;">**Max UAM SMB Basal Minutes**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (30)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Max Allowed Glucose Rise for SMB**](../settings/algorithm/smb-settings.md#max-allowed-glucose-rise-for-smb) | ***dial*** | ***percentage <br> (20%)*** | <span style="color: #ff8340;">**Max Delta-BG Threshold SMB**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (0.2)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
 
 #### [Target Behavior](../settings/algorithm/target-behavior.md)
 
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [**High Temp Target Raises Sensitivity**](../settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity) | *toggle* | *(On/Off)* | **High Temptarget Raises Sensitivity/Exercise Mode** | *toggle* | *(On/Off)* | **Name** |
-| [**Low Temp Target Lowers Sensitivity**](../settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) | *toggle* | *(On/Off)* | **Low Temptarget Lowers Sensitivity** | *toggle* | *(On/Off)* | **Name** |
+| [**High Temp Target Raises Sensitivity**](../settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity) | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**High Temptarget Raises Sensitivity/Exercise Mode**</span> | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**Name**</span> |
+| [**Low Temp Target Lowers Sensitivity**](../settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**Low Temptarget Lowers Sensitivity**</span> | *toggle* | *(On/Off)* | <span style="color: #ff8340;">**Name**</span> |
 | [Sensitivity Raises Target](../settings/algorithm/target-behavior.md#sensitivity-raises-target) | *toggle* | *(On/Off)* | Sensitivity Raises Target | *toggle* | *(On/Off)* | -- |
 | [Resistance Lowers Target](../settings/algorithm/target-behavior.md#resistance-lowers-target) | *toggle* | *(On/Off)* | Resistance Lowers Target | *toggle* | *(On/Off)* | -- |
-| [Half Basal Exercise Target](../settings/algorithm/target-behavior.md#half-basal-exercise-target) | **dial** | *decimal <br> (160 mg/dL / 8.9 mmol/L)* | Half Basal Exercise Target | **typed value** | *decimal <br> (160)* | **Entry Type** |
+| [Half Basal Exercise Target](../settings/algorithm/target-behavior.md#half-basal-exercise-target) | ***dial*** | *decimal <br> (160 mg/dL / 8.9 mmol/L)* | Half Basal Exercise Target | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (160)* | <span style="color: #ff8340;">***Entry Type***</span> |
 
 #### [Additionals](../settings/algorithm/additionals.md)
 
@@ -203,21 +197,21 @@ The charts below will help you see which setting names or formats have changed. 
     The settings in this section typically do not require any modifications.  
     Do not alter them without a solid understanding of what you are changing and the full impact it will have on the algorithm.
 
-| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Max Daily Safety Multiplier](../settings/algorithm/additionals.md#max-daily-safety-multiplier) | **dial** | **percentage <br> (300%)** | Max Daily Safety Multiplier | **typed value** | **decimal <br> (3)** | **Entry Type <br> Format** |
-| [Current Basal Safety Multiplier](../settings/algorithm/additionals.md#current-basal-safety-multiplier) | **dial** | **percentage <br> (400%)** | Current Basal Safety Multiplier | **typed value** | **decimal <br> (4)** | **Entry Type <br> Format** |
-| [Duration of Insulin Action](../settings/algorithm/additionals.md#duration-of-insulin-action) | **dial** | *decimal <br> (10 hr)* | Duration of Insulin Action | **typed value** | *decimal <br> (10)* | **Entry Type** |
+| [Max Daily Safety Multiplier](../settings/algorithm/additionals.md#max-daily-safety-multiplier) | ***dial*** | ***percentage <br> (300%)*** | Max Daily Safety Multiplier | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (3)***</span> | <span style="color: #ff8340;">***Entry Type <br> Format***</span> |
+| [Current Basal Safety Multiplier](../settings/algorithm/additionals.md#current-basal-safety-multiplier) | ***dial*** | ***percentage <br> (400%)*** | Current Basal Safety Multiplier | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (4)***</span> | <span style="color: #ff8340;">***Entry Type <br> Format***</span> |
+| [Duration of Insulin Action](../settings/algorithm/additionals.md#duration-of-insulin-action) | ***dial*** | *decimal <br> (10 hr)* | Duration of Insulin Action | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (10)* | <span style="color: #ff8340;">***Entry Type***</span> |
 | [Use Custom Peak Time](../settings/algorithm/additionals.md#use-custom-peak-time) | *toggle* | *(On/Off)* | Use Custom Peak Time | *toggle* | *(On/Off)* | -- |
-| [Insulin Peak Time](../settings/algorithm/additionals.md#insulin-peak-time) | **dial** | *decimal <br> (65 min)* | Insulin Peak Time | **typed value** | *decimal <br> (65)* | **Entry Type** |
-| [Skip Neutral Temps](../settings/algorithm/additionals.md#skip-neutral-temps) | *toggle* | *(On/Off)* | Skip Neutral Temps | *toggle* | *(On/Off)* | -- |
+| [Insulin Peak Time](../settings/algorithm/additionals.md#insulin-peak-time) | ***dial*** | *decimal <br> (65 min)* | Insulin Peak Time | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (65) | <span style="color: #ff8340;">***Entry Type***</span> |
+| [Skip Neutral Temps](../settings/algorithm/additionals/.md#skip-neutral-temps) | *toggle* | *(On/Off)* | Skip Neutral Temps | *toggle* | *(On/Off)* | -- |
 | [Unsuspend If No Temp](../settings/algorithm/additionals.md#unsuspend-if-no-temp) | *toggle* | *(On/Off)* | Unsuspend If No Temp | *toggle* | *(On/Off)* | -- |
-| [**SMB Delivery Ratio**](../settings/algorithm/additionals.md#smb-delivery-ratio) | **dial** | **percentage <br> (50%)** | **SMB DeliveryRatio** | **typed value** | **decimal <br> (0.5)** | **Name <br> Entry Type <br> Format** |
-| [SMB Interval](../settings/algorithm/additionals.md#smb-interval) | **dial** | *decimal <br> (3 min)* | SMB Interval | **typed value** | *decimal <br> (3)* | **Entry Type** |
-| [**Min 5m Carb Impact**](../settings/algorithm/additionals.md#min-5m-carb-impact) | **dial** | *decimal <br> (8 mg/dL)* | **Min 5m Carbimpact** | **typed value** | *decimal <br> (8)* | **Name <br> Entry Type** |
-| [**Remaining Carbs Percentage**](../settings/algorithm/additionals.md#remaining-carbs-percentage) | **dial** | **percentage <br> (100%)** | **Remaining Carbs Fraction** | **typed value** | **decimal <br> (1)** | **Name <br> Entry Type <br> Format** |
-| [Remaining Carbs Cap](../settings/algorithm/additionals.md#remaining-carbs-cap) | **dial** | *decimal <br> (90g) | Remaining Carbs Cap | **typed value** | *decimal <br> (90) | **Entry Type** |
-| [**Noisy CGM Target Increase**](../settings/algorithm/additionals.md#noisy-cgm-target-increase) | **dial** | **percentage <br> (130%)** | **Noisy CGM Target Multiplier** | **typed value** | **decimal <br> (1.3)** | **Name <br> Entry Type <br> Format** |
+| [**SMB Delivery Ratio**](../settings/algorithm/additionals.md#smb-delivery-ratio) | ***dial*** | ***percentage <br> (50%)*** | <span style="color: #ff8340;">**SMB DeliveryRatio**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (0.5)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
+| [SMB Interval](../settings/algorithm/additionals.md#smb-interval) | ***dial*** | *decimal <br> (3 min)* | SMB Interval | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (3)* | <span style="color: #ff8340;">***Entry Type***</span> |
+| [**Min 5m Carb Impact**](../settings/algorithm/additionals.md#min-5m-carb-impact) | ***dial*** | *decimal <br> (8 mg/dL)* | <span style="color: #ff8340;">**Min 5m Carbimpact**</span> | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (8)* | <span style="color: #ff8340;">**Name <br> *Entry Type***</span> |
+| [**Remaining Carbs Percentage**](../settings/algorithm/additionals.md#remaining-carbs-percentage) | ***dial*** | ***percentage <br> (100%)*** | <span style="color: #ff8340;">**Remaining Carbs Fraction**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (1)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
+| [Remaining Carbs Cap](../settings/algorithm/additionals.md#remaining-carbs-cap) | ***dial*** | *decimal <br> (90g)* | Remaining Carbs Cap | <span style="color: #ff8340;">***typed value***</span> | *decimal <br> (90)* | <span style="color: #ff8340;">***Entry Type***</span> |
+| [**Noisy CGM Target Increase**](../settings/algorithm/additionals.md#noisy-cgm-target-increase) | ***dial*** | ***percentage <br> (130%)*** | <span style="color: #ff8340;">**Noisy CGM Target Multiplier**</span> | <span style="color: #ff8340;">***typed value***</span> | <span style="color: #ff8340;">***decimal <br> (1.3)***</span> | <span style="color: #ff8340;">**Name <br> *Entry Type <br> Format***</span> |
 
 - - -
 
