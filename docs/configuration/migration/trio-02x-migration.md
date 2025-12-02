@@ -21,17 +21,17 @@
 - **Remote Commands & iOS Shortcuts**  
     Trigger actions like carb entry, bolus, overrides or temporary targets [remotely](../settings/features/remote-control.md) or through [shortcut automation](../settings/features/shortcuts.md).
 - **Smarter Settings**  
-    Helpful hints, guidance sheets, and a built-in search function—just like iOS Settings. Information on the updated Trio Settings can be found [here](../settings/index.md).
+    Helpful hints, guidance sheets, and a built-in search function — just like iOS Settings. Information on the updated Trio Settings can be found [here](../settings/index.md).
 - **New Bolus Calculator**  
-    More accurate, simple dosing with clearer breakdowns and improved safety logic. Learn more about the [Bolus Calculator](../../usage/features/bolus-calculator.md).
+    More accurate and simple dosing with clearer breakdowns and improved safety logic. Learn more about the [Bolus Calculator](../../usage/features/bolus-calculator.md).
 - **Reworked Statistics**  
     All in-app statistics and graphs have been overhauled and extended. Learn more about the [New Statistics Screen](../../usage/features/statistics.md).
 - **Improved Live Activity Widget**  
-    Real-time loop data with optional chart—configurable and tailored to your preferences — visible on lockscreen, Watch, and CarPlay. Learn more about the [Live Activity Widget](../settings/notifications/live-activity.md).
+    Real-time loop data with optional chart — configurable and tailored to your preferences — visible on lockscreen, Watch, and CarPlay. Learn more about the [Live Activity Widget](../settings/notifications/live-activity.md).
 - **Live Data on Watch**  
     Highly customizable “contact widgets” for glucose, IOB, COB, and more, always visible. Learn more about the [Contacts Configuration on Apple Watch](../settings/devices/smart-watch.md#contacts-configuration).
 - **All-New Integrations**  
-    Nightscout, Tidepool, and Apple Health connections have been rebuilt from scratch—faster and more stable. More on integrations [here](../settings/services/index.md).
+    Nightscout, Tidepool, and Apple Health connections have been rebuilt from scratch — faster and more stable. More on integrations [here](../settings/services/index.md).
 - **Safety Improvements**  
     Dynamic ISF guarding (7-day required data), safer edge-case behavior, and improved support for high-insulin-resistance setups.
 - **Updated Language & Translations**  
@@ -43,14 +43,13 @@
 
 ### What *Will* Transfer from Trio 0.2 to Trio 0.5 (or higher)?
 
-- Your pump and CGM connections will be brought over automatically
+- Current pump and CGM sessions (but always a good idea to have a backup pump ready whenever updating, just in case)
 - 24 hr treatment history
-- Core therapy settings (basal rates, ISF, CR)
-- Pump and CGM connections
+- Core therapy settings (glucose targets, basal rates, ISF, CR)
 
 ### What *Will Not* Transfer from Trio 0.2 to Trio 0.5 (or higher)?
 
-- Algorithm settings, Dynamic ISF and some integrations (like Nightscout) will reset.
+- Algorithm settings, Dynamic ISF, and some integrations (like Nightscout) will reset.
 - Treatment history older then 24 hours will not transfer
 - Historical data used for Dynamic ISF and Statistics
 - Override, Temp Target, and Meal Presets
@@ -65,10 +64,10 @@
 Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (or higher) in the first 3 hours:
 
 #### Dynamic ISF & Autosens
-Dynamic ISF is disabled for the first **7 days**. Autosens will also require **24 hours** before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
+Dynamic ISF is disabled for the first **7 days**. *You may need to enter carbs and bolus during this time if you aren't already doing so.* Autosens will be used instead (but there's a long standing issue with autosens where it will likely be stuck at 1 when there are carb entries or SMBs.)
 
 #### Onboarding Wizard
-Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on facebook or discord if you have any questions.
+Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
 
 #### Test Settings
 This is a great time to test your settings so you can start fresh on solid footing.
@@ -79,7 +78,7 @@ Use this time to learn the [New User Interface](../../usage/interface.md).
 !!! warning "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
-    - [More information on simulator use](../settings/devices/pump/?h=simulator#pump-simulator)
+    - [More information on simulator use](../settings/devices/pump.md/?h=simulator#pump-simulator)
 
 - - -
 
