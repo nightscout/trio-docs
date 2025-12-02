@@ -169,7 +169,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 | Trio 0.5+ Name | *Entry Type* | *Format <br> (example)* | Trio 0.2 Name | *Entry Type* | *Format <br> (example)* | <span style="color: #ff8340;">Change</span> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | (On/Off)* | Enable SMB Always | *toggle* | (On/Off)* | <span style="color: #ff8340;">***Now disables unused SMB settings***</span> |
+| [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | *(On/Off)* | Enable SMB Always | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now disables unused SMB settings***</span> |
 | [Enable SMB With COB](../settings/algorithm/smb-settings.md#enable-smb-with-cob) | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
 | [Enable SMB with Temptarget](../settings/algorithm/smb-settings.md#enable-smb-with-temptarget) | *toggle* | *(On/Off)* | Enable SMB with Temptarget | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
 | [Enable SMB After Carbs](../settings/algorithm/smb-settings.md#enable-smb-after-carbs) | *toggle* | *(On/Off)* | Enable SMB After Carbs | *toggle* | *(On/Off)* | <span style="color: #ff8340;">***Now only appears if Enable SMB Always is OFF***</span> |
