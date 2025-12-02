@@ -41,14 +41,14 @@
 - **Autotune Removed**  
     For years, Autotune has not performed as it was intended to with the addition of Dynamic ISF and many users using multiple ISF and CR in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a until a new Autotune-like feature can be built.
 
-### What *Will* Transfer from Trio 0.2 to Trio 0.7?
+### What *Will* Transfer from Trio 0.2 to Trio 0.5 (or higher)?
 
 - Your pump and CGM connections will be brought over automatically
 - 24 hr treatment history
 - Core therapy settings (basal rates, ISF, CR)
 - Pump and CGM connections
 
-### What *Will Not* Transfer from Trio 0.2 to Trio 0.7?
+### What *Will Not* Transfer from Trio 0.2 to Trio 0.5 (or higher)?
 
 - Algorithm settings, Dynamic ISF and some integrations (like Nightscout) will reset.
 - Treatment history older then 24 hours will not transfer
@@ -56,13 +56,13 @@
 - Override, Temp Target, and Meal Presets
 
 !!! important "Upgrading is a one-way street"
-    Once you upgrade to v0.7.0, going back to v0.2.x is not supported.
+    Once you upgrade to v0.5.0 (or higher), going back to v0.2.x is not supported.
 
 - - -
 
 ## What to Expect in Your First 3 Hours
 
-Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.7 in the first 3 hours:
+Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (or higher) in the first 3 hours:
 
 #### Dynamic ISF & Autosens
 Dynamic ISF is disabled for the first **7 days**. Autosens will also require **24 hours** before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
@@ -85,7 +85,7 @@ Use this time to learn the [New User Interface](../../usage/interface.md).
 
 ## What to Expect After 24 Hours
 
-A full day on Trio 0.7! Congratulations! Here's what to look for:
+A full day on Trio 0.5 (or higher)! Congratulations! Here's what to look for:
 
 #### Autosens
 Autosens now has enough data to make adjustments
@@ -105,7 +105,7 @@ Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf
 
 ## What to Expect After 7 Days
 
-You've completed a week on Trio 0.7! Here's what you should see:
+You've completed a week on Trio 0.5 (or higher)! Here's what you should see:
 
 #### Dynamic ISF
 Dynamic ISF now has enough data. You now have the option to enable it.
@@ -125,12 +125,12 @@ Dynamic CR has been removed due to no known scientific validity to CR changing w
 
 - - -
 
-## Changes from Trio 0.2 Settings to Trio 0.7 Settings
+## Changes from Trio 0.2 Settings to Trio 0.5 (or higher) Settings
 
 When you update from Trio 0.2, some of your settings might look different even if they have the same or similar names. That’s because we changed some of the numbers from decimals to percentages to make them easier to understand.
 
 !!! example
-    In Trio 0.2 you might set "Autosens Maximum" to 1.2. In Trio 0.7, we show "Autosens Max" as 120%, which means the same thing, but is easier to understand.
+    In Trio 0.2 you might set "Autosens Maximum" to 1.2. In Trio 0.5 (or higher), we show "Autosens Max" as 120%, which means the same thing, but is easier to understand.
 
 Some setting names have also changed. We did this to make things less confusing. To help you out, we added definitions right in the app. Just tap the question mark icon next to any setting to see what it means. Healthcare Professionals and users can also find those settings and explanations [in this section of the docs](../settings/index.md).
 
@@ -142,7 +142,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 ### [Therapy Settings](../settings/therapy/index.md)
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | *schedule* | *integer <br> (100 mg/dL / 5.5 mmol/L)* | **Target Glucose** | *schedule* | *integer <br> (100 / 5.5)* | **Name** |
 | [Basal Rates](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | *schedule* | *integer <br> (1.0 U/hr)* | Basal Profile | *schedule* | *integer <br> (1.0 U/hr)* | -- |
@@ -151,7 +151,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 #### [Units and Limits](../settings/therapy/units-limits.md)
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Glucose Units | *selection* | *label <br> (mg/dL or mmol/L)* | Glucose Units | *selection* | *label <br> (mg/dL or mmol/L)* | -- |
 | [**Maximum Insulin on Board (IOB)**](../settings/therapy/units-limits.md#max-iob) | **dial** | *integer <br> (2 U)* | **Max IOB** | **typed value** | *integer <br> (2)* | **Name <br> Entry Type** |
@@ -164,7 +164,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 #### [Autosens](../settings/algorithm/autosens.md)
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Sensitivity Ratio](../settings/algorithm/autosens.md#sensitivity-ratio) | *N/A* | **percentage <br> (105%)**| Autosens Ratio | *N/A* | **integer <br> (1.05)** | **Format** |
 | [Calculated Sensitivity](../settings/algorithm/autosens.md#calculated-sensitivity) | *N/A* | *integer <br> (45 mg/dL/U / 2.5 mmol/L/U)* | Calculated Sensitivity | *N/A* | *integer <br> (45)* | -- |
@@ -174,7 +174,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 #### [SMB (Super Micro Bolus)](../settings/algorithm/smb-settings.md)
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Enable SMB Always](../settings/algorithm/smb-settings.md#enable-smb-always) | *toggle* | (On/Off)* | Enable SMB Always | *toggle* | (On/Off)* | ***Now disables unused SMB settings*** |
 | [Enable SMB With COB](../settings/algorithm/smb-settings.md#enable-smb-with-cob) | *toggle* | *(On/Off)* | Enable SMB With COB | *toggle* | *(On/Off)* | ***Now only appears if Enable SMB Always is OFF*** |
@@ -190,7 +190,7 @@ The charts below will help you see which setting names or formats have changed. 
 
 #### [Target Behavior](../settings/algorithm/target-behavior.md)
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [**High Temp Target Raises Sensitivity**](../settings/algorithm/target-behavior.md#high-temp-target-raises-sensitivity) | *toggle* | *(On/Off)* | **High Temptarget Raises Sensitivity/Exercise Mode** | *toggle* | *(On/Off)* | **Name** |
 | [**Low Temp Target Lowers Sensitivity**](../settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) | *toggle* | *(On/Off)* | **Low Temptarget Lowers Sensitivity** | *toggle* | *(On/Off)* | **Name** |
@@ -204,7 +204,7 @@ The charts below will help you see which setting names or formats have changed. 
     The settings in this section typically do not require any modifications.  
     Do not alter them without a solid understanding of what you are changing and the full impact it will have on the algorithm.
 
-| Trio 0.7 Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
+| Trio 0.5+ Name | Entry Type | Format <br> (example) | Trio 0.2 Name | Entry Type | Format <br> (example) | Change |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Max Daily Safety Multiplier](../settings/algorithm/additionals.md#max-daily-safety-multiplier) | **dial** | **percentage <br> (300%)** | Max Daily Safety Multiplier | **typed value** | **integer <br> (3)** | **Entry Type <br> Format** |
 | [Current Basal Safety Multiplier](../settings/algorithm/additionals.md#current-basal-safety-multiplier) | **dial** | **percentage <br> (400%)** | Current Basal Safety Multiplier | **typed value** | **integer <br> (4)** | **Entry Type <br> Format** |
@@ -227,7 +227,7 @@ The charts below will help you see which setting names or formats have changed. 
 ### Entry Type: Dial vs Typed Entry
 
 - A typed entry can result in mistyping a value and could result in unintended consequences within the algorithm.
-- A dial ensures the setting is within the guardrails of the algorithm. Both Trio 0.2 and 0.7 have guardrails, however when typed in 0.2, those values were ignored and the closest valid number was used. This means, if you set a DIA of 2, Trio 0.2 would use a DIA of 5 without notifying you.
+- A dial ensures the setting is within the guardrails of the algorithm. Both Trio 0.2 and 0.5 (or higher) have guardrails, however when typed in 0.2, those values were ignored and the closest valid number was used. This means, if you set a DIA of 2, Trio 0.2 would use a DIA of 5 without notifying you.
 
 ### Format: Percentage vs Integer
 
