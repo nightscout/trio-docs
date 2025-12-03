@@ -25,23 +25,6 @@
 
 Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the first 3 hours:
 
-#### Dynamic ISF
-Dynamic ISF is disabled for the first **7 days**. 
-
-!!!warning "Dynamic ISF & Closed Loop"
-    Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
-
-#### Autosens
-Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
-
-!!!warning "Initial Limitation with Autosens"
-    There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.
-    
-    - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
-    - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
-    
-    Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
-    
 #### Onboarding Wizard
 Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
 
@@ -51,7 +34,24 @@ Your Loop settings may be a great starting point for Trio, but often times they 
 #### User Interface
 Use this time to learn the [User Interface](../../usage/interface.md).
 
-!!! warning "Do not use a pump or cgm simulator"
+#### Dynamic ISF
+Dynamic ISF is disabled for the first **7 days**. 
+
+!!! warning "Dynamic ISF & Closed Loop"
+    Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
+
+#### Autosens
+Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
+
+!!! warning "Initial Limitation with Autosens"
+    There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.
+    
+    - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
+    - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
+    
+    Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
+
+!!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
     - [More information on simulator use](../settings/devices/pump/?h=simulator#pump-simulator)
@@ -102,7 +102,7 @@ This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic
 
 ## Convert Loop Settings to Trio Settings
 
-When you move your settings from Loop to Trio, you will notice there are significantly more settings in Trio than in Loop. Below are the 
+When you start on Trio, you will notice there are significantly more settings than in Loop. A few can be manually added. Below are the settings that are in both Loop and Trio as well as where to locate them in each app.
 
 ### [Therapy Settings](../settings/therapy/index.md)
 | Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
