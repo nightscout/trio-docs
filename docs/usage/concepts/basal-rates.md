@@ -15,6 +15,9 @@ Basal rates are measured in **units per hour (U/hr)**. For example, a basal rate
 
 ## Why Basal Rates Matter
 
+!!! tip "Basal is Key"
+    Basal rates are the foundation of the Trio algorithm. Before testing any other core settings, ensure your basal rates are set appropriately.
+
 Your basal rates serve several critical functions in Trio:
 
 1. **Baseline for Algorithm Adjustments**: Trio uses your scheduled basal profile as a starting point, then adjusts it every loop cycle based on your current glucose, trend, and other factors.

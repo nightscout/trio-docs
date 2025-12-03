@@ -222,11 +222,13 @@ nav:
   - Usage:
       - usage/index.md
       - User Interface: usage/interface.md
-      - Concepts and Features:
+      - Core Concepts:
           - usage/concepts/index.md
-          - 🔵 Basal Rates: usage/concepts/basal-rates.md
-          - 🟢 Insulin Sensitivities: usage/concepts/isf.md
-          - 🟣 Carb Ratios: usage/concepts/carb-ratios.md
+          - Basal Rates: usage/concepts/basal-rates.md
+          - Insulin Sensitivities: usage/concepts/isf.md
+          - Carb Ratios: usage/concepts/carb-ratios.md
+      - Features:
+          - usage/features/index.md
           - Overrides: usage/features/overrides.md
           - Temporary Targets: usage/features/temp-targets.md
           - Statistics: usage/features/statistics.md
