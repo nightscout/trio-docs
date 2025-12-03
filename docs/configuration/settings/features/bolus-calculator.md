@@ -96,3 +96,13 @@ This setting is useful for meals that require more insulin up front, for example
 <!-- TODO: Add Bill example using 0.8 current basal rate and 200% super bolus percentage -->
 
 - - -
+
+## Very Low Glucose Warning
+**Default:** _Off_
+
+This setting triggers a confirmation dialog if you attempt to bolus when glucose is <54 mg/dL (3 mmol/L). It is also triggered when the lowest forecasted glucose (minPredBG) is <54 mg/dL (3 mmol/L).
+
+!!! note
+    The forecast used for this warning does not include carbs or insulin that are entered for the current bolus calculation.
+    
+- - -

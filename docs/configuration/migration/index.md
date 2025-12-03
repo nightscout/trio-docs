@@ -10,6 +10,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 -   __[Trio 0.2.x/Main Branch](trio-02x-migration.md)__
 -   __[iAPS](iaps-migration.md)__
 -   __[Loop ✏️](loop-migration.md)__
--   __[AndroidAPS ✏️](aaps-migration.md)__
+-   __[AndroidAPS](aaps-migration.md)__
 
 </div>

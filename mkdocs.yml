@@ -283,7 +283,7 @@ nav:
               - Migrating from Trio 0.2.x: configuration/migration/trio-02x-migration.md
               - Migrating from iAPS: configuration/migration/iaps-migration.md
               - Migrating from Loop ✏️: configuration/migration/loop-migration.md
-              - Migrating from AndroidAPS ✏️: configuration/migration/aaps-migration.md
+              - Migrating from AndroidAPS: configuration/migration/aaps-migration.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
