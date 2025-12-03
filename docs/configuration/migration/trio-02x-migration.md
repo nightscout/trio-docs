@@ -2,13 +2,15 @@
 
 !!! danger "Please Read This Page **BEFORE** Updating"
     Do not update without reading this documentation or you risk finding many unexpected changes that can easily be resolved with prior planning.
-    
+
+<!--    
 !!! tip "Browser Build Users"
     Automatic builds for Browser Builders are disabled when updating from 0.2 to 0.7.
     You will have to...
     
     - manually update your fork of the Trio Main branch
     - manually run Action 4: Build in the workflow
+-->
     
 ## What to Expect After Install
 
@@ -63,19 +65,16 @@
 
 Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (or higher) in the first 3 hours:
 
-#### Dynamic ISF & Autosens
-Dynamic ISF is disabled for the first **7 days**. *You may need to enter carbs and bolus during this time if you aren't already doing so.* Autosens will be used instead (but there's a long standing issue with autosens where it will likely be stuck at 1 when there are carb entries or SMBs.)
+- **Dynamic ISF & Autosens**  
+    Dynamic ISF is disabled for the first **7 days**. *You may need to enter carbs and bolus during this time if you aren't already doing so.* Autosens will be used instead (but there's a long standing issue with autosens where it will likely be stuck at 1 when there are carb entries or SMBs.)
+- **Onboarding Wizard**  
+    Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
+- **Test Settings**  
+    This is a great time to test your settings so you can start fresh on solid footing.
+- **New User Interface**  
+    Use this time to learn the [New User Interface](../../usage/interface.md).
 
-#### Onboarding Wizard
-Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
-
-#### Test Settings
-This is a great time to test your settings so you can start fresh on solid footing.
-
-#### New User Interface
-Use this time to learn the [New User Interface](../../usage/interface.md).
-
-!!! warning "Do not use a pump or cgm simulator"
+!!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
     - [More information on simulator use](../settings/devices/pump.md/?h=simulator#pump-simulator)
@@ -86,19 +85,17 @@ Use this time to learn the [New User Interface](../../usage/interface.md).
 
 A full day on Trio 0.5 (or higher)! Congratulations! Here's what to look for:
 
-#### Autosens
-Autosens now has enough data to make adjustments
+- **Autosens**  
+    Autosens now has enough data to make adjustments
+- **Review & Test Settings**  
+    This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days
 
-#### Review & Test Settings
-This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days
+    - [Basal Testing](../../usage/concepts/basal-rates.md)
+    - [ISF Testing](../../usage/concepts/isf.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
-- [Basal Testing](../../usage/concepts/basal-rates.md)
-- [ISF Testing](../../usage/concepts/isf.md)
-- [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
-
-#### Review Dynamic ISF Documentation
-
-Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
+- **Review Dynamic ISF Documentation**  
+    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
@@ -106,21 +103,21 @@ Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf
 
 You've completed a week on Trio 0.5 (or higher)! Here's what you should see:
 
-#### Dynamic ISF
-Dynamic ISF now has enough data. You now have the option to enable it if you would like to.
+- **Dynamic ISF**  
+    Dynamic ISF now has enough data. You now have the option to enable it if you would like to.
 
-#### Can't Enable Dynamic ISF?
-If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
+!!! warning "Can't Enable Dynamic ISF?"
+    If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
 
-- You were not in closed loop for the full 7 days.
-    - *Trio needs 7 days of closed loop to safely enable Dynamic ISF*
-- You had significant loss of connection with your CGM and/or pump. 
-    - *Check your last week of Looping Statistics in the Stats tab in the Trio app. You need both <b>7 days</b> and an <b>85% success rate</b> to enable Dynamic ISF*. 
-- You enabled a significant number of manual Temp Basals with long run times.
-    - *When a manual Temp Basal is set, Trio is unable to complete a loop cycle for the duration of the temp basal. This will cause a reduction in your success rate. If you do not have <b>85% success rate</b> for <b>7 days</b>, you cannot enable Dynamic ISF.*
+    - You were not in closed loop for the full 7 days.
+        - *Trio needs 7 days of closed loop to safely enable Dynamic ISF*
+    - You had significant loss of connection with your CGM and/or pump. 
+        - *Check your last week of Looping Statistics in the Stats tab in the Trio app. You need both <b>7 days</b> and an <b>85% success rate</b> to enable Dynamic ISF*. 
+    - You enabled a significant number of manual Temp Basals with long run times.
+        - *When a manual Temp Basal is set, Trio is unable to complete a loop cycle for the duration of the temp basal. This will cause a reduction in your success rate. If you do not have <b>85% success rate</b> for <b>7 days</b>, you cannot enable Dynamic ISF.*
 
-#### Dynamic CR
-Dynamic CR has been removed due to no known scientific validity to CR changing with an increase or decrease in glucose.
+- **Dynamic CR**
+    Dynamic CR has been removed due to no known scientific validity to CR changing with an increase or decrease in glucose.
 
 - - -
 
