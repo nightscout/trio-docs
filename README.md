@@ -3,15 +3,15 @@ Repository for [Trio documentation (under development)](https://triodocs.org)
 ## Install
 
 - [**Clone**](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
-- Install **Python  3**
+- Install **Python  3.12**
   For help getting *Python* installed, see "[Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/)".
 - Install a **Python Virtual Environment**.  
   In this example, I use [`venv`](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment), but use whichever you prefer.  
   ```shell
   cd trio-docs # where you cloned the trio-docs repository
   
-  # Creates a virtual environment using Python 3 in the venv folder
-  python3 -m venv venv 
+  # Creates a virtual environment using Python 3.12 in the venv folder
+  python3.12 -m venv venv 
 
   # Activate the virtual environment
   # IMPORTANT: Run the next line **each time** you start a new shell window/tab
