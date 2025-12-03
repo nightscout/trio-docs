@@ -311,7 +311,7 @@ These are the <code>Identifiers</code> created by running the *GitHub* action "<
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
-| Trio | XC org nightscout TEAMID trio | <code>org.nightscout.TEAMID.trio.trio-app-group</code> |
+| Trio | XC org nightscout TEAMID trio | <code>org.nightscout.TEAMID.trio</code> |
 | Trio LiveActivity | - | <code>org.nightscout.TEAMID.trio.LiveActivity</code> |
 | Trio Watch App | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp</code> |
 | Trio Watch Complication | XC IDENTIFIER | <code>org.nightscout.TEAMID.trio.watchkitapp.TrioWatchComplication</code> |
