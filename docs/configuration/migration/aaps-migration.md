@@ -59,7 +59,7 @@ A full day on Trio! Congratulations! Here's what to look for:
 
 - **Autosens**  
     Autosens now has enough data to make adjustments.
-- **Review & Test Settings**
+- **Review & Test Settings**  
     This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days:
 
     - [Basal Testing](../../usage/concepts/basal-rates.md)

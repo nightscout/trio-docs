@@ -15,8 +15,8 @@
 - **In-App Statistics**  
     There are multiple statistics and graphs available in the Trio app. Click the link to learn more about the [Statistics](../../usage/features/statistics.md) available in the app.
 - **Important Re: Autotune**  
-    Autotune has not performed as it was intended for years with the addition of Dynamic ISF and the change from a single ISF and CR in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a new Autotune-like feature can be built.
-- **No Dynamic Carb Ratio**
+    Autotune has not performed well with the addition of Dynamic ISF and many users using multiple ISF and CR in Therapy settings. For this reason, we have removed it until an improved Autotune-like feature is built.
+- **No Dynamic Carb Ratio**  
     There is no evidence to support that your carb ratio varies as ISF does with increasing or decreasing glucose levels. For this reason, Dynamic CR has not been implemented in Trio 0.5+.
 
 - - -
@@ -31,7 +31,7 @@ Here are some things to keep in mind after moving from iAPS to Trio v0.5+ in the
     !!!warning "Dynamic ISF & Closed Loop"
         Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
 
-- **Autosens**
+- **Autosens**  
     Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
 
     !!!warning "Initial Limitation with Autosens"
@@ -69,7 +69,7 @@ A full day on Trio! Congratulations! Here's what to look for:
     - [ISF Testing](../../usage/concepts/isf.md)
     - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
 
-- **Review Dynamic ISF Documentation**
+- **Review Dynamic ISF Documentation**  
     Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
@@ -104,16 +104,20 @@ When you move your settings from iAPS to Trio, some of them might look different
 
 !!! example
     In iAPS you might set "Autosens Maximum" to 1.2. In Trio, we show "Autosens Max" as 120%, which means the same thing, but is easier to understand.
+    
+    ![Percentage vs Decimal](img/percentage-vs-decimal-Trio.png){width="350"}
+    {align="center"}
+    
+    !!! tip
+        - To convert a value from a decimal to a percentage, multiply it by 100.  
+        - To convert from a percentage to a decimal, divide by 100.
+
 
 Some setting names have also changed. We did this to make things less confusing. To help you out, we added definitions right in the app. Just tap the question mark icon next to any setting to see what it means. Healthcare Professionals and users can also find those settings and explanations [in this section of the docs](../settings/index.md).
 
 In iAPS, some settings had limits (called guardrails) that weren’t always visible, and others had no limits at all. In Trio, we’ve made those guardrails easier to see and added a few more where needed, to help prevent settings that could lead to unsafe or unexpected outcomes.
 
 The charts below will help you see which setting names or formats have changed, and where to find them in both iAPS and Trio.
-
-!!! tip
-    To convert a value from a decimal to a percentage, multiply it by 100.  
-    To convert from a percentage to a decimal, divide by 100.
 
 ### [Therapy Settings](../settings/therapy/index.md)
 | Trio Name | Setting Format <br> (example) | Location in Trio | iAPS Name | Setting Format <br> (example) | Location in iAPS |
