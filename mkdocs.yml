@@ -68,8 +68,8 @@ theme:
 plugins:
   - redirects:
       redirect_maps:
-        'startup-guide.md': 'configuration/new-user-setup.md'
-        'startup-guide/index.md': 'configuration/new-user-setup.md'
+        "startup-guide.md": "configuration/new-user-setup.md"
+        "startup-guide/index.md": "configuration/new-user-setup.md"
   - open-in-new-tab
   - macros
   - exporter:
@@ -91,6 +91,10 @@ plugins:
           icon: material-file-download-outline
           enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
           attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - glightbox:
+      zoomable: false
+      skip_classes:
+        - skip-lightbox
   - htmlproofer:
       enabled: !ENV [CHECK_BROKEN_LINKS, False]
       raise_error_after_finish: true
@@ -124,6 +128,7 @@ extra_css:
   - assets/stylesheets/extra.css
 
 extra_javascript:
+  - assets/javascripts/disable-instant-if-translated.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/mkdocs-exporter.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
@@ -222,10 +227,11 @@ nav:
           - 🔵 Basal Rates ✏️: usage/concepts/basal-rates.md
           - 🟢 Insulin Sensitivities ✏️: usage/concepts/isf.md
           - 🟣 Carb Ratios ✏️: usage/concepts/carb-ratios.md
-          - Overrides ✏️: usage/features/overrides.md
-          - Temporary Targets ✏️: usage/features/temp-targets.md
+          - Overrides: usage/features/overrides.md
+          - Temporary Targets: usage/features/temp-targets.md
           - Statistics ✏️: usage/features/statistics.md
-          - Bolus Calculator ✏️: usage/features/bolus-calculator.md
+          - Bolus Calculator: usage/features/bolus-calculator.md
+          - Using Dynamic ISF: usage/features/dynamic-isf.md
   - Installation and Update:
       - install/index.md
       - Requirements:
@@ -246,6 +252,7 @@ nav:
               - Build Trio with Xcode: install/build/mac/build.md
               - Build Errors: install/build/mac/build-errors.md
               - Update Trio with Xcode: install/build/mac/update.md
+          - Build Beta with Browser: install/build/browser/build-dev-with-browser.md
           - Build with Browser ✏️:
               - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
               - Create GitHub Account ✏️: install/build/browser/create-github-account.md
@@ -260,7 +267,7 @@ nav:
               - Install Trio from TestFlight ✏️: install/build/browser/install-from-testflight.md
               - Browser Build Errors ✏️: install/build/browser/browser-build-errors.md
               - Customizations ✏️: install/build/browser/browser-customizations.md
-              - Update with Browser ✏️: install/build/browser/update-with-browser.md
+              - Update with Browser ✏️: install/build/browser/browser-update.md
       - Upgrade ✏️: install/upgrade.md
       - Companion Apps:
           - install/ecosystem/index.md
@@ -269,7 +276,14 @@ nav:
           - XDrip4iOS ✏️: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
-      - New User Setup Guide: configuration/new-user-setup.md
+      - Startup Guides:
+          - New User Setup Guide: configuration/new-user-setup.md
+          - Migration Guides:
+              - configuration/migration/index.md
+              - Migrating from Trio 0.2.x: configuration/migration/trio-02x-migration.md
+              - Migrating from iAPS: configuration/migration/iaps-migration.md
+              - Migrating from Loop ✏️: configuration/migration/loop-migration.md
+              - Migrating from AndroidAPS ✏️: configuration/migration/aaps-migration.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
@@ -311,12 +325,7 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
-      - Migration from other OS-AID Systems:
-          - configuration/migration/index.md
-          - Migration from Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
-          - Migration from iAPS: configuration/migration/iaps-migration.md
-          - Migration from Loop ✏️: configuration/migration/loop-migration.md
-          - Migration from AndroidAPS ✏️: configuration/migration/aaps-migration.md
+
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md

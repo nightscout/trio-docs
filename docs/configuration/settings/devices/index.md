@@ -1,6 +1,6 @@
 # Devices
 
-![Trio Logo](../../../assets/images/trio-logo.png){ width="75", align="left"} Welcome to the Devices homepage! Here you'll find information on which devices are compatible with Trio and how to add your compatible devices to your Trio app.
+![Trio Logo](../../../assets/images/trio-logo.png){ .skip-lightbox  width="75" align="left" } Welcome to the Devices homepage! Here you'll find information on which devices are compatible with Trio and how to add your compatible devices to your Trio app.
 
 - - -
 

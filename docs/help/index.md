@@ -1,6 +1,6 @@
 # Help
 
-![Trio Logo](../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 Welcome to the help homepage! Here you will find a variety of resources that will help in your use of Trio.  
 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.

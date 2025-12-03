@@ -1,27 +1,33 @@
 # Dynamic Settings
 
-## Activate Dynamic ISF
-**Default:** _OFF_
+## Dynamic ISF: Logarithmic
+**Default:** _Disabled_
 
 !!! danger "Important"
     It is important to enter your information into the Desmos graphs found [here](#logarithmic-desmos-graphs) **before** turning on Logarithmic Dynamic ISF. The default settings work for a majority of users, but not all.  
     
-    Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at **_150 mg/dL_**.  
+    Use the sliders in Desmos to determine what your Adjustment Factor (AF) should be so that your ProfileISF is used when your glucose is at **_150 mg/dL (8.3 mmol/L)_**.  
 
 
 !!! tip
-    You must first turn on `Activate Dynamic ISF` before any other dynamic features will appear
+    You must first choose `Logarithmic` or `Sigmoid` before any other dynamic features will appear
 
-Activating this feature allows Trio to calculate your [Sensitivity Ratio](./autosens.md#sensitivity-ratio) using the logarithmic dynamic formula, rather than the [Autosens formula](./autosens.md#autosens) with each loop cycle by considering factors such as: your current glucose (BG), the weighted total daily dose of insulin (TDD), your adjustment factor setting (AF), and a few other data points. Using Logarithmic Dynamic ISF allows you to customize your Sensitivity Ratio calculation beyond what is allowed with Autosens.  
+Activating this feature allows Trio to calculate your [Sensitivity Ratio](./autosens.md#sensitivity-ratio) using the logarithmic dynamic formula, rather than the [Autosens formula](./autosens.md#autosens) with each loop cycle by considering factors such as: your current glucose, the weighted total daily dose of insulin (TDD), your adjustment factor setting (AF), and a few other data points. Using Logarithmic Dynamic ISF allows you to customize your Sensitivity Ratio calculation beyond what is allowed with Autosens.  
 
-Below is the formula used for calculating the Sensitivity Ratio using Logarithmic Dynamic ISF:
+Below is the formula used for calculating the Sensitivity Ratio using Logarithmic Dynamic ISF for mg/dL:
 
 $$
-Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \log{}\left(\frac{\left(\frac{BG}{peak}\right)+1}{1800}\right)
+Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{Peak}\right)+1}{1800}\right)
+$$
+
+Here is that same formula adjusted for mmol/L:
+
+$$
+Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{0.0555 \times Peak}\right)+1}{100}\right)
 $$
 
 !!! info
-    This formula considers your Profile ISF (ProfileISF in mg/dL), current blood glucose (BG in mg/dL), total daily dose (TDD over the last 24 hours), insulin peak effect (Peak), and Adjustment Factor (AF) that allows for user tuning of Dynamic ISF/CR.
+    This formula considers your profile ISF, current glucose, total daily dose (TDD over the last 24 hours), insulin peak effect (Peak), and Adjustment Factor (AF) that allows for user tuning of Dynamic ISF.
 
 After the Sensitivity Ratio is calculated, your Calculated Sensitivity is then determined by using the same formula as [Autosens](./autosens.md#calculated-sensitivity):
 
@@ -32,31 +38,10 @@ $$
 
 - - -
 
-## Activate Dynamic CR
-**Default:** _OFF_
+## Dynamic ISF: Sigmoid
+**Default:** _Disabled_
 
-This experimental feature alters the carb ratio (CR) based on current blood sugar and total daily dose (TDD). Unlike ISF, CR was not originally altered by autosens with respect to your detected sensitivity. Using Dynamic CR will lead to a dramatic change in how CR is calculated by Trio. Dynamic CR uses the same [formula](#activate-dynamic-isf) as logarithmic Dynamic ISF to calculate Sensitivity Ratio. It then uses that to adjust your Carb Ratio (CR) using this formula:
-
-$$
-NewCR = \frac{ProfileCR}{Sensitivity\ Ratio}
-$$
-
-When your Sensitivity Ratio increases, indicating you need more insulin, the carb ratio value is decreased to make your insulin dosing more effective. Conversely, when your Sensitivity Ratio decreases, the carb ratio is increased to avoid over-delivery.
-
-!!! note
-    
-    If the calculated Sensitivity Ratio used by Dynamic CR is greater than 1, the following formula is used to make the resulting CR less aggressive: 
-    
-    $$
-    Sensitivity\ Ratio = \left(\frac{Sensitivity\ Ratio - 1}{2}\right) + 1
-    $$
-
-- - -
-
-## Use Sigmoid Formula
-**Default:** _OFF_
-
-Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. Your Calculated Sensitivity and Dynamic CR (if enabled) are calculated using a sigmoid curve rather than the default logarithmic function.
+Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. Your Calculated Sensitivity is calculated using a sigmoid curve rather than the logarithmic function.
 
 The curve's steepness, reflecting how big adjustments are from one reading to another, is influenced by the [Adjustment Factor](#sigmoid-adjustment-factor), while [Autosens Max](./autosens.md#autosens-max) and [Min](./autosens.md#autosens-min) settings determine the limits of the ratio adjustment. Autosens Max and Min can also influence the curve's steepness with the Sigmoid Formula.
 
@@ -87,7 +72,7 @@ Adjusting this value shifts and steepens the curve of logarithmic Dynamic ISF. I
     
     ***Adjustment Factor (AF) is not a safety limiter***
     
-     - Increasing AF means you are telling the system that ALL dynamically calculated ISF/CR values have not been aggressive enough, and you want the system to make them more aggressive.
+     - Increasing AF means you are telling the system that ALL dynamically calculated ISF values have not been aggressive enough, and you want the system to make them more aggressive.
      - Decreasing AF means you are telling the system that ALL dynamically calculated values are too aggressive, and to make them less so.
 
 - - -
@@ -244,16 +229,16 @@ See [Weighted Average of TDD](#weighted-average-of-tdd) setting to understand ho
 
 ## Logarithmic Desmos Graphs
 
-[Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/ousohtexbk)
+[Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/0frb0mvjzr)
 
-[Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/q3hzvylki3)
+[Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/2iu4cgtqln)
 
 - - -
 
 ## Sigmoid Desmos Graphs
 
-[Click here to view a graph depicting the sigmoid formula in mg/dL](https://www.desmos.com/calculator/eyf32mtgxo)
+[Click here to view a graph depicting the sigmoid formula in mg/dL](https://www.desmos.com/calculator/zhc6k580qm)
 
-[Click here to view a graph depicting the sigmoid formula in mmol/L](https://www.desmos.com/calculator/2vvtudm20p)
+[Click here to view a graph depicting the sigmoid formula in mmol/L](https://www.desmos.com/calculator/ihjjxwipbt)
 
 - - -

@@ -1,6 +1,6 @@
 # Usage
 
-![Trio Logo](../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 
 Welcome to the Usage homepage! Here you will find a variety of topics to learn about that will help you in using Trio to manage your diabetes.  
 
@@ -14,7 +14,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
-    🚧 Documentation Under Construction 🚧  
     A detailed look at Trio's user interface and features
 
 -   __[🔵 Basal Rates ✏️](concepts/basal-rates.md)__
@@ -38,17 +37,16 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧 Documentation Under Construction 🚧  
     How *carb ratios* determine the insulin you need for the carbs you eat.
 
--   __[Temporary Targets ✏️](features/temp-targets.md)__
+-   __[Temporary Targets](features/temp-targets.md)__
 
     - - -
-    🚧 Documentation Under Construction 🚧  
+
     How and when to use Temporary Targets
 
 -   __[Overrides](features/overrides.md)__
 
     - - -
-
-    🚧 Documentation Under Construction 🚧  
+ 
     How and when to use Overrides
     
 -   __[Statistics ✏️](features/statistics.md)__
@@ -58,5 +56,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧 Documentation Under Construction 🚧  
     A detailed look at Trio's Statistics interface
     
-   
+-   __[Using Dynamic ISF](features/dynamic-isf.md)__
+
+    - - -
+ 
+    A series of tips, tricks, and best practices for using Dynamic ISF in Trio
+    
 </div>

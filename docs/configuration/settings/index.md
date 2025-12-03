@@ -1,6 +1,6 @@
 # Trio Settings
 
-![Trio Logo](../../assets/images/trio-logo.png){ width="75", align="left"}
+![Trio Logo](../../assets/images/trio-logo.png){ .skip-lightbox width="75" align="left" }
 Welcome to the Trio Settings homepage! Here you'll find explanations of all the settings in Trio. They are organized by their appearance in the Settings Menu in the Trio app.  
 
 - - -
