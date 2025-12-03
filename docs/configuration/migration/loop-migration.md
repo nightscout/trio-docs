@@ -25,31 +25,28 @@
 
 Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the first 3 hours:
 
-#### Onboarding Wizard
-Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
+- **Onboarding Wizard**  
+    Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
+- **Test Settings**  
+    Your Loop settings may be a great starting point for Trio, but often times they need some adjustment. This is a great time to test your settings so you can start fresh on solid footing.
+- **User Interface**  
+    Use this time to learn the [User Interface](../../usage/interface.md).
+- **Dynamic ISF**  
+    Dynamic ISF is disabled for the first **7 days**. 
 
-#### Test Settings
-Your Loop settings may be a great starting point for Trio, but often times they need some adjustment. This is a great time to test your settings so you can start fresh on solid footing.
+    !!! warning "Dynamic ISF & Closed Loop"
+        Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
 
-#### User Interface
-Use this time to learn the [User Interface](../../usage/interface.md).
+- **Autosens**  
+    Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
 
-#### Dynamic ISF
-Dynamic ISF is disabled for the first **7 days**. 
-
-!!! warning "Dynamic ISF & Closed Loop"
-    Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
-
-#### Autosens
-Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
-
-!!! warning "Initial Limitation with Autosens"
-    There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.
+    !!! warning "Initial Limitation with Autosens"
+        There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.
     
-    - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
-    - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
+        - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
+        - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
     
-    Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
+        Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
 
 !!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
@@ -62,19 +59,17 @@ Autosens will require **8-24 hours** of data before it starts making adjustments
 
 A full day on Trio! Congratulations! Here's what to look for:
 
-#### Autosens
-Autosens now has enough data to make adjustments.
+- **Autosens**  
+    Autosens now has enough data to make adjustments.
+- **Review & Test Settings**  
+    This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days:
 
-#### Review & Test Settings
-This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days:
+    - [Basal Testing](../../usage/concepts/basal-rates.md)
+    - [ISF Testing](../../usage/concepts/isf.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
 
-- [Basal Testing](../../usage/concepts/basal-rates.md)
-- [ISF Testing](../../usage/concepts/isf.md)
-- [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
-
-#### Review Dynamic ISF Documentation
-
-Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
+- **Review Dynamic ISF Documentation**  
+    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
@@ -82,21 +77,20 @@ Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf
 
 You've completed a week on Trio! Here's what you should see:
 
-#### Dynamic ISF
-Dynamic ISF now has enough data. You now have the option to enable it.
+- **Dynamic ISF**  
+    Dynamic ISF now has enough data. You now have the option to enable it.
 
-This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
+    This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
 
-!!! warning "Can't Enable Dynamic ISF?"
-    If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
+    !!! warning "Can't Enable Dynamic ISF?"
+        If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
     
-    - You were not in closed loop for the full 7 days.
-        - *Trio needs 7 days of closed loop to safely enable Dynamic ISF*
-    - You had significant loss of connection with your CGM and/or pump. 
-        - *Check your last week of Looping Statistics in the Stats tab in the Trio app. You need both <b>7 days</b> and an <b>85% success rate</b> to enable Dynamic ISF*. 
-    - You enabled a significant number of manual Temp Basals with long run times.
-        - *When a manual Temp Basal is set, Trio is unable to complete a loop cycle for the duration of the temp basal. This will cause a reduction in your success rate. If you do not have <b>85% success rate</b> for <b>7 days</b>, you cannot enable Dynamic ISF.*
-
+        - You were not in closed loop for the full 7 days.
+            - *Trio needs 7 days of closed loop to safely enable Dynamic ISF*
+        - You had significant loss of connection with your CGM and/or pump. 
+            - *Check your last week of Looping Statistics in the Stats tab in the Trio app. You need both <b>7 days</b> and an <b>85% success rate</b> to enable Dynamic ISF*. 
+        - You enabled a significant number of manual Temp Basals with long run times.
+            - *When a manual Temp Basal is set, Trio is unable to complete a loop cycle for the duration of the temp basal. This will cause a reduction in your success rate. If you do not have <b>85% success rate</b> for <b>7 days</b>, you cannot enable Dynamic ISF.*
 
 - - -
 

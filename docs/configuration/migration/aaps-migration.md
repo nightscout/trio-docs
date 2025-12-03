@@ -11,13 +11,11 @@
     - **Use Loop Follow v4.0 or Later for remote commands**  
         More info at [LoopFollowDocs](https://loopfollowdocs.org/remote/remote-control-trio/)
 - **Bolus Calculator**  
-    The  [Bolus Calculator](../../usage/features/bolus-calculator.md) in Trio offers simple dosing with clear breakdowns and safety logic.
+    The [Bolus Calculator](../../usage/features/bolus-calculator.md) in Trio offers simple dosing with clear breakdowns and safety logic.
 - **In-App Statistics**  
     There are multiple statistics and graphs available in the Trio app. Click the link to learn more about the [Statistics](../../usage/features/statistics.md) available in the app.
 - **Important Re: Autotune**  
     Autotune has not performed as it was intended for years with the addition of Dynamic ISF and the change from a single ISF and CR in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a new Autotune-like feature can be built.
-- **No Dynamic Carb Ratio**
-    There is no evidence to support that your carb ratio varies as ISF does with increasing or decreasing glucose levels. For this reason, Dynamic CR has not been implemented in Trio 0.5+.
 
 - - -
 
@@ -25,33 +23,30 @@
 
 Here are some things to keep in mind after moving from AndroidAPS to Trio 0.5+ in the first 3 hours:
 
-#### Dynamic ISF
-Dynamic ISF is disabled for the first **7 days**. 
+- **Onboarding Wizard**  
+    Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
+- **Test Settings**  
+    This is a great time to test your settings so you can start fresh on solid footing.
+- **User Interface**  
+    Use this time to learn the [User Interface](../../usage/interface.md).
+- **Dynamic ISF**  
+    Dynamic ISF is disabled for the first **7 days**. 
 
-!!! warning "Dynamic ISF & Closed Loop"
-    Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
+    !!! warning "Dynamic ISF & Closed Loop"
+        Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
 
-#### Autosens
-Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
+- **Autosens**  
+    Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
 
-!!! warning "Initial Limitation with Autosens"
-    There's a long standing issue with Autosens where it will likely be stuck at 1 for the first 24 hours when there are carb entries or SMBs.
+    !!! warning "Initial Limitation with Autosens"
+        There's a long standing issue with Autosens where it will likely be stuck at 1 for the first 24 hours when there are carb entries or SMBs.
     
-    - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
-    - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
+        - When carb entries or SMBs **are not** present, Autosens will kick in after 8 hours.
+        - When carb entries or SMBs **are** present, Autosens will kick in after 24 hours.
     
-    Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
+        Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
 
-#### Onboarding Wizard
-Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
-
-#### Test Settings
-This is a great time to test your settings so you can start fresh on solid footing.
-
-#### New User Interface
-Use this time to learn the [New User Interface](../../usage/interface.md).
-
-!!! warning "Do not use a pump or cgm simulator"
+!!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
     - [More information on simulator use](../settings/devices/pump/?h=simulator#pump-simulator)
@@ -62,19 +57,17 @@ Use this time to learn the [New User Interface](../../usage/interface.md).
 
 A full day on Trio! Congratulations! Here's what to look for:
 
-#### Autosens
-Autosens now has enough data to make adjustments.
+- **Autosens**  
+    Autosens now has enough data to make adjustments.
+- **Review & Test Settings**
+    This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days:
 
-#### Review & Test Settings
-This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days:
+    - [Basal Testing](../../usage/concepts/basal-rates.md)
+    - [ISF Testing](../../usage/concepts/isf.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
 
-- [Basal Testing](../../usage/concepts/basal-rates.md)
-- [ISF Testing](../../usage/concepts/isf.md)
-- [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
-
-#### Review Dynamic ISF Documentation
-
-Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
+- **Review Dynamic ISF Documentation**  
+    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
@@ -82,10 +75,10 @@ Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf
 
 You've completed a week on Trio! Here's what you should see:
 
-#### Dynamic ISF
-Dynamic ISF now has enough data. You now have the option to enable it.
-
-This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md) and review the [Desmos graphs video](https://www.youtube.com/watch?v=7aJA-leQyPc) by Mike Plante and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
+- **Dynamic ISF**  
+    Dynamic ISF now has enough data. You now have the option to enable it.
+    
+    This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md) and review the [Desmos graphs video](https://www.youtube.com/watch?v=7aJA-leQyPc) by Mike Plante and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
 
 !!! warning "Can't Enable Dynamic ISF?"
     If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
@@ -97,21 +90,15 @@ This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic
     - You enabled a significant number of manual Temp Basals with long run times.
         - *When a manual Temp Basal is set, Trio is unable to complete a loop cycle for the duration of the temp basal. This will cause a reduction in your success rate. If you do not have <b>85% success rate</b> for <b>7 days</b>, you cannot enable Dynamic ISF.*
 
-
 - - -
 
 ## Convert AAPS Settings to Trio Settings
 
-When you move your settings from AAPS to Trio, some of them might look different even if they have the same or similar names. That’s because we some of the numbers went from decimals to percentages to make them easier to understand.
+When you move your settings from AAPS to Trio, there are multiple settings that have similar names. We've created this chart to help you identify which settings are equivalent between the two apps and where to find them.
 
-!!! example
-    In AAPS you might set "Autosens Maximum" to 1.2. In Trio, we show "Autosens Max" as 120%, which means the same thing.
-
-The charts below will help you see equivalent settings in both apps, and where to find them in AAPS and Trio.
-
-!!! tip
-    To convert a value from a decimal to a percentage, multiply it by 100.  
-    To convert from a percentage to a decimal, divide by 100.
+!!! tip "Some Settings May Need Conversion"
+    - To convert a value from a decimal to a percentage, multiply it by 100.  
+    - To convert from a percentage to a decimal, divide by 100.
 
 ### [Therapy Settings](../settings/therapy/index.md)
 
