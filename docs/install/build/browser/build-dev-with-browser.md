@@ -285,8 +285,8 @@ Warning - there is no hand holding in these directions.
 * <code>Identifiers</code> for Trio: see [Table of <code>Identifiers</code>](#table-of-identifiers)
 * Add the `Trio App Group` to these <code>Identifiers</code>:
     * `Trio`
-    * `Trio Watch`
-    * `Trio WatchKit Extension`
+    * `Trio Watch App`
+    * `Trio Watch Complication`
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
 ### Create the `Trio App Group`
@@ -321,7 +321,7 @@ These are the <code>Identifiers</code> created by running the *GitHub* action "<
 - Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
     - Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
       > ![add Trio App Group to identifiers](img/choose-trio-app-group.png)
-    - Repeat this for the other 2 <code>Identifiers</code> that need to have an App Group assigned: `Trio Watch` and `Trio WatchKit Extension`
+    - Repeat this for the other 2 <code>Identifiers</code> that need to have an App Group assigned: `Trio Watch App` and `Trio Watch Complication`
 
 ### Configure Trio App
 

@@ -278,7 +278,14 @@ nav:
           - XDrip4iOS ✏️: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
-      - New User Setup Guide: configuration/new-user-setup.md
+      - Startup Guides:
+          - New User Setup Guide: configuration/new-user-setup.md
+          - Migration Guides:
+              - configuration/migration/index.md
+              - Migrating from Trio 0.2.x: configuration/migration/trio-02x-migration.md
+              - Migrating from iAPS: configuration/migration/iaps-migration.md
+              - Migrating from Loop ✏️: configuration/migration/loop-migration.md
+              - Migrating from AndroidAPS ✏️: configuration/migration/aaps-migration.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
@@ -320,18 +327,14 @@ nav:
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
-      - Migration from other OS-AID Systems:
-          - configuration/migration/index.md
-          - Migration from Trio 0.2.x ✏️: configuration/migration/trio-02x-migration.md
-          - Migration from iAPS: configuration/migration/iaps-migration.md
-          - Migration from Loop ✏️: configuration/migration/loop-migration.md
-          - Migration from AndroidAPS ✏️: configuration/migration/aaps-migration.md
+
   - Help:
       - help/index.md
       - FAQs ✏️: help/faq.md
       - Safety ✏️: help/safety.md
       - Glossary ✏️: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
+      - Share Logs: help/share-logs.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
       - Translate ✏️: help/translate.md
       - Support Communities:
