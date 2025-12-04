@@ -20,18 +20,20 @@ Basal rates are measured in **units per hour (U/hr)**. For example, a basal rate
 
 Your basal rates serve several critical functions in Trio:
 
-1. **Baseline for Algorithm Adjustments**: Trio uses your scheduled basal profile as a starting point, then adjusts it every loop cycle based on your current glucose, trend, and other factors.
+1. **Baseline for Algorithm Adjustments**: Trio uses your scheduled basal profile as a starting point, then adjusts it every loop cycle based on your current glucose, trend, and other factors. Your basal rate should cover what your body needs during times of fasting and low activity.
 
 2. **Insulin on Board (IOB) Calculations**: Your scheduled basal rate is treated as the "zero point" for IOB. When Trio delivers a temporary basal rate higher than your scheduled rate, your IOB increases. When it delivers a lower temporary basal rate, your IOB decreases (and can even become negative).
 
-3. **Foundation for Autosens**: If enabled, Autosens modifies your basal rates (along with ISF and targets) based on your sensitivity ratio.
+3. **Foundation for Autosens and Dynamic ISF**: Autosens and Dynamic ISF modify your basal rates (along with ISF and targets) based on your sensitivity ratio.
 
 4. **Total Daily Dose (TDD) Calculations**: Your basal insulin contributes to your TDD, which Trio uses for Dynamic ISF and other algorithm features.
 
+5. **Basal Rates as a Safety Net**: If your pump has recieved no communication from Trio because your phone is out of range or otherwise unavailable, it will revert back to your programmed basal rates after the last temp basal expires. Your profile basal rates are stored on your pump. This ensures insulin delivery is present even when your phone is out of contact.
+
 ## How Trio Uses Basal Rates
 
-!!! important
-    Trio does **not** use your scheduled basal rates verbatim. Instead, it uses them as a reference point and replaces them with temporary basal rates every loop cycle based on the OpenAPS algorithm.
+!!! important "Fasting is Essential"
+    Trio does **not** use your scheduled basal rates verbatim when in closed loop. Instead, it uses them as a reference point and replaces them with temporary basal rates every loop cycle based on the insulin needs determined by the OpenAPS algorithm.
 
 Every 5 minutes, Trio's algorithm:
 
@@ -43,7 +45,8 @@ Every 5 minutes, Trio's algorithm:
     - Insulin on board (IOB)
     - Carbs on board (COB)
     - Target glucose
-4. Sets a temporary basal rate (within your safety limits)
+    - SMB Settings
+4. Sets a temporary basal rate (within your safety limits) and/or delivers an SMB
 
 This means your actual insulin delivery will vary throughout the day, even if you're fasting, as Trio responds to your glucose patterns in real time.
 
@@ -100,11 +103,14 @@ Test different times of day separately, as your basal needs vary throughout the 
 
 ### 2. Monitor Your IOB Patterns
 
-Review your insulin on board (IOB) throughout the day when you're not eating:
+Review your insulin on board (IOB) throughout the day when you're not eating and have no residual COB:
 
-- **Consistently negative IOB** at certain times → Basal rate may be too low for those hours
-- **Consistently positive IOB** at certain times → Basal rate may be too high for those hours
+- **Consistently negative IOB** at certain times → Basal rate may be too high for those hours
+- **Consistently positive IOB** at certain times → Basal rate may be too low for those hours
 - **IOB hovering around zero** → Basal rate is appropriate
+
+!!! important
+    This general rule does not apply when food is consumed. Basal testing and IOB evaluation can only be completed during times of fasting.
 
 ## Starting Point for New Users
 
@@ -122,7 +128,7 @@ If you don't have existing basal rates, work with your healthcare provider to es
 Your basal rates interact with other Trio settings:
 
 - **Autosens**: Multiplies your basal rates by the sensitivity ratio (default range: 70-120%)
-- **Dynamic Settings**: When "Adjust Basal" is enabled, Dynamic ISF adjustments also affect basal delivery
+- **Dynamic Settings**: When "Adjust Basal" is enabled, Dynamic ISF adjustments also affect basal needs
 - **SMB (Super Micro Bolus)**: SMB calculations reference your current basal rate for SMB limits (e.g., "50% of current basal rate")
 - **Total Daily Dose**: Basal insulin is included in your TDD calculation along with bolus insulin
 
@@ -134,6 +140,7 @@ Basal rates are your baseline insulin delivery schedule that Trio uses as a foun
 - Effective Autosens adjustments
 - Appropriate algorithm behavior
 - Safe insulin delivery within your physiological needs
+- Accurate safety net is in place when Trio cannot communicate with pump
 
-Take the time to test and refine your basal rates—they're one of the most important settings for successful automated insulin delivery.
+Take the time to test and refine your basal rates. They're one of the most important settings for successful automated insulin delivery.
 
