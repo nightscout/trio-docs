@@ -244,7 +244,59 @@ The sequence is *LoopFollow* to *Apple Push Notifications* to *Trio*, which uplo
 
 ### Remote Meal
 
-***More info coming soon!***
+The Remote Meal command allows you to log carbohydrates (and optionally fat and protein) to Trio from LoopFollow, with or without an accompanying bolus.
+
+#### How to Send a Remote Meal
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Meal" from the command options
+3. Enter the meal details:
+    - **Carbs** (required): Grams of carbohydrates
+    - **Fat** (optional): Grams of fat
+    - **Protein** (optional): Grams of protein
+    - **Bolus** (optional): Units of insulin to deliver with the meal
+    - **Schedule** (optional): Time to log the carbs (for pre-bolusing)
+4. Tap "Send" to transmit the command
+
+#### What Happens When Trio Receives a Meal Command
+
+1. **Validation**: Trio checks that:
+    - At least one macronutrient (carbs, fat, or protein) is provided
+    - Carbs don't exceed your Max Carbs setting
+    - Fat doesn't exceed your Max Fat setting
+    - Protein doesn't exceed your Max Protein setting
+    - No newer carb entries exist (prevents accidental duplicates)
+
+2. **Carb Entry Creation**: Trio creates a carb entry with:
+    - The macronutrients you specified
+    - A note: "Remote meal command"
+    - FPU (Fat Protein Units) enabled if fat OR protein is present
+    - Scheduled time (if provided)
+
+3. **Bolus Delivery** (if bolus amount was included):
+    - The bolus is delivered immediately (even if the meal is scheduled)
+    - Bolus validation checks are performed (see Remote Bolus section)
+
+4. **Upload to Nightscout**: The meal entry is logged to Nightscout for your records
+
+5. **Response Notification**: If configured, LoopFollow receives a success or failure notification
+
+!!! warning "Scheduled Meals with Bolus"
+    When entering meals and choosing to schedule the meal, any bolus included in the meal is enacted immediately. Only the carb entry is entered according to the schedule.
+
+#### Safety Features
+
+- **Duplicate Prevention**: Won't log carbs if a newer entry already exists
+- **Limit Enforcement**: Respects your Max Carbs, Max Fat, and Max Protein settings
+- **FPU Calculation**: Automatically enables Fat Protein Units for low-carb, high-fat/protein meals
+- **Nightscout Logging**: All remote meals are logged for audit trail
+
+#### Use Cases
+
+- **Pre-bolusing**: Schedule a meal for 15-30 minutes in the future while delivering insulin now
+- **Macronutrient Tracking**: Log fat and protein for better extended bolus calculations
+- **Meal + Bolus**: Deliver a complete meal bolus remotely in one command
+- **Caregiver Support**: Parents can log meals for children at school
 
 When entering meals and choosing to schedule the meal, any bolus included in the meal is enacted immediately. Only the carb entry is entered according to the schedule.
 
@@ -253,15 +305,293 @@ When entering meals and choosing to schedule the meal, any bolus included in the
 
 ### Remote Bolus
 
-***More info coming soon!***
+The Remote Bolus command allows you to deliver insulin remotely via LoopFollow. This is one of the most powerful remote features and includes multiple safety checks.
+
+#### How to Send a Remote Bolus
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Bolus" from the command options
+3. Enter the bolus amount in units (U)
+4. Tap "Send" to transmit the command
+
+#### What Happens When Trio Receives a Bolus Command
+
+1. **Validation**: Trio performs comprehensive safety checks:
+    - Bolus amount is provided and greater than 0
+    - Bolus amount doesn't exceed your Max Bolus setting
+    - Current IOB (Insulin on Board) is calculable
+    - Current IOB + bolus amount doesn't exceed Max IOB
+    - No recent bolus >20% of the requested amount in the last 10 minutes
+    - APSManager is available and functioning
+
+2. **Insulin Delivery**: If all checks pass:
+    - Trio sends the bolus command to your insulin pump
+    - The pump delivers the insulin
+    - Trio monitors the delivery for completion
+
+3. **Upload to Nightscout**: The bolus is logged to Nightscout with:
+    - Amount delivered
+    - Timestamp
+    - Note indicating it was a remote command
+
+4. **Response Notification**: LoopFollow receives success/failure notification
+
+#### Safety Features
+
+**Max Bolus Protection**
+Your Max Bolus setting (configured in Trio settings) prevents delivery of dangerously large boluses. A remote bolus request exceeding this limit will be rejected.
+
+**Example**: If Max Bolus = 10 U, a remote request for 12 U will fail with error message.
+
+**Max IOB Protection**
+Trio calculates your current Insulin on Board and ensures the new bolus won't exceed your Max IOB safety limit.
+
+**Formula**: `Current IOB + Requested Bolus ≤ Max IOB`
+
+**Example**:
+- Current IOB: 8 U
+- Max IOB: 12 U
+- Remote bolus request: 5 U
+- Result: REJECTED (8 + 5 = 13 U, which exceeds 12 U limit)
+
+**Duplicate Bolus Prevention**
+Trio checks for recent boluses in the last 10 minutes. If a bolus greater than 20% of the requested amount was recently delivered, the remote command is rejected.
+
+**Example**:
+- Remote request: 5 U
+- Recent bolus (8 minutes ago): 4.5 U
+- 20% of 5 U = 1 U
+- Since 4.5 U > 1 U, the request is REJECTED as a likely duplicate
+
+**Purpose**: Prevents accidental double-dosing if LoopFollow doesn't immediately reflect a bolus you just delivered manually.
+
+**Time Window Validation**
+All remote commands include a timestamp. Trio rejects commands that are:
+- More than 10 minutes old (prevents replay attacks)
+- From the future (prevents clock manipulation)
+
+#### Error Messages
+
+If a remote bolus fails, you'll receive a notification explaining why:
+
+| Error | Meaning | Action |
+|-------|---------|--------|
+| "Bolus amount exceeds max bolus" | Requested bolus > Max Bolus setting | Reduce bolus amount or increase Max Bolus in settings |
+| "IOB would exceed max IOB" | Current IOB + bolus > Max IOB | Wait for IOB to decrease, or increase Max IOB |
+| "Recent bolus detected" | Similar bolus in last 10 minutes | Wait 10 minutes or verify this isn't a duplicate |
+| "APSManager unavailable" | Trio can't access pump | Check Trio app is running and pump is connected |
+| "Command too old" | Timestamp > 10 minutes ago | Check phone clocks are synchronized; resend command |
+
+#### Use Cases
+
+- **Meal Boluses**: Deliver insulin for meals when away from phone
+- **Correction Boluses**: Correct high blood sugar remotely
+- **Caregiver Support**: Parents can dose insulin for children
+- **Emergencies**: Deliver insulin if user can't access their phone
+
+!!! danger "Important Safety Note"
+    Remote bolus is a powerful feature that delivers real insulin. Always:
+
+    - Verify the bolus amount before sending
+    - Check current blood glucose and IOB before sending
+    - Ensure the user is aware a bolus is being sent
+    - Have emergency glucagon available
+    - Never use remote bolus as a prank or without authorization
+
 
 ### Temp Target
 
-***More info coming soon!***
+The Temp Target command allows you to set or cancel temporary glucose targets remotely via LoopFollow.
+
+#### How to Set a Remote Temp Target
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Temp Target" from the command options
+3. Enter the temp target details:
+    - **Target**: Desired glucose target in mg/dL (or mmol/L)
+    - **Duration**: How long the target should be active (in minutes)
+4. Tap "Send" to transmit the command
+
+#### What Happens When Trio Receives a Temp Target Command
+
+1. **Validation**: Trio checks that:
+    - Target value is provided and valid
+    - Duration is provided and greater than 0
+
+2. **Temp Target Creation**: Trio creates a temporary target with:
+    - `targetTop` and `targetBottom` both set to the specified target
+    - Duration in minutes
+    - Custom name indicating it's a remote target
+    - Marked as a "local" entry
+
+3. **Storage**: The temp target is saved to Trio's temp target storage
+
+4. **Sync to Nightscout**: The temp target is uploaded to Nightscout
+
+5. **UI Update**: Trio posts notifications to update the UI immediately
+
+6. **Response Notification**: LoopFollow receives confirmation
+
+#### How to Cancel a Remote Temp Target
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Cancel Temp Target" from the options
+3. Tap "Send" to transmit the command
+
+#### What Happens When Canceling
+
+1. **Fetch Active Targets**: Trio retrieves all currently active temp targets
+2. **Create End Records**: For each active temp target, Trio creates a `TempTargetRunStored` record marking it as ended
+3. **Disable All**: All active temp targets are marked as disabled
+4. **Sync to Nightscout**: Changes are uploaded
+5. **UI Update**: Trio interface updates to show no active temp targets
+
+#### Common Temp Target Values
+
+| Target | Use Case |
+|--------|----------|
+| **80-100 mg/dL** | Before meals (tighter control) |
+| **110-120 mg/dL** | Sleeping/overnight (prevent lows) |
+| **140-160 mg/dL** | Exercise (prevent lows) |
+| **120-130 mg/dL** | After meals (less aggressive corrections) |
+
+!!! tip "Temp Targets and Algorithm Behavior"
+    Temporary targets affect how Trio delivers insulin:
+
+    - **Higher targets** → Less aggressive insulin delivery, fewer/smaller SMBs
+    - **Lower targets** → More aggressive insulin delivery, more/larger SMBs
+    - Temp targets override your normal target glucose setting
+    - Trio respects your safety limits (Max IOB, Max SMB) regardless of temp target
+
+#### Use Cases
+
+- **Exercise**: Set higher target before/during exercise to prevent lows
+- **Sleep**: Set higher target at bedtime for peace of mind
+- **Pre-meal**: Set lower target before eating to achieve tighter control
+- **Illness**: Adjust targets when sick
+- **Cancel**: Return to normal targets anytime
+
 
 ### Overrides
 
-***More info coming soon!***
+The Override command allows you to activate or cancel override presets remotely via LoopFollow. Overrides are powerful tools that simultaneously adjust multiple settings (insulin sensitivity, basal rates, carb ratios, and targets) based on predefined presets.
+
+#### Prerequisites
+
+Before using remote overrides, you must:
+
+1. **Create Override Presets** in Trio:
+    - Go to Trio Settings → Overrides
+    - Create and name your override presets (e.g., "Exercise", "Sick Day")
+    - Configure the percentage adjustments for each preset
+
+2. **Configure LoopFollow** with the exact preset names
+
+#### How to Start a Remote Override
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Start Override" from the command options
+3. Select the override preset from the dropdown (must match a preset name in Trio)
+4. Tap "Send" to transmit the command
+
+#### What Happens When Trio Receives a Start Override Command
+
+1. **Validation**: Trio checks that:
+    - Override name is provided and not empty
+    - Override name matches an existing preset (exact match, case-sensitive)
+
+2. **Fetch Presets**: Trio retrieves all override presets from storage
+
+3. **Find Matching Preset**: Searches for a preset with the exact name specified
+
+4. **Disable Other Overrides**: All currently active overrides are disabled first
+
+5. **Enable Requested Override**: The matching override preset is:
+    - Enabled
+    - Timestamp set to current time
+    - Marked as not yet uploaded to Nightscout
+
+6. **Save to Core Data**: Changes are persisted
+
+7. **UI Update**: Trio posts notifications to refresh the UI
+
+8. **Upload to Nightscout**: The active override is logged
+
+9. **Response Notification**: LoopFollow receives confirmation
+
+#### How to Cancel a Remote Override
+
+1. Open LoopFollow and tap the Remote Control button
+2. Select "Cancel Override" from the options
+3. Tap "Send" to transmit the command
+
+#### What Happens When Canceling
+
+1. **Fetch Active Overrides**: Trio retrieves all currently active overrides
+2. **Create End Records**: For each active override, Trio creates an `OverrideRunStored` record marking it as ended
+3. **Disable All**: All active overrides are marked as disabled
+4. **Sync to Nightscout**: Changes are uploaded
+5. **UI Update**: Trio returns to normal settings
+
+#### How Overrides Work
+
+Overrides modify your therapy settings by percentage:
+
+| Setting | Override Adjustment | Effect |
+|---------|---------------------|--------|
+| **Insulin Sensitivity (ISF)** | Percentage multiplier | 50% = half the insulin, 200% = double the insulin |
+| **Basal Rates** | Percentage multiplier | 150% = 1.5x normal basal |
+| **Carb Ratios** | Percentage multiplier | 75% = less insulin per carb |
+| **Target Glucose** | Override target value | Completely replaces normal target |
+
+**Example "Exercise" Override**:
+- ISF: 150% (more sensitive, less insulin)
+- Basal: 75% (reduced basal delivery)
+- CR: 120% (less insulin for carbs)
+- Target: 140 mg/dL (higher target to prevent lows)
+
+**Example "Sick Day" Override**:
+- ISF: 50% (more resistant, more insulin)
+- Basal: 150% (increased basal delivery)
+- CR: 80% (more insulin for carbs)
+- Target: 110 mg/dL (tighter control)
+
+#### Override Preset Name Matching
+
+!!! warning "Exact Match Required"
+    The override name sent from LoopFollow must **exactly match** a preset name in Trio:
+
+    - Case-sensitive: "Exercise" ≠ "exercise"
+    - Spacing matters: "Sick Day" ≠ "SickDay"
+    - Spelling must be exact
+
+    If no match is found, the command will fail with an error message.
+
+#### Use Cases
+
+- **Exercise**: Activate exercise mode remotely before/during physical activity
+- **Illness**: Switch to sick day settings when user is unwell
+- **Travel**: Adjust settings for time zone changes or schedule disruptions
+- **Stress**: Modify insulin delivery during stressful periods
+- **Menstrual Cycle**: Adjust for hormonal changes
+- **Cancel**: Return to normal settings anytime
+
+#### Safety Considerations
+
+- **Overrides are powerful**: They affect multiple settings simultaneously
+- **Test first**: Test override presets locally before using remotely
+- **Monitor closely**: Watch glucose trends closely when an override is active
+- **Duration**: Consider setting automatic duration limits on override presets
+- **Communication**: Ensure the user knows when an override is activated remotely
+
+#### Troubleshooting
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| "Override not found" | Name doesn't match any preset | Check spelling and capitalization in both Trio and LoopFollow |
+| "Failed to enable override" | Trio can't access storage | Restart Trio app and try again |
+| Override not taking effect | Override successfully activated but settings unchanged | Verify the override preset has non-zero percentage adjustments configured |
+
 
 - - -
 
@@ -402,7 +732,5 @@ Other signatures that you need to [force the update](#update-profile) are shown 
 
 ## Build *LoopFollow*
 
-This page is under construction. But here's the link:
-
-[Install LoopFollow](../../../install/ecosystem/loop-follow.md){: target="_blank" }
+Follow this link to the [LoopFollow](../../../install/ecosystem/loop-follow.md){: target="_blank" } build instructions.
 
