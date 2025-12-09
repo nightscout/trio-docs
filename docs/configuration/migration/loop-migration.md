@@ -48,6 +48,10 @@ Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the
     
         Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
 
+- **Nightscout Changes**  
+    - You will need to update your Nightscout page to use Trio plugins rather than loop plugins.
+    - Replace `loop` with `openaps` in the variables ENABLE, SHOW_PLUGLINS, and SHOW_FORECAST.
+    - If you pay for nightscout through a provider, please reach out to them to update your variables.
 !!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
