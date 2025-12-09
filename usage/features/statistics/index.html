@@ -9,7 +9,7 @@
 <link href="../bolus-calculator/" rel="next"/>
 <link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
-<title>Statistics ✏️ - TrioDocs</title>
+<title>Statistics - TrioDocs</title>
 <link href="../../../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Statistics ✏️
+              Statistics
             
           </span>
 </div>
@@ -270,14 +270,14 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../concepts/">
 <span class="md-ellipsis">
     
   
-    Concepts and Features
+    Core Concepts
   
 
     
@@ -287,12 +287,12 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
             
   
-    Concepts and Features
+    Core Concepts
   
 
           </label>
@@ -302,7 +302,7 @@
 <span class="md-ellipsis">
     
   
-    🔵 Basal Rates ✏️
+    Basal Rates
   
 
     
@@ -314,7 +314,7 @@
 <span class="md-ellipsis">
     
   
-    🟢 Insulin Sensitivities ✏️
+    Insulin Sensitivities
   
 
     
@@ -326,13 +326,43 @@
 <span class="md-ellipsis">
     
   
-    🟣 Carb Ratios ✏️
+    Carb Ratios
   
 
     
   </span>
 </a>
 </li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../overrides/">
 <span class="md-ellipsis">
@@ -363,7 +393,7 @@
 <span class="md-ellipsis">
     
   
-    Statistics ✏️
+    Statistics
   
 
     
@@ -374,7 +404,7 @@
 <span class="md-ellipsis">
     
   
-    Statistics ✏️
+    Statistics
   
 
     
@@ -387,10 +417,304 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#statistics-interface">
+<a class="md-nav__link" href="#accessing-statistics">
 <span class="md-ellipsis">
       
-        Statistics Interface
+        Accessing Statistics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-types">
+<span class="md-ellipsis">
+      
+        Data Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#glucose-statistics">
+<span class="md-ellipsis">
+      
+        Glucose Statistics
+      
+    </span>
+</a>
+<nav aria-label="Glucose Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#available-metrics">
+<span class="md-ellipsis">
+      
+        Available Metrics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#titr-vs-ting">
+<span class="md-ellipsis">
+      
+        TITR vs. TING
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-statistics">
+<span class="md-ellipsis">
+      
+        Insulin Statistics
+      
+    </span>
+</a>
+<nav aria-label="Insulin Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types_1">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_1">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#looping-statistics">
+<span class="md-ellipsis">
+      
+        Looping Statistics
+      
+    </span>
+</a>
+<nav aria-label="Looping Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loop-performance-metrics">
+<span class="md-ellipsis">
+      
+        Loop Performance Metrics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types_2">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_2">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#meal-statistics">
+<span class="md-ellipsis">
+      
+        Meal Statistics
+      
+    </span>
+</a>
+<nav aria-label="Meal Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#macronutrient-tracking">
+<span class="md-ellipsis">
+      
+        Macronutrient Tracking
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fpu-fat-protein-units-support">
+<span class="md-ellipsis">
+      
+        FPU (Fat Protein Units) Support
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_3">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#customization-options">
+<span class="md-ellipsis">
+      
+        Customization Options
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#understanding-your-statistics">
+<span class="md-ellipsis">
+      
+        Understanding Your Statistics
+      
+    </span>
+</a>
+<nav aria-label="Understanding Your Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#glucose-variability">
+<span class="md-ellipsis">
+      
+        Glucose Variability
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gmi-vs-ea1c">
+<span class="md-ellipsis">
+      
+        GMI vs. eA1c
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tdd-trends">
+<span class="md-ellipsis">
+      
+        TDD Trends
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loop-reliability">
+<span class="md-ellipsis">
+      
+        Loop Reliability
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-availability">
+<span class="md-ellipsis">
+      
+        Data Availability
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#performance-notes">
+<span class="md-ellipsis">
+      
+        Performance Notes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#no-data-available-message">
+<span class="md-ellipsis">
+      
+        "No data available" Message
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#statistics-dont-match-other-apps">
+<span class="md-ellipsis">
+      
+        Statistics Don't Match Other Apps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slow-performance">
+<span class="md-ellipsis">
+      
+        Slow Performance
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      
+        Summary
       
     </span>
 </a>
@@ -495,10 +819,304 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#statistics-interface">
+<a class="md-nav__link" href="#accessing-statistics">
 <span class="md-ellipsis">
       
-        Statistics Interface
+        Accessing Statistics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-types">
+<span class="md-ellipsis">
+      
+        Data Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#glucose-statistics">
+<span class="md-ellipsis">
+      
+        Glucose Statistics
+      
+    </span>
+</a>
+<nav aria-label="Glucose Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#available-metrics">
+<span class="md-ellipsis">
+      
+        Available Metrics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#titr-vs-ting">
+<span class="md-ellipsis">
+      
+        TITR vs. TING
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-statistics">
+<span class="md-ellipsis">
+      
+        Insulin Statistics
+      
+    </span>
+</a>
+<nav aria-label="Insulin Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types_1">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_1">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#looping-statistics">
+<span class="md-ellipsis">
+      
+        Looping Statistics
+      
+    </span>
+</a>
+<nav aria-label="Looping Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loop-performance-metrics">
+<span class="md-ellipsis">
+      
+        Loop Performance Metrics
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chart-types_2">
+<span class="md-ellipsis">
+      
+        Chart Types
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_2">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#meal-statistics">
+<span class="md-ellipsis">
+      
+        Meal Statistics
+      
+    </span>
+</a>
+<nav aria-label="Meal Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#macronutrient-tracking">
+<span class="md-ellipsis">
+      
+        Macronutrient Tracking
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fpu-fat-protein-units-support">
+<span class="md-ellipsis">
+      
+        FPU (Fat Protein Units) Support
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-periods_3">
+<span class="md-ellipsis">
+      
+        Time Periods
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#customization-options">
+<span class="md-ellipsis">
+      
+        Customization Options
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#understanding-your-statistics">
+<span class="md-ellipsis">
+      
+        Understanding Your Statistics
+      
+    </span>
+</a>
+<nav aria-label="Understanding Your Statistics" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#glucose-variability">
+<span class="md-ellipsis">
+      
+        Glucose Variability
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gmi-vs-ea1c">
+<span class="md-ellipsis">
+      
+        GMI vs. eA1c
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tdd-trends">
+<span class="md-ellipsis">
+      
+        TDD Trends
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loop-reliability">
+<span class="md-ellipsis">
+      
+        Loop Reliability
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-availability">
+<span class="md-ellipsis">
+      
+        Data Availability
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#performance-notes">
+<span class="md-ellipsis">
+      
+        Performance Notes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#no-data-available-message">
+<span class="md-ellipsis">
+      
+        "No data available" Message
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#statistics-dont-match-other-apps">
+<span class="md-ellipsis">
+      
+        Statistics Don't Match Other Apps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slow-performance">
+<span class="md-ellipsis">
+      
+        Slow Performance
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      
+        Summary
       
     </span>
 </a>
@@ -509,15 +1127,477 @@
 </div>
 </div>
 <div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download="Statistics ✏️.pdf" href="index.pdf" title="Download Page as PDF"><html><body><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14 2 6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 18V9h-5V4H6v16zm-6-1-4-4h2.5v-3h3v3H16z"></path></svg></body></html></a>
+<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download="Statistics.pdf" href="index.pdf" title="Download Page as PDF"><html><body><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14 2 6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 18V9h-5V4H6v16zm-6-1-4-4h2.5v-3h3v3H16z"></path></svg></body></html></a>
 <a class="md-content__button md-icon" href="https://github.com/nightscout/trio-docs/edit/dev/docs/usage/features/statistics.md" rel="edit" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
 
 <h1 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Link to this section for reference">¶</a></h1>
-<h2 id="statistics-interface">Statistics Interface<a class="headerlink" href="#statistics-interface" title="Link to this section for reference">¶</a></h2>
-<p><strong><em>More info coming soon!</em></strong></p>
-<!-- Create a Statistics Overview page for the new stats screen -->
+<p>Trio's Statistics feature provides comprehensive data analysis and visualization of your diabetes management metrics. View detailed glucose patterns, insulin usage, loop performance, and meal data across multiple time periods.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/statistics.png"><img alt="Trio Statistics Screen" src="../../img/statistics.png" width="300"/></a></p>
+<hr/>
+<h2 id="accessing-statistics">Accessing Statistics<a class="headerlink" href="#accessing-statistics" title="Link to this section for reference">¶</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p>To view statistics:</p>
+<ol>
+<li>Open Trio</li>
+<li>Navigate to the Statistics screen (icon in the navigation menu)</li>
+<li>Select a category tab (Glucose, Insulin, Looping, or Meals)</li>
+<li>Choose your preferred chart type and time period</li>
+</ol>
+</li>
+<li>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/access_statistics.png"><img alt="Access Trio Statistics" src="../../img/access_statistics.png" width="400"/></a></p>
+</li>
+</ul>
+</div>
+<hr/>
+<h2 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Link to this section for reference">¶</a></h2>
+<p>The Statistics screen is organized into four main categories, each accessible via tabs at the top:</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/statistics_categories.png"><img alt="Trio Statistics Categories" src="../../img/statistics_categories.png" width="400"/></a></p>
+<ul>
+<li><strong>Glucose</strong> - <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> &amp; blood sugar metrics, time-in-range, and glucose distribution</li>
+<li><strong>Insulin</strong> - Total daily dose and bolus distribution</li>
+<li><strong>Looping</strong> - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle performance and reliability metrics</li>
+<li><strong>Meals</strong> - Macronutrient tracking and meal analysis</li>
+</ul>
+<p>Each category offers multiple chart types and time period options to help you understand patterns and make informed adjustments to your therapy settings.</p>
+<h2 id="glucose-statistics">Glucose Statistics<a class="headerlink" href="#glucose-statistics" title="Link to this section for reference">¶</a></h2>
+<h3 id="available-metrics">Available Metrics<a class="headerlink" href="#available-metrics" title="Link to this section for reference">¶</a></h3>
+<p>The Glucose section displays seven key metrics:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Description</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>eA1c</strong></td>
+<td>Estimated A1c from <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data</td>
+<td>mg/dL: <span class="arithmatex">\(\frac{Avg\ Glucose + 46.7}{28.7}\)</span></td>
+</tr>
+<tr>
+<td><strong>GMI</strong></td>
+<td>Glucose Management Indicator</td>
+<td><span class="arithmatex">\(3.31 + (0.02392 × Avg\ Glucose)\)</span></td>
+</tr>
+<tr>
+<td><strong>Average</strong></td>
+<td>Mean of all glucose readings</td>
+<td><span class="arithmatex">\(Sum / Count\)</span></td>
+</tr>
+<tr>
+<td><strong>Median</strong></td>
+<td>50<sup>th</sup> percentile glucose value</td>
+<td>Middle value when sorted</td>
+</tr>
+<tr>
+<td><strong>SD</strong></td>
+<td>Standard Deviation (glucose variability)</td>
+<td><span class="arithmatex">\(√(\frac{Σ(x - mean)²}{(n-1)})\)</span></td>
+</tr>
+<tr>
+<td><strong>CV</strong></td>
+<td>Coefficient of Variation</td>
+<td><span class="arithmatex">\(\frac{SD}{Mean} \times 100\%\)</span></td>
+</tr>
+<tr>
+<td><strong>Days</strong></td>
+<td>Number of days with glucose data</td>
+<td>Count of unique dates</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Display Units</p>
+<ul>
+<li><strong>eA1c</strong>: Available as % (NGSP) or mmol/mol (IFCC)</li>
+<li><strong>GMI</strong>: Available as % or mmol/mol</li>
+<li><strong>Glucose values</strong>: Displayed in mg/dL or mmol/L based on your settings</li>
+</ul>
+</div>
+<h3 id="chart-types">Chart Types<a class="headerlink" href="#chart-types" title="Link to this section for reference">¶</a></h3>
+<h4 id="1-percentile-by-time-agp-ambulatory-glucose-profile">1. Percentile by Time (AGP - Ambulatory Glucose Profile)<a class="headerlink" href="#1-percentile-by-time-agp-ambulatory-glucose-profile" title="Link to this section for reference">¶</a></h4>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/agp.png"><img alt="Ambulatory Glucose Profile" src="../../img/agp.png" width="300"/></a></p>
+<p>The default view shows hourly glucose percentiles across 24 hours:</p>
+<ul>
+<li><strong>Dark band</strong>: 25<sup>th</sup>-75<sup>th</sup> percentile (middle 50% of values)</li>
+<li><strong>Light band</strong>: 10<sup>th</sup>-90<sup>th</sup> percentile (middle 80% of values)</li>
+<li><strong>Center line</strong>: Median (50<sup>th</sup> percentile)</li>
+<li><strong>Reference lines</strong>: Your configured low, target, and high thresholds</li>
+</ul>
+<p>This chart helps identify:</p>
+<ul>
+<li>Time-of-day patterns (dawn phenomenon, overnight lows, etc.)</li>
+<li>Glucose variability at specific times</li>
+<li>How tightly controlled your glucose is</li>
+</ul>
+<h4 id="2-distribution-by-time">2. Distribution by Time<a class="headerlink" href="#2-distribution-by-time" title="Link to this section for reference">¶</a></h4>
+<p>Shows the percentage of time spent in each glucose range for every hour of the day:</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/glucose_distribution.png"><img alt="Glucose Distribution" src="../../img/glucose_distribution.png" width="300"/></a></p>
+<p><strong>Ranges displayed</strong>:</p>
+<ul>
+<li><span style="color: #9e4fce;">Purple</span>: &lt; 54 mg/dL (&lt; 3 mmol/L)</li>
+<li><span style="color: #cf3f39;">Red</span>: 54-70 mg/dL (3-3.9 mmol/L)</li>
+<li><span style="color: #2aac52;">Bright Green</span>: 70-140 mg/dL (3.9-7.8 mmol/L)</li>
+<li><span style="color: #228e44;">Dark Green</span>: 140-180 mg/dL (7.8-10 mmol/L)</li>
+<li><span style="color: #d0b211;">Yellow</span>: 180-200 mg/dL (10-11.1 mmol/L)</li>
+<li><span style="color: #cd8918;">Orange</span>: 200-220 mg/dL (11.1-12.2 mmol/L)</li>
+<li><span style="color: #a96d11;">Dark Orange</span>: &gt; 220 mg/dL (&gt; 12.2 mmol/L)</li>
+</ul>
+<p>Use this to identify times when you're most likely to be out of range.</p>
+<h4 id="3-percentile-by-day">3. Percentile by Day<a class="headerlink" href="#3-percentile-by-day" title="Link to this section for reference">¶</a></h4>
+<p>Box plot showing daily glucose distribution:</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/percentile_by_day.png"><img alt="Percentile By Day" src="../../img/percentile_by_day.png" width="300"/></a></p>
+<ul>
+<li>Each day shows a box-and-whisker plot</li>
+<li>Box represents 25<sup>th</sup>-75<sup>th</sup> percentile</li>
+<li>Whiskers extend to 10<sup>th</sup> and 90<sup>th</sup> percentiles</li>
+<li>Center line is the median</li>
+<li>Compare day-to-day variability</li>
+</ul>
+<h4 id="4-distribution-by-day">4. Distribution by Day<a class="headerlink" href="#4-distribution-by-day" title="Link to this section for reference">¶</a></h4>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/distribution_by_day.png"><img alt="Distribution By Day" src="../../img/distribution_by_day.png" width="300"/></a></p>
+<p>Stacked bar chart showing the percentage of time in each range per day:</p>
+<ul>
+<li>See which days had optimal control</li>
+<li>Identify patterns across multiple days</li>
+<li>Useful for reviewing weekly trends</li>
+</ul>
+<p>Distribution by Day uses the same color chart as the <a href="#2-distribution-by-time">Distribution by Time chart</a>.</p>
+<h3 id="titr-vs-ting">TITR vs. TING<a class="headerlink" href="#titr-vs-ting" title="Link to this section for reference">¶</a></h3>
+<p>Trio supports two tighter TIR calculation methods:</p>
+<h4 id="time-in-tight-range-titr">Time in Tight Range (TITR)<a class="headerlink" href="#time-in-tight-range-titr" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>In Range</strong>: 70-140 mg/dL (3.9-7.8 mmol/L)</li>
+<li><strong>Low</strong>: 54-70 mg/dL (3-3.9 mmol/L)</li>
+<li><strong>Very Low</strong>: &lt; 54 mg/dL (&lt; 3 mmol/L)</li>
+</ul>
+<h4 id="time-in-normoglycemia-ting">Time in Normoglycemia (TING)<a class="headerlink" href="#time-in-normoglycemia-ting" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>In Range</strong>: 63-140 mg/dL (3.5-7.8 mmol/L)</li>
+<li><strong>Low</strong>: 54-63 mg/dL (3-3.5 mmol/L)</li>
+<li><strong>Very Low</strong>: &lt; 54 mg/dL (&lt; 3 mmol/L)</li>
+</ul>
+<p>You can select your preferred method in the Statistics settings.</p>
+<div class="admonition tip">
+<p class="admonition-title">TIR Goals</p>
+<p>The American Diabetes Association recommends:</p>
+<ul>
+<li><strong>&gt; 70%</strong> time in range (70-180 mg/dL or 3.9-10 mmol/L)</li>
+<li><strong>&lt; 25%</strong> time above range (&gt;180 mg/dL or &gt;10 mmol/L)</li>
+<li><strong>&lt; 4%</strong> time below 70 mg/dL or 3.9 mmol/L</li>
+<li><strong>&lt; 1%</strong> time below 54 mg/dL or 3 mmol/L</li>
+</ul>
+</div>
+<h3 id="time-periods">Time Periods<a class="headerlink" href="#time-periods" title="Link to this section for reference">¶</a></h3>
+<p>Select from five time period options:</p>
+<ul>
+<li><strong>Today</strong>: From midnight to current time</li>
+<li><strong>Day (D)</strong>: Last 24 hours</li>
+<li><strong>Week (W)</strong>: Last 7 days</li>
+<li><strong>Month (M)</strong>: Last 30 days</li>
+<li><strong>3 Months (3M)</strong>: Last 90 days</li>
+</ul>
+<hr/>
+<h2 id="insulin-statistics">Insulin Statistics<a class="headerlink" href="#insulin-statistics" title="Link to this section for reference">¶</a></h2>
+<h3 id="chart-types_1">Chart Types<a class="headerlink" href="#chart-types_1" title="Link to this section for reference">¶</a></h3>
+<h4 id="total-daily-dose-tdd">Total Daily Dose (TDD)<a class="headerlink" href="#total-daily-dose-tdd" title="Link to this section for reference">¶</a></h4>
+<p>View your insulin usage broken down by type:</p>
+<p><strong>Components</strong>:</p>
+<ul>
+<li><strong>Manual Bolus</strong>: Insulin you delivered manually for meals/corrections</li>
+<li><strong>SMB</strong>: Super Micro Boluses delivered automatically by Trio</li>
+<li><strong>External</strong>: Insulin injections logged but not delivered by pump</li>
+<li><strong>Temp Basal</strong>: Insulin from temporary basal rates (above scheduled)</li>
+<li><strong>Scheduled Basal</strong>: Insulin from your scheduled basal profile</li>
+</ul>
+<p>The TDD chart displays:</p>
+<ul>
+<li>Bar graph of total daily insulin</li>
+<li>Statistics panel showing totals and averages for the visible range</li>
+<li>Scrollable timeline to review historical data</li>
+</ul>
+<h4 id="bolus-distribution">Bolus Distribution<a class="headerlink" href="#bolus-distribution" title="Link to this section for reference">¶</a></h4>
+<p>Detailed breakdown of bolus insulin types:</p>
+<ul>
+<li>Manual bolus totals</li>
+<li>SMB totals</li>
+<li>External insulin totals</li>
+<li>Average bolus amounts per period</li>
+</ul>
+<p>Use this to understand:</p>
+<ul>
+<li>How much insulin comes from automatic vs. manual delivery</li>
+<li>SMB effectiveness and contribution to total insulin</li>
+<li>Bolus patterns over time</li>
+</ul>
+<h3 id="time-periods_1">Time Periods<a class="headerlink" href="#time-periods_1" title="Link to this section for reference">¶</a></h3>
+<p>Choose from four time periods:</p>
+<ul>
+<li><strong>Day (D)</strong>: Last 24 hours (shows hourly breakdown)</li>
+<li><strong>Week (W)</strong>: Last 7 days</li>
+<li><strong>Month (M)</strong>: Last 30 days</li>
+<li><strong>3 Months (3M)</strong>: Last 90 days</li>
+</ul>
+<hr/>
+<h2 id="looping-statistics">Looping Statistics<a class="headerlink" href="#looping-statistics" title="Link to this section for reference">¶</a></h2>
+<h3 id="loop-performance-metrics"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Performance Metrics<a class="headerlink" href="#loop-performance-metrics" title="Link to this section for reference">¶</a></h3>
+<p>Track how reliably Trio is functioning:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Count</strong></td>
+<td>Total number of loop cycles executed</td>
+</tr>
+<tr>
+<td><strong>Successful</strong></td>
+<td>Number of successful completions</td>
+</tr>
+<tr>
+<td><strong>Failed</strong></td>
+<td>Number of failed cycles</td>
+</tr>
+<tr>
+<td><strong>Success %</strong></td>
+<td>Percentage of successful loops</td>
+</tr>
+<tr>
+<td><strong>Median Interval</strong></td>
+<td>Typical time between loops (minutes)</td>
+</tr>
+<tr>
+<td><strong>Median Duration</strong></td>
+<td>Typical loop execution time (seconds)</td>
+</tr>
+<tr>
+<td><strong>Glucose Count</strong></td>
+<td>Number of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings received</td>
+</tr>
+<tr>
+<td><strong>Days</strong></td>
+<td>Days tracked</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chart-types_2">Chart Types<a class="headerlink" href="#chart-types_2" title="Link to this section for reference">¶</a></h3>
+<h4 id="loop-performance-chart"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Performance Chart<a class="headerlink" href="#loop-performance-chart" title="Link to this section for reference">¶</a></h4>
+<p>Bar chart showing loop execution over time:</p>
+<ul>
+<li><strong>Green bars</strong>: Successful loops</li>
+<li><strong>Red bars</strong>: Failed loops</li>
+<li>Hover/tap for detailed counts per time period</li>
+<li>Scrollable timeline</li>
+</ul>
+<p>Use this to identify:</p>
+<ul>
+<li>Times when loops frequently fail</li>
+<li><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> connection issues</li>
+<li>Overall system reliability</li>
+</ul>
+<h3 id="time-periods_2">Time Periods<a class="headerlink" href="#time-periods_2" title="Link to this section for reference">¶</a></h3>
+<p>Same as glucose statistics:</p>
+<ul>
+<li>Today, Day (D), Week (W), Month (M), 3 Months (3M)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Good <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Performance</p>
+<p>You should typically see:</p>
+<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> interval: 5-6 minutes (Trio loops every 5 minutes normally)</li>
+<li>Success rate: &gt; 95%</li>
+<li>Failures usually indicate <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or pump connectivity issues</li>
+</ul>
+</div>
+<hr/>
+<h2 id="meal-statistics">Meal Statistics<a class="headerlink" href="#meal-statistics" title="Link to this section for reference">¶</a></h2>
+<h3 id="macronutrient-tracking">Macronutrient Tracking<a class="headerlink" href="#macronutrient-tracking" title="Link to this section for reference">¶</a></h3>
+<p>View your nutritional intake over time:</p>
+<p><strong>Macros tracked</strong>:</p>
+<ul>
+<li><strong>Carbohydrates</strong>: Total grams per period</li>
+<li><strong>Fat</strong>: Total grams per period</li>
+<li><strong>Protein</strong>: Total grams per period</li>
+</ul>
+<p>The meal chart displays:</p>
+<ul>
+<li>Bar graph showing daily or hourly totals</li>
+<li>Breakdown by macronutrient type</li>
+<li>Scrollable timeline</li>
+<li>Date range label</li>
+</ul>
+<h3 id="fpu-fat-protein-units-support">FPU (Fat Protein Units) Support<a class="headerlink" href="#fpu-fat-protein-units-support" title="Link to this section for reference">¶</a></h3>
+<p>If FPU conversion is enabled in settings, Trio tracks fat and protein to calculate their insulin impact for low-carb meals.</p>
+<h3 id="time-periods_3">Time Periods<a class="headerlink" href="#time-periods_3" title="Link to this section for reference">¶</a></h3>
+<p>Same as insulin statistics:</p>
+<ul>
+<li>Day (D), Week (W), Month (M), 3 Months (3M)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Meal statistics only include carbs, fat, and protein that you've logged in Trio. Accurate logging is essential for useful meal statistics.</p>
+</div>
+<hr/>
+<h2 id="customization-options">Customization Options<a class="headerlink" href="#customization-options" title="Link to this section for reference">¶</a></h2>
+<p><strong>Time-in-Range Type</strong>:</p>
+<ul>
+<li>Select TITR (Time in Tight Range) or TING (Time in Normoglycemia)</li>
+<li>Changes the range definitions for TIR calculations</li>
+</ul>
+<p><em>Found under User Interface in Features settings</em></p>
+<p><strong>eA1c/GMI Display</strong>:</p>
+<ul>
+<li>Percentage (NGSP format)</li>
+<li>mmol/mol (IFCC format)</li>
+</ul>
+<p><em>Found under User Interface in Features settings</em></p>
+<p><strong>Glucose Units</strong>:</p>
+<ul>
+<li>mg/dL</li>
+<li>mmol/L</li>
+</ul>
+<p><em>Found under Units and Limits in Therapy Settings</em></p>
+<p><strong>Target Ranges</strong>:</p>
+<ul>
+<li>High Limit: Default 180 mg/dL (customizable)</li>
+<li>Low Limit: Default 70 mg/dL (customizable)</li>
+</ul>
+<p>These limits affect the color coding and range calculations in all glucose charts.</p>
+<p><em>Found under User Interface, Low and High Thresholds, in Features Settings</em></p>
+<hr/>
+<h2 id="understanding-your-statistics">Understanding Your Statistics<a class="headerlink" href="#understanding-your-statistics" title="Link to this section for reference">¶</a></h2>
+<h3 id="glucose-variability">Glucose Variability<a class="headerlink" href="#glucose-variability" title="Link to this section for reference">¶</a></h3>
+<p><strong>Standard Deviation (SD)</strong>:</p>
+<ul>
+<li><strong>Low SD</strong> (&lt; 30 mg/dL): Stable, consistent glucose</li>
+<li><strong>Moderate SD</strong> (30-50 mg/dL): Some variability</li>
+<li><strong>High SD</strong> (&gt; 50 mg/dL): Significant swings</li>
+</ul>
+<p><strong>Coefficient of Variation (CV)</strong>:</p>
+<ul>
+<li><strong>Target</strong>: &lt; 36%</li>
+<li><strong>CV &lt; 36%</strong> indicates well-controlled glucose variability</li>
+<li><strong>CV &gt; 36%</strong> suggests unpredictable glucose patterns</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Improving CV and SD</p>
+<p>High variability often indicates:</p>
+<ul>
+<li>Inaccurate carb counting</li>
+<li>Incorrect <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> or carb ratios</li>
+<li>Inconsistent meal timing</li>
+<li>Exercise without appropriate adjustments</li>
+</ul>
+</div>
+<h3 id="gmi-vs-ea1c">GMI vs. eA1c<a class="headerlink" href="#gmi-vs-ea1c" title="Link to this section for reference">¶</a></h3>
+<p>Both provide estimates of your average glucose management:</p>
+<ul>
+<li><strong>eA1c</strong>: Calculated from average glucose using the ADAG formula</li>
+<li><strong>GMI</strong>: Similar calculation, recommended by international consensus</li>
+</ul>
+<p>These are <strong>estimates</strong> based on <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data, not laboratory A1c measurements. They correlate well but may differ from lab results.</p>
+<h3 id="tdd-trends">TDD Trends<a class="headerlink" href="#tdd-trends" title="Link to this section for reference">¶</a></h3>
+<p>Monitoring your Total Daily Dose helps you understand:</p>
+<ul>
+<li><strong>Increasing TDD</strong>: May indicate insulin resistance, weight gain, or illness</li>
+<li><strong>Decreasing TDD</strong>: May indicate increased sensitivity, weight loss, or more activity</li>
+<li><strong>Stable TDD</strong>: Consistent insulin needs</li>
+</ul>
+<p>Significant TDD changes should prompt review of your basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, carb ratios, and Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Settings.</p>
+<h3 id="loop-reliability"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Reliability<a class="headerlink" href="#loop-reliability" title="Link to this section for reference">¶</a></h3>
+<p>High loop success rates (&gt; 95%) indicate:</p>
+<ul>
+<li>Good <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> connectivity</li>
+<li>Reliable pump communication</li>
+<li>Stable Trio operation</li>
+</ul>
+<p>Frequent loop failures warrant investigation:</p>
+<ul>
+<li>Check <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> sensor placement and transmitter battery</li>
+<li>Verify pump is in range and functioning</li>
+<li>Review phone battery and background app settings</li>
+</ul>
+<hr/>
+<h2 id="data-availability">Data Availability<a class="headerlink" href="#data-availability" title="Link to this section for reference">¶</a></h2>
+<p>Statistics are calculated from data stored in Trio's database:</p>
+<ul>
+<li><strong>Glucose</strong>: Requires <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data</li>
+<li><strong>Insulin</strong>: Requires pump event history</li>
+<li><strong>Looping</strong>: Requires loop execution records</li>
+<li><strong>Meals</strong>: Requires logged carb entries</li>
+</ul>
+<p>If you've recently started using Trio or reset your data, some statistics may not be available until sufficient data accumulates.</p>
+<p><strong>Minimum data for meaningful statistics</strong>:</p>
+<ul>
+<li><strong>1 day</strong>: Today and Day views</li>
+<li><strong>7 days</strong>: Week view</li>
+<li><strong>30 days</strong>: Month view</li>
+<li><strong>90 days</strong>: 3 Month view</li>
+</ul>
+<hr/>
+<h2 id="performance-notes">Performance Notes<a class="headerlink" href="#performance-notes" title="Link to this section for reference">¶</a></h2>
+<p>Statistics calculations can be intensive for large datasets. Trio uses several optimizations:</p>
+<ul>
+<li><strong>Caching</strong>: Frequently accessed calculations are cached</li>
+<li><strong>Background processing</strong>: Heavy calculations run in background threads</li>
+<li><strong>Pagination</strong>: Charts load data in scrollable segments</li>
+<li><strong>Concurrent calculations</strong>: Multiple statistics computed in parallel</li>
+</ul>
+<p>You may notice a brief delay when first opening Statistics or switching time periods on older devices. This is normal and ensures the UI remains responsive.</p>
+<hr/>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this section for reference">¶</a></h2>
+<h3 id="no-data-available-message">"No data available" Message<a class="headerlink" href="#no-data-available-message" title="Link to this section for reference">¶</a></h3>
+<p>If you see this message:</p>
+<ol>
+<li><strong>Check data source</strong>: Ensure you have <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data (for glucose), logged carbs (for meals), etc.</li>
+<li><strong>Verify time period</strong>: Try a shorter time period if you recently started using Trio</li>
+<li><strong>Restart Trio</strong>: Sometimes refreshing the app resolves data loading issues</li>
+</ol>
+<h3 id="statistics-dont-match-other-apps">Statistics Don't Match Other Apps<a class="headerlink" href="#statistics-dont-match-other-apps" title="Link to this section for reference">¶</a></h3>
+<p>Small differences are normal due to:</p>
+<ul>
+<li>Different calculation methods (mean vs. median)</li>
+<li>Different time period boundaries</li>
+<li>Different range definitions</li>
+<li>Data filtering (Trio may exclude some invalid readings)</li>
+</ul>
+<p>Large discrepancies should be investigated—verify your data is syncing correctly.</p>
+<h3 id="slow-performance">Slow Performance<a class="headerlink" href="#slow-performance" title="Link to this section for reference">¶</a></h3>
+<p>If statistics load slowly:</p>
+<ul>
+<li><strong>Reduce time period</strong>: Use Day or Week instead of 3 Months</li>
+<li><strong>Clear app cache</strong>: Settings &gt; Advanced (if available)</li>
+<li><strong>Update Trio</strong>: Ensure you're running the latest version</li>
+<li><strong>Device storage</strong>: Free up space on your iPhone</li>
+</ul>
+<hr/>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Link to this section for reference">¶</a></h2>
+<p>Trio's Statistics feature provides powerful insights into your diabetes management:</p>
+<ul>
+<li><strong>Glucose Statistics</strong>: Understand your time-in-range, variability, and patterns</li>
+<li><strong>Insulin Statistics</strong>: Monitor your TDD and bolus distribution</li>
+<li><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Statistics</strong>: Track system reliability and performance</li>
+<li><strong>Meal Statistics</strong>: Review your macronutrient intake</li>
+</ul>
+<p>Use these statistics to:</p>
+<ul>
+<li>Identify patterns and trends</li>
+<li>Make informed adjustments to therapy settings</li>
+<li>Share data with your healthcare team</li>
+<li>Track progress toward your diabetes management goals</li>
+</ul>
+<p>Regularly reviewing your statistics helps ensure Trio is working optimally and your settings remain accurate as your insulin needs change.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

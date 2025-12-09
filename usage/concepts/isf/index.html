@@ -9,7 +9,7 @@
 <link href="../carb-ratios/" rel="next"/>
 <link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
-<title>🟢 Insulin Sensitivities ✏️ - TrioDocs</title>
+<title>Insulin Sensitivities - TrioDocs</title>
 <link href="../../../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -34,6 +34,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#insulin-sensitivity-factor-isf">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -57,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              🟢 Insulin Sensitivities ✏️
+              Insulin Sensitivities
             
           </span>
 </div>
@@ -274,7 +277,7 @@
 <span class="md-ellipsis">
     
   
-    Concepts and Features
+    Core Concepts
   
 
     
@@ -289,7 +292,7 @@
 <span class="md-nav__icon md-icon"></span>
             
   
-    Concepts and Features
+    Core Concepts
   
 
           </label>
@@ -299,7 +302,7 @@
 <span class="md-ellipsis">
     
   
-    🔵 Basal Rates ✏️
+    Basal Rates
   
 
     
@@ -308,29 +311,314 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Insulin Sensitivities
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
-    🟢 Insulin Sensitivities ✏️
+    Insulin Sensitivities
   
 
     
   </span>
 </a>
+<nav aria-label="On this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-isf">
+<span class="md-ellipsis">
+      
+        What Is ISF?
+      
+    </span>
+</a>
+<nav aria-label="What Is ISF?" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-calculation">
+<span class="md-ellipsis">
+      
+        Example Calculation
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-isf-matters">
+<span class="md-ellipsis">
+      
+        Why ISF Matters
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-trio-uses-isf">
+<span class="md-ellipsis">
+      
+        How Trio Uses ISF
+      
+    </span>
+</a>
+<nav aria-label="How Trio Uses ISF" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-autosens-adjustments">
+<span class="md-ellipsis">
+      
+        1. Autosens Adjustments
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-dynamic-isf-optional">
+<span class="md-ellipsis">
+      
+        2. Dynamic ISF (Optional)
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-based-isf-schedules">
+<span class="md-ellipsis">
+      
+        Time-Based ISF Schedules
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#isf-value-ranges">
+<span class="md-ellipsis">
+      
+        ISF Value Ranges
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-and-adjusting-your-isf">
+<span class="md-ellipsis">
+      
+        Testing and Adjusting Your ISF
+      
+    </span>
+</a>
+<nav aria-label="Testing and Adjusting Your ISF" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#starting-point">
+<span class="md-ellipsis">
+      
+        Starting Point
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-method">
+<span class="md-ellipsis">
+      
+        Testing Method
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relationship-to-other-settings">
+<span class="md-ellipsis">
+      
+        Relationship to Other Settings
+      
+    </span>
+</a>
+<nav aria-label="Relationship to Other Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#autosens-integration">
+<span class="md-ellipsis">
+      
+        Autosens Integration
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-isf-integration">
+<span class="md-ellipsis">
+      
+        Dynamic ISF Integration
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#temp-target-behavior-when-enabled">
+<span class="md-ellipsis">
+      
+        Temp Target Behavior (when enabled)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sensitivity-target-behavior">
+<span class="md-ellipsis">
+      
+        Sensitivity Target Behavior
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bolus-calculator">
+<span class="md-ellipsis">
+      
+        Bolus Calculator
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#carbs-on-board-cob-calculations">
+<span class="md-ellipsis">
+      
+        Carbs on Board (COB) Calculations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-isf-mistakes">
+<span class="md-ellipsis">
+      
+        Common ISF Mistakes
+      
+    </span>
+</a>
+<nav aria-label="Common ISF Mistakes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-isf-too-low-too-aggressive">
+<span class="md-ellipsis">
+      
+        1. ISF Too Low (Too Aggressive)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-isf-too-high-too-conservative">
+<span class="md-ellipsis">
+      
+        2. ISF Too High (Too Conservative)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-ignoring-time-of-day-variations">
+<span class="md-ellipsis">
+      
+        3. Ignoring Time-of-Day Variations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#best-practices">
+<span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../carb-ratios/">
 <span class="md-ellipsis">
     
   
-    🟣 Carb Ratios ✏️
+    Carb Ratios
   
 
     
   </span>
 </a>
 </li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../features/">
+<span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../features/overrides/">
 <span class="md-ellipsis">
@@ -360,7 +648,7 @@
 <span class="md-ellipsis">
     
   
-    Statistics ✏️
+    Statistics
   
 
     
@@ -458,18 +746,551 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="On this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-isf">
+<span class="md-ellipsis">
+      
+        What Is ISF?
+      
+    </span>
+</a>
+<nav aria-label="What Is ISF?" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-calculation">
+<span class="md-ellipsis">
+      
+        Example Calculation
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-isf-matters">
+<span class="md-ellipsis">
+      
+        Why ISF Matters
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-trio-uses-isf">
+<span class="md-ellipsis">
+      
+        How Trio Uses ISF
+      
+    </span>
+</a>
+<nav aria-label="How Trio Uses ISF" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-autosens-adjustments">
+<span class="md-ellipsis">
+      
+        1. Autosens Adjustments
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-dynamic-isf-optional">
+<span class="md-ellipsis">
+      
+        2. Dynamic ISF (Optional)
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-based-isf-schedules">
+<span class="md-ellipsis">
+      
+        Time-Based ISF Schedules
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#isf-value-ranges">
+<span class="md-ellipsis">
+      
+        ISF Value Ranges
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-and-adjusting-your-isf">
+<span class="md-ellipsis">
+      
+        Testing and Adjusting Your ISF
+      
+    </span>
+</a>
+<nav aria-label="Testing and Adjusting Your ISF" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#starting-point">
+<span class="md-ellipsis">
+      
+        Starting Point
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-method">
+<span class="md-ellipsis">
+      
+        Testing Method
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relationship-to-other-settings">
+<span class="md-ellipsis">
+      
+        Relationship to Other Settings
+      
+    </span>
+</a>
+<nav aria-label="Relationship to Other Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#autosens-integration">
+<span class="md-ellipsis">
+      
+        Autosens Integration
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-isf-integration">
+<span class="md-ellipsis">
+      
+        Dynamic ISF Integration
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#temp-target-behavior-when-enabled">
+<span class="md-ellipsis">
+      
+        Temp Target Behavior (when enabled)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sensitivity-target-behavior">
+<span class="md-ellipsis">
+      
+        Sensitivity Target Behavior
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bolus-calculator">
+<span class="md-ellipsis">
+      
+        Bolus Calculator
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#carbs-on-board-cob-calculations">
+<span class="md-ellipsis">
+      
+        Carbs on Board (COB) Calculations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-isf-mistakes">
+<span class="md-ellipsis">
+      
+        Common ISF Mistakes
+      
+    </span>
+</a>
+<nav aria-label="Common ISF Mistakes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-isf-too-low-too-aggressive">
+<span class="md-ellipsis">
+      
+        1. ISF Too Low (Too Aggressive)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-isf-too-high-too-conservative">
+<span class="md-ellipsis">
+      
+        2. ISF Too High (Too Conservative)
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-ignoring-time-of-day-variations">
+<span class="md-ellipsis">
+      
+        3. Ignoring Time-of-Day Variations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#best-practices">
+<span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download="🟢 Insulin Sensitivities ✏️.pdf" href="index.pdf" title="Download Page as PDF"><html><body><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14 2 6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 18V9h-5V4H6v16zm-6-1-4-4h2.5v-3h3v3H16z"></path></svg></body></html></a>
+<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download="Insulin Sensitivities.pdf" href="index.pdf" title="Download Page as PDF"><html><body><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14 2 6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 18V9h-5V4H6v16zm-6-1-4-4h2.5v-3h3v3H16z"></path></svg></body></html></a>
 <a class="md-content__button md-icon" href="https://github.com/nightscout/trio-docs/edit/dev/docs/usage/concepts/isf.md" rel="edit" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
-<h1>🟢 Insulin Sensitivities ✏️</h1>
 
-<!-- TODO -->
+<h1 id="insulin-sensitivity-factor-isf">Insulin Sensitivity Factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>)<a class="headerlink" href="#insulin-sensitivity-factor-isf" title="Link to this section for reference">¶</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Highlights</p>
+<ul>
+<li><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> determines how much one unit of insulin lowers your glucose</li>
+<li>It's the most common setting that needs adjustment for new Trio users</li>
+<li>A lower <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> number means you're more resistant to insulin (need more insulin)</li>
+<li>A higher <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> number means you're more sensitive to insulin (need less insulin)</li>
+<li><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> can vary throughout the day and is set as a time-based schedule</li>
+</ul>
+</div>
+<h2 id="what-is-isf">What Is <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>?<a class="headerlink" href="#what-is-isf" title="Link to this section for reference">¶</a></h2>
+<p>Insulin Sensitivity Factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>), also called Insulin <abbr title="how many points your blood sugar will drop for each unit of insulin">Correction Factor</abbr> (ICF), is the amount your blood glucose drops when you receive one unit of insulin. It's expressed as:</p>
+<ul>
+<li><strong>mg/dL per unit (mg/dL/U)</strong> </li>
+<li><strong>mmol/L per unit (mmol/L/U)</strong></li>
+</ul>
+<p>For example, an <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> of 50 mg/dL/U means that 1 unit of insulin will lower your glucose by 50 mg/dL (2.8 mmol/L).</p>
+<h3 id="example-calculation">Example Calculation<a class="headerlink" href="#example-calculation" title="Link to this section for reference">¶</a></h3>
+<details class="question">
+<summary>Bill has an <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> of 50 mg/dL/U. His current glucose is 250 mg/dL and his target is 100 mg/dL. How many units of insulin does Bill need to reach his target?</summary>
+<details class="info">
+<summary>Here is the formula:</summary>
+<div class="arithmatex">\[
+\frac{Current\ Glucose - Target\ Glucose}{ISF}
+\]</div>
+</details>
+<details class="note">
+<summary>Calculate Bill's Insulin Dose:</summary>
+<div class="arithmatex">\[
+\frac{250 - 100}{50} = \frac{150}{50} = 3\ units
+\]</div>
+</details>
+<details class="success">
+<summary>Answer</summary>
+<p>Bill needs 3 units of insulin to reach his target glucose of 100 mg/dL.</p>
+</details>
+</details>
+<hr/>
+<h2 id="why-isf-matters">Why <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Matters<a class="headerlink" href="#why-isf-matters" title="Link to this section for reference">¶</a></h2>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is one of the most critical settings in Trio because it determines:</p>
+<ol>
+<li><strong>SMB and Temp Basal Delivery</strong>: How much insulin is needed to bring high glucose back to target or keep glucose at target</li>
+<li><strong>Algorithm Calculations</strong>: Trio uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> every loop cycle to calculate optimal insulin delivery</li>
+<li><strong>Glucose Predictions</strong>: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> affects how Trio predicts future glucose levels</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Common <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> for New Users</p>
+<p>Incorrect <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the #1 cause of problems when starting Trio. If you experience:</p>
+<ul>
+<li>Frequent lows after corrections</li>
+<li>Rollercoaster glucose patterns</li>
+<li>Too much or too little insulin from SMB/UAM</li>
+</ul>
+<p>Your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> likely needs adjustment.</p>
+</div>
+<hr/>
+<h2 id="how-trio-uses-isf">How Trio Uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr><a class="headerlink" href="#how-trio-uses-isf" title="Link to this section for reference">¶</a></h2>
+<p>Like basal rates, Trio does <strong>not</strong> use your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> verbatim. Instead, your scheduled <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is modified dynamically based on:</p>
+<h3 id="1-autosens-adjustments">1. Autosens Adjustments<a class="headerlink" href="#1-autosens-adjustments" title="Link to this section for reference">¶</a></h3>
+<p>When Autosens is enabled (which it is by default), Trio analyzes 8-24 hours of glucose data to calculate a Sensitivity Ratio. This ratio adjusts your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>:</p>
+<ul>
+<li><strong>Sensitivity Ratio &gt; 1.0</strong>: You're more insulin-resistant → <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is decreased (more insulin)</li>
+<li><strong>Sensitivity Ratio &lt; 1.0</strong>: You're more insulin-sensitive → <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is increased (less insulin)</li>
+<li><strong>Limits</strong>: Default range is 70-120% (controlled by Autosens Min/Max settings)</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<details class="question">
+<summary>Bill has an <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> of 50 mg/dL/U. Autosens detects resistance and has set his sensitivity ratio to 1.15 (115%). What will Bill's new <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> be?</summary>
+<details class="info">
+<summary>Here is the formula:</summary>
+<div class="arithmatex">\[
+\frac{Current\ ISF}{Autosens\ Ratio}
+\]</div>
+</details>
+<details class="note">
+<summary>Calculate Bill's new <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>:</summary>
+<div class="arithmatex">\[
+\frac{50}{1.15} = 43.5 mg/dL/U
+\]</div>
+</details>
+<details class="success">
+<summary>Answer</summary>
+<p>Bill's <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is adjusted from 50 mg/dL/U to 43.5 mg/dL/U.
+Bill requires 15% more insulin.</p>
+</details>
+</details>
+<h3 id="2-dynamic-isf-optional">2. Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (Optional)<a class="headerlink" href="#2-dynamic-isf-optional" title="Link to this section for reference">¶</a></h3>
+<p>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is a more aggressive way to adjust your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> based on current glucose and/or historical insulin dosing:</p>
+<ul>
+<li><strong>Requires</strong>: 7 days of TDD data with 85% coverage (minimum 1,715 data points)</li>
+<li><strong>Types</strong>: Logarithmic (default) or Sigmoid</li>
+<li><strong>Output</strong>: Dynamic Ratio that replaces the Autosens Ratio each loop cycle</li>
+<li><strong>Temporary</strong>: The adjustment changes every loop cycle; it's not a permanent <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> change</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>There are 2 algorithms available for Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>. Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> adjusts your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> based on current glucose levels and Total Daily Dose (TDD). Sigmoid Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> adjusts your profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> based on how far from your target glucose you currently are.</p>
+</div>
+<p><strong>Key Parameters</strong>:</p>
+<ul>
+<li><strong>Adjustment Factor</strong>: <ul>
+<li><strong>Sigmoid</strong>: Adjustment Factor controls how aggressively <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> changes. Learn more about how changes to Sigmoid Adjustment Factor influences <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> adjustments <a href="../../features/dynamic-isf/#adjustment-factor_1">here</a>. The default for Sigmoid Adjustment Factor is 50%.</li>
+<li><strong>Logarithmic</strong>: Controls what <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is used at which glucose. It should be manually set to approximately <span class="arithmatex">\(0.02 \times TDD\)</span>. Learn more about how changing Adjustment Factor influences Logarithmic dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> <a href="../../features/dynamic-isf/#adjustment-factor">here</a>.</li>
+</ul>
+</li>
+<li><strong>Autosens Maximum</strong>: Controls the upper limit of the autosens ratio (default: 120%)</li>
+<li><strong>Autosens Minimum</strong>: Controls the lower limit of the autosens ratio (default: 70%)</li>
+<li><strong>Weighted Average of TDD</strong>: Blends recent (24h) and historical (10-day) insulin use (default: 35%)</li>
+</ul>
+<p>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is designed to make your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> more aggressive (lower) when glucose is high and less aggressive (higher) when glucose is near target.</p>
+<hr/>
+<h2 id="time-based-isf-schedules">Time-Based <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Schedules<a class="headerlink" href="#time-based-isf-schedules" title="Link to this section for reference">¶</a></h2>
+<p>Your insulin sensitivity varies throughout the day due to hormones, activity, and circadian rhythms. Trio supports time-based <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> schedules:</p>
+<ul>
+<li>Time slots in 30-minute increments</li>
+<li>Maximum of 48 entries (covering 24 hours)</li>
+<li>First entry must start at 00:00 (midnight)</li>
+<li>Each <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> applies from its start time until the next entry</li>
+</ul>
+<p><strong>Example <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Schedule:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (mg/dL/U)</th>
+<th>Why It Might Vary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:00</td>
+<td>60</td>
+<td>Overnight baseline</td>
+</tr>
+<tr>
+<td>03:00</td>
+<td>45</td>
+<td>Dawn phenomenon (more resistant)</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td>55</td>
+<td>Morning sensitivity increase</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>50</td>
+<td>Evening decrease</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="isf-value-ranges"><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Value Ranges<a class="headerlink" href="#isf-value-ranges" title="Link to this section for reference">¶</a></h2>
+<ul>
+<li><strong>Minimum</strong>: 9 mg/dL/U (0.5 mmol/L/U)</li>
+<li><strong>Maximum</strong>: 540 mg/dL/U (30 mmol/L/U)</li>
+<li><strong>Default</strong>: 200 mg/dL/U (11.1 mmol/L/U)</li>
+<li><strong>Step</strong>: 1 mg/dL/U (0.1 mmol/L/U)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Units</p>
+<p>Trio stores <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> internally in mg/dL but displays it based on your glucose unit preference. Conversions are automatic.</p>
+</div>
+<hr/>
+<h2 id="testing-and-adjusting-your-isf">Testing and Adjusting Your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr><a class="headerlink" href="#testing-and-adjusting-your-isf" title="Link to this section for reference">¶</a></h2>
+<h3 id="starting-point">Starting Point<a class="headerlink" href="#starting-point" title="Link to this section for reference">¶</a></h3>
+<p>If you're coming from pump therapy, you can transfer your pump's <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> as a starting point. However, be prepared to adjust it based on Trio's behavior.</p>
+<h3 id="testing-method">Testing Method<a class="headerlink" href="#testing-method" title="Link to this section for reference">¶</a></h3>
+<p>To test if your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is accurate:</p>
+<ol>
+<li><strong>Choose a testing time</strong>: When you're "stuck" above target (around 150 mg/dL or 8.3 mmol/L) or by bringing yourself to a higher glucose with glucose tabs</li>
+<li><strong>Prepare Trio for testing</strong>: Set Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> to 0 (<em>Optional</em>: Set Autosens Max and Min to 100% to avoid Autosens adjustments)</li>
+<li><strong>Give a correction bolus</strong> based on your current <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr><ul>
+<li>To determine your testing dose, follow the formula <span class="arithmatex">\(\frac{Current\ Glucose - Target\ Glucose}{ISF}\)</span></li>
+</ul>
+</li>
+<li><strong>Wait 4 hours</strong> without eating or exercising</li>
+<li><strong>Evaluate the result</strong>:<ul>
+<li><strong>Still above target after 4 hours</strong>: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is too high (too conservative) → DECREASE the <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> value</li>
+<li><strong>Below target after 4 hours</strong>: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is too low (too aggressive) → INCREASE the <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> value</li>
+<li><strong>At target after 4 hours</strong>: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is accurate</li>
+</ul>
+</li>
+<li><strong>Return Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> to your previous setting</strong> after you've completed the test</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Understanding <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Adjustments</p>
+<ul>
+<li><strong>Lower <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> number</strong> = More insulin per unit of glucose correction = More aggressive</li>
+<li><strong>Higher <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> number</strong> = Less insulin per unit of glucose correction = Less conservative</li>
+</ul>
+<p>This can be counterintuitive at first!</p>
+</div>
+<hr/>
+<h2 id="relationship-to-other-settings">Relationship to Other Settings<a class="headerlink" href="#relationship-to-other-settings" title="Link to this section for reference">¶</a></h2>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> interacts with many Trio settings:</p>
+<h3 id="autosens-integration">Autosens Integration<a class="headerlink" href="#autosens-integration" title="Link to this section for reference">¶</a></h3>
+<ul>
+<li><strong>Autosens Min/Max</strong>: Limits how much Autosens can adjust your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (default: 70-120%)</li>
+<li><strong>Sensitivity Ratio</strong>: Applied to <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and basal rates simultaneously</li>
+</ul>
+<h3 id="dynamic-isf-integration">Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Integration<a class="headerlink" href="#dynamic-isf-integration" title="Link to this section for reference">¶</a></h3>
+<ul>
+<li><strong>Replaces Autosens</strong>: When Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is enabled, it calculates a Dynamic Ratio instead of using the Autosens Ratio</li>
+<li><strong>Bounded by Autosens Limits</strong>: Dynamic Ratio is still constrained by Autosens Min/Max settings</li>
+<li><strong>Affects Basal</strong> (optional): When "Adjust Basal" is enabled, Dynamic Ratio also modifies the baseline basal rate</li>
+<li>**Learn how your Profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is used in Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> by reviewing the page on <a href="../../features/dynamic-isf/">Using Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></a></li>
+</ul>
+<h3 id="temp-target-behavior-when-enabled"><a href="../../features/temp-targets/">Temp Target Behavior</a> (when enabled)<a class="headerlink" href="#temp-target-behavior-when-enabled" title="Link to this section for reference">¶</a></h3>
+<ul>
+<li><strong>High Temp Targets</strong> (&gt;100 mg/dL): Increases effective <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (less aggressive insulin delivery)</li>
+<li><strong>Low Temp Targets</strong> (&lt;100 mg/dL): Decreases effective <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> (more aggressive insulin delivery)</li>
+<li><strong>Half Basal Exercise Target</strong>: Default 160 mg/dL; affects <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> scaling during exercise targets</li>
+<li>Temp Target Behavior settings will replace the Autosens or Dynamic Ratio calculations when enabled.</li>
+</ul>
+<h3 id="sensitivity-target-behavior">Sensitivity Target Behavior<a class="headerlink" href="#sensitivity-target-behavior" title="Link to this section for reference">¶</a></h3>
+<ul>
+<li>Adjusts target glucose based on the Sensitivity Ratio calculated by the algorithm</li>
+<li><code>Sensitivity Raises Target</code> Increases your target glucose when Sensitivity Ratio is calculated less than 100%.</li>
+<li><code>Resistance Lowers Target</code> decreases your target glucose when Sensitivity Ratio is calculated greater than 100%.</li>
+</ul>
+<h3 id="bolus-calculator">Bolus Calculator<a class="headerlink" href="#bolus-calculator" title="Link to this section for reference">¶</a></h3>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is used in the bolus calculator formula:</p>
+<div class="arithmatex">\[
+Total\ Insulin = \frac{Current\ BG - Target\ BG}{ISF} + \frac{Carbs}{CR} + Trend\ Correction - IOB
+\]</div>
+<h3 id="carbs-on-board-cob-calculations">Carbs on Board (<abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr>) Calculations<a class="headerlink" href="#carbs-on-board-cob-calculations" title="Link to this section for reference">¶</a></h3>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is used to determine how quickly carbs are absorbed in your body and how fast Trio reduces the <abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr> amount.</p>
+<ul>
+<li><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is used to determine your Carb Sensitivity Factor (CSF)<ul>
+<li><strong>Formula</strong>: <span class="arithmatex">\(CSF=\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}\)</span></li>
+<li>CSF shows how much 1g of carbohydrate will raise your glucose</li>
+</ul>
+</li>
+<li>Carb Sensitivity Factor is used to determine how many carbs have been absorbed during that loop cycle<ul>
+<li><strong>Formula</strong>: <span class="arithmatex">\(Increase\ in\ glucose \times CSF\)</span></li>
+<li>Your <abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr> will be reduced by this amount*</li>
+</ul>
+</li>
+</ul>
+<p>*If no change is indicated in your glucose readings, your <code>Min 5m Carb Impact</code> setting will be used for <abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr> determination</p>
+<h2 id="common-isf-mistakes">Common <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Mistakes<a class="headerlink" href="#common-isf-mistakes" title="Link to this section for reference">¶</a></h2>
+<h3 id="1-isf-too-low-too-aggressive">1. <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Too Low (Too Aggressive)<a class="headerlink" href="#1-isf-too-low-too-aggressive" title="Link to this section for reference">¶</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li>Frequent hypoglycemia after corrections</li>
+<li>Rollercoaster patterns (high → over-correction → low → high)</li>
+<li>Excessive SMB delivery resulting in lows</li>
+</ul>
+<p><strong>Solution</strong>: </p>
+<ul>
+<li><a href="#testing-and-adjusting-your-isf"><strong>Test your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong></a></li>
+<li><strong>Autosens or Sigmoid Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong>: Increase your profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> value (make it less aggressive)</li>
+<li><strong>Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong>: Re-evaluate your Adjustment Factor and other Dynamic settings using the <a href="../../../configuration/settings/algorithm/dynamic-settings/#logarithmic-desmos-graphs">desmos graphs</a></li>
+</ul>
+<h3 id="2-isf-too-high-too-conservative">2. <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Too High (Too Conservative)<a class="headerlink" href="#2-isf-too-high-too-conservative" title="Link to this section for reference">¶</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li>Persistent high glucose despite corrections</li>
+<li>Slow return to target</li>
+<li>Insufficient SMB delivery</li>
+</ul>
+<p><strong>Solution</strong>: </p>
+<ul>
+<li><a href="#testing-and-adjusting-your-isf"><strong>Test your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong></a></li>
+<li><strong>Autosens or Sigmoid Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong>: Decrease your profile <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> value (make it more aggressive)</li>
+<li><strong>Logarithmic Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong>: Re-evaluate your Adjustment Factor and other Dynamic Settings using the <a href="../../../configuration/settings/algorithm/dynamic-settings/#logarithmic-desmos-graphs">desmos graphs</a></li>
+</ul>
+<h3 id="3-ignoring-time-of-day-variations">3. Ignoring Time-of-Day Variations<a class="headerlink" href="#3-ignoring-time-of-day-variations" title="Link to this section for reference">¶</a></h3>
+<p><strong>Symptoms</strong>:
+- Good control at some times of day, poor at others
+- Dawn phenomenon not adequately addressed</p>
+<p><strong>Solution</strong>: Set different <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> values for different times of day based on need</p>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Link to this section for reference">¶</a></h2>
+<ol>
+<li><strong>Start conservatively</strong>: Begin with a higher (less aggressive) <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and adjust downward if needed</li>
+<li><strong>Make small changes</strong>: Adjust by 5-10% at a time</li>
+<li><strong>Wait between changes</strong>: Give each adjustment 2-3 days to see the full effect</li>
+<li><strong>Test systematically</strong>: Test one time period at a time</li>
+<li><strong>Consider patterns</strong>: Look for consistent trends over multiple days, not single events</li>
+<li><strong>Monitor Autosens Ratio</strong>: Watching how your Autosens Ratio changes or doesn't change can indicate an issue with your Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> settings</li>
+<li><strong>Work with your healthcare provider</strong>: Especially when making significant changes</li>
+</ol>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Link to this section for reference">¶</a></h2>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is a foundational setting that determines how much insulin is needed to correct high glucose. Getting your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> right is crucial for Trio to function effectively. While Trio adjusts your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> dynamically through Autosens or Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, having accurate baseline <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> values ensures:</p>
+<ul>
+<li>Safe and effective corrections</li>
+<li>Appropriate SMB delivery</li>
+<li>Smooth glucose control without rollercoasters</li>
+<li>Effective algorithm predictions and decisions</li>
+</ul>
+<p>Take the time to test and refine your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> carefully. It's one of the most important settings for successful automated insulin delivery.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -482,7 +1303,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: 🔵 Basal Rates ✏️" class="md-footer__link md-footer__link--prev" href="../basal-rates/">
+<a aria-label="Previous: Basal Rates" class="md-footer__link md-footer__link--prev" href="../basal-rates/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -491,17 +1312,17 @@
                 Previous
               </span>
 <div class="md-ellipsis">
-                🔵 Basal Rates ✏️
+                Basal Rates
               </div>
 </div>
 </a>
-<a aria-label="Next: 🟣 Carb Ratios ✏️" class="md-footer__link md-footer__link--next" href="../carb-ratios/">
+<a aria-label="Next: Carb Ratios" class="md-footer__link md-footer__link--next" href="../carb-ratios/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                🟣 Carb Ratios ✏️
+                Carb Ratios
               </div>
 </div>
 <div class="md-footer__button md-icon">

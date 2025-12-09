@@ -726,7 +726,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#troubleshooting">
+<a class="md-nav__link" href="#troubleshooting_1">
 <span class="md-ellipsis">
       
         Troubleshooting
@@ -1142,7 +1142,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#troubleshooting">
+<a class="md-nav__link" href="#troubleshooting_1">
 <span class="md-ellipsis">
       
         Troubleshooting
@@ -1451,15 +1451,476 @@ If you took those steps and still have missing rows, return to <a href="#configu
 <p>The sequence is <em>LoopFollow</em> to <em>Apple Push Notifications</em> to <em>Trio</em>, which uploads to <em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> and then is displayed in the <em>LoopFollow</em> main screen.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc.jpg"><img alt="loopfollow trio remote control choices" src="../img/lf-trc.jpg" width="300"/></a></p>
 <h3 id="remote-meal">Remote Meal<a class="headerlink" href="#remote-meal" title="Link to this section for reference">¶</a></h3>
-<p><strong><em>More info coming soon!</em></strong></p>
+<p>The Remote Meal command allows you to log carbohydrates (and optionally fat and protein) to Trio from LoopFollow, with or without an accompanying bolus.</p>
+<h4 id="how-to-send-a-remote-meal">How to Send a Remote Meal<a class="headerlink" href="#how-to-send-a-remote-meal" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Meal" from the command options</li>
+<li>Enter the meal details:<ul>
+<li><strong>Carbs</strong> (required): Grams of carbohydrates</li>
+<li><strong>Fat</strong> (optional): Grams of fat</li>
+<li><strong>Protein</strong> (optional): Grams of protein</li>
+<li><strong>Bolus</strong> (optional): Units of insulin to deliver with the meal</li>
+<li><strong>Schedule</strong> (optional): Time to log the carbs (for pre-bolusing)</li>
+</ul>
+</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-trio-receives-a-meal-command">What Happens When Trio Receives a Meal Command<a class="headerlink" href="#what-happens-when-trio-receives-a-meal-command" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>
+<p><strong>Validation</strong>: Trio checks that:</p>
+<ul>
+<li>At least one macronutrient (carbs, fat, or protein) is provided</li>
+<li>Carbs don't exceed your Max Carbs setting</li>
+<li>Fat doesn't exceed your Max Fat setting</li>
+<li>Protein doesn't exceed your Max Protein setting</li>
+<li>No newer carb entries exist (prevents accidental duplicates)</li>
+</ul>
+</li>
+<li>
+<p><strong>Carb Entry Creation</strong>: Trio creates a carb entry with:</p>
+<ul>
+<li>The macronutrients you specified</li>
+<li>A note: "Remote meal command"</li>
+<li>FPU (Fat Protein Units) enabled if fat OR protein is present</li>
+<li>Scheduled time (if provided)</li>
+</ul>
+</li>
+<li>
+<p><strong>Bolus Delivery</strong> (if bolus amount was included):</p>
+<ul>
+<li>The bolus is delivered immediately (even if the meal is scheduled)</li>
+<li>Bolus validation checks are performed (see Remote Bolus section)</li>
+</ul>
+</li>
+<li>
+<p><strong>Upload to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: The meal entry is logged to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> for your records</p>
+</li>
+<li>
+<p><strong>Response Notification</strong>: If configured, LoopFollow receives a success or failure notification</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Scheduled Meals with Bolus</p>
+<p>When entering meals and choosing to schedule the meal, any bolus included in the meal is enacted immediately. Only the carb entry is entered according to the schedule.</p>
+</div>
+<h4 id="safety-features">Safety Features<a class="headerlink" href="#safety-features" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Duplicate Prevention</strong>: Won't log carbs if a newer entry already exists</li>
+<li><strong>Limit Enforcement</strong>: Respects your Max Carbs, Max Fat, and Max Protein settings</li>
+<li><strong>FPU Calculation</strong>: Automatically enables Fat Protein Units for low-carb, high-fat/protein meals</li>
+<li><strong><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> Logging</strong>: All remote meals are logged for audit trail</li>
+</ul>
+<h4 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Pre-bolusing</strong>: Schedule a meal for 15-30 minutes in the future while delivering insulin now</li>
+<li><strong>Macronutrient Tracking</strong>: Log fat and protein for better extended bolus calculations</li>
+<li><strong>Meal + Bolus</strong>: Deliver a complete meal bolus remotely in one command</li>
+<li><strong>Caregiver Support</strong>: Parents can log meals for children at school</li>
+</ul>
 <p>When entering meals and choosing to schedule the meal, any bolus included in the meal is enacted immediately. Only the carb entry is entered according to the schedule.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/lf-trc-scheduled-meal.png"><img alt="scheduled meal warning" src="../img/lf-trc-scheduled-meal.png" width="300"/></a></p>
 <h3 id="remote-bolus">Remote Bolus<a class="headerlink" href="#remote-bolus" title="Link to this section for reference">¶</a></h3>
-<p><strong><em>More info coming soon!</em></strong></p>
+<p>The Remote Bolus command allows you to deliver insulin remotely via LoopFollow. This is one of the most powerful remote features and includes multiple safety checks.</p>
+<h4 id="how-to-send-a-remote-bolus">How to Send a Remote Bolus<a class="headerlink" href="#how-to-send-a-remote-bolus" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Bolus" from the command options</li>
+<li>Enter the bolus amount in units (U)</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-trio-receives-a-bolus-command">What Happens When Trio Receives a Bolus Command<a class="headerlink" href="#what-happens-when-trio-receives-a-bolus-command" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>
+<p><strong>Validation</strong>: Trio performs comprehensive safety checks:</p>
+<ul>
+<li>Bolus amount is provided and greater than 0</li>
+<li>Bolus amount doesn't exceed your Max Bolus setting</li>
+<li>Current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> (Insulin on Board) is calculable</li>
+<li>Current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> + bolus amount doesn't exceed Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr></li>
+<li>No recent bolus &gt;20% of the requested amount in the last 10 minutes</li>
+<li>APSManager is available and functioning</li>
+</ul>
+</li>
+<li>
+<p><strong>Insulin Delivery</strong>: If all checks pass:</p>
+<ul>
+<li>Trio sends the bolus command to your insulin pump</li>
+<li>The pump delivers the insulin</li>
+<li>Trio monitors the delivery for completion</li>
+</ul>
+</li>
+<li>
+<p><strong>Upload to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: The bolus is logged to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr> with:</p>
+<ul>
+<li>Amount delivered</li>
+<li>Timestamp</li>
+<li>Note indicating it was a remote command</li>
+</ul>
+</li>
+<li>
+<p><strong>Response Notification</strong>: LoopFollow receives success/failure notification</p>
+</li>
+</ol>
+<h4 id="safety-features_1">Safety Features<a class="headerlink" href="#safety-features_1" title="Link to this section for reference">¶</a></h4>
+<p><strong>Max Bolus Protection</strong>
+Your Max Bolus setting (configured in Trio settings) prevents delivery of dangerously large boluses. A remote bolus request exceeding this limit will be rejected.</p>
+<p><strong>Example</strong>: If Max Bolus = 10 U, a remote request for 12 U will fail with error message.</p>
+<p><strong>Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> Protection</strong>
+Trio calculates your current Insulin on Board and ensures the new bolus won't exceed your Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> safety limit.</p>
+<p><strong>Formula</strong>: <code>Current IOB + Requested Bolus ≤ Max IOB</code></p>
+<p><strong>Example</strong>:
+- Current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>: 8 U
+- Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>: 12 U
+- Remote bolus request: 5 U
+- Result: REJECTED (8 + 5 = 13 U, which exceeds 12 U limit)</p>
+<p><strong>Duplicate Bolus Prevention</strong>
+Trio checks for recent boluses in the last 10 minutes. If a bolus greater than 20% of the requested amount was recently delivered, the remote command is rejected.</p>
+<p><strong>Example</strong>:
+- Remote request: 5 U
+- Recent bolus (8 minutes ago): 4.5 U
+- 20% of 5 U = 1 U
+- Since 4.5 U &gt; 1 U, the request is REJECTED as a likely duplicate</p>
+<p><strong>Purpose</strong>: Prevents accidental double-dosing if LoopFollow doesn't immediately reflect a bolus you just delivered manually.</p>
+<p><strong>Time Window Validation</strong>
+All remote commands include a timestamp. Trio rejects commands that are:
+- More than 10 minutes old (prevents replay attacks)
+- From the future (prevents clock manipulation)</p>
+<h4 id="error-messages">Error Messages<a class="headerlink" href="#error-messages" title="Link to this section for reference">¶</a></h4>
+<p>If a remote bolus fails, you'll receive a notification explaining why:</p>
+<table>
+<thead>
+<tr>
+<th>Error</th>
+<th>Meaning</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Bolus amount exceeds max bolus"</td>
+<td>Requested bolus &gt; Max Bolus setting</td>
+<td>Reduce bolus amount or increase Max Bolus in settings</td>
+</tr>
+<tr>
+<td>"<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> would exceed max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>"</td>
+<td>Current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> + bolus &gt; Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr></td>
+<td>Wait for <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> to decrease, or increase Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr></td>
+</tr>
+<tr>
+<td>"Recent bolus detected"</td>
+<td>Similar bolus in last 10 minutes</td>
+<td>Wait 10 minutes or verify this isn't a duplicate</td>
+</tr>
+<tr>
+<td>"APSManager unavailable"</td>
+<td>Trio can't access pump</td>
+<td>Check Trio app is running and pump is connected</td>
+</tr>
+<tr>
+<td>"Command too old"</td>
+<td>Timestamp &gt; 10 minutes ago</td>
+<td>Check phone clocks are synchronized; resend command</td>
+</tr>
+</tbody>
+</table>
+<h4 id="use-cases_1">Use Cases<a class="headerlink" href="#use-cases_1" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Meal Boluses</strong>: Deliver insulin for meals when away from phone</li>
+<li><strong>Correction Boluses</strong>: Correct high blood sugar remotely</li>
+<li><strong>Caregiver Support</strong>: Parents can dose insulin for children</li>
+<li><strong>Emergencies</strong>: Deliver insulin if user can't access their phone</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Important Safety Note</p>
+<p>Remote bolus is a powerful feature that delivers real insulin. Always:</p>
+<ul>
+<li>Verify the bolus amount before sending</li>
+<li>Check current blood glucose and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr> before sending</li>
+<li>Ensure the user is aware a bolus is being sent</li>
+<li>Have emergency glucagon available</li>
+<li>Never use remote bolus as a prank or without authorization</li>
+</ul>
+</div>
 <h3 id="temp-target">Temp Target<a class="headerlink" href="#temp-target" title="Link to this section for reference">¶</a></h3>
-<p><strong><em>More info coming soon!</em></strong></p>
+<p>The Temp Target command allows you to set or cancel temporary glucose targets remotely via LoopFollow.</p>
+<h4 id="how-to-set-a-remote-temp-target">How to Set a Remote Temp Target<a class="headerlink" href="#how-to-set-a-remote-temp-target" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Temp Target" from the command options</li>
+<li>Enter the temp target details:<ul>
+<li><strong>Target</strong>: Desired glucose target in mg/dL (or mmol/L)</li>
+<li><strong>Duration</strong>: How long the target should be active (in minutes)</li>
+</ul>
+</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-trio-receives-a-temp-target-command">What Happens When Trio Receives a Temp Target Command<a class="headerlink" href="#what-happens-when-trio-receives-a-temp-target-command" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>
+<p><strong>Validation</strong>: Trio checks that:</p>
+<ul>
+<li>Target value is provided and valid</li>
+<li>Duration is provided and greater than 0</li>
+</ul>
+</li>
+<li>
+<p><strong>Temp Target Creation</strong>: Trio creates a temporary target with:</p>
+<ul>
+<li><code>targetTop</code> and <code>targetBottom</code> both set to the specified target</li>
+<li>Duration in minutes</li>
+<li>Custom name indicating it's a remote target</li>
+<li>Marked as a "local" entry</li>
+</ul>
+</li>
+<li>
+<p><strong>Storage</strong>: The temp target is saved to Trio's temp target storage</p>
+</li>
+<li>
+<p><strong>Sync to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: The temp target is uploaded to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></p>
+</li>
+<li>
+<p><strong>UI Update</strong>: Trio posts notifications to update the UI immediately</p>
+</li>
+<li>
+<p><strong>Response Notification</strong>: LoopFollow receives confirmation</p>
+</li>
+</ol>
+<h4 id="how-to-cancel-a-remote-temp-target">How to Cancel a Remote Temp Target<a class="headerlink" href="#how-to-cancel-a-remote-temp-target" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Cancel Temp Target" from the options</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-canceling">What Happens When Canceling<a class="headerlink" href="#what-happens-when-canceling" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li><strong>Fetch Active Targets</strong>: Trio retrieves all currently active temp targets</li>
+<li><strong>Create End Records</strong>: For each active temp target, Trio creates a <code>TempTargetRunStored</code> record marking it as ended</li>
+<li><strong>Disable All</strong>: All active temp targets are marked as disabled</li>
+<li><strong>Sync to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: Changes are uploaded</li>
+<li><strong>UI Update</strong>: Trio interface updates to show no active temp targets</li>
+</ol>
+<h4 id="common-temp-target-values">Common Temp Target Values<a class="headerlink" href="#common-temp-target-values" title="Link to this section for reference">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>80-100 mg/dL</strong></td>
+<td>Before meals (tighter control)</td>
+</tr>
+<tr>
+<td><strong>110-120 mg/dL</strong></td>
+<td>Sleeping/overnight (prevent lows)</td>
+</tr>
+<tr>
+<td><strong>140-160 mg/dL</strong></td>
+<td>Exercise (prevent lows)</td>
+</tr>
+<tr>
+<td><strong>120-130 mg/dL</strong></td>
+<td>After meals (less aggressive corrections)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Temp Targets and Algorithm Behavior</p>
+<p>Temporary targets affect how Trio delivers insulin:</p>
+<ul>
+<li><strong>Higher targets</strong> → Less aggressive insulin delivery, fewer/smaller SMBs</li>
+<li><strong>Lower targets</strong> → More aggressive insulin delivery, more/larger SMBs</li>
+<li>Temp targets override your normal target glucose setting</li>
+<li>Trio respects your safety limits (Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>, Max SMB) regardless of temp target</li>
+</ul>
+</div>
+<h4 id="use-cases_2">Use Cases<a class="headerlink" href="#use-cases_2" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Exercise</strong>: Set higher target before/during exercise to prevent lows</li>
+<li><strong>Sleep</strong>: Set higher target at bedtime for peace of mind</li>
+<li><strong>Pre-meal</strong>: Set lower target before eating to achieve tighter control</li>
+<li><strong>Illness</strong>: Adjust targets when sick</li>
+<li><strong>Cancel</strong>: Return to normal targets anytime</li>
+</ul>
 <h3 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Link to this section for reference">¶</a></h3>
-<p><strong><em>More info coming soon!</em></strong></p>
+<p>The Override command allows you to activate or cancel override presets remotely via LoopFollow. Overrides are powerful tools that simultaneously adjust multiple settings (insulin sensitivity, basal rates, carb ratios, and targets) based on predefined presets.</p>
+<h4 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this section for reference">¶</a></h4>
+<p>Before using remote overrides, you must:</p>
+<ol>
+<li>
+<p><strong>Create Override Presets</strong> in Trio:</p>
+<ul>
+<li>Go to Trio Settings → Overrides</li>
+<li>Create and name your override presets (e.g., "Exercise", "Sick Day")</li>
+<li>Configure the percentage adjustments for each preset</li>
+</ul>
+</li>
+<li>
+<p><strong>Configure LoopFollow</strong> with the exact preset names</p>
+</li>
+</ol>
+<h4 id="how-to-start-a-remote-override">How to Start a Remote Override<a class="headerlink" href="#how-to-start-a-remote-override" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Start Override" from the command options</li>
+<li>Select the override preset from the dropdown (must match a preset name in Trio)</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-trio-receives-a-start-override-command">What Happens When Trio Receives a Start Override Command<a class="headerlink" href="#what-happens-when-trio-receives-a-start-override-command" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>
+<p><strong>Validation</strong>: Trio checks that:</p>
+<ul>
+<li>Override name is provided and not empty</li>
+<li>Override name matches an existing preset (exact match, case-sensitive)</li>
+</ul>
+</li>
+<li>
+<p><strong>Fetch Presets</strong>: Trio retrieves all override presets from storage</p>
+</li>
+<li>
+<p><strong>Find Matching Preset</strong>: Searches for a preset with the exact name specified</p>
+</li>
+<li>
+<p><strong>Disable Other Overrides</strong>: All currently active overrides are disabled first</p>
+</li>
+<li>
+<p><strong>Enable Requested Override</strong>: The matching override preset is:</p>
+<ul>
+<li>Enabled</li>
+<li>Timestamp set to current time</li>
+<li>Marked as not yet uploaded to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></li>
+</ul>
+</li>
+<li>
+<p><strong>Save to Core Data</strong>: Changes are persisted</p>
+</li>
+<li>
+<p><strong>UI Update</strong>: Trio posts notifications to refresh the UI</p>
+</li>
+<li>
+<p><strong>Upload to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: The active override is logged</p>
+</li>
+<li>
+<p><strong>Response Notification</strong>: LoopFollow receives confirmation</p>
+</li>
+</ol>
+<h4 id="how-to-cancel-a-remote-override">How to Cancel a Remote Override<a class="headerlink" href="#how-to-cancel-a-remote-override" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li>Open LoopFollow and tap the Remote Control button</li>
+<li>Select "Cancel Override" from the options</li>
+<li>Tap "Send" to transmit the command</li>
+</ol>
+<h4 id="what-happens-when-canceling_1">What Happens When Canceling<a class="headerlink" href="#what-happens-when-canceling_1" title="Link to this section for reference">¶</a></h4>
+<ol>
+<li><strong>Fetch Active Overrides</strong>: Trio retrieves all currently active overrides</li>
+<li><strong>Create End Records</strong>: For each active override, Trio creates an <code>OverrideRunStored</code> record marking it as ended</li>
+<li><strong>Disable All</strong>: All active overrides are marked as disabled</li>
+<li><strong>Sync to <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></strong>: Changes are uploaded</li>
+<li><strong>UI Update</strong>: Trio returns to normal settings</li>
+</ol>
+<h4 id="how-overrides-work">How Overrides Work<a class="headerlink" href="#how-overrides-work" title="Link to this section for reference">¶</a></h4>
+<p>Overrides modify your therapy settings by percentage:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Override Adjustment</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Insulin Sensitivity (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>)</strong></td>
+<td>Percentage multiplier</td>
+<td>50% = half the insulin, 200% = double the insulin</td>
+</tr>
+<tr>
+<td><strong>Basal Rates</strong></td>
+<td>Percentage multiplier</td>
+<td>150% = 1.5x normal basal</td>
+</tr>
+<tr>
+<td><strong>Carb Ratios</strong></td>
+<td>Percentage multiplier</td>
+<td>75% = less insulin per carb</td>
+</tr>
+<tr>
+<td><strong>Target Glucose</strong></td>
+<td>Override target value</td>
+<td>Completely replaces normal target</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example "Exercise" Override</strong>:
+- <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>: 150% (more sensitive, less insulin)
+- Basal: 75% (reduced basal delivery)
+- <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>: 120% (less insulin for carbs)
+- Target: 140 mg/dL (higher target to prevent lows)</p>
+<p><strong>Example "Sick Day" Override</strong>:
+- <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>: 50% (more resistant, more insulin)
+- Basal: 150% (increased basal delivery)
+- <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>: 80% (more insulin for carbs)
+- Target: 110 mg/dL (tighter control)</p>
+<h4 id="override-preset-name-matching">Override Preset Name Matching<a class="headerlink" href="#override-preset-name-matching" title="Link to this section for reference">¶</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Exact Match Required</p>
+<p>The override name sent from LoopFollow must <strong>exactly match</strong> a preset name in Trio:</p>
+<ul>
+<li>Case-sensitive: "Exercise" ≠ "exercise"</li>
+<li>Spacing matters: "Sick Day" ≠ "SickDay"</li>
+<li>Spelling must be exact</li>
+</ul>
+<p>If no match is found, the command will fail with an error message.</p>
+</div>
+<h4 id="use-cases_3">Use Cases<a class="headerlink" href="#use-cases_3" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Exercise</strong>: Activate exercise mode remotely before/during physical activity</li>
+<li><strong>Illness</strong>: Switch to sick day settings when user is unwell</li>
+<li><strong>Travel</strong>: Adjust settings for time zone changes or schedule disruptions</li>
+<li><strong>Stress</strong>: Modify insulin delivery during stressful periods</li>
+<li><strong>Menstrual Cycle</strong>: Adjust for hormonal changes</li>
+<li><strong>Cancel</strong>: Return to normal settings anytime</li>
+</ul>
+<h4 id="safety-considerations">Safety Considerations<a class="headerlink" href="#safety-considerations" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Overrides are powerful</strong>: They affect multiple settings simultaneously</li>
+<li><strong>Test first</strong>: Test override presets locally before using remotely</li>
+<li><strong>Monitor closely</strong>: Watch glucose trends closely when an override is active</li>
+<li><strong>Duration</strong>: Consider setting automatic duration limits on override presets</li>
+<li><strong>Communication</strong>: Ensure the user knows when an override is activated remotely</li>
+</ul>
+<h4 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this section for reference">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></th>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Override not found"</td>
+<td>Name doesn't match any preset</td>
+<td>Check spelling and capitalization in both Trio and LoopFollow</td>
+</tr>
+<tr>
+<td>"Failed to enable override"</td>
+<td>Trio can't access storage</td>
+<td>Restart Trio app and try again</td>
+</tr>
+<tr>
+<td>Override not taking effect</td>
+<td>Override successfully activated but settings unchanged</td>
+<td>Verify the override preset has non-zero percentage adjustments configured</td>
+</tr>
+</tbody>
+</table>
 <hr/>
 <h2 id="apple-push-notifications-system-apns"><em>Apple</em> Push Notifications System (APNS)<a class="headerlink" href="#apple-push-notifications-system-apns" title="Link to this section for reference">¶</a></h2>
 <h3 id="existing-apns">Existing APNS<a class="headerlink" href="#existing-apns" title="Link to this section for reference">¶</a></h3>
@@ -1560,7 +2021,7 @@ If you took those steps and still have missing rows, return to <a href="#configu
 </li>
 </ol>
 <hr/>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this section for reference">¶</a></h2>
+<h2 id="troubleshooting_1">Troubleshooting<a class="headerlink" href="#troubleshooting_1" title="Link to this section for reference">¶</a></h2>
 <p>This section covers known troubleshooting issues:</p>
 <ul>
 <li><em><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></em> not displaying Trio data: <a href="#configure-for-openaps">Configure for OpenAPS</a></li>
@@ -1636,8 +2097,7 @@ If you took those steps and still have missing rows, return to <a href="#configu
 </table>
 <hr/>
 <h2 id="build-loopfollow">Build <em>LoopFollow</em><a class="headerlink" href="#build-loopfollow" title="Link to this section for reference">¶</a></h2>
-<p>This page is under construction. But here's the link:</p>
-<p><a href="../../../../install/ecosystem/loop-follow/" target="_blank">Install LoopFollow</a></p>
+<p>Follow this link to the <a href="../../../../install/ecosystem/loop-follow/" target="_blank">LoopFollow</a> build instructions.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
