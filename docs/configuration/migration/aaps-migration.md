@@ -30,7 +30,11 @@ Here are some things to keep in mind after moving from AndroidAPS to Trio 0.5+ i
 - **User Interface**  
     Use this time to learn the [User Interface](../../usage/interface.md).
 - **Dynamic ISF**  
-    Dynamic ISF is disabled for the first **7 days**. 
+    - Dynamic ISF is disabled for the first **7 days**.  
+    - If you were using Dynamic ISF in AAPS, you will have to wait a week before enabling dynamic ISF in Trio. 
+    - Data import from AAPS/Nightscout is not available.
+- **Settings**
+    When migrating from AAPS to Trio, many users will achieve similar results by using similar settings. The core algorithm is the same between AndroidAPS and Trio.
 
     !!! warning "Dynamic ISF & Closed Loop"
         Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
@@ -53,7 +57,7 @@ Here are some things to keep in mind after moving from AndroidAPS to Trio 0.5+ i
 
 - - -
 
-## What to Expect in Your First 24 Hours
+## What to Expect After Your First 24 Hours
 
 A full day on Trio! Congratulations! Here's what to look for:
 
@@ -71,14 +75,14 @@ A full day on Trio! Congratulations! Here's what to look for:
 
 - - -
 
-## What to Expect in Your First 7 Days
+## What to Expect After Your First 7 Days
 
 You've completed a week on Trio! Here's what you should see:
 
 - **Dynamic ISF**  
-    Dynamic ISF now has enough data. You now have the option to enable it.
-    
-    This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md) and review the [Desmos graphs video](https://www.youtube.com/watch?v=7aJA-leQyPc) by Mike Plante and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
+    - Dynamic ISF now has enough data. You now have the option to enable it.
+    - The Logarithmic formula in Trio is the most similar to AAPS dynamic ISF. The Sigmoid formula behaves very differently (informative links below). Which one you use is up to you.
+    - This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md) and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
 
 !!! warning "Can't Enable Dynamic ISF?"
     If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
@@ -117,7 +121,7 @@ When you move your settings from AAPS to Trio, there are multiple settings that 
 | [**Maximum Insulin On Board (IOB)**](../settings/therapy/units-limits.md#max-iob) | decimal <br> (2 U) | Settings → Therapy → Units and Limits → Maximum Insulin On Board (IOB) | **Maximum total IOB OpenAPS can't go over** | decimal <br> (2) | Preferences → OpenAPS SMB → Maximum total IOB OpenAPS can't go over |
 | [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | decimal <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Max allowed bolus** | decimal <br> (10.0) | Preferences → Treatments safety → Max allowed bolus |
 | [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | decimal <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Max U/h a Temp Basal can be set to** | decimal <br> (4.0) | Preferences → OpenAPS SMB |
-| [**Maximum Carbs on Board (COB)**](../settings/therapy/units-limits.md#max-cob) | decimal <br> (120 g) | Settings → Therapy → Units and Limits → Maximum Carbs on Board (COB) | ***No Equivalent Setting*** | N/A | N/A |
+| [**Maximum Carbs on Board (COB)**](../settings/therapy/units-limits.md#max-cob) | decimal <br> (120 g) | Settings → Therapy → Units and Limits → Maximum Carbs on Board (COB) | **Max allowed carbs** | decimal <br> (120) | Preferences → Treatments safety → Max allowed carbs |
 | [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | decimal <br> (60 mg/dL) | Settings → Therapy → Units and Limits → Minimum Safety Threshold | **BG level below which low glucose suspend occurs** | decimal <br> (65) | Preferences → OpenAPS SMB → Enable dynamic sensitivity (ON) → BG level below which low glucose suspend occurs |
 
 ### [Algorithm Settings](../settings/algorithm/index.md)
@@ -164,7 +168,7 @@ When you move your settings from AAPS to Trio, there are multiple settings that 
 | [**Low Temp Target Lowers Sensitivity**](../settings/algorithm/target-behavior.md#low-temp-target-lowers-sensitivity) | toggle <br> (On/Off) | Settings → Algorithm → Target Behavior → Low Temp Target Lowers Sensitivity | **Low temp-target lowers sensitivity** | toggle <br> (On/Off) | Preferences → OpenAPS SMB → Low temp-target lowers sensitivity |
 | [**Sensitivity Raises Target**](../settings/algorithm/target-behavior.md#sensitivity-raises-target) | toggle <br> (On/Off) | Settings → Algorithm → Target Behavior → Sensitivity Raises Target | **Sensitivity raises target** | toggle <br> (On/Off) | Preferences → OpenAPS SMB → Sensitivity raises target |
 | [**Resistance Lowers Target**](../settings/algorithm/target-behavior.md#resistance-lowers-target) | toggle <br> (On/Off) | Settings → Algorithm → Target Behavior → Resistance Lowers Target | **Resistance lowers target** | toggle <br> (On/Off) | Preferences → OpenAPS SMB → Resistance lowers target |
-| [**Half Basal Exercise Target**](../settings/algorithm/target-behavior.md#half-basal-exercise-target) | decimal <br> (160 mg/dL &#124; 8.9 mmol/L) | Settings → Algorithm → Target Behavior → Half Basal Exercise Target | ***No Equivalent Setting*** | N/A | N/A |
+| [**Half Basal Exercise Target**](../settings/algorithm/target-behavior.md#half-basal-exercise-target) | decimal <br> (160 mg/dL &#124; 8.9 mmol/L) | Settings → Algorithm → Target Behavior → Half Basal Exercise Target | **Activity Target Value** | decimal <br> (160 mg/dL &#124; 8.9 mmol/L) | Preferences → Overview Default → Temp-targets → Activity target value |
 
 #### [Additionals](../settings/algorithm/additionals.md)
 
@@ -194,7 +198,7 @@ When you move your settings from AAPS to Trio, there are multiple settings that 
 
 | Trio Name | Setting Format <br> (example) | Location in Trio | AAPS Name | Setting Format <br> (example) | Location in AAPS |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Display Meal Presets**](../settings/features/bolus-calculator.md#display-meal-presets) | toggle <br> (On/Off) | Settings → Features → Bolus Calculator → Display Meal Presets | ***No Equivalent Setting*** | N/A | N/A |
+| [**Display Meal Presets**](../settings/features/bolus-calculator.md#display-meal-presets) | toggle <br> (On/Off) | Settings → Features → Bolus Calculator → Display Meal Presets | **Quick Wizard** | N/A | Preferences → Overview → QuickWizard Settings → Add / edit Quick Wizard |
 | [**Recommended Bolus Percentage**](../settings/features/bolus-calculator.md#recommended-bolus-percentage) | percentage <br> (80%) | Settings → Features → Bolus Calculator → Recommended Bolus Percentage | **Deliver this part of bolus wizard result** | percentage <br> (100) | Preferences → Overview → Deliver this part of bolus wizard result |
 | [**Enable Reduced Bolus**](../settings/features/bolus-calculator.md#enable-reduced-bolus-option) | toggle <br> (On/Off) | Settings → Features → Bolus Calculator → Enable Reduced Bolus | ***No Equivalent Setting*** | N/A | N/A |
 | [**Reduced Bolus Percentage**](../settings/features/bolus-calculator.md#reduced-bolus-percentage) | percentage <br> (30%) | Settings → Features → Bolus Calculator → Enable Reduced Bolus (ON) → Reduced Bolus Percentage | ***No Equivalent Setting*** | N/A | N/A |
@@ -221,3 +225,11 @@ When you move your settings from AAPS to Trio, there are multiple settings that 
 | Trio Name | Setting Format <br> (example) | Location in Trio | AAPS Name | Setting Format <br> (example) | Location in AAPS |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | **Smooth Glucose Value** | toggle <br> (On/Off) | Settings → Devices → CGM → Smooth Glucose Value | **Smoothing** | selection <br> (No smoothing / Exponential smoothing / Average smoothing) | Config Builder → Smoothing |
+
+!!! note "Custom Automations"
+    Trio does not offer certain custom automations that are available in AAPS, such as automating a hypo temp target when glucose drops below a certain value.
+    This can, however, be achieved one of two ways:
+    
+    - Enable "Sensitivity Raises Target" which will automatically increase your target glucose when sensitivity ratio is below 100%.
+    - Enable "High Temp Target Raises Sensitivity" and save a custom temp target of <100 mg/dL (5.5 mmol/L) under adjustments that you can manually enable when recovering from a low glucose.
+
