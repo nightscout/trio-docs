@@ -22,7 +22,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     How to test your basal rates
 
--   __[Insulin Sensitivities](concepts/isf.md)__
+-   __[Insulin Sensitivities](isf.md)__
 
     - - -
       
@@ -34,7 +34,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     How to test your Insulin Sensitivity Factor (ISF)
     
--   __[Carb Ratios](concepts/carb-ratios.md)__
+-   __[Carb Ratios](carb-ratios.md)__
 
     - - -
  

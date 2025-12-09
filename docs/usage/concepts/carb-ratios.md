@@ -41,11 +41,10 @@ For example, a CR of 10 g/U means that 1 unit of insulin will cover 10 grams of 
 
 CR is essential for Trio because it determines:
 
-1. **Meal Bolus Calculations**: How much insulin is needed to cover the carbohydrates you eat
-2. **Carbs on Board (COB) Corrections**: How much insulin is needed for unabsorbed carbs still affecting your glucose
-3. [**Bolus Calculator Recommendations**](#in-the-bolus-calculator): The carb coverage component of total insulin needed
-4. **Automatic Bolusing**: When SMB (Super Micro Bolus) is enabled, CR affects insulin delivery for meals
-5. [**Carbs on Board (COB) Calculations**](#cob-carbs-on-board): Combined with your current ISF, your CR is used to calculate how many carbs have been absorbed and no longer need to be accounted for in corrections
+1. **Carbs on Board (COB) Corrections**: How much insulin is needed for unabsorbed carbs still affecting your glucose
+2. [**Bolus Calculator Recommendations**](#in-the-bolus-calculator): The carb coverage component of total insulin needed
+3. **Automatic Bolusing**: When SMB (Super Micro Bolus) is enabled, CR affects insulin delivery for meals
+4. [**Carbs on Board (COB) Calculations**](#cob-carbs-on-board): Combined with your current ISF, your CR is used to calculate how many carbs have been absorbed and no longer need to be accounted for in corrections
 
 !!! important "Direct Usage"
     Unlike basal rates and ISF, which are modified by Autosens or Dynamic ISF, **carb ratio is used directly** by Trio's algorithm.
@@ -72,7 +71,7 @@ Where:
 
 - **Carbs Entered**: New carbs you're adding in the treatment screen
 - **Current COB**: Carbs on board from previous meals still being absorbed
-- **Max COB Limit**: Default 120g; prevents excessive insulin from carb stacking
+- **Max COB Limit**: Default 120g; prevents excessive insulin when carbs are not yet digested.
 
 - - -
 
@@ -177,6 +176,7 @@ The standard way to test your CR is a controlled meal experiment:
 - **ISF problem**: Affects corrections and SMB once COB = 0
 
 If you're unsure which setting needs adjustment:
+
 - Test CR with controlled meal experiments (as described above)
 - Test ISF with correction boluses when fasting (no COB)
 
@@ -184,9 +184,11 @@ If you're unsure which setting needs adjustment:
 
 Your actual carb coverage needs can vary based on:
 
-- **Fat content**: High-fat meals may need extended bolusing or reduced upfront insulin
+- **Fat content**: High-fat meals may need reduced upfront insulin ([Reduced Bolus Option](../../configuration/settings/features/bolus-calculator.md#enable-reduced-bolus-option))
 - **Protein content**: Large amounts of protein may require additional coverage
 - **Glycemic index**: Fast-absorbing carbs vs. slow-absorbing carbs
+    - Fast-absorbing: Utilize the [Super Bolus Option](../../configuration/settings/features/bolus-calculator.md#enable-super-bolus-option)
+    - Slow-Absorbing: Utilize the [Reduced Bolus Option](../../configuration/settings/features/bolus-calculator.md#enable-reduced-bolus-option)
 
 These factors affect meal timing and absorption, not necessarily your CR itself.
 
