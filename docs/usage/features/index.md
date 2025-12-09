@@ -10,31 +10,31 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Temporary Targets](features/temp-targets.md)__
+-   __[Temporary Targets](temp-targets.md)__
 
     - - -
 
     How and when to use Temporary Targets
 
--   __[Overrides](features/overrides.md)__
+-   __[Overrides](overrides.md)__
 
     - - -
  
     How and when to use Overrides
     
--   __[Statistics](features/statistics.md)__
+-   __[Statistics](statistics.md)__
 
     - - -
  
     A detailed look at Trio's Statistics interface
 
--   __[Bolus Calculator](features/bolus-calculator.md)__
+-   __[Bolus Calculator](bolus-calculator.md)__
 
     - - -
  
     Information on what's possible with Trio's Bolus Calculator
     
--   __[Using Dynamic ISF](features/dynamic-isf.md)__
+-   __[Using Dynamic ISF](dynamic-isf.md)__
 
     - - -
  

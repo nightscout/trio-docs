@@ -31,8 +31,8 @@ The Statistics screen is organized into four main categories, each accessible vi
 ![Trio Statistics Categories](../img/statistics_categories.png){width="400"}
 {align="center"}
 
-- **Glucose** - Blood sugar metrics, time-in-range, and glucose distribution
-- **Insulin** - Total daily dose and bolus breakdown
+- **Glucose** - CGM & blood sugar metrics, time-in-range, and glucose distribution
+- **Insulin** - Total daily dose and bolus distribution
 - **Looping** - Loop cycle performance and reliability metrics
 - **Meals** - Macronutrient tracking and meal analysis
 

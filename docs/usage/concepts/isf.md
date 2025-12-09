@@ -103,7 +103,9 @@ Dynamic ISF is a more aggressive way to adjust your ISF based on current glucose
 
 **Key Parameters**:
 
-- **Adjustment Factor**: (Sigmoid) Controls how aggressively ISF changes. (Logarithmic) Controls what ISF is used at which glucose. (Logarithmic: should be manually set to $0.02 \times TDD$, Sigmoid: default is 50%)
+- **Adjustment Factor**: 
+    - **Sigmoid**: Adjustment Factor controls how aggressively ISF changes. Learn more about how changes to Sigmoid Adjustment Factor influences ISF adjustments [here](../features/dynamic-isf.md#adjustment-factor_1). The default for Sigmoid Adjustment Factor is 50%.
+    - **Logarithmic**: Controls what ISF is used at which glucose. It should be manually set to approximately $0.02 \times TDD$. Learn more about how changing Adjustment Factor influences Logarithmic dynamic ISF [here](../features/dynamic-isf.md#adjustment-factor).
 - **Autosens Maximum**: Controls the upper limit of the autosens ratio (default: 120%)
 - **Autosens Minimum**: Controls the lower limit of the autosens ratio (default: 70%)
 - **Weighted Average of TDD**: Blends recent (24h) and historical (10-day) insulin use (default: 35%)
