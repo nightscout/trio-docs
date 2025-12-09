@@ -32,7 +32,7 @@ Here are some things to keep in mind after moving from iAPS to Trio v0.5+ in the
         Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
 
 - **Autosens**  
-    Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
+    Autosens will require **8–24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
 
     !!!warning "Initial Limitation with Autosens"
         There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.

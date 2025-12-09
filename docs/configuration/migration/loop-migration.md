@@ -38,7 +38,7 @@ Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the
         Trio must be in **Closed Loop** for 7 days in order to enable Dynamic ISF.
 
 - **Autosens**  
-    Autosens will require **8-24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
+    Autosens will require **8–24 hours** of data before it starts making adjustments. *You may need to enter carbs and bolus during this time if you aren't already doing so.*
 
     !!! warning "Initial Limitation with Autosens"
         There's a long standing issue with Autosens where it will likely be stuck at 100% for the first 24 hours when there are carb entries or SMBs.
@@ -49,9 +49,9 @@ Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the
         Whether or not to enable SMBs or enter carbs is a personal choice based on what you prioritize in your first 24 hours.
 
 - **Nightscout Changes**  
-    - You will need to update your Nightscout page to use Trio plugins rather than loop plugins.
-    - Replace `loop` with `openaps` in the variables ENABLE, SHOW_PLUGLINS, and SHOW_FORECAST.
-    - If you pay for nightscout through a provider, please reach out to them to update your variables.
+    - You will need to update your Nightscout page to use Trio plugins rather than Loop plugins.
+    - Replace `loop` with `openaps` in the variables `ENABLE`, `SHOW_PLUGINS`, and `SHOW_FORECAST`.
+    - If you pay for Nightscout through a provider, please reach out to them to update your variables.
 !!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
@@ -106,17 +106,17 @@ When you start on Trio, you will notice there are significantly more settings th
 ### [Therapy Settings](../settings/therapy/index.md)
 | Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | schedule <br> (100 mg/dL - 12:00 AM)  | Settings → Therapy → Glucose Targets | **Correction Range** | decimal range <br> (100 - 115 mg/dL) | Settings → Therapy Settings → Correction Range |
-| [**Basal Rates**](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | schedule <br> (1.0 U/hr - 12:00 AM) | Settings → Therapy → Basal Rates | **Basal Rates** | schedule <br> (12:00 AM - 1.0 U/hr) | Settings → Therapy Settings → Basal Rates | 
-| [**Carb Ratios**](../settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio) | schedule <br> (15 g/U - 12:00 AM) | Settings → Therapy → Carb Ratios | **Carb Ratios** | schedule <br> (12:00AM - 15 g/U) | Setting → Therapy Settings → Carb Ratios | 
-| [**Insulin Sensitivities**](../settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | schedule <br> (50 mg/dL/U - 12:00 AM) | Settings → Therapy → Insulin Sensitivities | **Insulin Sensitivities** | schedule <br> (12:00 AM - 50 mg/dL/U) | Settings → Therapy Settings → Insulin Sensitivities | 
+| [**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | schedule <br> (100 mg/dL — 12:00 AM)  | Settings → Therapy → Glucose Targets | **Correction Range** | decimal range <br> (100 – 115 mg/dL) | Settings → Therapy Settings → Correction Range |
+| [**Basal Rates**](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | schedule <br> (1.0 U/hr — 12:00 AM) | Settings → Therapy → Basal Rates | **Basal Rates** | schedule <br> (12:00 AM — 1.0 U/hr) | Settings → Therapy Settings → Basal Rates | 
+| [**Carb Ratios**](../settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio) | schedule <br> (15 g/U — 12:00 AM) | Settings → Therapy → Carb Ratios | **Carb Ratios** | schedule <br> (12:00AM — 15 g/U) | Setting → Therapy Settings → Carb Ratios | 
+| [**Insulin Sensitivities**](../settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | schedule <br> (50 mg/dL/U — 12:00 AM) | Settings → Therapy → Insulin Sensitivities | **Insulin Sensitivities** | schedule <br> (12:00 AM — 50 mg/dL/U) | Settings → Therapy Settings → Insulin Sensitivities | 
 
 #### [Units and Limits](../settings/therapy/units-limits.md)
 
 | Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | [**Glucose Units**](../settings/therapy/units-limits.md#glucose-units) | selection <br> (mg/dL or mmol/L) | Settings → Therapy → Units and Limits | **Apple Health: Blood Glucose Unit** | selection <br> (mg/dL or mmol/L) | Health App → Browse → Vitals → Blood Glucose → Unit |
-| [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | decimal <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Maximum Bolus** | decimal <br> (8U) | Settings → Therapy Settings → Maximum Bolus |
+| [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | decimal <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Maximum Bolus** | decimal <br> (8 U) | Settings → Therapy Settings → Maximum Bolus |
 | [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | decimal <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Maximum Basal Rate** | decimal <br> (2 U/hr) | Settings → Therapy Settings → Maximum Basal Rate |
 | [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | decimal <br> (60 mg/dL) | Settings → Therapy → Units and Limits → Minimum Safety Threshold | **Glucose Safety Limit** | decimal <br> (80 mg/dL) | Settings → Therapy Settings → Glucose Safety Limit |
 
