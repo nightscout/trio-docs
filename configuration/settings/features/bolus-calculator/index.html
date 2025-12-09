@@ -524,6 +524,15 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#very-low-glucose-warning">
+<span class="md-ellipsis">
+      
+        Very Low Glucose Warning
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -753,6 +762,15 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#very-low-glucose-warning">
+<span class="md-ellipsis">
+      
+        Very Low Glucose Warning
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -838,6 +856,14 @@
 <!-- TODO: Add formula for Super Bolus Calculation "bolus req x rec bolus % + current basal x (super bolus %/100)" -->
 <p>This setting is useful for meals that require more insulin up front, for example, Cinnamon Toast Crunch or candy.</p>
 <!-- TODO: Add Bill example using 0.8 current basal rate and 200% super bolus percentage -->
+<hr/>
+<h2 id="very-low-glucose-warning">Very Low Glucose Warning<a class="headerlink" href="#very-low-glucose-warning" title="Link to this section for reference">¶</a></h2>
+<p><strong>Default:</strong> <em>Off</em></p>
+<p>This setting triggers a confirmation dialog if you attempt to bolus when glucose is &lt;54 mg/dL (3 mmol/L). It is also triggered when the lowest forecasted glucose (minPredBG) is &lt;54 mg/dL (3 mmol/L).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The forecast used for this warning does not include carbs or insulin that are entered for the current bolus calculation.</p>
+</div>
 <hr/>
 </article>
 </div>

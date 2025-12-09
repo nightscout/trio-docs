@@ -475,10 +475,10 @@
 <nav aria-label="What are the reasons for these changes?" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#entry-type-dial-vs-typed-entry">
+<a class="md-nav__link" href="#entry-type-picker-vs-typed-entry">
 <span class="md-ellipsis">
       
-        Entry Type: Dial vs Typed Entry
+        Entry Type: Picker vs Typed Entry
       
     </span>
 </a>
@@ -524,7 +524,7 @@
 <span class="md-ellipsis">
     
   
-    Migrating from Loop ✏️
+    Migrating from Loop
   
 
     
@@ -536,7 +536,7 @@
 <span class="md-ellipsis">
     
   
-    Migrating from AndroidAPS ✏️
+    Migrating from AndroidAPS
   
 
     
@@ -812,10 +812,10 @@
 <nav aria-label="What are the reasons for these changes?" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#entry-type-dial-vs-typed-entry">
+<a class="md-nav__link" href="#entry-type-picker-vs-typed-entry">
 <span class="md-ellipsis">
       
-        Entry Type: Dial vs Typed Entry
+        Entry Type: Picker vs Typed Entry
       
     </span>
 </a>
@@ -857,15 +857,14 @@
 <p class="admonition-title">Please Read This Page <strong>BEFORE</strong> Updating</p>
 <p>Do not update without reading this documentation or you risk finding many unexpected changes that can easily be resolved with prior planning.</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Browser Build Users</p>
-<p>Automatic builds for Browser Builders are disabled when updating from 0.2 to 0.7.
-You will have to...</p>
-<ul>
-<li>manually update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the Trio Main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>manually run Action 4: Build in the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr></li>
-</ul>
-</div>
+<!--    
+!!! tip "Browser Build Users"
+    Automatic builds for Browser Builders are disabled when updating from 0.2 to 0.7.
+    You will have to...
+
+    - manually update your fork of the Trio Main branch
+    - manually run Action 4: Build in the workflow
+-->
 <h2 id="what-to-expect-after-install">What to Expect After Install<a class="headerlink" href="#what-to-expect-after-install" title="Link to this section for reference">¶</a></h2>
 <ul>
 <li><strong>Brand New Interface</strong><br/>
@@ -895,7 +894,7 @@ You will have to...</p>
 <li><strong>Now Requires <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow v4.0 or Later</strong><br/>
     More info at <a href="https://loopfollowdocs.org/remote/remote-control-trio/">LoopFollowDocs</a></li>
 <li><strong>Autotune Removed</strong><br/>
-    For years, Autotune has not performed as it was intended to with the addition of Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and many users using multiple <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> in Therapy settings. For this reason, we have removed it until it can be rewritten to work with Trio or a until a new Autotune-like feature can be built.</li>
+    Autotune has not performed well with the addition of Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and many users using multiple <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> in Therapy settings. For this reason, we have removed it until an improved Autotune-like feature is built.</li>
 </ul>
 <h3 id="what-will-transfer-from-trio-02-to-trio-05-or-higher">What <em>Will</em> Transfer from Trio 0.2 to Trio 0.5 (or higher)?<a class="headerlink" href="#what-will-transfer-from-trio-02-to-trio-05-or-higher" title="Link to this section for reference">¶</a></h3>
 <ul>
@@ -917,15 +916,17 @@ You will have to...</p>
 <hr/>
 <h2 id="what-to-expect-in-your-first-3-hours">What to Expect in Your First 3 Hours<a class="headerlink" href="#what-to-expect-in-your-first-3-hours" title="Link to this section for reference">¶</a></h2>
 <p>Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (or higher) in the first 3 hours:</p>
-<h4 id="dynamic-isf-autosens">Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> &amp; Autosens<a class="headerlink" href="#dynamic-isf-autosens" title="Link to this section for reference">¶</a></h4>
-<p>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is disabled for the first <strong>7 days</strong>. <em>You may need to enter carbs and bolus during this time if you aren't already doing so.</em> Autosens will be used instead (but there's a long standing issue with autosens where it will likely be stuck at 1 when there are carb entries or SMBs.)</p>
-<h4 id="onboarding-wizard">Onboarding Wizard<a class="headerlink" href="#onboarding-wizard" title="Link to this section for reference">¶</a></h4>
-<p>Take this time to go through the Onboarding Wizard. Reference the <a href="../../new-user-setup/">New User Setup Guide</a> or ask questions on <a href="https://facebook.triodocs.org">Facebook</a> or <a href="https://discord.triodocs.org">Discord</a> if you have any questions.</p>
-<h4 id="test-settings">Test Settings<a class="headerlink" href="#test-settings" title="Link to this section for reference">¶</a></h4>
-<p>This is a great time to test your settings so you can start fresh on solid footing.</p>
-<h4 id="new-user-interface">New User Interface<a class="headerlink" href="#new-user-interface" title="Link to this section for reference">¶</a></h4>
-<p>Use this time to learn the <a href="../../../usage/interface/">New User Interface</a>.</p>
-<div class="admonition warning">
+<ul>
+<li><strong>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> &amp; Autosens</strong><br/>
+    Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is disabled for the first <strong>7 days</strong>. <em>You may need to enter carbs and bolus during this time if you aren't already doing so.</em> Autosens will be used instead (but there's a long standing issue with autosens where it will likely be stuck at 1 when there are carb entries or SMBs.)</li>
+<li><strong>Onboarding Wizard</strong><br/>
+    Take this time to go through the Onboarding Wizard. Reference the <a href="../../new-user-setup/">New User Setup Guide</a> or ask questions on <a href="https://facebook.triodocs.org">Facebook</a> or <a href="https://discord.triodocs.org">Discord</a> if you have any questions.</li>
+<li><strong>Test Settings</strong><br/>
+    This is a great time to test your settings so you can start fresh on solid footing.</li>
+<li><strong>New User Interface</strong><br/>
+    Use this time to learn the <a href="../../../usage/interface/">New User Interface</a>.</li>
+</ul>
+<div class="admonition danger">
 <p class="admonition-title">Do not use a pump or cgm simulator</p>
 <ul>
 <li>Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.</li>
@@ -936,23 +937,32 @@ You will have to...</p>
 <hr/>
 <h2 id="what-to-expect-after-24-hours">What to Expect After 24 Hours<a class="headerlink" href="#what-to-expect-after-24-hours" title="Link to this section for reference">¶</a></h2>
 <p>A full day on Trio 0.5 (or higher)! Congratulations! Here's what to look for:</p>
-<h4 id="autosens">Autosens<a class="headerlink" href="#autosens" title="Link to this section for reference">¶</a></h4>
-<p>Autosens now has enough data to make adjustments</p>
-<h4 id="review-test-settings">Review &amp; Test Settings<a class="headerlink" href="#review-test-settings" title="Link to this section for reference">¶</a></h4>
-<p>This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days</p>
+<ul>
+<li><strong>Autosens</strong><br/>
+    Autosens now has enough data to make adjustments</li>
+<li>
+<p><strong>Review &amp; Test Settings</strong><br/>
+    This is a good time to review your last 24 hours of results to see if your core settings performed as expected. If you had unexpected challenges with your settings, look at how to test them over the next 7 days</p>
 <ul>
 <li><a href="../../../usage/concepts/basal-rates/">Basal Testing</a></li>
 <li><a href="../../../usage/concepts/isf/"><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Testing</a></li>
 <li><a href="../../../usage/concepts/carb-ratios/">Carb Ratio Testing</a></li>
 </ul>
-<h4 id="review-dynamic-isf-documentation">Review Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Documentation<a class="headerlink" href="#review-dynamic-isf-documentation" title="Link to this section for reference">¶</a></h4>
-<p>Review the documentation on <a href="../../../usage/features/dynamic-isf/">Using Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></a> in preparation for <a href="#what-to-expect-after-7-days">Day 7</a>.</p>
+</li>
+<li>
+<p><strong>Review Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> Documentation</strong><br/>
+    Review the documentation on <a href="../../../usage/features/dynamic-isf/">Using Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></a> in preparation for <a href="#what-to-expect-after-7-days">Day 7</a>.</p>
+</li>
+</ul>
 <hr/>
 <h2 id="what-to-expect-after-7-days">What to Expect After 7 Days<a class="headerlink" href="#what-to-expect-after-7-days" title="Link to this section for reference">¶</a></h2>
 <p>You've completed a week on Trio 0.5 (or higher)! Here's what you should see:</p>
-<h4 id="dynamic-isf">Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr><a class="headerlink" href="#dynamic-isf" title="Link to this section for reference">¶</a></h4>
-<p>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> now has enough data. You now have the option to enable it if you would like to.</p>
-<h4 id="cant-enable-dynamic-isf">Can't Enable Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>?<a class="headerlink" href="#cant-enable-dynamic-isf" title="Link to this section for reference">¶</a></h4>
+<ul>
+<li><strong>Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr></strong><br/>
+    Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> now has enough data. You now have the option to enable it if you would like to.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Can't Enable Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>?</p>
 <p>If Dynamic <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> does not give you the option to enable, you may have experienced one or more of the following:</p>
 <ul>
 <li>You were not in closed loop for the full 7 days.<ul>
@@ -968,8 +978,11 @@ You will have to...</p>
 </ul>
 </li>
 </ul>
-<h4 id="dynamic-cr">Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr><a class="headerlink" href="#dynamic-cr" title="Link to this section for reference">¶</a></h4>
-<p>Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> has been removed due to no known scientific validity to <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> changing with an increase or decrease in glucose.</p>
+</div>
+<ul>
+<li><strong>Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr></strong>
+    Dynamic <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> has been removed due to no known scientific validity to <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> changing with an increase or decrease in glucose.</li>
+</ul>
 <hr/>
 <h2 id="changes-from-trio-02-settings-to-trio-05-or-higher-settings">Changes from Trio 0.2 Settings to Trio 0.5 (or higher) Settings<a class="headerlink" href="#changes-from-trio-02-settings-to-trio-05-or-higher-settings" title="Link to this section for reference">¶</a></h2>
 <p>When you update from Trio 0.2, some of your settings might look different even if they have the same or similar names. That’s because we changed some of the numbers from decimals to percentages to make them easier to understand.</p>
@@ -981,8 +994,10 @@ You will have to...</p>
 <p>The charts below will help you see which setting names or formats have changed. The settings with changes are in bold.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>To convert a value from a decimal to a percentage, multiply it by 100.<br/>
-To convert from a percentage to a decimal, divide by 100.</p>
+<ul>
+<li>To convert a value from a decimal to a percentage, multiply it by 100.  </li>
+<li>To convert from a percentage to a decimal, divide by 100.</li>
+</ul>
 </div>
 <h3 id="therapy-settings"><a href="../../settings/therapy/">Therapy Settings</a><a class="headerlink" href="#therapy-settings" title="Link to this section for reference">¶</a></h3>
 <table>
@@ -1036,7 +1051,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/therapy/units-limits/#max-iob"><strong>Maximum Insulin on Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr>)</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (2 U)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate)">IOB</abbr></strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1045,7 +1060,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/therapy/units-limits/#max-bolus"><strong>Maximum Bolus</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (10 U)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max Bolus</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1054,7 +1069,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/therapy/units-limits/#max-basal"><strong>Maximum Basal Rate</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (2 U/hr)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max Basal</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1063,7 +1078,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/therapy/units-limits/#max-cob"><strong>Maximum Carbs on Board (<abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr>)</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (120 g)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max <abbr title="Carbs on Board, affects automated insulin delivery">COB</abbr></strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1072,7 +1087,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/therapy/units-limits/#minimum-safety-threshold"><strong>Minimum Safety Threshold</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (60 mg/dL / 3.3 mmol/L)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Threshold Settings</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1082,7 +1097,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tbody>
 </table>
 <h3 id="algorithm-settings"><a href="../../settings/algorithm/">Algorithm Settings</a><a class="headerlink" href="#algorithm-settings" title="Link to this section for reference">¶</a></h3>
-<h4 id="autosens_1"><a href="../../settings/algorithm/autosens/">Autosens</a><a class="headerlink" href="#autosens_1" title="Link to this section for reference">¶</a></h4>
+<h4 id="autosens"><a href="../../settings/algorithm/autosens/">Autosens</a><a class="headerlink" href="#autosens" title="Link to this section for reference">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1116,7 +1131,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/autosens/#autosens-max"><strong>Autosens Max</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (120%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Autosens Maximum</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1125,7 +1140,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/autosens/#autosens-min"><strong>Autosens Min</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (70%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Autosens Minimum</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1204,7 +1219,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><strong><a href="../../settings/algorithm/smb-settings/#high-glucose-target">High Glucose Target</a></strong></td>
-<td style="text-align: center;"><strong>dial</strong></td>
+<td style="text-align: center;"><strong>picker</strong></td>
 <td style="text-align: center;"><em>decimal <br/> (110 mg/dL / 6.1 mmol/L)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>... When Blood Glucose is Over (mg/dl)</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>typed value</strong></span></td>
@@ -1231,7 +1246,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/smb-settings/#max-smb-basal-minutes">Max SMB Basal Minutes</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (30 min)</em></td>
 <td style="text-align: center;">Max SMB Basal Minutes</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1240,7 +1255,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/smb-settings/#max-uam-basal-minutes"><strong>Max UAM Basal Minutes</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (30 min)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max UAM SMB Basal Minutes</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1249,7 +1264,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/smb-settings/#max-allowed-glucose-rise-for-smb"><strong>Max Allowed Glucose Rise for SMB</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (20%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Max Delta-BG Threshold SMB</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1310,7 +1325,7 @@ To convert from a percentage to a decimal, divide by 100.</p>
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/target-behavior/#half-basal-exercise-target">Half Basal Exercise Target</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (160 mg/dL / 8.9 mmol/L)</em></td>
 <td style="text-align: center;">Half Basal Exercise Target</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1340,7 +1355,7 @@ Do not alter them without a solid understanding of what you are changing and the
 <tbody>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#max-daily-safety-multiplier">Max Daily Safety Multiplier</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (300%)</em></strong></td>
 <td style="text-align: center;">Max Daily Safety Multiplier</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1349,7 +1364,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#current-basal-safety-multiplier">Current Basal Safety Multiplier</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (400%)</em></strong></td>
 <td style="text-align: center;">Current Basal Safety Multiplier</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1358,7 +1373,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#duration-of-insulin-action">Duration of Insulin Action</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (10 hr)</em></td>
 <td style="text-align: center;">Duration of Insulin Action</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1376,7 +1391,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#insulin-peak-time">Insulin Peak Time</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (65 min)</em></td>
 <td style="text-align: center;">Insulin Peak Time</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1403,7 +1418,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#smb-delivery-ratio"><strong>SMB Delivery Ratio</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (50%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>SMB DeliveryRatio</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1412,7 +1427,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#smb-interval">SMB Interval</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (3 min)</em></td>
 <td style="text-align: center;">SMB Interval</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1421,7 +1436,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#min-5m-carb-impact"><strong>Min 5m Carb Impact</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (8 mg/dL)</em></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Min 5m Carbimpact</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1430,7 +1445,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#remaining-carbs-percentage"><strong>Remaining Carbs Percentage</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (100%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Remaining Carbs Fraction</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1439,7 +1454,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#remaining-carbs-cap">Remaining Carbs Cap</a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><em>decimal <br/> (90 g)</em></td>
 <td style="text-align: center;">Remaining Carbs Cap</td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1448,7 +1463,7 @@ Do not alter them without a solid understanding of what you are changing and the
 </tr>
 <tr>
 <td style="text-align: center;"><a href="../../settings/algorithm/additionals/#noisy-cgm-target-increase"><strong>Noisy <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Target Increase</strong></a></td>
-<td style="text-align: center;"><strong><em>dial</em></strong></td>
+<td style="text-align: center;"><strong><em>picker</em></strong></td>
 <td style="text-align: center;"><strong><em>percentage <br/> (130%)</em></strong></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong>Noisy <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Target Multiplier</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff8340;"><strong><em>typed value</em></strong></span></td>
@@ -1459,12 +1474,16 @@ Do not alter them without a solid understanding of what you are changing and the
 </table>
 <hr/>
 <h2 id="what-are-the-reasons-for-these-changes">What are the reasons for these changes?<a class="headerlink" href="#what-are-the-reasons-for-these-changes" title="Link to this section for reference">¶</a></h2>
-<h3 id="entry-type-dial-vs-typed-entry">Entry Type: Dial vs Typed Entry<a class="headerlink" href="#entry-type-dial-vs-typed-entry" title="Link to this section for reference">¶</a></h3>
+<h3 id="entry-type-picker-vs-typed-entry">Entry Type: Picker vs Typed Entry<a class="headerlink" href="#entry-type-picker-vs-typed-entry" title="Link to this section for reference">¶</a></h3>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/picker-vs-typed-trio-02.png"><img alt="Picker vs Typed" src="../img/picker-vs-typed-trio-02.png" width="500"/></a></p>
 <ul>
 <li>A typed entry can result in mistyping a value and could result in unintended consequences within the algorithm.</li>
-<li>A dial ensures the setting is within the guardrails of the algorithm. Both Trio 0.2 and 0.5 (or higher) have guardrails, however when typed in 0.2, those values were ignored and the closest valid number was used. This means, if you set a <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> of 2, Trio 0.2 would use a <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> of 5 without notifying you.</li>
+<li>A picker ensures the setting is within the guardrails of the algorithm. Both Trio 0.2 and 0.5 (or higher) have guardrails, however when typed in 0.2, those values were ignored and the closest valid number was used. 
+    !!! example
+        If you set your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> to 2, Trio 0.2 would use a <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> of 5 without notifying you.</li>
 </ul>
 <h3 id="format-percentage-vs-decimal">Format: Percentage vs Decimal<a class="headerlink" href="#format-percentage-vs-decimal" title="Link to this section for reference">¶</a></h3>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/percentage-vs-decimal-Trio.png"><img alt="Percentage vs Decimal" src="../img/percentage-vs-decimal-Trio.png" width="500"/></a></p>
 <ul>
 <li>Percentages are easier to comprehend than decimals when trying to make decisions on your settings adjustments.</li>
 </ul>
