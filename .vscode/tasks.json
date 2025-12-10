@@ -1,19 +1,14 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Run MkDocs",
-        "type": "shell",
-        "command": "mkdocs serve",
-        "isBackground": true,
-        "presentation": {
-          "reveal": "always",
-          "panel": "dedicated"
-        },
-        "runOptions": {
-          "runOn": "folderOpen"
-        },
-        "problemMatcher": []
-      }
-    ]
-  }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run MkDocs",
+      "type": "shell",
+      "command": "./venv/bin/mkdocs serve",
+      "isBackground": true,
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    }
+  ]
+}
