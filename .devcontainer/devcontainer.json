@@ -1,0 +1,26 @@
+{
+    "name": "Trio Docs",
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "features": {
+      "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": "pip install -r requirements.txt && pip install -r dev-requirements.txt",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.defaultInterpreterPath": "/usr/local/bin/python"
+        },
+        "extensions": [
+          "ms-python.python",
+          "yzhang.markdown-all-in-one" 
+        ]
+      }
+    },
+    "forwardPorts": [8000],
+    "portsAttributes": {
+      "8000": {
+        "label": "MkDocs Preview",
+        "onAutoForward": "notify"
+      }
+    }
+  }
