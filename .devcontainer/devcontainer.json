@@ -1,6 +1,6 @@
 {
     "name": "Trio Docs Dev",
-    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
     
     "waitFor": "postCreateCommand",
     "postCreateCommand": "python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/pip install -r dev-requirements.txt",
