@@ -56,7 +56,7 @@ Here are some things to keep in mind after moving from iAPS to Trio v0.5+ in the
 
 - - -
 
-## What to Expect in Your First 24 Hours
+## What to Expect After 24 Hours
 
 A full day on Trio! Congratulations! Here's what to look for:
 
@@ -67,14 +67,14 @@ A full day on Trio! Congratulations! Here's what to look for:
 
     - [Basal Testing](../../usage/concepts/basal-rates.md)
     - [ISF Testing](../../usage/concepts/isf.md)
-    - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
 - **Review Dynamic ISF Documentation**  
     Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
-## What to Expect in Your First 7 Days
+## What to Expect After 7 Days
 
 You've completed a week on Trio! Here's what you should see:
 
@@ -197,7 +197,7 @@ The charts below will help you see which setting names or formats have changed, 
 | [**Duration of Insulin Action**](../settings/algorithm/additionals.md#duration-of-insulin-action) | decimal <br> (10 hr) | Settings → Algorithm → Additionals → Duration of Insulin Action | **Duration of Insulin Action** | decimal <br> (10) | Settings → Pump Settings → Duration of Insulin Action |
 | [**Use Custom Peak Time**](../settings/algorithm/additionals.md#use-custom-peak-time) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Use Custom Peak Time | **Use Custom Peak Time** | toggle <br> (On/Off) | Settings → OpenAPS → Use Custom Peak Time |
 | [**Insulin Peak Time**](../settings/algorithm/additionals.md#insulin-peak-time) | decimal <br> (65 min) | Settings → Algorithm → Additionals → Use Custom Peak Time (ON) → Insulin Peak Time | **Insulin Peak Time** | decimal <br> (65) | Settings → OpenAPS → Insulin Peak Time |
-| [**Skip Neutral Temps**](../settings/algorithm/additionals/.md#skip-neutral-temps) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Skip Neutral Temps | **Skip Neutral Temps** | toggle <br> (On/Off) | Settings → OpenAPS → Skip Neutral Temps |
+| [**Skip Neutral Temps**](../settings/algorithm/additionals.md#skip-neutral-temps) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Skip Neutral Temps | **Skip Neutral Temps** | toggle <br> (On/Off) | Settings → OpenAPS → Skip Neutral Temps |
 | [**Unsuspend If No Temp**](../settings/algorithm/additionals.md#unsuspend-if-no-temp) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Unsuspend If No Temp | **Unsuspend If No Temp** | toggle <br> (On/Off) | Settings → OpenAPS → Unsuspend If No Temp |
 | [**SMB Delivery Ratio**](../settings/algorithm/additionals.md#smb-delivery-ratio) | percentage <br> (50%) | Settings → Algorithm → Additionals → SMB Delivery Ratio | **SMB DeliveryRatio** | decimal <br> (0.5) | Settings → OpenAPS → SMB DeliveryRatio |
 | [**SMB Interval**](../settings/algorithm/additionals.md#smb-interval) | decimal <br> (3 min) | Settings → Algorithm → Additionals → SMB Interval | **SMB Interval** | decimal <br> (3) | Settings → OpenAPS → SMB Interval |
