@@ -59,7 +59,7 @@ Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the
 
 - - -
 
-## What to Expect After Your First 24 Hours
+## What to Expect After 24 Hours
 
 A full day on Trio! Congratulations! Here's what to look for:
 
@@ -70,15 +70,15 @@ A full day on Trio! Congratulations! Here's what to look for:
 
     - [Basal Testing](../../usage/concepts/basal-rates.md)
     - [ISF Testing](../../usage/concepts/isf.md)
-    - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
 - **Review Dynamic ISF Documentation**  
-    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-your-first-7-days).
+    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 - **Meal Time Struggles**  
     Sometimes, users coming from Loop will notice stability during fasting periods, but meal times are more challenging than they were with Loop. This is due to a shift in algorithms. Loop is more carb-centric, causing users to place a heavy reliance upon their Carb Ratio over their ISF value. Trio is more reliant upon your ISF value and as such you may find you need to adjust your ISF and possibly your CR when you switch from Loop to Trio. 
 - - -
 
-## What to Expect After Your First 7 Days
+## What to Expect After 7 Days
 
 You've completed a week on Trio! Here's what you should see:
 
