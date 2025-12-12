@@ -57,7 +57,7 @@ Here are some things to keep in mind after moving from AndroidAPS to Trio 0.5+ i
 
 - - -
 
-## What to Expect After Your First 24 Hours
+## What to Expect After 24 Hours
 
 A full day on Trio! Congratulations! Here's what to look for:
 
