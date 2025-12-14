@@ -17,18 +17,11 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - [Compatible Devices](build/requirements/devices/index.md)
     - [Apple Developer](build/requirements/apple-developer.md)
 
--   __[Build with Mac](build/mac/overview.md)__
+-   __[Build Instructions](build/index.md)__
 
     - - -
     
-    Overview on building Trio using a Mac computer and Xcode
-    
--   __[Build with Browser ✏️](build/browser/browser-build-overview.md)__
-
-    - - -
-    
-    🚧Documentation Under Construction🚧
-    Overview on building Trio using a web browser and Test Flight
+    Overview on building Trio using a Mac with Xcode or using a web browser
     
 -   __[Upgrade ✏️](upgrade.md)__
 
@@ -36,12 +29,11 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     🚧Documentation Under Construction🚧
     How to upgrade Trio to the latest version
-    
--   __[Companion Apps ✏️](ecosystem/index.md)__
+
+-   __[Companion Apps](ecosystem/index.md)__
 
     - - -
 
-    🚧Documentation Under Construction🚧    
     Apps that work alongside Trio
     
 </div>

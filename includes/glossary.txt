@@ -37,6 +37,7 @@
 *[NFC]: Near-Field Communication is used for scanning devices such as Libre sensors
 *[Nightscout]: a personal website used to view your glucose and diabetes management data.
 *[Omnipod]: Insulet tubeless insulin pump
+*[OS-AID]: Open-Source Automated Insulin Delivery System (Trio, Loop, AAPS, OpenAPS)
 *[PR]: Pull Request - a formal method to request changes to a repository
 *[Provisioning Profile]: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 *[Pull Request]: formal method to request changes to a repository
