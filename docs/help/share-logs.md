@@ -41,7 +41,7 @@ The following sections describe how to do that on [Windows](#compress-logs-on-wi
 
 ### Compress Logs on Windows
 
-To compress the log files on *Windows*, you can use either a [graphical application](#compress-logs-on-windows-with-graphical-aplication) or the [terminal](#compress-logs-on-windows-in-the-terminal).
+To compress the log files on *Windows*, you can use either a [graphical application](#compress-logs-on-windows-with-a-graphical-application) or the [terminal](#compress-logs-on-windows-in-the-terminal).
 
 #### Compress Logs on Windows with a Graphical Application
 
@@ -118,7 +118,7 @@ Choose your favorite Windows Shell below **PowerShell** or "**Command Prompt (CM
 
 ### Compress Logs on macOS
 
-To compress the log files on a *Mac*, you can use either a [graphical application](#compress-logs-on-macos-with-graphical-aplication) or the [terminal](#compress-logs-on-macos-in-the-terminal).
+To compress the log files on a *Mac*, you can use either a [graphical application](#compress-logs-on-macos-with-a-graphical-application) or the [terminal](#compress-logs-on-macos-in-the-terminal).
 
 #### Compress Logs on macOS with a Graphical Application
 
