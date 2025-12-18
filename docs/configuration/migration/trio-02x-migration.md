@@ -21,7 +21,7 @@
 - **Rewritten Backend & Data Storage**  
     Entire app logic and data storage rewritten for speed, stability, and future flexibility.
 - **Remote Commands & iOS Shortcuts**  
-    Trigger actions like carb entry, bolus, overrides or temporary targets [remotely](../settings/features/remote-control.md) or through [shortcut automation](../settings/features/shortcuts.md).
+    Trigger actions like carb entry, bolus, overrides or temporary targets [remotely](../settings/features/remote-control.md) using LoopFollow or through [shortcut automation](../settings/features/shortcuts.md).
 - **Smarter Settings**  
     Helpful hints, guidance sheets, and a built-in search function — just like iOS Settings. Information on the updated Trio Settings can be found [here](../settings/index.md).
 - **New Bolus Calculator**  
@@ -73,6 +73,10 @@ Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (
     This is a great time to test your settings so you can start fresh on solid footing.
 - **New User Interface**  
     Use this time to learn the [New User Interface](../../usage/interface.md).
+- **Remote Control**  
+    - In Trio 0.2.x, *Nightscout* Careportal could be used to enter `Carb Correction`, and start and cancel `Temporary Target`. *This continues to be an option in Trio 0.5.x (or newer)*
+    - Trio 0.2.x also supported other remote options (using announcements via Careportal). Those options were replaced by the more secure [**LoopFollow - Trio Remote Control**](../../install/ecosystem/loop-follow.md) for Trio 0.5.x (or newer)
+    - **Using announcements to provide remote control of the Trio phone is no longer supported**
 
 !!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.

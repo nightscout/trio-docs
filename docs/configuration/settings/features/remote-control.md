@@ -1,38 +1,10 @@
 ## Remote Control Overview
 
-Trio can accept remote commands from *Nightscout* or from *LoopFollow*. There are a variety of options, but the final control of whether remote commands will be enacted rests with the Trio user. They can enable or disable remote control.
+Trio can accept remote commands from [*LoopFollow*](../../../install/ecosystem/loop-follow.md) or from [*Nightscout*](../../../install/ecosystem/nightscout-app.md). There are a variety of options, but the final control of whether remote commands will be enacted rests with the Trio user. They can enable or disable remote control.
 
-!!! warning "*Nightscout* version must be 15.0.2 or newer"
-    To properly display the OpenAPS pill with Trio 0.5.x (or newer), your *Nightscout* version must be 15.0.2 (or newer). If you do not see the expected treatments or pills in the *Nightscout* dashboard, follow the steps to [Configure for OpenAPS](#configure-for-openaps).
+The recommended approach is to use Trio 0.5.x (or newer) with the *LoopFollow* app to use the Trio Remote Control setting.
 
-The most powerful arrangement, for Trio 0.5.x (or newer), is to configure the *LoopFollow* app to use the Trio Remote Control (TRC) setting.
-
-The limited use of remote control with *Nightscout*, i.e., entry of Carb Correction and Temporary Targets when Careportal is authenticated, continues to be supported with Trio.
-
-| *Nightscout* URL or App | Options|
-|:--|:--|
-| ***Careportal*** | Carb Correction<br>Temporary Target<br>Temporary Target Cancel |
-
-Additional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
-
-* Trio 0.5.x (or newer)
-* *LoopFollow* version 2.4.0 (or newer)
-
-
-| *LoopFollow* Remote Type | Options|
-|:--|:--|
-| ***Nightscout*** | Set and Cancel Temp Target |
-| **Trio Remote Control** | Meal (Carbs or Carbs & Bolus)<br>Bolus<br>Temp Target<br>Overrides |
-
-??? question "How does this differ from Trio 0.2.x?"
-    Trio can use *Nightscout* Careportal to enter `Carb Correction`, and start and cancel `Temporary Target`.
-    
-    * This was available in Trio 0.2.x and continues to be available in Trio 0.5.x (or newer).
-
-    Trio 0.2.x supported other remote options (using announcements via Careportal). 
-    
-    * Those options were replaced by the more secure Trio Remote Control for Trio 0.5.x (or newer)
-    * **Using announcements to provide remote control of the Trio phone is no longer supported**
+The use of remote control with *Nightscout*, i.e., entry of Carb Correction and Temporary Targets when Careportal is authenticated, is supported with Trio, but the ability is limited and there can be delays in confirmation.
 
 - - -
 

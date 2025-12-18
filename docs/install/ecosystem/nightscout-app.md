@@ -2,6 +2,8 @@
 
 Nightscout is a cloud-based diabetes data platform that Trio can integrate with for comprehensive data synchronization, remote monitoring, and caregiver access.
 
+!!! warning "*Nightscout* version must be 15.0.2 or later"
+    To properly display the OpenAPS pill with Trio 0.5.x (or later), your *Nightscout* version must be 15.0.2 (or later).
 ---
 
 ## Overview
@@ -15,9 +17,9 @@ Trio's Nightscout integration provides bidirectional data synchronization:
     - Carbs
     - Temp targets
     - Overrides
-    - Therapy profiles (during onboarding)
-- **Download from Nightscout**: 
     - Therapy profiles
+- **Download from Nightscout**: 
+    - Therapy profiles (during onboarding)
     - Glucose readings (as CGM backup)
     - Carb entries
     - Temp targets
@@ -26,7 +28,7 @@ This integration enables:
 
 - Remote monitoring and commands by caregivers
 - Data backup and historical tracking
-- Integration with other diabetes apps, like Loop Follow
+- Integration with other diabetes apps, like LoopFollow
 - Transferring therapy settings from other OS-AID systems
 
 ---
@@ -36,9 +38,9 @@ This integration enables:
 Before configuring Trio to work with Nightscout, you need:
 
 1. **A Nightscout Site**
-    - Hosted Nightscout instance (version 15.0.2 or newer recommended)
+    - Hosted Nightscout instance (version 15.0.2 or newer required for use with Trio)
     - Your Nightscout URL (e.g., `https://yoursite.herokuapp.com`)
-    - For help making a Nightscout account, please see the [Nightscout documentation](https://nightscout.github.io/nightscout/new_user/)
+    - For help building a Nightscout site, please see the [Nightscout documentation](https://nightscout.github.io/nightscout/new_user/) or use a paid service such as [Nightscout Pro](https://nightscout.pro)
 2. **API Secret**
     - Your Nightscout API secret (configured during Nightscout setup)
     - Once Trio is connected to Nightscout, it is stored securely in Trio's keychain
@@ -49,6 +51,10 @@ Before configuring Trio to work with Nightscout, you need:
 
 !!! warning "Nightscout Version Requirement"
     To properly display the OpenAPS pill with Trio 0.5.x (or newer), your Nightscout version must be 15.0.2 or newer. Older versions may not correctly display Trio's data.
+    
+    Find your nightscout version here:
+    ![Find Nightscout Version](img/find-ns-version.png){width="600"}
+    {align="center"}
 
 ---
 
@@ -300,6 +306,14 @@ The uploaded profile includes a `units` field:
 
 ## Troubleshooting
 
+### Common Issues
+
+- *Nightscout* not displaying Trio data: [OpenAPS Pill Not Showing](#openaps-pill-not-showing)
+- I was able to select Trio Remote Control in *LoopFollow* but it is no longer working: [Stop *Nightscout* access from the *Loop* app](#coming-from-loop)
+- Cannot select Trio Remote Control in *LoopFollow*: [Update Profile](#update-profile)
+- I'm seeing duplicate carb entries: [Duplicate Carb Entries](#duplicate-carb-entries)
+- Trio Remote Control was working, but it stopped: [Update Profile](#update-profile)
+
 ### "Connection Failed" Error
 
 **Possible causes**:
@@ -321,8 +335,26 @@ Double-check credentials and test Nightscout URL in Safari
 3. **Nightscout Version**: Ensure Nightscout is 15.0.2+ for OpenAPS pill
 4. **API Secret**: Confirm secret is correct
 
-**Debug**:  
-Check Trio logs for upload errors (if available in settings)
+#### **Coming From Loop?**: 
+
+1. If you transitioned from the *Loop* app, you must make some modifications to *Nightscout* before you will be successful viewing your Trio data in your *Nightscout* site.
+    - In *Nightscout*, you need to modify these config vars:
+    
+    | Config Var | `Loop` |    `Trio` |
+    |:--|:--|:--|
+    | `ENABLE` | `loop` | `openaps` |
+    | `SHOW_PLUGINS` | `loop` | `openaps` |
+    | `SHOW_FORECAST` | `loop` | `openaps` |
+    
+    !!! note
+        Remember to restart the *Nightscout* server (restart dynos) after updating these variables.
+    
+2. Stop *Nightscout* access from the *Loop* app
+    - If you were previously running the *Loop* app:
+        - Remove *Nightscout* from *Loop* Services
+        - Add *Nightscout* credentials to Trio
+        - You need the URL and the API_SECRET.
+    - In addition to this step, you may need to force the profile (from Trio) to upload to *Nightscout* and overwrite the one stored as the default profile in *Nightscout*.
 
 ### OpenAPS Pill Not Showing
 
@@ -333,7 +365,16 @@ Check Trio logs for upload errors (if available in settings)
 - Device status upload successful
 
 **Solution**:  
-Update Nightscout and enable OpenAPS plugin in Nightscout settings
+In *Nightscout*, you need to modify these config vars:
+    
+| Config Var | `Loop` |    `Trio` |
+|:--|:--|:--|
+| `ENABLE` | `loop` | `openaps` |
+| `SHOW_PLUGINS` | `loop` | `openaps` |
+| `SHOW_FORECAST` | `loop` | `openaps` |
+    
+!!! note
+    Remember to restart the *Nightscout* server (restart dynos) after updating these variables.
 
 ### Duplicate Carb Entries
 
@@ -346,38 +387,65 @@ Multiple apps uploading to same Nightscout site
 - Ensure "Download from Nightscout" is only enabled on one device
 - Check `enteredBy` field in Nightscout to identify source
 
-### Profile Not Syncing
+### Update Profile
 
 **Check**:
 
-1. Profile uploaded successfully (check upload logs)
-2. Nightscout received profile (check Admin Tools → Profile Editor)
-3. App expiration date not blocking uploads (TestFlight builds)
+- Profile uploaded successfully (check upload logs)
+- Nightscout received profile (check Nightscout Admin Tools → Profile Editor)
+- App expiration date not blocking uploads (TestFlight builds)
 
-**Force Re-Upload**:  
-Change any setting slightly to trigger profile upload
+**Solution**:  
+
+1. If the Debug Info in *LoopFollow* is missing a Device Token or a Bundle ID, as shown on the left side of the graphic, you need to make sure the [*Loop* app is no longer uploading to *Nightscout*](#coming-from-loop) and proceed to step 2. If those are NOT empty, proceed to step 2.
+2. To force a profile to update to *Nightscout*, go to the Trio app and toggle Allow Uploading to Nightscout off (disable) and then enable it again.
+2. Once the user has toggled "Allow Uploading to Nightscout", *LoopFollow* needs to be refreshed (pull down glucose value to refresh) or re-started in order to fetch the correct information. *LoopFollow* will refresh eventually, but most users are impatient.
+
+![LoopFollow update profile](img/lf-update-profile.png){width="600"}
+{align=center}
 
 ---
 
 ## Remote Commands via Nightscout
 
-Trio supports limited remote commands through Nightscout Careportal:
+Trio supports limited remote commands through Nightscout in two ways:
 
-### Loop Follow (**Recommended**)
+### LoopFollow (**Preferred**)
 
-For comprehensive remote control (bolus, overrides, meals), use **Loop Follow**. See [Remote Control documentation](../../configuration/settings/features/remote-control.md) for information on connecting and using Loop Follow.
+When authenticated with a token that has **readable** access:
 
-### Careportal Commands (**Not Recommended**)
+- **Carb Entry**: Log carbs remotely
+- **Carbs Entry with Remote Bolus**: Log carbs and initiate a bolus remotely
+- **Remote Bolus**: Initiate a correction bolus remotely
+- **Pre-set Temporary Target**: Set or cancel saved temp targets
+- **Pre-set Override**: Set or cancel saved overrides
 
-When authenticated with a token that has **Careportal access**:
+| *LoopFollow* Remote Type | Options|
+|:--|:--|
+| ***Nightscout*** | Set and Cancel Temp Target |
+| **Trio Remote Control** | Meal (Carbs or Carbs & Bolus)<br>Bolus<br>Temp Target<br>Overrides |
 
-- **Carb Correction**: Log carbs remotely
-- **Temporary Target**: Set or cancel temp targets
+See the [LoopFollow documentation](loop-follow.md) for information on connecting and using LoopFollow.
+
+### Careportal Commands
+
+When authenticated with a token that has **careportal, readable** access:
+
+- **Carb Entry**: Log carbs remotely
+- **Pre-set Temporary Target**: Set or cancel saved temp targets
+
+| *Nightscout* URL or App | Options|
+|:--|:--|
+| ***Careportal*** | Carb Correction<br>Temporary Target<br>Temporary Target Cancel |
+
+Additional remote capabilities are offered for Trio using the *LoopFollow* app with these versions:
+
+- Trio 0.5.x (or newer)
+- *LoopFollow* version 2.4.0 (or newer)
 
 !!! warning "Nightscout Careportal Not Advised"
-    - While you ***are*** able to send limited commands through Nightscout Careportal, it is not advised due to it being less reliable.
-    - The preferred and recommended method is using Loop Follow to send remote commands
-
+    - While you ***are*** able to send limited commands through Nightscout Careportal, it is advised to use with caution as there could be considerable lag.
+    - The preferred and recommended method is using LoopFollow to send remote commands
 
 ---
 
@@ -435,7 +503,7 @@ When **Allow Uploading to Nightscout** is enabled the following data is transmit
 3. **Multi-Device**: Access data from phone, tablet, computer
 4. **Reports**: Generate reports and analytics via Nightscout
 5. **Sharing**: Share access with healthcare team
-6. **Interoperability**: Works with other diabetes apps (Loop Follow, xDrip+, etc.)
+6. **Interoperability**: Works with other diabetes apps (LoopFollow, xDrip+, etc.)
 7. **Remote Control**: Limited remote commands via Careportal
 8. **Transparency**: Full visibility into loop algorithm decisions via OpenAPS pill
 
@@ -451,6 +519,6 @@ Nightscout integration transforms Trio from a standalone app into a connected di
 - **Real-time monitoring** via OpenAPS pill display
 - **Remote access** for caregivers and healthcare providers
 
-To get started, simply configure your Nightscout URL and API secret in Trio's Settings → Services → Nightscout → Connect, then enable [upload and fetch](#step-2-utilize-uploaddownload) as desired.
+To get started, simply [configure your Nightscout URL and API secret](#configure) in Trio's Settings → Services → Nightscout → Connect, then enable [upload and fetch](#step-2-utilize-uploaddownload).
 
 For more information about Nightscout itself, visit [https://nightscout.github.io/](https://nightscout.github.io/).
