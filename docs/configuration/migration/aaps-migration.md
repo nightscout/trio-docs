@@ -57,7 +57,7 @@ Here are some things to keep in mind after moving from AndroidAPS to Trio 0.5+ i
 
 - - -
 
-## What to Expect After Your First 24 Hours
+## What to Expect After 24 Hours
 
 A full day on Trio! Congratulations! Here's what to look for:
 
@@ -68,14 +68,14 @@ A full day on Trio! Congratulations! Here's what to look for:
 
     - [Basal Testing](../../usage/concepts/basal-rates.md)
     - [ISF Testing](../../usage/concepts/isf.md)
-    - [Carb Ratio Testing](../../usage/concepts/carb-ratio.md)
+    - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
 - **Review Dynamic ISF Documentation**  
     Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
-## What to Expect After Your First 7 Days
+## What to Expect After 7 Days
 
 You've completed a week on Trio! Here's what you should see:
 
@@ -183,7 +183,7 @@ When you move your settings from AAPS to Trio, there are multiple settings that 
 | [**Duration of Insulin Action**](../settings/algorithm/additionals.md#duration-of-insulin-action) | decimal <br> (10 hr) | Settings → Algorithm → Additionals → Duration of Insulin Action | **DIA** | decimal <br> (10) | LP → DIA |
 | [**Use Custom Peak Time**](../settings/algorithm/additionals.md#use-custom-peak-time) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Use Custom Peak Time | **Free-Peak Oref** | selection <br> (Free-Peak Oref) | Config Builder → Profile → Insulin → Free-Peak Oref |
 | [**Insulin Peak Time**](../settings/algorithm/additionals.md#insulin-peak-time) | decimal <br> (65 min) | Settings → Algorithm → Additionals → Use Custom Peak Time (ON) → Insulin Peak Time | **Free-Peak Oref** | decimal <br> (45) | Config Builder → Profile → Insulin → Free-Peak Oref → Peak Time |
-| [**Skip Neutral Temps**](../settings/algorithm/additionals/.md#skip-neutral-temps) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Skip Neutral Temps | ***No Equivalent Setting*** | N/A | N/A |
+| [**Skip Neutral Temps**](../settings/algorithm/additionals.md#skip-neutral-temps) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Skip Neutral Temps | ***No Equivalent Setting*** | N/A | N/A |
 | [**Unsuspend If No Temp**](../settings/algorithm/additionals.md#unsuspend-if-no-temp) | toggle <br> (On/Off) | Settings → Algorithm → Additionals → Unsuspend If No Temp | ***No Equivalent Setting*** | N/A | N/A |
 | [**SMB Delivery Ratio**](../settings/algorithm/additionals.md#smb-delivery-ratio) | percentage <br> (50%) | Settings → Algorithm → Additionals → SMB Delivery Ratio | ***No Equivalent Setting*** | Always 50% | Always 50% |
 | [**SMB Interval**](../settings/algorithm/additionals.md#smb-interval) | decimal <br> (3 min) | Settings → Algorithm → Additionals → SMB Interval | **How frequently SMBs will be given in min** | decimal <br> (3) | Preferences → Enable SMB → How frequently SMBs will be given in min |
