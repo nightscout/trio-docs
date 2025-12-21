@@ -10,9 +10,9 @@ This page is provided to help people currently running the public beta version o
 
     * [Trio Discord Invitation](https://discord.triodocs.org)
 
-    To ensure weekly updates, make the `dev` branch the default branch in your fork on GitHub. Remember, this will just automatically trigger a build of the latest `dev` to TestFlight every Wednesday at 08:43 UTC. You are still responsible for manually installing the update via the TestFlight app on your phone. 
+    To ensure weekly updates, make the `dev` branch the default branch in your fork on GitHub. Remember, this will just automatically trigger a build of the latest `dev` to TestFlight every Sunday at 06:43 UTC. You are still responsible for manually installing the update via the TestFlight app on your phone. 
 
-    Once this beta is released to `main` as 1.0, then you should return to building from the `main` branch.
+    Once the `main` branch is updated to 0.7 or higher, you should return to building from the `main` branch and using it as your default branch.
 
 ## Update to Trio dev branch from Trio 0.2.x main
 
