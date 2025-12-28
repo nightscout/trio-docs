@@ -7,7 +7,7 @@
     - Autosens Max/Min limits sensitivity adjustments
 
 ## Sensitivity Ratio
-The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amount of adjustment needed to your basal rates and ISF. If Dynamic CR is enabled, it will also apply to your carb ratio.  
+The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amount of adjustment needed to your basal rates and ISF.
 
 !!! tip
     This previously was shown as a decimal value as `Autosens Ratio` and is now shown as a percentage as `Sensitivity Ratio`.
@@ -19,8 +19,8 @@ The Sensitivity Ratio (previously `Autosens Ratio`) is used to calculate the amo
 There are 3 options for you to select from for how your Sensitivity Ratio is calculated:
     
 - [Autosens](#autosens): Adjusts your Sensitivity Ratio based on a series of comparisons of the last 8 hours versus the last 24 hours of insulin usage. **This is the default calculation.**
-- [Logarithmic Dynamic ISF](./dynamic-settings.md#activate-dynamic-isf): Adjusts your Sensitivity Ratio based on your Total Daily Dose (TDD) from the last 24 hours vs the last 10 days to adjust your Sensitivity Ratio.
-- [Sigmoid Dynamic ISF](): Adjusts your Sensitivity Ratio based on how far above or below target your current glucose reading is.
+- [Logarithmic Dynamic ISF](./dynamic-settings.md#dynamic-isf-logarithmic): Adjusts your Sensitivity Ratio based on your Total Daily Dose (TDD) from the last 24 hours vs the last 10 days to adjust your Sensitivity Ratio.
+- [Sigmoid Dynamic ISF](./dynamic-settings.md#dynamic-isf-sigmoid): Adjusts your Sensitivity Ratio based on how far above or below target your current glucose reading is.
 
 !!! note
     All 3 options are limited by your [Autosens Max](#autosens-max) and [Autosens Min](#autosens-min) settings. These settings prevent over-adjusting.

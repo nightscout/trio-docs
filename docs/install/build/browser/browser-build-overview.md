@@ -1,6 +1,6 @@
 ## Build Trio with Browser - Overview ✏️  
 
-Congratulations on choosing to build Trio using your web browser, aka "Browser Buid." This documentation provides all the necessary instructions to 
+Congratulations on choosing to build Trio using your web browser, aka "Browser Build." This documentation provides all the necessary instructions to 
 
 !!! tip "🚧Documentation Under Construction🚧"
     The Browser Build instructions are still under construction. The steps to build with the browser are overall unchanged from Loop and Trio 0.2.x, so temporarily we advise you to use the [Loopdocs guidance for browser build](https://loopkit.github.io/loopdocs/browser/bb-update/), but replace the Loop GitHub repo with the Trio beta repo.

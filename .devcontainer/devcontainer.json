@@ -1,0 +1,24 @@
+{
+    "name": "Trio Docs Dev",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    
+    "waitFor": "postCreateCommand",
+    "postCreateCommand": "python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/pip install -r dev-requirements.txt",
+    
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.defaultInterpreterPath": "./venv/bin/python",
+          "python.terminal.activateEnvironment": true
+        },
+        "extensions": ["yzhang.markdown-all-in-one"]
+      }
+    },
+    "forwardPorts": [8000],
+    "portsAttributes": {
+      "8000": {
+        "label": "MkDocs Preview",
+        "onAutoForward": "notify"
+      }
+    }
+  }
