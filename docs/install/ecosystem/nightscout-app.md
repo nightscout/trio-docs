@@ -109,7 +109,7 @@ Before configuring Trio to work with Nightscout, you need:
 </div>
 
 !!!info "What in the world is this information in the OpenAPS pill?!?"
-    When you tap on the OpenAPS Pill, the details it provides can look very confusing if you don't understand what it's saying. [This page](../../usage/features/current-loop-status-explained.md) in the docs will hopefully make it a little easier to understand.
+    When you tap on the OpenAPS Pill, the details it provides can look very confusing if you don't understand what it's saying. [This page](../../usage/explained/current-loop-status-explained.md) in the docs will hopefully make it a little easier to understand.
 
 ### 2. Looping Status
 
@@ -555,6 +555,6 @@ Nightscout integration transforms Trio from a standalone app into a connected di
 - **Real-time monitoring** via OpenAPS pill display
 - **Remote access** for caregivers and healthcare providers
 
-To get started, simply [configure your Nightscout URL and API secret](#configure) in Trio's Settings → Services → Nightscout → Connect, then enable [upload and fetch](#step-2-utilize-uploaddownload).
+To get started, simply [configure your Nightscout URL and API secret](../../configuration/settings/services/nightscout.md#configuration) in Trio's Settings → Services → Nightscout → Connect, then enable [upload and fetch](../../configuration/settings/services/nightscout.md#step-2-utilize-uploaddownload).
 
 For more information about Nightscout itself, visit [https://nightscout.github.io/](https://nightscout.github.io/).

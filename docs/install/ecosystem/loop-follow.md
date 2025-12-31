@@ -33,7 +33,7 @@ LoopFollow shows:
 - **Recent treatments** (boluses, carbs, etc.)
 - **OpenAPS predictions** and algorithm decisions
 
-All this data comes from your **Nightscout site**, which Trio uploads to [once configured](nightscout-app.md#configuration).
+All this data comes from your **Nightscout site**, which Trio uploads to [once configured](../../configuration/settings/services/nightscout.md#configuration).
 
 ### Remote Commands (Trio Remote Control)
 
@@ -186,8 +186,6 @@ Commands are encrypted with AES-256-GCM using the shared secret. See [Remote Con
 | **Meal** | Log carbs + optional bolus | Max Carbs, Max Fat, Max Protein limits |
 | **Temp Target** | Set temp glucose target | Duration limits, can be cancelled |
 | **Override** | Activate preset overrides | Must match exact preset name |
-
-See [Remote Control Additions](../../configuration/settings/features/remote-control-additions_x.md) for detailed command documentation.
 
 ---
 

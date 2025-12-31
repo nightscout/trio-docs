@@ -14,8 +14,8 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
-    - [Compatible Devices](build/requirements/devices/index.md)
-    - [Apple Developer](build/requirements/apple-developer.md)
+    - [Compatible Devices](requirements/devices/index.md)
+    - [Apple Developer](requirements/apple-developer.md)
 
 -   __[Build with Mac](mac/overview.md)__
 

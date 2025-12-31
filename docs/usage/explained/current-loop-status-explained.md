@@ -227,7 +227,7 @@ The CR that is currently being used by Trio
 The current glucose target used by Trio during this loop cycle. 
 
 !!!note
-    It may adjust if you have a [temp target](temp-targets.md) set or if you've enabled [Sensitivity Raises Target](../../configuration/settings/algorithm/target-behavior.md#sensitivity-raises-target) or [Resistance Lowers Target](../../configuration/settings/algorithm/target-behavior.md#resistance-lowers-target).
+    It may adjust if you have a [temp target](../features/temp-targets.md) set or if you've enabled [Sensitivity Raises Target](../../configuration/settings/algorithm/target-behavior.md#sensitivity-raises-target) or [Resistance Lowers Target](../../configuration/settings/algorithm/target-behavior.md#resistance-lowers-target).
 
 **Nightscout**
 

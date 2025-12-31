@@ -516,17 +516,9 @@ Overrides modify your therapy settings by percentage:
 | **Carb Ratios** | Percentage multiplier | 75% = less insulin per carb |
 | **Target Glucose** | Override target value | Completely replaces normal target |
 
-**Example "Exercise" Override**:
-- ISF: 150% (more sensitive, less insulin)
-- Basal: 75% (reduced basal delivery)
-- CR: 120% (less insulin for carbs)
-- Target: 140 mg/dL (higher target to prevent lows)
-
-**Example "Sick Day" Override**:
-- ISF: 50% (more resistant, more insulin)
-- Basal: 150% (increased basal delivery)
-- CR: 80% (more insulin for carbs)
-- Target: 110 mg/dL (tighter control)
+!!!important
+    Using an override target glucose **will not** trigger the Target Adjustments (`Low Temp Target Lowers Sensitivity` or `High Temp Target Raises Sensitivity`).
+    Those can only be triggered using a separate Temp Target.
 
 #### Override Preset Name Matching
 

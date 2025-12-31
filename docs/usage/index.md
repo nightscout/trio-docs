@@ -27,5 +27,11 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
  
     Information on Overrides, Temp Targets, Statistics, Bolus Calculator, and Using Dynamic ISF
+
+-   __[Explain It To Me](explained/index.md)__
+
+    - - -
+ 
+    Information on seemingly complex tools that can be incredibly useful once understood
     
 </div>
