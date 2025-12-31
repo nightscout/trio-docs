@@ -6,25 +6,22 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Nightscout ✏️](nightscout.md)__
+-   __[Nightscout](nightscout.md)__
 
     - - -
     
-    🚧Documentation Under Construction🚧
     Connect your nightscout, import settings, backfill glucose, and more
 
--   __[Tidepool ✏️](tidepool.md)__
+-   __[Tidepool](tidepool.md)__
 
     - - -
     
-    🚧Documentation Under Construction🚧
     Connect Tidepool
     
--   __[Apple Health ✏️](apple-health.md)__
+-   __[Apple Health](apple-health.md)__
 
     - - -
-    
-    🚧Documentation Under Construction🚧
+
     Connect Apple Health
     
 </div>

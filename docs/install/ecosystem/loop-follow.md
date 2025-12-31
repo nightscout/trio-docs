@@ -1,6 +1,10 @@
 # LoopFollow Integration with Trio
 
-LoopFollow is a companion iOS app designed for remote monitoring of Trio users. It allows caregivers, parents, and friends to view real-time glucose data, loop status, and send remote commands to the Trio app.
+LoopFollow is a companion iOS app designed for remote monitoring and remote control of Trio. It allows caregivers, parents, and friends to view real-time glucose data, loop status, and send remote commands to the Trio app.
+
+!!! info "Learn more about LoopFollow" 
+    - [Loop and Learn](https://www.loopandlearn.org/loop-follow/) 
+    - [LoopFollow Docs](https://loopfollowdocs.org)
 
 ---
 
@@ -13,7 +17,6 @@ LoopFollow integrates with Trio in two primary ways:
 
 LoopFollow does not communicate directly with Trio's database or app—instead, it uses Nightscout as the data source and Apple Push Notification Service (APNS) for remote commands.
 
-Learn more about LoopFollow at [Loop and Learn](https://www.loopandlearn.org/loop-follow/) or in the [LoopFollow Docs](https://loopfollowdocs.org).
 ---
 
 ## What LoopFollow Does

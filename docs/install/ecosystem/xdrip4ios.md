@@ -4,6 +4,9 @@
 
 xDrip4iOS is an open-source iOS app that can receive glucose data from various continuous glucose monitors (CGM). Trio can use xDrip4iOS as a CGM source, receiving real-time glucose readings through iOS shared app groups.
 
+!!! info "Learn more about xDrip4iOS"
+    - [xDrip4iOS documentation](https://xdrip4ios.readthedocs.io/).
+
 ---
 
 ## Overview
@@ -29,8 +32,6 @@ xDrip4iOS supports many CGM systems, including:
 - Nightscout as CGM source
 - And others
 
-Check the [xDrip4iOS documentation](https://xdrip4ios.readthedocs.io/) for the complete list and setup instructions for your specific CGM.
-
 ---
 
 ## Prerequisites
@@ -38,18 +39,18 @@ Check the [xDrip4iOS documentation](https://xdrip4ios.readthedocs.io/) for the c
 To use xDrip4iOS as a CGM source with Trio, you need:
 
 1. **xDrip4iOS App**
-   - Built and installed on the same iPhone as Trio
-   - Version compatible with Trio (recent versions)
-   - Successfully receiving glucose data from your CGM
+    - Built and installed on the same iPhone as Trio
+    - Version compatible with Trio (recent versions)
+    - Successfully receiving glucose data from your CGM
 
 2. **Matching App Group Configuration**
-   - Both Trio and xDrip4iOS must be built with the same App Group ID
-   - Typically configured during the build process
-   - Required for inter-app data sharing
+    - Both Trio and xDrip4iOS must be built with the same App Group ID
+    - Typically configured during the build process
+    - Required for inter-app data sharing
 
 3. **Same Apple Developer Team**
-   - Both apps must be signed with certificates from the same Apple Developer account
-   - App group provisioning profile capability enabled
+    - Both apps must be signed with certificates from the same Apple Developer account
+    - App group provisioning profile capability enabled
 
 !!! warning "Build Requirement"
     You cannot use a pre-built xDrip4iOS from the App Store with Trio unless they share the same app group ID, which requires building both apps yourself with matching configuration.
@@ -69,7 +70,7 @@ Shared App Group (iOS UserDefaults)
   ↓
 Trio (reads and processes)
   ↓
-Loop Algorithm
+Trio Algorithm
 ```
 
 ### Technical Details
@@ -78,15 +79,15 @@ Loop Algorithm
 2. **Trio polls** the shared app group every minute for new readings
 3. **Trio processes** up to 60 recent readings per fetch
 4. **Glucose data includes**:
-   - Value (mg/dL)
-   - Timestamp
-   - Trend/direction
-   - Source identifier
+    - Value (mg/dL)
+    - Timestamp
+    - Trend/direction
+    - Source identifier
 
 5. **Optional processing** in Trio:
-   - Calibration (if configured)
-   - Savitzky-Golay smoothing (if enabled)
-   - Frequency filtering
+    - Calibration (if configured)
+    - Savitzky-Golay smoothing (if enabled)
+    - Frequency filtering
 
 ---
 
@@ -98,8 +99,8 @@ When building Trio and xDrip4iOS:
 
 1. **Use the same Apple Developer account**
 2. **Configure the same App Group ID** in both apps
-   - Example: `group.com.yourname.diabetesapps`
-   - Set in Xcode project settings under Signing & Capabilities
+    - Example: `group.com.yourname.diabetesapps`
+    - Set in Xcode project settings under Signing & Capabilities
 
 3. **Enable App Group capability** in provisioning profiles for both apps
 
@@ -120,10 +121,10 @@ If you're using GitHub Actions (Browser Build), the app group is typically confi
 3. Tap **Add CGM**
 4. Select **xDrip4iOS** from the list
 5. Configuration screen appears showing:
-   - **CGM Device Address** (Bluetooth MAC address, if available)
-   - **Heartbeat Status** information
-   - **Open xDrip4iOS** button (launches xDrip4iOS via URL scheme)
-   - Link to xDrip4iOS documentation
+    - **CGM Device Address** (Bluetooth MAC address, if available)
+    - **Heartbeat Status** information
+    - **Open xDrip4iOS** button (launches xDrip4iOS via URL scheme)
+    - Link to xDrip4iOS documentation
 
 6. Verify glucose readings start appearing in Trio
 
@@ -134,6 +135,7 @@ If you're using GitHub Actions (Browser Build), the app group is typically confi
 ### What is the Heartbeat?
 
 The CGM heartbeat is a Bluetooth signal that wakes up Trio when:
+
 - The iPhone screen is locked
 - Trio is in the background
 - The phone is in Low Power Mode
@@ -143,13 +145,13 @@ This ensures Trio continues to receive glucose updates and run loop cycles even 
 ### How to Enable
 
 1. **In xDrip4iOS**:
-   - Enable "Heartbeat" feature in xDrip4iOS settings
-   - Configure to send heartbeat via Bluetooth
+    - Enable "Heartbeat" feature in xDrip4iOS settings
+    - Configure to send heartbeat via Bluetooth
 
 2. **In Trio**:
-   - Trio automatically detects the transmitter via shared UserDefaults
-   - Reads `cgmTransmitterDeviceAddress` and Bluetooth UUIDs
-   - Connects to transmitter for heartbeat signals
+    - Trio automatically detects the transmitter via shared UserDefaults
+    - Reads `cgmTransmitterDeviceAddress` and Bluetooth UUIDs
+    - Connects to transmitter for heartbeat signals
 
 ### Requirements
 
@@ -188,6 +190,7 @@ From xDrip4iOS, Trio gets:
 ### Trend Format Support
 
 Trio handles multiple trend formats from xDrip4iOS:
+
 - **String format**: "FortyFiveUp", "Flat", etc.
 - **Integer format**: 0-8 (matching Dexcom trend values)
 - **Case variations**: "trend" or "Trend" keys
@@ -230,9 +233,6 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 2. Enable **Smooth Glucose** toggle
 3. Trio applies 3 iterations of Savitzky-Golay smoothing
 
-!!! warning "Smoothing Caution"
-    Smoothing introduces a slight delay in glucose trends. Only enable if you have consistently noisy CGM data. Most users should keep this disabled.
-
 ---
 
 ## Troubleshooting
@@ -242,26 +242,27 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 **Check these items**:
 
 1. **App Group Configuration**
-   - Both apps built with the same App Group ID
-   - Verify in Xcode project settings or build logs
+    - Both apps built with the same App Group ID
+    - Verify in Xcode project settings or build logs
 
 2. **xDrip4iOS Receiving Data**
-   - Open xDrip4iOS and verify glucose readings appear
-   - Check transmitter connection status
+    - Open xDrip4iOS and verify glucose readings appear
+    - Check transmitter connection status
 
 3. **Trio CGM Selection**
-   - Settings → Devices → CGM shows "xDrip4iOS" selected
-   - Device address displayed (if available)
+    - Settings → Devices → CGM shows "xDrip4iOS" selected
+    - Device address displayed (if available)
 
 4. **Bluetooth Permissions**
-   - Both apps have Bluetooth permissions granted
-   - Check iOS Settings → Privacy → Bluetooth
+    - Both apps have Bluetooth permissions granted
+    - Check iOS Settings → Privacy → Bluetooth
 
 5. **App Group Access**
-   - Both apps have necessary entitlements
-   - Rebuild if recently changed provisioning profiles
+    - Both apps have necessary entitlements
+    - Rebuild if recently changed provisioning profiles
 
 **Debug Steps**:
+
 1. Open xDrip4iOS, verify recent glucose reading with timestamp
 2. Switch to Trio, wait 1-2 minutes for poll
 3. Check if glucose appears on Trio home screen
@@ -270,6 +271,7 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 ### "No CGM Device Address" Shown
 
 **This is normal if**:
+
 - xDrip4iOS hasn't written transmitter address to shared UserDefaults yet
 - Heartbeat feature not configured in xDrip4iOS
 - Using xDrip4iOS with a non-Bluetooth CGM source (e.g., Nightscout)
@@ -286,6 +288,7 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 4. **Low Power Mode**: May delay background processing
 
 **Solutions**:
+
 - Enable heartbeat feature in both apps
 - Ensure Trio has background refresh enabled
 - Temporarily disable Low Power Mode for testing
@@ -302,12 +305,14 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 ### Heartbeat Not Working
 
 **Requirements**:
+
 - xDrip4iOS heartbeat enabled
 - Both apps using same app group
 - Bluetooth permissions granted
 - Transmitter actively connected
 
 **Test**:
+
 1. Lock iPhone screen
 2. Wait 10 minutes
 3. Unlock and check if Trio loop continued
@@ -331,7 +336,7 @@ Trio offers optional glucose smoothing using the Savitzky-Golay filter:
 1. **Build Requirement**: Cannot use App Store xDrip4iOS; must build with matching app group
 2. **Same Device Only**: xDrip4iOS and Trio must be on the same iPhone
 3. **No Bidirectional Communication**: Trio only reads from xDrip4iOS (one-way data flow)
-4. **Calibration in xDrip**: Calibrations must be done in xDrip4iOS, not Trio
+4. **Calibration in xDrip**: Calibrations must be done in xDrip4iOS, not Libre app or Dexcom app
 5. **Configuration Complexity**: Requires understanding of app groups and provisioning
 6. **Silent Failures**: If app group misconfigured, errors aren't always obvious
 
@@ -360,6 +365,7 @@ xDrip4iOS integration with Trio provides:
 - **Advanced monitoring** through xDrip4iOS features
 
 **Setup requirements**:
+
 - Build both apps with matching app group ID
 - Configure xDrip4iOS with your CGM transmitter
 - Select xDrip4iOS as CGM source in Trio
@@ -374,4 +380,3 @@ For detailed xDrip4iOS setup and CGM-specific instructions, visit the [xDrip4iOS
 - **xDrip4iOS Documentation**: [https://xdrip4ios.readthedocs.io/](https://xdrip4ios.readthedocs.io/)
 - **xDrip4iOS GitHub**: [https://github.com/JohanDegraeve/xdripswift](https://github.com/JohanDegraeve/xdripswift)
 - **DIY Looping Community**: Facebook groups and Discord servers for support
-- **Trio Settings**: Settings → Devices → CGM for configuration

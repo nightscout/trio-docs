@@ -2,6 +2,9 @@
 
 Nightscout is a cloud-based diabetes data platform that Trio can integrate with for comprehensive data synchronization, remote monitoring, and caregiver access.
 
+!!! info "Learn more about Nightscout"
+    - [Nightscout Docs](https://nightscout.github.io/)
+    
 !!! warning "*Nightscout* version must be 15.0.2 or later"
     To properly display the OpenAPS pill with Trio 0.5.x (or later), your *Nightscout* version must be 15.0.2 (or later).
 ---
@@ -40,7 +43,10 @@ Before configuring Trio to work with Nightscout, you need:
 1. **A Nightscout Site**
     - Hosted Nightscout instance (version 15.0.2 or newer required for use with Trio)
     - Your Nightscout URL (e.g., `https://yoursite.herokuapp.com`)
-    - For help building a Nightscout site, please see the [Nightscout documentation](https://nightscout.github.io/nightscout/new_user/) or use a paid service such as [Nightscout Pro](https://nightscout.pro)
+    - For help building a Nightscout site, there are a few options:
+        - Follow the [Nightscout documentation](https://nightscout.github.io/nightscout/new_user/) 
+        - Use a paid service such as [Nightscout Pro](https://nightscout.pro) or [NS10be.de](https://ns.10be.de/en/index.html)
+        - Follow the [Setup and guide](https://google-cloud-nightscout.github.io) for running Nightscout on Google Cloud
 2. **API Secret**
     - Your Nightscout API secret (configured during Nightscout setup)
     - Once Trio is connected to Nightscout, it is stored securely in Trio's keychain
@@ -58,106 +64,130 @@ Before configuring Trio to work with Nightscout, you need:
 
 ---
 
-## Configuration
-
-### Step 1: Enable Nightscout in Trio
-
-<div class="grid" markdown>
-
-1. Open Trio and navigate to **Settings → Services → Nightscout → Connect**
-2. Enter your Nightscout **URL** (without trailing slash)
-    - Example: `https://yoursite.herokuapp.com`
-3. Enter your [**API Secret**](https://nightscout.github.io/nightscout/setup_variables/#api-secret-nightscout-password)
-    - This is the same secret you configured in Nightscout
-    - Stored securely in iOS Keychain
-4. Tap **Connect to Nightscout** to validate the connection
-
-![Connect Nightscout](img/connect-nightscout.png)
-
-</div>
-
-Trio will test the connection by uploading a test treatment. If successful, your Nightscout configuration is saved.
-
-!!! important "A Nightscout URL starts with https://"
-    
-    - Your *Nightscout* URL must start with `https://`.  
-    - To set this up correctly, do not forget the letter `s` between `http` and `://`.
-
-### Step 2: Utilize Upload/Download
-
-<div class="grid" markdown>
-
-- **Upload**:
-    - Enable **Allow Uploading to Nightscout** toggle
-        - Optionally enable **Upload Glucose** if you want CGM data uploaded
-        - Trio immediately uploads your current profile when enabled
-    - [What Trio Uploads to Nightscout](#what-trio-uploads-to-nightscout)
-
-![Upload](img/upload.png#only-light){width="250"}
-![Upload](img/upload-dark.png#only-dark){width="250"}
-
-- **Download**:
-    - Enable **Allow Fetching from Nightscout** toggle
-        - Trio will download carbs, temp targets, and optionally glucose from Nightscout
-        - Used as backup or when using Nightscout as primary CGM source
-    - [What Trio Downloads from Nightscout](#what-trio-downloads-from-nightscout)
-
-![Fetch](img/fetch.png#only-light){width="250"}
-![Fetch](img/fetch-dark.png#only-dark){width="250"}
-
-- **Backfill Glucose**:
-    - Tap **Backfill Glucose**
-        - Trio will fetch any missed glucose readings from the last 24 hours
-
-![Backfill](img/backfill.png#only-light){width="250"}
-![Backfill](img/backfill-dark.png#only-dark){width="250"}
-
-</div>
-
----
-
 ## What Trio **Uploads** to Nightscout
 
 ### 1. Device Status
 
-**Displayed in OpenAPS Pill**:  
-All this data appears in the Nightscout "OpenAPS" pill, providing real-time loop status every 5 minutes with every loop cycle.
+<div class="grid cards" markdown>
 
-- **Trio Status**
-    - `suggested`: Latest algorithm recommendation (predicted glucose, recommended insulin)
-    - `enacted`: What was actually delivered
-    - `iob`: Current insulin on board with details
-    - `version`: Trio app version
+-   __Time Since Last Loop Cycle__
 
-- **Pump Status**
-    - Battery level, voltage, state
-    - Reservoir remaining insulin
-    - Pump clock/timestamp
-    - Pump model and status
+    - - -
+    
+    ![Time Since Last Loop NS](img/time-since-last-loop-ns.png){width="300"}
 
-- **Phone/Uploader Status**
-    - iPhone battery percentage
-    - Charging state
-    - Device timestamp
+-   __OpenAPS Pill__
 
-### 2. Glucose Readings
+    - - -
+    
+    ![OpenAPS Pill NS](img/openaps-pill-ns.png){width="300"}
 
-**Toggle**: Controlled by "Upload Glucose" setting (can be disabled independently)
+-   __Pump Reservoir Status__
 
-- CGM glucose values
-- Trend/direction arrows
-- Timestamp
-- Raw/filtered values (if available)
-- Uploaded in batches of 100 entries
+    - - -
+    
+    ![Pump Status](img/pump-status.png){width="300"}
 
-### 3. Insulin Delivery
+-   __Pump Battery Status__
+
+    - - -
+    
+    ![Pump Battery Status](img/pump-battery-status.png){width="300"}
+
+-   __Pump Reservoir Status__
+
+    - - -
+    
+    ![Pump Status](img/pump-status.png){width="300"}
+
+-   __Pump Battery Status__
+
+    - - -
+    
+    ![Pump Battery Status](img/pump-battery-status.png){width="300"}
+        
+</div>
+
+!!!info "What in the world is this information in the OpenAPS pill?!?"
+    When you tap on the OpenAPS Pill, the details it provides can look very confusing if you don't understand what it's saying. [This page](../../usage/features/current-loop-status-explained.md) in the docs will hopefully make it a little easier to understand.
+
+### 2. Looping Status
+
+<div class="grid cards" markdown>
+
+-   __Current Glucose Reading__
+
+    - - -
+    
+    ![Current Glucose](img/current-glucose-trend.png){width="300"}
+
+-   __Change in Glucose__
+
+    - - -
+    
+    ![Glucose Delta](img/glucose-delta.png){width="300"}
+
+-   __Insulin on Board (IOB)__
+
+    - - -
+    
+    ![IOB Pill NS](img/current-iob-ns.png){width="300"}
+
+-   __Carbs on Board (COB)__
+
+    - - -
+    
+    ![COB Pill NS](img/current-cob-ns.png){width="300"}
+
+-   __Cannula Age (CAGE)__
+
+    - - -
+    
+    ![Cannula Age](img/cannula-age.png){width="300"}
+
+-   __Sensor Age (SAGE)__
+
+    - - -
+    
+    ![Sensor Age](img/sensor-age.png){width="300"}
+
+-   __Current Basal Rate__
+
+    - - -
+    
+    ![Current Basal Rate](img/current-basal-rate.png){width="300"}
+
+-   __Basal Rate Details__
+
+    - - -
+    
+    ![Basal Rate Details](img/basal-rate-details.png){width="300"}
+    
+</div>
+
+!!! note
+    Glucose Readings are controlled by the "Upload Glucose" setting (can be disabled independently)
+
+### 3. Phone Status
+
+<div class="grid cards" markdown>
+
+-   __Phone Battery Level__
+
+    - - -
+    
+    ![Phone Battery Status](img/phone-battery-status.png){width="300"}
+
+</div>
+
+### 4. Insulin Delivery
 
 - **Boluses**: Manual and automatic (SMB) insulin delivery
 - **Basal Rates**: Temporary and scheduled basal
 - **Pump Events**: All pump history events
 - Uploaded with timestamps and amounts
 
-### 4. Carbohydrate Entries
+### 5. Carbohydrate Entries
 
 - Carb amount (grams)
 - Fat and protein content (if entered)
@@ -165,7 +195,7 @@ All this data appears in the Nightscout "OpenAPS" pill, providing real-time loop
 - Absorption notes
 - Timestamps (created and scheduled)
 
-### 5. Temporary Targets
+### 6. Temporary Targets
 
 - Target range (top and bottom)
 - Duration in minutes
@@ -173,7 +203,7 @@ All this data appears in the Nightscout "OpenAPS" pill, providing real-time loop
 - Reason/name
 - Active and historical temp targets
 
-### 6. Overrides
+### 7. Overrides
 
 - Override name
 - Duration
@@ -183,7 +213,7 @@ All this data appears in the Nightscout "OpenAPS" pill, providing real-time loop
     !!! note "Overrides"
         If duration changes, Trio deletes the old entry and uploads a new one to ensure Nightscout displays correctly.
 
-### 7. Therapy Profile
+### 8. Therapy Profile
 
 Uploaded when settings change or upload is first enabled:
 
@@ -201,7 +231,7 @@ Uploaded when settings change or upload is first enabled:
     - Team ID
     - App expiration date (for TestFlight builds)
 
-### 8. Notes and Annotations
+### 9. Notes and Annotations
 
 - User-entered notes
 - Treatment annotations
@@ -255,7 +285,13 @@ Trio uploads data automatically in response to events:
 
 **Debouncing**: Most uploads are debounced by 2 seconds to batch rapid changes and reduce network requests.
 
+!!! info "What is Debouncing?"
+    Debouncing is a programming technique to limit how often a function runs, ensuring it only executes once after a set time has passed since the last trigger
+
 **Batching**: Data is uploaded in chunks of 100 entries to prevent large payloads.
+
+!!! info "What is Batching?"
+    Batching is a technique for grouping multiple individual operations, tasks, or data points into a single, more efficient unit for processing
 
 ---
 

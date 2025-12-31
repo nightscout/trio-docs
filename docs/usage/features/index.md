@@ -39,5 +39,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
  
     A series of tips, tricks, and best practices for using Dynamic ISF in Trio
-    
+
+-   __[Loop Status Explained](current-loop-status-explained.md)__
+
+    - - -
+ 
+    Explanations of and where to find each data point in the Loop Status details located in Trio, LoopFollow, and Nightscout    
 </div>
