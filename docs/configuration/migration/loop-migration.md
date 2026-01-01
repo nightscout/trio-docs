@@ -73,7 +73,7 @@ A full day on Trio! Congratulations! Here's what to look for:
     - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
 - **Review Dynamic ISF Documentation**  
-    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
+    Review the documentation on [Using Dynamic ISF](../../usage/explained/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 - **Meal Time Struggles**  
     Sometimes, users coming from Loop will notice stability during fasting periods, but meal times are more challenging than they were with Loop. This is due to a shift in algorithms. Loop is more carb-centric, causing users to place a heavy reliance upon their Carb Ratio over their ISF value. Trio is more reliant upon your ISF value and as such you may find you need to adjust your ISF and possibly your CR when you switch from Loop to Trio. 
 - - -
@@ -85,7 +85,7 @@ You've completed a week on Trio! Here's what you should see:
 - **Dynamic ISF**  
     Dynamic ISF now has enough data. You now have the option to enable it.
 
-    This is a great time to refresh [Using Dynamic ISF](../../usage/features/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
+    This is a great time to refresh [Using Dynamic ISF](../../usage/explained/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
 
     !!! warning "Can't Enable Dynamic ISF?"
         If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:

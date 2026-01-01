@@ -10,6 +10,12 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
+-   __[Using Dynamic ISF](dynamic-isf.md)__
+
+    - - -
+ 
+    A series of tips, tricks, and best practices for using Dynamic ISF in Trio
+
 -   __[Loop Status](current-loop-status-explained.md)__
 
     - - -

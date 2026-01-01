@@ -35,7 +35,7 @@ Notice how the graph shifts towards (0,0) to increase the rate of change as Adju
 
 ### Using Overrides With Logarithmic Dynamic ISF
 
-Overrides change your profile settings before they are sent to the Oref algorithm for adaptation. As noted above, because Logarithmic Dynamic ISF does not utilize your profile ISF for the sensitivity calculation, adjusting your profile ISF using an override will not have a significant impact on your dosage calculations. For this reason, it is advised to use [Temp Targets](temp-targets.md) instead of or in conjunction with Overrides when using Logarithmic Dynamic ISF.
+Overrides change your profile settings before they are sent to the Oref algorithm for adaptation. As noted above, because Logarithmic Dynamic ISF does not utilize your profile ISF for the sensitivity calculation, adjusting your profile ISF using an override will not have a significant impact on your dosage calculations. For this reason, it is advised to use [Temp Targets](../features/temp-targets.md) instead of or in conjunction with Overrides when using Logarithmic Dynamic ISF.
 
 !!! question "What effect will using a >100% Override have on Logarithmic Dynamic ISF?"
     

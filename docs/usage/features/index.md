@@ -34,10 +34,4 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
  
     Information on what's possible with Trio's Bolus Calculator
     
--   __[Using Dynamic ISF](dynamic-isf.md)__
-
-    - - -
- 
-    A series of tips, tricks, and best practices for using Dynamic ISF in Trio
-
 </div>

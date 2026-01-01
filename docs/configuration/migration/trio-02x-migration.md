@@ -99,7 +99,7 @@ A full day on Trio 0.5 (or higher)! Congratulations! Here's what to look for:
     - [Carb Ratio Testing](../../usage/concepts/carb-ratios.md)
 
 - **Review Dynamic ISF Documentation**  
-    Review the documentation on [Using Dynamic ISF](../../usage/features/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
+    Review the documentation on [Using Dynamic ISF](../../usage/explained/dynamic-isf.md) in preparation for [Day 7](#what-to-expect-after-7-days).
 
 - - -
 
