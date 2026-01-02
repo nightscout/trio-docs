@@ -172,6 +172,10 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
@@ -246,8 +250,8 @@ nav:
               - Insulin Pump: install/build/requirements/devices/pump.md
               - CGM: install/build/requirements/devices/cgm.md
               - iPhone: install/build/requirements/devices/iphone.md
-              - Mac ✏️: install/build/requirements/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
+              #- Mac ✏️: install/build/requirements/devices/mac.md # TODO
+              #- Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
           - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build:
           - install/build/index.md
@@ -320,7 +324,7 @@ nav:
               - Remote Control: configuration/settings/features/remote-control.md
               - User Interface: configuration/settings/features/user-interface.md
               - App Icons: configuration/settings/features/app-icons.md
-              - App Diagnostics ✏️: configuration/settings/features/app-diagnostics.md
+              #- App Diagnostics ✏️: configuration/settings/features/app-diagnostics.md
           - Notifications:
               - configuration/settings/notifications/index.md
               - Trio Notifications: configuration/settings/notifications/trio-notifications.md
@@ -329,7 +333,7 @@ nav:
           - Services:
               - configuration/settings/services/index.md
               - Nightscout: configuration/settings/services/nightscout.md
-              - Tidepool: configuration/settings/services/tidepool.md
+              - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
 

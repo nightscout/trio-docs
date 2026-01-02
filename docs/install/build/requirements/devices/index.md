@@ -6,36 +6,29 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[Insulin Pumps](pump.md)__
-    
-    - - -
-    
-    Information about insulin pumps compatible with Trio
-    
--   __[CGM](cgm.md)__
+-   __[Phones](iphone.md#compatible-phones)__
 
     - - -
     
-    Information about continuous glucose monitors (CGMs) that are compatible with Trio
-    
--   __[iPhone](iphone.md)__
+    List of compatible phones
+
+-   __[Watches](iphone.md#apple-watch)__
 
     - - -
     
-    Answers the question: What phones will work with Trio?
+    List of compatible watches
     
--   __[Mac ✏️](mac.md)__
+-   __[Pumps](pump.md#compatible-pumps)__
 
     - - -
     
-    ***🚧Work in Progress🚧  
-    Coming Soon!***
-    
--   __[Compatibility Matrix ✏️](compatibility-matrix.md)__
+    List of compatible insulin pumps
+
+-   __[CGMs](cgm.md#compatible-cgm)__
 
     - - -
     
-    ***🚧Work in Progress🚧  
-    Coming Soon!***
+    List of compatible continuous glucose monitors (CGMs)
     
 </div>
+
