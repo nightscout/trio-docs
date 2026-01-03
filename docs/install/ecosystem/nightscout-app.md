@@ -70,29 +70,17 @@ Before configuring Trio to work with Nightscout, you need:
 
 <div class="grid cards" markdown>
 
--   __Time Since Last Loop Cycle__
+-   __Time Since Last Glucose Reading__
 
     - - -
     
-    ![Time Since Last Loop NS](img/time-since-last-loop-ns.png){width="300"}
+    ![Time Since Last Glucose NS](img/time-since-last-glucose-ns.png){width="300"}
 
 -   __OpenAPS Pill__
 
     - - -
     
     ![OpenAPS Pill NS](img/openaps-pill-ns.png){width="300"}
-
--   __Pump Reservoir Status__
-
-    - - -
-    
-    ![Pump Status](img/pump-status.png){width="300"}
-
--   __Pump Battery Status__
-
-    - - -
-    
-    ![Pump Battery Status](img/pump-battery-status.png){width="300"}
 
 -   __Pump Reservoir Status__
 
