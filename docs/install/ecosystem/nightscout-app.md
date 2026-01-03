@@ -17,7 +17,7 @@ Trio's Nightscout integration provides bidirectional data synchronization:
     - Device status
     - Glucose readings
     - Insulin delivery
-    - Carbs
+    - Meals
     - Temp targets
     - Overrides
     - Therapy profiles
