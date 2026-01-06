@@ -175,55 +175,43 @@ Before configuring Trio to work with Nightscout, you need:
 - **Pump Events**: All pump history events
 - Uploaded with timestamps and amounts
 
-### 5. Carbohydrate Entries
+### 5. Meal Entries
 
-- Carb amount (grams)
-- Fat and protein content (if entered)
-- FPU (Fat Protein Units) equivalents
-- Absorption notes
-- Timestamps (created and scheduled)
+- Carb, fat, and protein amounts (grams)
+- FPU (Fat Protein Units) carb equivalents
 
 ### 6. Temporary Targets
 
-- Target range (top and bottom)
-- Duration in minutes
+- Glucose Target
 - Start time
-- Reason/name
+- Duration
+- Name is listed under Notes
 - Active and historical temp targets
+
+    !!! note "Sensitivity Adjustment"
+        Sensitivity Adjustment is not notated in the Temporary Target but can be found by tapping the OpenAPS pill and looking at Autosens
 
 ### 7. Overrides
 
 - Override name
+- Start time
 - Duration
-- Start timestamp
-- Notes
+- Does not detail what the override does, so make sure the name is useful
+- Implemented by using an "Exercise" type event in Nightscout
+- Active and historical overrides
 
-    !!! note "Overrides"
-        If duration changes, Trio deletes the old entry and uploads a new one to ensure Nightscout displays correctly.
+    !!! note "Edited while running"
+        If an override or temporary target is edited while it's running, Trio deletes the old entry and uploads a new one.
 
 ### 8. Therapy Profile
 
 Uploaded when settings change or upload is first enabled:
 
-- **Insulin Sensitivity Factor (ISF)**: Hourly schedule
-- **Carb Ratios**: Hourly schedule
-- **Basal Rates**: Hourly schedule
-- **Target Ranges**: Hourly low and high targets
 - **Duration of Insulin Action (DIA)**
-- **Carbs/Hour**: Calculated absorption rate
-- **Units**: mg/dL or mmol/L
-- **Override Presets**: All configured overrides
-- **Additional Metadata**:
-    - App bundle identifier
-    - APNS device token (for remote control)
-    - Team ID
-    - App expiration date (for TestFlight builds)
-
-### 9. Notes and Annotations
-
-- User-entered notes
-- Treatment annotations
-- Uploaded as treatment events
+- **Carb Ratios**: Hourly schedule
+- **Insulin Sensitivity Factor (ISF)**: Hourly schedule
+- **Basal Rates**: Hourly schedule
+- **Target Ranges**: Hourly schedule
 
 ---
 
@@ -482,17 +470,6 @@ You can disable glucose uploads while keeping other uploads enabled:
 - Turn OFF **Upload Glucose**
 - Device status, insulin, carbs, etc. still upload
 - Reduces data usage if glucose already uploaded by CGM app
-
-### Use Local Nightscout
-
-For testing or development:
-
-1. Enable **Use Local Glucose Source**
-2. Set **Local Glucose Port** (default: 8080)
-3. Trio connects to `http://localhost:8080` instead of remote URL
-
-**Use Case**:  
-Running Nightscout locally for testing without internet
 
 ---
 
