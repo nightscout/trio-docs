@@ -39,7 +39,7 @@ There are multiple variables that you'll need to gather for the Desmos Graphs. T
 
 <div class="grid cards" markdown>
 
--   [**Logarithmic Formula Variables**](#logarithmic-formula)
+-   [**Logarithmic Formula Variables**](#logarithmic-formula-variables)
     
     ---
     
@@ -53,7 +53,7 @@ There are multiple variables that you'll need to gather for the Desmos Graphs. T
     [19 $M_{autosensMin}$](#mautosensmin)  
     
     
--   [**Sigmoid Formula Variables**](#sigmoid-formula)
+-   [**Sigmoid Formula Variables**](#sigmoid-formula-variables)
 
 </div>
 
