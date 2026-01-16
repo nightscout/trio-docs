@@ -153,9 +153,6 @@ Before configuring Trio to work with Nightscout, you need:
     
 </div>
 
-!!! note
-    Glucose Readings are controlled by the "Upload Glucose" setting (can be disabled independently)
-
 ### 3. Phone Status
 
 <div class="grid cards" markdown>
