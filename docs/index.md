@@ -1,3 +1,8 @@
+!!! important "Attention Trio Users"
+    At this time all users should [build the dev branch](build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+
+    Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
+
 !!! important "🚧 Documentation Under Construction 🚧"
     
     This documentation is being released while still under construction. Please, keep in mind the following information:
