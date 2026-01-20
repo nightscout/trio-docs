@@ -30,4 +30,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     🚧Documentation Under Construction🚧
     How to upgrade Trio to the latest version
 
+-   __[Companion Apps](ecosystem/index.md)__
+
+    - - -
+
+    Apps that work alongside Trio
+    
 </div>

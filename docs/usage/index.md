@@ -28,12 +28,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
  
     Information on Overrides, Temp Targets, Statistics, Bolus Calculator, and Using Dynamic ISF
 
--   __[Companion Apps](ecosystem/index.md)__
-
-    - - -
-
-    Apps that work alongside Trio
-    
 -   __[Explain It To Me](explained/index.md)__
 
     - - -

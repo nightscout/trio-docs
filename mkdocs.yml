@@ -237,11 +237,6 @@ nav:
           - Temporary Targets: usage/features/temp-targets.md
           - Statistics: usage/features/statistics.md
           - Bolus Calculator: usage/features/bolus-calculator.md
-      - Companion Apps:
-          - usage/ecosystem/index.md
-          - Nightscout: usage/ecosystem/nightscout-app.md
-          - LoopFollow: usage/ecosystem/loop-follow.md
-          - xDrip4iOS: usage/ecosystem/xdrip4ios.md
       - Explain It To Me:
           - usage/explained/index.md
           - Using Dynamic ISF: usage/explained/dynamic-isf.md
@@ -285,6 +280,11 @@ nav:
               - Customizations ✏️: install/build/browser/browser-customizations.md
               - Update with Browser ✏️: install/build/browser/browser-update.md
       - Upgrade ✏️: install/upgrade.md
+      - Companion Apps:
+          - install/ecosystem/index.md
+          - Nightscout: install/ecosystem/nightscout-app.md
+          - LoopFollow: install/ecosystem/loop-follow.md
+          - xDrip4iOS: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
       - Startup Guides:

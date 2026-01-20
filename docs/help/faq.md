@@ -219,7 +219,7 @@ The following CGM can be used with Trio:
 ###What CGM apps can be used with Trio?
 
 **xDrip**  
-To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../usage/ecosystem/xdrip4ios.md).  
+To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../install/ecosystem/xdrip4ios.md).  
 
 !!! tip
     _If you use xDrip with the Dexcom G6/ONE, in Trio select 'Dexcom G6' as the CGM source. Trio will intercept glucose readings directly from the transmitter._

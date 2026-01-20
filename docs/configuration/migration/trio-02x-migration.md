@@ -75,7 +75,7 @@ Here are some things to keep in mind after upgrading from Trio 0.2 to Trio 0.5 (
     Use this time to learn the [New User Interface](../../usage/interface.md).
 - **Remote Control**  
     - In Trio 0.2.x, *Nightscout* Careportal could be used to enter `Carb Correction`, and start and cancel `Temporary Target`. *This continues to be an option in Trio 0.5.x (or newer)*
-    - Trio 0.2.x also supported other remote options (using announcements via Careportal). Those options were replaced by the more secure [**LoopFollow - Trio Remote Control**](../../usage/ecosystem/loop-follow.md) for Trio 0.5.x (or newer)
+    - Trio 0.2.x also supported other remote options (using announcements via Careportal). Those options were replaced by the more secure [**LoopFollow - Trio Remote Control**](../../install/ecosystem/loop-follow.md) for Trio 0.5.x (or newer)
     - **Using announcements to provide remote control of the Trio phone is no longer supported**
 
 !!! danger "Do not use a pump or cgm simulator"

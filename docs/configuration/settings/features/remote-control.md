@@ -1,6 +1,6 @@
 ## Remote Control Overview
 
-Trio can accept remote commands from [*LoopFollow*](../../../usage/ecosystem/loop-follow.md) or from [*Nightscout*](../../../usage/ecosystem/nightscout-app.md). There are a variety of options, but the final control of whether remote commands will be enacted rests with the Trio user. They can enable or disable remote control.
+Trio can accept remote commands from [*LoopFollow*](../../../install/ecosystem/loop-follow.md) or from [*Nightscout*](../../../install/ecosystem/nightscout-app.md). There are a variety of options, but the final control of whether remote commands will be enacted rests with the Trio user. They can enable or disable remote control.
 
 The recommended approach is to use Trio 0.5.x (or newer) with the *LoopFollow* app to use the Trio Remote Control setting.
 
@@ -696,5 +696,5 @@ Other signatures that you need to [force the update](#update-profile) are shown 
 
 ## Build *LoopFollow*
 
-Follow this link to the [LoopFollow](../../../usage/ecosystem/loop-follow.md){: target="_blank" } build instructions.
+Follow this link to the [LoopFollow](../../../install/ecosystem/loop-follow.md){: target="_blank" } build instructions.
 
