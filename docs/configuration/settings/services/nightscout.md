@@ -39,7 +39,7 @@ Trio will test the connection by uploading a test treatment. If successful, your
     - Enable **Allow Uploading to Nightscout** toggle
         - Optionally enable **Upload Glucose** if you want CGM data uploaded from Trio rather than from your CGM
         - Trio immediately uploads your current profile when enabled
-    - [What Trio Uploads to Nightscout](../../../install/ecosystem/nightscout-app.md#what-trio-uploads-to-nightscout)
+    - [What Trio Uploads to Nightscout](../../../usage/ecosystem/nightscout-app.md#what-trio-uploads-to-nightscout)
 
 ![Upload](img/upload.png#only-light){width="250"}
 ![Upload](img/upload-dark.png#only-dark){width="250"}
@@ -48,7 +48,7 @@ Trio will test the connection by uploading a test treatment. If successful, your
     - Enable **Allow Fetching from Nightscout** toggle
         - Trio will download carbs, temp targets, and optionally glucose from Nightscout
         - Used as backup or when using Nightscout as primary CGM source
-    - [What Trio Downloads from Nightscout](../../../install/ecosystem/nightscout-app.md#what-trio-downloads-from-nightscout)
+    - [What Trio Downloads from Nightscout](../../../usage/ecosystem/nightscout-app.md#what-trio-downloads-from-nightscout)
 
 ![Fetch](img/fetch.png#only-light){width="250"}
 ![Fetch](img/fetch-dark.png#only-dark){width="250"}
@@ -64,4 +64,4 @@ Trio will test the connection by uploading a test treatment. If successful, your
 
 ## Nightscout Integration
 
-Read more about the integration of Nightscout in Trio [here](../../../install/ecosystem/nightscout-app.md)
+Read more about the integration of Nightscout in Trio [here](../../../usage/ecosystem/nightscout-app.md)
