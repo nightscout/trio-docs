@@ -55,6 +55,17 @@ There are multiple variables that you'll need to gather for the Desmos Graphs. T
     
 -   [**Sigmoid Formula Variables**](#sigmoid-formula-variables)
 
+    ---
+    
+    [2 $P_{profileISF}$](#pprofileisf_1)
+    [4 $A_{adjustmentFactor}$](#aadjustmentfactor_1) 
+    [6 $T_{targetBG}$](#ttargetbg)
+    [8 $M_{autosensMax}](#mautosensmax_1)
+    [9 $M_{autosensMin}](#mautosensmin_1)
+    [15 $T_{TDD2hr}](#tdd-data_1)
+    [16 $T_{TDD10day}$](#tdd-data_1)
+    [17 $W_{weightedAverageOfTDD}$](#wweightedaverageoftdd_1)
+    
 </div>
 
 ## Logarithmic Formula Variables
