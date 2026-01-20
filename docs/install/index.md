@@ -9,7 +9,7 @@ Welcome to the installation and update homepage! Here you will find information 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 
 !!! important "Attention Trio Users"
-    At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+    At this time all users should [build the dev branch](build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
 
     Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
 
@@ -27,6 +27,12 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
     
     Overview on building Trio using a Mac computer and Xcode
+    
+-   __[Build Dev with Browser](build/browser/build-dev-with-browser.md)__
+
+    - - -
+    
+    Overview on building Trio dev branch using a web browser and Test Flight
     
 -   __[Build with Browser ✏️](build/browser/browser-build-overview.md)__
 
