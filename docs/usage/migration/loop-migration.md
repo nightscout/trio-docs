@@ -3,11 +3,11 @@
 ## What to Expect After Install
 
 - **Onboarding Wizard**  
-    Trio will walk you through the initial setup of the app. Learn more in the [New User Setup Guide](../new-user-setup.md).
+    Trio will walk you through the initial setup of the app. Learn more in the [New User Setup Guide](../../configuration/new-user-setup.md).
 - **User Interface**  
     You can find more about the Trio User Interface in [this walk-through](../../usage/interface.md) of the app.
 - **Remote Commands & iOS Shortcuts**  
-    Trigger actions like carb entry, bolus, overrides, or temporary targets [remotely](../settings/features/remote-control.md) or through [shortcut automation](../settings/features/shortcuts.md).
+    Trigger actions like carb entry, bolus, overrides, or temporary targets [remotely](../../configuration/settings/features/remote-control.md) or through [shortcut automation](../../configuration/settings/features/shortcuts.md).
     - **Use Loop Follow v4.0 or Later for remote commands**  
         Loop Follow is the companion app for Trio. More info at [LoopFollowDocs](https://loopfollowdocs.org/remote/remote-control-trio/). 
         
@@ -26,7 +26,7 @@
 Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the first 3 hours:
 
 - **Onboarding Wizard**  
-    Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
+    Take this time to go through the Onboarding Wizard. Reference the [New User Setup Guide](../../configuration/new-user-setup.md) or ask questions on [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org) if you have any questions.
 - **Test Settings**  
     Your Loop settings may be a great starting point for Trio, but often times they need some adjustment. This is a great time to test your settings so you can start fresh on solid footing.
 - **User Interface**  
@@ -55,7 +55,7 @@ Here are some things to keep in mind after moving from Loop to Trio v0.5+ in the
 !!! danger "Do not use a pump or cgm simulator"
     - Doing so will result in false data being stored and you will have to delete the app with all the data and reinstall before you can use it on a live pump.
     - This will also reset your 7-day waiting period for Dynamic ISF.
-    - [More information on simulator use](../settings/devices/pump.md?h=simulator#pump-simulator)
+    - [More information on simulator use](../../configuration/settings/devices/pump.md?h=simulator#pump-simulator)
 
 - - -
 
@@ -85,7 +85,7 @@ You've completed a week on Trio! Here's what you should see:
 - **Dynamic ISF**  
     Dynamic ISF now has enough data. You now have the option to enable it.
 
-    This is a great time to refresh [Using Dynamic ISF](../../usage/explained/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
+    This is a great time to refresh [Using Dynamic ISF](../../usage/explained/dynamic-isf.md)and check your settings for [Logarithmic Dynamic ISF](../../configuration/settings/algorithm/dynamic-settings.md#dynamic-isf-logarithmic) or [Sigmoid Dynamic ISF](../../configuration/settings/algorithm/dynamic-settings.md#dynamic-isf-sigmoid).
 
     !!! warning "Can't Enable Dynamic ISF?"
         If Dynamic ISF does not give you the option to enable, you may have experienced one or more of the following:
@@ -103,28 +103,28 @@ You've completed a week on Trio! Here's what you should see:
 
 When you start on Trio, you will notice there are significantly more settings than in Loop. A few can be manually added. Below are the settings that are in both Loop and Trio as well as where to locate them in each app.
 
-### [Therapy Settings](../settings/therapy/index.md)
+### [Therapy Settings](../../configuration/settings/therapy/index.md)
 | Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Glucose Targets**](../settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | schedule <br> (100 mg/dL — 12:00 AM)  | Settings → Therapy → Glucose Targets | **Correction Range** | decimal range <br> (100 – 115 mg/dL) | Settings → Therapy Settings → Correction Range |
-| [**Basal Rates**](../settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | schedule <br> (1.0 U/hr — 12:00 AM) | Settings → Therapy → Basal Rates | **Basal Rates** | schedule <br> (12:00 AM — 1.0 U/hr) | Settings → Therapy Settings → Basal Rates | 
-| [**Carb Ratios**](../settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio) | schedule <br> (15 g/U — 12:00 AM) | Settings → Therapy → Carb Ratios | **Carb Ratios** | schedule <br> (12:00AM — 15 g/U) | Setting → Therapy Settings → Carb Ratios | 
-| [**Insulin Sensitivities**](../settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | schedule <br> (50 mg/dL/U — 12:00 AM) | Settings → Therapy → Insulin Sensitivities | **Insulin Sensitivities** | schedule <br> (12:00 AM — 50 mg/dL/U) | Settings → Therapy Settings → Insulin Sensitivities | 
+| [**Glucose Targets**](../../configuration/settings/therapy/glucose-targets.md#how-to-enter-your-glucose-targets-into-trio) | schedule <br> (100 mg/dL — 12:00 AM)  | Settings → Therapy → Glucose Targets | **Correction Range** | decimal range <br> (100 – 115 mg/dL) | Settings → Therapy Settings → Correction Range |
+| [**Basal Rates**](../../configuration/settings/therapy/basal-rates.md#how-to-enter-your-basal-profiles-into-trio) | schedule <br> (1.0 U/hr — 12:00 AM) | Settings → Therapy → Basal Rates | **Basal Rates** | schedule <br> (12:00 AM — 1.0 U/hr) | Settings → Therapy Settings → Basal Rates | 
+| [**Carb Ratios**](../../configuration/settings/therapy/carb-ratios.md#how-to-enter-your-carb-ratios-cr-into-trio) | schedule <br> (15 g/U — 12:00 AM) | Settings → Therapy → Carb Ratios | **Carb Ratios** | schedule <br> (12:00AM — 15 g/U) | Setting → Therapy Settings → Carb Ratios | 
+| [**Insulin Sensitivities**](../../configuration/settings/therapy/isf.md#how-to-enter-your-isf-into-trio) | schedule <br> (50 mg/dL/U — 12:00 AM) | Settings → Therapy → Insulin Sensitivities | **Insulin Sensitivities** | schedule <br> (12:00 AM — 50 mg/dL/U) | Settings → Therapy Settings → Insulin Sensitivities | 
 
-#### [Units and Limits](../settings/therapy/units-limits.md)
-
-| Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Glucose Units**](../settings/therapy/units-limits.md#glucose-units) | selection <br> (mg/dL or mmol/L) | Settings → Therapy → Units and Limits | **Apple Health: Blood Glucose Unit** | selection <br> (mg/dL or mmol/L) | Health App → Browse → Vitals → Blood Glucose → Unit |
-| [**Maximum Bolus**](../settings/therapy/units-limits.md#max-bolus) | decimal <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Maximum Bolus** | decimal <br> (8 U) | Settings → Therapy Settings → Maximum Bolus |
-| [**Maximum Basal Rate**](../settings/therapy/units-limits.md#max-basal) | decimal <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Maximum Basal Rate** | decimal <br> (2 U/hr) | Settings → Therapy Settings → Maximum Basal Rate |
-| [**Minimum Safety Threshold**](../settings/therapy/units-limits.md#minimum-safety-threshold) | decimal <br> (60 mg/dL) | Settings → Therapy → Units and Limits → Minimum Safety Threshold | **Glucose Safety Limit** | decimal <br> (80 mg/dL) | Settings → Therapy Settings → Glucose Safety Limit |
-
-### [Algorithm Settings](../settings/algorithm/index.md)
-
-#### [SMB (Super Micro Bolus)](../settings/algorithm/smb-settings.md)
+#### [Units and Limits](../../configuration/settings/therapy/units-limits.md)
 
 | Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [**Enable SMB Always**](../settings/algorithm/smb-settings.md#enable-smb-always) | toggle <br> (On/Off) | Settings → Algorithm → Super Micro Bolus (SMB) → Enable SMB Always | **Automatic Bolus** | selection <br> (Temp Basal Only/Automatic Bolus) | Settings → Dosing Strategy → Automatic Bolus |
+| [**Glucose Units**](../../configuration/settings/therapy/units-limits.md#glucose-units) | selection <br> (mg/dL or mmol/L) | Settings → Therapy → Units and Limits | **Apple Health: Blood Glucose Unit** | selection <br> (mg/dL or mmol/L) | Health App → Browse → Vitals → Blood Glucose → Unit |
+| [**Maximum Bolus**](../../configuration/settings/therapy/units-limits.md#max-bolus) | decimal <br> (10 U) | Settings → Therapy → Units and Limits → Maximum Bolus | **Maximum Bolus** | decimal <br> (8 U) | Settings → Therapy Settings → Maximum Bolus |
+| [**Maximum Basal Rate**](../../configuration/settings/therapy/units-limits.md#max-basal) | decimal <br> (2 U/hr) | Settings → Therapy → Units and Limits → Maximum Basal Rate | **Maximum Basal Rate** | decimal <br> (2 U/hr) | Settings → Therapy Settings → Maximum Basal Rate |
+| [**Minimum Safety Threshold**](../../configuration/settings/therapy/units-limits.md#minimum-safety-threshold) | decimal <br> (60 mg/dL) | Settings → Therapy → Units and Limits → Minimum Safety Threshold | **Glucose Safety Limit** | decimal <br> (80 mg/dL) | Settings → Therapy Settings → Glucose Safety Limit |
+
+### [Algorithm Settings](../../configuration/settings/algorithm/index.md)
+
+#### [SMB (Super Micro Bolus)](../../configuration/settings/algorithm/smb-settings.md)
+
+| Trio Name | Setting Format <br> (example) | Location in Trio | Loop Name | Setting Format <br> (example) | Location in Loop |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| [**Enable SMB Always**](../../configuration/settings/algorithm/smb-settings.md#enable-smb-always) | toggle <br> (On/Off) | Settings → Algorithm → Super Micro Bolus (SMB) → Enable SMB Always | **Automatic Bolus** | selection <br> (Temp Basal Only/Automatic Bolus) | Settings → Dosing Strategy → Automatic Bolus |
 

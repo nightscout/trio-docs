@@ -15,6 +15,18 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
     
     A detailed look at Trio's user interface and features
+    
+-   __[New User Setup Guide](../configuration/new-user-setup.md)__
+
+    - - -
+    
+    Step by step guide on starting Trio
+
+-   __[Migration Guides](migration/index.md)__
+
+    - - -
+    
+    Guidance on locating and identifying the necessary settings for onboarding
 
 -   __[Core Concepts](concepts/index.md)__
 
