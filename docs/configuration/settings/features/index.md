@@ -30,7 +30,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
-    Allow remote control and find the shared secret used in Loop Follow
+    Allow remote control and find the shared secret used in LoopFollow
     
 -   __[User Interface](user-interface.md)__
 
@@ -43,5 +43,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
     
     Change the Trio app icon
+
+-   __[App Diagnostics](app-diagnostics.md)__
     
+    - - -
+    
+    Enable or Disable sharing anonymized data sharing
 </div>
