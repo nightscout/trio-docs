@@ -32,14 +32,14 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
     - - -
     
-    Overview on building Trio dev branch using a web browser and Test Flight
+    Overview on building Trio dev branch using a web browser and TestFlight
     
 -   __[Build with Browser ✏️](build/browser/browser-build-overview.md)__
 
     - - -
     
     🚧Documentation Under Construction🚧
-    Overview on building Trio using a web browser and Test Flight
+    Overview on building Trio using a web browser and TestFlight
     
 -   __[Upgrade ✏️](upgrade.md)__
 
