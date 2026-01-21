@@ -21,13 +21,13 @@
     
 ## Build Trio with Xcode
 
-!!! important "Public Beta"
+!!! important "Dev Branch"
 
-    The public beta is built from the `dev` branch of Trio.
+    At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+
+    Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
     
-    This code is undergoing testing and receives rapid updates. Be sure to follow along in Trio Discord and to download the latest code and update frequently (at least weekly).
-
-    * [Trio Discord Invitation](https://discord.triodocs.org)
+    This code is undergoing testing and receives rapid updates. Be sure to follow along in [Trio Discord](https://discord.triodocs.org) and to download the latest code and update frequently (at least weekly).
 
 ### Download Trio with 'Trio Build Select Script'
 
@@ -66,11 +66,11 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
     ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
       {align= "center"}
 
-5. Next, the script will prompt you to select which Trio branch you want to download. Unless you are actively contributing to app development by running the public beta, you will type 1 and press return. 
+5. Next, the script will prompt you to select which Trio branch you want to download. Type 1 and press return. 
 
-    !!! important "Public Beta"
+    !!! important "Dev Branch"
 
-        To build the public beta, select 2 at this point to select the `dev` branch. Follow along in Trio discord and be sure to download a new version of code and build an update frequently (at least weekly).
+        Until the `main` branch gets updated past 0.2.x, it is recommended all users build the `dev` branch instead of `main`.
 
     ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
       {align= "center"}
