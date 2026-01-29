@@ -1,9 +1,15 @@
+!!! important "Attention Trio Users"
+    At this time all users should [build the dev branch](install/build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+
+    Please read the [Migration Guide](configuration/migration/trio-02x-migration.md) before updating.
+
 !!! important "🚧 Documentation Under Construction 🚧"
     
     This documentation is being released while still under construction. Please, keep in mind the following information:
     
-    - This documentation is for the open testing branch of Trio (`dev` branch). Please review this documentation in preparation for testing Trio 0.5 or newer now that it is publicly available.
+    - This documentation is for the `dev` branch of Trio. Please review this documentation in preparation for using Trio 0.5 or newer.
     - If you are looking for the Trio 0.2.x (`main` branch) documentation, you can still find it here: [0.2.x](0.2.x/index.md)
+        - Please note that Trio 0.2.x is no longer being maintained and we advise all users to move to the `dev` branch.
     - Any page with a ✏️ indicates the information has not yet been updated. The information on those pages should not be referenced at this time.
     - We welcome assistance with proofreading, editing, and updating the information in this documentation. If you would like to contribute to the documentation, please submit issues or PRs [here](https://github.com/nightscout/trio-docs)
     - New educational videos are coming soon.
