@@ -1,6 +1,6 @@
 #Current Loop Status
 
-In Nightscout, Trio, and LoopFollow, you will find a detailed explanation of the data calculated and used for the current loop cycle. The table below will explain each so you can understand the information it is displaying.
+In Trio, Nightscout, and LoopFollow, you will find a detailed explanation of the data calculated and used for the current loop cycle. The table below will explain each so you can understand the information it is displaying.
 
 !!! note "Locating the Current Loop Status"
     - To find this information in Nightscout, hover your cursor over the OpenAPS pill.

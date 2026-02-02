@@ -291,28 +291,6 @@ When you first configure Nightscout:
 
 ---
 
-## Unit Conversion
-
-Trio automatically handles unit conversion:
-
-### Glucose Units
-
-If your Trio is set to **mmol/L** but Nightscout expects **mg/dL** (or vice versa):
-
-- **ISF values** are converted
-- **Target values** are converted
-- **Glucose predictions** in OpenAPS pill are converted
-- Conversion formula: `1 mg/dL = 0.0555 mmol/L`
-
-### Profile Units
-
-The uploaded profile includes a `units` field:
-
-- `mg/dl` or `mmol` based on your Trio settings
-- Nightscout displays values in the correct units
-
----
-
 ## Troubleshooting
 
 ### Common Issues
@@ -421,7 +399,7 @@ Trio supports limited remote commands through Nightscout in two ways:
 
 ### LoopFollow (**Preferred**)
 
-When authenticated with a token that has **readable** access:
+When authenticated with a token that has **`readable`** access:
 
 - **Carb Entry**: Log carbs remotely
 - **Carbs Entry with Remote Bolus**: Log carbs and initiate a bolus remotely
@@ -438,7 +416,7 @@ See the [LoopFollow documentation](loop-follow.md) for information on connecting
 
 ### Careportal Commands
 
-When authenticated with a token that has **careportal, readable** access:
+When authenticated with a token that has **`careportal, readable`** access:
 
 - **Carb Entry**: Log carbs remotely
 - **Pre-set Temporary Target**: Set or cancel saved temp targets
