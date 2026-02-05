@@ -214,25 +214,27 @@ Uploaded when settings change or upload is first enabled:
 
 ## What Trio **Downloads** from Nightscout
 
-When **Allow Fetching from Nightscout** is enabled:
+When **[Allow Fetching from Nightscout](../../configuration/settings/services/nightscout.md#step-2-utilize-uploaddownload)** is enabled:
 
 ### 1. Glucose Readings
 
-- Downloads up to 1,600 recent glucose entries
-- Used as backup CGM source or primary if configured
-- Syncs based on last download date
+- Backfill readings on demand
+- Can be used as a CGM (but does not provide a heartbeat)
 
 ### 2. Carbohydrate Entries
 
 - Fetches carb entries from Nightscout
-- Only from trusted sources (prevents duplicated from AndroidAPS, Loop, iAPS)
-- Marked as `isUploadedToNS = true` to prevent re-uploading
+- Ignores entries uploaded by OS-AIDs to prevent duplicates (Trio, Loop, AndroidAPS, iAPS)
+
+    !!! note "Deleting Entries"
+        - Delete carb entries from Nightscout first, and then delete from Trio.
+        - If you delete an entry in Trio but not Nightscout, Trio will re-fetch it.
+        - If you delete an entry in Nightscout, it will not automatically get deleted from Trio.
 
 ### 3. Temporary Targets
 
-- Downloads temp target entries
-- Event type: "Temporary Target" with duration
-- Syncs based on last download date
+- Start and cancel Temporary Targets via Nightscout's Careportal
+- Enter the same target for `Top` and `Bottom` targets
 
 ### 4. Therapy Profiles (Only available during Onboarding)
 
