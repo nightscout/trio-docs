@@ -257,7 +257,7 @@ nav:
               - Build Trio with Xcode: install/build/mac/build.md
               - Build Errors: install/build/mac/build-errors.md
               - Update Trio with Xcode: install/build/mac/update.md
-          - Build Beta with Browser: install/build/browser/build-dev-with-browser.md
+          - Build Dev with Browser: install/build/browser/build-dev-with-browser.md
           - Build with Browser ✏️:
               - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
               - Create GitHub Account ✏️: install/build/browser/create-github-account.md

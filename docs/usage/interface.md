@@ -145,7 +145,7 @@ Use the tabs below the image to learn more about each section.
         <span style="color: #1895ff;">:fontawesome-solid-circle:</span>  **IOB Forecast:** Forecasts future glucose readings based on the amount of insulin still active in the body  
         <span style="color: #6f62f3;">:fontawesome-solid-circle:</span>  **ZT Forecast:** Forecasts the worst-case future glucose reading scenario if no carbs are absorbed and insulin delivery is stopped until glucose begins to rise  
         <span style="color: #ffc246;">:fontawesome-solid-circle:</span>  **COB Forecast:** Forecasts future glucose readings by considering the amount of carbohydrates still being absorbed in the body  
-        <span style="color: #ff8340;">:fontawesome-solid-circle:</span>  **UAM Forecast:** Forecasts future glucose levels based on the difference between expected glucose and actual glucose readings
+        <span style="color: #d12bf7;">:fontawesome-solid-circle:</span>  **UAM Forecast:** Forecasts future glucose levels based on the difference between expected glucose and actual glucose readings
     
     - - -
         

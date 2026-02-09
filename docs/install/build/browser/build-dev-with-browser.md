@@ -1,12 +1,10 @@
-## Use Browser Build for Public Beta Version
+## Use Browser Build for Latest Trio
 
 This page is provided to help people currently running the public beta version of Trio.
 
-!!! important "Public Beta"
+!!! important "Dev Branch"
 
-    The public beta is built from the `dev` branch of Trio.
-    
-    This code is undergoing testing and receives rapid updates. Be sure to follow along in Trio Discord and to update frequently (at least weekly).
+    It is now recommended to use the `dev` branch of Trio.
 
     * [Trio Discord Invitation](https://discord.triodocs.org)
 
