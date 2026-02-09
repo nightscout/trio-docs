@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-babel==2.17.0
+babel==2.18.0
     # via mkdocs-material
 backrefs==6.1
     # via mkdocs-material
@@ -76,7 +76,7 @@ mkdocs-glightbox==0.5.2
     # via -r requirements.in
 mkdocs-htmlproofer-plugin==1.4.1
     # via -r requirements.in
-mkdocs-include-markdown-plugin==7.2.0
+mkdocs-include-markdown-plugin==7.2.1
     # via -r requirements.in
 mkdocs-macros-plugin==1.5.0
     # via -r requirements.in
@@ -96,13 +96,13 @@ packaging==26.0
     #   mkdocs-macros-plugin
 paginate==0.5.7
     # via mkdocs-material
-pathspec==1.0.3
+pathspec==1.0.4
     # via
     #   mkdocs
     #   mkdocs-macros-plugin
 platformdirs==4.5.1
     # via mkdocs-get-deps
-playwright==1.57.0
+playwright==1.58.0
     # via mkdocs-exporter
 pyee==13.0.0
     # via playwright
@@ -110,7 +110,7 @@ pygments==2.19.2
     # via mkdocs-material
 pymdown-extensions==10.20.1
     # via mkdocs-material
-pypdf==6.6.1
+pypdf==6.6.2
     # via mkdocs-exporter
 python-dateutil==2.9.0.post0
     # via
