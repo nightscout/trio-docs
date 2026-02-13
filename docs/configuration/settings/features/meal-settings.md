@@ -8,20 +8,20 @@
 
 The maximum value of carbs in grams allowed per meal entry in the bolus calculator.  
 
-### Max Protein
-**Default:** _250 g_  
-**Setting Limits:** _0-300 g_  
-
-The maximum value of protein in grams allowed per meal entry in the bolus calculator.  
-
-!!! tip
-    This will only be visible if [Enable Fat and Protein Entries](#enable-fat-and-protein-entries) is turned on.
-
 ### Max Fat
 **Default:** _250 g_  
 **Setting Limits:** _0-300 g_  
 
 The maximum value of fat in grams allowed per meal entry in the bolus calculator.  
+
+!!! tip
+    This will only be visible if [Enable Fat and Protein Entries](#enable-fat-and-protein-entries) is turned on.
+
+### Max Protein
+**Default:** _250 g_  
+**Setting Limits:** _0-300 g_  
+
+The maximum value of protein in grams allowed per meal entry in the bolus calculator.  
 
 !!! tip
     This will only be visible if [Enable Fat and Protein Entries](#enable-fat-and-protein-entries) is turned on.
