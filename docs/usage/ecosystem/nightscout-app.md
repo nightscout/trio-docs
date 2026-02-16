@@ -414,7 +414,7 @@ When authenticated with a token that has **`readable`** access:
 | ***Nightscout*** | Set and Cancel Temp Target |
 | **Trio Remote Control** | Meal (Carbs or Carbs & Bolus)<br>Bolus<br>Temp Target<br>Overrides |
 
-See the [LoopFollow documentation](loop-follow.md) for information on connecting and using LoopFollow.
+See the [LoopFollow documentation](loopfollow.md) for information on connecting and using LoopFollow.
 
 ### Careportal Commands
 

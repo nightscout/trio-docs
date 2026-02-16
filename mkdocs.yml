@@ -253,7 +253,7 @@ nav:
       - Companion Apps:
           - usage/ecosystem/index.md
           - Nightscout: usage/ecosystem/nightscout-app.md
-          - LoopFollow: usage/ecosystem/loop-follow.md
+          - LoopFollow: usage/ecosystem/loopfollow.md
           - xDrip4iOS: usage/ecosystem/xdrip4ios.md
       - Explain It To Me:
           - usage/explained/index.md
