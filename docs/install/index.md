@@ -11,7 +11,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 !!! important "Attention Trio Users"
     At this time all users should [build the dev branch](build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
 
-    Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
+    Please read the [Migration Guide](../usage/migration/trio-02x-migration.md) before updating.
 
 <div class="grid cards" markdown>
 
