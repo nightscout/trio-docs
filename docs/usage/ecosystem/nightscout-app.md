@@ -186,7 +186,7 @@ Before configuring Trio to work with Nightscout, you need:
 - Active and historical temp targets
 
     !!! note "Sensitivity Adjustment"
-        Sensitivity Adjustment is not notated in the Temporary Target but can be found by tapping the OpenAPS pill and looking at Autosens
+        Sensitivity Adjustment is not notated in the Temporary Target but can be found by tapping the OpenAPS pill and looking at Autosens.
 
 ### 7. Overrides
 
@@ -261,12 +261,12 @@ Trio uploads data automatically in response to events:
 **Debouncing**: Most uploads are debounced by 2 seconds to batch rapid changes and reduce network requests.
 
 !!! info "What is Debouncing?"
-    Debouncing is a programming technique to limit how often a function runs, ensuring it only executes once after a set time has passed since the last trigger
+    Debouncing is a programming technique to limit how often a function runs, ensuring it only executes once after a set time has passed since the last trigger.
 
 **Batching**: Data is uploaded in chunks of 100 entries to prevent large payloads.
 
 !!! info "What is Batching?"
-    Batching is a technique for grouping multiple individual operations, tasks, or data points into a single, more efficient unit for processing
+    Batching is a technique for grouping multiple individual operations, tasks, or data points into a single, more efficient unit for processing.
 
 ---
 
@@ -434,7 +434,7 @@ Additional remote capabilities are offered for Trio using the *LoopFollow* app w
 
 !!! warning "Nightscout Careportal Not Advised"
     - While you ***are*** able to send limited commands through Nightscout Careportal, it is advised to use with caution as there could be considerable lag.
-    - The preferred and recommended method is using LoopFollow to send remote commands
+    - The preferred and recommended method is using LoopFollow to send remote commands.
 
 ---
 
