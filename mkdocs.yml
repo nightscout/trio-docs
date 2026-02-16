@@ -70,6 +70,11 @@ plugins:
       redirect_maps:
         "startup-guide.md": "configuration/new-user-setup.md"
         "startup-guide/index.md": "configuration/new-user-setup.md"
+        "configuration/migration/index.md": "usage/migration/index.md"
+        "configuration/migration/aaps-migration.md": "usage/migration/aaps-migration.md"
+        "configuration/migration/iaps-migration.md": "usage/migration/iaps-migration.md"
+        "configuration/migration/loop-migration.md": "usage/migration/loop-migration.md"
+        "configuration/migration/trio-02x-migration.md": "usage/migration/trio-02x-migration.md"
   - open-in-new-tab
   - macros
   - exporter:
