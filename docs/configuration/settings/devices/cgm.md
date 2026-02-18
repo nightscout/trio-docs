@@ -16,6 +16,7 @@ Select your CGM from the in-app menu and from the options below for step by step
 - [Dexcom Share](#dexcom-share)
 - [Freestyle Libre](#freestyle-libre)
 - [Freestyle Libre Demo](#freestyle-libre-demo)
+- [Eversense E3/Eversense 365](#eversense-e3-and-eversense-365)
 - [Glucose Simulator](#glucose-simulator)  
 - [Medtronic Enlite](#medtronic-enlite)  
 - [Nightscout as CGM](#nightscout-as-cgm)  
@@ -85,7 +86,45 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 ### Freestyle Libre Demo
 <!-- TODO: add information on Libre Demo -->
 
-**Step 2**
+**Step 3**
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+
+- - -
+
+
+### Eversense E3 and Eversense 365
+
+!!! warning "You must build feat/dev-eversense branch to use the Eversense CGM"
+    The Eversense CGM is in feat/dev-eversense and is experimental as of now
+
+!!! warning "Wait till initialization phase is completed"
+    During the initialization phase of this system, the glucose reading might be incorrect.
+    Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
+
+!!! warning "Do not use the Eversense app and Trio concurrently"
+    The transmitter is not able to multiple connection to the same device, due to the security protocol.
+    Make sure you either use the Eversense app or Trio, but not both at the same time.
+
+**Step 3**
+Select whether you want to pair the Eversense E3 or the Eversense 365.
+
+![Eversense Transmitter type selection](img/1_eversense_transmitter_selection.PNG){ width="300px" }
+{align=center}
+
+**Step 4 (only for Eversense 365)**
+Log in using your Eversense account. If you do not have an accunt or you forgot your password, the appropriate links are included in this step
+
+![Eversense Account login](img/2_eversense_account_login.PNG){ width="300px" }
+{align=center}
+
+**Step 5**
+Now put your Eversense transmitter in pairing mode (done by tapping the button 3 times), and wait till your Serial Number shows up on screen.
+Click on the found transmitter, accept the pairing prompt (if show), and wait untill the pairing process is completed!
+
+![Eversense Transmitter scanning](img/3_eversense_transmitter_scanning.PNG){ width="300px" }
+{align=center}
+
+**Step 6**
 Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
