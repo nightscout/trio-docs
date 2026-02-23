@@ -1,6 +1,6 @@
 # LoopFollow Integration with Trio
 
-LoopFollow is a companion iOS app designed for remote monitoring and remote control of Trio. It allows caregivers, parents, and friends to view real-time glucose data, loop status, and send remote commands to the Trio app.
+LoopFollow is a companion iOS app designed for remote monitoring and remote control of Trio. It allows caregivers, parents, and friends to view real-time glucose and looping data, get alerts, and send remote commands to the Trio app.
 
 !!! info "Learn more about LoopFollow" 
     - [Loop and Learn](https://www.loopandlearn.org/loop-follow/) 
@@ -12,10 +12,10 @@ LoopFollow is a companion iOS app designed for remote monitoring and remote cont
 
 LoopFollow integrates with Trio in two primary ways:
 
-1. **Data Monitoring**: Displays glucose, insulin, and loop status by reading from your Nightscout site
-2. **Remote Control**: Sends commands directly to Trio via encrypted push notifications (Trio Remote Control)
+1. **Data Monitoring:** Displays glucose, insulin, and loop status by reading data that Trio has uploaded to your Nightscout site.
+2. **Remote Control:** Sends encrypted commands directly to the Trio app via Apple Push Notification Service (APNS). This communication goes app-to-app through Apple's infrastructure and does not involve Nightscout.
 
-LoopFollow does not communicate directly with Trio's database or app—instead, it uses Nightscout as the data source and Apple Push Notification Service (APNS) for remote commands.
+LoopFollow does not access Trio's local database or communicate with it over a local network — data sharing happens through Nightscout, and remote commands are delivered through APNS.
 
 ---
 
@@ -25,13 +25,20 @@ LoopFollow does not communicate directly with Trio's database or app—instead, 
 
 LoopFollow shows:
 
-- **Glucose readings** with trend arrows and graphs
-- **Insulin on Board (IOB)** and **Carbs on Board (COB)**
-- **Loop status** (last loop time, success/failure)
-- **Pump reservoir** and **battery levels**
-- **Temp basals** and **temporary targets**
-- **Recent treatments** (boluses, carbs, etc.)
-- **OpenAPS predictions** and algorithm decisions
+- **Graph** containing
+    - Glucose readings and forecasts
+    - Meal and insulin treatments
+    - Overrides, temp targets, and events
+- **Information Table** with
+    - Current Glucose, delta, trend arrow
+    - Eventual, min, and max glucose forecasts
+    - Scheduled vs current target, ISF, CR, and basal rate
+    - IOB, COB
+    - Current override name
+    - Recommended bolus amount, Autosens ratio, time of last update
+    - Remaining units in pump, pump battery, looping phone's battery
+    - SAGE, CAGE, and IAGE
+    - TDD, total carbs today
 
 All this data comes from your **Nightscout site**, which Trio uploads to [once configured](../../configuration/settings/services/nightscout.md#configuration).
 
@@ -52,25 +59,24 @@ These commands are sent via **encrypted push notifications** directly to the Tri
 
 ### For Data Monitoring
 
-1. **Nightscout Site**  
-    - Active Nightscout instance (version 15.0.2+ recommended)
+1. **Nightscout Site**
+    - Active Nightscout instance (version 15.0.2 or newer)
     - Trio configured to upload to Nightscout
     - See [Nightscout Integration](nightscout-app.md) for setup
 
-2. **Nightscout API Token** (optional but recommended)  
-    - For secure access to Nightscout data
-    - Token with "readable" access is sufficient for monitoring only
-    - Token with "careportal" access allows limited remote commands via Nightscout
+2. **Nightscout Token**
+    - Token with "readable" access is sufficient
+    - No token required if Nightscout's `AUTH_DEFAULT_ROLES` is set to `readable` (not recommended)
 
 ### For Remote Control (Trio Remote Control)
 
-1. **Trio Remote Control Enabled**  
+1. **Trio Remote Control Enabled**
     - Enabled in Trio: Settings → Features → Remote Control
     - Shared Secret generated and copied from Trio
 
-2. **LoopFollow App**  
-    - Version 2.4.0 or newer
-    - Available on the App Store or via TestFlight
+2. **LoopFollow App**
+    - Version 4.0 or newer
+    - See https://loopfollowdocs.org/build/build-options for building instructions
 
 3. **Apple Developer Account Details** (for APNS)  
     - Team ID
