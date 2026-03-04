@@ -58,7 +58,7 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
       end="<!--include-markdown-unsupported-freestyle-sensors-end-->"
 %}
 
-## Eversense E3 and Eversense 365
+## Eversense E3 / 365
 
 ![Eversense transmitter with implant](img/eversense.png){width="150"}
 {align="center"}

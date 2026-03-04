@@ -3,9 +3,9 @@
 <!--include-markdown-supported-cgms-start-->
 ✅ The following CGMs can be used with Trio:
 
-- [Dexcom G5](../configuration/settings/devices/cgm.md#dexcom-g5-and-dexcom-g6dexcom-one)
-- [Dexcom G6 / ONE](../configuration/settings/devices/cgm.md#dexcom-g5-and-dexcom-g6dexcom-one)
-- [Dexcom G7 / ONE+](../configuration/settings/devices/cgm.md#dexcom-g7dexcom-one)
+- [Dexcom G5](../configuration/settings/devices/cgm.md#dexcom-g5-g6-one)
+- [Dexcom G6 / ONE](../configuration/settings/devices/cgm.md#dexcom-g5-g6-one)
+- [Dexcom G7 / ONE+](../configuration/settings/devices/cgm.md#dexcom-g7-one)
 <!--include-markdown-supported-freestyle-sensors-start-->
 - [FreeStyle Libre (limited models)](../configuration/settings/devices/cgm.md#freestyle-libre)
     - US Libre 1 10-day sensors (via transmitters)
@@ -15,7 +15,7 @@
     - European Libre 2 / 2 Plus sensors (direct via Bluetooth)
     - Libre 3 / 3 Plus, all models (requires [LibreLinkUp](https://librelinkup.com/) and continuous internet connection)
 <!--include-markdown-supported-freestyle-sensors-end-->
-- [Eversense E3 and Eversense 365](../configuration/settings/devices/cgm.md#eversense-e3-and-eversense-365) (TESTING)
+- [Eversense E3 / 365](../configuration/settings/devices/cgm.md#eversense-e3-365) (TESTING)
 - [Medtronic Enlite](../configuration/settings/devices/cgm.md#medtronic-enlite) (requires a compatible pump)
 - [xDrip4iOS](../configuration/settings/devices/cgm.md#xdrip4ios)
 - ([Nightscout](../configuration/settings/devices/cgm.md#nightscout-as-cgm))

@@ -11,12 +11,12 @@ The first step in setting up your continuous glucose monitor (CGM) on Trio is to
 ## Step 2: Select Your CGM
 Select your CGM from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific CGM:  
 
-- [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-and-dexcom-g6dexcom-one)
-- [Dexcom G7/Dexcom ONE+](#dexcom-g7dexcom-one)
+- [Dexcom G5 / G6 / ONE](#dexcom-g5-g6-one)
+- [Dexcom G7 / ONE+](#dexcom-g7-one)
 - [Dexcom Share](#dexcom-share)
 - [Freestyle Libre](#freestyle-libre)
 - [Freestyle Libre Demo](#freestyle-libre-demo)
-- [Eversense E3/Eversense 365](#eversense-e3-and-eversense-365)
+- [Eversense E3 / 365](#eversense-e3-365)
 - [Glucose Simulator](#glucose-simulator)  
 - [Medtronic Enlite](#medtronic-enlite)  
 - [Nightscout as CGM](#nightscout-as-cgm)  
@@ -24,7 +24,7 @@ Select your CGM from the in-app menu and from the options below for step by step
 
 - - -
 
-### Dexcom G5 and Dexcom G6/Dexcom ONE
+### Dexcom G5 / G6 / ONE
 Trio will intercept glucose readings between the transmitter and the Dexcom app. If you are using a Dexcom G5, G6, or ONE sensor, tap Configuration CGM to enter your transmitter's 6-digit ID. _Dexcom Share Credentials are not necessary_. When you switch transmitters, you must delete your current transmitter from Trio by tapping Configuration CGM, scrolling down, and tapping Delete CGM. Once you do this, you can add the new transmitter with its Transmitter ID.
 
 **Step 3**
@@ -38,7 +38,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 - - -
 
-### Dexcom G7/Dexcom ONE+
+### Dexcom G7 / ONE+
 As long as the Dexcom G7 or ONE+ app is installed on the same phone, Trio can intercept its glucose readings. When a new G7 or ONE+ sensor is paired to the Dexcom app, Trio will automatically start reading it.
 
 **Step 3**
@@ -92,7 +92,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 - - -
 
 
-### Eversense E3 and Eversense 365
+### Eversense E3 / 365
 
 !!! warning "You must build feat/dev-eversense branch to use the Eversense CGM"
     The Eversense CGM is in feat/dev-eversense and is experimental as of now
