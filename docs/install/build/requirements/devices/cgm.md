@@ -64,7 +64,7 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
 {align="center"}
 
 Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters.
-Note, that this support is only on the expertimental branch: feat/dev-eversense
+Note that Eversense integration is currently only available with the experimental branch `feat/dev-eversense`.
   
 ## Medtronic Enlite
 

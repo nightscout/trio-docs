@@ -94,15 +94,15 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 ### Eversense E3 / 365
 
-!!! warning "You must build feat/dev-eversense branch to use the Eversense CGM"
-    The Eversense CGM is in feat/dev-eversense and is experimental as of now
+!!! warning "You must build the `feat/dev-eversense` branch to use the Eversense CGM at this time"
+    The Eversense CGM is in `feat/dev-eversense` and is experimental for now
 
-!!! warning "Wait till initialization phase is completed"
+!!! warning "Wait until the initialization phase is completed"
     During the initialization phase of this system, the glucose reading might be incorrect.
     Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
 
 !!! warning "Do not use the Eversense app and Trio concurrently"
-    The transmitter is not able to multiple connection to the same device, due to the security protocol.
+    The transmitter is not able to connect to multiple apps or devices at the same time, due to the security protocol.
     Make sure you either use the Eversense app or Trio, but not both at the same time.
 
 **Step 3**
