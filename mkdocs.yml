@@ -323,7 +323,7 @@ nav:
               - Calendar Events: configuration/settings/notifications/calendar-events.md
           - Services ✏️:
               - configuration/settings/services/index.md
-              - Nightscout ✏️: configuration/settings/services/nightscout.md
+              - Nightscout: configuration/settings/services/nightscout.md
               - Tidepool ✏️: configuration/settings/services/tidepool.md
               - Apple Health ✏️: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
