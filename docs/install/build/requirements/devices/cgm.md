@@ -57,6 +57,14 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
       start="<!--include-markdown-unsupported-freestyle-sensors-start-->"
       end="<!--include-markdown-unsupported-freestyle-sensors-end-->"
 %}
+
+## Eversense E3 / 365
+
+![Eversense transmitter with implant](img/eversense.png){width="150"}
+{align="center"}
+
+Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters.
+Note that Eversense integration is currently only available with the experimental branch `feat/dev-eversense`.
   
 ## Medtronic Enlite
 

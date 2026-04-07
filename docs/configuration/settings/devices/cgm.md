@@ -11,11 +11,12 @@ The first step in setting up your continuous glucose monitor (CGM) on Trio is to
 ## Step 2: Select Your CGM
 Select your CGM from the in-app menu and from the options below for step by step instructions. The links below will guide you through the connection instructions for your specific CGM:  
 
-- [Dexcom G5/Dexcom G6/Dexcom ONE](#dexcom-g5-and-dexcom-g6dexcom-one)
-- [Dexcom G7/Dexcom ONE+](#dexcom-g7dexcom-one)
+- [Dexcom G5 / G6 / ONE](#dexcom-g5-g6-one)
+- [Dexcom G7 / ONE+](#dexcom-g7-one)
 - [Dexcom Share](#dexcom-share)
 - [Freestyle Libre](#freestyle-libre)
 - [Freestyle Libre Demo](#freestyle-libre-demo)
+- [Eversense E3 / 365](#eversense-e3-365)
 - [Glucose Simulator](#glucose-simulator)  
 - [Medtronic Enlite](#medtronic-enlite)  
 - [Nightscout as CGM](#nightscout-as-cgm)  
@@ -23,7 +24,7 @@ Select your CGM from the in-app menu and from the options below for step by step
 
 - - -
 
-### Dexcom G5 and Dexcom G6/Dexcom ONE
+### Dexcom G5 / G6 / ONE
 Trio will intercept glucose readings between the transmitter and the Dexcom app. If you are using a Dexcom G5, G6, or ONE sensor, tap Configuration CGM to enter your transmitter's 6-digit ID. _Dexcom Share Credentials are not necessary_. When you switch transmitters, you must delete your current transmitter from Trio by tapping Configuration CGM, scrolling down, and tapping Delete CGM. Once you do this, you can add the new transmitter with its Transmitter ID.
 
 **Step 3**
@@ -37,7 +38,7 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 - - -
 
-### Dexcom G7/Dexcom ONE+
+### Dexcom G7 / ONE+
 As long as the Dexcom G7 or ONE+ app is installed on the same phone, Trio can intercept its glucose readings. When a new G7 or ONE+ sensor is paired to the Dexcom app, Trio will automatically start reading it.
 
 **Step 3**
@@ -85,7 +86,45 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 ### Freestyle Libre Demo
 <!-- TODO: add information on Libre Demo -->
 
-**Step 2**
+**Step 3**
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+
+- - -
+
+
+### Eversense E3 / 365
+
+!!! warning "You must build the `feat/dev-eversense` branch to use the Eversense CGM at this time"
+    The Eversense CGM is in `feat/dev-eversense` and is experimental for now
+
+!!! warning "Wait until the initialization phase is completed"
+    During the initialization phase of this system, the glucose reading might be incorrect.
+    Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
+
+!!! warning "Do not use the Eversense app and Trio concurrently"
+    The transmitter is not able to connect to multiple apps or devices at the same time, due to the security protocol.
+    Make sure you either use the Eversense app or Trio, but not both at the same time.
+
+**Step 3**
+Select whether you want to pair the Eversense E3 or the Eversense 365.
+
+![Eversense Transmitter type selection](img/1_eversense_transmitter_selection.PNG){ width="300px" }
+{align=center}
+
+**Step 4 (only for Eversense 365)**
+Log in using your Eversense account. If you do not have an accunt or you forgot your password, the appropriate links are included in this step
+
+![Eversense Account login](img/2_eversense_account_login.PNG){ width="300px" }
+{align=center}
+
+**Step 5**
+Now put your Eversense transmitter in pairing mode (done by tapping the button 3 times), and wait till your Serial Number shows up on screen.
+Click on the found transmitter, accept the pairing prompt (if show), and wait untill the pairing process is completed!
+
+![Eversense Transmitter scanning](img/3_eversense_transmitter_scanning.PNG){ width="300px" }
+{align=center}
+
+**Step 6**
 Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -

@@ -43,7 +43,7 @@ Shows the last glucose reading, glucose trend arrow, time since last reading, an
 Adds a carb entry into Trio.  
 
 !!! tip
-    You can only add a carb entry using shortcuts. You cannot add a fat or protein entry.
+    You can also add fat or protein as part of the same entry.
 
 - - -
 
