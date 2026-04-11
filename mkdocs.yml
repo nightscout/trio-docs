@@ -274,7 +274,7 @@ nav:
       - Companion Apps:
           - install/ecosystem/index.md
           - Nightscout: install/ecosystem/nightscout-app.md
-          - Loop Follow: install/ecosystem/loop-follow.md
+          - LoopFollow: install/ecosystem/loop-follow.md
           - XDrip4iOS: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
