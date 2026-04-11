@@ -20,6 +20,6 @@ These iPhones are compatible with iOS version 17 and newer:
 
 !!! warning  "iPhone 16 (all) and iPhone 17e with Atlas/InPlay DASH pods"
 
-     Using an iPhone 16 (the entire line) or an iPhone 17e with Atlas/InPlay DASH pods can cause communication issues, but SAW/TWI DASH pods and all other pumps work fine. More info is available at [LoopDocs](https://loopkit.github.io/loopdocs/faqs/omnipod-faqs/#iphone-16-and-atlas-or-inplay-dash-pods).
+     Using an iPhone 16 (the entire line) or an iPhone 17e with Atlas/InPlay DASH pods can cause communication issues, but SAW/TWI DASH pods and all other pumps work fine. More info is available at [LoopDocs](https://loopkit.github.io/loopdocs/faqs/omnipod-faqs/#atlas-or-inplay-dash-pods).
 
 <!--include-markdown-end-->
