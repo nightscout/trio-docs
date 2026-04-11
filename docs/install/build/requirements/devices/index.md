@@ -24,18 +24,16 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Answers the question: What phones will work with Trio?
     
--   __[Mac ✏️](mac.md)__
+-   __[Mac](mac.md)__
 
     - - -
     
-    ***🚧Work in Progress🚧  
-    Coming Soon!***
+    What are the Mac requirements?
     
--   __[Compatibility Matrix ✏️](compatibility-matrix.md)__
+-   __[Compatibility Matrix](compatibility-matrix.md)__
 
     - - -
     
-    ***🚧Work in Progress🚧  
-    Coming Soon!***
+    How do versions for iOS, macOS, and Xcode affect my ability to build with a Mac?
     
 </div>
