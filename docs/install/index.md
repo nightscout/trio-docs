@@ -9,7 +9,7 @@ Welcome to the installation and update homepage! Here you will find information 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 
 !!! important "Attention Trio Users"
-    The `main` branch is now the preferred build for everyone except expert builders.
+    The `main` branch is the preferred build for everyone except expert builders.
 
     If you are coming from an older `main` version 0.2.x, please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
 

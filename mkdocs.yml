@@ -248,8 +248,9 @@ nav:
       - Build:
           - Build with Browser:
               - Browser Build Overview: install/build/browser/browser-build-overview.md
+              - Secrets Introduction: install/build/browser/intro-secrets.md
               - Create GitHub Account: install/build/browser/create-github-account.md
-              - Collect Secrets: install/build/browser/collect-secrets.md
+              - Apple Secrets: install/build/browser/apple-secrets.md
               - Fork and Prepare your Trio Repository: install/build/browser/fork-prepare-repo.md
               - GitHub Actions:
                   - Validate Secrets: install/build/browser/actions/validate-secrets.md
