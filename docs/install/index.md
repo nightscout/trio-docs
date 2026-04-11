@@ -11,7 +11,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 !!! important "Attention Trio Users"
     At this time all users should [build the dev branch](build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
 
-    Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
+    Please read the [Migration Guide](../usage/migration/trio-02x-migration.md) before updating.
 
 <div class="grid cards" markdown>
 
@@ -22,24 +22,11 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - [Compatible Devices](build/requirements/devices/index.md)
     - [Apple Developer](build/requirements/apple-developer.md)
 
--   __[Build with Mac](build/mac/overview.md)__
+-   __[Build Instructions](build/index.md)__
 
     - - -
     
-    Overview on building Trio using a Mac computer and Xcode
-    
--   __[Build Dev with Browser](build/browser/build-dev-with-browser.md)__
-
-    - - -
-    
-    Overview on building Trio dev branch using a web browser and TestFlight
-    
--   __[Build with Browser ✏️](build/browser/browser-build-overview.md)__
-
-    - - -
-    
-    🚧Documentation Under Construction🚧
-    Overview on building Trio using a web browser and TestFlight
+    Overview on building Trio using a Mac with Xcode or using a web browser
     
 -   __[Upgrade ✏️](upgrade.md)__
 
@@ -47,12 +34,5 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     🚧Documentation Under Construction🚧
     How to upgrade Trio to the latest version
-    
--   __[Companion Apps ✏️](ecosystem/index.md)__
 
-    - - -
-
-    🚧Documentation Under Construction🚧    
-    Apps that work alongside Trio
-    
 </div>

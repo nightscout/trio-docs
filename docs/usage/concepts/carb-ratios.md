@@ -108,6 +108,19 @@ The available values range from 1.0 to 50.0 in 0.1 increments, giving you fine-g
 
 ## Testing and Adjusting Your CR
 
+!!!note "Before You Test CR"
+    Did you already [confirm/test your basal rates](basal-rates.md#testing-your-basal-rates)? If basal rates are not accurate, your CR test will also not be accurate. 
+    ***Always test basals first***.
+
+!!!important "Important Info For Testing Settings in Trio"
+    When testing your settings in Trio, it's recommended to do so in **CLOSED LOOP** with the following settings adjustments:
+    
+    - **Maximum IOB**: set to 0
+    - **Autosens Max**: set to 100%
+    - **Autosens Min**: set to 100%
+    
+    This will allow Trio to prevent lows, but will not allow Trio to correct highs or give more than your current scheduled basal rate. Using this method will result in only your carb ratio being used for your test as there will be no additional insulin given by Trio.
+    
 ### Starting Point
 
 If you're coming from pump therapy, you can transfer your pump's CR as a starting point. However, verify its accuracy through testing, especially if you experience:

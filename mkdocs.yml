@@ -70,6 +70,11 @@ plugins:
       redirect_maps:
         "startup-guide.md": "configuration/new-user-setup.md"
         "startup-guide/index.md": "configuration/new-user-setup.md"
+        "configuration/migration/index.md": "usage/migration/index.md"
+        "configuration/migration/aaps-migration.md": "usage/migration/aaps-migration.md"
+        "configuration/migration/iaps-migration.md": "usage/migration/iaps-migration.md"
+        "configuration/migration/loop-migration.md": "usage/migration/loop-migration.md"
+        "configuration/migration/trio-02x-migration.md": "usage/migration/trio-02x-migration.md"
   - open-in-new-tab
   - macros
   - exporter:
@@ -172,6 +177,10 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
@@ -222,6 +231,14 @@ nav:
   - Usage:
       - usage/index.md
       - User Interface: usage/interface.md
+      - Startup Guides:
+          - New User Setup Guide: configuration/new-user-setup.md
+          - Migration Guides:
+              - usage/migration/index.md
+              - Migrating from Trio 0.2.x: usage/migration/trio-02x-migration.md
+              - Migrating from iAPS: usage/migration/iaps-migration.md
+              - Migrating from Loop: usage/migration/loop-migration.md
+              - Migrating from AndroidAPS: usage/migration/aaps-migration.md
       - Core Concepts:
           - usage/concepts/index.md
           - Basal Rates: usage/concepts/basal-rates.md
@@ -233,7 +250,16 @@ nav:
           - Temporary Targets: usage/features/temp-targets.md
           - Statistics: usage/features/statistics.md
           - Bolus Calculator: usage/features/bolus-calculator.md
-          - Using Dynamic ISF: usage/features/dynamic-isf.md
+      - Companion Apps:
+          - usage/ecosystem/index.md
+          - Nightscout: usage/ecosystem/nightscout-app.md
+          - LoopFollow: usage/ecosystem/loopfollow.md
+          - xDrip4iOS: usage/ecosystem/xdrip4ios.md
+      - Explain It To Me:
+          - usage/explained/index.md
+          - Using Dynamic ISF: usage/explained/dynamic-isf.md
+          - Loop Status: usage/explained/current-loop-status-explained.md
+          - Understanding Desmos: usage/explained/desmos-explained.md
   - Installation and Update:
       - install/index.md
       - Requirements:
@@ -242,10 +268,11 @@ nav:
               - Insulin Pump: install/build/requirements/devices/pump.md
               - CGM: install/build/requirements/devices/cgm.md
               - iPhone: install/build/requirements/devices/iphone.md
-              - Mac ✏️: install/build/requirements/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
+              #- Mac ✏️: install/build/requirements/devices/mac.md # TODO
+              #- Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
           - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build:
+          - install/build/index.md
           - Build with Mac:
               - Mac Build Overview: install/build/mac/overview.md
               - Prepare your Computer: install/build/mac/computer.md
@@ -271,21 +298,9 @@ nav:
               - Customizations ✏️: install/build/browser/browser-customizations.md
               - Update with Browser ✏️: install/build/browser/browser-update.md
       - Upgrade ✏️: install/upgrade.md
-      - Companion Apps:
-          - install/ecosystem/index.md
-          - Nightscout ✏️: install/ecosystem/nightscout-app.md
-          - Loop Follow ✏️: install/ecosystem/loop-follow.md
-          - XDrip4iOS ✏️: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
-      - Startup Guides:
-          - New User Setup Guide: configuration/new-user-setup.md
-          - Migration Guides:
-              - configuration/migration/index.md
-              - Migrating from Trio 0.2.x: configuration/migration/trio-02x-migration.md
-              - Migrating from iAPS: configuration/migration/iaps-migration.md
-              - Migrating from Loop: configuration/migration/loop-migration.md
-              - Migrating from AndroidAPS: configuration/migration/aaps-migration.md
+      - New User Setup Guide: configuration/new-user-setup.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
@@ -315,17 +330,17 @@ nav:
               - Remote Control: configuration/settings/features/remote-control.md
               - User Interface: configuration/settings/features/user-interface.md
               - App Icons: configuration/settings/features/app-icons.md
-              - App Diagnostics ✏️: configuration/settings/features/app-diagnostics.md
+              - App Diagnostics: configuration/settings/features/app-diagnostics.md
           - Notifications:
               - configuration/settings/notifications/index.md
               - Trio Notifications: configuration/settings/notifications/trio-notifications.md
               - Live Activity: configuration/settings/notifications/live-activity.md
               - Calendar Events: configuration/settings/notifications/calendar-events.md
-          - Services ✏️:
+          - Services:
               - configuration/settings/services/index.md
-              - Nightscout ✏️: configuration/settings/services/nightscout.md
+              - Nightscout: configuration/settings/services/nightscout.md
               - Tidepool ✏️: configuration/settings/services/tidepool.md
-              - Apple Health ✏️: configuration/settings/services/apple-health.md
+              - Apple Health: configuration/settings/services/apple-health.md
           - Closing The Loop: configuration/settings/closed-loop.md
 
   - Help:

@@ -1,2 +1,0 @@
-# Nightscout ✏️
-<!-- TODO -->

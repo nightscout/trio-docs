@@ -25,7 +25,7 @@
 
     At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
 
-    Please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
+    Please read the [Migration Guide](../../../usage/migration/trio-02x-migration.md) before updating.
     
     This code is undergoing testing and receives rapid updates. Be sure to follow along in [Trio Discord](https://discord.triodocs.org) and to download the latest code and update frequently (at least weekly).
 

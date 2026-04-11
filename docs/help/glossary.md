@@ -87,6 +87,8 @@ When Google Translate is selected:
 
 **<span translate="no">Omnipod</span>**&nbsp; (Omnipod): Insulet tubeless insulin pump
 
+**<span translate="no">OS-AID</span>**&nbsp; (OS-AID): Open-Source Automated Insulin Delivery System
+
 **<span translate="no">PR</span>**&nbsp; (PR): Pull Request - a formal method to request changes to a repository
 
 **<span translate="no">Provisioning Profile</span>**&nbsp; (Provisioning Profile): associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)

@@ -15,6 +15,18 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
     
     A detailed look at Trio's user interface and features
+    
+-   __[New User Setup Guide](../configuration/new-user-setup.md)__
+
+    - - -
+    
+    Step by step guide on starting Trio
+
+-   __[Migration Guides](migration/index.md)__
+
+    - - -
+    
+    Guidance on locating and identifying the necessary settings for onboarding
 
 -   __[Core Concepts](concepts/index.md)__
 
@@ -27,5 +39,17 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     - - -
  
     Information on Overrides, Temp Targets, Statistics, Bolus Calculator, and Using Dynamic ISF
+
+-   __[Companion Apps](ecosystem/index.md)__
+
+    - - -
+
+    Apps that work alongside Trio
+    
+-   __[Explain It To Me](explained/index.md)__
+
+    - - -
+ 
+    Information on seemingly complex tools that can be incredibly useful once understood
     
 </div>

@@ -1,5 +1,8 @@
 # Dynamic Settings
 
+!!!information "Using Dynamic ISF"
+    For more information about using Dynamic ISF with Trio, head over to the [Using Dynamic ISF](../../../usage/explained/dynamic-isf.md) section of the docs
+    
 ## Dynamic ISF: Logarithmic
 **Default:** _Disabled_
 
@@ -229,6 +232,8 @@ See [Weighted Average of TDD](#weighted-average-of-tdd) setting to understand ho
 
 ## Logarithmic Desmos Graphs
 
+For information on how to use and understand the Desmos Graphs, go to the [Understanding Desmos Graphs](../../../usage/explained/desmos-explained.md) section of the docs.
+
 [Click here to view a graph depicting the logarithmic formula in mg/dL](https://www.desmos.com/calculator/0frb0mvjzr)
 
 [Click here to view a graph depicting the logarithmic formula in mmol/L](https://www.desmos.com/calculator/2iu4cgtqln)
@@ -236,6 +241,8 @@ See [Weighted Average of TDD](#weighted-average-of-tdd) setting to understand ho
 - - -
 
 ## Sigmoid Desmos Graphs
+
+For information on how to use and understand the Desmos Graphs, go to the [Understanding Desmos Graphs](../../../usage/explained/desmos-explained.md) section of the docs.
 
 [Click here to view a graph depicting the sigmoid formula in mg/dL](https://www.desmos.com/calculator/zhc6k580qm)
 

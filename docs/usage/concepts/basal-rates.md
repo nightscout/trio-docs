@@ -88,6 +88,15 @@ The allowed basal rate range depends on your insulin pump:
 
 Accurate basal rates are essential for Trio to function optimally. Here are two methods to verify and adjust your basal rates:
 
+!!!important "Important Info For Testing Settings in Trio"
+    When testing your settings in Trio, it's recommended to do so in **CLOSED LOOP** with the following settings adjustments:
+    
+    - **Maximum IOB**: set to 0
+    - **Autosens Max**: set to 100%
+    - **Autosens Min**: set to 100%
+    
+    This will allow Trio to prevent lows, but will not allow Trio to correct highs or give more than your current scheduled basal rate. Using this method will mean that at most only your scheduled basal rate is given while you are testing basals. No automated corrections will interfere with your basal test.
+    
 ### 1. Fasting Tests
 
 The traditional method for testing basal rates:

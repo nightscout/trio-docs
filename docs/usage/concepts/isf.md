@@ -104,8 +104,8 @@ Dynamic ISF is a more aggressive way to adjust your ISF based on current glucose
 **Key Parameters**:
 
 - **Adjustment Factor**: 
-    - **Sigmoid**: Adjustment Factor controls how aggressively ISF changes. Learn more about how changes to Sigmoid Adjustment Factor influences ISF adjustments [here](../features/dynamic-isf.md#adjustment-factor_1). The default for Sigmoid Adjustment Factor is 50%.
-    - **Logarithmic**: Controls what ISF is used at which glucose. It should be manually set to approximately $0.02 \times TDD$. Learn more about how changing Adjustment Factor influences Logarithmic dynamic ISF [here](../features/dynamic-isf.md#adjustment-factor).
+    - **Sigmoid**: Adjustment Factor controls how aggressively ISF changes. Learn more about how changes to Sigmoid Adjustment Factor influences ISF adjustments [here](../explained/dynamic-isf.md#adjustment-factor_1). The default for Sigmoid Adjustment Factor is 50%.
+    - **Logarithmic**: Controls what ISF is used at which glucose. It should be manually set to approximately $0.02 \times TDD$. Learn more about how changing Adjustment Factor influences Logarithmic dynamic ISF [here](../explained/dynamic-isf.md#adjustment-factor).
 - **Autosens Maximum**: Controls the upper limit of the autosens ratio (default: 120%)
 - **Autosens Minimum**: Controls the lower limit of the autosens ratio (default: 70%)
 - **Weighted Average of TDD**: Blends recent (24h) and historical (10-day) insulin use (default: 35%)
@@ -148,10 +148,23 @@ Your insulin sensitivity varies throughout the day due to hormones, activity, an
 
 ## Testing and Adjusting Your ISF
 
+!!!note "Before You Test ISF"
+    Did you already [confirm/test your basal rates](basal-rates.md#testing-your-basal-rates)? If basal rates are not accurate, your ISF test will also not be accurate. 
+    ***Always test basals first***.
+    
 ### Starting Point
 
 If you're coming from pump therapy, you can transfer your pump's ISF as a starting point. However, be prepared to adjust it based on Trio's behavior.
 
+!!!important "Important Info For Testing Settings in Trio"
+    When testing your settings in Trio, it's recommended to do so in **CLOSED LOOP** with the following settings adjustments:
+    
+    - **Maximum IOB**: set to 0
+    - **Autosens Max**: set to 100%
+    - **Autosens Min**: set to 100%
+    
+    This will allow Trio to prevent lows, but will not allow Trio to correct highs or give more than your current scheduled basal rate. Using this method will result in the correction dose you initiate for your ISF test will be the only correction given. Trio will not increase that even if your glucose rises or does not fall.
+    
 ### Testing Method
 
 To test if your ISF is accurate:
@@ -189,7 +202,7 @@ ISF interacts with many Trio settings:
 - **Replaces Autosens**: When Dynamic ISF is enabled, it calculates a Dynamic Ratio instead of using the Autosens Ratio
 - **Bounded by Autosens Limits**: Dynamic Ratio is still constrained by Autosens Min/Max settings
 - **Affects Basal** (optional): When "Adjust Basal" is enabled, Dynamic Ratio also modifies the baseline basal rate
-- **Learn how your Profile ISF is used in Dynamic ISF by reviewing the page on [Using Dynamic ISF](../features/dynamic-isf.md)
+- **Learn how your Profile ISF is used in Dynamic ISF by reviewing the page on [Using Dynamic ISF](../explained/dynamic-isf.md)
 
 ### [Temp Target Behavior](../features/temp-targets.md) (when enabled)
 
