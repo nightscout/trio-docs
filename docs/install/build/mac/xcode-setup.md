@@ -40,16 +40,9 @@ The current release of Trio requires iOS 16.3 or higher, Xcode version 15 or hig
 
 The table below lists the **minimum** requirements to build the current release of Trio. If your macOS or Xcode version is higher, you can build with a Mac.
 
-!!! info "iOS Version"
-    If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.  
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 16.3 to 17.0 | 15.0 | 13.5 |
+{%
+    include-markdown "includes/version-compatibility-matrix.md"
+%}
 
 ### Download Xcode
 1. On your Mac computer, open the app store.

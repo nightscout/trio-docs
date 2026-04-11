@@ -21,19 +21,22 @@
     
 ## Build Trio with Xcode
 
-!!! important "Dev Branch"
+!!! warning "Release 0.7.0 and newer"
 
-    At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+    The main branch is the preferred build for everyone except expert builders.
 
-    Please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older main version 0.2.x, please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
     
-    This code is undergoing testing and receives rapid updates. Be sure to follow along in [Trio Discord](https://discord.triodocs.org) and to download the latest code and update frequently (at least weekly).
+    All Trio users are encouraged to follow along in [Trio Discord](https://discord.triodocs.org).
 
 ### Download Trio with 'Trio Build Select Script'
 
 Trio uses the Trio Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
 
 #### Open Terminal
+
+!!! tip ""
+    Shortcut: Tap on the CMD and spacebar to open Spotlight search and type `Ter` and then return to open the Terminal
 
 1. On your Mac computer, go to the 'Finder' app.
 
@@ -66,14 +69,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
     ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
       {align= "center"}
 
-5. Next, the script will prompt you to select which Trio branch you want to download. Type 1 and press return. 
-
-    !!! important "Dev Branch"
-
-        Until the `main` branch gets updated past 0.2.x, it is recommended all users build the `dev` branch instead of `main`.
-
-    ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
-      {align= "center"}
+5. Next, the script will prompt you to select which Trio branch you want to download. It is recommended you Type 1 and press return to select the `main` branch. 
 
 6. Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the Terminal window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. 
 
