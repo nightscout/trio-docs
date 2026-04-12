@@ -66,4 +66,4 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 
 TestFlight group configured! Ready to build:
 
-**Navigation:** [← Back: Prepare App](prepare-app.md) | [Next: Build Trio →](build-add.md)
+**Navigation:** [← Back: Prepare App](prepare-app.md) | [Next: Build Trio →](build-app.md)
