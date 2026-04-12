@@ -29,7 +29,7 @@ You need to save your information digitally, so you can copy and paste. The info
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
 
-**Created yourself**
+**Create yourself**
 
 * a password - make one up and save it (<code>MATCH_PASSWORD</code>)
 
@@ -77,7 +77,7 @@ Sign in to your *Apple Developer* account at this link: [*Apple Developer* porta
     If you need graphics for this part - use [LoopDocs](https://loopkit.github.io/loopdocs/browser/secrets#collect-the-four-apple-secrets) for reference. The secrets are all the same for all OS-AID apps.
 
 1. Click `Account` in the top menu bar
-1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
+1. If you need to accept a new agreement (at least twice a year), be sure to do so now
 1. Click the `Membership Details` icon
 1. Next to the `Team ID` field, is a 10-character ID number.
 

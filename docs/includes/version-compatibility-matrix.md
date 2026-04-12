@@ -2,7 +2,7 @@
 <!--include-markdown-start-->
 
 !!! info "iOS Version"
-    If your iOS version is not listed, e.g., 26.4.1, choose the first row that is less than your iOS version.
+    If your iOS version is not listed, e.g., 26.4.1, choose the first row that is lower than your iOS version.
 
  iOS Version | Minimum Xcode Version | Minimum macOS Version 
 :---:|:---: |:---:

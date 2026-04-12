@@ -22,7 +22,7 @@ If you are having trouble:
 * Ask ChatGPT (or other AI) how to fix your error
 * Spend hours in frustration
 * Rename or delete a repository
-* Delete your GitHub account
+* Delete your GitHub account - you then lose access to everything you've done
 * Remove your App from App Store Connect
 
 ### Where to Get Help with Browser Build
@@ -79,7 +79,7 @@ If there is no upright arrow by a link, then the location is on the same page:
 
 ### Look at the Annotation
 
-If you get an error in an Action. Click on the link and scroll down to view the annotation. Some errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+If you get an error in an Action, examine the display and scroll down to view the annotation. Some errors have a clear annotation telling you what to do. If the annotation is not clear to you, please [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ## Specific Trio Help
 
