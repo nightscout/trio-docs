@@ -35,13 +35,13 @@ In order to build using the Browser Build method, you will need to collect and s
     * _<span translate="no">Apple</span>_:
         * [Collect the four *Apple* <code>Secrets</code>](collect-secrets.md#collect-the-four-apple-secrets){: target="_blank" }
 
-    Now it's time to use those <code>Secrets</code> to build the Loop app
+    Now it's time to use those <code>Secrets</code> to build the *Trio* app
 
     * *GitHub*:
-        * [`Fork` the repository (make your copy of <code>LoopWorkspace</code>)](fork-prepare-repo.md){: target="_blank" }
+        * [`Fork` the repository (make your copy of <code>Trio</code>)](fork-prepare-repo.md){: target="_blank" }
             * Using an organization? Add `Secrets` and `Variables` to your Organization and all your apps can use them
             * Not using an organization? You have to add `Secrets` and `Variables` to each repository individually
-        * [Add <code>Secrets</code> to your `organization` or a single `fork`](prepare-fork.md#configure-secrets){: target="_blank" }
+        * [Add <code>Secrets</code> to your `organization` or a single `fork`](fork-prepare-repo.md#configure-secrets){: target="_blank" }
         * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets){: target="_blank" }
         * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" }
     * _<span translate="no">Apple</span>_:
@@ -49,19 +49,22 @@ In order to build using the Browser Build method, you will need to collect and s
         * [Create your version of *Trio* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
         * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
+        * [`Action: 4. Build Trio`](build-yml.md#build-the-loop-app){: target="_blank" }
             * Yes we can count, but Action 3 is included in Action 4
-    * Phone: [Install the *Trio* app using the *TestFlight* app](phone-install.md){: target="_blank" }
+    * Phone: [Install the *Trio* app using the *TestFlight* app](install-from-testflight.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
-    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are really fast. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see [Automatic Update & Build](automatic.md){: target="_blank" }.
-    - **When do I have to kick off my automatic build?** Starting in May 2025, you may need to take an extra action after 60 days with no updates to the app: [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } 
-    - **Can you explain the new automatic building?** There's a whole page on [Automatic Update & Build](automatic.md){: target="_blank" } for more explanations
-    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
-    - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are really fast. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see the next bullet.
+    - **Can you explain automatic building?** There's a whole page in LoopDocs on [Automatic Update & Build](https://loopkit.github.io/loopdocs/browser/automatic) with most of that information valid for Trio users
+        * [Successful Weekly Action](https://loopkit.github.io/loopdocs/browser/automatic/#successful-weekly-action)
+        * [Successful Monthly Action](https://loopkit.github.io/loopdocs/browser/automatic/#successful-monthly-action)
+        * [Automatic Certificate Renewal - annual event](https://loopkit.github.io/loopdocs/browser/automatic/#automatic-certificate-renewal)
+        * [Open-Source App Schedule for rebuilding](https://loopkit.github.io/loopdocs/browser/automatic/#open-source-app-schedule)
+    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](install-from-testflight.md#testflight-for-a-child){: target="_blank" }.
+    - **Can I still use my customizations?** Yes. [Customize using Browser](browser-customization.md){: target="_blank" }
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
-        * You need to make changes for the fact that your a are building *Trio* instead of *Loop*
+        * You need to adjust when watching that because you are building *Trio* instead of *Loop* and the video is somewhat out of date
 
 ## Tips and Tricks
 
@@ -70,33 +73,32 @@ The steps to configure for building with a browser require a lot of focused atte
 !!! important "How to Ask for Help"
     First time setup should take several hours, but if you are having trouble don't get frustrated:
 
-    * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
+    * [Click here to find help](browser-build-errors.md#help-with-errors){: target="_blank" }.
 
 ???+ tips "Who should use a free GitHub Organization option (click to close/open)"
     There are several places where you see a recommendation to use a free GitHub Organization instead of building directly from your personal free GitHub account.
 
     When you use an organization, you don't have to add 6 Secrets to each repository for every app you build. It can save a lot of time in the long run.
 
-    * Even if you just build Loop and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account - but there is no particular advantage (until you decide maybe you do want to build another app)
+    * Even if you just build Trio and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account - but there is no particular advantage (until you decide maybe you do want to build another app)
     * Who should definitely build with an organization:
-        * Anyone who is a caregiver will want LoopCaregiver or LoopFollow or both
+        * Anyone who is a caregiver will want LoopFollow
         * Anyone who wants to use LoopFollow for the amazing alarm capabilties
-        * Anyone who might want to try a customized version of Loop
-        * Anyone who might want to try a different app such as xDrip4iOS or Trio
+        * Anyone who might want to try a different app such as xDrip4iOS
 
 ### The Short Version
 
 Complete instructions are found at this link for those comfortable with using *GitHub* and navigating the *Apple Developer* and *Apple App Connect* pages.
 
-* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
+* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/nightscout/Trio/blob/main/fastlane/testflight.md)
 
 ### The Video Version
 
-If you prefer watching your instructions, there is a narrated video of each step needed to build using a browser. This video was created for version 3.2.x and some steps have been simplified with version 3.4.x.
+If you prefer watching your instructions, there is a narrated video of each step needed to build using a browser. This video was created for Loop version 3.2.x. So translate in your head - Trio instead of Loop and some steps are out-of-date.
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
-> Do not decide to uncheck the box for Near Field Communications in the Identifer for `Loop` - that is required to build version 3.4.x and newer.
+> Do not decide to uncheck the box for Near Field Communications in the Identifer for `Trio` - that is required to build.
 
 Click in the comments for a full index of topics.  If you have issues with a particular section, use the index to advance to the relevant part of the video. Subtitles are in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
@@ -143,12 +145,11 @@ You don't need to know anything about the <code>Secrets</code> to do this. Come 
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
-3. As you move through the steps of [Collect Secrets](secrets.md){: target="_blank" }, fill in the file
+3. As you move through the steps of collecting the six secrets, fill in the file
     * The `##` characters are used to indicate sections or title (text only file)
     * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
-6. If you use Nightscout, you may also want the [Nightscout template](../nightscout/remote-config.md#save-your-important-nightscout-information){: target="_blank" }
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
@@ -217,20 +218,17 @@ MATCH_PASSWORD
 <looks like this>
 AnyThingYouWant-sameForEveryRepository
 
-New addition, this Variable:
+This Variable (not a secret) is required for the annual certificate renewal:
 
 ENABLE_NUKE_CERTS = true
-
-With release of Loop 3.6.0:
-  this variable is needed to automatically renew your certificates when they expire.
 
 ## Repository Names for my Fork:
 
 If you use an organization (recommended)
-https://github.com/my-name-org/LoopWorkspace
+https://github.com/my-name-org/Trio
 
 or (if you don't use an organzation): 
-https://github.com/my-name/LoopWorkspace
+https://github.com/my-name/Trio
 
 
 Add additional apps here if you decide to build any
@@ -242,7 +240,7 @@ The <code>*GitHub* Browser Build</code> may use new and unfamiliar **terms**.
 
 These instructions can be used without knowing what any of these terms mean. But if you are curious:
 
-Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md){: target="_blank" }.
+Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../../../help/glossary.md){: target="_blank" }.
 
 * Some terms in the Glossary are not in alphabetical order to improve logical grouping. All the individual <code>Secrets</code> are listed after <code>Secrets</code> in the Glossary.
 
@@ -253,11 +251,11 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 * <code>Secrets</code>: are required to enable *GitHub* to build an app from a repository using *GitHub* Actions
     * Six <code>Secrets</code> must be entered to enable your app (or apps) to build
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example) and if you use the recommended free *GitHub* organization to build, they work for any app you fork to your organization
-    * If you build [Other Apps](other-apps.md){: target="_blank" }, they use the same <code>Secrets</code> and the use of a *GitHub* organization is even more strongly recommended
+    * If you build more than one app, they use the same <code>Secrets</code> and the use of a *GitHub* organization is even more strongly recommended
 * Certificates: These are required to enable *GitHub* to build an app from a repository using *GitHub* Actions
     * They are manually created with the Create Certificates action
     * They expire at the end of one year
-    * With `Loop 3.6.0` and newer versions, certificates are automatically renewed as long as you [add the required `Variable`](prepare-fork.md#add-variable){: target="_blank" }
+    * Certificates are automatically renewed as long as you [add the required `Variable`](fork-prepare-repo.md#add-variable){: target="_blank" }
 * API `Key`:`Application Programming Interface Key`
     * You create an API key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
@@ -265,8 +263,8 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 * `Identifiers`: are required to build the *Trio* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you) when you run `Add Identifiers`
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
-    * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
-    * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
+    * Most loopers will not have an App until using the <code>*GitHub* Browser Build</code>
+    * The instructions walk you through creating and naming your app: [Create Trio App in App Store Connect](actions/prepare-app.md#configure-trio-app){: target="_blank" }
 
 ---
 

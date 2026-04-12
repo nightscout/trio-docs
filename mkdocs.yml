@@ -256,7 +256,7 @@ nav:
                   - Validate Secrets: install/build/browser/actions/validate-secrets.md
                   - Add Identifiers: install/build/browser/actions/add-identifiers.md
                   - Prepare App: install/build/browser/actions/prepare-app.md
-                  - Generate Certificates: install/build/browser/actions/generate-certificates.md
+                  - Create Certificates: install/build/browser/actions/generate-certificates.md
                   - Build the App: install/build/browser/actions/build-app.md
               - Install Trio from TestFlight: install/build/browser/install-from-testflight.md
               - Browser Build Errors: install/build/browser/browser-build-errors.md

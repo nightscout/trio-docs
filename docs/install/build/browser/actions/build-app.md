@@ -23,9 +23,9 @@ After you run Identifiers and Prepare the App, you are ready to Build.
 
 ## Disable the DO NOT RUN Actions
 
-You may notice some *GitHub* actions that have `DONT RUN` or `DO NOT RUN` in their names. Those are special actions that are used by the developers. They are skipped in your `Fork`, but you may see logs for them.
+You may notice some *GitHub* actions that have `DONT RUN` or `DO NOT RUN` in their names. Those are special actions that are used by the developers. They are skipped in your `Fork`, but you may see logs for them that indicate they failed.
 
-If they already have the notation `disabled` beside them, so won't see them run. Otherwise, click on each one, click on the three dots at the upper right, and then select `Disable workflow`. Then you will avoid the annoyance of seeing logs that say the action was automatically run and then skipped.
+If they already have the notation `disabled` beside them, you won't see them run - and fail. Otherwise, click on each one, click on the three dots at the upper right, and then select `Disable workflow`. Then you will avoid the annoyance of seeing logs that say the action was automatically run and then skipped.
 
 > ![disable developer actions](../img/trio-disable-do-not-run.png){width="500"}
 

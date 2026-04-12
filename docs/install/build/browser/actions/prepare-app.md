@@ -40,4 +40,6 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 
 * In `App Store Connect`, the `Bundle ID` for Trio will be: `org.nightscout.TEAMID.trio`
 
-Return to the main set of instructions on this page, [Update <code>Certificates</code>](#update-certificates), and keep going until you have a successful build.
+If you want to take it a step at a time, continue to [Create <code>Certificates</code>](generate-certificates.md).
+
+If you are feeling confidant, you can go straignt to [Build App](build-app.md) which includes the create certificates step.
