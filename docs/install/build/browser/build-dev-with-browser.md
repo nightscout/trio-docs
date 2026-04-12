@@ -115,10 +115,6 @@ Refer to the graphic below for the numbered steps:
 
 The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
-### Update Certificates { #update-certificates }
-
-Run the [3. Create Certificates](actions/generate-certificates.md) action, selecting the `dev` branch. Wait for a green checkmark before proceeding.
-
 ### Build the App
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
