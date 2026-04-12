@@ -76,7 +76,7 @@ If you decided to not to use a GitHub organization, skip ahead to [Personal Acco
 
 ### Prepare to Enter <code>Secrets</code>
 
-You will be adding `Secrets` and `Variables` to your organization. This makes them available to any app you decide to build as long as you set up your free *GitHub* organization as the [owner of the fork](#create-the-fork).
+You will be adding `Secrets` and `Variables` to your organization. This makes them available to any app you decide to build as long as you set up your free *GitHub* organization as the owner of the fork.
 
 1. Tap on this [*GitHub* link](https://github.com/settings/organizations) to see your organizations. (If you don't see a screen similar to the graphic below - you are not logged in to *GitHub*).
 
@@ -195,7 +195,7 @@ MATCH_PASSWORD
 
 * For the `FASTLANE_KEY` value, copy the entire contents from<br>`-----BEGIN PRIVATE KEY-----`<br> through<br>`-----END PRIVATE KEY-----`<br>
 * For `MATCH_PASSWORD` value - if you did not already make up a password and save it with your other <code>Secrets</code>, do it now
-    * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](other-apps.md){: target="_blank" })
+    * The `MATCH_PASSWORD` must be the same for any repository using this method 
 
 Once you add all six <code>Secrets</code>, your screen should look similar to the one of the two examples in the graphic below.
 
@@ -260,7 +260,7 @@ Secrets are configured! Now let's validate them:
 If you are someone who already has a lot of forks in your personal account and want to switch to using a *GitHub* organization. Here's how:
 
 1. Follow the steps to create your organization
-    * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization)
+    * [Create a Free *GitHub* Organization](create-github-account.md#create-a-free-github-organization)
 1. Add the `Secrets` and the `Variable` to your *GitHub* organization as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
 1. Fork all the repos you normally use, but this time, set your organization as the owner
 1. For each repository in your organization:
@@ -274,7 +274,7 @@ If you are someone who already has a lot of forks in your personal account and w
         * The one thing you might want to do is copy customizations from your personal account fork to the organization fork
 4. Return to your private *GitHub* account
     * Your choice: either delete the forks in your personal account or at least disable the building from your personal account
-    * [Disable Building for Personal *GitHub* Account](other-apps.md#disable-building-for-personal-github-account)
+    * Disable Building for Personal *GitHub* Account
 
 **Important**
 
@@ -292,7 +292,7 @@ If your copy (`fork`) is from `nightscout`:
 * Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
-* Continue with [Validate Secrets and Add Identifiers](identifiers.md)
+* Continue with [Validate Secrets](actions/validate-secrets.md)
 
 ### Delete and Start Fresh
 
