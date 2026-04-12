@@ -250,19 +250,16 @@ The graphic below indicates in red the places you need to click in order to begi
 
 This section is required if you are using the free account. Some features of Trio are not available with a free Apple Developer Account. You will need to remove features that are not supported.
 
-1. You must remove unsupported capabilities from 2 targets. This is best done as you sign each target:
-
-    - **Trio Target:** Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications
-    - **Trio WatchKit Extension Target:** Siri
-    
-2. Add the `SIRI_DISABLED` keyword to the ConfigOverride.xcconfig file:
-    - Click on the filename in the left pane of Xcode and view it in the Xcode editor
+1. You must remove unsupported capabilities from the **Trio Target**. This is best done when you sign the target:
+    * Delete **Push Notifications**
+    * Delete **NFC Tag Reading** (NFC Scan can stay)
+    * For **Healthkit**: Unselect Healthkit background delivery and then reselect it. 
+        * The free build doesn't allow HealthKit Access (Verifiable Health Records) capabilities, which is unchecked by default, so shouldn't be an issue, but the only way that I've found to clear the Healthkit Access error is to unselect/reselect background delivery.
 
 **Details about removing unsupported capabilities:**
 
-- You must disable Push Notification, Siri, Near Field Communication, and Time Sensitive Notifications
-    - If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
-    - If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
+- You must disable Push Notification, Near Field Communication Tag Reading, and unselect/reselect HealthKit
+    - You will see an error message when you select (personal team) for the **Trio Target**
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
     - Scroll down and click on the little trash can icon next to each unsupported attribute
 - Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone
@@ -273,6 +270,8 @@ This section is required if you are using the free account. Some features of Tri
     Libre transmitters require *Near Field Communication (NFC)* for background tag reading.  
      ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
      You need a **paid** Apple Developer Account for that.
+
+!!! info "Live Activity / Dynamic Island not supported with a FREE Apple Developer Account" 
 
 ## End of Free Account Steps
 
