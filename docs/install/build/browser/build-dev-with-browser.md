@@ -1,100 +1,17 @@
-## Use Browser Build for Latest Trio
-
-This page is provided to help people currently running the public beta version of Trio.
-
-!!! important "Dev Branch"
-
-    It is now recommended to use the `dev` branch of Trio.
-
-    * [Trio Discord Invitation](https://discord.triodocs.org)
-
-    To ensure weekly updates, make the `dev` branch the default branch in your fork on GitHub. Remember, this will just automatically trigger a build of the latest `dev` to TestFlight every Sunday at 06:43 UTC. You are still responsible for manually installing the update via the TestFlight app on your phone. 
-
-    Once the `main` branch is updated to 0.7 or higher, you should return to building from the `main` branch and using it as your default branch.
-
-## Update to Trio dev branch from Trio 0.2.x main
-
-!!! important "A Note on Compatibility"
-    Upgrading to Trio 0.5 (or newer) from 0.2.x is smooth and straightforward. The new Onboarding Wizard will guide you step by step. Your pump, CGM, therapy settings, and the last 24 hours of treatment and glucose history will be brought over automatically.
-
-    **Be Aware**
-    
-    * **Once you have upgraded to 0.5 (or newer), going back to 0.2.x is not supported**
-        * If you choose to downgrade, you will need to set everything up again from scratch
-        * If you accidentally build 0.2.x over 0.5 (or newer), and then return to 0.5 (or newer):
-            * You will see <code>“Oops? Some data didn’t make it over”</code> every time you restart the app
-            * But all your "stuff" is there
-            * See [Remove Annoying Message](#remove-annoying-message)
-    * Some guardrails have changed compared to 0.2.x
-    * **Your saved Temp Targets and Overrides will not be maintained**
-        * The storage method in 0.5 and newer is different from 0.2.x, so you will need to recreate them
-        * Before you update from 0.2.x, capture a screenshot of each named Temp Target or Override that you want to add to 0.5 (or newer)
-
-The Browser Build documentation is under construction for Trio version 0.5.x and newer.
-
-This temporary set of instructions is intended for the subset of users who **previously built Trio 0.2.x using Browser Build**. Because this is aimed at experienced builders, some of the steps are abbreviated and will be expanded as the documents are updated.
-
-> If you are new to Trio — please wait until the documents have been expanded and preferably until the release of Trio 1.0.
-
-#### Mac-Xcode to Browser Build
-
-!!! important "Experienced Mac-Xcode Builder"
-    If you are an experienced Trio 0.2.x user who wants to join the open beta testing, but also wants to switch from Mac-Xcode build to Browser Build — welcome. For the time being, please do this:
-
-    * Use the [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} instructions to build Trio 0.2.x and wait for it to show up in your TestFlight. Do not install it — you just want to make sure you can succeed with a Browser Build.
-    * Then return to this page and follow the directions; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5 (or newer).
-
-#### Transition from Other Apps to Trio Browser Build
-
-!!! important "Coming from Other Apps"
-    If you are an experienced Browser Build person who has not built Trio before, you will need to add the Trio App Group to 3 <code>Identifiers</code> and create a Trio App in App Store Connect.
-
-    The steps are summarized in [New Trio Builders](#new-trio-builders).
-
-    If you are not experienced with Browser Build, we suggest you follow the 0.2.x instructions: [0.2.x: Build Trio with *GitHub*](../../../0.2.x/operate/build.md#build-trio-with-github){: target="_blank"} first. Then return to this page to update to 0.5.x; you will need to run `Add Identifiers` and `Create Certificates` again when updating to 0.5 (or newer).
-
 ### Summary of Tasks to Build Trio `dev`
 
 These steps assume:
 
-* You previously built Trio 0.2.x using *GitHub* Actions (Browser Build)
+* You previously built Trio using *GitHub* Actions (Browser Build)
 * You confirmed your *Apple* Developer license agreements are up to date
 
 These are the new steps for you to follow:
 
-1. [Configure Browser Build Certificate Automation](#browser-build-certificate-automation)
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
     * [Configure the `dev` branch as default](#configure-the-dev-branch-as-default) (while public beta is ongoing)
 1. [Update <code>Identifiers</code>](#update-identifiers)
 1. [Update <code>Certificates</code>](#update-certificates)
 1. [Build Trio `dev`](#build-the-app)
-
-### Browser Build Certificate Automation
-
-Browser Build Certificate Automation was added to Trio 0.2.3 - if you have not added the `ENABLE_NUKE_CERTS` variable, you should add it now. Otherwise, skip ahead to [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch).
-
-In order to utilize the new automatic certificate renewal feature, you’ll need to add a new Variable.  Variables are located in *GitHub*, in the same location as your Secrets.  The exact location will depend upon whether you build using a *GitHub organization* or a personal account.
-
-If you use a personal account, click on your Trio repository.  If you have other repositories, just follow these same steps for each of them.
-
-If you build using a *GitHub* organization and have already added this variable to your organization, there’s nothing for you to do. All repositories in your organization are covered. Otherwise, click on your organization name.
-
-The numbered steps correspond to numbers in the graphics below:
-
-1. Choose settings 
-1. Scroll down to select Secret and variables
-1. Choose Actions
-1. Choose Variable
-1. Tap on “Create new organization variable” or “New repository variable”
-1. For the Name, type `ENABLE_NUKE_CERTS`
-1. For the Value, type `true`
-1. Tap on Add Variable.
-
-> ![add ENABLE_NUKE_CERTS variable](img/add-variable-01.png){ width="800"}
-{align="center"}
-
-> ![add ENABLE_NUKE_CERTS variable](img/add-variable-02.png){ width="600"}
-{align="center"}
 
 ### Configure `Fork` with `dev` branch
 
@@ -174,7 +91,7 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### Update <code>Identifiers</code>
 
-For Trio 0.5.x and newer, you must have Apple Push Notification enabled to build the app. This capability is added to the existing Trio Identifier by running the Action: `Add Identifiers` after you update your fork.
+At the current time, the dev branch and main branch Identifiers are the same, so this step is not required.
 
 Refer to the graphic below for the numbered steps:
 
@@ -182,7 +99,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on <code>2. Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
-    * **To update the <code>Identifiers</code> so you can build the Trio 0.5 (or newer), you must select `dev`**
+    * **To update the <code>Identifiers</code> found in dev but not main, you must select `dev`**
 1. Tap the green button that says `Run workflow`.
 
     > ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -194,35 +111,9 @@ Refer to the graphic below for the numbered steps:
 
 The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
-### Update <code>Certificates</code>
-
-For Trio 0.5.x and newer, you must have Apple Push Notification enabled to build the app. After you add this capability to the Trio Identifier, you must update the Certificate by running the Action: `Create Certificates`.
-
-Refer to the graphic below for the numbered steps:
-
-1. Click on the <code>Actions</code> tab of your Trio repository
-1. On the left side, click on `3. Create Certificates`
-1. On the right side, click `Run workflow` to show a dropdown menu
-    * You will see your default branch (typically `main`)
-    * **Because you plan to build Trio 0.5 (or newer), select `dev`**
-1. Tap the green button that says `Run workflow`.
-
-    > ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
-    {align="center"}
-
-1. Wait a minute or two for the action to finish
-
-!!! tip "Be Patient"
-    * Refresh the browser if you are unsure if the action started
-    * Do not start a new action until the first one completes
-
-Once you see the green check mark by `Create Certificates`, the next step is to Build the app.
-
 ### Build the App
 
 If you completed all the steps on this page successfully (got a green checkmark &#x2705;), you are ready to run Action: Build Trio.
-
-> **We recommend that while participating in the public beta, you should [Configure the `dev` branch as default](#configure-the-dev-branch-as-default). This will ensure weekly updates to TestFlight. You must still manually install updates to your phone from TestFlight.**
 
 If you choose to build a different branch than your default branch, there is an extra step when you `Build Trio`. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the `dev` branch in the branch dropdown menu before continuing to step 4 and tapping on the green Run workflow button:
 
