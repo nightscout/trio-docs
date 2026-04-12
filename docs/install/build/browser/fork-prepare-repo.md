@@ -274,7 +274,6 @@ If you are someone who already has a lot of forks in your personal account and w
         * The one thing you might want to do is copy customizations from your personal account fork to the organization fork
 4. Return to your private *GitHub* account
     * Your choice: either delete the forks in your personal account or at least disable the building from your personal account
-    * Disable Building for Personal *GitHub* Account
 
 **Important**
 
