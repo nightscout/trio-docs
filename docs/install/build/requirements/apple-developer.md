@@ -31,6 +31,14 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 - If you switch to a paid account after trying out the free account, you must rebuild your Trio app to sign it with the new paid account. Furthermore, switching from a free account requires entering all the settings again and starting a fresh pod.
 - You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use Remote Commands through Nightscout.
 
+!!! important "Libre Requires Paid Account"
+    In order to use certain Libre with *Trio*, you must have the Near Field Communication capability installed with the *Trio* app. Many Libre cannot be used directly and must use a third-party app.
+
+    The Near Field Communication capability is not available with a free account.
+
+!!! warning "Live Activity Requires Paid Account"
+    The Live Activity feature for *Trio* is not available with a free account.
+
 ### Paid Developer Account
 
 If you decide to use a **PAID** developer account, here's what you need to know:

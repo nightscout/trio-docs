@@ -36,7 +36,13 @@ Trio requires a relatively recent phone. The faster the phone, the better for th
 
 !!! warning "Warning"
 
-    **Your phone iOS dictates your MacOS and Xcode requirements**  - The more up-to-date you keep your phone iOS, the more up-to-date your computer and MacOS must be to build Trio with Xcode.
+    **Your phone iOS dictates your MacOS and Xcode requirements**  - The more up-to-date you keep your phone iOS, the more up-to-date your computer and MacOS must be to build Trio with your Mac.
+
+    You are encouraged to update your iPhone as soon as you determine you can do so safely:
+
+    * Check to see if the mentors give the iOS version a thumbs up: [Version Update](https://www.loopandlearn.org/version-updates/)
+    * Make sure your Mac and Xcode versions will enable you to build if you need to once you update your iOS
+    * If you cannot update your Mac, check out the [Build with Browser](../browser/browser-build-overview.md){: target="_blank" }
     
 1. On your phone, click on the 'Settings' application.
 

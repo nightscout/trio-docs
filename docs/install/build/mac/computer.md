@@ -7,7 +7,7 @@
 
 !!! abstract "Summary"
 
-    To build the Trio app on a Mac, your computer, iPhone, and Xcode must have compatible versions. If you are buying a Mac to use the build with the Mac method, choose one that can be updated to the Sequoia (macOS 15) operating system and has at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+    To build the Trio app on a Mac, your computer, iPhone, and Xcode must have compatible versions. If you are buying a Mac to use the build with the Mac method, choose one that can be updated to the Tahoe (macOS 26) operating system and has at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"

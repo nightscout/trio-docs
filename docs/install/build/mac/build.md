@@ -21,19 +21,22 @@
     
 ## Build Trio with Xcode
 
-!!! important "Dev Branch"
+!!! warning "Release 0.7.0 and newer"
 
-    At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+    The main branch is the preferred build for everyone except expert builders.
 
-    Please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older main version 0.2.x, please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
     
-    This code is undergoing testing and receives rapid updates. Be sure to follow along in [Trio Discord](https://discord.triodocs.org) and to download the latest code and update frequently (at least weekly).
+    All Trio users are encouraged to follow along in [Trio Discord](https://discord.triodocs.org).
 
 ### Download Trio with 'Trio Build Select Script'
 
 Trio uses the Trio Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
 
 #### Open Terminal
+
+!!! tip ""
+    Shortcut: Tap on the CMD and spacebar to open Spotlight search and type `Ter` and then return to open the Terminal
 
 1. On your Mac computer, go to the 'Finder' app.
 
@@ -66,14 +69,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
     ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
       {align= "center"}
 
-5. Next, the script will prompt you to select which Trio branch you want to download. Type 1 and press return. 
-
-    !!! important "Dev Branch"
-
-        Until the `main` branch gets updated past 0.2.x, it is recommended all users build the `dev` branch instead of `main`.
-
-    ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
-      {align= "center"}
+5. Next, the script will prompt you to select which Trio branch you want to download. It is recommended you Type 1 and press return to select the `main` branch. 
 
 6. Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the Terminal window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. 
 
@@ -254,19 +250,16 @@ The graphic below indicates in red the places you need to click in order to begi
 
 This section is required if you are using the free account. Some features of Trio are not available with a free Apple Developer Account. You will need to remove features that are not supported.
 
-1. You must remove unsupported capabilities from 2 targets. This is best done as you sign each target:
-
-    - **Trio Target:** Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications
-    - **Trio WatchKit Extension Target:** Siri
-    
-2. Add the `SIRI_DISABLED` keyword to the ConfigOverride.xcconfig file:
-    - Click on the filename in the left pane of Xcode and view it in the Xcode editor
+1. You must remove unsupported capabilities from the **Trio Target**. This is best done when you sign the target:
+    * Delete **Push Notifications**
+    * Delete **NFC Tag Reading** (NFC Scan can stay)
+    * For **Healthkit**: Unselect Healthkit background delivery and then reselect it. 
+        * The free build doesn't allow HealthKit Access (Verifiable Health Records) capabilities, which is unchecked by default, so shouldn't be an issue, but the only way that I've found to clear the Healthkit Access error is to unselect/reselect background delivery.
 
 **Details about removing unsupported capabilities:**
 
-- You must disable Push Notification, Siri, Near Field Communication, and Time Sensitive Notifications
-    - If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
-    - If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
+- You must disable Push Notification, Near Field Communication Tag Reading, and unselect/reselect HealthKit
+    - You will see an error message when you select (personal team) for the **Trio Target**
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
     - Scroll down and click on the little trash can icon next to each unsupported attribute
 - Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone
@@ -277,6 +270,8 @@ This section is required if you are using the free account. Some features of Tri
     Libre transmitters require *Near Field Communication (NFC)* for background tag reading.  
      ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
      You need a **paid** Apple Developer Account for that.
+
+!!! info "Live Activity / Dynamic Island not supported with a FREE Apple Developer Account" 
 
 ## End of Free Account Steps
 

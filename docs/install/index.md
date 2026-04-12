@@ -9,9 +9,9 @@ Welcome to the installation and update homepage! Here you will find information 
 Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome-solid-magnifying-glass:, or the menu below to find the section you are looking for.
 
 !!! important "Attention Trio Users"
-    At this time all users should [build the dev branch](build/browser/build-dev-with-browser.md) rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+    The `main` branch is the preferred build for everyone except expert builders.
 
-    Please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older `main` version 0.2.x, please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
 
 <div class="grid cards" markdown>
 
@@ -34,25 +34,22 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Overview on building Trio dev branch using a web browser and TestFlight
     
--   __[Build with Browser ✏️](build/browser/browser-build-overview.md)__
+-   __[Build with Browser](build/browser/browser-build-overview.md)__
 
     - - -
     
-    🚧Documentation Under Construction🚧
     Overview on building Trio using a web browser and TestFlight
     
--   __[Upgrade ✏️](upgrade.md)__
+-   __[Upgrade](upgrade.md)__
 
     - - -
     
-    🚧Documentation Under Construction🚧
     How to upgrade Trio to the latest version
     
--   __[Companion Apps ✏️](ecosystem/index.md)__
+-   __[Companion Apps](ecosystem/index.md)__
 
     - - -
 
-    🚧Documentation Under Construction🚧    
     Apps that work alongside Trio
     
 </div>
