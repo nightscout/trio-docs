@@ -49,7 +49,7 @@ In order to build using the Browser Build method, you will need to collect and s
         * [Create your version of *Trio* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
         * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 4. Build Trio`](build-yml.md#build-the-loop-app){: target="_blank" }
+        * [`Action: 4. Build Trio`](actions/build-app){: target="_blank" }
             * Yes we can count, but Action 3 is included in Action 4
     * Phone: [Install the *Trio* app using the *TestFlight* app](install-from-testflight.md){: target="_blank" }
 
@@ -272,8 +272,8 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 
 Ready to begin? Proceed to:
 
-**→ [Step 2: Collect and Save Secrets](secrets.md)**
+**→ [Create GitHub Account](create-github-account.md)**
 
 ---
 
-**Navigation:** [← Back to Overview](bb-overview.md) | [Next: Collect Secrets →](secrets.md)
+**Navigation:** [← Back to Overview](browser-build-overview.md) | [Next: Create GitHub Account →](create-github-account.md)

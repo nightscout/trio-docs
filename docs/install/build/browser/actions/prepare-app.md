@@ -43,3 +43,7 @@ Follow the directions in [LoopDocs](https://loopkit.github.io/loopdocs/browser/p
 If you want to take it a step at a time, continue to [Create <code>Certificates</code>](generate-certificates.md).
 
 If you are feeling confident, you can go straignt to [Build App](build-app.md) which includes the create certificates step.
+
+---
+
+**Navigation:** [← Back: Add Identifiers](add-identifiers.md) | [Next: Prepare TestFlight Users →](prepare-testflight.md)

@@ -121,3 +121,7 @@ To make a *passphrase* that is hard to guess and keeps your certificates safe:
 * Don’t use words or numbers that people might guess, like your name or birthday
 
 If you already created a MATCH_PASSWORD that does not meet the criteria listed above, no worries, you are protecting an *Apple* developer certificate - not the family fortune. That information is provided for new builders who want guidance.
+
+---
+
+**Navigation:** [← Back to Introduction to Secrets](intro-secrets.md) | [Next: Collect Apple Secrets →](apple-secrets.md) 

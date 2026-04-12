@@ -15,3 +15,7 @@ This step validates most of your six Secrets and provides error messages if it d
     * Refresh the browser if you are unsure if the action started
     * Do not start a new action until the first one completes
     * If it seems to take too long to finish - refresh your browser to see if it is done
+
+---
+
+**Navigation:** [← Back: Fork and Prepare →](../fork-prepare-repo.md) | [Next: Add Identifiers →](add-identifiers.md)

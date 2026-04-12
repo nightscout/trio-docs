@@ -29,3 +29,7 @@ If they already have the notation `disabled` beside them, you won't see them run
 
 > ![disable developer actions](../img/trio-disable-do-not-run.png){width="500"}
 
+
+---
+
+**Navigation:** [← Back: Prepare App](prepare-app.md) | [Next: Install from TestFlight →](../install-from-testflight.md)

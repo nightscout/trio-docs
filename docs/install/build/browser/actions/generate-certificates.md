@@ -22,3 +22,9 @@ Refer to the graphic below for the numbered steps:
 
 Once you see the green check mark by `Create Certificates`, the next step is to Build the app.
 
+
+---
+
+This is an optional step.
+
+**Navigation:** [← Back: Prepare App](prepare-app.md) | [Next: Build App →](build-app.md)

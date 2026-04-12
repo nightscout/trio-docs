@@ -253,7 +253,7 @@ Secrets are configured! Now let's validate them:
 
 ---
 
-**Navigation:** [← Back: Collect Secrets](secrets.md) | [Next: Prepare Identifiers →](identifiers.md)
+**Navigation:** [← Back: Collect Apple Secrets](apple-secrets.md) | [Next: Validate Secrets →](actions/validate-secrets.md)
 
 ## Switch to a *GitHub* Organization
 

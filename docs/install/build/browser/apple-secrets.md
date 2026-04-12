@@ -51,8 +51,6 @@ You need to save your information digitally, so you can copy and paste. The info
         * Record the key id; this will be used for `FASTLANE_KEY_ID`.
         * Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-    [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-gh_pat-secret) To skip the detailed instructions, click on [Collect the <code>GH_PAT</code> Secret](#collect-the-gh_pat-secret)
-
 This section provides detailed instructions for the four <code>Secrets</code> associated with your *Apple Developer* ID.
 
 |<div style="width:150px"></div>Name|Description|
@@ -76,14 +74,14 @@ If not, you need to purchase one ($99 annual fee). It may take a few days for th
 Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account).
 
 !!! tip ""
-    If you need graphics for this part - use [LoopDocs](https://loopkit.github.io/loopdocs/browser/secrets/#collect-the-four-apple-secrets) for reference. The secrets are all the same for all OS-AID apps.
+    If you need graphics for this part - use [LoopDocs](https://loopkit.github.io/loopdocs/browser/secrets#collect-the-four-apple-secrets) for reference. The secrets are all the same for all OS-AID apps.
 
 1. Click `Account` in the top menu bar
 1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
 1. Click the `Membership Details` icon
 1. Next to the `Team ID` field, is a 10-character ID number.
 
-Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](prepare-app.md#create-app-group){: target="_blank" }.
+Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](actions/prepare-app.md#create-app-group){: target="_blank" }.
 
 - Stop a moment and double-check
 * If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page
@@ -104,9 +102,6 @@ This step is used to create and save the final 3 `Secrets` you need from your *A
 
 !!! info "Paid *Apple Developer* Account is Required"
     To generate the `API Key`, you must have a paid *Apple Developer* account.
-
-    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } until your *Apple* account is active.
-
 
 Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api)
 
@@ -132,7 +127,7 @@ The numbered steps below correspond to the actions you take in the subsequent wi
 
 The `Integrations` screen appears again with content similar to the graphic below; the key information is blanked out for security.
 
-Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" }
+Review the graphic and then follow the directions below to save more parameters you will need to configure <code>Secrets</code>.
 
 > ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
 {align="center"}
@@ -162,7 +157,7 @@ Review the graphic and then follow the directions below to save more parameters 
 #### Organize your Key File
 
 !!! tip "Pro Tip: Use the same folder as your Secrets Reference File"
-    It's a good idea to keep all your important files in one place. You probably set up a a folder for your [Secrets Reference File](intro-summary.md#make-a-secrets-reference-file){: target="_blank" }. Use the same folder for your API key - be sure to label the file so you know what the key is. For example, change the name from KPMAM8y3G5.p8 to API_KEY_KPMAM8y3G5.p8.
+    It's a good idea to keep all your important files in one place. You probably set up a a folder for your [Secrets Reference File](intro-secrets.md#make-a-secrets-reference-file){: target="_blank" }. Use the same folder for your API key - be sure to label the file so you know what the key is. For example, change the name from KPMAM8y3G5.p8 to API_KEY_KPMAM8y3G5.p8.
 
 #### Do Not Confuse Your Keys
 
@@ -184,3 +179,8 @@ In summary, from this section, you have found or generated the following and sav
 
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
+
+
+---
+
+**Navigation:** [← Back to Create a GitHub Account](create-github-account.md) | [Next: Fork and Prepare →](fork-prepare-repo.md) 
