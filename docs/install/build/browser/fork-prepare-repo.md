@@ -207,7 +207,7 @@ Once you add all six <code>Secrets</code>, your screen should look similar to th
 ![all secrets entered](img/gh-done-adding-secrets.svg){width="600"}
 {align="center"}
 
-### Add Variable
+## Add Variable
 
 This variable (**not** a secret) provides automatic renewal of certificates, which expire once per year.
 
@@ -230,10 +230,15 @@ Not sure how to get to the Variables screen. Review the two graphics.
 
 This graphic shows how to access Variables for a repository (similar steps required for an organization).
 
-![steps to add a variable](img/add-variable.png){width="600"}
+![steps to add a variable](img/add-variable-01.png){width="600"}
 {align="center"}
 
-This graphic shows how to add the `ENABLE_NUKE_CERTS` to an organization. Be sure that Repository access is set to `Public repositories`. When adding this to a repository, that option is not shown.
+This next graphic shows filling out the variable for a repository that is not part of an organization.
+
+![steps to add a variable](img/add-variable-02.png){width="600"}
+{align="center"}
+
+This final graphic shows how to add the `ENABLE_NUKE_CERTS` to an organization. Be sure that Repository access is set to `Public repositories`. When adding this to a repository, that option is not shown.
 
 ![enable nuke certs](img/gh-nuke-certs.png){width="700"}
 {align="center"}
