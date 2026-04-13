@@ -332,9 +332,9 @@ nav:
 
   - Help:
       - help/index.md
-      - FAQs ✏️: help/faq.md
+      - FAQs: help/faq.md
       - Safety ✏️: help/safety.md
-      - Glossary ✏️: help/glossary.md
+      - Glossary: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
       - Share Logs: help/share-logs.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose

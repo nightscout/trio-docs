@@ -7,11 +7,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 <div class="grid cards" markdown>
 
--   __[FAQs](faq.md) ✏️__
+-   __[FAQs](faq.md)__
 
     - - -
     
-    🚧 Documentation Under Construction 🚧  
     Frequently Asked Questions
 
 -   __[Safety](safety.md) ✏️__
@@ -20,11 +19,10 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     🚧 Documentation Under Construction 🚧
 
--   __[Glossary](glossary.md) ✏️__
+-   __[Glossary](glossary.md)__
 
     - - -
     
-    🚧 Documentation Under Construction 🚧  
     A compilation of Trio terms and definitions
 
 -   __[Troubleshooting](troubleshoot.md) ✏️__

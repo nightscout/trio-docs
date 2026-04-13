@@ -1,4 +1,4 @@
-# Frequently Asked Questions ✏️
+# Frequently Asked Questions
 
 Various resources, including [Facebook](https://www.facebook.com/groups/diytrio), and [Discord](https://discord.com/invite/FnwFEFUwXE), are available to assist you with setting up, maintaining, and succeeding in your Trio journey. Below is a series of questions we see asked daily. We hope it helps. 
 
@@ -89,7 +89,7 @@ Details of Trio's **integration** with Nightscout can be found [here](../configu
 Information on **creating** your Nightscout **site** can be found [here](https://nightscout.github.io/).
 
 **LoopFollow**  
-LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's display information and alerts into a single, easy-to-use interface. LoopFollow pulls data from your Nightscout or Dexcom Share server. You can set up more than one app on a phone if you follow more than one person with diabetes. Information on creating your LoopFollow app can be found [here](https://www.loopandlearn.org/loop-follow/).
+LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's display information and alerts into a single, easy-to-use interface. LoopFollow pulls data from your Nightscout or Dexcom Share server. You can set up more than one app on a phone if you follow more than one person with diabetes. Information on creating and using your LoopFollow app can be found [LoopFollowDocs](https://loopfollowdocs.org).
 
 !!! warning
     _All options for following your Trio app rely on an active internet connection. If you or the person you are following loses connection to the internet, your LoopFollow app will stop receiving data._
