@@ -33,7 +33,7 @@ In order to build using the Browser Build method, you will need to collect and s
         * (Optional) [Create a Free *GitHub* Organization](create-github-account.md#create-a-free-github-organization){: target="_blank" } (strongly recommended)
     * [Make up a Password](create-github-account.md#make-up-a-password){: target="_blank" }
     * _<span translate="no">Apple</span>_:
-        * [Collect the four *Apple* <code>Secrets</code>](collect-secrets.md#collect-the-four-apple-secrets){: target="_blank" }
+        * [Collect the four *Apple* <code>Secrets</code>](apple-secrets.md#collect-the-four-apple-secrets){: target="_blank" }
 
     Now it's time to use those <code>Secrets</code> to build the *Trio* app
 
@@ -42,14 +42,14 @@ In order to build using the Browser Build method, you will need to collect and s
             * Using an organization? Add `Secrets` and `Variables` to your Organization and all your apps can use them
             * Not using an organization? You have to add `Secrets` and `Variables` to each repository individually
         * [Add <code>Secrets</code> to your `organization` or a single `fork`](fork-prepare-repo.md#configure-secrets){: target="_blank" }
-        * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets){: target="_blank" }
-        * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" }
+        * [`Action: 1. Validate Secrets`](actions/validate-secrets.md){: target="_blank" }
+        * [`Action: 2. Add Identifiers`](actions/add-identifiers.md){: target="_blank" }
     * _<span translate="no">Apple</span>_:
-        * [Configure Identifiers for *Trio*](prepare-app.md#configure-identifiers-for-loop){: target="_blank" }
-        * [Create your version of *Trio* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
-        * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
+        * [Configure Identifiers for *Trio*](actions/prepare-app.md){: target="_blank" }
+        * [Create your version of *Trio* in `App Store` (personal use only, not for distribution)](actions/prepare-app.md#configure-trio-app){: target="_blank" }
+        * [Set up `Internal TestFlight Group for the App`](actions/prepare-testflight.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 4. Build Trio`](actions/build-app){: target="_blank" }
+        * [`Action: 4. Build Trio`](actions/build-app.md){: target="_blank" }
             * Yes we can count, but Action 3 is included in Action 4
     * Phone: [Install the *Trio* app using the *TestFlight* app](install-from-testflight.md){: target="_blank" }
 
@@ -62,7 +62,7 @@ In order to build using the Browser Build method, you will need to collect and s
         * [Automatic Certificate Renewal - annual event](https://loopkit.github.io/loopdocs/browser/automatic/#automatic-certificate-renewal)
         * [Open-Source App Schedule for rebuilding](https://loopkit.github.io/loopdocs/browser/automatic/#open-source-app-schedule)
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](install-from-testflight.md#testflight-for-a-child){: target="_blank" }.
-    - **Can I still use my customizations?** Yes. [Customize using Browser](browser-customization.md){: target="_blank" }
+    - **Can I still use my customizations?** Yes. [Customize using Browser](browser-customizations.md){: target="_blank" }
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
         * You need to adjust when watching that because you are building *Trio* instead of *Loop* and the video is somewhat out of date
 
@@ -134,7 +134,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 
     If even one character is capitalized when it should not be, you will get errors.
 
-### Make a <code>Secrets</code> Reference File
+### Make a <code>Secrets</code> Reference File { #make-a-secrets-reference-file }
 
 Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folder and then create a <code>Secrets</code> Reference file in it.
 

@@ -66,7 +66,7 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
-* LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md){: target="_blank" } page that explains in detail how to sign up for an account
+* TrioDocs has an [*Apple Developer* Program](../requirements/apple-developer.md){: target="_blank" } page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple Developer* account](https://developer.apple.com) to sign up
 
 ### Find <code>TEAMID</code>
@@ -81,7 +81,7 @@ Sign in to your *Apple Developer* account at this link: [*Apple Developer* porta
 1. Click the `Membership Details` icon
 1. Next to the `Team ID` field, is a 10-character ID number.
 
-Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](actions/prepare-app.md#create-app-group){: target="_blank" }.
+Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](actions/prepare-app.md#create-the-trio-app-group){: target="_blank" }.
 
 - Stop a moment and double-check
 * If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page

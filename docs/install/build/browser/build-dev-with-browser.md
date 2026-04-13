@@ -11,9 +11,9 @@ These steps assume:
 These are the new steps for you to follow:
 
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
-    * [Configure the `dev` branch as default](#configure-the-dev-branch-as-default)
-1. [Update <code>Identifiers</code>](#update-identifiers)
-1. [Update <code>Certificates</code>](#update-certificates)
+    * Optional: [Configure the `dev` branch as default](#configure-the-dev-branch-as-default)
+1. If new Identifiers are required: [Update <code>Identifiers</code>](#update-identifiers)
+1. Optional: [Update <code>Certificates</code>](#update-certificates); this is included in Build Trio
 1. [Build Trio `dev`](#build-the-app)
 
 ### Configure `Fork` with `dev` branch
@@ -52,7 +52,8 @@ Each step in the list below matches with the number in the graphic. On the left 
 
 > **This recommendation is only for expert testers who are using `dev` or a feature branch for their personal use. Typically only developers configure the `dev` branch as their default branch.**
 
-* By making the `dev` branch your default, you will get automatic build updates weekly
+* By making the `dev` branch your default, you will get automatic build of any `dev` updates weekly
+* You will no longer get automated builds of the `main` branch, but can run those manually
 
 These are the steps to modify the default branch.
 
@@ -72,7 +73,7 @@ For the numbered steps below, refer to the graphic found under each group of ste
 
    > ![modify default branch](img/gh-settings-branch-02.svg){width="400"}
 
-1. Select the desired default branch, for the public beta, choose `dev`
+1. Select the desired default branch, in this example,  `dev` was selected
 1. Click on the `Update` button
 
 1. You will be presented with an are-you-sure question.
@@ -151,5 +152,4 @@ If you decide to look at the action **log**, instead of reading the annotations,
 ### Solution
 
 1. [Update <code>Identifiers</code>](#update-identifiers) - make sure you select `dev` branch
-2. [Update <code>Certificates</code>](#update-certificates) - make sure you select `dev` branch
-
+2. [Build the App](#build-the-app) - make sure you select `dev` branch

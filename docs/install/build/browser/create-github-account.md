@@ -41,8 +41,6 @@ The free level comes with plenty of storage and compute time to build the *Trio*
 !!! tip "Default Settings"
     These instructions are a prerequisite for automatic update and automatic build.
 
-    Refer to [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
-
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
 1. You will be creating a new *GitHub* `Personal Access Token` and giving it the name "`FastLane Access Token`"
@@ -69,10 +67,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
-    * You can [Regenerate Personal Access Token](bb-update.md#regenerate-token){: target="_blank" } for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
-
-    > ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
-    {align="center"}
+    * You can regenerate a Personal Access Token for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for your organization or in all repositories using *GitHub* Build if you don't use an organization 
 
 ### Create a Free *GitHub* Organization
 
@@ -105,7 +100,7 @@ In the instructions below, use your *GitHub* username instead of `my-name`.
 
 ## Make up a Password
 
-If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>. Note that if you [build more than one app](other-apps.md){: target="_blank" }, you use the same <code>MATCH_PASSWORD</code> for all the apps. Every app needs to have the same 6 Secrets.
+If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>. Note that if you build more than one app, you use the same <code>MATCH_PASSWORD</code> for all the apps. Every app needs to have the same 6 Secrets.
 
 !!! info "What is this Password used for?"
     The <code>MATCH_PASSWORD</code> is a special password called a *passphrase* that is used to encrypt and decrypt your certificates from *Apple* so they can be used when building with *GitHub*; it helps keeps your certificates secret and safe.
