@@ -44,14 +44,14 @@ Remote control must be enabled on the Trio phone or no remote information is acc
 
 > You can search for this screen in Trio settings or go through the sequence: Trio, Settings, Features, Remote Control.
 
-Once Remote Control is enabled, a Shared Secret is available. This is only used if you want to [Configure *LoopFollow* Trio Remote Control](#configure-loopfollow-trio-remote-control).
+Once Remote Control is enabled, a Shared Secret is available. This is only used if you want to [Configure *LoopFollow* Trio Remote Control](https://loopfollowdocs.org/remote/remote-control-trio/#configure-loopfollow-trio-remote-control).
 
 ![Trio remote control settings](img/trio-enable-remote-control.png){width="300"}
 {align="center"}
 
 When Remote Control is enabled on the Trio app and the *LoopFollow* phone is properly configured, you can add carbs, send boluses, set or cancel overrides or temporary targets from the *LoopFollow* phone to the Trio phone via *Apple* push notifications.
 
-The `SHARED SECRET` should be copied from the Trio phone and added to the [`Shared Secret`](#shared-secret) row of the *LoopFollow* Remote Settings screen as part of the configuration for using *LoopFollow*.
+The `SHARED SECRET` should be copied from the Trio phone and added to the [`Shared Secret`](https://loopfollowdocs.org/remote/remote-control-trio/#shared-secret_1) row of the *LoopFollow* Remote Settings screen as part of the configuration for using *LoopFollow*.
 
 !!! warning "Important"
     The ability for the Trio app to be remotely controlled will be **disabled** when `Enable Remote Control` is turned OFF, even if you have *LoopFollow* configured with the correct shared secret or your *Nightscout* URL has Careportal access. This is for the protection of the Trio user, so that they **always** are the primary controller of their insulin dosing app.
@@ -483,9 +483,6 @@ If you were previously running the *Loop* app:
 In addition to this step, you may need to force the profile (from Trio) to upload to *Nightscout* and overwrite the one stored as the default profile in *Nightscout*.
 
 ### Update Profile
-
-!!! warning "Must on Trio 0.5.x (or newer)"
-    If you are on Trio 0.2.x, you might see the option for Trio Remote Control in *LoopFollow* Remote Settings, but you can't use it. See [Use *LoopFollow* *Nightscout* Remote Control](#use-loopfollow-nightscout-remote-control).
 
 If you were previously running the *Loop* app, take the actions in the [previous section](#stop-nightscout-access-from-the-loop-app) and then force the profile to update.
 

@@ -13,7 +13,7 @@ These are the new steps for you to follow:
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
     * Optional: [Configure the `dev` branch as default](#configure-the-dev-branch-as-default)
 1. If new Identifiers are required: [Update <code>Identifiers</code>](#update-identifiers)
-1. Optional: [Update <code>Certificates</code>](#update-certificates); this is included in Build Trio
+1. Optional: [Update <code>Certificates</code>](actions/generate-certificates.md); this is included in Build Trio
 1. [Build Trio `dev`](#build-the-app)
 
 ### Configure `Fork` with `dev` branch
