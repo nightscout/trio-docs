@@ -149,5 +149,3 @@ If this is not successful, the script told you the download failed and exited. S
 
     * [Install Xcode](xcode-setup.md)
     * [Xcode command line tools](xcode-setup.md#command-line-tools)
-
-**ADD TRIO SPECIFIC BUILD ERRORS HERE**

@@ -48,7 +48,7 @@ Trio uses the Trio Build Select Script to download Trio's source code, prepare y
 
 #### Run the 'Trio Build Select Script' in 'Terminal'
 
-The Trio Build Select Script is designed to walk you through downloading Trio. Please take some to read each step carefully. 
+The Trio Build Select Script is designed to walk you through downloading Trio. Please take some time to read each step carefully. 
 
 1. Copy the below script by hovering the mouse near the bottom right side of the text and clicking the copy icon. 
 
