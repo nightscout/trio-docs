@@ -30,13 +30,13 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 2. **Did you check your Apple developer account for a new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there is a new license agreement.
 
-3. **Do you have a new computer, never used to build Trio?** Did you add you [Apple ID](xcode-setup.md#add-apple-id-to-xcode) to Xcode?
+3. **Do you have a new computer, never used to build Trio?** Did you add your [Apple ID](xcode-setup.md#add-apple-id-to-xcode) to Xcode?
 
 4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](xcode-setup.md#command-line-tools)
 
 5. **Did you get a fresh download of Trio code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
-6. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in [Free Developer Account Build](build.md#free-apple-developer-account-build).
+6. **Are you using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in [Free Developer Account Build](build.md#free-apple-developer-account-build).
 
 7. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Trio might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 

@@ -14,7 +14,7 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 
 ### Omnipod Pumps
 
-!!! not "Reminder and Disclaimer"
+!!! note "Reminder and Disclaimer"
     
     The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
 

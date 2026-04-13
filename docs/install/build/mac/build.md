@@ -40,7 +40,7 @@ Trio uses the Trio Build Select Script to download Trio's source code, prepare y
 
 1. On your Mac computer, go to the 'Finder' app.
 
-2. Next, select' Applications' in the navigation pane on the left of the screen.
+2. Next, select 'Applications' in the navigation pane on the left of the screen.
 
 3. In the 'Applications' folder, scroll to locate and open the 'Utilities' folder.
 
@@ -59,7 +59,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
 
 2. Paste the 'Build Select Script' into Terminal. Press return to run the script.
 
-3. Running the script will display a series of menu options in the 'Terminal' window, as shown below. To build Trio, you will type 1, and the press return. 
+3. Running the script will display a series of menu options in the 'Terminal' window, as shown below. To build Trio, you will type 1, and then press return. 
 
     ![Screenshot: Build Select Script 1](img/xc-bs1.png){width="682"}
       {align= "center"}
@@ -138,7 +138,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
 
 ### First Build Messages
 
-If this is your first time building an app with this device. You may get some of the following messages:
+If this is your first time building an app with this device, you may get some of the following messages:
 
 - "Device "YOUR DEVICE NAME" isn't registered in your developer account."
     - If this message occurs, select 'Register Device', and Trio will continue to build.
@@ -190,9 +190,9 @@ Please see the [New User Guide](../../../configuration/new-user-setup.md) to get
 
 ### Prepare to Sign
 
- You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Accout option or if you want to build to a simulator on your computer.
+ You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Account option or if you want to build to a simulator on your computer.
 
-The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortnately, it doesnt work that way.
+The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortunately, it doesn't work that way.
 
 ### Select the Trio Folder
 
@@ -203,7 +203,7 @@ Follow the directions and compare your Xcode screen to the graphics as you walk 
 
 1. Follow the 'Build Select Script' prompts to open Xcode. Ensure you follow the instructions on each screen.
 
-2. Once Xcode is open, in the navigation pane one the left side of the screen, double click on 'Trio'
+2. Once Xcode is open, in the navigation pane on the left side of the screen, double click on 'Trio'
 
     ![Screenshot: Free Build - Xcode 1](img/xc-free1.png){width="1024"}
       {align="center"}
@@ -230,7 +230,7 @@ The graphic below indicates in red the places you need to click in order to begi
 
 1. First, ensure the target 'Trio' is selected.
 
-2. Next, we are going to select the 'Signing & Capabilities tab.
+2. Next, we are going to select the 'Signing & Capabilities' tab.
 
 3. We will then filter the capabilities to 'All'
 

@@ -6,7 +6,7 @@
 
 It is recommended you manually install the new build using *TestFlight* at your convenience.
 
-After you [Build the *Trio* App](actions/build-app.md){: target="_blank" } with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
+After you [Build the *Trio* App](actions/build-app.md){: target="_blank" } with a browser and you get the email that it is available in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
 * If you later need to add an adult family member to your list, refer to [*TestFlight* Overview](actions/prepare-testflight.md#testflight-overview){: target="_blank" }.
 
@@ -67,7 +67,7 @@ This GIF shows an example of installing *Loop* from *Testflight*.
 
 If you followed all the instructions for setting up Build with Browser, your GitHub account will automatically take the following actions:
 
-* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
+* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release
     * Automatically create a new build and upload it to *TestFlight*
     * This is only for the `default` branch, typically `main`
 * Build the app at least once a month and upload it to *TestFlight*

@@ -6,6 +6,6 @@ When integrated with *Trio*, *Nightscout* provides monitoring of *Trio* activiti
 
 For caregivers, *Nightscout* enables remote monitoring and even the ability to issue remote commands through *Nightscout* when both *Trio* and *Nightscout* are properly configured. If you add *LoopFollow*, those same remote commands can be issued from the caregiver's *LoopFollow* phone with better connectivity and feedback than using *Nightscout* alone.
 
-For more inforamtion about *Nightscout*, please refer to [Nighscout Documentation](https://nightscout.github.io/).
+For more information about *Nightscout*, please refer to [Nightscout Documentation](https://nightscout.github.io/).
 
 For more information about using remote control with a combination of *Nightscout* and *Trio*, please refer to the [LoopFollowDocs](https://loopfollowdocs.org).

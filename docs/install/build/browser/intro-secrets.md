@@ -1,6 +1,6 @@
 # Introduction to Secrets
 
-In order to build using the Browser Build method, you will need to collect and save six secrets from your free GitHub account and your paid Apple Delevoper account.
+In order to build using the Browser Build method, you will need to collect and save six secrets from your free GitHub account and your paid Apple Developer account.
 
 ## Summary of Steps
 
@@ -141,7 +141,7 @@ Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folde
 You don't need to know anything about the <code>Secrets</code> to do this. Come up with your own names, but make sure you know where you put this file.
 
 1. Decide where you want your <code>Secrets</code> saved and create a special folder
-2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code>Secrets</code>)
+2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formatting and ruin your <code>Secrets</code>)
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
@@ -227,7 +227,7 @@ ENABLE_NUKE_CERTS = true
 If you use an organization (recommended)
 https://github.com/my-name-org/Trio
 
-or (if you don't use an organzation): 
+or (if you don't use an organization): 
 https://github.com/my-name/Trio
 
 

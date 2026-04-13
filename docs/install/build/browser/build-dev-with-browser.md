@@ -37,7 +37,7 @@ The next screen displays the branches you currently have.
 >  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
 {align="center"}
 
-Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your `fork` when `main` is the default branch. The right side shows the display after making the indicated selections.:
+Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your `fork` when `main` is the default branch. The right side shows the display after making the indicated selections:
 
 1. Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio
 2. Click on the drop-down menu labeled 2 in the graphic and choose `dev`

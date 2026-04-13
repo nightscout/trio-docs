@@ -4,7 +4,7 @@
 
     - 5 minutes, to check your device and iOS.
     - 20 minutes to update your compatible device to a new iOS.
-    - 0 minutes, if you own an Android and will not use Apple products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/)
+    - 0 minutes, if you own an Android and will not use Apple products; check out [AndroidAPS Documentation](https://androidaps.readthedocs.io/en/latest/)
 
 !!! abstract "Summary"
 
@@ -15,7 +15,7 @@
 
 !!! question "FAQs"
 
-    - **Can I use an Android?** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
+    - **Can I use an Android?** No. Check out [AndroidAPS Documentation](https://androidaps.readthedocs.io/en/latest/).
     - **Does my phone need a cell plan?** No. Trio works using your phone's Bluetooth communications with your CGM and your insulin pump; no internet connection is required. However, an active internet connection is required if access to Dexcom Follow or Nightscout monitoring is a priority. 
     - **What watches work with Trio?** Trio has a companion application for the Apple Watch. The Trio watch app can add carbs and boluses, set temporary targets, and visualize your glucose, insulin, and carbs onboard. This application works only with the Apple Watch. Some Garmin watches are also compatible but only display data. 
 
@@ -63,7 +63,7 @@ Trio requires a relatively recent phone. The faster the phone, the better for th
     
 ## Automatic Updates
 
-Apple frequently updates iOS, often including critical security patches and improved new features. In some instances, iOS updates can make Trio stop working. ** Minor ** updates (like 16.5 -> 16.5.1) are usually not an issue. Whereas, **Major** updates (like 17.x -> 18.x) often contain changes that Trio developers need to include in the app.
+Apple frequently updates iOS, often including critical security patches and improved new features. In some instances, iOS updates can make Trio stop working. **Minor** updates (like 16.5 -> 16.5.1) are usually not an issue. Whereas, **Major** updates (like 17.x -> 18.x) often contain changes that Trio developers need to include in the app.
 
 !!! warning "Turn Off Automatic Updates!"
 
@@ -128,5 +128,5 @@ There are now options that appear after you enable 'Developer Mode'. Go on and c
 
 2. Next, scroll to the bottom of the page and tap on the 'Developer' option.
 
-3. Scroll until you see WigetKid Developer Mode and enable the option. This will allow faster updates of watch complications.
+3. Scroll until you see WidgetKit Developer Mode and enable the option. This will allow faster updates of watch complications.
 
