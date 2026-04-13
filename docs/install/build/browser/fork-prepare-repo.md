@@ -146,7 +146,7 @@ If you are using a *GitHub* organization, tap on the green button for `New organ
 ![action secrets and variables screen](img/gh-org-actions-secrets.svg){width="600"}
 {align="center"}
 
-If you are using a personal account, tap on the green button for `New repository secret`::
+If you are using a personal account, tap on the green button for `New repository secret`:
 
 ![action secrets and variables screen](img/personal-new-secret.png){width="600"}
 {align="center"}

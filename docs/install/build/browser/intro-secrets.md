@@ -75,7 +75,7 @@ The steps to configure for building with a browser require a lot of focused atte
 
     * [Click here to find help](browser-build-errors.md#help-with-errors){: target="_blank" }.
 
-???+ tips "Who should use a free GitHub Organization option (click to close/open)"
+???+ tip "Who should use a free GitHub Organization option (click to close/open)"
     There are several places where you see a recommendation to use a free GitHub Organization instead of building directly from your personal free GitHub account.
 
     When you use an organization, you don't have to add 6 Secrets to each repository for every app you build. It can save a lot of time in the long run.

@@ -109,7 +109,7 @@ Click this link to open in a new tab: [`App Store Connect/Access/Integrations/AP
 
 If this is your first time here, you will see:
 
-* "Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
+* "Permission is required to access the App Store Connect API. You can request access on behalf of your organization."
 
 * Click on `Request Access` and follow directions until access is granted
 

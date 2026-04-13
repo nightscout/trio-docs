@@ -143,20 +143,20 @@ If this is your first time building an app with this device. You may get some of
 - "Device "YOUR DEVICE NAME" isn't registered in your developer account."
     - If this message occurs, select 'Register Device', and Trio will continue to build.
 
-    ![Screenshot: Xcode 3](img/xc-xc3.png){width=300"}
+    ![Screenshot: Xcode 3](img/xc-xc3.png){width="300"}
       {align= "center"}
 
 - "Unlock "YOUR DEVICE NAME" to Continue"
     - Unlock your device.
 
-   ![Screenshot: Xcode 4](img/xc-xc4.png){width=500"}
+   ![Screenshot: Xcode 4](img/xc-xc4.png){width="500"}
      {align= "center"}
 
 - "code sign wants to access key "access" in your keychain".
     - Enter your computer password and press 'Always Allow'. 
     - Please note: This message may appear numerous times. **Do not get frustrated and press 'Deny'**. Just keep entering your computer password and press 'Always Allow'.
 
-    ![Screenshot: Codesign](img/xc-codesign.png){width=500"}
+    ![Screenshot: Codesign](img/xc-codesign.png){width="500"}
       {align= "center"}
 
 ## Build Errors
@@ -183,7 +183,7 @@ Once you've resolved a build error and started the build process again, Xcode wi
 Congratulations on building Trio, and welcome to the community.  
 Please see the [New User Guide](../../../configuration/new-user-setup.md) to get started with Trio. 
 
-![Alt Text](img/xc-congratulations.gif){width=500"}
+![Alt Text](img/xc-congratulations.gif){width="500"}
 {align= "center"}
 
 ## Free Apple Developer Account Build
