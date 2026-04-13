@@ -42,11 +42,11 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 ## Fix 95% of errors
 
-If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.
+If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Trio code.
 
 1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the `Product` menu item. Use the drop down selection for `Clean Build Folder` or press ++shift+command+k++. Either will work the same. Wait for the clean to finish before trying to build again.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-2. If you are updating Loop and did not [Delete Old Provisioning Profiles](update.md#delete-provisioning-profiles), do it now
+2. If you are updating Trio and did not [Delete Old Provisioning Profiles](update.md#delete-provisioning-profiles), do it now
 3. Return to Xcode and try building your app again.
 4. Still failing for phone or watch or both? Try the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
@@ -134,7 +134,7 @@ If this is not successful, the script told you the download failed and exited. S
 
 * Read the error message
 * Try to figure out the problem
-* If you need help, reach out to your favorite [Loop Social Media](https://loopkit.github.io/loopdocs/intro/loopdocs-how-to/#how-to-ask-for-help) site
+* If you need help, reach out via [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org)
 
 
 !!! warning "WARNINGS"

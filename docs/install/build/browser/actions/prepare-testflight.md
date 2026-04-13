@@ -35,7 +35,7 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 
-    * Select your *Loop* app
+    * Select your *Trio* app
     * Click on the `TestFlight` tab
     * **If you already have an Internal Testing Group for this app, skip to Step 4**
     

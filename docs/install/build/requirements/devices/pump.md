@@ -176,9 +176,9 @@ The DanaRS was first released in 2002, with firmware version v1, which is not su
 ### Medtrum Nano
 
 !!! info "All versions are supported!"
-    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Trio* app.
 
-**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Loop* app.**
+**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Trio* app.**
 
 
 The Medtrum patch pump is the second tubeless pump option available to the *Trio* app.

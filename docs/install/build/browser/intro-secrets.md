@@ -263,7 +263,7 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 * `Identifiers`: are required to build the *Trio* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you) when you run `Add Identifiers`
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
-    * Most loopers will not have an App until using the <code>*GitHub* Browser Build</code>
+    * Most users will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Trio App in App Store Connect](actions/prepare-app.md#configure-trio-app){: target="_blank" }
 
 ---

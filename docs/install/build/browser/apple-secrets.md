@@ -25,7 +25,7 @@ You need to save your information digitally, so you can copy and paste. The info
 * If your username is `my-name` then:
     * Your *GitHub* address (URL) will be: `https://github.com/my-name`
     * Your (optional but recommended) *GitHub* organization address will be : `https://github.com/my-name-org`
-    * Your LoopWorkspace repository address will be: `https://github.com/my-name-org/LoopWorkspace`
+    * Your Trio repository address will be: `https://github.com/my-name-org/Trio`
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
 
