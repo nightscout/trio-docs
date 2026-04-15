@@ -182,17 +182,6 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../0.2.x/">
-          
-  
-  
-    
-  
-  0.2.x
-
-        </a>
-</li>
 </ul>
 </div>
 </nav>
@@ -346,11 +335,11 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="build/mac/overview/">
+<a class="md-nav__link" href="build/browser/browser-build-overview/">
 <span class="md-ellipsis">
     
   
-    Build with Mac
+    Build with Browser
   
 
     
@@ -358,24 +347,12 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="build/browser/build-dev-with-browser/">
-<span class="md-ellipsis">
-    
-  
-    Build Dev with Browser
-  
-
-    
-  </span>
-</a>
-</li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="build/browser/browser-build-overview/">
+<a class="md-nav__link" href="build/mac/overview/">
 <span class="md-ellipsis">
     
   
-    Build with Browser ✏️
+    Build with Mac
   
 
     
@@ -391,7 +368,7 @@
 <span class="md-ellipsis">
     
   
-    Upgrade ✏️
+    Upgrade
   
 
     
@@ -430,7 +407,7 @@
 <span class="md-ellipsis">
     
   
-    Nightscout ✏️
+    Nightscout
   
 
     
@@ -442,7 +419,7 @@
 <span class="md-ellipsis">
     
   
-    Loop Follow ✏️
+    LoopFollow
   
 
     
@@ -454,7 +431,7 @@
 <span class="md-ellipsis">
     
   
-    XDrip4iOS ✏️
+    xDrip4iOS
   
 
     
@@ -493,19 +470,6 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../0.2.x/">
-<span class="md-ellipsis">
-    
-  
-    0.2.x
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
 </ul>
 </nav>
 </div>
@@ -532,8 +496,8 @@
 <p>Please use the navigation menu <span class="twemoji"><svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path></svg></span>, search bar <span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span>, or the menu below to find the section you are looking for.</p>
 <div class="admonition important">
 <p class="admonition-title">Attention Trio Users</p>
-<p>At this time all users should <a href="build/browser/build-dev-with-browser/">build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a> rather than the main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.</p>
-<p>Please read the <a href="../configuration/migration/trio-02x-migration/">Migration Guide</a> before updating.</p>
+<p>The <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the preferred build for everyone except expert builders.</p>
+<p>If you are coming from an older <code>main</code> version 0.2.x, please read the <a href="../configuration/migration/trio-02x-migration/">Migration Guide</a> before updating.</p>
 </div>
 <div class="grid cards">
 <ul>
@@ -551,27 +515,19 @@
 <p>Overview on building Trio using a Mac computer and <abbr title="program used to build an app">Xcode</abbr></p>
 </li>
 <li>
-<p><strong><a href="build/browser/build-dev-with-browser/">Build Dev with Browser</a></strong></p>
+<p><strong><a href="build/browser/browser-build-overview/">Build with Browser</a></strong></p>
 <hr/>
-<p>Overview on building Trio dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> using a web browser and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></p>
+<p>Overview on building Trio using a web browser and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></p>
 </li>
 <li>
-<p><strong><a href="build/browser/browser-build-overview/">Build with Browser ✏️</a></strong></p>
+<p><strong><a href="upgrade/">Upgrade</a></strong></p>
 <hr/>
-<p>🚧Documentation Under Construction🚧
-Overview on building Trio using a web browser and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></p>
+<p>How to upgrade Trio to the latest version</p>
 </li>
 <li>
-<p><strong><a href="upgrade/">Upgrade ✏️</a></strong></p>
+<p><strong><a href="ecosystem/">Companion Apps</a></strong></p>
 <hr/>
-<p>🚧Documentation Under Construction🚧
-How to upgrade Trio to the latest version</p>
-</li>
-<li>
-<p><strong><a href="ecosystem/">Companion Apps ✏️</a></strong></p>
-<hr/>
-<p>🚧Documentation Under Construction🚧  <br/>
-Apps that work alongside Trio</p>
+<p>Apps that work alongside Trio</p>
 </li>
 </ul>
 </div>

@@ -182,17 +182,6 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../0.2.x/">
-          
-  
-  
-    
-  
-  0.2.x
-
-        </a>
-</li>
 </ul>
 </div>
 </nav>
@@ -345,9 +334,22 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../browser/browser-build-overview/">
+<span class="md-ellipsis">
+    
+  
+    Build with Browser
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -358,8 +360,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_1">
+<nav aria-expanded="true" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -578,31 +580,6 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../browser/build-dev-with-browser/">
-<span class="md-ellipsis">
-    
-  
-    Build Dev with Browser
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../browser/browser-build-overview/">
-<span class="md-ellipsis">
-    
-  
-    Build with Browser ✏️
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -611,7 +588,7 @@
 <span class="md-ellipsis">
     
   
-    Upgrade ✏️
+    Upgrade
   
 
     
@@ -650,7 +627,7 @@
 <span class="md-ellipsis">
     
   
-    Nightscout ✏️
+    Nightscout
   
 
     
@@ -662,7 +639,7 @@
 <span class="md-ellipsis">
     
   
-    Loop Follow ✏️
+    LoopFollow
   
 
     
@@ -674,7 +651,7 @@
 <span class="md-ellipsis">
     
   
-    XDrip4iOS ✏️
+    xDrip4iOS
   
 
     
@@ -706,19 +683,6 @@
     
   
     Help
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../0.2.x/">
-<span class="md-ellipsis">
-    
-  
-    0.2.x
   
 
     
@@ -901,17 +865,22 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <p>The table below lists the <strong>minimum</strong> requirements to build the current release of Trio. If your <abbr title="operating system for Mac computer">macOS</abbr> or <abbr title="program used to build an app">Xcode</abbr> version is higher, you can build with a Mac.</p>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Version</p>
-<p>If your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> is not listed, e.g., 17.6.1, choose the first row that is less than your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>.  </p>
+<p>If your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version is not listed, e.g., 26.4.1, choose the first row that is lower than your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version.</p>
 </div>
 <table>
 <thead>
 <tr>
 <th style="text-align: center;"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Version</th>
-<th style="text-align: center;">minimum <abbr title="program used to build an app">Xcode</abbr></th>
-<th style="text-align: center;">minimum <abbr title="operating system for Mac computer">macOS</abbr></th>
+<th style="text-align: center;">Minimum <abbr title="program used to build an app">Xcode</abbr> Version</th>
+<th style="text-align: center;">Minimum <abbr title="operating system for Mac computer">macOS</abbr> Version</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: center;">26.4</td>
+<td style="text-align: center;">16.4</td>
+<td style="text-align: center;">15.3</td>
+</tr>
 <tr>
 <td style="text-align: center;">18.1</td>
 <td style="text-align: center;">16.1</td>
@@ -933,7 +902,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <td style="text-align: center;">14.0</td>
 </tr>
 <tr>
-<td style="text-align: center;">16.3 to 17.0</td>
+<td style="text-align: center;">17.0</td>
 <td style="text-align: center;">15.0</td>
 <td style="text-align: center;">13.5</td>
 </tr>
@@ -961,7 +930,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-appstore.png"><img alt="Screenshot: App Store" src="../img/xc-appstore.png" width="1024"/></a></p>
 </li>
 <li>
-<p>the <abbr title="program used to build an app">Xcode</abbr> application will be available from your Launchpad or Applications file once the download is complete. </p>
+<p>The <abbr title="program used to build an app">Xcode</abbr> application will be available from your Launchpad or Applications file once the download is complete. </p>
 </li>
 </ol>
 <h3 id="configure-xcode">Configure <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#configure-xcode" title="Link to this section for reference">¶</a></h3>
@@ -1004,7 +973,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 </li>
 </ol>
 <h3 id="privacy-settings">Privacy Settings<a class="headerlink" href="#privacy-settings" title="Link to this section for reference">¶</a></h3>
-<p>Sometimes, people have their <abbr title="operating system for Mac computer">macOS</abbr> privacy settings configured so that <abbr title="program used to build an app">Xcode</abbr> does not have permission to access their computer's 'Downloads' folder. This can become problematic when using the build script to build an app with <abbr title="program used to build an app">Xcode</abbr>. To ensure access is allowed, follow the following instructions:</p>
+<p>Sometimes, people have their <abbr title="operating system for Mac computer">macOS</abbr> privacy settings configured so that <abbr title="program used to build an app">Xcode</abbr> does not have permission to access their computer's 'Downloads' folder. This can become problematic when using the build script to build an app with <abbr title="program used to build an app">Xcode</abbr>. To ensure access is allowed, follow these instructions:</p>
 <ol>
 <li>
 <p>Select the 'Apple symbol' in the top left-hand corner of the screen.</p>
@@ -1038,10 +1007,10 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <p>In the top left-hand corner of the screen, select '<abbr title="program used to build an app">Xcode</abbr>'.</p>
 </li>
 <li>
-<p>Next, select 'Settings'. This will open the <abbr title="program used to build an app">Xcode</abbr>'  Settings' window.</p>
+<p>Next, select 'Settings'. This will open the <abbr title="program used to build an app">Xcode</abbr> 'Settings' window.</p>
 </li>
 <li>
-<p>In the <abbr title="program used to build an app">Xcode</abbr>'  Settings' window, select 'Locations'</p>
+<p>In the <abbr title="program used to build an app">Xcode</abbr> 'Settings' window, select 'Locations'</p>
 </li>
 <li>
 <p>In the 'Locations' tab, you will observe a drop-down menu for 'Command Line Tools'. Ensure the <abbr title="program used to build an app">Xcode</abbr> version listed matches the version you just downloaded and installed. </p>
@@ -1058,7 +1027,7 @@ Unfortunately, no. <abbr title="program used to build an app">Xcode</abbr> needs
 <p>In the top left-hand corner of the screen, select '<abbr title="program used to build an app">Xcode</abbr>'.</p>
 </li>
 <li>
-<p>Next, select 'Settings'. This will open the <abbr title="program used to build an app">Xcode</abbr>'  Settings' window.</p>
+<p>Next, select 'Settings'. This will open the <abbr title="program used to build an app">Xcode</abbr> 'Settings' window.</p>
 </li>
 <li>
 <p>Next, ensure you are in the 'Accounts' tab.</p>

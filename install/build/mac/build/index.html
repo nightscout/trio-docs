@@ -182,17 +182,6 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../0.2.x/">
-          
-  
-  
-    
-  
-  0.2.x
-
-        </a>
-</li>
 </ul>
 </div>
 </nav>
@@ -345,9 +334,22 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../browser/browser-build-overview/">
+<span class="md-ellipsis">
+    
+  
+    Build with Browser
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -358,8 +360,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_1">
+<nav aria-expanded="true" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -613,31 +615,6 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../browser/build-dev-with-browser/">
-<span class="md-ellipsis">
-    
-  
-    Build Dev with Browser
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../browser/browser-build-overview/">
-<span class="md-ellipsis">
-    
-  
-    Build with Browser ✏️
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -646,7 +623,7 @@
 <span class="md-ellipsis">
     
   
-    Upgrade ✏️
+    Upgrade
   
 
     
@@ -685,7 +662,7 @@
 <span class="md-ellipsis">
     
   
-    Nightscout ✏️
+    Nightscout
   
 
     
@@ -697,7 +674,7 @@
 <span class="md-ellipsis">
     
   
-    Loop Follow ✏️
+    LoopFollow
   
 
     
@@ -709,7 +686,7 @@
 <span class="md-ellipsis">
     
   
-    XDrip4iOS ✏️
+    xDrip4iOS
   
 
     
@@ -741,19 +718,6 @@
     
   
     Help
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../0.2.x/">
-<span class="md-ellipsis">
-    
-  
-    0.2.x
   
 
     
@@ -951,21 +915,24 @@
 </ul>
 </div>
 <h2 id="build-trio-with-xcode">Build Trio with <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#build-trio-with-xcode" title="Link to this section for reference">¶</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Dev Branch</p>
-<p>At this time all users should build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> rather than the main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.</p>
-<p>Please read the <a href="../../../../configuration/migration/trio-02x-migration/">Migration Guide</a> before updating.</p>
-<p>This code is undergoing testing and receives rapid updates. Be sure to follow along in <a href="https://discord.triodocs.org">Trio Discord</a> and to download the latest code and update frequently (at least weekly).</p>
+<div class="admonition warning">
+<p class="admonition-title">Release 0.7.0 and newer</p>
+<p>The main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the preferred build for everyone except expert builders.</p>
+<p>If you are coming from an older main version 0.2.x, please read the <a href="../../../../configuration/migration/trio-02x-migration/">Migration Guide</a> before updating.</p>
+<p>All Trio users are encouraged to follow along in <a href="https://discord.triodocs.org">Trio Discord</a>.</p>
 </div>
 <h3 id="download-trio-with-trio-build-select-script">Download Trio with 'Trio Build Select Script'<a class="headerlink" href="#download-trio-with-trio-build-select-script" title="Link to this section for reference">¶</a></h3>
 <p>Trio uses the Trio Build Select Script to download Trio's source code, prepare your computer, and build Trio. Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.</p>
 <h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Link to this section for reference">¶</a></h4>
+<div class="admonition tip">
+<p>Shortcut: Tap on the CMD and spacebar to open Spotlight search and type <code>Ter</code> and then return to open the <abbr title="interface for entering commands to the computer">Terminal</abbr></p>
+</div>
 <ol>
 <li>
 <p>On your Mac computer, go to the 'Finder' app.</p>
 </li>
 <li>
-<p>Next, select' Applications' in the navigation pane on the left of the screen.</p>
+<p>Next, select 'Applications' in the navigation pane on the left of the screen.</p>
 </li>
 <li>
 <p>In the 'Applications' folder, scroll to locate and open the 'Utilities' folder.</p>
@@ -975,7 +942,7 @@
 </li>
 </ol>
 <h4 id="run-the-trio-build-select-script-in-terminal">Run the 'Trio Build Select Script' in '<abbr title="interface for entering commands to the computer">Terminal</abbr>'<a class="headerlink" href="#run-the-trio-build-select-script-in-terminal" title="Link to this section for reference">¶</a></h4>
-<p>The Trio Build Select Script is designed to walk you through downloading Trio. Please take some to read each step carefully. </p>
+<p>The Trio Build Select Script is designed to walk you through downloading Trio. Please take some time to read each step carefully. </p>
 <ol>
 <li>
 <p>Copy the below script by hovering the mouse near the bottom right side of the text and clicking the copy icon. </p>
@@ -987,7 +954,7 @@
 <p>Paste the 'Build Select Script' into <abbr title="interface for entering commands to the computer">Terminal</abbr>. Press return to run the script.</p>
 </li>
 <li>
-<p>Running the script will display a series of menu options in the '<abbr title="interface for entering commands to the computer">Terminal</abbr>' window, as shown below. To build Trio, you will type 1, and the press return. </p>
+<p>Running the script will display a series of menu options in the '<abbr title="interface for entering commands to the computer">Terminal</abbr>' window, as shown below. To build Trio, you will type 1, and then press return. </p>
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs1.png"><img alt="Screenshot: Build Select Script 1" src="../img/xc-bs1.png" width="682"/></a></p>
 </li>
 <li>
@@ -995,12 +962,7 @@
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs2.png"><img alt="Screenshot: Build Select Script 2" src="../img/xc-bs2.png" width="682"/></a></p>
 </li>
 <li>
-<p>Next, the script will prompt you to select which Trio <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to download. Type 1 and press return. </p>
-<div class="admonition important">
-<p class="admonition-title">Dev Branch</p>
-<p>Until the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets updated past 0.2.x, it is recommended all users build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead of <code>main</code>.</p>
-</div>
-<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-bs3.png"><img alt="Screenshot: Build Select Script 3" src="../img/xc-bs3.png" width="682"/></a></p>
+<p>Next, the script will prompt you to select which Trio <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to download. It is recommended you Type 1 and press return to select the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. </p>
 </li>
 <li>
 <p>Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the <abbr title="interface for entering commands to the computer">Terminal</abbr> window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. </p>
@@ -1070,14 +1032,14 @@
 </li>
 </ol>
 <h3 id="first-build-messages">First Build Messages<a class="headerlink" href="#first-build-messages" title="Link to this section for reference">¶</a></h3>
-<p>If this is your first time building an app with this device. You may get some of the following messages:</p>
+<p>If this is your first time building an app with this device, you may get some of the following messages:</p>
 <ul>
 <li>
 <p>"Device "YOUR DEVICE NAME" isn't registered in your developer account."</p>
 <ul>
 <li>If this message occurs, select 'Register Device', and Trio will continue to build.</li>
 </ul>
-<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc3.png"><img alt="Screenshot: Xcode 3" src="../img/xc-xc3.png" width='300"'/></a></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc3.png"><img alt="Screenshot: Xcode 3" src="../img/xc-xc3.png" width="300"/></a></p>
 </li>
 <li>
 <p>"Unlock "YOUR DEVICE NAME" to Continue"</p>
@@ -1086,7 +1048,7 @@
 </ul>
 </li>
 </ul>
-<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc4.png"><img alt="Screenshot: Xcode 4" src="../img/xc-xc4.png" width='500"'/></a></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-xc4.png"><img alt="Screenshot: Xcode 4" src="../img/xc-xc4.png" width="500"/></a></p>
 <ul>
 <li>
 <p>"code sign wants to access key "access" in your keychain".</p>
@@ -1094,7 +1056,7 @@
 <li>Enter your computer password and press 'Always Allow'. </li>
 <li>Please note: This message may appear numerous times. <strong>Do not get frustrated and press 'Deny'</strong>. Just keep entering your computer password and press 'Always Allow'.</li>
 </ul>
-<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-codesign.png"><img alt="Screenshot: Codesign" src="../img/xc-codesign.png" width='500"'/></a></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-codesign.png"><img alt="Screenshot: Codesign" src="../img/xc-codesign.png" width="500"/></a></p>
 </li>
 </ul>
 <h2 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Link to this section for reference">¶</a></h2>
@@ -1118,11 +1080,11 @@
 <h2 id="successful-build">Successful Build<a class="headerlink" href="#successful-build" title="Link to this section for reference">¶</a></h2>
 <p>Congratulations on building Trio, and welcome to the community.<br/>
 Please see the <a href="../../../../configuration/new-user-setup/">New User Guide</a> to get started with Trio. </p>
-<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-congratulations.gif"><img alt="Alt Text" src="../img/xc-congratulations.gif" width='500"'/></a></p>
+<p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-congratulations.gif"><img alt="Alt Text" src="../img/xc-congratulations.gif" width="500"/></a></p>
 <h2 id="free-apple-developer-account-build">Free Apple Developer Account Build<a class="headerlink" href="#free-apple-developer-account-build" title="Link to this section for reference">¶</a></h2>
 <h3 id="prepare-to-sign">Prepare to Sign<a class="headerlink" href="#prepare-to-sign" title="Link to this section for reference">¶</a></h3>
-<p>You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Accout option or if you want to build to a simulator on your computer.</p>
-<p>The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortnately, it doesnt work that way.</p>
+<p>You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Account option or if you want to build to a simulator on your computer.</p>
+<p>The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortunately, it doesn't work that way.</p>
 <h3 id="select-the-trio-folder">Select the Trio Folder<a class="headerlink" href="#select-the-trio-folder" title="Link to this section for reference">¶</a></h3>
 <div class="admonition danger">
 <p class="admonition-title">Don't touch that button!</p>
@@ -1134,7 +1096,7 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 <p>Follow the 'Build Select Script' prompts to open <abbr title="program used to build an app">Xcode</abbr>. Ensure you follow the instructions on each screen.</p>
 </li>
 <li>
-<p>Once <abbr title="program used to build an app">Xcode</abbr> is open, in the navigation pane one the left side of the screen, double click on 'Trio'</p>
+<p>Once <abbr title="program used to build an app">Xcode</abbr> is open, in the navigation pane on the left side of the screen, double click on 'Trio'</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-free1.png"><img alt="Screenshot: Free Build - Xcode 1" src="../img/xc-free1.png" width="1024"/></a></p>
 </li>
 <li>
@@ -1164,7 +1126,7 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 <p>First, ensure the target 'Trio' is selected.</p>
 </li>
 <li>
-<p>Next, we are going to select the 'Signing &amp; Capabilities tab.</p>
+<p>Next, we are going to select the 'Signing &amp; Capabilities' tab.</p>
 </li>
 <li>
 <p>We will then filter the capabilities to 'All'</p>
@@ -1184,25 +1146,20 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 <h3 id="disable-features">Disable Features<a class="headerlink" href="#disable-features" title="Link to this section for reference">¶</a></h3>
 <p>This section is required if you are using the free account. Some features of Trio are not available with a free Apple Developer Account. You will need to remove features that are not supported.</p>
 <ol>
-<li>
-<p>You must remove unsupported capabilities from 2 targets. This is best done as you sign each target:</p>
-<ul>
-<li><strong>Trio Target:</strong> Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications</li>
-<li><strong>Trio WatchKit Extension Target:</strong> Siri</li>
+<li>You must remove unsupported capabilities from the <strong>Trio Target</strong>. This is best done when you sign the target:<ul>
+<li>Delete <strong>Push Notifications</strong></li>
+<li>Delete <strong><abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> Tag Reading</strong> (<abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> Scan can stay)</li>
+<li>For <strong>Healthkit</strong>: Unselect Healthkit background delivery and then reselect it. <ul>
+<li>The free build doesn't allow HealthKit Access (Verifiable Health Records) capabilities, which is unchecked by default, so shouldn't be an issue, but the only way that I've found to clear the Healthkit Access error is to unselect/reselect background delivery.</li>
 </ul>
 </li>
-<li>
-<p>Add the <code>SIRI_DISABLED</code> keyword to the ConfigOverride.xcconfig file:</p>
-<ul>
-<li>Click on the filename in the left pane of <abbr title="program used to build an app">Xcode</abbr> and view it in the <abbr title="program used to build an app">Xcode</abbr> editor</li>
 </ul>
 </li>
 </ol>
 <p><strong>Details about removing unsupported capabilities:</strong></p>
 <ul>
-<li>You must disable Push Notification, Siri, Near Field Communication, and Time Sensitive Notifications<ul>
-<li>If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target</li>
-<li>If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target</li>
+<li>You must disable Push Notification, Near Field Communication Tag Reading, and unselect/reselect HealthKit<ul>
+<li>You will see an error message when you select (personal team) for the <strong>Trio Target</strong></li>
 </ul>
 </li>
 <li>The <abbr title="program used to build an app">Xcode</abbr> error message starts with "Cannot create . . ." with a list of all the attributes not supported.<ul>
@@ -1218,6 +1175,9 @@ Please see the <a href="../../../../configuration/new-user-setup/">New User Guid
 <p>Libre transmitters require <em>Near Field Communication (<abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr>)</em> for background tag reading.<br/>
  ❌ This capability is not available when building Trio with a <strong>free</strong> Apple Developer Account.<br/>
  You need a <strong>paid</strong> Apple Developer Account for that.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Live Activity / Dynamic Island not supported with a FREE Apple Developer Account</p>
 </div>
 <h2 id="end-of-free-account-steps">End of Free Account Steps<a class="headerlink" href="#end-of-free-account-steps" title="Link to this section for reference">¶</a></h2>
 <p>You have now completed the additional steps required for building with a free Apple developer account. You can return to <a href="#build-trio">Build Trio</a> and complete the remaining steps. </p>

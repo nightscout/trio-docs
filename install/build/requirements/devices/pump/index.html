@@ -182,17 +182,6 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../../0.2.x/">
-          
-  
-  
-    
-  
-  0.2.x
-
-        </a>
-</li>
 </ul>
 </div>
 </nav>
@@ -387,6 +376,15 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#medtrum-nano">
+<span class="md-ellipsis">
+      
+        Medtrum Nano
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -422,7 +420,7 @@
 <span class="md-ellipsis">
     
   
-    Mac ✏️
+    Mac
   
 
     
@@ -434,7 +432,7 @@
 <span class="md-ellipsis">
     
   
-    Compatibility Matrix ✏️
+    Compatibility Matrix
   
 
     
@@ -483,11 +481,11 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../mac/overview/">
+<a class="md-nav__link" href="../../../browser/browser-build-overview/">
 <span class="md-ellipsis">
     
   
-    Build with Mac
+    Build with Browser
   
 
     
@@ -495,24 +493,12 @@
 <span class="md-nav__icon md-icon"></span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../browser/build-dev-with-browser/">
-<span class="md-ellipsis">
-    
-  
-    Build Dev with Browser
-  
-
-    
-  </span>
-</a>
-</li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../browser/browser-build-overview/">
+<a class="md-nav__link" href="../../../mac/overview/">
 <span class="md-ellipsis">
     
   
-    Build with Browser ✏️
+    Build with Mac
   
 
     
@@ -528,7 +514,7 @@
 <span class="md-ellipsis">
     
   
-    Upgrade ✏️
+    Upgrade
   
 
     
@@ -567,7 +553,7 @@
 <span class="md-ellipsis">
     
   
-    Nightscout ✏️
+    Nightscout
   
 
     
@@ -579,7 +565,7 @@
 <span class="md-ellipsis">
     
   
-    Loop Follow ✏️
+    LoopFollow
   
 
     
@@ -591,7 +577,7 @@
 <span class="md-ellipsis">
     
   
-    XDrip4iOS ✏️
+    xDrip4iOS
   
 
     
@@ -623,19 +609,6 @@
     
   
     Help
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../../0.2.x/">
-<span class="md-ellipsis">
-    
-  
-    0.2.x
   
 
     
@@ -694,6 +667,15 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#medtrum-nano">
+<span class="md-ellipsis">
+      
+        Medtrum Nano
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -716,12 +698,12 @@
 <li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros pumps</li>
 <li>Older Medtronic pumps</li>
 <li>DanaRS-v3, Dana-i</li>
-<li>Medtrum - (in testing)</li>
+<li>Medtrum</li>
 <li>Tandem Mobi - (in early development)</li>
 </ul>
 <p>No other pumps work with Trio at this time, but other open-source closed-loop options, such as <a href="https://androidaps.readthedocs.io/en/latest/index.html">AAPS: Android Artificial Pancreas System</a> and <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a>, support other pumps.</p>
 <h3 id="omnipod-pumps"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Pumps<a class="headerlink" href="#omnipod-pumps" title="Link to this section for reference">¶</a></h3>
-<div class="admonition not">
+<div class="admonition note">
 <p class="admonition-title">Reminder and Disclaimer</p>
 <p>The use of <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.</p>
 </div>
@@ -883,6 +865,16 @@
 <p>The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the <em>Trio</em> app.
 <a href="https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3">Check here</a> to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/danars.png"><img alt="DanaRS-v3" src="../img/danars.png" width="250"/></a></p>
+<h3 id="medtrum-nano">Medtrum Nano<a class="headerlink" href="#medtrum-nano" title="Link to this section for reference">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">All versions are supported!</p>
+<p>Both 200U (MD0201 &amp; MD8201) and 300U (MD8301) version are supported with the correct version of the <em>Trio</em> app.</p>
+</div>
+<p><strong>Every Medtrum patch pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the <em>Trio</em> app.</strong></p>
+<p>The Medtrum patch pump is the second tubeless pump option available to the <em>Trio</em> app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/medtrum.jpeg"><img alt="Medtrum Nano 200U" src="../img/medtrum.jpeg" width="250"/></a></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

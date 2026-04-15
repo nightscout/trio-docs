@@ -182,17 +182,6 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../0.2.x/">
-          
-  
-  
-    
-  
-  0.2.x
-
-        </a>
-</li>
 </ul>
 </div>
 </nav>
@@ -345,9 +334,22 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../browser/browser-build-overview/">
+<span class="md-ellipsis">
+    
+  
+    Build with Browser
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -358,8 +360,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_1">
+<nav aria-expanded="true" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -577,31 +579,6 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../browser/build-dev-with-browser/">
-<span class="md-ellipsis">
-    
-  
-    Build Dev with Browser
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../browser/browser-build-overview/">
-<span class="md-ellipsis">
-    
-  
-    Build with Browser ✏️
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -610,7 +587,7 @@
 <span class="md-ellipsis">
     
   
-    Upgrade ✏️
+    Upgrade
   
 
     
@@ -649,7 +626,7 @@
 <span class="md-ellipsis">
     
   
-    Nightscout ✏️
+    Nightscout
   
 
     
@@ -661,7 +638,7 @@
 <span class="md-ellipsis">
     
   
-    Loop Follow ✏️
+    LoopFollow
   
 
     
@@ -673,7 +650,7 @@
 <span class="md-ellipsis">
     
   
-    XDrip4iOS ✏️
+    xDrip4iOS
   
 
     
@@ -705,19 +682,6 @@
     
   
     Help
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../0.2.x/">
-<span class="md-ellipsis">
-    
-  
-    0.2.x
   
 
     
@@ -883,7 +847,7 @@
 <p><strong>Did you check your Apple developer account for a new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there is a new license agreement.</p>
 </li>
 <li>
-<p><strong>Do you have a new computer, never used to build Trio?</strong> Did you add you <a href="../xcode-setup/#add-apple-id-to-xcode">Apple ID</a> to <abbr title="program used to build an app">Xcode</abbr>?</p>
+<p><strong>Do you have a new computer, never used to build Trio?</strong> Did you add your <a href="../xcode-setup/#add-apple-id-to-xcode">Apple ID</a> to <abbr title="program used to build an app">Xcode</abbr>?</p>
 </li>
 <li>
 <p><strong>Did you reboot, i.e., restart, your computer after updating <abbr title="program used to build an app">Xcode</abbr>?</strong> You should reboot following <abbr title="program used to build an app">Xcode</abbr> installation or update and you must make sure your command line tools match the version of <abbr title="program used to build an app">Xcode</abbr> you just installed. <a href="../xcode-setup/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a></p>
@@ -892,18 +856,18 @@
 <p><strong>Did you get a fresh download of Trio code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the Build Select Script, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download.</p>
 </li>
 <li>
-<p><strong>Are you are using a free developer account?</strong> Make sure you finished the removal of Siri and Push Notification capabilities described in <a href="../build/#free-apple-developer-account-build">Free Developer Account Build</a>.</p>
+<p><strong>Are you using a free developer account?</strong> Make sure you finished the removal of Siri and Push Notification capabilities described in <a href="../build/#free-apple-developer-account-build">Free Developer Account Build</a>.</p>
 </li>
 <li>
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, Trio might not build. Deleting <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> beta from a phone is a pain...so don't install it unless you know what you are doing.</p>
 </li>
 </ol>
 <h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Link to this section for reference">¶</a></h2>
-<p>If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code.</p>
+<p>If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Trio code.</p>
 <ol>
 <li>Open your project in <abbr title="program used to build an app">Xcode</abbr> as normal. Then go to the menu bar at the top of the screen and find the <code>Product</code> menu item. Use the drop down selection for <code>Clean Build Folder</code> or press <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-k">K</kbd></span>. Either will work the same. Wait for the clean to finish before trying to build again.</li>
 <li>On the far right, next to the name Full Path is the folder name that <abbr title="program used to build an app">Xcode</abbr> will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
-<li>If you are updating <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and did not <a href="../update/#delete-provisioning-profiles">Delete Old Provisioning Profiles</a>, do it now</li>
+<li>If you are updating Trio and did not <a href="../update/#delete-provisioning-profiles">Delete Old Provisioning Profiles</a>, do it now</li>
 <li>Return to <abbr title="program used to build an app">Xcode</abbr> and try building your app again.</li>
 <li>Still failing for phone or watch or both? Try the <a href="#unpair-and-reboot">Unpair and Reboot</a> procedure.</li>
 </ol>
@@ -982,7 +946,7 @@ Then, if you need to post for help, please include enough information with the p
 <ul>
 <li>Read the error message</li>
 <li>Try to figure out the problem</li>
-<li>If you need help, reach out to your favorite <a href="https://loopkit.github.io/loopdocs/intro/loopdocs-how-to/#how-to-ask-for-help"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Social Media</a> site</li>
+<li>If you need help, reach out via <a href="https://facebook.triodocs.org">Facebook</a> or <a href="https://discord.triodocs.org">Discord</a></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">WARNINGS</p>
@@ -998,7 +962,6 @@ Then, if you need to post for help, please include enough information with the p
 <li><a href="../xcode-setup/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> command line tools</a></li>
 </ul>
 </div>
-<p><strong>ADD TRIO SPECIFIC BUILD ERRORS HERE</strong></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
