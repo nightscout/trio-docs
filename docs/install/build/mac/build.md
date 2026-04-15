@@ -21,13 +21,13 @@
     
 ## Build Trio with Xcode
 
-!!! important "Dev Branch"
+!!! warning "Release 0.7.0 and newer"
 
-    At this time all users should build the dev branch rather than the main branch. We are in the process of merging dev into main. Once that is complete, you will be able to build main again.
+    The main branch is the preferred build for everyone except expert builders.
 
-    Please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older main version 0.2.x, please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
     
-    This code is undergoing testing and receives rapid updates. Be sure to follow along in [Trio Discord](https://discord.triodocs.org) and to download the latest code and update frequently (at least weekly).
+    All Trio users are encouraged to follow along in [Trio Discord](https://discord.triodocs.org).
 
 ### Download Trio with 'Trio Build Select Script'
 
@@ -35,9 +35,12 @@ Trio uses the Trio Build Select Script to download Trio's source code, prepare y
 
 #### Open Terminal
 
+!!! tip ""
+    Shortcut: Tap on the CMD and spacebar to open Spotlight search and type `Ter` and then return to open the Terminal
+
 1. On your Mac computer, go to the 'Finder' app.
 
-2. Next, select' Applications' in the navigation pane on the left of the screen.
+2. Next, select 'Applications' in the navigation pane on the left of the screen.
 
 3. In the 'Applications' folder, scroll to locate and open the 'Utilities' folder.
 
@@ -45,7 +48,7 @@ Trio uses the Trio Build Select Script to download Trio's source code, prepare y
 
 #### Run the 'Trio Build Select Script' in 'Terminal'
 
-The Trio Build Select Script is designed to walk you through downloading Trio. Please take some to read each step carefully. 
+The Trio Build Select Script is designed to walk you through downloading Trio. Please take some time to read each step carefully. 
 
 1. Copy the below script by hovering the mouse near the bottom right side of the text and clicking the copy icon. 
 
@@ -56,7 +59,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
 
 2. Paste the 'Build Select Script' into Terminal. Press return to run the script.
 
-3. Running the script will display a series of menu options in the 'Terminal' window, as shown below. To build Trio, you will type 1, and the press return. 
+3. Running the script will display a series of menu options in the 'Terminal' window, as shown below. To build Trio, you will type 1, and then press return. 
 
     ![Screenshot: Build Select Script 1](img/xc-bs1.png){width="682"}
       {align= "center"}
@@ -66,14 +69,7 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
     ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
       {align= "center"}
 
-5. Next, the script will prompt you to select which Trio branch you want to download. Type 1 and press return. 
-
-    !!! important "Dev Branch"
-
-        Until the `main` branch gets updated past 0.2.x, it is recommended all users build the `dev` branch instead of `main`.
-
-    ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
-      {align= "center"}
+5. Next, the script will prompt you to select which Trio branch you want to download. It is recommended you Type 1 and press return to select the `main` branch. 
 
 6. Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the Terminal window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. 
 
@@ -142,25 +138,25 @@ The Trio Build Select Script is designed to walk you through downloading Trio. P
 
 ### First Build Messages
 
-If this is your first time building an app with this device. You may get some of the following messages:
+If this is your first time building an app with this device, you may get some of the following messages:
 
 - "Device "YOUR DEVICE NAME" isn't registered in your developer account."
     - If this message occurs, select 'Register Device', and Trio will continue to build.
 
-    ![Screenshot: Xcode 3](img/xc-xc3.png){width=300"}
+    ![Screenshot: Xcode 3](img/xc-xc3.png){width="300"}
       {align= "center"}
 
 - "Unlock "YOUR DEVICE NAME" to Continue"
     - Unlock your device.
 
-   ![Screenshot: Xcode 4](img/xc-xc4.png){width=500"}
+   ![Screenshot: Xcode 4](img/xc-xc4.png){width="500"}
      {align= "center"}
 
 - "code sign wants to access key "access" in your keychain".
     - Enter your computer password and press 'Always Allow'. 
     - Please note: This message may appear numerous times. **Do not get frustrated and press 'Deny'**. Just keep entering your computer password and press 'Always Allow'.
 
-    ![Screenshot: Codesign](img/xc-codesign.png){width=500"}
+    ![Screenshot: Codesign](img/xc-codesign.png){width="500"}
       {align= "center"}
 
 ## Build Errors
@@ -187,16 +183,16 @@ Once you've resolved a build error and started the build process again, Xcode wi
 Congratulations on building Trio, and welcome to the community.  
 Please see the [New User Guide](../../../configuration/new-user-setup.md) to get started with Trio. 
 
-![Alt Text](img/xc-congratulations.gif){width=500"}
+![Alt Text](img/xc-congratulations.gif){width="500"}
 {align= "center"}
 
 ## Free Apple Developer Account Build
 
 ### Prepare to Sign
 
- You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Accout option or if you want to build to a simulator on your computer.
+ You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Account option or if you want to build to a simulator on your computer.
 
-The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortnately, it doesnt work that way.
+The instructions found on this page are for the first build.  With the Free version, you need to build every week. You cannot build again on day five and hope for another seven days. Unfortunately, it doesn't work that way.
 
 ### Select the Trio Folder
 
@@ -207,7 +203,7 @@ Follow the directions and compare your Xcode screen to the graphics as you walk 
 
 1. Follow the 'Build Select Script' prompts to open Xcode. Ensure you follow the instructions on each screen.
 
-2. Once Xcode is open, in the navigation pane one the left side of the screen, double click on 'Trio'
+2. Once Xcode is open, in the navigation pane on the left side of the screen, double click on 'Trio'
 
     ![Screenshot: Free Build - Xcode 1](img/xc-free1.png){width="1024"}
       {align="center"}
@@ -234,7 +230,7 @@ The graphic below indicates in red the places you need to click in order to begi
 
 1. First, ensure the target 'Trio' is selected.
 
-2. Next, we are going to select the 'Signing & Capabilities tab.
+2. Next, we are going to select the 'Signing & Capabilities' tab.
 
 3. We will then filter the capabilities to 'All'
 
@@ -254,19 +250,16 @@ The graphic below indicates in red the places you need to click in order to begi
 
 This section is required if you are using the free account. Some features of Trio are not available with a free Apple Developer Account. You will need to remove features that are not supported.
 
-1. You must remove unsupported capabilities from 2 targets. This is best done as you sign each target:
-
-    - **Trio Target:** Push Notifications; Siri, Near Field Communication, and Time Sensitive Notifications
-    - **Trio WatchKit Extension Target:** Siri
-    
-2. Add the `SIRI_DISABLED` keyword to the ConfigOverride.xcconfig file:
-    - Click on the filename in the left pane of Xcode and view it in the Xcode editor
+1. You must remove unsupported capabilities from the **Trio Target**. This is best done when you sign the target:
+    * Delete **Push Notifications**
+    * Delete **NFC Tag Reading** (NFC Scan can stay)
+    * For **Healthkit**: Unselect Healthkit background delivery and then reselect it. 
+        * The free build doesn't allow HealthKit Access (Verifiable Health Records) capabilities, which is unchecked by default, so shouldn't be an issue, but the only way that I've found to clear the Healthkit Access error is to unselect/reselect background delivery.
 
 **Details about removing unsupported capabilities:**
 
-- You must disable Push Notification, Siri, Near Field Communication, and Time Sensitive Notifications
-    - If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
-    - If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
+- You must disable Push Notification, Near Field Communication Tag Reading, and unselect/reselect HealthKit
+    - You will see an error message when you select (personal team) for the **Trio Target**
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
     - Scroll down and click on the little trash can icon next to each unsupported attribute
 - Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone
@@ -277,6 +270,8 @@ This section is required if you are using the free account. Some features of Tri
     Libre transmitters require *Near Field Communication (NFC)* for background tag reading.  
      ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
      You need a **paid** Apple Developer Account for that.
+
+!!! info "Live Activity / Dynamic Island not supported with a FREE Apple Developer Account" 
 
 ## End of Free Account Steps
 

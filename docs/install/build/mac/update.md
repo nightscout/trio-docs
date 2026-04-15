@@ -60,107 +60,9 @@ Apple frequently updates its License Agreement for the Developer Program. You ne
 
 ## Update Trio with Xcode
 
-### Open Terminal
+The easiest way to update *Trio* is to download a fresh copy.
 
-1. On your Mac computer, go to the 'Finder' app.
-
-2. Next, select' Applications' in the navigation pane on the left of the screen.
-
-3. In the 'Applications' folder, scroll to locate and open the 'Utilities' folder.
-
-4. Scroll to and open the 'Terminal' application.
-
-#### Run the 'Build Select Script' in 'Terminal'
-
-The Build Select Script is designed to walk you through downloading Trio. Please take some to carefully read each step. 
-
-1. Copy the below script by hovering the mouse near the bottom right side of the text and clicking the copy icon. 
-
-    ```
-      /bin/bash -c "$(curl -fsSL \
-        https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/TrioBuildSelectScript.sh)"
-    ```
-
-2. Paste the 'Build Select Script' into Terminal. Press return to run the script.
-
-3. Running the script will display a series of menu options in the 'Terminal' window as shown below. To build Trio, you will type 1, and the press return. 
-
-    ![Screenshot: Build Select Script 1](img/xc-bs1.png){width="682"}
-      {align= "center"}
-
-4. Next, the script will inform you that you are downloading open-source software. If you understand the warning, you will Type 1 and press return.
-
-    ![Screenshot: Build Select Script 2](img/xc-bs2.png){width="682"}
-      {align= "center"}
-
-5. Next, the script will prompt you to select which Trio branch you want to download. Unless you are actively contributing to app development, you will type 1 and press return. 
-
-    ![Screenshot: Build Select Script 3](img/xc-bs3.png){width="682"}
-      {align= "center"}
-
-6. Next, the script will begin downloading the Trio source code. Depending on your download speed, this can take 3 minutes to 30 minutes. While this happens, you may read words in the Terminal window that you do not understand. That is normal. If the download takes a while, you can leave the room and return later to check progress. 
-
-7. Once successfully downloaded, your terminal window will appear as below.
-
-    ![Screenshot: Build Select Script 4](img/xc-bs4.png){width="682"}
-      {align= "center"}
-
-8. If you receive a failure message, scroll up through the window to find the error message(s). For assistance, visit [Xcode Errors with Build Select](build-errors.md#xcode-errors-with-build-select).
-
-9. You can hit return to continue if you did not receive errors.
-
-10. If you have previously built with the build script, you will be asked to confirm that your Team ID is correct. If it is, you can type 1 and press return.
-
-    ![Screenshot: Build Select Script 8](img/xc-bs8.png){width="682"}
-      {align= "center"}
-
-11. The next question asks if you want to ensure a year with your new build. Unless you have a specific reason, type 1 and press return. 
-
-    ![Screenshot: Build Select Script 9](img/xc-bs9.png){width="682"}
-      {align= "center"}
-
-12. In the next Terminal window, you will be prompted to do the following:
-
-    - Unlock your phone.
-    - If you have an Apple Watch, ensure it is unlocked and on your wrist.
-    - Plug your phone into the computer.
-    - Press return to continue.
-    
-    ![Screenshot: Build Select Script 10](img/xc-bs10.png){width="682"}
-      {align= "center"}
-
-### Build Trio 
-
-1. Next, the script will open the Xcode application. When Xcode first opens, it takes some time for the project and its associated packages to load. You might see a progress wheel with the words 'downloading', 'copying', or 'indexing'. 
-
-2. Next, we will set our build destination (a.k.a. your device). At the top of the screen, there is a progress/information bar. To the left of the bar, you will see 'Trio' and the logo. Next to this is your build location. Click this and select the device you would like to build to. 
-
-    ![Screenshot: Xcode 1](img/xc-xc1.png){width="1024"}
-      {align= "center"}
-
-3. We will now build to the location we selected. You can now select the run button. 
-
-    ![Screenshot: Xcode 2](img/xc-xc2.png){width="1024"}
-      {align= "center"}
-
-4. Once you press the run button, you can monitor progress in the information bar.
-
-5. Once the build is complete, a transient message will appear on the window saying, "Build Succeeded." Trio will launch on your phone or build device. You can unplug the device from the computer. When you unplug the device, a message will pop up in Xcode noting the lost connection. Acknowledge this message. Once unplugged, the Trio app will close on the phone, and users must re-open the application. 
-
-### Build Errors
-
-!!! warning "Yellow Errors"
-
-    If you receive any yellow errors or warnings, don't freak out. This is normal, and Trio will function as normal. Please do not try to fix these errors, as you will likely do more harm than good.
-
-!!! bug "Red Errors"
-
-    If you receive any red errors, your application will fail to be built. Please visit the [Build Errors](build-errors.md) page to troubleshoot the errors. Once these errors have been addressed, you can return to the build documents and continue on.
-
-###Successful Update
-
-![Alt Text](img/xc-update.gif){width=500"}
-{align= "center"}
+Once you completed the [Prepare to Update](#prepare-to-update) steps listed above, head over to [Build with Mac](build.md#open-terminal) and follow the directions.
 
 ## Additionals
 New Trio users do not need to read the rest of this page.
@@ -169,7 +71,7 @@ New Trio users do not need to read the rest of this page.
 
 If you build frequently, you do not have to delete the profiles every time. When the build script asks if you want to "Ensure a Year?", you can skip that step.
 
-On the other hand, you may need to delete the provisioning profiles or saved Xcode information about a version of currently on your computer. The maintenance utilities found in the BuildSelectScrip can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.
+On the other hand, you may need to delete the provisioning profiles or saved Xcode information about a version of currently on your computer. The maintenance utilities found in the BuildSelectScript can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.
 
 ### Delete Provisioning Profiles
 
@@ -236,7 +138,7 @@ Many people find updating Xcode from the App Store to be incredibly slow - espec
 
 The instructions do not hold your hand.
 
-* Your macOS must be at the minimum version (or newer) to support the version of Xcode you're about the download
+* Your macOS must be at the minimum version (or newer) to support the version of Xcode you're about to download
 * You need to know how to log into your Apple Developer account and navigate those menus
 * You need to know how to use Finder to navigate to Downloads
 * You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)

@@ -7,7 +7,7 @@
 
 !!! abstract "Summary"
 
-    To build the Trio app on a Mac, your computer, iPhone, and Xcode must have compatible versions. If you are buying a Mac to use the build with the Mac method, choose one that can be updated to the Sequoia (macOS 15) operating system and has at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+    To build the Trio app on a Mac, your computer, iPhone, and Xcode must have compatible versions. If you are buying a Mac to use the build with the Mac method, choose one that can be updated to the Tahoe (macOS 26) operating system and has at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"
@@ -44,7 +44,7 @@ Find your iPhone iOS version in the table below.
 
 1. On your iPhone, click on the 'Settings' application.
 
-2. Next,  select the 'General' option.
+2. Next, select the 'General' option.
 
 3. Then, select the 'About' option.
 
@@ -82,7 +82,7 @@ In order to install Xcode on your Mac computer, your hard drive must have at lea
     ![Screenshot: More information image](img/xc-storage2.png){width="348"}
       {align= "center"}
 
-4. Ensure the 'General' tab is open. Scroll down to the' Storage' section. Your hard drive will be listed with the volume available out of the total capacity. 
+4. Ensure the 'General' tab is open. Scroll down to the 'Storage' section. Your hard drive will be listed with the volume available out of the total capacity. 
 
 5. As noted above, a minimum of 50GB capacity is required to install Xcode and its components. 
 

@@ -242,10 +242,28 @@ nav:
               - Insulin Pump: install/build/requirements/devices/pump.md
               - CGM: install/build/requirements/devices/cgm.md
               - iPhone: install/build/requirements/devices/iphone.md
-              - Mac ✏️: install/build/requirements/devices/mac.md # TODO
-              - Compatibility Matrix ✏️: install/build/requirements/devices/compatibility-matrix.md # TODO
+              - Mac: install/build/requirements/devices/mac.md # TODO
+              - Compatibility Matrix: install/build/requirements/devices/compatibility-matrix.md # TODO
           - Apple Developer Account: install/build/requirements/apple-developer.md
       - Build:
+          - Build with Browser:
+              - Browser Build Overview: install/build/browser/browser-build-overview.md
+              - Secrets Introduction: install/build/browser/intro-secrets.md
+              - Create GitHub Account: install/build/browser/create-github-account.md
+              - Apple Secrets: install/build/browser/apple-secrets.md
+              - Fork and Prepare your Trio Repository: install/build/browser/fork-prepare-repo.md
+              - GitHub Actions:
+                  - Validate Secrets: install/build/browser/actions/validate-secrets.md
+                  - Add Identifiers: install/build/browser/actions/add-identifiers.md
+                  - Prepare App: install/build/browser/actions/prepare-app.md
+                  - Prepare TestFlight: install/build/browser/actions/prepare-testflight.md
+                  - Create Certificates: install/build/browser/actions/generate-certificates.md
+                  - Build the App: install/build/browser/actions/build-app.md
+              - Install Trio from TestFlight: install/build/browser/install-from-testflight.md
+              - Browser Build Errors: install/build/browser/browser-build-errors.md
+              - Customizations: install/build/browser/browser-customizations.md
+              - Update with Browser: install/build/browser/browser-update.md
+              - Build Dev with Browser: install/build/browser/build-dev-with-browser.md
           - Build with Mac:
               - Mac Build Overview: install/build/mac/overview.md
               - Prepare your Computer: install/build/mac/computer.md
@@ -254,28 +272,12 @@ nav:
               - Build Trio with Xcode: install/build/mac/build.md
               - Build Errors: install/build/mac/build-errors.md
               - Update Trio with Xcode: install/build/mac/update.md
-          - Build Dev with Browser: install/build/browser/build-dev-with-browser.md
-          - Build with Browser ✏️:
-              - Browser Build Overview ✏️: install/build/browser/browser-build-overview.md
-              - Create GitHub Account ✏️: install/build/browser/create-github-account.md
-              - Collect Secrets ✏️: install/build/browser/collect-secrets.md
-              - Fork and Prepare your Trio Repository✏️: install/build/browser/fork-prepare-repo.md
-              - GitHub Actions ✏️:
-                  - Validate Secrets ✏️: install/build/browser/actions/validate-secrets.md
-                  - Add Identifiers ✏️: install/build/browser/actions/add-identifiers.md
-                  - Prepare App ✏️: install/build/browser/actions/prepare-app.md
-                  - Generate Certificates ✏️: install/build/browser/actions/generate-certificates.md
-                  - Build the App ✏️: install/build/browser/actions/build-app.md
-              - Install Trio from TestFlight ✏️: install/build/browser/install-from-testflight.md
-              - Browser Build Errors ✏️: install/build/browser/browser-build-errors.md
-              - Customizations ✏️: install/build/browser/browser-customizations.md
-              - Update with Browser ✏️: install/build/browser/browser-update.md
-      - Upgrade ✏️: install/upgrade.md
+      - Upgrade: install/upgrade.md
       - Companion Apps:
           - install/ecosystem/index.md
-          - Nightscout ✏️: install/ecosystem/nightscout-app.md
-          - Loop Follow ✏️: install/ecosystem/loop-follow.md
-          - XDrip4iOS ✏️: install/ecosystem/xdrip4ios.md
+          - Nightscout: install/ecosystem/nightscout-app.md
+          - LoopFollow: install/ecosystem/loop-follow.md
+          - xDrip4iOS: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
       - Startup Guides:
@@ -330,9 +332,9 @@ nav:
 
   - Help:
       - help/index.md
-      - FAQs ✏️: help/faq.md
+      - FAQs: help/faq.md
       - Safety ✏️: help/safety.md
-      - Glossary ✏️: help/glossary.md
+      - Glossary: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
       - Share Logs: help/share-logs.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
@@ -340,47 +342,3 @@ nav:
       - Support Communities:
           - Facebook: https://www.facebook.com/groups/diytrio
           - Discord: https://discord.gg/FnwFEFUwXE
-  - 0.2.x:
-      - Home: ./0.2.x/index.md
-      - Overview:
-          - Introduction: ./0.2.x/Getting-Started/Overview.md
-          - App Overview: ./0.2.x/operate/interface.md
-          - New User Guide: ./0.2.x/Setup/New-User-Setup.md
-          - Coming from Other AID Systems: ./0.2.x/Configuration/transition-qa.md
-          - Common Issues: ./0.2.x/operate/troubleshoot.md
-          - Device Compatibility:
-              - iPhones & Watches: ./0.2.x/Getting-Started/iphone.md
-              - Pumps: ./0.2.x/Getting-Started/pump.md
-              - CGMs: ./0.2.x/settings/devices/cgm.md
-      - Build/Update Trio:
-          - Build Instructions: ./0.2.x/operate/build.md
-          - Customizations: ./0.2.x/operate/customize.md
-      - User Settings:
-          - Trio Main Preferences: ./0.2.x/settings/configuration/preferences/trio.md
-          - Pump, CGM, Watch: ./0.2.x/Configuration/Devices.md
-          - Additional Pump Settings: ./0.2.x/settings/configuration/pumpsettings.md
-          - Basal: ./0.2.x/settings/configuration/basalprofile.md
-          - ISF: ./0.2.x/settings/configuration/insulinsensitivities.md
-          - CR: ./0.2.x/settings/configuration/carbratios.md
-          - Target Glucose: ./0.2.x/settings/configuration/targetglucose.md
-          - Main Settings: ./0.2.x/settings/configuration/preferences/mainsettings.md
-          - SMB & UAM: ./0.2.x/settings/configuration/concepts/smb-uam.md
-          - Close the Loop: ./0.2.x/Configuration/Configure.md
-      - Optional Settings:
-          - Apple Health: ./0.2.x/settings/services/applehealth.md
-          - FPU: ./0.2.x/settings/services/fatprotein.md
-          - Nightscout: ./0.2.x/settings/services/nightscout.md
-          - Notifications: ./0.2.x/settings/services/notifications.md
-          - SMB Settings: ./0.2.x/settings/configuration/preferences/smbsettings.md
-          - Temp Targets: ./0.2.x/operate/temptarget.md
-      - Advanced Settings:
-          - Autotune: ./0.2.x/settings/configuration/autotune.md
-          - Dynamic Settings: ./0.2.x/settings/configuration/concepts/autosens-dynamic.md
-          - Sigmoid: ./0.2.x/settings/configuration/concepts/sigmoid.md
-          - Dynamic Settings Explained: ./0.2.x/settings/configuration/preferences/dynamicsettings.md
-          - Other Settings: ./0.2.x/settings/configuration/preferences/othersettings.md
-          - Sensitivity Settings: ./0.2.x/settings/configuration/preferences/targetsettings.md
-      - Resources:
-          - Citations: ./0.2.x/resources/citations.md
-          - Translation: ./0.2.x/resources/translate.md
-#          - TrioDocs PDF: ./0.2.x/trio-docs.pdf

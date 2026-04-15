@@ -26,10 +26,18 @@ You have two options for an individual account: free or paid.
 
 If you decide to use a **FREE** developer account, here's what you need to know:
 
-- You can only use the [Buid Trio with Mac](../mac/overview.md) method to build Trio.
+- You can only use the [Build Trio with Mac](../mac/overview.md) method to build Trio.
 - Apps signed with a free developer account will expire after 7 days. On the 7th day, your Trio app will turn white when you open it and immediately close. To rebuild Trio, you must find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5, hoping to reset the 7-day clock. The app will still expire on the 7th day from when it was first signed and created.
 - If you switch to a paid account after trying out the free account, you must rebuild your Trio app to sign it with the new paid account. Furthermore, switching from a free account requires entering all the settings again and starting a fresh pod.
 - You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use Remote Commands through Nightscout.
+
+!!! important "Libre Requires Paid Account"
+    In order to use certain Libre with *Trio*, you must have the Near Field Communication capability installed with the *Trio* app. Many Libre cannot be used directly and must use a third-party app.
+
+    The Near Field Communication capability is not available with a free account.
+
+!!! warning "Live Activity Requires Paid Account"
+    The Live Activity feature for *Trio* is not available with a free account.
 
 ### Paid Developer Account
 

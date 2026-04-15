@@ -6,7 +6,7 @@ The following pumps are compatible with Trio:
 * Omnipod Eros pumps
 * Older Medtronic pumps
 * DanaRS-v3, Dana-i
-* Medtrum - (in testing)
+* Medtrum
 * Tandem Mobi - (in early development)
 
 
@@ -14,7 +14,7 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 
 ### Omnipod Pumps
 
-!!! not "Reminder and Disclaimer"
+!!! note "Reminder and Disclaimer"
     
     The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
 
@@ -171,4 +171,19 @@ The DanaRS was first released in 2002, with firmware version v1, which is not su
 [Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.
 
 ![DanaRS-v3](img/danars.png){width="250"}
+{align="center"}
+
+### Medtrum Nano
+
+!!! info "All versions are supported!"
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Trio* app.
+
+**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Trio* app.**
+
+
+The Medtrum patch pump is the second tubeless pump option available to the *Trio* app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
+
+![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
 {align="center"}

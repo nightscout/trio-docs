@@ -40,16 +40,9 @@ The current release of Trio requires iOS 16.3 or higher, Xcode version 15 or hig
 
 The table below lists the **minimum** requirements to build the current release of Trio. If your macOS or Xcode version is higher, you can build with a Mac.
 
-!!! info "iOS Version"
-    If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.  
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.1 | 16.1 | 14.5 |
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 16.3 to 17.0 | 15.0 | 13.5 |
+{%
+    include-markdown "includes/version-compatibility-matrix.md"
+%}
 
 ### Download Xcode
 1. On your Mac computer, open the app store.
@@ -67,7 +60,7 @@ The table below lists the **minimum** requirements to build the current release 
     ![Screenshot: App Store](img/xc-appstore.png){width="1024"}
       {align= "center"}
 
-7. the Xcode application will be available from your Launchpad or Applications file once the download is complete. 
+7. The Xcode application will be available from your Launchpad or Applications file once the download is complete. 
 
 ### Configure Xcode
 
@@ -104,7 +97,7 @@ Let's check if the correct version of Xcode was installed.
 
 ### Privacy Settings
 
-Sometimes, people have their macOS privacy settings configured so that Xcode does not have permission to access their computer's 'Downloads' folder. This can become problematic when using the build script to build an app with Xcode. To ensure access is allowed, follow the following instructions:
+Sometimes, people have their macOS privacy settings configured so that Xcode does not have permission to access their computer's 'Downloads' folder. This can become problematic when using the build script to build an app with Xcode. To ensure access is allowed, follow these instructions:
 
 1. Select the 'Apple symbol' in the top left-hand corner of the screen.
 
@@ -135,9 +128,9 @@ The first time you open Xcode, it will want to install a package of command-line
 
 2. In the top left-hand corner of the screen, select 'Xcode'.
 
-3. Next, select 'Settings'. This will open the Xcode'  Settings' window.
+3. Next, select 'Settings'. This will open the Xcode 'Settings' window.
 
-4. In the Xcode'  Settings' window, select 'Locations'
+4. In the Xcode 'Settings' window, select 'Locations'
 
 5. In the 'Locations' tab, you will observe a drop-down menu for 'Command Line Tools'. Ensure the Xcode version listed matches the version you just downloaded and installed. 
 
@@ -152,7 +145,7 @@ When you first use Xcode, you will need to add your Apple ID to the accounts wit
 
 2. In the top left-hand corner of the screen, select 'Xcode'.
 
-3. Next, select 'Settings'. This will open the Xcode'  Settings' window.
+3. Next, select 'Settings'. This will open the Xcode 'Settings' window.
 
 4. Next, ensure you are in the 'Accounts' tab.
 
