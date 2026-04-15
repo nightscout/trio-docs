@@ -28,12 +28,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
     
     Overview on building Trio using a Mac computer and Xcode
     
--   __[Build Dev with Browser](build/browser/build-dev-with-browser.md)__
-
-    - - -
-    
-    Overview on building Trio dev branch using a web browser and TestFlight
-    
 -   __[Build with Browser](build/browser/browser-build-overview.md)__
 
     - - -
