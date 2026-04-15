@@ -13,7 +13,7 @@ These are the new steps for you to follow:
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
     * Optional: [Configure the `dev` branch as default](#configure-the-dev-branch-as-default)
 1. If new Identifiers are required: [Update <code>Identifiers</code>](#update-identifiers)
-1. Optional: [Update <code>Certificates</code>](#update-certificates); this is included in Build Trio
+1. Optional: [Update <code>Certificates</code>](actions/generate-certificates.md); this is included in Build Trio
 1. [Build Trio `dev`](#build-the-app)
 
 ### Configure `Fork` with `dev` branch
@@ -37,7 +37,7 @@ The next screen displays the branches you currently have.
 >  ![Trio branch display - tap on new branch](img/trio-new-branch.png){width="700"}
 {align="center"}
 
-Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your `fork` when `main` is the default branch. The right side shows the display after making the indicated selections.:
+Each step in the list below matches with the number in the graphic. On the left half of the graphic is the default selections for your `fork` when `main` is the default branch. The right side shows the display after making the indicated selections:
 
 1. Click on the drop-down menu labeled 1 in the graphic and choose nightscout/Trio
 2. Click on the drop-down menu labeled 2 in the graphic and choose `dev`

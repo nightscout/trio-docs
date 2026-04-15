@@ -10,6 +10,6 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 
 -   __[Nightscout](nightscout-app.md)__
 -   __[LoopFollow](loop-follow.md)__
--   __[XDrip4iOS](xdrip4ios.md)__
+-   __[xDrip4iOS](xdrip4ios.md)__
 
 </div>

@@ -38,7 +38,7 @@
     ![fork information for Trio](img/fork-trio-top.png){width="700"}
     {align="center"}
 
-1. Refer the the GIF below - note this GIF is for LoopWorkspace - but the actions you take are the same for Trio:
+1. Refer to the GIF below - note this GIF is for LoopWorkspace - but the actions you take are the same for Trio:
     * If you created a free organization (strongly recommended), you will see the display shown in the GIF below where you will choose your organization as the owner
         * If you did not set up a free organization, `my-name` will be automatically filled in as the owner (`Owner`)
     * If you already have a fork, you should not proceed, see [Already Have Trio](#already-have-trio)
@@ -93,7 +93,7 @@ You will be adding `Secrets` and `Variables` to your organization. This makes th
     * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
     * After you click on ⚙️ `Settings`, your screen will show a lot of menu items on the left side of the screen. 
     * Scroll down until you can see the `Security` section with `Secrets and variables` drop down.
-    * Click on the dropdown icon and then selection `Actions`
+    * Click on the dropdown icon and then select `Actions`
 
     ![settings screen](img/gh-org-settings-02.png){width="600"}
         {align="center"}
@@ -129,7 +129,7 @@ Log into *GitHub*.
         {align="left"}
 
 1. Refer to the graphic above:
-    * On the left side, find the `Secrets and variables` dropdown (red circlea)
+    * On the left side, find the `Secrets and variables` dropdown (red circle)
     * Tap on <code>Actions</code> (red rectangle)
 
     ![action secrets and variables screen](img/personal-new-secret.png){width="500"}
@@ -146,7 +146,7 @@ If you are using a *GitHub* organization, tap on the green button for `New organ
 ![action secrets and variables screen](img/gh-org-actions-secrets.svg){width="600"}
 {align="center"}
 
-If you are using a personal account, tap on the green button for `New repository secret`::
+If you are using a personal account, tap on the green button for `New repository secret`:
 
 ![action secrets and variables screen](img/personal-new-secret.png){width="600"}
 {align="center"}
@@ -172,7 +172,7 @@ Enter the name of each <code>Secret</code> found in [Save Your Information](intr
 * Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit `Add Secret`
     * You can replace the value for any secret later - but you can't view the saved value
 * Be especially careful with your `TEAMID`
-    * If `TEAMID` is incorrect, the initial `Actions` will succeed but `Build Loop` will fail and you will have some clean-up to do
+    * If `TEAMID` is incorrect, the initial `Actions` will succeed but `Build Trio` will fail and you will have some clean-up to do
 * You can copy the names of the <code>Secrets</code> by hovering to the right of each word below until you see the copy button (:material-content-copy:). Click on the button to copy the `Secret` name and paste it into *GitHub* where you see `YOUR_SECRET_NAME`. This avoids spelling errors.
 ``` { .text .copy }
 TEAMID
@@ -199,7 +199,7 @@ MATCH_PASSWORD
 
 Once you add all six <code>Secrets</code>, your screen should look similar to the one of the two examples in the graphic below.
 
-> An organization account (top half of graphic) has an column for Visibility which is not seen in a personal account (bottom half of the graphic). The default setting for visibility is `Public repositories`. If yours says anything else, you should update the visibility by tapping on the pencil icon.
+> An organization account (top half of graphic) has a column for Visibility which is not seen in a personal account (bottom half of the graphic). The default setting for visibility is `Public repositories`. If yours says anything else, you should update the visibility by tapping on the pencil icon.
 
 * Check that all of your <code>Secrets</code> are spelled correctly
 * If one is misspelled, delete it and add a `New secret` with the correct name
@@ -226,7 +226,7 @@ What will this accomplish?
 * Certificates will be automatically updated if you have configured this `Variable`
 * As long as your *Apple* developers license is valid and all agreements are signed: **you can skip the steps to create or renew your certificates**!
 
-Not sure how to get to the Variables screen. Review the two graphics.
+Not sure how to get to the Variables screen? Review the two graphics.
 
 This graphic shows how to access Variables for a repository (similar steps required for an organization).
 
@@ -270,7 +270,7 @@ If you are someone who already has a lot of forks in your personal account and w
     * Run the Build Action
         * WHAT??
         * That's right - all the setup is done on the *Apple* side and you already did that
-        * If you succeesfully built with your private *GitHub* account, everything is already configured
+        * If you successfully built with your private *GitHub* account, everything is already configured
         * The one thing you might want to do is copy customizations from your personal account fork to the organization fork
 4. Return to your private *GitHub* account
     * Your choice: either delete the forks in your personal account or at least disable the building from your personal account

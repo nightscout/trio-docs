@@ -9,7 +9,7 @@ If you do not already have a *GitHub* account, you need to create one. Be sure t
 Decide on a couple of usernames that you will be happy with - this will get embedded into your *GitHub* URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
 * Click on this link to sign up for a free account: [*GitHub* account signup](https://github.com/signup)
-    * You will need to enter the **email** you want associated your *GitHub* account
+    * You will need to enter the **email** you want associated with your *GitHub* account
     * You will be asked to enter a **password**
     * You will be asked to enter a **username**
     * You will be asked if you want to receive email, ok to say `N` for no - you still get important account information with that email

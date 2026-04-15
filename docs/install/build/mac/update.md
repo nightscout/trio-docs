@@ -71,7 +71,7 @@ New Trio users do not need to read the rest of this page.
 
 If you build frequently, you do not have to delete the profiles every time. When the build script asks if you want to "Ensure a Year?", you can skip that step.
 
-On the other hand, you may need to delete the provisioning profiles or saved Xcode information about a version of currently on your computer. The maintenance utilities found in the BuildSelectScrip can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.
+On the other hand, you may need to delete the provisioning profiles or saved Xcode information about a version of currently on your computer. The maintenance utilities found in the BuildSelectScript can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.
 
 ### Delete Provisioning Profiles
 
@@ -138,7 +138,7 @@ Many people find updating Xcode from the App Store to be incredibly slow - espec
 
 The instructions do not hold your hand.
 
-* Your macOS must be at the minimum version (or newer) to support the version of Xcode you're about the download
+* Your macOS must be at the minimum version (or newer) to support the version of Xcode you're about to download
 * You need to know how to log into your Apple Developer account and navigate those menus
 * You need to know how to use Finder to navigate to Downloads
 * You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)

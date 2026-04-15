@@ -277,7 +277,7 @@ nav:
           - install/ecosystem/index.md
           - Nightscout: install/ecosystem/nightscout-app.md
           - LoopFollow: install/ecosystem/loop-follow.md
-          - XDrip4iOS: install/ecosystem/xdrip4ios.md
+          - xDrip4iOS: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
       - Startup Guides:
@@ -332,9 +332,9 @@ nav:
 
   - Help:
       - help/index.md
-      - FAQs ✏️: help/faq.md
+      - FAQs: help/faq.md
       - Safety ✏️: help/safety.md
-      - Glossary ✏️: help/glossary.md
+      - Glossary: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
       - Share Logs: help/share-logs.md
       - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose

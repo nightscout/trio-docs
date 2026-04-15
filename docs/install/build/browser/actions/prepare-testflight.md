@@ -35,7 +35,7 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 
-    * Select your *Loop* app
+    * Select your *Trio* app
     * Click on the `TestFlight` tab
     * **If you already have an Internal Testing Group for this app, skip to Step 4**
     
@@ -51,7 +51,7 @@ First you need to add the email address(es) to your *App Store Connect* Access U
     ![add email and role for your users](../img/setup-testflight-02.png){width="700"}
     {align="center"}
 
-1. You can add or remove emails to the Internal Test Group as any time
+1. You can add or remove emails to the Internal Test Group at any time
     * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) using the <code>*GitHub* Browser Build</code> method
     * Click `Add` when you are done

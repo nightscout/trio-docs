@@ -1,6 +1,6 @@
 # Introduction to Secrets
 
-In order to build using the Browser Build method, you will need to collect and save six secrets from your free GitHub account and your paid Apple Delevoper account.
+In order to build using the Browser Build method, you will need to collect and save six secrets from your free GitHub account and your paid Apple Developer account.
 
 ## Summary of Steps
 
@@ -75,7 +75,7 @@ The steps to configure for building with a browser require a lot of focused atte
 
     * [Click here to find help](browser-build-errors.md#help-with-errors){: target="_blank" }.
 
-???+ tips "Who should use a free GitHub Organization option (click to close/open)"
+???+ tip "Who should use a free GitHub Organization option (click to close/open)"
     There are several places where you see a recommendation to use a free GitHub Organization instead of building directly from your personal free GitHub account.
 
     When you use an organization, you don't have to add 6 Secrets to each repository for every app you build. It can save a lot of time in the long run.
@@ -141,7 +141,7 @@ Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folde
 You don't need to know anything about the <code>Secrets</code> to do this. Come up with your own names, but make sure you know where you put this file.
 
 1. Decide where you want your <code>Secrets</code> saved and create a special folder
-2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code>Secrets</code>)
+2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formatting and ruin your <code>Secrets</code>)
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
@@ -227,7 +227,7 @@ ENABLE_NUKE_CERTS = true
 If you use an organization (recommended)
 https://github.com/my-name-org/Trio
 
-or (if you don't use an organzation): 
+or (if you don't use an organization): 
 https://github.com/my-name/Trio
 
 
@@ -263,7 +263,7 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 * `Identifiers`: are required to build the *Trio* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you) when you run `Add Identifiers`
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
-    * Most loopers will not have an App until using the <code>*GitHub* Browser Build</code>
+    * Most users will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Trio App in App Store Connect](actions/prepare-app.md#configure-trio-app){: target="_blank" }
 
 ---

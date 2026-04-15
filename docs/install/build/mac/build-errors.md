@@ -30,23 +30,23 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 2. **Did you check your Apple developer account for a new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there is a new license agreement.
 
-3. **Do you have a new computer, never used to build Trio?** Did you add you [Apple ID](xcode-setup.md#add-apple-id-to-xcode) to Xcode?
+3. **Do you have a new computer, never used to build Trio?** Did you add your [Apple ID](xcode-setup.md#add-apple-id-to-xcode) to Xcode?
 
 4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](xcode-setup.md#command-line-tools)
 
 5. **Did you get a fresh download of Trio code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
-6. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in [Free Developer Account Build](build.md#free-apple-developer-account-build).
+6. **Are you using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in [Free Developer Account Build](build.md#free-apple-developer-account-build).
 
 7. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Trio might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
 ## Fix 95% of errors
 
-If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.
+If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Trio code.
 
 1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the `Product` menu item. Use the drop down selection for `Clean Build Folder` or press ++shift+command+k++. Either will work the same. Wait for the clean to finish before trying to build again.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-2. If you are updating Loop and did not [Delete Old Provisioning Profiles](update.md#delete-provisioning-profiles), do it now
+2. If you are updating Trio and did not [Delete Old Provisioning Profiles](update.md#delete-provisioning-profiles), do it now
 3. Return to Xcode and try building your app again.
 4. Still failing for phone or watch or both? Try the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
@@ -134,7 +134,7 @@ If this is not successful, the script told you the download failed and exited. S
 
 * Read the error message
 * Try to figure out the problem
-* If you need help, reach out to your favorite [Loop Social Media](https://loopkit.github.io/loopdocs/intro/loopdocs-how-to/#how-to-ask-for-help) site
+* If you need help, reach out via [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org)
 
 
 !!! warning "WARNINGS"
@@ -149,5 +149,3 @@ If this is not successful, the script told you the download failed and exited. S
 
     * [Install Xcode](xcode-setup.md)
     * [Xcode command line tools](xcode-setup.md#command-line-tools)
-
-**ADD TRIO SPECIFIC BUILD ERRORS HERE**

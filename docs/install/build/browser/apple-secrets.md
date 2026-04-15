@@ -25,7 +25,7 @@ You need to save your information digitally, so you can copy and paste. The info
 * If your username is `my-name` then:
     * Your *GitHub* address (URL) will be: `https://github.com/my-name`
     * Your (optional but recommended) *GitHub* organization address will be : `https://github.com/my-name-org`
-    * Your LoopWorkspace repository address will be: `https://github.com/my-name-org/LoopWorkspace`
+    * Your Trio repository address will be: `https://github.com/my-name-org/Trio`
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
 
@@ -109,7 +109,7 @@ Click this link to open in a new tab: [`App Store Connect/Access/Integrations/AP
 
 If this is your first time here, you will see:
 
-* "Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
+* "Permission is required to access the App Store Connect API. You can request access on behalf of your organization."
 
 * Click on `Request Access` and follow directions until access is granted
 
@@ -157,7 +157,7 @@ Review the graphic and then follow the directions below to save more parameters 
 #### Organize your Key File
 
 !!! tip "Pro Tip: Use the same folder as your Secrets Reference File"
-    It's a good idea to keep all your important files in one place. You probably set up a a folder for your [Secrets Reference File](intro-secrets.md#make-a-secrets-reference-file){: target="_blank" }. Use the same folder for your API key - be sure to label the file so you know what the key is. For example, change the name from KPMAM8y3G5.p8 to API_KEY_KPMAM8y3G5.p8.
+    It's a good idea to keep all your important files in one place. You probably set up a folder for your [Secrets Reference File](intro-secrets.md#make-a-secrets-reference-file){: target="_blank" }. Use the same folder for your API key - be sure to label the file so you know what the key is. For example, change the name from KPMAM8y3G5.p8 to API_KEY_KPMAM8y3G5.p8.
 
 #### Do Not Confuse Your Keys
 

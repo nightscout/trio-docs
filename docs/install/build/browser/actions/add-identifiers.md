@@ -1,4 +1,4 @@
-The <code>Add Identifiers</code>action creates the Identifiers needed to create the Trio app.
+The <code>Add Identifiers</code> action creates the Identifiers needed to create the Trio app.
 
 Refer to the graphic below for the numbered steps:
 
@@ -21,4 +21,4 @@ The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 ---
 
-**Navigation:** [← Back: Validate Secrets →](validate-secrets.md) | [Next: Prepare App →](prepare-app.md)
+**Navigation:** [← Back: Validate Secrets](validate-secrets.md) | [Next: Prepare App →](prepare-app.md)
