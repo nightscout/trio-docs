@@ -89,7 +89,7 @@ This setting allows you to choose between the Cone of Uncertainty (Cone) and Ope
 ### Options
 **Cone (of Uncertainty):**  
 <!-- TODO: Add image -->
-Uses a combines range of all possible forecast from the OpenAPS lines and provides you with a range of possible forecasts. This option has shown to reduce confusion and stress around algorithm forecasts by providing a less concerning visual representation.
+Combines all possible forecasts from the OpenAPS lines into a single range. This option has been shown to reduce confusion and stress around algorithm forecasts by providing a clearer, less overwhelming visual representation.
 
 **Lines:**
 <!-- TODO: Add image -->
