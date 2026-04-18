@@ -41,11 +41,11 @@ There are two options for building at present:
 
 ### Do I need to own an Apple computer?
 
-No, you do not need to own an Apple computer. The 'Browser Build' method can be completed on any computer with access to the Internet and GitHub. However, if you chose the 'Mac Build' method, while you do not necessarily need to own an Apple computer, you must at least borrow one. 
+No, you do not need to own an Apple computer. The "Browser Build" method can be completed on any computer with access to the Internet and GitHub. However, if you chose the "Mac Build" method, while you do not necessarily need to own an Apple computer, you must at least borrow one. 
 
 ### How often will I need to access the computer to maintain Trio?
 
-When you use the 'Browser Build' method, you must access a browser at least once every 90 days to update with the Browser. This is simple enough to do the steps on your phone in just a few minutes. 
+When you use the "Browser Build" method, you must access a browser at least once every 90 days to update with the Browser. This is simple enough to do the steps on your phone in just a few minutes. 
 
 When you use Build with Mac: 1. When you first build. 2. Once per year, at the minimum, after that. However, if you decide to use a free Apple Developer account, you must rebuild every 7 days. 
 
@@ -104,13 +104,13 @@ Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) a
 
 The first place to start if you want to learn more about the underlying algorithm is the extensive [OpenAPS documentation](https://openaps.readthedocs.io/). OpenAPS is the underlying algorithm Trio implements, with minor modifications mostly pertaining to the Dynamic settings.
 
-### Why does the 'Recommended Bolus Percentage' default to 70%?
+### Why does the `Recommended Bolus Percentage` default to 70%?
 
 `Recommended Bolus Percentage` is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the total dosage. That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via Temp Basals and/or SMBs as the blood sugar rises.
 
 `Recommended Bolus Percentage` is a setting that allows the user to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.
 
-### What is 'Max IOB' impact Trio's limit Trio's insulin dosing?
+### What is `Max IOB` impact Trio's limit Trio's insulin dosing?
 
 The maximum amount of insulin on board (i.e., in the body). Including insulin from all sources (basal and bolus) automatically delivered by Trio. 
 
@@ -121,11 +121,11 @@ You will need to increase this value to allow Trio to start automating your insu
 !!! tip
     _The default recommendation is “average meal bolus + 3 x max hourly basal” when using super micro boluses._
 
-### How does 'Max COB' impact Trio's limit Trio's algorithm?
+### How does `Max COB` impact Trio's limit Trio's algorithm?
 
 The maximum amount of carbs that Trio is allowed to bolus or set high-temp targets for. This safety feature protects against erroneous carbohydrate entries that could lead to hypoglycemia episodes.
 
-### What is 'Autosens'? How do 'Autosens Max' and 'Autosens Min' impact Trio's decision-making?
+### What is `Autosens`? How do `Autosens Max` and `Autosens Min` impact Trio's decision-making?
 
 Autosens allows the system to analyze historical data on the go and make adjustments if it recognizes that you are reacting more sensitively or resistant to insulin than usual. Autosens will then make temporary adjustments to the basal, ISF, and targets used for calculating temp basals in order to keep BG closer to your configured target. 
 
@@ -145,7 +145,7 @@ Various blog posts have been written over the years regarding SMBs, and links to
 * Dana Lewis, [Introducing oref1 and super-microboluses](https://diyps.org/2017/04/30/introducing-oref1-and-super-microboluses-smb-and-what-it-means-compared-to-oref0-the-original-openaps-algorithm/)
 * Tim Street, [Understanding SMB and oref1](https://diyps.org/2017/04/30/introducing-oref1-and-super-microboluses-smb-and-what-it-means-compared-to-oref0-the-original-openaps-algorithm/).
 
-### How does 'Max SMB Basal Minutes' limit SMBs?
+### How does `Max SMB Basal Minutes` limit SMBs?
 
 `Max SMB Basal Minutes` is one of the major limits on how much insulin a single SMB can deliver. The amount of insulin an SMB can deliver is related to the amount of scheduled basal insulin in your "Basal Profile" settings.
 
@@ -157,7 +157,7 @@ UAM  is a way for the algorithm to recognize that either there is carb absorptio
 
 To understand the logic behind UAM, have a read of Time Streets blog post [Understanding SMB and oref1](https://diyps.org/2017/04/30/introducing-oref1-and-super-microboluses-smb-and-what-it-means-compared-to-oref0-the-original-openaps-algorithm/).
 
-### How does 'Max UAM SMB Basal Minutes' limit SMBs?
+### How does `Max UAM SMB Basal Minutes` limit SMBs?
 
 `Max UAM SMB Basal Minutes` limits the size of SMBs that Trio can deliver when it detects an unannounced meal (UAM). The amount of insulin a UAM SMB can deliver is related to the amount of scheduled basal insulin in your "Basal Profile" settings. You can configure this setting to make UAM more or less aggressive in correcting meal spikes.
 
@@ -222,7 +222,7 @@ The following CGM can be used with Trio:
 To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../install/ecosystem/xdrip4ios.md).  
 
 !!! tip
-    _If you use xDrip with the Dexcom G6/ONE, in Trio select 'Dexcom G6' as the CGM source. Trio will intercept glucose readings directly from the transmitter._
+    _If you use xDrip with the Dexcom G6/ONE, in Trio select `Dexcom G6` as the CGM source. Trio will intercept glucose readings directly from the transmitter._
     
 **Nightscout**  
 Yes. Nightscout can be used as a remote CGM source in Trio. However, this option should be avoided because it does not keep Trio running in the background like other CGM options. You will have to open Trio manually to make it run loop cycles.  
