@@ -110,7 +110,7 @@ The first place to start if you want to learn more about the underlying algorith
 
 `Recommended Bolus Percentage` is a setting that allows the user to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.
 
-### What is `Max IOB` impact Trio's limit Trio's insulin dosing?
+### How does the `Max IOB` limit impact Trio's insulin dosing?
 
 The maximum amount of insulin on board (i.e., in the body). Including insulin from all sources (basal and bolus) automatically delivered by Trio. 
 
@@ -121,7 +121,7 @@ You will need to increase this value to allow Trio to start automating your insu
 !!! tip
     _The default recommendation is “average meal bolus + 3 x max hourly basal” when using super micro boluses._
 
-### How does `Max COB` impact Trio's limit Trio's algorithm?
+### How does the `Max COB` limit impact Trio's algorithm?
 
 The maximum amount of carbs that Trio is allowed to bolus or set high-temp targets for. This safety feature protects against erroneous carbohydrate entries that could lead to hypoglycemia episodes.
 
