@@ -97,7 +97,7 @@ $$
 
 This setting is useful for meals that require more insulin up front, for example, Cinnamon Toast Crunch or candy.
 
-??? question "Bill has a Super Bolus Percentage of 80% and sets his Super Bolus Percentage to 200%. His current basal rate is 0.8 U/hr. Trio has calculated that his bolus require for this meal is 1.5 U. What will his insulin dose be when he uses the Super Bolus Option in the bolus calculator?"
+??? question "Bill has a Recommended Bolus Percentage of 80% and sets his Super Bolus Percentage to 200%. His current basal rate is 0.8 U/hr. Trio has calculated that his insulin required for this meal is 1.5 U. What will his insulin dose be when he uses the Super Bolus Option in the bolus calculator?"
 
     ??? info "Here is the formula:"
     
