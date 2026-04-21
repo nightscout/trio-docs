@@ -32,8 +32,8 @@ Your basal rates serve several critical functions in Trio:
 
 ## How Trio Uses Basal Rates
 
-!!! important "Profile Basals are the Foundation"
-    Trio uses your profile basal rates as the baseline of your insulin needs. When SMBs are enabled, you may see a wide variation in the temp basal rates set. _This is normal._ This is how Trio operates. It is including your baseline basal rates in the full insulin required calculation and giving that basal through SMBs and/or temp basal rates.
+!!! important "Basals are the Foundation"
+    Trio uses your basal profile as the baseline of your insulin needs. When SMBs are enabled, you may see a wide variation in the temp basal rates set. _This is normal._ This is how Trio operates. It is including your baseline basal rates in the full insulin required calculation and giving that basal through SMBs and/or temp basal rates.
 
 Every 5 minutes, Trio's algorithm:
 
