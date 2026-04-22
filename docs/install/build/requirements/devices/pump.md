@@ -67,7 +67,7 @@ The Medtrum patch pump is the second tubeless pump option available to the *Trio
 The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
 It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
 
-![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
+![Medtrum Nano](img/medtrum.png){width="250"}
 {align="center"}
 
 ### Medtronic Pumps
