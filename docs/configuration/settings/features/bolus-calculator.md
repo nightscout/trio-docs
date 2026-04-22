@@ -15,7 +15,9 @@ Enabling this feature allows you to create and save preset meals.
 
 Recommended Bolus Percentage is a safety feature built into Trio. Trio first calculates the insulin required for your meal. That dosage is then multiplied by your Recommended Bolus Percentage. The adjusted dosage is shown in the bolus calculator as your `Suggested Insulin Dose`.
 
-<!-- TODO: Add formula for suggested insulin dose. -->
+$$
+Bolus\ Required \times Recommended\ Bolus\ Percentage
+$$
 
 Because Trio utilizes SMBs and UAMs to help you reach your target glucose and other AID systems do not bolus for COB the same way, this is initially set below the full calculated amount at 80%. 
 
@@ -89,11 +91,40 @@ This option adds this set percentage of your current basal rate to your suggeste
 
 When entering a meal into the bolus calculator, select the Super Bolus option to utilize this higher bolus amount rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage and current basal rate using the formula below:
 
-<!-- TODO: Add formula for Super Bolus Calculation "bolus req x rec bolus % + current basal x (super bolus %/100)" -->
+$$
+Bolus\ Required \times Recommended\ Bolus\ Percentage + Current\ Basal\ Rate \times \frac{Super\ Bolus\ Percentage}{100}
+$$
 
 This setting is useful for meals that require more insulin up front, for example, Cinnamon Toast Crunch or candy.
 
-<!-- TODO: Add Bill example using 0.8 current basal rate and 200% super bolus percentage -->
+??? question "Bill has a Recommended Bolus Percentage of 80% and sets his Super Bolus Percentage to 200%. His current basal rate is 0.8 U/hr. Trio has calculated that his insulin required for this meal is 1.5 U. What will his insulin dose be when he uses the Super Bolus Option in the bolus calculator?"
+
+    ??? info "Here is the formula:"
+    
+        $$
+        Bolus\ Required \times Recommended\ Bolus\ Percentage + Current\ Basal\ Rate \times \frac{Super\ Bolus\ Percentage}{100}
+        $$
+    
+    ??? note "Enter Bill's numbers to calculate the insulin dose:"
+    
+        $$
+        1.5 \times 80\% + 0.8 \times \frac{200\%}{100} =
+        $$
+        
+        $$
+        1.2 + 0.8 \times 2 =
+        $$
+        
+        $$
+        1.2 + 1.6 =
+        $$
+
+        $$
+        2.8 units\
+        $$
+        
+    ??? success "Answer"
+        Bill will receive a suggested super bolus of 2.8 U.
 
 - - -
 
