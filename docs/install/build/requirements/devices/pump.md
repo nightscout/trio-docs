@@ -29,7 +29,7 @@ The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a R
 
 Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
 
-![eros](img/eros.png)
+![eros](img/eros.png){width="250")
 {align=center}
 
 !!! danger "Omnipod 5"
@@ -89,7 +89,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
-![pump_model](img/pump-model.jpg)
+![pump_model](img/pump-model.jpg){width="250")
 {align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
@@ -121,7 +121,7 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 3. Read the bottom line of the display.
 
-![pump_firmware](img/pump-firmware.png)
+![pump_firmware](img/pump-firmware.png){width="250")
 {align=center}
 
 #### Medtronic Pump Differences
@@ -193,3 +193,6 @@ Medtronic will not typically sell pump supplies directly to customers who have y
 
 !!! info "Tandem Mobi in Development!"
     Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.
+
+![tandem_mobi](img/tandem-mobi.png){width="250")
+{align=center}
