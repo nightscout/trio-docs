@@ -746,8 +746,8 @@
 </ol>
 <h2 id="how-trio-uses-basal-rates">How Trio Uses Basal Rates<a class="headerlink" href="#how-trio-uses-basal-rates" title="Link to this section for reference">¶</a></h2>
 <div class="admonition important">
-<p class="admonition-title">Fasting is Essential</p>
-<p>Trio does <strong>not</strong> use your scheduled basal rates verbatim when in closed loop. Instead, it uses them as a reference point and replaces them with temporary basal rates every loop cycle based on the insulin needs determined by the OpenAPS algorithm.</p>
+<p class="admonition-title">Basals are the Foundation</p>
+<p>Trio uses your basal profile as the baseline of your insulin needs. When SMBs are enabled, you may see a wide variation in the temp basal rates set. <em>This is normal.</em> This is how Trio operates. It is including your baseline basal rates in the full insulin required calculation and giving that basal through SMBs and/or temp basal rates.</p>
 </div>
 <p>Every 5 minutes, Trio's algorithm:</p>
 <ol>
