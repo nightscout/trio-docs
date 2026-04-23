@@ -74,7 +74,7 @@ This setting is useful for meals that require less insulin up front and more lat
         $$
 
         $$
-        0.6 units
+        0.6\ units
         $$
         
     ??? success "Answer"
@@ -124,7 +124,7 @@ This setting is useful for meals that require more insulin up front, for example
         $$
 
         $$
-        2.8 \units
+        2.8\ units
         $$
         
     ??? success "Answer"
