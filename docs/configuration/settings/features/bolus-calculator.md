@@ -46,7 +46,7 @@ Enabling this setting adds a "Reduced Bolus" option to the bolus calculator. Onc
 When entering a meal into the bolus calculator, select the Reduced Bolus option to utilize this lower percentage rather than your [Recommended Bolus Percentage](#recommended-bolus-percentage) set in the setting above. This calculation is used in conjunction with your Recommended Bolus Percentage using the formula below:
 
 $$
-Bolus\ Required \times (\frac{Recommended\ Bolus\ Percentage}{100} \times \frac{Reduced\ Bolus\ Percentage}{100})
+Bolus\ Required \times \frac{Recommended\ Bolus\ Percentage}{100} \times \frac{Reduced\ Bolus\ Percentage}{100}
 $$
 
 This setting is useful for meals that require less insulin up front and more later, like pizza.
@@ -56,17 +56,17 @@ This setting is useful for meals that require less insulin up front and more lat
     ??? info "Here is the formula:"
     
         $$
-        Bolus\ Required \times (\frac{Recommended\ Bolus\ Percentage}{100} \times \frac{Reduced\ Bolus\ Percentage}{100})
+        Bolus\ Required \times \frac{Recommended\ Bolus\ Percentage}{100} \times \frac{Reduced\ Bolus\ Percentage}{100}
         $$
     
     ??? note "Enter Bill's numbers to calculate the actual percentage used:"
     
         $$
-        1.5 \times (\frac{80}{100} \times \frac{50}{100}) =
+        1.5 \times \frac{80}{100} \times \frac{50}{100} =
         $$
         
         $$
-        1.5 \times (0.8 \times 0.5) =
+        1.5 \times 0.8 \times 0.5 =
         $$
         
         $$
@@ -112,7 +112,7 @@ This setting is useful for meals that require more insulin up front, for example
     ??? note "Enter Bill's numbers to calculate the insulin dose:"
     
         $$
-        (1.5 \times \frac{80\%}{100}) + (0.8 \times \frac{200\%}{100}) =
+        (1.5 \times \frac{80}{100}) + (0.8 \times \frac{200}{100}) =
         $$
         
         $$
