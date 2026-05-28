@@ -238,7 +238,7 @@
  * Make MathJax display equations horizontally scrollable with a persistent scrollbar
  */
 .md-typeset .arithmatex {
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
 }
 
