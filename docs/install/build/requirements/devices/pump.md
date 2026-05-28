@@ -89,7 +89,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
-![pump_model](img/pump-model.jpg){width="250")
+![pump_model](img/pump-model.jpg){width="250"}
 {align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
@@ -121,7 +121,7 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 3. Read the bottom line of the display.
 
-![pump_firmware](img/pump-firmware.png){width="250")
+![pump_firmware](img/pump-firmware.png){width="250"}
 {align=center}
 
 #### Medtronic Pump Differences
@@ -194,5 +194,5 @@ Medtronic will not typically sell pump supplies directly to customers who have y
 !!! info "Tandem Mobi in Development!"
     Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.
 
-![tandem_mobi](img/tandem-mobi.png){width="250")
+![tandem_mobi](img/tandem-mobi.png){width="250"}
 {align=center}
