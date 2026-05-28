@@ -29,7 +29,7 @@ The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a R
 
 Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
 
-![eros](img/eros.png){width="250")
+![eros](img/eros.png){width="250"}
 {align=center}
 
 !!! danger "Omnipod 5"
