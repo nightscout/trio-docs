@@ -359,15 +359,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#medtronic-pumps">
-<span class="md-ellipsis">
-      
-        Medtronic Pumps
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#sooil-dana-pumps">
 <span class="md-ellipsis">
       
@@ -381,6 +372,24 @@
 <span class="md-ellipsis">
       
         Medtrum Nano
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#medtronic-pumps">
+<span class="md-ellipsis">
+      
+        Medtronic Pumps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tandem-pumps">
+<span class="md-ellipsis">
+      
+        Tandem Pumps
       
     </span>
 </a>
@@ -650,15 +659,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#medtronic-pumps">
-<span class="md-ellipsis">
-      
-        Medtronic Pumps
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#sooil-dana-pumps">
 <span class="md-ellipsis">
       
@@ -672,6 +672,24 @@
 <span class="md-ellipsis">
       
         Medtrum Nano
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#medtronic-pumps">
+<span class="md-ellipsis">
+      
+        Medtronic Pumps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tandem-pumps">
+<span class="md-ellipsis">
+      
+        Tandem Pumps
       
     </span>
 </a>
@@ -694,12 +712,13 @@
 <h2 id="compatible-pumps">Compatible Pumps<a class="headerlink" href="#compatible-pumps" title="Link to this section for reference">¶</a></h2>
 <p>The following pumps are compatible with Trio:</p>
 <ul>
-<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH pumps</li>
-<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros pumps</li>
-<li>Older Medtronic pumps</li>
-<li>DanaRS-v3, Dana-i</li>
-<li>Medtrum</li>
-<li>Tandem Mobi - (in early development)</li>
+<li><a href="#omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH pumps</a></li>
+<li><a href="#omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros pumps</a></li>
+<li><a href="#dana-i">Dana-i</a></li>
+<li><a href="#danars">DanaRS-v3</a></li>
+<li><a href="#medtrum-nano">Medtrum Nano</a></li>
+<li><a href="#medtronic-pumps">Older Medtronic pumps</a></li>
+<li><a href="#tandem-mobi">Tandem Mobi</a> (<em>in early development</em>)</li>
 </ul>
 <p>No other pumps work with Trio at this time, but other open-source closed-loop options, such as <a href="https://androidaps.readthedocs.io/en/latest/index.html">AAPS: Android Artificial Pancreas System</a> and <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a>, support other pumps.</p>
 <h3 id="omnipod-pumps"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Pumps<a class="headerlink" href="#omnipod-pumps" title="Link to this section for reference">¶</a></h3>
@@ -707,16 +726,35 @@
 <p class="admonition-title">Reminder and Disclaimer</p>
 <p>The use of <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.</p>
 </div>
-<h4 id="omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros<a class="headerlink" href="#omnipod-eros" title="Link to this section for reference">¶</a></h4>
-<p>Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> System", "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.</p>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eros.png"><img alt="eros" src="../img/eros.png"/></a></p>
 <h4 id="omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH<a class="headerlink" href="#omnipod-dash" title="Link to this section for reference">¶</a></h4>
 <p>The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH Pods are easy to identify with their blue tab instead of the clear tab used on Eros and <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dash.png"><img alt="dash" src="../img/dash.png"/></a></p>
+<h4 id="omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros<a class="headerlink" href="#omnipod-eros" title="Link to this section for reference">¶</a></h4>
+<p>Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> System", "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eros.png"><img alt="eros" src="../img/eros.png" width="250"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5</p>
 <p><strong><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 Pods are <em>NOT</em> compatible with Trio</strong></p>
 </div>
+<h3 id="sooil-dana-pumps">Sooil Dana pumps<a class="headerlink" href="#sooil-dana-pumps" title="Link to this section for reference">¶</a></h3>
+<p><strong>Every Dana pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the <em>Trio</em> app.</strong></p>
+<h4 id="dana-i">Dana-i<a class="headerlink" href="#dana-i" title="Link to this section for reference">¶</a></h4>
+<p>The Dana-i is the latest and greatest from the Korean pump manufacturer <em>Sooil</em>, released in 2020.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dana-i.png"><img alt="Dana-i" src="../img/dana-i.png" width="250"/></a></p>
+<h4 id="danars">DanaRS<a class="headerlink" href="#danars" title="Link to this section for reference">¶</a></h4>
+<p>The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the <em>Trio</em> app.
+<a href="https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3">Check here</a> to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/danars.png"><img alt="DanaRS-v3" src="../img/danars.png" width="250"/></a></p>
+<h3 id="medtrum-nano">Medtrum Nano<a class="headerlink" href="#medtrum-nano" title="Link to this section for reference">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Medtrum Now Supported</p>
+<p>Both the 200U (MD0201 &amp; MD8201) and 300U (MD8301) version are supported in Trio 0.7 and later</p>
+</div>
+<p><strong>Every Medtrum patch pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the <em>Trio</em> app.</strong></p>
+<p>The Medtrum patch pump is the second tubeless pump option available to the <em>Trio</em> app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/medtrum.png"><img alt="Medtrum Nano" src="../img/medtrum.png" width="250"/></a></p>
 <h3 id="medtronic-pumps">Medtronic Pumps<a class="headerlink" href="#medtronic-pumps" title="Link to this section for reference">¶</a></h3>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump.png"><img alt="pump" src="../img/pump.png"/></a></p>
 <p>There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Trio compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.</p>
@@ -730,7 +768,7 @@
 <p>If you have one of the pumps listed above, you are good to go on Trio! Congrats!</p>
 <h4 id="medtronic-pump-model">Medtronic Pump Model<a class="headerlink" href="#medtronic-pump-model" title="Link to this section for reference">¶</a></h4>
 <p>To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX</p>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump-model.jpg"><img alt="pump_model" src="../img/pump-model.jpg"/></a></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump-model.jpg"><img alt="pump_model" src="../img/pump-model.jpg" width="250"/></a></p>
 <div class="language-text highlight"><pre><span></span><code>* MMT ---&gt; Pump Manufacturer Model (MiniMed Medtronic)
 * 722 ---&gt; Pump Model Number
 * NA ---&gt; Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
@@ -760,7 +798,7 @@
 <p>Read the bottom line of the display.</p>
 </li>
 </ol>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump-firmware.png"><img alt="pump_firmware" src="../img/pump-firmware.png"/></a></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/pump-firmware.png"><img alt="pump_firmware" src="../img/pump-firmware.png" width="250"/></a></p>
 <h4 id="medtronic-pump-differences">Medtronic Pump Differences<a class="headerlink" href="#medtronic-pump-differences" title="Link to this section for reference">¶</a></h4>
 <p>If you are in the position of being able to shop around for different pump models, there are some slight differences between the Trio-compatible Medtronic pumps.</p>
 <p><strong>500 vs 700</strong>: The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180-unit reservoir, and the 700 series pumps use a 300-unit reservoir (or a smaller 180-unit reservoir, if you want).</p>
@@ -856,25 +894,13 @@
 </ul>
 <h4 id="pump-supplies">Pump Supplies<a class="headerlink" href="#pump-supplies" title="Link to this section for reference">¶</a></h4>
 <p>Medtronic will not typically sell pump supplies directly to customers who have yet to purchase a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, ask for help from friends to try a variety of infusion sets before purchasing an entire 90-day supply of any type in particular.</p>
-<h3 id="sooil-dana-pumps">Sooil Dana pumps<a class="headerlink" href="#sooil-dana-pumps" title="Link to this section for reference">¶</a></h3>
-<p><strong>Every Dana pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the <em>Trio</em> app.</strong></p>
-<h4 id="dana-i">Dana-i<a class="headerlink" href="#dana-i" title="Link to this section for reference">¶</a></h4>
-<p>The Dana-i is the latest and greatest from the Korean pump manufacturer <em>Sooil</em>, released in 2020.</p>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dana-i.png"><img alt="Dana-i" src="../img/dana-i.png" width="250"/></a></p>
-<h4 id="danars">DanaRS<a class="headerlink" href="#danars" title="Link to this section for reference">¶</a></h4>
-<p>The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the <em>Trio</em> app.
-<a href="https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3">Check here</a> to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.</p>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/danars.png"><img alt="DanaRS-v3" src="../img/danars.png" width="250"/></a></p>
-<h3 id="medtrum-nano">Medtrum Nano<a class="headerlink" href="#medtrum-nano" title="Link to this section for reference">¶</a></h3>
+<h3 id="tandem-pumps">Tandem Pumps<a class="headerlink" href="#tandem-pumps" title="Link to this section for reference">¶</a></h3>
+<h4 id="tandem-mobi">Tandem Mobi<a class="headerlink" href="#tandem-mobi" title="Link to this section for reference">¶</a></h4>
 <div class="admonition info">
-<p class="admonition-title">All versions are supported!</p>
-<p>Both 200U (MD0201 &amp; MD8201) and 300U (MD8301) version are supported with the correct version of the <em>Trio</em> app.</p>
+<p class="admonition-title">Tandem Mobi in Development!</p>
+<p>Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.</p>
 </div>
-<p><strong>Every Medtrum patch pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the <em>Trio</em> app.</strong></p>
-<p>The Medtrum patch pump is the second tubeless pump option available to the <em>Trio</em> app.
-The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
-It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.</p>
-<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/medtrum.jpeg"><img alt="Medtrum Nano 200U" src="../img/medtrum.jpeg" width="250"/></a></p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/tandem-mobi.png"><img alt="tandem_mobi" src="../img/tandem-mobi.png" width="250"/></a></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
