@@ -235,6 +235,36 @@
 }
 
 /*
+ * Make MathJax display equations horizontally scrollable with a persistent scrollbar
+ */
+.md-typeset .arithmatex {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.md-typeset .arithmatex::-webkit-scrollbar {
+  height: 4px;
+}
+
+.md-typeset .arithmatex::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.md-typeset .arithmatex::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .arithmatex::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .arithmatex::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*
  * Video
  */
 .video-center {
