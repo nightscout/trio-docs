@@ -2,13 +2,13 @@
 
 The following pumps are compatible with Trio:
 
-* Omnipod DASH pumps
-* Omnipod Eros pumps
-* Older Medtronic pumps
-* DanaRS-v3, Dana-i
-* Medtrum
-* Tandem Mobi - (in early development)
-
+* [Omnipod DASH pumps](#omnipod-dash)
+* [Omnipod Eros pumps](#omnipod-eros)
+* [Dana-i](#dana-i)
+* [DanaRS-v3](#danars)
+* [Medtrum Nano](#medtrum-nano)
+* [Older Medtronic pumps](#medtronic-pumps)
+* [Tandem Mobi](#tandem-mobi) (_in early development_)
 
 No other pumps work with Trio at this time, but other open-source closed-loop options, such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/), support other pumps.
 
@@ -18,13 +18,6 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
     
     The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
 
-#### Omnipod Eros
-
-Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
-
-![eros](img/eros.png)
-{align=center}
-
 #### Omnipod DASH
 
 The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH Pods are easy to identify with their blue tab instead of the clear tab used on Eros and Omnipod 5.
@@ -32,10 +25,50 @@ The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a R
 ![dash](img/dash.png)
 {align=center}
 
+#### Omnipod Eros
+
+Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "Omnipod System", "Omnipod Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.
+
+![eros](img/eros.png){width="250"}
+{align=center}
+
 !!! danger "Omnipod 5"
     
     **Omnipod 5 Pods are _NOT_ compatible with Trio**
 
+### Sooil Dana pumps
+
+**Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Trio* app.**
+
+#### Dana-i
+
+The Dana-i is the latest and greatest from the Korean pump manufacturer *Sooil*, released in 2020.
+
+![Dana-i](img/dana-i.png){width="250"}
+{align="center"}
+
+#### DanaRS
+
+The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the *Trio* app.
+[Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.
+
+![DanaRS-v3](img/danars.png){width="250"}
+{align="center"}
+
+### Medtrum Nano
+
+!!! info "Medtrum Now Supported"
+    Both the 200U (MD0201 & MD8201) and 300U (MD8301) version are supported in Trio 0.7 and later
+
+**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Trio* app.**
+
+
+The Medtrum patch pump is the second tubeless pump option available to the *Trio* app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
+
+![Medtrum Nano](img/medtrum.png){width="250"}
+{align="center"}
 
 ### Medtronic Pumps
 
@@ -56,7 +89,7 @@ If you have one of the pumps listed above, you are good to go on Trio! Congrats!
 
 To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX
 
-![pump_model](img/pump-model.jpg)
+![pump_model](img/pump-model.jpg){width="250"}
 {align=center}
 
     * MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
@@ -88,7 +121,7 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 3. Read the bottom line of the display.
 
-![pump_firmware](img/pump-firmware.png)
+![pump_firmware](img/pump-firmware.png){width="250"}
 {align=center}
 
 #### Medtronic Pump Differences
@@ -154,36 +187,12 @@ Red flags that may indicate a scam:
 
 Medtronic will not typically sell pump supplies directly to customers who have yet to purchase a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, ask for help from friends to try a variety of infusion sets before purchasing an entire 90-day supply of any type in particular.
 
-### Sooil Dana pumps
+### Tandem Pumps
 
-**Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Trio* app.**
+#### Tandem Mobi
 
-#### Dana-i
+!!! info "Tandem Mobi in Development!"
+    Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.
 
-The Dana-i is the latest and greatest from the Korean pump manufacturer *Sooil*, released in 2020.
-
-![Dana-i](img/dana-i.png){width="250"}
-{align="center"}
-
-#### DanaRS
-
-The DanaRS was first released in 2002, with firmware version v1, which is not supported at this time. Only firmware version v3 and onwards are supported with the *Trio* app.
-[Check here](https://loopkit.github.io/loopdocs/loop-3/add-pump/#dana-i-danars-v3) to see how to check your firmware version. If you do have v1, though, please reach out to the Trio development team if you're interested in helping v1 get supported by running some tests.
-
-![DanaRS-v3](img/danars.png){width="250"}
-{align="center"}
-
-### Medtrum Nano
-
-!!! info "All versions are supported!"
-    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Trio* app.
-
-**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Trio* app.**
-
-
-The Medtrum patch pump is the second tubeless pump option available to the *Trio* app.
-The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
-It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
-
-![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
-{align="center"}
+![tandem_mobi](img/tandem-mobi.png){width="250"}
+{align=center}

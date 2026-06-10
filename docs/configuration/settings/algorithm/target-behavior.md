@@ -44,7 +44,7 @@ Enabling this feature causes Trio to automatically lower the targeted glucose if
 
 The Half Basal Exercise Target allows ou to scale down your basal insulin during exercise or scale up your basal insulin when eating soon by setting a manual temp target. To scale down for exercise, set a temp target above 100 mg/dL. To scale up for eating soon, set a temp target below 100 mg/dL.
 
-For example, at a temp target of 160 mg/dL, your basal is reduced by 50%, but this scaled depending on how far away from 100 your temp target is set.
+For example, at a temp target of 160 mg/dL, your basal is reduced by 50%, but this is scaled depending on how far away from 100 your temp target is set.
     
 - Temp Target $= 160$ mg/dL: $50$% reduction in profile basal
 - Temp Target $= 140$ mg/dL: $60$% reduction in profile basal
