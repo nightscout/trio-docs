@@ -19,11 +19,30 @@ The second step is to read over and become familiar with the build instructions 
 
 When you are ready to proceed, take your time, read carefully, and complete the tasks on each page. Read the top three boxes on each page; icons for those boxes are displayed below for reference. 
 
+## Overview
+
 !!! info "Time Estimate"
+
+    - 5 minutes, if your computer meets minimum requirements.
+    - 30-60 minutes, if you need to install macOS updates.
+
 !!! abstract "Summary"
+
+    To build the Trio app on a Mac, your computer, iPhone, and Xcode must have compatible versions. If you are buying a Mac to use the build with the Mac method, choose one that can be updated to the Tahoe (macOS 26) operating system and has at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+
+
 !!! question "FAQs"
 
-You can do this in one sitting or over multiple days. 
+    - **Do I need a Mac?** No, you can [Build Trio with Browser](../browser/browser-build-overview.md) on any computer.
+    - **How often do I need to use the computer to build with the Mac method?** Computer access is required when:
+        - Initially installing the Trio app.
+        - Trio will expire annually for a paid account or weekly for a free account.
+        - Updating to a newer Trio release.
+        - You do not need access to an Apple computer to update your phone's iOS, troubleshoot, or change Trio settings
+    - **What if my computer doesn't meet the minimum requirements** If your 'macOS' does not meet the minimum standards as your iOS version dictates, you will need to complete a software update on your computer to continue. Suppose you cannot update your computer to the required 'macOS' due to hardware limitations. In that case, your options are as follows:
+        - Build Trio with GitHub using the Browser Build method.
+        - Borrow an up-to-date Mac computer.
+        - Purchase an up-to-date Mac computer.
 
 !!! question "What if I get stuck?"
 
