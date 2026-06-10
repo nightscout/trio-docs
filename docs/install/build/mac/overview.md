@@ -48,4 +48,4 @@ When you are ready to proceed, take your time, read carefully, and complete the 
 
     * First, take some time to read over the instructions to ensure you have understood all the steps.
     * Compare your screen's display with the images in the documents. Is there something different? Does yours have an error message? If so, does it guide you to the problem and solution?
-    * If you are still stuck, you can seek assistance via [Facebook](https://www.facebook.com/groups/diytrio) or [Discord](https://discord.com/invite/FnwFEFUwXE).
+    * If you are still stuck, you can seek assistance via [Facebook](https://facebook.triodocs.org) or [Discord](https://discord.triodocs.org).

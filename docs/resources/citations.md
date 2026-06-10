@@ -12,12 +12,12 @@ Trio is not a fork of Loop. While their underlying algorithms are different, the
 ## Community Support (Free Support)
 There are many opportunities to find help with using Trio.
 
-- [**Discord**](https://discord.gg/FnwFEFUwXE)  
+- [**Discord**](https://discord.triodocs.org)  
     In Discord, you can...
     - search in the relevant channel to see if your issue has been answered
     - post a question in a relevant channel
     - expect answers from both Trio developers and fellow DIY community members
-- [**Facebook**](https://www.facebook.com/groups/diytrio)  
+- [**Facebook**](https://facebook.triodocs.org)  
   In Facebook, you can...
     - use the search function in Facebook to locate posts where your issue may have already been addressed
     - post a question to the Facebook group

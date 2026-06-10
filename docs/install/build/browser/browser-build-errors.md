@@ -13,7 +13,7 @@ If you are having trouble:
 
 * Use the TrioDocs search feature
 * Use the Trio Discord search feature
-    * Not a member? Here's the invite link: [Invitation to Trio Discord](https://discord.gg/FnwFEFUwXE)
+    * Not a member? Here's the invite link: [Invitation to Trio Discord](https://discord.triodocs.org)
 * [Ask a mentor for help](#where-to-get-help-with-browser-build)
 
 #### Please do NOT:
@@ -30,7 +30,7 @@ If you are having trouble:
 These are several places to ask for help, but please choose only one. You may get a faster response from Facebook, but there are mentors on all these sites:
 
 * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
-* [Trio Facebook Group](https://www.facebook.com/groups/diytrio)
+* [Trio Facebook Group](https://facebook.triodocs.org)
 * [Trio Discord: Support: Browser Build](https://discord.com/channels/1020905149037813862/1239982525820960860)
 
 ### What Information is Needed for Help
