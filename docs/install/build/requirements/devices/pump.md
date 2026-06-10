@@ -7,7 +7,7 @@ The following pumps are compatible with Trio:
 * [Dana-i](#dana-i)
 * [DanaRS-v3](#danars)
 * [Medtrum Nano](#medtrum-nano)
-* [Older Medtronic pumps](medtronic-pumps)
+* [Older Medtronic pumps](#medtronic-pumps)
 * [Tandem Mobi](#tandem-mobi) (_in early development_)
 
 No other pumps work with Trio at this time, but other open-source closed-loop options, such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/), support other pumps.
