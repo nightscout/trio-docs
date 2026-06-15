@@ -36,31 +36,16 @@ The default value is 0.0 U of extra insulin. If you use this customization, star
      - The pod reports every pulse that it delivers to Trio. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts.
      - The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you slide to insert.
 
-[Eros Pods](#eros) and [Dash Pods](#dash) have different locations for this change. Some change both files just in case, but that is unnecessary if you're only using one type of pod.
-
-### Dash
-Edit line 82 of the file `OmniBLE/OmniBLE/OmnipodCommon/Pod.swift`
+Edit line 80 of the file `OmnipodKit/OmnipodKit/OmnipodCommon/Pod.swift`
 
 Code before modification: 
 ```swift
-public static let cannulaInsertionUnitsExtra = 0.0
+static let cannulaInsertionUnitsExtra = 0.0
 ```
 
 Code after modification adding 0.25U of insulin: 
 ```swift
-public static let cannulaInsertionUnitsExtra = 0.25
-```
-### Eros
-Edit line 84 of the file `OmniKit/OmniKit/OmnipodCommon/Pod.swift`
-
-Code before modification: 
-```swift
-public static let cannulaInsertionUnitsExtra = 0.0
-```
-
-Code after modification adding 0.25U of insulin: 
-```swift
-public static let cannulaInsertionUnitsExtra = 0.25
+static let cannulaInsertionUnitsExtra = 0.25
 ```
 
 ## Add Custom Icon
