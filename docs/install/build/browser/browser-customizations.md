@@ -15,7 +15,7 @@ If you ever want to use a different branch or commit for a submodule than the on
     * Second line defines the submodule commit you want to use
     * Third line updates that submodule as you just specified
 
-An example is shown below. You can use this as a prototype for changing the SHA for any submodule as desired. This particular prototype uses the pod-keep-alive branch for OmniBLE with Trio.
+An example is shown below. While this partificular example is for an older submodule which is no longer part of Trio, you can still use it as a prototype for changing the SHA for any submodule as desired.
 
 ``` { .bash .copy title="Copy and Paste to Customize - Edit SHA and Submodule Name for your situation" }
           # Point to the most recent SHA for OmniBLE branch pod-keep-alive
