@@ -301,28 +301,6 @@
       
     </span>
 </a>
-<nav aria-label="Omnipod: Add Extra Insulin on Insertion" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dash">
-<span class="md-ellipsis">
-      
-        Dash
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#eros">
-<span class="md-ellipsis">
-      
-        Eros
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-custom-icon">
@@ -373,22 +351,12 @@
 <li>The only way to know that you successfully made this change is to count the clicks. Normal insertion is 0.5 units or 10 clicks (0.05 units per click). If you add 0.25 units to the "extra" value, you will get 0.25 / 0.05 = 5 extra clicks. In other words, there are 15 total clicks after you slide to insert.</li>
 </ul>
 </div>
-<p><a href="#eros">Eros Pods</a> and <a href="#dash">Dash Pods</a> have different locations for this change. Some change both files just in case, but that is unnecessary if you're only using one type of pod.</p>
-<h3 id="dash">Dash<a class="headerlink" href="#dash" title="Link to this section for reference">¶</a></h3>
-<p>Edit line 82 of the file <code>OmniBLE/OmniBLE/OmnipodCommon/Pod.swift</code></p>
+<p>Edit line 80 of the file <code>OmnipodKit/OmnipodKit/OmnipodCommon/Pod.swift</code></p>
 <p>Code before modification: 
-</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0</span>
+</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0</span>
 </span></code></pre></div><p></p>
 <p>Code after modification adding 0.25U of insulin: 
-</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.25</span>
-</span></code></pre></div><p></p>
-<h3 id="eros">Eros<a class="headerlink" href="#eros" title="Link to this section for reference">¶</a></h3>
-<p>Edit line 84 of the file <code>OmniKit/OmniKit/OmnipodCommon/Pod.swift</code></p>
-<p>Code before modification: 
-</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0</span>
-</span></code></pre></div><p></p>
-<p>Code after modification adding 0.25U of insulin: 
-</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.25</span>
+</p><div class="language-swift highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">static</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">cannulaInsertionUnitsExtra</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.25</span>
 </span></code></pre></div><p></p>
 <h2 id="add-custom-icon">Add Custom Icon<a class="headerlink" href="#add-custom-icon" title="Link to this section for reference">¶</a></h2>
 <p>There are several different app icon options built into Trio, but you can still add your own if you'd like. You'll need to convert the image you want into a PNG file with a resolution of 1024x1024. For this guide, we'll use this icon and call it ivan.</p>
@@ -402,43 +370,43 @@
 </li>
 <li>
 <p>Add a file called <code>Contents.json</code> with the following contents:
-   </p><div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">"images"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">      </span><span class="nt">"filename"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ivan.png"</span><span class="p">,</span>
-</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">      </span><span class="nt">"idiom"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"universal"</span><span class="p">,</span>
-</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">      </span><span class="nt">"platform"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ios"</span><span class="p">,</span>
-</span><span id="__span-6-7"><a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">      </span><span class="nt">"size"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1024x1024"</span>
-</span><span id="__span-6-8"><a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-6-9"><a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-6-10"><a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">      </span><span class="nt">"filename"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ivan 1.png"</span><span class="p">,</span>
-</span><span id="__span-6-11"><a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">      </span><span class="nt">"idiom"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"universal"</span><span class="p">,</span>
-</span><span id="__span-6-12"><a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">      </span><span class="nt">"platform"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"watchos"</span><span class="p">,</span>
-</span><span id="__span-6-13"><a href="#__codelineno-6-13" id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">      </span><span class="nt">"size"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1024x1024"</span>
-</span><span id="__span-6-14"><a href="#__codelineno-6-14" id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-6-15"><a href="#__codelineno-6-15" id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">  </span><span class="p">],</span>
-</span><span id="__span-6-16"><a href="#__codelineno-6-16" id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">  </span><span class="nt">"info"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-17"><a href="#__codelineno-6-17" id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">    </span><span class="nt">"author"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"xcode"</span><span class="p">,</span>
-</span><span id="__span-6-18"><a href="#__codelineno-6-18" id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="w">    </span><span class="nt">"version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-</span><span id="__span-6-19"><a href="#__codelineno-6-19" id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-6-20"><a href="#__codelineno-6-20" id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="p">}</span>
+   </p><div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nt">"images"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">      </span><span class="nt">"filename"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ivan.png"</span><span class="p">,</span>
+</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">      </span><span class="nt">"idiom"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"universal"</span><span class="p">,</span>
+</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">      </span><span class="nt">"platform"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ios"</span><span class="p">,</span>
+</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">      </span><span class="nt">"size"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1024x1024"</span>
+</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-4-9"><a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-4-10"><a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">      </span><span class="nt">"filename"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ivan 1.png"</span><span class="p">,</span>
+</span><span id="__span-4-11"><a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">      </span><span class="nt">"idiom"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"universal"</span><span class="p">,</span>
+</span><span id="__span-4-12"><a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">      </span><span class="nt">"platform"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"watchos"</span><span class="p">,</span>
+</span><span id="__span-4-13"><a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">      </span><span class="nt">"size"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1024x1024"</span>
+</span><span id="__span-4-14"><a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-15"><a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-4-16"><a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">  </span><span class="nt">"info"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-17"><a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">    </span><span class="nt">"author"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"xcode"</span><span class="p">,</span>
+</span><span id="__span-4-18"><a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">    </span><span class="nt">"version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-4-19"><a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-20"><a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="p">}</span>
 </span></code></pre></div><p></p>
 </li>
 <li>
 <p>Insert a new line after line 14 in the file <code>FreeAPS/Sources/Models/Icons.swift</code> containing the following text: <code>case ivan = "ivan"</code></p>
 <ul>
 <li>Code <strong>before</strong> modification:<br/>
-<div class="language-swift highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="p">...</span>
-</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"trioLoop"</span>
-</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nv">id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">rawValue</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="p">}</span>
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">...</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"trioLoop"</span>
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nv">id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">rawValue</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">}</span>
 </span></code></pre></div></li>
 <li>Code <strong>after</strong> modification:<br/>
-<div class="language-swift highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">...</span>
-</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"trioLoop"</span>
-</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">ivan</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"ivan"</span>
-</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nv">id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">rawValue</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-8-5"><a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">}</span>
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">...</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"trioLoop"</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="n">ivan</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"ivan"</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nv">id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">rawValue</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="p">}</span>
 </span></code></pre></div></li>
 </ul>
 </li>
