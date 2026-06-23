@@ -63,9 +63,12 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
 ![Eversense transmitter with implant](img/eversense.png){width="150"}
 {align="center"}
 
-Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters.
-Note that Eversense integration is currently only available with the experimental branch `feat/dev-eversense`.
-  
-## Medtronic Enlite
+!!! warning "*Feature Branch"
+    
+    **Eversense is currently only available in the feature branch [`feat/dev-eversense`](https://github.com/nightscout/Trio/tree/feat/dev-eversense). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
 
-The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic CGM data directly from the pump using a RileyLink-compatible device.
+!!! warning "Internet Required for First Use"
+    
+    **Internet access is required only for the initial Eversense login when pairing the transmitter to Trio; afterward, an internet connection is no longer required for readings to populate.**
+
+Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters. 

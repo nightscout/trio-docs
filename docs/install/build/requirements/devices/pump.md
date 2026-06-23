@@ -24,7 +24,7 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 
 #### Omnipod 5
 
-!!! warning "Feature Branch"
+!!! warning "*Feature Branch"
     
     **Omnipod 5 is currently only available in the feature branch [`feat/o5`](https://github.com/nightscout/Trio/tree/feat/o5). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
     
