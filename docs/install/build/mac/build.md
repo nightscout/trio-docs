@@ -186,6 +186,20 @@ Please see the [New User Guide](../../../configuration/new-user-setup.md) to get
 ![Alt Text](img/xc-congratulations.gif){width="500"}
 {align= "center"}
 
+## Build a Feature Branch
+
+The 'Trio Build Select Script' only offers to build the `main` and `dev` branches, but you can use the 'Build Trio Script' to build a feature branch that was advertised in Discord but has not yet been merged into `dev`. 
+
+In the command (shown below), there is a space after the final quote, followed by a hyphen, another space and then the branch name. This example would build `other-branch`, if such a branch existed. 
+
+> This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
+
+``` { .bash .copy title="Replace <code>other-branch</code> with the desired branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh)" \
+   - other-branch
+```
+
 ## Free Apple Developer Account Build
 
 ### Prepare to Sign
