@@ -40,7 +40,7 @@ To use Trio, you are required to [build the application](install/index.md) from 
 
 Upon installation, you will follow an onboarding wizard in the app to configure your settings optimally. We strongly recommend using the [New User Setup Guide](configuration/new-user-setup.md) as you walk through onboarding so you are able to easily reference any additional information you may need.
 
-If you find yourself stuck, the community is here to help on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio).
+If you find yourself stuck, the community is here to help on [Discord](https://discord.triodocs.org) or [Facebook](https://facebook.triodocs.org).
 
 - - -
 # Contribution

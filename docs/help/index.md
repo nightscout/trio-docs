@@ -49,7 +49,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 -   __Support Communities__
 
     - - -
-    [Discord](https://discord.gg/FnwFEFUwXE)  
-    [Facebook](https://www.facebook.com/groups/diytrio)
+    [Discord](https://discord.triodocs.org)  
+    [Facebook](https://facebook.triodocs.org)
     
 </div>
