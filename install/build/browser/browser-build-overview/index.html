@@ -404,6 +404,55 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary-of-steps">
+<span class="md-ellipsis">
+      
+        Summary of Steps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tips-and-tricks">
+<span class="md-ellipsis">
+      
+        Tips and Tricks
+      
+    </span>
+</a>
+<nav aria-label="Tips and Tricks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-short-version">
+<span class="md-ellipsis">
+      
+        The Short Version
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-video-version">
+<span class="md-ellipsis">
+      
+        The Video Version
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-detailed-version">
+<span class="md-ellipsis">
+      
+        The Detailed Version
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -686,6 +735,55 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary-of-steps">
+<span class="md-ellipsis">
+      
+        Summary of Steps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tips-and-tricks">
+<span class="md-ellipsis">
+      
+        Tips and Tricks
+      
+    </span>
+</a>
+<nav aria-label="Tips and Tricks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-short-version">
+<span class="md-ellipsis">
+      
+        The Short Version
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-video-version">
+<span class="md-ellipsis">
+      
+        The Video Version
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-detailed-version">
+<span class="md-ellipsis">
+      
+        The Detailed Version
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -713,22 +811,151 @@
 <p>The first step in getting ready to build Trio using Browser Build is to review the above requirements. These are considered the minimum requirements for Building Trio using this method.</p>
 <p>The second step is to read over and become familiar with the build instructions in their entirety. This includes familiarizing yourself with common <a href="../browser-build-errors/">Build Errors</a>. Most mistakes you can make while building Trio have already been made, and our dedicated community has documented necessary fixes.</p>
 <p>When you are ready to proceed, take your time, read carefully, and complete the tasks on each page. Read the top three boxes on each page; icons for those boxes are displayed below for reference. </p>
-<div class="admonition info">
-<p class="admonition-title">Time Estimate</p>
+<h2 id="summary-of-steps">Summary of Steps<a class="headerlink" href="#summary-of-steps" title="Link to this section for reference">¶</a></h2>
+<details class="info" open="open">
+<summary>Time Estimate (click to open/close)</summary>
+<ul>
+<li>If you have never built the <em>Trio</em> app (or any other OS-AID app) allow up to one week elapsed time<ul>
+<li>Request and get an <span><em>Apple Developer</em> Account</span>: 1-2 days</li>
+<li>Create and configure your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and <code>repositories</code>: 1-2 hours</li>
+<li>Add <code>Secrets</code> (requires <em>Apple Developer</em> Account): 1 hour</li>
+<li>Perform the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Action</code> steps: 30 minutes to 2 hours</li>
+</ul>
+</li>
+<li>If you have previously built the <em>Trio</em> app with <em><abbr title="program used to build an app">Xcode</abbr></em> you have fewer steps and are probably familiar with some of the concepts<ul>
+<li>Expect 1 to 4 hours</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="abstract" open="open">
+<summary>Summary for Browser Build with Links (click to open/close)</summary>
+<p>You may be overwhelmed at first with all the new terms and the many steps. Take a deep breath and work through the steps one at a time.</p>
+<ul>
+<li>Use the template to <a href="../intro-secrets/#make-a-secrets-reference-file" target="_blank">Save Your Information</a></li>
+</ul>
+<p>If you prefer watching your instructions, a narrated video is available:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=kiu5ho0MTW8">How to Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App With a Web Browser</a><ul>
+<li>The steps for building <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and <em>Trio</em> are similar, so this video may be helpful</li>
+</ul>
+</li>
+</ul>
+<p>Once you have your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and <em>Apple Developer</em> accounts, the steps below are a high-level summary with links to the detailed <code>TrioDocs</code> section.</p>
+<p>You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>. All six secrets should be saved in your <a href="../intro-secrets/#make-a-secrets-reference-file"><code>Secrets</code> reference file</a>. You will need to be able to use them again.</p>
+<ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
+<li><a href="../create-github-account/" target="_blank">Create a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</a> if you don't have one</li>
+<li><a href="../create-github-account/#create-github-personal-access-token" target="_blank">Create and Save the <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> Secret</a></li>
+<li>(Optional) <a href="../create-github-account/#create-a-free-github-organization" target="_blank">Create a Free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Organization</a> (strongly recommended)</li>
+</ul>
+</li>
+<li><a href="../create-github-account/#make-up-a-password" target="_blank">Make up a Password</a></li>
+<li><em><span translate="no">Apple</span></em>:<ul>
+<li><a href="../apple-secrets/#collect-the-four-apple-secrets" target="_blank">Collect the four <em>Apple</em> <code>Secrets</code></a></li>
+</ul>
+</li>
+</ul>
+<p>Now it's time to use those <code>Secrets</code> to build the <em>Trio</em> app</p>
+<ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
+<li><a href="../fork-prepare-repo/" target="_blank"><code>Fork</code> the <abbr title="contains project files and each file's revision history">repository</abbr> (make your copy of <code>Trio</code>)</a><ul>
+<li>Using an organization? Add <code>Secrets</code> and <code>Variables</code> to your Organization and all your apps can use them</li>
+<li>Not using an organization? You have to add <code>Secrets</code> and <code>Variables</code> to each <abbr title="contains project files and each file's revision history">repository</abbr> individually</li>
+</ul>
+</li>
+<li><a href="../fork-prepare-repo/#configure-secrets" target="_blank">Add <code>Secrets</code> to your <code>organization</code> or a single <code>fork</code></a></li>
+<li><a href="../actions/validate-secrets/" target="_blank"><code>Action: 1. Validate Secrets</code></a></li>
+<li><a href="../actions/add-identifiers/" target="_blank"><code>Action: 2. Add Identifiers</code></a></li>
+</ul>
+</li>
+<li><em><span translate="no">Apple</span></em>:<ul>
+<li><a href="../actions/prepare-app/" target="_blank">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <em>Trio</em></a></li>
+<li><a href="../actions/prepare-app/#configure-trio-app" target="_blank">Create your version of <em>Trio</em> in <code>App Store</code> (personal use only, not for distribution)</a></li>
+<li><a href="../actions/prepare-testflight/#testflight-overview" target="_blank">Set up <code>Internal TestFlight Group for the App</code></a></li>
+</ul>
+</li>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
+<li><a href="../actions/build-app/" target="_blank"><code>Action: 4. Build Trio</code></a><ul>
+<li>Yes we can count, but Action 3 is included in Action 4</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Phone: <a href="../install-from-testflight/" target="_blank">Install the <em>Trio</em> app using the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</a></li>
+</ul>
+</details>
+<details class="question" open="open">
+<summary>FAQs (click to open/close)</summary>
+<ul>
+<li><strong>Do I need a Mac computer?</strong> No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.</li>
+<li><strong>Isn't it hard to build every 90 days?</strong> The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are really fast. You just need to keep your Apple Developer account up to date. Review any email that says a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> action failed - read the error and take action. For more information, see the next bullet.</li>
+<li><strong>Can you explain automatic building?</strong> There's a whole page in LoopDocs on <a href="https://loopkit.github.io/loopdocs/browser/automatic">Automatic Update &amp; Build</a> with most of that information valid for Trio users<ul>
+<li><a href="https://loopkit.github.io/loopdocs/browser/automatic/#successful-weekly-action">Successful Weekly Action</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/browser/automatic/#successful-monthly-action">Successful Monthly Action</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/browser/automatic/#automatic-certificate-renewal">Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Renewal - annual event</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/browser/automatic/#open-source-app-schedule">Open-Source App Schedule for rebuilding</a></li>
+</ul>
+</li>
+<li><strong>Can I use this for my child?</strong> You, as the adult, can install using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on your child's phone. The explicit steps are provided at <a href="../install-from-testflight/#testflight-for-a-child" target="_blank">Install on Phone: <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a>.</li>
+<li><strong>Can I still use my customizations?</strong> Yes. <a href="../browser-customizations/" target="_blank">Customize using Browser</a></li>
+<li><strong>Is there a build video?</strong> Yes. <a href="https://www.youtube.com/watch?v=kiu5ho0MTW8">How to Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App With a Web Browser</a><ul>
+<li>You need to adjust when watching that because you are building <em>Trio</em> instead of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and the video is somewhat out of date</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Link to this section for reference">¶</a></h2>
+<p>The steps to configure for building with a browser require a lot of focused attention. Take it in steps and take breaks as needed. Some people prefer a video. Some people prefer more detailed steps on a webpage and others only high-level steps.</p>
+<div class="admonition important">
+<p class="admonition-title">How to Ask for Help</p>
+<p>First time setup should take several hours, but if you are having trouble don't get frustrated:</p>
+<ul>
+<li><a href="../browser-build-errors/#help-with-errors" target="_blank">Click here to find help</a>.</li>
+</ul>
 </div>
-<div class="admonition abstract">
-<p class="admonition-title">Summary</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">FAQs</p>
-</div>
-<p>You can do this in one sitting or over multiple days. </p>
+<details class="tip" open="open">
+<summary>Who should use a free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization option (click to close/open)</summary>
+<p>There are several places where you see a recommendation to use a free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization instead of building directly from your personal free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
+<p>When you use an organization, you don't have to add 6 Secrets to each <abbr title="contains project files and each file's revision history">repository</abbr> for every app you build. It can save a lot of time in the long run.</p>
+<ul>
+<li>Even if you just build Trio and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account - but there is no particular advantage (until you decide maybe you do want to build another app)</li>
+<li>Who should definitely build with an organization:<ul>
+<li>Anyone who is a caregiver will want LoopFollow</li>
+<li>Anyone who wants to use LoopFollow for the amazing alarm capabilties</li>
+<li>Anyone who might want to try a different app such as xDrip4iOS</li>
+</ul>
+</li>
+</ul>
+</details>
+<h3 id="the-short-version">The Short Version<a class="headerlink" href="#the-short-version" title="Link to this section for reference">¶</a></h3>
+<p>Complete instructions are found at this link for those comfortable with using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and navigating the <em>Apple Developer</em> and <em>Apple App Connect</em> pages.</p>
+<ul>
+<li><a href="https://github.com/nightscout/Trio/blob/main/fastlane/testflight.md">Using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions + FastLane to deploy to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a></li>
+</ul>
+<h3 id="the-video-version">The Video Version<a class="headerlink" href="#the-video-version" title="Link to this section for reference">¶</a></h3>
+<p>If you prefer watching your instructions, there is a narrated video of each step needed to build using a browser. This video was created for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> version 3.2.x. So translate in your head - Trio instead of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and some steps are out-of-date.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=kiu5ho0MTW8">How to Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App With a Web Browser</a></li>
+</ul>
+<blockquote>
+<p>Do not decide to uncheck the box for Near Field Communications in the Identifer for <code>Trio</code> - that is required to build.</p>
+</blockquote>
+<p>Click in the comments for a full index of topics.  If you have issues with a particular section, use the index to advance to the relevant part of the video. Subtitles are in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.</p>
+<h3 id="the-detailed-version">The Detailed Version<a class="headerlink" href="#the-detailed-version" title="Link to this section for reference">¶</a></h3>
+<p>If you prefer seeing step-by-step instructions, those are provided too.</p>
+<p>Some sections have a Section Summary for those who just want high-level steps without a lot of graphics. It also provides a high-level view of what you are going to do before you do it.</p>
+<ul>
+<li>To view the summary, click on the summary header</li>
+<li>If the summary is all you need, use the <code>skip forward</code> symbol (<span class="loop-big"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"></path></svg></span></span>) to skip to the next instruction</li>
+<li>Or follow the detailed instructions below the summary</li>
+</ul>
 <div class="admonition question">
 <p class="admonition-title">What if I get stuck?</p>
 <ul>
 <li>First, take some time to read over the instructions to ensure you have understood all the steps.</li>
 <li>Compare your screen's display with the images in the documents. Is there something different? Does yours have an error message? If so, does it guide you to the problem and solution?</li>
-<li>If you are still stuck, you can seek assistance via <a href="https://www.facebook.com/groups/diytrio">Facebook</a> or <a href="https://discord.com/invite/FnwFEFUwXE">Discord</a>.</li>
+<li>If you are still stuck, you can seek assistance via <a href="https://facebook.triodocs.org">Facebook</a> or <a href="https://discord.triodocs.org">Discord</a>.</li>
 </ul>
 </div>
 </article>
