@@ -183,7 +183,7 @@ Trio can’t determine the glucose value when over 400mg/dL (22.2 mmol/L). This 
 
 ### What Pods work with Trio?
 
-You can use DASH and Eros Omnipod Pods with the Loop app. You cannot use Omnipod 5 Pods. 
+All 3 pod types are compatible with Trio. You can use Eros, Dash, or Omnipod 5 pods. 
 
 ### Do I still need a PDM with Trio?
 
@@ -195,8 +195,9 @@ In other words, your PDM can stay in the diabetes closet while you are Looping. 
 
 There is more communication between your phone and the Pod than the PDM, which increases the load on the Pod battery. Most people have no increase in Pod failures. However, it does occasionally happen. Below are some tips to **limit battery drain:**
 
-* The Pod state is updated every 3 minutes for DASH and every 5 minutes for Eros. If uncertain communications are detected, such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
+* The Pod state is updated every 3 minutes for DASH, every 5 minutes for Eros, and every 10 minutes for Omnipod 5. If uncertain communications are detected, such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
 * If using Eros Pods with a RileyLink device. Be mindful of situations that may lead to a poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
+* Omnipod 5 does not currently provide a heartbeat, so it is essential that your cgm offer this so Trio can run in the background.
 
 
 ## CGM FAQs
