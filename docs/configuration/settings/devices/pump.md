@@ -11,43 +11,14 @@ The first step in setting up your insulin pump on Trio is to tap the "Add Pump" 
 ## Step 2: Select Your Pump
 Select your pump from the in-app menu and from the options below for step-by-step instructions. The links below will guide you through the connection instructions for your specific pump.
  
-- [Medtronic](#medtronic) 
-- [All Omnipod Types](#all-omnipod-types) 
-   - [Omnipod Eros](#omnipod-eros)  
-   - [Omnipod Dash](#omnipod-dash)  
-   - [Omnipod 5](#omnipod-5)
+- [All Omnipod Types](#all-omnipod-types)
+    - [Omnipod Eros](#omnipod-eros)
+    - [Omnipod Dash](#omnipod-dash)
+    - [Omnipod 5](#omnipod-5)
 - [Dana(RS/-i)](#danars-i)
-- [Medtrum Nano](#medtrum-nano)  
-- [Pump Simulator](#pump-simulator)  
-    
-- - -
-  
-### Medtronic
-
-**Step 3** Choose your insulin type and tap "Continue"
-
-![Medtronic Screen 1](img/1_medtronic_insulin_type.png){ width="300px"  }
-{align=center}
-
-**Step 4**
-Connect your RileyLink, OrangeLink, or EmaLink and tap "Continue"
-
-![Medtronic Screen 2](img/2_medtronic_link_setup.png){ width="300px"  }
-{align=center}
-
-**Step 5a**
-Enter your pump region and color
-
-**Step 5b**
-Enter your 6-digit pump ID
-
-Then, tap the "Connect" button when it turns blue at the bottom.
-
-![Medtronic Screen 3](img/3_medtronic_pump_setup.png){ width="300px"  }
-{align=center}
-
-**Step 6**
-Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+- [Medtrum Nano](#medtrum-nano)
+- [Medtronic](#medtronic)
+- [Pump Simulator](#pump-simulator)
 
 - - -
 
@@ -135,7 +106,7 @@ Begin the process of configuring your Omnipod 5 pod by selecting Omnipod 5 and t
 **Step 5**
 Choose the expiration reminder that you prefer and tap "Next"
 
-![O5 Screen 2](img/2_o5_expiration){ width="300px"  }
+![O5 Screen 2](img/2_o5_expiration.png){ width="300px"  }
 {align=center}
 
 **Step 6**
@@ -220,6 +191,35 @@ Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user
 
 - - -
 
+### Medtronic
+
+**Step 3** Choose your insulin type and tap "Continue"
+
+![Medtronic Screen 1](img/1_medtronic_insulin_type.png){ width="300px"  }
+{align=center}
+
+**Step 4**
+Connect your RileyLink, OrangeLink, or EmaLink and tap "Continue"
+
+![Medtronic Screen 2](img/2_medtronic_link_setup.png){ width="300px"  }
+{align=center}
+
+**Step 5a**
+Enter your pump region and color
+
+**Step 5b**
+Enter your 6-digit pump ID
+
+Then, tap the "Connect" button when it turns blue at the bottom.
+
+![Medtronic Screen 3](img/3_medtronic_pump_setup.png){ width="300px"  }
+{align=center}
+
+**Step 6**
+Continue to [Connect CGM](cgm.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+
+- - -
+  
 ### Pump Simulator
 
 !!! warning
