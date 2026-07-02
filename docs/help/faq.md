@@ -181,23 +181,19 @@ Trio can’t determine the glucose value when over 400mg/dL (22.2 mmol/L). This 
 
 ## Omnipod FAQs
 
-### What Pods work with Trio?
+### What pods work with Trio?
 
-All 3 pod types are compatible with Trio. You can use Eros, Dash, or Omnipod 5 pods. 
+All 3 pod types are compatible with Trio. You can use Eros, DASH, or Omnipod 5 pods. Note that Omnipod 5 requires building a [feature branch](../install/build/requirements/devices/pump.md#omnipod-5) at this time.
 
-### Do I still need a PDM with Trio?
+### Do I still need a PDM/Controller with Trio?
 
-You do not need the Omnipod Personal Diabetes Manager (PDM); you need the Pod supplies. They will pair with only one device at a time. So, a Pod is either paired with a PDM or your Trio app on your iPhone. 
+You do not need the Omnipod Personal Diabetes Manager (PDM) or Omnipod 5 Controller; you need the pod supplies. They will pair with only one device at a time. So, a pod is either paired with a PDM/Controller or your Trio app on your iPhone. 
 
-In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a Pod activated with the Trio app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. 
+In other words, your PDM/Controller can stay in the diabetes closet while you are Looping. You cannot use the PDM/Controller for a pod activated with the Trio app. That doesn't mean you should get rid of your PDM/Controller if you have one. Instead, keep it for backup situations if you lose your phone. 
 
-### Does Trio cause an increase in Pod failures?
+### Does Trio cause an increase in pod failures?
 
-There is more communication between your phone and the Pod than the PDM, which increases the load on the Pod battery. Most people have no increase in Pod failures. However, it does occasionally happen. Below are some tips to **limit battery drain:**
-
-* The Pod state is updated every 3 minutes for DASH, every 5 minutes for Eros, and every 10 minutes for Omnipod 5. If uncertain communications are detected, such that Trio cannot determine if a dosing command sent to the Pod was received, the app will try once a minute to get a response.
-* If using Eros Pods with a RileyLink device. Be mindful of situations that may lead to a poor signal. Poor communication between devices may lead to battery drain and contribute to faults.
-* Omnipod 5 does not currently provide a heartbeat, so it is essential that your cgm offer this so Trio can run in the background.
+There is more communication between your phone and the pod than the PDM/Controller, which increases the load on the pod's battery. Most people have no increase in pod failures. However, it does occasionally happen.
 
 
 ## CGM FAQs
@@ -219,7 +215,7 @@ The following CGM can be used with Trio:
 
 ###What CGM apps can be used with Trio?
 
-**xDrip**  
+**xDrip4iOS**  
 To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../install/ecosystem/xdrip4ios.md).  
 
 !!! tip
