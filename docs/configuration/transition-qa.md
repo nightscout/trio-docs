@@ -179,7 +179,7 @@ Are you using a commercial closed-loop system like Insulet's Omnipod 5, Tandem's
 - Go through all the settings and tap the setting name to get an explanation of what each setting does.
 
 
-If you have any questions, feel free to reach out on [Discord](https://discord.gg/FnwFEFUwXE) or [Facebook](https://www.facebook.com/groups/diytrio). But please read the docs first.
+If you have any questions, feel free to reach out on [Discord](https://discord.triodocs.org) or [Facebook](https://facebook.triodocs.org). But please read the docs first.
 
 #### Watch the Loop and Learn Videos on Trio (Previously Referred to as "iAPS"):
 - [Open Mic: iAPS ver 2.0 with Magnus Reintz & Theresa Hastings, 8.3.2023](https://youtu.be/Jubfy-s9URI?si=cKOMb2mcHzBJdPIb)
