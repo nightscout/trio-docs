@@ -25,6 +25,7 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 #### Omnipod 5
 
 !!! warning "*Open Beta"
+    * We encourage anyone interested in participating in the Omnipod 5 Open Beta to read [these FAQs](https://nightscout.github.io/omnipod-five/open-beta.html)
     * Omnipod 5 is currently only available in the feature branch [`feat/o5`](https://github.com/nightscout/Trio/tree/feat/o5). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).
     * As this is an open beta, we encourage most people to wait while experienced users test this implementation
     
