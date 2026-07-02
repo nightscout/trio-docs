@@ -130,7 +130,7 @@ Omnipod 5 requires a certificate to be pulled from a database online. This step 
 **Step 9**
 Follow the on-screen instructions to pair your Omnipod 5 pod
 
-![O5 Screen 6](img/6_pair_o5_pod.png){ width="600px"  }
+![O5 Screen 6](img/6_pair_o5_pod.png){ width="450px"  }
 {align=center}
 
 **Step 10**
@@ -142,7 +142,7 @@ Proceed through the steps to insert the cannula
 **Step 11**
 Setup complete!
 
-![O5 Screen 8](img/o5_setup_complete.png){ width="600px"  }
+![O5 Screen 8](img/o5_setup_complete.png){ width="300px"  }
 {align=center}
 
 **Step 12**
