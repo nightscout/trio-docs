@@ -75,9 +75,10 @@ The allowed basal rate range depends on your insulin pump:
 
 | Pump Type | Minimum<br>(U/hr) | Maximum<br>(U/hr) | Increment<br>(U/hr) |
 |-----------|---------|---------|-----------|
-| Dana | 0.0 | 3.0 | 0.05 |
-| Omnipod DASH | 0.0 | 30.0 | 0.05 |
+| Omnipod 5 & DASH | 0.0 | 30.0 | 0.05 |
 | Omnipod Eros | 0.05 | 30.0 | 0.05 |
+| Dana | 0.0 | 3.0 | 0.05 |
+| Medtrum Nano | 0.0 | 25.0 | 0.05 |
 | MiniMed x15 & x22 | 0.0 | 35.0 | 0.05 (0-10)<br>0.1 (10-35) |
 | MiniMed x23 & x54 | 0.0 | 35.0 | 0.025 (0-1)<br>0.05 (1-10)<br>0.1 (10-35) |
 
