@@ -436,15 +436,6 @@
     </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#medtronic-enlite">
-<span class="md-ellipsis">
-      
-        Medtronic Enlite
-      
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -760,15 +751,6 @@
     </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#medtronic-enlite">
-<span class="md-ellipsis">
-      
-        Medtronic Enlite
-      
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </div>
@@ -852,10 +834,15 @@ Remember to enable <code>Upload Readings</code> to have <em>Trio</em> send gluco
 </div>
 <h2 id="eversense-e3-365">Eversense E3 / 365<a class="headerlink" href="#eversense-e3-365" title="Link to this section for reference">¶</a></h2>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eversense.png"><img alt="Eversense transmitter with implant" src="../img/eversense.png" width="150"/></a></p>
-<p>Trio supports both the Eversense E3 (90 days &amp; 180 days) and the Eversense 365 (full year) transmitters.
-Note that Eversense integration is currently only available with the experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> <code>feat/dev-eversense</code>.</p>
-<h2 id="medtronic-enlite">Medtronic Enlite<a class="headerlink" href="#medtronic-enlite" title="Link to this section for reference">¶</a></h2>
-<p>The Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data directly from the pump using a RileyLink-compatible device.</p>
+<div class="admonition warning">
+<p class="admonition-title">*Feature Branch</p>
+<p><strong>Eversense is currently only available in the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> <a href="https://github.com/nightscout/Trio/tree/feat/dev-eversense"><code>feat/dev-eversense</code></a>. See here for help on building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> with: <a href="../../../mac/build/#build-a-feature-branch">Mac Build</a> or <a href="../../../browser/build-dev-with-browser/">Browser Build</a>.</strong></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Internet Required for First Use</p>
+<p><strong>Internet access is required only for the initial Eversense login when pairing the transmitter to Trio; afterward, an internet connection is no longer required for readings to populate.</strong></p>
+</div>
+<p>Trio supports both the Eversense E3 (90 days &amp; 180 days) and the Eversense 365 (full year) transmitters. </p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

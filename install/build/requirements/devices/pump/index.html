@@ -712,13 +712,17 @@
 <h2 id="compatible-pumps">Compatible Pumps<a class="headerlink" href="#compatible-pumps" title="Link to this section for reference">¶</a></h2>
 <p>The following pumps are compatible with Trio:</p>
 <ul>
-<li><a href="#omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH pumps</a></li>
-<li><a href="#omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros pumps</a></li>
+<li><a href="#omnipod-5"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5*</a></li>
+<li><a href="#omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH</a></li>
+<li><a href="#omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros</a></li>
 <li><a href="#dana-i">Dana-i</a></li>
 <li><a href="#danars">DanaRS-v3</a></li>
 <li><a href="#medtrum-nano">Medtrum Nano</a></li>
 <li><a href="#medtronic-pumps">Older Medtronic pumps</a></li>
-<li><a href="#tandem-mobi">Tandem Mobi</a> (<em>in early development</em>)</li>
+</ul>
+<p>Developers are currently working on adding the following pumps to Trio:</p>
+<ul>
+<li><a href="#tandem-mobi">Tandem Mobi</a></li>
 </ul>
 <p>No other pumps work with Trio at this time, but other open-source closed-loop options, such as <a href="https://androidaps.readthedocs.io/en/latest/index.html">AAPS: Android Artificial Pancreas System</a> and <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a>, support other pumps.</p>
 <h3 id="omnipod-pumps"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Pumps<a class="headerlink" href="#omnipod-pumps" title="Link to this section for reference">¶</a></h3>
@@ -726,16 +730,34 @@
 <p class="admonition-title">Reminder and Disclaimer</p>
 <p>The use of <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.</p>
 </div>
+<h4 id="omnipod-5"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5<a class="headerlink" href="#omnipod-5" title="Link to this section for reference">¶</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">*Open Beta</p>
+<ul>
+<li>We encourage anyone interested in participating in the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 Open Beta to read <a href="https://nightscout.github.io/omnipod-five/open-beta.html">these FAQs</a></li>
+<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 is currently only available in the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> <a href="https://github.com/nightscout/Trio/tree/feat/o5"><code>feat/o5</code></a>. See here for help on building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> with: <a href="../../../mac/build/#build-a-feature-branch">Mac Build</a> or <a href="../../../browser/build-dev-with-browser/">Browser Build</a>.</li>
+<li>As this is an open beta, we encourage most people to wait while experienced users test this implementation</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Internet Required for First Use</p>
+<p>Internet access is required for online authentication the very first time you pair an <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod with Trio. Once authenticated, all future <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods will pair offline. If you switch to a new iPhone, however, Internet access will once again be required to authenticate the first <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Must have a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</p>
+<ul>
+<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 code is experimental and does not provide a heartbeat at this time</li>
+<li>This means you rely on your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to wake up the app when it is in the background or the phone is locked</li>
+<li>If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not supply a heartbeat, the app with stop automatically running when it is not open</li>
+</ul>
+</div>
+<p>The <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods were launched in 2022 and use Bluetooth, so they connect directly to the phone and don't require a RileyLink or similar device. The <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods are designed to be used with SmartAdjust, an automated looping algorithm that runs on the pod and connects directly to a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>. This algorithm is only available when used with the official <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 app or Controller. When paired with Trio, the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod will not connect to a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and only receive commands (automated and manual) from the Trio app running on an iPhone. If you want to use the SmartAdjust algorithm on the pod, you have to pair a brand new pod with the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 app or Controller. To reiterate: your <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> must both be in-range of and connected to your iPhone running Trio in order for automated looping to occur.</p>
 <h4 id="omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH<a class="headerlink" href="#omnipod-dash" title="Link to this section for reference">¶</a></h4>
 <p>The DASH Pods were launched in 2019 and use Bluetooth, so they don't require a RileyLink or similar device as they connect directly to the phone. DASH Pods are easy to identify with their blue tab instead of the clear tab used on Eros and <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/dash.png"><img alt="dash" src="../img/dash.png"/></a></p>
 <h4 id="omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros<a class="headerlink" href="#omnipod-eros" title="Link to this section for reference">¶</a></h4>
 <p>Eros pods were launched in 2013 and continue to be sold by Insulet. As of December 2023, they are no longer available in the US but are obtainable in other countries for now. Eros pods are also referred to as "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> System", "<abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Classic", or "Gen3". The Eros uses radio waves for communication between the Pod and the PDM. The iPhone does not support these radio waves, so in order to use Eros with Trio, you need to get a separate device that can translate radio waves to Bluetooth. These devices are called RileyLink, EmaLink, etc.</p>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eros.png"><img alt="eros" src="../img/eros.png" width="250"/></a></p>
-<div class="admonition danger">
-<p class="admonition-title"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5</p>
-<p><strong><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 Pods are <em>NOT</em> compatible with Trio</strong></p>
-</div>
 <h3 id="sooil-dana-pumps">Sooil Dana pumps<a class="headerlink" href="#sooil-dana-pumps" title="Link to this section for reference">¶</a></h3>
 <p><strong>Every Dana pump has built-in <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the <em>Trio</em> app.</strong></p>
 <h4 id="dana-i">Dana-i<a class="headerlink" href="#dana-i" title="Link to this section for reference">¶</a></h4>

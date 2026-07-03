@@ -528,6 +528,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#build-a-feature-branch">
+<span class="md-ellipsis">
+      
+        Build a Feature Branch
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#free-apple-developer-account-build">
 <span class="md-ellipsis">
       
@@ -820,6 +829,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#build-a-feature-branch">
+<span class="md-ellipsis">
+      
+        Build a Feature Branch
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#free-apple-developer-account-build">
 <span class="md-ellipsis">
       
@@ -1081,6 +1099,16 @@
 <p>Congratulations on building Trio, and welcome to the community.<br/>
 Please see the <a href="../../../../configuration/new-user-setup/">New User Guide</a> to get started with Trio. </p>
 <p align="align"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/xc-congratulations.gif"><img alt="Alt Text" src="../img/xc-congratulations.gif" width="500"/></a></p>
+<h2 id="build-a-feature-branch">Build a Feature Branch<a class="headerlink" href="#build-a-feature-branch" title="Link to this section for reference">¶</a></h2>
+<p>The 'Trio Build Select Script' only offers to build the <code>main</code> and <code>dev</code> branches, but you can use the 'Build Trio Script' to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> that was advertised in Discord but has not yet been merged into <code>dev</code>. </p>
+<p>In the command (shown below), there is a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name. This example would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. </p>
+<blockquote>
+<p>This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
+</blockquote>
+<div class="language-bash copy highlight"><span class="filename">Replace <code>other-branch</code> with the desired branch</span><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildTrio.sh<span class="k">)</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">   </span>-<span class="w"> </span>other-branch
+</span></code></pre></div>
 <h2 id="free-apple-developer-account-build">Free Apple Developer Account Build<a class="headerlink" href="#free-apple-developer-account-build" title="Link to this section for reference">¶</a></h2>
 <h3 id="prepare-to-sign">Prepare to Sign<a class="headerlink" href="#prepare-to-sign" title="Link to this section for reference">¶</a></h3>
 <p>You typically get here after choosing to Sign Manually after a successful download using the Build Select script. Normally this option is chosen by people building the app with a Free Apple Developer Account option or if you want to build to a simulator on your computer.</p>
