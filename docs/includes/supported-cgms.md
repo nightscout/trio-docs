@@ -16,6 +16,7 @@
     - Libre 3 / 3 Plus, all models (requires [LibreLinkUp](https://librelinkup.com/) and continuous internet connection)
 <!--include-markdown-supported-freestyle-sensors-end-->
 - [Eversense E3 / 365](../configuration/settings/devices/cgm.md#eversense-e3-365) (TESTING)
+- [Accu-Chek SmartGuide](../configuration/settings/devices/cgm.md#accu-chek-smartguide) (TESTING)
 - [Medtronic Enlite](../configuration/settings/devices/cgm.md#medtronic-enlite) (requires a compatible pump)
 - [xDrip4iOS](../configuration/settings/devices/cgm.md#xdrip4ios)
 - ([Nightscout](../configuration/settings/devices/cgm.md#nightscout-as-cgm))

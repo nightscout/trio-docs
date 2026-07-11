@@ -129,6 +129,39 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 - - -
 
+### Accu-Chek SmartGuide
+
+!!! warning "You must build the `feat/dev-accu-chek` branch to use the Accu-Chek SmartGuide CGM at this time"
+    The Accu-Chek SmartGuide CGM is in `feat/dev-accu-chek` and is experimental for now
+
+**Step 3**
+Wait a minute while Trio is scanning for your Accu-Chek SmartGuide
+
+![Accu-Chek Scanning](img/1_accu-chek-scanning.png){ width="300px" }
+{align=center}
+
+**Step 4**
+Once Trio has found your Accu-Chek SmartGuide, it prompts you to confirm the Serial Number.
+This Serial Number can be found on the twist cap of your applicator.
+
+![Accu-Chek Scanning](img/2_accu-chek_device_found.png){ width="300px" }
+{align=center}
+
+**Step 5**
+After you've confirmed the Serial Number, Trio will pair and configure your CGM.
+It might be the case that iOS asks for a Bluetooth pairing code, this code can be found at the top of the twist cap.
+After pairing, be sure to either never remove your CGM from the Bluetooth list or keep the twist cap/pincode somewhere safe.
+
+**Note** you will need this pincode if you want to migrate to a new phone
+
+![Accu-Chek Scanning](img/3_accu-chek_pairing.png){ width="300px" }
+{align=center}
+
+**Step 6**
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+
+- - -
+
 ### Glucose Simulator
 
 !!! warning
