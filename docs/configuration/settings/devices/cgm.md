@@ -131,8 +131,8 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 ### Accu-Chek SmartGuide
 
-!!! warning "You must build the `feat/dev-accu-chek` branch to use the Accu-Chek SmartGuide CGM at this time"
-    The Accu-Chek SmartGuide CGM is in `feat/dev-accu-chek` and is experimental for now
+!!! warning "You must build the `feat/accuchek` branch to use the Accu-Chek SmartGuide CGM at this time"
+    The Accu-Chek SmartGuide CGM is in `feat/accuchek` and is experimental for now
 
 **Step 3**
 Wait a minute while Trio is scanning for your Accu-Chek SmartGuide

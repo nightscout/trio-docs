@@ -80,7 +80,7 @@ Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (
 
 !!! warning "*Feature Branch"
     
-    **Accu-Chek SmartGuide is currently only available in the feature branch [`feat/dev-accu-chek`](https://github.com/nightscout/Trio/tree/feat/dev-accu-chek). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
+    **Accu-Chek SmartGuide is currently only available in the feature branch [`feat/accuchek`](https://github.com/nightscout/Trio/tree/feat/accuchek). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
 
 Trio suports the Accu-Chek SmartGuide CGM. This is a 14-day CGM from Roche.
 It requires 2 calibrations: one after 12h and one 0.5-2.5h after the first calibrations.
