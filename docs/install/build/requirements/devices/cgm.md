@@ -63,9 +63,9 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
 ![Eversense transmitter with implant](img/eversense.png){width="150"}
 {align="center"}
 
-!!! warning "*Feature Branch"
+!!! warning "*Open beta"
     
-    **Eversense is currently only available in the feature branch [`feat/dev-eversense`](https://github.com/nightscout/Trio/tree/feat/dev-eversense). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
+    **Eversense is currently only available in the [dev branch](https://github.com/nightscout/Trio/tree/dev).**
 
 !!! warning "Internet Required for First Use"
     
