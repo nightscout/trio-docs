@@ -72,3 +72,18 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
     **Internet access is required only for the initial Eversense login when pairing the transmitter to Trio; afterward, an internet connection is no longer required for readings to populate.**
 
 Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters. 
+
+## Accu-Chek SmartGuide
+
+![Accu-Chek SmartGuide CGM](img/accu-chek.png){width="150"}
+{align="center"}
+
+!!! warning "*Feature Branch"
+    
+    **Accu-Chek SmartGuide is currently only available in the feature branch [`feat/accuchek`](https://github.com/nightscout/Trio/tree/feat/accuchek). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
+
+Trio suports the Accu-Chek SmartGuide CGM. This is a 14-day CGM from Roche.
+It requires 2 calibrations: one after 12h and one 0.5-2.5h after the first calibrations.
+These calibrations are required, but can be done within Trio.
+
+You can use this CGM with one Trio (including calibrating the CGM) or use it along side the official [SmartGuide app](https://apps.apple.com/nl/app/accu-chek-smartguide-app/id6503455257) and [SmartGuide Predict app](https://apps.apple.com/nl/app/accu-chek-smartguide-predict/id6504021989). 
