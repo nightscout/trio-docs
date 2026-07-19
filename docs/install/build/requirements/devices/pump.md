@@ -2,7 +2,7 @@
 
 The following pumps are compatible with Trio:
 
-* [Omnipod 5*](#omnipod-5)
+* [Omnipod 5 (Open Beta))](#omnipod-5)
 * [Omnipod DASH](#omnipod-dash)
 * [Omnipod Eros](#omnipod-eros)
 * [Dana-i](#dana-i)
