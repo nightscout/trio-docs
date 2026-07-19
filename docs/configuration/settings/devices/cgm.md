@@ -94,15 +94,15 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 ### Eversense E3 / 365
 
-!!! warning "You must build the `feat/dev-eversense` branch to use the Eversense CGM at this time"
-    The Eversense CGM is in `feat/dev-eversense` and is experimental for now
+!!! warning "You must build the `dev` branch to use the Eversense CGM at this time"
+    The Eversense CGM is in `dev` and is in open-beta for now
 
 !!! warning "Wait until the initialization phase is completed"
     During the initialization phase of this system, the glucose reading might be incorrect.
     Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
 
-!!! warning "Do not use the Eversense app and Trio concurrently"
-    The transmitter is not able to connect to multiple apps or devices at the same time, due to the security protocol.
+!!! warning "Do not use the Eversense 365 app and Trio concurrently"
+    The 365 transmitter is not able to connect to multiple apps or devices at the same time, due to the security protocol.
     Make sure you either use the Eversense app or Trio, but not both at the same time.
 
 **Step 3**
@@ -122,6 +122,39 @@ Now put your Eversense transmitter in pairing mode (done by tapping the button 3
 Click on the found transmitter, accept the pairing prompt (if show), and wait untill the pairing process is completed!
 
 ![Eversense Transmitter scanning](img/3_eversense_transmitter_scanning.PNG){ width="300px" }
+{align=center}
+
+**Step 6**
+Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
+
+- - -
+
+### Accu-Chek SmartGuide
+
+!!! warning "You must build the `feat/accuchek` branch to use the Accu-Chek SmartGuide CGM at this time"
+    The Accu-Chek SmartGuide CGM is in `feat/accuchek` and is experimental for now
+
+**Step 3**
+Wait a minute while Trio is scanning for your Accu-Chek SmartGuide
+
+![Accu-Chek Scanning](img/1_accu-chek-scanning.png){ width="300px" }
+{align=center}
+
+**Step 4**
+Once Trio has found your Accu-Chek SmartGuide, it prompts you to confirm the Serial Number.
+This Serial Number can be found on the twist cap of your applicator.
+
+![Accu-Chek Scanning](img/2_accu-chek_device_found.png){ width="300px" }
+{align=center}
+
+**Step 5**
+After you've confirmed the Serial Number, Trio will pair and configure your CGM.
+It might be the case that iOS asks for a Bluetooth pairing code, this code can be found at the top of the twist cap.
+After pairing, be sure to either never remove your CGM from the Bluetooth list or keep the twist cap/pincode somewhere safe.
+
+**Note** you will need this pincode if you want to migrate to a new phone
+
+![Accu-Chek Scanning](img/3_accu-chek_pairing.png){ width="300px" }
 {align=center}
 
 **Step 6**
