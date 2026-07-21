@@ -83,6 +83,18 @@ If you get an error in an Action, examine the display and scroll down to view th
 
 ## Specific Trio Help
 
+### Time Sensitive Notifications Error
+
+*Trio* version 0.8.4.3 added a requirement for Time Sensitive Notifications capability to be enabled for your `Trio` Identifier. If it is not enabled, the `Build Trio` action fails with an error similar to this:
+
+``` { .text .wrap }
+error: Provisioning profile "match AppStore org.nightscout.***.trio" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.
+```
+
+**Solution:** [Enable Time Sensitive Notifications](actions/prepare-app.md#enable-time-sensitive-notifications) for your `Trio` Identifier, then run the `Build Trio` action again.
+
+### Other Errors
+
     🚧 Documentation Under Construction 🚧  
 
 Refer to [LoopDocs Browser Build Errors](https://loopkit.github.io/loopdocs/browser/bb-errors/) to see if you find anything useful or please [ask a mentor for help](#where-to-get-help-with-browser-build).

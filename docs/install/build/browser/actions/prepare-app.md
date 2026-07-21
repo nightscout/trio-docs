@@ -18,7 +18,7 @@ If you do not have a `Trio App Group`:
 
 ### Table of <code>Identifiers</code>
 
-These are the <code>Identifiers</code> created by running the *GitHub* action "<code>Add Identifiers</code>". Only 3 of them need to have the Trio App Group added.
+These are the <code>Identifiers</code> created by running the *GitHub* action "<code>Add Identifiers</code>". Only 3 of them need to have the Trio App Group added. The `Trio` Identifier also needs the Time Sensitive Notifications capability enabled manually.
 
 | NAME | Xcode version (NAME) | IDENTIFIER |
 |:--|:--|:--|
@@ -32,7 +32,18 @@ These are the <code>Identifiers</code> created by running the *GitHub* action "<
 - Open the [App IDs Identifier page for your Apple Developer Account](https://developer.apple.com/account/resources/identifiers/list).
     - Click on the `Trio` Identifier and assign the `Trio App Group` to the Identifier - see graphic below.
       > ![add Trio App Group to identifiers](../img/choose-trio-app-group.png)
-    - Repeat this for the other 2 <code>Identifiers</code> that need to have an App Group assigned: `Trio Watch App` and `Trio Watch Complication`
+    - Before saving the `Trio` Identifier, [Enable Time Sensitive Notifications](#enable-time-sensitive-notifications) as described in the next section
+    - Repeat the App Group assignment for the other 2 <code>Identifiers</code> that need to have an App Group assigned: `Trio Watch App` and `Trio Watch Complication`
+
+### Enable Time Sensitive Notifications
+
+There is one difference for the `Trio` Identifier compared to the other <code>Identifiers</code>. You must manually enable the Time Sensitive Notifications capability.
+
+While editing the `Trio` Identifier to add the `Trio App Group`, keep scrolling down until you see Time Sensitive Notifications. Make sure that check box is enabled, as shown in the graphic below. Then tap `Save`.
+
+> ![enable time sensitive notifications for the Trio identifier](../img/add-time-sensitive-notifications.png){width="400"}
+
+This capability is only required for the `Trio` Identifier - you do not need to enable it for the other <code>Identifiers</code>.
 
 ### Configure Trio App
 
