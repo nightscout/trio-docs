@@ -531,6 +531,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#enable-time-sensitive-notifications">
+<span class="md-ellipsis">
+      
+        Enable Time Sensitive Notifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#configure-trio-app">
 <span class="md-ellipsis">
       
@@ -822,6 +831,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#enable-time-sensitive-notifications">
+<span class="md-ellipsis">
+      
+        Enable Time Sensitive Notifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#configure-trio-app">
 <span class="md-ellipsis">
       
@@ -874,7 +892,7 @@
 </tbody>
 </table>
 <h3 id="table-of-identifiers">Table of <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#table-of-identifiers" title="Link to this section for reference">¶</a></h3>
-<p>These are the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> created by running the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>". Only 3 of them need to have the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> added.</p>
+<p>These are the <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> created by running the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action "<code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>". Only 3 of them need to have the Trio <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> added. The <code>Trio</code> Identifier also needs the Time Sensitive Notifications capability enabled manually.</p>
 <table>
 <thead>
 <tr>
@@ -913,10 +931,18 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/choose-trio-app-group.png"><img alt="add Trio App Group to identifiers" src="../../img/choose-trio-app-group.png"/></a></p>
 </blockquote>
 </li>
-<li>Repeat this for the other 2 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch App</code> and <code>Trio Watch Complication</code></li>
+<li>Before saving the <code>Trio</code> Identifier, <a href="#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a> as described in the next section</li>
+<li>Repeat the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assignment for the other 2 <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> that need to have an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it">App Group</abbr> assigned: <code>Trio Watch App</code> and <code>Trio Watch Complication</code></li>
 </ul>
 </li>
 </ul>
+<h3 id="enable-time-sensitive-notifications">Enable Time Sensitive Notifications<a class="headerlink" href="#enable-time-sensitive-notifications" title="Link to this section for reference">¶</a></h3>
+<p>There is one difference for the <code>Trio</code> Identifier compared to the other <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>. You must manually enable the Time Sensitive Notifications capability.</p>
+<p>While editing the <code>Trio</code> Identifier to add the <code>Trio App Group</code>, keep scrolling down until you see Time Sensitive Notifications. Make sure that check box is enabled, as shown in the graphic below. Then tap <code>Save</code>.</p>
+<blockquote>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/add-time-sensitive-notifications.png"><img alt="enable time sensitive notifications for the Trio identifier" src="../../img/add-time-sensitive-notifications.png" width="400"/></a></p>
+</blockquote>
+<p>This capability is only required for the <code>Trio</code> Identifier - you do not need to enable it for the other <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>.</p>
 <h3 id="configure-trio-app">Configure Trio App<a class="headerlink" href="#configure-trio-app" title="Link to this section for reference">¶</a></h3>
 <p>Follow the directions in <a href="https://loopkit.github.io/loopdocs/browser/prepare-app/#create-loop-app-in-app-store-connect">LoopDocs</a>, but use the Trio <code>Bundle ID</code></p>
 <ul>

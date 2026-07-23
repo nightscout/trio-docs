@@ -544,6 +544,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#enable-time-sensitive-notifications">
+<span class="md-ellipsis">
+      
+        Enable Time Sensitive Notifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#build-the-app">
 <span class="md-ellipsis">
       
@@ -563,19 +572,19 @@
 <nav aria-label="Update Build Errors" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#example-error">
+<a class="md-nav__link" href="#time-sensitive-notifications-error">
 <span class="md-ellipsis">
       
-        Example Error
+        Time Sensitive Notifications Error
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#solution">
+<a class="md-nav__link" href="#identifiers-error">
 <span class="md-ellipsis">
       
-        Solution
+        Identifiers Error
       
     </span>
 </a>
@@ -763,6 +772,15 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#enable-time-sensitive-notifications">
+<span class="md-ellipsis">
+      
+        Enable Time Sensitive Notifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#build-the-app">
 <span class="md-ellipsis">
       
@@ -782,19 +800,19 @@
 <nav aria-label="Update Build Errors" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#example-error">
+<a class="md-nav__link" href="#time-sensitive-notifications-error">
 <span class="md-ellipsis">
       
-        Example Error
+        Time Sensitive Notifications Error
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#solution">
+<a class="md-nav__link" href="#identifiers-error">
 <span class="md-ellipsis">
       
-        Solution
+        Identifiers Error
       
     </span>
 </a>
@@ -831,6 +849,7 @@
 </ul>
 </li>
 <li>If new <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are required: <a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a></li>
+<li>If Time Sensitive Notifications hasn't been enabled yet: <a href="#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a></li>
 <li>Optional: <a href="../actions/generate-certificates/">Update <code>Certificates</code></a>; this is included in Build Trio</li>
 <li><a href="#build-the-app">Build Trio <code>dev</code></a></li>
 </ol>
@@ -925,7 +944,7 @@
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/github-build-check-fork-status.svg"><img alt="message displayed when your fork of is behind the origin version" src="../img/github-build-check-fork-status.svg" width="700"/></a></p>
 </blockquote>
 <h3 id="update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#update-identifiers" title="Link to this section for reference">¶</a></h3>
-<p>At the current time, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and main <abbr title="version of code within a single repository or workspace repository">branch</abbr> have the same <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, so this step is not required. If identifiers are added to the <code>dev</code> or feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using, this will be required.</p>
+<p>If identifiers are added to the <code>dev</code> or feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using, this will be required, otherwise you can skip this.</p>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
 <li>Click on the <code>Actions</code> tab of your Trio <abbr title="contains project files and each file's revision history">repository</abbr></li>
@@ -950,6 +969,16 @@
 </ul>
 </div>
 <p>The <code>Add Identifiers</code> <span class="notranslate">Action</span>  should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
+<h3 id="enable-time-sensitive-notifications">Enable Time Sensitive Notifications<a class="headerlink" href="#enable-time-sensitive-notifications" title="Link to this section for reference">¶</a></h3>
+<p><em>Trio</em> <code>dev</code> version 0.8.4.3 added the requirement for the Time Sensitive Notifications capability to be enabled for your <code>Trio</code> Identifier. If you already enabled it, you can skip this step.</p>
+<ul>
+<li>This is a one-time manual step in your <em>Apple Developer</em> account - the <code>Add Identifiers</code> action does not enable this capability for you</li>
+<li>If the capability is not enabled, the <code>Build Trio</code> action fails</li>
+</ul>
+<p>Follow the directions at <a href="../actions/prepare-app/#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a>, then return to this page and continue with <a href="#build-the-app">Build the App</a>.</p>
+<ul>
+<li>You do not need to run any extra actions after checking the box - <code>Build Trio</code> includes the Create Certificates step, which updates your provisioning profile to include the new capability</li>
+</ul>
 <h3 id="build-the-app">Build the App<a class="headerlink" href="#build-the-app" title="Link to this section for reference">¶</a></h3>
 <p>If you completed all the steps on this page successfully (got a green checkmark ✅), you are ready to run Action: Build Trio.</p>
 <p>If you choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr> than your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Trio</code>. In addition to the normal steps 1, 2, and 3 in the graphic below, you must also do the (optional) step. Select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu before continuing to step 4 and tapping on the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button:</p>
@@ -967,8 +996,15 @@
 </div>
 <hr/>
 <h2 id="update-build-errors">Update Build Errors<a class="headerlink" href="#update-build-errors" title="Link to this section for reference">¶</a></h2>
-<p>Read the <strong>build action annotations</strong> if you see an error. This example is from the past when Push Notifications were added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<h3 id="example-error">Example Error<a class="headerlink" href="#example-error" title="Link to this section for reference">¶</a></h3>
+<p>Read the <strong>build action annotations</strong> if you see an error.</p>
+<h3 id="time-sensitive-notifications-error">Time Sensitive Notifications Error<a class="headerlink" href="#time-sensitive-notifications-error" title="Link to this section for reference">¶</a></h3>
+<p>If you did not <a href="#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a> for your <code>Trio</code> Identifier, the <code>Build Trio</code> action fails with an error similar to this:</p>
+<div class="language-text wrap highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>error: Provisioning profile "match AppStore org.nightscout.***.trio" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.
+</span></code></pre></div>
+<p><strong>Solution:</strong> <a href="#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a> and then run <code>Build Trio</code> again - make sure you select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h3 id="identifiers-error"><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Error<a class="headerlink" href="#identifiers-error" title="Link to this section for reference">¶</a></h3>
+<p>This example is from the past when Push Notifications were added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h4 id="example-error">Example Error<a class="headerlink" href="#example-error" title="Link to this section for reference">¶</a></h4>
 <blockquote>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-annotation-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio annotation error for missing identifier update" src="../img/trio-annotation-need-to-run-add-identifiers.png" width="600"/></a></p>
 </blockquote>
@@ -977,7 +1013,7 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-log-detail-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-detail-need-to-run-add-identifiers.png" width="600"/></a></p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/trio-log-real-error-need-to-run-add-identifiers.png"><img _="," align="center" alt="Trio log error for missing identifier update" src="../img/trio-log-real-error-need-to-run-add-identifiers.png" width="600"/></a></p>
 </blockquote>
-<h3 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h3>
+<h4 id="solution">Solution<a class="headerlink" href="#solution" title="Link to this section for reference">¶</a></h4>
 <ol>
 <li><a href="#update-identifiers">Update <code><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li><a href="#build-the-app">Build the App</a> - make sure you select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>

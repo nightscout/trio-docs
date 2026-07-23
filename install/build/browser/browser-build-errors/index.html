@@ -541,6 +541,28 @@
       
     </span>
 </a>
+<nav aria-label="Specific Trio Help" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-sensitive-notifications-error">
+<span class="md-ellipsis">
+      
+        Time Sensitive Notifications Error
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-errors">
+<span class="md-ellipsis">
+      
+        Other Errors
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -791,6 +813,28 @@
       
     </span>
 </a>
+<nav aria-label="Specific Trio Help" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-sensitive-notifications-error">
+<span class="md-ellipsis">
+      
+        Time Sensitive Notifications Error
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-errors">
+<span class="md-ellipsis">
+      
+        Other Errors
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -880,6 +924,12 @@
 <h3 id="look-at-the-annotation">Look at the Annotation<a class="headerlink" href="#look-at-the-annotation" title="Link to this section for reference">¶</a></h3>
 <p>If you get an error in an Action, examine the display and scroll down to view the annotation. Some errors have a clear annotation telling you what to do. If the annotation is not clear to you, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h2 id="specific-trio-help">Specific Trio Help<a class="headerlink" href="#specific-trio-help" title="Link to this section for reference">¶</a></h2>
+<h3 id="time-sensitive-notifications-error">Time Sensitive Notifications Error<a class="headerlink" href="#time-sensitive-notifications-error" title="Link to this section for reference">¶</a></h3>
+<p><em>Trio</em> version 0.8.4.3 added a requirement for Time Sensitive Notifications capability to be enabled for your <code>Trio</code> Identifier. If it is not enabled, the <code>Build Trio</code> action fails with an error similar to this:</p>
+<div class="language-text wrap highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>error: Provisioning profile "match AppStore org.nightscout.***.trio" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.
+</span></code></pre></div>
+<p><strong>Solution:</strong> <a href="../actions/prepare-app/#enable-time-sensitive-notifications">Enable Time Sensitive Notifications</a> for your <code>Trio</code> Identifier, then run the <code>Build Trio</code> action again.</p>
+<h3 id="other-errors">Other Errors<a class="headerlink" href="#other-errors" title="Link to this section for reference">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code>🚧 Documentation Under Construction 🚧
 </code></pre></div>
 <p>Refer to <a href="https://loopkit.github.io/loopdocs/browser/bb-errors/">LoopDocs Browser Build Errors</a> to see if you find anything useful or please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>

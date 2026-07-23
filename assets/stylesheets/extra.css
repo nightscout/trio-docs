@@ -273,3 +273,13 @@
 .video-center video {
   max-width: 100%;
 }
+
+/*
+ * Allow code blocks marked with { .wrap } to soft-wrap long lines
+ * (e.g. long build-error messages) instead of scrolling horizontally.
+ */
+.md-typeset .highlight.wrap pre,
+.md-typeset .highlight.wrap pre > code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
