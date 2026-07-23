@@ -13,6 +13,7 @@ These are the new steps for you to follow:
 1. [Configure `Fork` with `dev` branch](#configure-fork-with-dev-branch)
     * Optional: [Configure the `dev` branch as default](#configure-the-dev-branch-as-default)
 1. If new Identifiers are required: [Update <code>Identifiers</code>](#update-identifiers)
+1. If Time Sensitive Notifications hasn't been enabled yet: [Enable Time Sensitive Notifications](#enable-time-sensitive-notifications)
 1. Optional: [Update <code>Certificates</code>](actions/generate-certificates.md); this is included in Build Trio
 1. [Build Trio `dev`](#build-the-app)
 
@@ -96,7 +97,7 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### Update <code>Identifiers</code>
 
-At the current time, the dev branch and main branch have the same Identifiers, so this step is not required. If identifiers are added to the `dev` or feature branch you are using, this will be required.
+If identifiers are added to the `dev` or feature branch you are using, this will be required, otherwise you can skip this.
 
 Refer to the graphic below for the numbered steps:
 
@@ -115,6 +116,17 @@ Refer to the graphic below for the numbered steps:
     * Do not start a new action until the first one completes
 
 The `Add Identifiers`&nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+
+### Enable Time Sensitive Notifications
+
+*Trio* `dev` version 0.8.4.3 added the requirement for the Time Sensitive Notifications capability to be enabled for your `Trio` Identifier. If you already enabled it, you can skip this step.
+
+* This is a one-time manual step in your *Apple Developer* account - the `Add Identifiers` action does not enable this capability for you
+* If the capability is not enabled, the `Build Trio` action fails
+
+Follow the directions at [Enable Time Sensitive Notifications](actions/prepare-app.md#enable-time-sensitive-notifications), then return to this page and continue with [Build the App](#build-the-app).
+
+* You do not need to run any extra actions after checking the box - `Build Trio` includes the Create Certificates step, which updates your provisioning profile to include the new capability
 
 ### Build the App
 
@@ -137,9 +149,23 @@ If you choose to build a different branch than your default branch, there is an 
 
 ## Update Build Errors
 
-Read the **build action annotations** if you see an error. This example is from the past when Push Notifications were added to the `dev` branch.
+Read the **build action annotations** if you see an error.
 
-### Example Error
+### Time Sensitive Notifications Error
+
+If you did not [Enable Time Sensitive Notifications](#enable-time-sensitive-notifications) for your `Trio` Identifier, the `Build Trio` action fails with an error similar to this:
+
+``` { .text .wrap }
+error: Provisioning profile "match AppStore org.nightscout.***.trio" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.
+```
+
+**Solution:** [Enable Time Sensitive Notifications](#enable-time-sensitive-notifications) and then run `Build Trio` again - make sure you select the `dev` branch.
+
+### Identifiers Error
+
+This example is from the past when Push Notifications were added to the `dev` branch.
+
+#### Example Error
 
 > ![Trio annotation error for missing identifier update](img/trio-annotation-need-to-run-add-identifiers.png){ width="600", align="center"}
 
@@ -149,7 +175,7 @@ If you decide to look at the action **log**, instead of reading the annotations,
 
 > ![Trio log error for missing identifier update](img/trio-log-real-error-need-to-run-add-identifiers.png){ width="600", align="center"}
 
-### Solution
+#### Solution
 
 1. [Update <code>Identifiers</code>](#update-identifiers) - make sure you select `dev` branch
 2. [Build the App](#build-the-app) - make sure you select `dev` branch
