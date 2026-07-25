@@ -2,7 +2,7 @@
 
 The following pumps are compatible with Trio:
 
-* [Omnipod 5*](#omnipod-5)
+* [Omnipod 5 (Open Beta))](#omnipod-5)
 * [Omnipod DASH](#omnipod-dash)
 * [Omnipod Eros](#omnipod-eros)
 * [Dana-i](#dana-i)
@@ -26,7 +26,7 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
 
 !!! warning "*Open Beta"
     * We encourage anyone interested in participating in the Omnipod 5 Open Beta to read [these FAQs](https://nightscout.github.io/omnipod-five/open-beta.html)
-    * Omnipod 5 is currently only available in the feature branch [`feat/o5`](https://github.com/nightscout/Trio/tree/feat/o5). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).
+    * Omnipod 5 is currently available in the [`dev`](https://github.com/nightscout/Trio/tree/feat/dev) branch. See here for help on building dev with [Browser Build](../../browser/build-dev-with-browser.md).
     * As this is an open beta, we encourage most people to wait while experienced users test this implementation
     
 !!! warning "Internet Required for First Use"
