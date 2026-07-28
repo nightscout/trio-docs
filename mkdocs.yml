@@ -70,6 +70,11 @@ plugins:
       redirect_maps:
         "startup-guide.md": "configuration/new-user-setup.md"
         "startup-guide/index.md": "configuration/new-user-setup.md"
+        "configuration/migration/index.md": "usage/migration/index.md"
+        "configuration/migration/aaps-migration.md": "usage/migration/aaps-migration.md"
+        "configuration/migration/iaps-migration.md": "usage/migration/iaps-migration.md"
+        "configuration/migration/loop-migration.md": "usage/migration/loop-migration.md"
+        "configuration/migration/trio-02x-migration.md": "usage/migration/trio-02x-migration.md"
   - open-in-new-tab
   - macros
   - exporter:
@@ -221,6 +226,14 @@ nav:
   - Usage:
       - usage/index.md
       - User Interface: usage/interface.md
+      - Startup Guides:
+          - New User Setup Guide: configuration/new-user-setup.md
+          - Migration Guides:
+              - usage/migration/index.md
+              - Migrating from Trio 0.2.x: usage/migration/trio-02x-migration.md
+              - Migrating from iAPS: usage/migration/iaps-migration.md
+              - Migrating from Loop: usage/migration/loop-migration.md
+              - Migrating from AndroidAPS: usage/migration/aaps-migration.md
       - Core Concepts:
           - usage/concepts/index.md
           - Basal Rates: usage/concepts/basal-rates.md
@@ -279,14 +292,6 @@ nav:
           - xDrip4iOS: install/ecosystem/xdrip4ios.md
   - Configuration:
       - configuration/index.md
-      - Startup Guides:
-          - New User Setup Guide: configuration/new-user-setup.md
-          - Migration Guides:
-              - configuration/migration/index.md
-              - Migrating from Trio 0.2.x: configuration/migration/trio-02x-migration.md
-              - Migrating from iAPS: configuration/migration/iaps-migration.md
-              - Migrating from Loop: configuration/migration/loop-migration.md
-              - Migrating from AndroidAPS: configuration/migration/aaps-migration.md
       - Trio Settings:
           - configuration/settings/index.md
           - Devices:
