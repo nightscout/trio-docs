@@ -8,7 +8,7 @@
 
 # What is Trio?
 !!! note
-    The video refers to Trio 1.0, which will not be the official version number until beta testing is complete and it is released to the main branch.
+    In the video, ‘Trio 1.0’ refers to what is now version 0.7.0 on the main branch of the Trio repository, as the project transitioned from beta testing to an official release.
 
 <video controls  preload="metadata">
   <source src="assets/videos/trio-intro.mp4" type="video/mp4">
