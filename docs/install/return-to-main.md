@@ -9,7 +9,7 @@ If *Trio* shows you a warning at startup saying it was built from `dev` or from 
     *Trio* checks which branch it was built from each time it starts, and warns you if that branch is not `main`. The warning appears once per start, so it comes back if you quit *Trio* and open it again.
 
     * The `main` branch is the released version and is what almost everyone should run
-    * The `dev` branch is for expert testers - it changes often and contains features that have not been fully tested
+    * The `dev` branch is for expert testers — it changes often and contains features that have not been fully tested
     * A feature branch contains work on a single change and is usually meant for the person developing it
 
     Seeing this warning does not mean something is broken. It means you are running a test version.
@@ -18,7 +18,7 @@ If *Trio* shows you a warning at startup saying it was built from `dev` or from 
 
 ### Check the Version Numbers
 
-Moving from `dev` back to `main` is usually a **downgrade** - the version on `dev` is normally newer than the version on `main`.
+Moving from `dev` back to `main` is usually a **downgrade** — the version on `dev` is normally newer than the version on `main`.
 
 !!! warning "An older Trio may not be able to open your existing data"
 
@@ -28,16 +28,16 @@ Moving from `dev` back to `main` is usually a **downgrade** - the version on `de
 
     Before you switch:
 
-    * Find the version on `main` - see the [Trio releases page](https://github.com/nightscout/Trio/releases){: target="_blank" }
-    * Find the version you are running now - open *Trio* and go to Settings, where the version is shown at the bottom
+    * Find the version on `main` — see the [Trio releases page](https://github.com/nightscout/Trio/releases){: target="_blank" }
+    * Find the version you are running now — open *Trio* and go to Settings, where the version is shown at the bottom
     * If the version on `main` is **older** than the version you are running, ask on [Facebook](https://facebook.triodocs.org){: target="_blank" } or [Discord](https://discord.triodocs.org){: target="_blank" } whether that particular downgrade is safe before you build
 
-    If your build does end up stuck on the loading screen, you have not lost your settings - reinstalling the version you were on before will let *Trio* open normally again.
+    If your build does end up stuck on the loading screen, you have not lost your settings — reinstalling the version you were on before will let *Trio* open normally again.
 
 ### Plan the Timing
 
 * Your pod or pump session continues normally as long as you build with the **same** *Apple* Developer Account you used last time
-* If you are using a different Developer Account, you will get a second, separate *Trio* app on your phone, and your existing pod will not work with it - plan that change for when you are due for a pod change anyway
+* If you are using a different Developer Account, you will get a second, separate *Trio* app on your phone, and your existing pod will not work with it — plan that change for when you are due for a pod change anyway
 * Do not delete your existing *Trio* app first; building over it keeps your settings
 
 !!! note "This is not medical advice"
@@ -52,7 +52,7 @@ These steps are for people who build *Trio* using *GitHub* Actions in a browser.
 
 If you previously followed [Configure the `dev` branch as default](build/browser/build-dev-with-browser.md#configure-the-dev-branch-as-default), you need to reverse it. If you never changed your default branch, skip to [Update Your Fork](#update-your-fork).
 
-Only the owner of the repository can do this, and you must be logged in - otherwise the Settings tab does not appear.
+Only the owner of the repository can do this, and you must be logged in — otherwise the Settings tab does not appear.
 
 1. Click on the Settings icon near the top right of your *Trio* repository
     * You may need to scroll down to see the `Default Branch`
@@ -114,9 +114,9 @@ The startup warning stops appearing once you are running a build made from `main
 
 If you still see it:
 
-* Check that the build you installed is actually the new one - open Settings in *Trio* and look at the version and branch shown at the bottom
+* Check that the build you installed is actually the new one — open Settings in *Trio* and look at the version and branch shown at the bottom
 * For a browser build, check that you selected `main` in the `Build Trio` action, not just as your default branch
-* Remember that *TestFlight* may still be offering you the older build - make sure you installed the newest one
+* Remember that *TestFlight* may still be offering you the older build — make sure you installed the newest one
 
 ## Going Back to `dev` Later
 
