@@ -114,7 +114,7 @@ The startup warning stops appearing once you are running a build made from `main
 
 If you still see it:
 
-* Check that the build you installed is actually the new one — open Settings in *Trio* and look at the version and branch shown at the bottom
+* Check that the build you installed is actually the new one — open Settings in *Trio* and look at the version and branch shown at the top
 * For a browser build, check that you selected `main` in the `Build Trio` action, not just as your default branch
 * Remember that *TestFlight* may still be offering you the older build — make sure you installed the newest one
 
