@@ -58,13 +58,13 @@ Only the owner of the repository can do this, and you must be logged in — othe
     * You may need to scroll down to see the `Default Branch`
     * Do not tap on the Branches tab on the left under Code and Automation, that is not the correct menu
 
-    > ![show default branch](build/browser/img/gh-settings-branch-01.svg){width="600"}
+    > ![show default branch](build/browser/img/gh-settings-branch-from-dev-01.svg){width="600"}
 
 1. To the right of the default branch name there is a pencil and a left-right arrow icon (⇄)
     * Tap on the left-right arrow icon (⇄) to bring up the `Switch default branch to another branch` dialog
 1. Click on the dropdown next to the current default branch, in this case `dev`
 
-    > ![modify default branch](build/browser/img/gh-settings-branch-02.svg){width="400"}
+    > ![modify default branch](build/browser/img/gh-settings-branch-from-dev-02.svg){width="400"}
 
 1. Select `main`
 1. Click on the `Update` button
