@@ -206,12 +206,13 @@ The following CGM can be used with Trio:
 * Dexcom G6 / ONE
 * Dexcom G7 / ONE+
 * Medtronic Enlite (must use compatible pump)
-* Libre (limited Models)
+* FreeStyle Libre 1 / 2 / 2 Plus (limited Models)
     * US Libre 1 10-day sensors via Transmitters
     * US Libre 1 14-day sensors via Transmitters
     * International Libre 1 sensors via Transmitters
     * European Libre 2 / 2 Plus sensors via Transmitters
     * European Libre 2 / 2 Plus sensors directly via Bluetooth
+* Freestyle Libre 3 / 3 Plus, all models, directly via Bluetooth (open beta, `dev` branch only)
 
 ###What CGM apps can be used with Trio?
 

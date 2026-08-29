@@ -14,8 +14,8 @@ Select your CGM from the in-app menu and from the options below for step by step
 - [Dexcom G5 / G6 / ONE](#dexcom-g5-g6-one)
 - [Dexcom G7 / ONE+](#dexcom-g7-one)
 - [Dexcom Share](#dexcom-share)
-- [Freestyle Libre](#freestyle-libre)
-- [Freestyle Libre Demo](#freestyle-libre-demo)
+- [FreeStyle Libre 1 / 2 / 2 Plus](#freestyle-libre-1-2-2-plus)
+- [FreeStyle Libre 3 / 3 Plus](#freestyle-libre-3-3-plus)
 - [Eversense E3 / 365](#eversense-e3-365)
 - [Glucose Simulator](#glucose-simulator)  
 - [Medtronic Enlite](#medtronic-enlite)  
@@ -57,8 +57,8 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 - - -
 
-### Freestyle Libre
-This option can be used to pair a compatible Libre CGM directly to Trio without going through a separate app like xDrip4iOS.
+### FreeStyle Libre 1 / 2 / 2 Plus
+This option can be used to pair a compatible Libre 1, Libre 2, or Libre 2 Plus sensor directly to Trio without going through a separate app like xDrip4iOS. In the in-app menu, it is listed as "FreeStyle Libre 1 / 2 / 2+". For Libre 3 and Libre 3 Plus sensors, see [FreeStyle Libre 3 / 3 Plus](#freestyle-libre-3-3-plus) instead.
 
 **Step 3**
 Tap "Libre 2 Direct" to use Libre 2 sensors or "Bluetooth Transmitters" to use Libre 1 sensors with a Miao Miao or other 3rd party transmitter.
@@ -83,10 +83,45 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 - - -
 
-### Freestyle Libre Demo
-<!-- TODO: add information on Libre Demo -->
+### FreeStyle Libre 3 / 3 Plus
+
+!!! warning "You must build the `dev` branch to use the FreeStyle Libre 3 / 3 Plus CGM at this time"
+    The FreeStyle Libre 3 / 3 Plus CGM is in `dev` and is in open-beta for now. In the in-app menu, it is listed as "FreeStyle Libre 3 / 3+ (Beta)".
+
+!!! warning "Trio starts the sensor, and only one app can read it"
+    Trio starts (activates) the sensor itself while pairing, so pair a new sensor that you have not started in another app.
+    A Libre 3 sensor answers only to the app that started it. A sensor you start in Trio can no longer be read by the FreeStyle Libre 3 app, and a sensor you already started in the FreeStyle Libre 3 app cannot be paired to Trio.
+
+!!! warning "The FreeStyle Libre 3 app's alarms will not reach you"
+    Because Trio reads the sensor directly, the FreeStyle Libre 3 app's low and high glucose alarms are not active while the sensor is paired to Trio.
+    Set up Trio's own [Glucose Alarm Limits](../notifications/trio-notifications.md#glucose-alarm-limits) before you rely on this CGM, and consider a remote monitoring option such as Nightscout so someone else can see a low or high that you miss.
+
+!!! warning "Wait until warm-up is completed"
+    A newly started sensor warms up for about 60 minutes and reports no glucose during that time. Trio shows the remaining warm-up time on the home screen.
+    Before using automated insulin delivery, be sure the warm-up has completed and the readings look reasonable to you.
+
+!!! important "A paid Apple Developer account is required"
+    Pairing uses Near Field Communication (NFC), the short-range technology that lets you hold your phone against the sensor to talk to it. NFC is not available when Trio is built with a free Apple Developer account. See [Apple Developer Account](../../../install/build/requirements/apple-developer.md).
 
 **Step 3**
+Apply a new sensor to the back of your upper arm. Tap "HOW TO APPLY A SENSOR" if you would like Trio to walk you through it, then tap "Next".
+
+<!-- TODO: add screenshot of the Apply a new Sensor screen -->
+
+**Step 4**
+Tap "Start pairing", then hold the back of your phone against the sensor and keep it still. Your phone vibrates once the sensor is paired. If the phone moves away too early, the scan fails and you can try again.
+
+<!-- TODO: add screenshot of the Scan new Sensor screen -->
+
+**Step 5**
+Wait for Trio to finish pairing. Trio starts the sensor, connects to it over Bluetooth, and then receives a glucose reading every 5 minutes once warm-up is finished.
+
+<!-- TODO: add screenshot of the pairing progress screen -->
+
+**Step 6**
+Write down your Receiver ID, which you will find in the Debug Info section of the Libre 3 CGM settings page. The Receiver ID is the identifier the sensor remembers Trio by, and it is the only way to re-pair a sensor that is already running, for example after you delete the CGM from Trio or reinstall the app. To use it, tap "Recover existing sensor" on the pairing screen and enter the ID. When you re-pair a sensor that is already running, Trio shows "Stabilizing" for a while and does not display glucose readings the sensor itself flags as unreliable.
+
+**Step 7**
 Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
 
 - - -
