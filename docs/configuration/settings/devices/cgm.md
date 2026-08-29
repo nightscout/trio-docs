@@ -18,7 +18,6 @@ Select your CGM from the in-app menu and from the options below for step by step
 - [FreeStyle Libre 3 / 3 Plus](#freestyle-libre-3-3-plus)
 - [Eversense E3 / 365](#eversense-e3-365)
 - [Glucose Simulator](#glucose-simulator)  
-- [Medtronic Enlite](#medtronic-enlite)  
 - [Nightscout as CGM](#nightscout-as-cgm)  
 - [xDrip4iOS](#xdrip4ios)  
 
@@ -206,14 +205,6 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
     - Using a Glucose Simulator does not indicate how the app will perform, nor will it give accurate guidance or suggestions for insulin dosing.
     - A Glucose Simulator should **NEVER** be used with a live pump connected to a living person or pet.
     - **Only use a Glucose Simulator if you understand the conditions above.**
-
-**Step 2**
-Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)
-
-- - -
-
-### Medtronic Enlite
-The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Trio can read the Medtronic CGM data directly from the pump using a RileyLink-compatible device.
 
 **Step 2**
 Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../../new-user-setup.md)

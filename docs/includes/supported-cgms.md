@@ -18,7 +18,6 @@
     - Libre 3 and Libre 3 Plus, all models (direct via Bluetooth)
 - [Eversense E3 / 365](../configuration/settings/devices/cgm.md#eversense-e3-365) (Open-beta)
 - [Accu-Chek SmartGuide](../configuration/settings/devices/cgm.md#accu-chek-smartguide) (TESTING)
-- [Medtronic Enlite](../configuration/settings/devices/cgm.md#medtronic-enlite) (requires a compatible pump)
 - [xDrip4iOS](../configuration/settings/devices/cgm.md#xdrip4ios)
 - ([Nightscout](../configuration/settings/devices/cgm.md#nightscout-as-cgm))
 - ([Glucose Simulator](../configuration/settings/devices/cgm.md#glucose-simulator))
