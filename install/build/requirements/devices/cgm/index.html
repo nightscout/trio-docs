@@ -397,14 +397,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#libre-transmitter">
+<a class="md-nav__link" href="#freestyle-libre-1-2-2-plus">
 <span class="md-ellipsis">
       
-        Libre Transmitter
+        FreeStyle Libre 1 / 2 / 2 Plus
       
     </span>
 </a>
-<nav aria-label="Libre Transmitter" class="md-nav">
+<nav aria-label="FreeStyle Libre 1 / 2 / 2 Plus" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#supported-sensors">
@@ -426,6 +426,15 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#freestyle-libre-3-3-plus">
+<span class="md-ellipsis">
+      
+        FreeStyle Libre 3 / 3 Plus
+      
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#eversense-e3-365">
@@ -733,14 +742,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#libre-transmitter">
+<a class="md-nav__link" href="#freestyle-libre-1-2-2-plus">
 <span class="md-ellipsis">
       
-        Libre Transmitter
+        FreeStyle Libre 1 / 2 / 2 Plus
       
     </span>
 </a>
-<nav aria-label="Libre Transmitter" class="md-nav">
+<nav aria-label="FreeStyle Libre 1 / 2 / 2 Plus" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#supported-sensors">
@@ -762,6 +771,15 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#freestyle-libre-3-3-plus">
+<span class="md-ellipsis">
+      
+        FreeStyle Libre 3 / 3 Plus
+      
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#eversense-e3-365">
@@ -801,21 +819,23 @@
 </ul>
 <!--include-markdown-supported-freestyle-sensors-start-->
 <ul>
-<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre">FreeStyle Libre (limited models)</a><ul>
+<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre-1-2-2-plus">FreeStyle Libre 1 / 2 / 2 Plus (limited models)</a><ul>
 <li>US Libre 1 10-day sensors (via transmitters)</li>
 <li>US Libre 1 14-day sensors (via transmitters)</li>
 <li>International Libre 1 sensors (via transmitters)</li>
 <li>European Libre 2 / 2 Plus sensors (via transmitters)</li>
 <li>European Libre 2 / 2 Plus sensors (direct via Bluetooth)</li>
-<li>Libre 3 / 3 Plus, all models (requires <a href="https://librelinkup.com/">LibreLinkUp</a> and continuous internet connection)</li>
 </ul>
 </li>
 </ul>
 <!--include-markdown-supported-freestyle-sensors-end-->
 <ul>
+<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre-3-3-plus">FreeStyle Libre 3 / 3 Plus</a> (Open-beta)<ul>
+<li>Libre 3 and Libre 3 Plus, all models (direct via Bluetooth)</li>
+</ul>
+</li>
 <li><a href="../../../../../configuration/settings/devices/cgm/#eversense-e3-365">Eversense E3 / 365</a> (Open-beta)</li>
 <li><a href="../../../../../configuration/settings/devices/cgm/#accu-chek-smartguide">Accu-Chek SmartGuide</a> (TESTING)</li>
-<li><a href="../../../../../configuration/settings/devices/cgm/#medtronic-enlite">Medtronic Enlite</a> (requires a compatible pump)</li>
 <li><a href="../../../../../configuration/settings/devices/cgm/#xdrip4ios">xDrip4iOS</a></li>
 <li>(<a href="../../../../../configuration/settings/devices/cgm/#nightscout-as-cgm"><abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr></a>)</li>
 <li>(<a href="../../../../../configuration/settings/devices/cgm/#glucose-simulator">Glucose Simulator</a>)</li>
@@ -840,17 +860,23 @@ Remember to enable <code>Upload Readings</code> to have <em>Trio</em> send gluco
 <p class="admonition-title">Warning</p>
 <p><strong><em>The Glucose Simulator should never be used in conjunction with a live pump connected to a person (or animal).</em></strong></p>
 </div>
-<h2 id="libre-transmitter">Libre Transmitter<a class="headerlink" href="#libre-transmitter" title="Link to this section for reference">¶</a></h2>
-<p>This option pairs a compatible Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> directly with Trio without using a separate app like xDrip4iOS.</p>
+<h2 id="freestyle-libre-1-2-2-plus">FreeStyle Libre 1 / 2 / 2 Plus<a class="headerlink" href="#freestyle-libre-1-2-2-plus" title="Link to this section for reference">¶</a></h2>
+<p>This option pairs a compatible Libre 1, Libre 2, or Libre 2 Plus sensor directly with Trio without using a separate app like xDrip4iOS.
+For Libre 3 and Libre 3 Plus sensors, see <a href="#freestyle-libre-3-3-plus">FreeStyle Libre 3 / 3 Plus</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Libre 2 Direct not supported with a FREE Apple Developer Account</p>
+<p>Pairing a Libre 2 / 2 Plus sensor directly (Libre 2 Direct) requires <em>Near Field Communication (<abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr>)</em> tag reading.<br/>
+ ❌ This capability is not available when building Trio with a <strong>free</strong> Apple Developer Account.<br/>
+ ✅ Libre 1 and Libre 2 / 2 Plus sensors read through a third-party transmitter do not use your phone's <abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> and can be used with a free account.  </p>
+</div>
 <h3 id="supported-sensors">Supported Sensors<a class="headerlink" href="#supported-sensors" title="Link to this section for reference">¶</a></h3>
 <ul>
-<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre">FreeStyle Libre (limited models)</a><ul>
+<li><a href="../../../../../configuration/settings/devices/cgm/#freestyle-libre-1-2-2-plus">FreeStyle Libre 1 / 2 / 2 Plus (limited models)</a><ul>
 <li>US Libre 1 10-day sensors (via transmitters)</li>
 <li>US Libre 1 14-day sensors (via transmitters)</li>
 <li>International Libre 1 sensors (via transmitters)</li>
 <li>European Libre 2 / 2 Plus sensors (via transmitters)</li>
 <li>European Libre 2 / 2 Plus sensors (direct via Bluetooth)</li>
-<li>Libre 3 / 3 Plus, all models (requires <a href="https://librelinkup.com/">LibreLinkUp</a> and continuous internet connection)</li>
 </ul>
 </li>
 </ul>
@@ -862,6 +888,24 @@ Remember to enable <code>Upload Readings</code> to have <em>Trio</em> send gluco
 <li>FreeStyle Libre Pro</li>
 <li>FreeStyle Libre H</li>
 </ul>
+</div>
+<h2 id="freestyle-libre-3-3-plus">FreeStyle Libre 3 / 3 Plus<a class="headerlink" href="#freestyle-libre-3-3-plus" title="Link to this section for reference">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">*Open beta</p>
+<p><strong>FreeStyle Libre 3 / 3 Plus is currently only available in the <a href="https://github.com/nightscout/Trio/tree/dev">dev</a> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. <a href="../../../browser/build-dev-with-browser/">See here</a> for help on building the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> with Browser Build.</strong></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Only One App Can Read the Sensor</p>
+<p><strong>A sensor started in Trio can no longer be read by the FreeStyle Libre 3 app, and a sensor started in the FreeStyle Libre 3 app cannot be paired to Trio. If you want to switch to a different Trio or <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, though, you can enter the Receiver ID in the new app from the Libre 3 driver in whichever app started the sensor (Trio or <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>).</strong>
+<strong>This also means the FreeStyle Libre 3 app's low and high glucose alarms are not active while the sensor is paired to Trio, so set up Trio's own <a href="../../../../../configuration/settings/notifications/trio-notifications/#glucose-alarm-limits">Glucose Alarm Limits</a>. LibreLinkUp and LibreView are also not accessible, so look to use <abbr title="a personal website used to view your glucose and diabetes management data.">Nightscout</abbr>, Tidepool, and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow instead.</strong></p>
+</div>
+<p>Trio supports both the FreeStyle Libre 3 (14 days) and the FreeStyle Libre 3 Plus (15 days) sensors, in all regions.
+The sensor is paired to Trio via <abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> and then uses a direct Bluetooth connection to receive readings every minute, though it uses only one reading every five minutes. The one-minute readings are still viewable in the Libre 3 driver, though.</p>
+<div class="admonition info">
+<p class="admonition-title">FreeStyle Libre 3 / 3 Plus not supported with a FREE Apple Developer Account</p>
+<p>Pairing requires <em>Near Field Communication (<abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr>)</em> tag reading.<br/>
+ ❌ This capability is not available when building Trio with a <strong>free</strong> Apple Developer Account.<br/>
+ You need a <strong>paid</strong> Apple Developer Account for that. See <a href="../../apple-developer/">Apple Developer Account</a>.</p>
 </div>
 <h2 id="eversense-e3-365">Eversense E3 / 365<a class="headerlink" href="#eversense-e3-365" title="Link to this section for reference">¶</a></h2>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/eversense.png"><img alt="Eversense transmitter with implant" src="../img/eversense.png" width="150"/></a></p>
