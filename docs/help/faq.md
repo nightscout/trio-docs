@@ -205,13 +205,15 @@ The following CGM can be used with Trio:
 * Dexcom G5
 * Dexcom G6 / ONE
 * Dexcom G7 / ONE+
-* Medtronic Enlite (must use compatible pump)
-* Libre (limited Models)
+* FreeStyle Libre 1 / 2 / 2 Plus (limited Models)
     * US Libre 1 10-day sensors via Transmitters
     * US Libre 1 14-day sensors via Transmitters
     * International Libre 1 sensors via Transmitters
     * European Libre 2 / 2 Plus sensors via Transmitters
     * European Libre 2 / 2 Plus sensors directly via Bluetooth
+* Freestyle Libre 3 / 3 Plus, all models, directly via Bluetooth (open beta, `dev` branch only)
+* Eversense E3 / 365 (open beta, `dev` branch only)
+* Accu-Chek SmartGuide (open beta, `dev` branch only)
 
 ###What CGM apps can be used with Trio?
 
@@ -219,7 +221,7 @@ The following CGM can be used with Trio:
 To use xDrip4iOS as a CGM source, you must build it yourself with the same Apple Developer account you used to build your Trio app. Please see the following for instructions on how to build xDrip4iOS yourself [here](../install/ecosystem/xdrip4ios.md).  
 
 !!! tip
-    _If you use xDrip with the Dexcom G6/ONE, in Trio select `Dexcom G6` as the CGM source. Trio will intercept glucose readings directly from the transmitter._
+    _If you use xDrip4iOS with the Dexcom G6/ONE, in Trio select `Dexcom G6` as the CGM source. Trio will intercept glucose readings directly from the transmitter._
     
 **Nightscout**  
 Yes. Nightscout can be used as a remote CGM source in Trio. However, this option should be avoided because it does not keep Trio running in the background like other CGM options. You will have to open Trio manually to make it run loop cycles.  

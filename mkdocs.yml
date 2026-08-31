@@ -272,6 +272,7 @@ nav:
               - Build Errors: install/build/mac/build-errors.md
               - Update Trio with Xcode: install/build/mac/update.md
       - Upgrade: install/upgrade.md
+      - Return to the Released Version: install/return-to-main.md
       - Companion Apps:
           - install/ecosystem/index.md
           - Nightscout: install/ecosystem/nightscout-app.md
