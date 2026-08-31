@@ -38,9 +38,15 @@ The Glucose Simulator adds artificial CGM readings to the screen so you can see 
     
     ***The Glucose Simulator should never be used in conjunction with a live pump connected to a person (or animal).***
 
-## Libre Transmitter
+## FreeStyle Libre 1 / 2 / 2 Plus
 
-This option pairs a compatible Libre CGM directly with Trio without using a separate app like xDrip4iOS.
+This option pairs a compatible Libre 1, Libre 2, or Libre 2 Plus sensor directly with Trio without using a separate app like xDrip4iOS.
+For Libre 3 and Libre 3 Plus sensors, see [FreeStyle Libre 3 / 3 Plus](#freestyle-libre-3-3-plus).
+
+!!! info "Libre 2 Direct not supported with a FREE Apple Developer Account"
+    Pairing a Libre 2 / 2 Plus sensor directly (Libre 2 Direct) requires *Near Field Communication (NFC)* tag reading.  
+     ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
+     ✅ Libre 1 and Libre 2 / 2 Plus sensors read through a third-party transmitter do not use your phone's NFC and can be used with a free account.  
 
 ### Supported Sensors
 
@@ -57,6 +63,25 @@ This option pairs a compatible Libre CGM directly with Trio without using a sepa
       start="<!--include-markdown-unsupported-freestyle-sensors-start-->"
       end="<!--include-markdown-unsupported-freestyle-sensors-end-->"
 %}
+
+## FreeStyle Libre 3 / 3 Plus
+
+!!! warning "*Open beta"
+    
+    **FreeStyle Libre 3 / 3 Plus is currently only available in the [dev](https://github.com/nightscout/Trio/tree/dev) branch. [See here](../../browser/build-dev-with-browser.md) for help on building the `dev` branch with Browser Build.**
+
+!!! warning "Only One App Can Read the Sensor"
+    
+    **A sensor started in Trio can no longer be read by the FreeStyle Libre 3 app, and a sensor started in the FreeStyle Libre 3 app cannot be paired to Trio. If you want to switch to a different Trio or Loop app, though, you can enter the Receiver ID in the new app from the Libre 3 driver in whichever app started the sensor (Trio or Loop).**
+    **This also means the FreeStyle Libre 3 app's low and high glucose alarms are not active while the sensor is paired to Trio, so set up Trio's own [Glucose Alarm Limits](../../../../configuration/settings/notifications/trio-notifications.md#glucose-alarm-limits). LibreLinkUp and LibreView are also not accessible, so look to use Nightscout, Tidepool, and Loop Follow instead.**
+
+Trio supports both the FreeStyle Libre 3 (14 days) and the FreeStyle Libre 3 Plus (15 days) sensors, in all regions.
+The sensor is paired to Trio via NFC and then uses a direct Bluetooth connection to receive readings every minute, though it uses only one reading every five minutes. The one-minute readings are still viewable in the Libre 3 driver, though.
+
+!!! info "FreeStyle Libre 3 / 3 Plus not supported with a FREE Apple Developer Account"
+    Pairing requires *Near Field Communication (NFC)* tag reading.  
+     ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
+     You need a **paid** Apple Developer Account for that. See [Apple Developer Account](../apple-developer.md).
 
 ## Eversense E3 / 365
 
@@ -80,7 +105,7 @@ Trio supports both the Eversense E3 (90 days & 180 days) and the Eversense 365 (
 
 !!! warning "*Feature Branch"
     
-    **Accu-Chek SmartGuide is currently only available in the feature branch [`feat/accuchek`](https://github.com/nightscout/Trio/tree/feat/accuchek). See here for help on building a feature branch with: [Mac Build](../../mac/build.md#build-a-feature-branch) or [Browser Build](../../browser/build-dev-with-browser.md).**
+    **Accu-Chek SmartGuide is currently only available in the [`dev`](https://github.com/nightscout/Trio/tree/feat/accuchek) branch. [See here](../../browser/build-dev-with-browser.md) for help on building the `dev` branch with Browser Build.**
 
 Trio suports the Accu-Chek SmartGuide CGM. This is a 14-day CGM from Roche.
 It requires 2 calibrations: one after 12h and one 0.5-2.5h after the first calibrations.
