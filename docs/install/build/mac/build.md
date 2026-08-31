@@ -280,10 +280,11 @@ This section is required if you are using the free account. Some features of Tri
 - You are done with this target
 - Proceed to the next target
 
-!!! info "Libre Transmitter not supported with a FREE Apple Developer Account" 
-    Libre transmitters require *Near Field Communication (NFC)* for background tag reading.  
+!!! info "Direct Libre pairing not supported with a FREE Apple Developer Account" 
+    Pairing a sensor directly to Trio — Libre 2 / 2 Plus using Libre 2 Direct, or Libre 3 / 3 Plus — requires *Near Field Communication (NFC)*, because your phone must scan the sensor itself to start it. Each new sensor needs its own scan.  
      ❌ This capability is not available when building Trio with a **free** Apple Developer Account.  
-     You need a **paid** Apple Developer Account for that.
+     ✅ Libre 1 and Libre 2 / 2 Plus sensors read through a third-party transmitter (Miao Miao, Bubble, etc.) do not use your phone's NFC, so those work with a free account.  
+     You need a **paid** Apple Developer Account for direct pairing.
 
 !!! info "Live Activity / Dynamic Island not supported with a FREE Apple Developer Account" 
 

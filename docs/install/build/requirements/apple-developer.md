@@ -31,10 +31,10 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 - If you switch to a paid account after trying out the free account, you must rebuild your Trio app to sign it with the new paid account. Furthermore, switching from a free account requires entering all the settings again and starting a fresh pod.
 - You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use Remote Commands through Nightscout.
 
-!!! important "Libre Requires Paid Account"
-    In order to use certain Libre with *Trio*, you must have the Near Field Communication capability installed with the *Trio* app. Many Libre cannot be used directly and must use a third-party app.
+!!! important "Most Libre Sensors Require a Paid Account"
+    Pairing a sensor directly to *Trio* — Libre 2 / 2 Plus using Libre 2 Direct, or Libre 3 / 3 Plus — requires the Near Field Communication (NFC) capability, because your phone must scan the sensor itself to start it. That capability is not available with a free account. Each new sensor needs its own scan, not just the first one, so this is not a step you can work around.
 
-    The Near Field Communication capability is not available with a free account.
+    Libre 1 and Libre 2 / 2 Plus sensors read through a third-party transmitter (Miao Miao, Bubble, etc. — now uncommon) do not use your phone's NFC and can be used with a free account. Some Libre models cannot be used with *Trio* at all — see [Compatible CGM](devices/cgm.md).
 
 !!! warning "Live Activity Requires Paid Account"
     The Live Activity feature for *Trio* is not available with a free account.
