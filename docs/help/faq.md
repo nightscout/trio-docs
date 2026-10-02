@@ -104,11 +104,11 @@ Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) a
 
 The first place to start if you want to learn more about the underlying algorithm is the extensive [OpenAPS documentation](https://openaps.readthedocs.io/). OpenAPS is the underlying algorithm Trio implements, with minor modifications mostly pertaining to the Dynamic settings.
 
-### Why does the `Recommended Bolus Percentage` default to 70%?
+### Why does the `Recommended Bolus Percentage` default to 80%?
 
 `Recommended Bolus Percentage` is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the total dosage. That dosage is multiplied by your `Recommended Bolus Percentage` to display your suggested insulin dose. Trio then delivers the remaining insulin via Temp Basals and/or SMBs as the blood sugar rises.
 
-`Recommended Bolus Percentage` is a setting that allows the user to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.
+`Recommended Bolus Percentage` is a setting that allows the user to alter the amount initially delivered. By default 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.
 
 ### How does the `Max IOB` limit impact Trio's insulin dosing?
 
