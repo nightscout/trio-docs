@@ -465,10 +465,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#why-does-the-recommended-bolus-percentage-default-to-70">
+<a class="md-nav__link" href="#why-does-the-recommended-bolus-percentage-default-to-80">
 <span class="md-ellipsis">
       
-        Why does the Recommended Bolus Percentage default to 70%?
+        Why does the Recommended Bolus Percentage default to 80%?
       
     </span>
 </a>
@@ -938,10 +938,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#why-does-the-recommended-bolus-percentage-default-to-70">
+<a class="md-nav__link" href="#why-does-the-recommended-bolus-percentage-default-to-80">
 <span class="md-ellipsis">
       
-        Why does the Recommended Bolus Percentage default to 70%?
+        Why does the Recommended Bolus Percentage default to 80%?
       
     </span>
 </a>
@@ -1198,9 +1198,9 @@ LoopFollow is an open-source, do-it-yourself iPhone app that combines your T1D's
 <p>Trio is an open-source artificial pancreas system based on the OpenAPS (Oref0) algorithm. </p>
 <h3 id="where-can-i-learn-more-about-the-oref-algorithm">Where can I learn more about the Oref algorithm?<a class="headerlink" href="#where-can-i-learn-more-about-the-oref-algorithm" title="Link to this section for reference">¶</a></h3>
 <p>The first place to start if you want to learn more about the underlying algorithm is the extensive <a href="https://openaps.readthedocs.io/">OpenAPS documentation</a>. OpenAPS is the underlying algorithm Trio implements, with minor modifications mostly pertaining to the Dynamic settings.</p>
-<h3 id="why-does-the-recommended-bolus-percentage-default-to-70">Why does the <code>Recommended Bolus Percentage</code> default to 70%?<a class="headerlink" href="#why-does-the-recommended-bolus-percentage-default-to-70" title="Link to this section for reference">¶</a></h3>
+<h3 id="why-does-the-recommended-bolus-percentage-default-to-80">Why does the <code>Recommended Bolus Percentage</code> default to 80%?<a class="headerlink" href="#why-does-the-recommended-bolus-percentage-default-to-80" title="Link to this section for reference">¶</a></h3>
 <p><code>Recommended Bolus Percentage</code> is a safety feature built into Trio. By default, Trio first calculates an "insulin recommended" value when bolusing for carbs, which is the total dosage. That dosage is multiplied by your <code>Recommended Bolus Percentage</code> to display your suggested insulin dose. Trio then delivers the remaining insulin via Temp Basals and/or SMBs as the blood sugar rises.</p>
-<p><code>Recommended Bolus Percentage</code> is a setting that allows the user to alter the amount initially delivered. By default (70), 70% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.</p>
+<p><code>Recommended Bolus Percentage</code> is a setting that allows the user to alter the amount initially delivered. By default 80% of the required meal bolus is delivered before the meal. You can increase or decrease this to alter the insulin delivered before the meal.</p>
 <h3 id="how-does-the-max-iob-limit-impact-trios-insulin-dosing">How does the <code>Max IOB</code> limit impact Trio's insulin dosing?<a class="headerlink" href="#how-does-the-max-iob-limit-impact-trios-insulin-dosing" title="Link to this section for reference">¶</a></h3>
 <p>The maximum amount of insulin on board (i.e., in the body). Including insulin from all sources (basal and bolus) automatically delivered by Trio. </p>
 <p>The default is zero, meaning Trio can only set temporary basal rates lower than your profile basal rate. It cannot set temporary basal rates that exceed your profile basal rate in cases of high blood sugar, and it cannot use super micro boluses to control blood sugar.</p>
