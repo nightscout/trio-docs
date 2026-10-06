@@ -142,7 +142,7 @@ The standard way to test your CR is a controlled meal experiment:
 
 !!! tip "Understanding CR Adjustments"
     - **Lower CR number** = More insulin per gram of carbs = More aggressive
-    - **Higher CR number** = Less insulin per gram of carbs = Less conservative
+    - **Higher CR number** = Less insulin per gram of carbs = More conservative
 
     Example: Changing from CR 10 to CR 8 means you'll get MORE insulin for the same carbs.
 
@@ -203,7 +203,7 @@ These factors affect meal timing and absorption, not necessarily your CR itself.
     - Max COB setting (default: 120g) prevents excessive insulin from carb stacking
 
 - CR is used to determine your Carb Sensitivity Factor (CSF)
-    - **Formula**: $CSF=\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}$
+    - **Formula**: $CSF=\frac{\mathit{IS}\mathit{F}}{Carb\ Ratio}$
     - CSF shows how much 1g of carbohydrate will raise your glucose
 
 - Carb Sensitivity Factor, derived from CR, is used to determine how many carbs have been absorbed during that loop cycle
