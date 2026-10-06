@@ -138,8 +138,8 @@ The minimum minutes since the last SMB or manual bolus that an automated SMB wil
 - - -
 
 ## Min 5m Carb Impact
-**Default:** _5 mg/dL_  
-**Setting Limits:** _1-20 mg/dL_
+**Default:** _8 mg/dL/5min_
+**Setting Limits:** _1-20 mg/dL/5min_
 
 This setting is used only when carb absorption isn't reflected in glucose data.
 
