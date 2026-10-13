@@ -17,7 +17,11 @@
 
 ![Trio Logo](assets/images/trio-logo.png){ .skip-lightbox width="150" align="right" }
 
-Trio is an open-source automated insulin delivery system (OS-AID) for iOS based on the [OpenAPS algorithm](https://github.com/OpenAPS/oref0) with [adaptations for Trio](https://github.com/nightscout/trio-oref).  
+Trio is an Open-Source Automated Insulin Delivery (OS-AID) system for iOS building upon the 3 main data points of diabetes management, hence the main screen of Trio:
+
+1. Basal adjustments
+2. Glucose Readings
+3. Active insulin & Carbs
 
 This system considers your user-entered settings, carbohydrates, and historical insulin use to automate insulin delivery to reduce the time spent managing your diabetes.
 
