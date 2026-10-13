@@ -233,6 +233,10 @@ nav:
           - Statistics: usage/features/statistics.md
           - Bolus Calculator: usage/features/bolus-calculator.md
           - Using Dynamic ISF: usage/features/dynamic-isf.md
+      - Explain It To Me:
+          - usage/explained/index.md
+          - Loop Status: usage/explained/current-loop-status-explained.md
+          - Understanding Desmos: usage/explained/desmos-explained.md
   - Installation and Update:
       - install/index.md
       - Requirements:
