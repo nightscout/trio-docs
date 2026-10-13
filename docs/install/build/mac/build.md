@@ -25,7 +25,7 @@
 
     The main branch is the preferred build for everyone except expert builders.
 
-    If you are coming from an older main version 0.2.x, please read the [Migration Guide](../../../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older main version 0.2.x, please read the [Migration Guide](../../../usage/migration/trio-02x-migration.md) before updating.
     
     All Trio users are encouraged to follow along in [Trio Discord](https://discord.triodocs.org).
 

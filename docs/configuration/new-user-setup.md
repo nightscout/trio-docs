@@ -60,10 +60,10 @@ Trio has an Onboarding Wizard that walks you through these steps when you first 
 !!! tip "Need help finding these settings in your current DIY app?"
     If you are coming from another Open Source Automated Insulin Dosing (OS-AID) app, these guides may help you with finding these settings in your previous app and inputing them into Trio.
     
-    - [Trio 0.2.x](migration/trio-02x-migration.md)
-    - [iAPS](migration/iaps-migration.md)
-    - [Loop](migration/loop-migration.md)
-    - [AndroidAPS](migration/aaps-migration.md)
+    - [Trio 0.2.x](../usage/migration/trio-02x-migration.md)
+    - [iAPS](../usage/migration/iaps-migration.md)
+    - [Loop](../usage/migration/loop-migration.md)
+    - [AndroidAPS](../usage/migration/aaps-migration.md)
 
 ## **Step 1:** Prepare Trio
 
