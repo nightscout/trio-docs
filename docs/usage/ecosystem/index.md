@@ -9,7 +9,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 <div class="grid cards" markdown>
 
 -   __[Nightscout](nightscout-app.md)__
--   __[LoopFollow](loop-follow.md)__
+-   __[LoopFollow](loopfollow.md)__
 -   __[xDrip4iOS](xdrip4ios.md)__
 
 </div>
