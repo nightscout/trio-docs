@@ -1,14 +1,5 @@
-!!! important "🚧 Documentation Under Construction 🚧"
-    
-    This documentation is being released while still under construction. Please, keep in mind the following information:
-
-    - Any page with a ✏️ indicates the information has not yet been updated. The information on those pages should not be referenced at this time.
-    - We welcome assistance with proofreading, editing, and updating the information in this documentation. If you would like to contribute to the documentation, please submit issues or PRs [here](https://github.com/nightscout/trio-docs)
-    - New educational videos are coming soon.
 
 # What is Trio?
-!!! note
-    The video refers to Trio 1.0, which will not be the official version number until beta testing is complete and it is released to the main branch.
 
 <video controls  preload="metadata">
   <source src="assets/videos/trio-intro.mp4" type="video/mp4">
@@ -28,13 +19,23 @@ Before starting with Trio, you should evaluate all your closed-loop options, inc
     - [Loop](https://loopkit.github.io/loopdocs/)
     - [AndroidAPS](https://androidaps.readthedocs.io/)
 
+
+!!! important "🚧 Documentation Under Construction 🚧"
+    
+    This documentation is being released while still under construction. Please keep in mind the following information:
+
+    - Any page with a ✏️ indicates the information has not yet been updated. The information on those pages should not be referenced at this time.
+    - We welcome assistance with proofreading, editing, and updating the information in this documentation. If you would like to contribute to the documentation, please submit issues or PRs [here](https://github.com/nightscout/trio-docs)
+    - New educational videos are coming soon.
+
+
+- - -
+# Getting Started
+
 !!! warning "Warning"
     Trio is a DIY, open-source community project.  
     It has not been evaluated by any regulatory agency and is not approved by any healthcare authority.  
     You build and run Trio at your own risk.
-
-- - -
-# Getting Started
 
 To use Trio, you are required to [build the application](install/index.md) from the source code. This does not require substantial technical know-how but is a time-consuming process. You may need several sessions to complete your first build.
 
