@@ -76,7 +76,7 @@ Use the tabs below to learn more about each section:
         No data or not enough data to complete a loop cycle
         
     !!! tip "Pro Tip"
-        If you long press the loop indicator, it will force a loop cycle
+        If you pull down the Current Status section of the screen, it will force a loop cycle
     
 === "Current Metrics"
     Below the bobble, you'll find 3 icons that provide you with the current IOB, COB, and adjusted basal rate. These values were determined by the calculations made in the most recent loop cycle.
