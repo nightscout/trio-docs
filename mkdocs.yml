@@ -187,6 +187,9 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - tables
   - toc:
       permalink: true
@@ -337,7 +340,7 @@ nav:
       - Glossary: help/glossary.md
       - Troubleshooting ✏️: help/troubleshoot.md
       - Share Logs: help/share-logs.md
-      - Submit an Issue: https://github.com/nightscout/trio-docs/issues/new/choose
+      - Submit an Issue: help/submit-issue.md
       - Translate ✏️: help/translate.md
       - Support Communities:
           - Facebook: https://facebook.triodocs.org
