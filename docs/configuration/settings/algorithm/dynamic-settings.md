@@ -12,40 +12,37 @@
 !!! tip
     You must first choose `Logarithmic` or `Sigmoid` before any other dynamic features will appear
 
-Activating this feature allows Trio to calculate your [Sensitivity Ratio](./autosens.md#sensitivity-ratio) using the logarithmic dynamic formula, rather than the [Autosens formula](./autosens.md#autosens) with each loop cycle by considering factors such as: your current glucose, the weighted total daily dose of insulin (TDD), your adjustment factor setting (AF), and a few other data points. Using Logarithmic Dynamic ISF allows you to customize your Sensitivity Ratio calculation beyond what is allowed with Autosens.  
+Activating this feature allows Trio to calculate your [Sensitivity Ratio](./autosens.md#sensitivity-ratio) using the logarithmic dynamic ISF formula, replacing the [Autosens formula](./autosens.md#autosens).
 
-Below is the formula used for calculating the Sensitivity Ratio using Logarithmic Dynamic ISF for mg/dL:
-
-$$
-Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{Peak}\right)+1}{1800}\right)
-$$
-
-Here is that same formula adjusted for mmol/L:
+Clinicians sometimes use a "1800-rule" to estimate ISF, where ISF = 1800/TDD for mg/dL/U units (100/TDD for mmol/L/U). Dynamic ISF with the logarithmic formula extends this by continuously tracking 10-day TDD history and weighting recent values, denoted $TDD_{\text{w}}$ below. Additionally, $TDD_{\text{w}}$ is adjusted by a logarithm of the current BG value such that
 
 $$
-Sensitivity\ Ratio = ProfileISF \times AF \times TDD \times \ln{}\left(\frac{\left(\frac{Glucose}{0.0555 \times Peak}\right)+1}{100}\right)
+Calculated\ Sensitivity =
+\frac{1800}
+{TDD_{\text{w}} \times \ln\left(\frac{BG}{120-peak} + 1\right) \times AF}
 $$
 
-!!! info
-    This formula considers your profile ISF, current glucose, total daily dose (TDD over the last 24 hours), insulin peak effect (Peak), and Adjustment Factor (AF) that allows for user tuning of Dynamic ISF.
+where sensitivity uses mg/dL/U units and $BG$ mg/dL units. $AF$ denotes [adjustment factor](#adjustment-factor-logarithmic) and $peak$ denotes your [insulin peak time](./additionals.md#insulin-peak-time) in minutes.
 
-After the Sensitivity Ratio is calculated, your Calculated Sensitivity is then determined by using the same formula as [Autosens](./autosens.md#calculated-sensitivity):
+For mmol/L units you can first convert glucose to mg/dL, and then convert the calculated sensitivity from mg/dL/U back to mmol/L/U.
 
-$$
-Calculated\ Sensitivity = \frac{ProfileISF}{Sensitivity\ Ratio}
-$$
+We can then compare this calculated value to the profile and conclude that
 
+$$ Sensitivity\ Ratio = \frac{ProfileISF}{Calculated\ Sensitivity}. $$
+
+For visual representation, see the [Desmos graphs](#logarithmic-desmos-graphs).
 
 - - -
 
 ## Dynamic ISF: Sigmoid
 **Default:** _Disabled_
 
-Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. Your Calculated Sensitivity is calculated using a sigmoid curve rather than the logarithmic function.
+Turning on the Sigmoid Formula setting replaces the default logarithmic formula used to determine your Sensitivity Ratio. The sigmoid (S-shaped) function is used to adjust ISF as glucose moves away from the target. A key difference between the Sigmoid and Logarithmic formulas is that Logarithmic uses the "1800-rule" as baseline, while Sigmoid uses your profile ISF and target BG.
 
-The curve's steepness, reflecting how big adjustments are from one reading to another, is influenced by the [Adjustment Factor](#sigmoid-adjustment-factor), while [Autosens Max](./autosens.md#autosens-max) and [Min](./autosens.md#autosens-min) settings determine the limits of the ratio adjustment. Autosens Max and Min can also influence the curve's steepness with the Sigmoid Formula.
+When BG is outside the target, the [Autosens Min and Max settings](./autosens.md) determine the limits for sensitivity ratio and indirectly for calculated sensitivity. The [Sigmoid Adjustment Factor](#sigmoid-adjustment-factor) setting and recent TDD determine how far glucose has to drift from the target glucose to reach the limits. Consequently, the Sigmoid formula still uses TDD history, but it has a secondary role in contrast to it's role in the Logarithmic formula.
 
-When using the Sigmoid Formula, Total Daily Dose (TDD) has much less of an impact on adjustments to sensitivity. Sigmoid is more reliant upon how far from the target your glucose readings are.
+The exact formula is more complex, but the visualization is simple, see the
+[Desmos graphs](#sigmoid-desmos-graphs) below.
 
 !!! warning
     
