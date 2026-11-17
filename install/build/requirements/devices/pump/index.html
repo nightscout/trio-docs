@@ -724,17 +724,14 @@
 <h2 id="compatible-pumps">Compatible Pumps<a class="headerlink" href="#compatible-pumps" title="Link to this section for reference">¶</a></h2>
 <p>The following pumps are compatible with Trio:</p>
 <ul>
-<li><a href="#omnipod-5"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 (Open Beta))</a></li>
+<li><a href="#omnipod-5"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5</a></li>
 <li><a href="#omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH</a></li>
 <li><a href="#omnipod-eros"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Eros</a></li>
 <li><a href="#dana-i">Dana-i</a></li>
 <li><a href="#danars">DanaRS-v3</a></li>
 <li><a href="#medtrum-nano">Medtrum Nano</a></li>
 <li><a href="#medtronic-pumps">Older Medtronic pumps</a></li>
-</ul>
-<p>Developers are currently working on adding the following pumps to Trio:</p>
-<ul>
-<li><a href="#tandem-mobi">Tandem Mobi</a></li>
+<li><a href="#tandem-mobi">Tandem Mobi (Open Beta)</a></li>
 </ul>
 <p>No other pumps work with Trio at this time, but other open-source closed-loop options, such as <a href="https://androidaps.readthedocs.io/en/latest/index.html">AAPS: Android Artificial Pancreas System</a> and <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a>, support other pumps.</p>
 <h3 id="omnipod-pumps"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> Pumps<a class="headerlink" href="#omnipod-pumps" title="Link to this section for reference">¶</a></h3>
@@ -744,24 +741,8 @@
 </div>
 <h4 id="omnipod-5"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5<a class="headerlink" href="#omnipod-5" title="Link to this section for reference">¶</a></h4>
 <div class="admonition warning">
-<p class="admonition-title">*Open Beta</p>
-<ul>
-<li>We encourage anyone interested in participating in the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 Open Beta to read <a href="https://nightscout.github.io/omnipod-five/open-beta.html">these FAQs</a></li>
-<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 is currently available in the <a href="https://github.com/nightscout/Trio/tree/feat/dev"><code>dev</code></a> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. See here for help on building dev with <a href="../../../browser/build-dev-with-browser/">Browser Build</a>.</li>
-<li>As this is an open beta, we encourage most people to wait while experienced users test this implementation</li>
-</ul>
-</div>
-<div class="admonition warning">
 <p class="admonition-title">Internet Required for First Use</p>
 <p>Internet access is required for online authentication the very first time you pair an <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod with Trio. Once authenticated, all future <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods will pair offline. If you switch to a new iPhone, however, Internet access will once again be required to authenticate the first <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Must have a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</p>
-<ul>
-<li><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 code is experimental and does not provide a heartbeat at this time</li>
-<li>This means you rely on your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to wake up the app when it is in the background or the phone is locked</li>
-<li>If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not supply a heartbeat, the app with stop automatically running when it is not open</li>
-</ul>
 </div>
 <p>The <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods were launched in 2022 and use Bluetooth, so they connect directly to the phone and don't require a RileyLink or similar device. The <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pods are designed to be used with SmartAdjust, an automated looping algorithm that runs on the pod and connects directly to a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>. This algorithm is only available when used with the official <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 app or Controller. When paired with Trio, the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod will not connect to a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and only receive commands (automated and manual) from the Trio app running on an iPhone. If you want to use the SmartAdjust algorithm on the pod, you have to pair a brand new pod with the <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 app or Controller. To reiterate: your <abbr title="Insulet tubeless insulin pump">Omnipod</abbr> 5 pod and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> must both be in-range of and connected to your iPhone running Trio in order for automated looping to occur.</p>
 <h4 id="omnipod-dash"><abbr title="Insulet tubeless insulin pump">Omnipod</abbr> DASH<a class="headerlink" href="#omnipod-dash" title="Link to this section for reference">¶</a></h4>
@@ -930,11 +911,23 @@ It uses a 90-degree steel cannula instead of the Teflon cannula of the Omnipods,
 <p>Medtronic will not typically sell pump supplies directly to customers who have yet to purchase a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, ask for help from friends to try a variety of infusion sets before purchasing an entire 90-day supply of any type in particular.</p>
 <h3 id="tandem-pumps">Tandem Pumps<a class="headerlink" href="#tandem-pumps" title="Link to this section for reference">¶</a></h3>
 <h4 id="tandem-mobi">Tandem Mobi<a class="headerlink" href="#tandem-mobi" title="Link to this section for reference">¶</a></h4>
-<div class="admonition info">
-<p class="admonition-title">Tandem Mobi in Development!</p>
-<p>Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.</p>
-</div>
 <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../img/tandem-mobi.png"><img alt="tandem_mobi" src="../img/tandem-mobi.png" width="250"/></a></p>
+<div class="admonition warning">
+<p class="admonition-title">*Open Beta</p>
+<ul>
+<li>We encourage anyone interested in participating in the Tandem Mobi to read <a href="https://nightscout.github.io/tandem-mobi/open-beta.html">these FAQs</a></li>
+<li>Tandem Mobi is currently available in the <a href="https://github.com/nightscout/Trio/tree/feat/tandem"><code>feat/tandem</code></a> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. See here for help on building a different <abbr title="version of code within a single repository or workspace repository">branch</abbr> with <a href="../../../browser/build-dev-with-browser/">Browser Build</a> (substitute 'dev' for 'feat/tandem').</li>
+<li>As this is an open beta, we encourage most people to wait while experienced users test this implementation.</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Known Limitations</p>
+<ul>
+<li>The Tandem Mobi pump will either vibrate or beep every 5 minutes when using Trio, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, or AndroidAPS. This is a hard technical limitation due to the current behavior of the pump which open-source developers cannot bypass at this time. The pump either makes an audible beep or a vibration (which you choose is user-configurable) in response to every Temp Basal, Bolus, or other insulin-delivery command. During testing, some users found the vibration motor to be more audible than the beep, which can be partially muffled through clothing and device placement. We are hopeful that a future pump software release will give users the ability to turn this off.</li>
+</ul>
+</div>
+<p>Tandem Mobi support is now in an open beta for experienced Trioneers.
+During the open beta, the driver is still being tested and is not yet recommended for everyone.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
