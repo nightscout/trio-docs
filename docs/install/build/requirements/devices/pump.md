@@ -2,17 +2,14 @@
 
 The following pumps are compatible with Trio:
 
-* [Omnipod 5 (Open Beta))](#omnipod-5)
+* [Omnipod 5](#omnipod-5)
 * [Omnipod DASH](#omnipod-dash)
 * [Omnipod Eros](#omnipod-eros)
 * [Dana-i](#dana-i)
 * [DanaRS-v3](#danars)
 * [Medtrum Nano](#medtrum-nano)
 * [Older Medtronic pumps](#medtronic-pumps)
-
-Developers are currently working on adding the following pumps to Trio:
-
-* [Tandem Mobi](#tandem-mobi)
+* [Tandem Mobi (Open Beta)](#tandem-mobi)
 
 No other pumps work with Trio at this time, but other open-source closed-loop options, such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/), support other pumps.
 
@@ -23,21 +20,9 @@ No other pumps work with Trio at this time, but other open-source closed-loop op
     The use of Omnipod pumps with Trio is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Trio build, setup, or operation. You are fully responsible for your use of Trio and do so at your own risk. Please read these documents and familiarize yourself with Trio before using the app.
 
 #### Omnipod 5
-
-!!! warning "*Open Beta"
-    * We encourage anyone interested in participating in the Omnipod 5 Open Beta to read [these FAQs](https://nightscout.github.io/omnipod-five/open-beta.html)
-    * Omnipod 5 is currently available in the [`dev`](https://github.com/nightscout/Trio/tree/feat/dev) branch. See here for help on building dev with [Browser Build](../../browser/build-dev-with-browser.md).
-    * As this is an open beta, we encourage most people to wait while experienced users test this implementation
-    
 !!! warning "Internet Required for First Use"
     
     Internet access is required for online authentication the very first time you pair an Omnipod 5 pod with Trio. Once authenticated, all future Omnipod 5 pods will pair offline. If you switch to a new iPhone, however, Internet access will once again be required to authenticate the first Omnipod 5 pod.
-    
-!!! warning "Must have a CGM with a heartbeat"
-    * Omnipod 5 code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
-
 
 The Omnipod 5 pods were launched in 2022 and use Bluetooth, so they connect directly to the phone and don't require a RileyLink or similar device. The Omnipod 5 pods are designed to be used with SmartAdjust, an automated looping algorithm that runs on the pod and connects directly to a CGM. This algorithm is only available when used with the official Omnipod 5 app or Controller. When paired with Trio, the Omnipod 5 pod will not connect to a CGM and only receive commands (automated and manual) from the Trio app running on an iPhone. If you want to use the SmartAdjust algorithm on the pod, you have to pair a brand new pod with the Omnipod 5 app or Controller. To reiterate: your Omnipod 5 pod and CGM must both be in-range of and connected to your iPhone running Trio in order for automated looping to occur.
 
@@ -210,8 +195,19 @@ Medtronic will not typically sell pump supplies directly to customers who have y
 
 #### Tandem Mobi
 
-!!! info "Tandem Mobi in Development!"
-    Work is ongoing to bring more pumps to the OS-AID ecosystem. While nothing is certain, progress is being made on Tandem Mobi.
-
 ![tandem_mobi](img/tandem-mobi.png){width="250"}
 {align=center}
+
+!!! warning "*Open Beta"
+    * We encourage anyone interested in participating in the Tandem Mobi to read [these FAQs](https://nightscout.github.io/tandem-mobi/open-beta.html)
+    * Tandem Mobi is currently available in the [`feat/tandem`](https://github.com/nightscout/Trio/tree/feat/tandem) branch. See here for help on building a different branch with [Browser Build](../../browser/build-dev-with-browser.md) (substitute 'dev' for 'feat/tandem').
+    * As this is an open beta, we encourage most people to wait while experienced users test this implementation.
+    
+!!! info "Known Limitations"
+    * The Tandem Mobi pump will either vibrate or beep every 5 minutes when using Trio, Loop, or AndroidAPS. This is a hard technical limitation due to the current behavior of the pump which open-source developers cannot bypass at this time. The pump either makes an audible beep or a vibration (which you choose is user-configurable) in response to every Temp Basal, Bolus, or other insulin-delivery command. During testing, some users found the vibration motor to be more audible than the beep, which can be partially muffled through clothing and device placement. We are hopeful that a future pump software release will give users the ability to turn this off.
+
+Tandem Mobi support is now in an open beta for experienced Trioneers.
+During the open beta, the driver is still being tested and is not yet recommended for everyone.
+
+
+
