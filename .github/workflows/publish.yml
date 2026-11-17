@@ -14,7 +14,8 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04, where Playwright 1.58.0 can't install Chromium (PDF export)
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     if: github.repository_owner == 'nightscout'
