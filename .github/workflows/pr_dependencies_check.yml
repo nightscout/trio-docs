@@ -22,6 +22,6 @@ jobs:
       checks: write
       issues: write
       pull-requests: write
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: Levi-Lesches/blocking-issues@v2
