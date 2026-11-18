@@ -91,26 +91,28 @@ When Autosens is enabled (which it is by default), Trio analyzes 8-24 hours of g
 
 ### 2. Dynamic ISF (Optional)
 
-Dynamic ISF is a more aggressive way to adjust your ISF based on current glucose and/or historical insulin dosing:
+Dynamic ISF is a more automated way to adjust your settings based on current glucose and historical insulin dosing:
 
 - **Requires**: 7 days of TDD data with 85% coverage (minimum 1,715 data points)
 - **Types**: Logarithmic (default) or Sigmoid
-- **Output**: Dynamic Ratio that replaces the Autosens Ratio each loop cycle
+- **Output**: Calculated ISF and Sensitivity Ratio
 - **Temporary**: The adjustment changes every loop cycle; it's not a permanent ISF change
 
 !!! info
-    There are 2 algorithms available for Dynamic ISF. Logarithmic Dynamic ISF adjusts your ISF based on current glucose levels and Total Daily Dose (TDD). Sigmoid Dynamic ISF adjusts your profile ISF based on how far from your target glucose you currently are.
+    There are 2 algorithms available for Dynamic ISF. Logarithmic adjusts your ISF based on current glucose levels and Total Daily Dose (TDD) history. Sigmoid adjusts your profile ISF based on how far from your target glucose you currently are.
 
 **Key Parameters**:
 
-- **Adjustment Factor**: 
-    - **Sigmoid**: Adjustment Factor controls how aggressively ISF changes. Learn more about how changes to Sigmoid Adjustment Factor influences ISF adjustments [here](../features/dynamic-isf.md#adjustment-factor_1). The default for Sigmoid Adjustment Factor is 50%.
-    - **Logarithmic**: Controls what ISF is used at which glucose. It should be manually set to approximately $0.02 \times TDD$. Learn more about how changing Adjustment Factor influences Logarithmic dynamic ISF [here](../features/dynamic-isf.md#adjustment-factor).
+- **Adjustment Factor**:
+    - **Sigmoid**: Adjustment Factor controls how quickly ISF and Sensitivity Ratio reaches configured limits, as BG moves away from the target.
+    - **Logarithmic**: Adjustment Factor scales calculated ISF and Sensitivity Ratio.
 - **Autosens Maximum**: Controls the upper limit of the autosens ratio (default: 120%)
 - **Autosens Minimum**: Controls the lower limit of the autosens ratio (default: 70%)
 - **Weighted Average of TDD**: Blends recent (24h) and historical (10-day) insulin use (default: 35%)
 
 Dynamic ISF is designed to make your ISF more aggressive (lower) when glucose is high and less aggressive (higher) when glucose is near target.
+
+More details in the [ISF usage section](../features/dynamic-isf.md) and in [Dynamic Settings](../../configuration/settings/algorithm/dynamic-settings.md).
 
 - - -
 
