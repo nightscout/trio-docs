@@ -148,6 +148,21 @@ Your insulin sensitivity varies throughout the day due to hormones, activity, an
 
 ## Testing and Adjusting Your ISF
 
+!!!note "Before You Test ISF"
+    Did you already [confirm/test your basal rates](basal-rates.md#testing-your-basal-rates)? If basal rates are not accurate, your ISF test will also not be accurate. 
+    ***Always test basals first***.
+    
+
+!!!important "Important Info For Testing Settings in Trio"
+    When testing your settings in Trio, it's recommended to do so in **CLOSED LOOP** with the following settings adjustments:
+    
+    - **Maximum IOB**: set to 0
+    - **Autosens Max**: set to 100%
+    - **Autosens Min**: set to 100%
+    
+    This will allow Trio to prevent lows, but will not allow Trio to correct highs or give more than your current scheduled basal rate. Using this method will result in the correction dose you initiate for your ISF test will be the only correction given. Trio will not increase that even if your glucose rises or does not fall.
+    
+
 ### Starting Point
 
 If you're coming from pump therapy, you can transfer your pump's ISF as a starting point. However, be prepared to adjust it based on Trio's behavior.
