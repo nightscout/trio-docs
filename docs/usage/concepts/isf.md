@@ -169,9 +169,10 @@ To test if your ISF is accurate:
 
 !!! tip "Understanding ISF Adjustments"
     - **Lower ISF number** = More insulin per unit of glucose correction = More aggressive
-    - **Higher ISF number** = Less insulin per unit of glucose correction = Less conservative
+    - **Higher ISF number** = Less insulin per unit of glucose correction = More conservative
 
-    This can be counterintuitive at first!
+    This can be counterintuitive at first, but it makes sense if you
+    consider that the setting is about **insulin sensitivity**.
 
 - - -
 
@@ -217,7 +218,7 @@ $$
 ISF is used to determine how quickly carbs are absorbed in your body and how fast Trio reduces the COB amount.
 
 - ISF is used to determine your Carb Sensitivity Factor (CSF)
-    - **Formula**: $CSF=\frac{Carb\ Ratio}{\mathit{IS}\mathit{F}}$
+    - **Formula**: $CSF=\frac{\mathit{IS}\mathit{F}}{Carb\ Ratio}$
     - CSF shows how much 1g of carbohydrate will raise your glucose
 - Carb Sensitivity Factor is used to determine how many carbs have been absorbed during that loop cycle
     - **Formula**: $Increase\ in\ glucose \times CSF$
