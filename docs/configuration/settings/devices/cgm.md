@@ -232,7 +232,12 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 ## Smooth Glucose Value
 **Default:** _OFF_  
 
-Smooths CGM readings using Savitzky-Golay Filtering
+Smooths CGM readings using [Savitzky-Golay Filtering](https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter). 
+
+This can help prevent Trio from misinterpreting inaccurate or erratic CGM readings, particularly in situations such as:
+- Compression lows – False low readings caused by pressure on the sensor.
+- Erratic measurements – Sudden jumps or fluctuations, especially towards the end of a CGM's lifespan.
+- Lower-quality CGM data – Smoothing out noise from less accurate or less consistent sensors.
 
 <!-- Update with additional description of Savitzky-Golay filtering -->
 
