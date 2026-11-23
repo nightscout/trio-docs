@@ -128,16 +128,25 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
 
 ### Eversense E3 / 365
 
-!!! warning "You must build the `dev` branch to use the Eversense CGM at this time"
-    The Eversense CGM is in `dev` and is in open-beta for now
-
 !!! warning "Wait until the initialization phase is completed"
     During the initialization phase of this system, the glucose reading might be incorrect.
     Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
+    Since swelling at the insertion site can cause inaccurate readings, make sure that you are getting stable readings
+    before switching to Trio.  This could be as long as the start of weekly calibrations (Day 14).
 
 !!! warning "Do not use the Eversense 365 app and Trio concurrently"
     The 365 transmitter is not able to connect to multiple apps or devices at the same time, due to the security protocol.
     Make sure you either use the Eversense app or Trio, but not both at the same time.
+
+**Step 1**
+Disconnect from the Eversense app
+
+    Go to Connect from the main menu and click on the connected sensor.
+    
+    Press OK to disconnect the transmitter.
+
+**Step 2**
+Forget the transmitter from Bluetooth on your phone.
 
 **Step 3**
 Select whether you want to pair the Eversense E3 or the Eversense 365.
