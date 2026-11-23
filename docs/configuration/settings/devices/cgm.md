@@ -139,8 +139,10 @@ Continue to [Connect Watch](smart-watch.md) _OR_ return to [New User Setup](../.
     Make sure you either use the Eversense app or Trio, but not both at the same time.
 
 **Step 1**
-Disconnect from the Eversense app:
+Disconnect from the Eversense app
+
     Go to Connect from the main menu and click on the connected sensor.
+    
     Press OK to disconnect the transmitter.
 
 **Step 2**
