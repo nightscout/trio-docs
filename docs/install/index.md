@@ -11,7 +11,7 @@ Please use the navigation menu :fontawesome-solid-bars:, search bar :fontawesome
 !!! important "Attention Trio Users"
     The `main` branch is the preferred build for everyone except expert builders.
 
-    If you are coming from an older `main` version 0.2.x, please read the [Migration Guide](../configuration/migration/trio-02x-migration.md) before updating.
+    If you are coming from an older `main` version 0.2.x, please read the [Migration Guide](../usage/migration/trio-02x-migration.md) before updating.
 
 <div class="grid cards" markdown>
 
